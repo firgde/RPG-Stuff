@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "magic:"
+    },
+    "ops": [
+      {
+        "source": "CoolDown",
+        "target": "Customnbt.magicType.TimeUsed",
+        "op": "replace"
+      }
+    ]
+  }
+]

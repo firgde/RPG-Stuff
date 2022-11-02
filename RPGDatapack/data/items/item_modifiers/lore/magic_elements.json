@@ -1,0 +1,202 @@
+[
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.ui.text.magic.element",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "\uE000",
+            "color": "white",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#element"
+          },
+          "score": "buffer"
+        },
+        "range": 0
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.ui.text.magic.element",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "\uE001",
+            "color": "white",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#element"
+          },
+          "score": "buffer"
+        },
+        "range": 1
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.ui.text.magic.element",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "\uE002",
+            "color": "white",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#element"
+          },
+          "score": "buffer"
+        },
+        "range": 2
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.ui.text.magic.element",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "\uE003",
+            "color": "white",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#element"
+          },
+          "score": "buffer"
+        },
+        "range": 3
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.ui.text.magic.element",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "\uE004",
+            "color": "white",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#element"
+          },
+          "score": "buffer"
+        },
+        "range": 4
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.ui.text.magic.element",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "\uE005",
+            "color": "white",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#element"
+          },
+          "score": "buffer"
+        },
+        "range": 5
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "lore": [
+      {
+        "text": " "
+      }
+    ]
+  }
+]

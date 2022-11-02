@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "main:overworld/plains"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:explore/enter/plains"
+  }
+}

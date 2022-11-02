@@ -1,0 +1,137 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "main:craft/enchantments/toughness",
+                    "conditions": [
+                        {
+                            "condition": "inverted",
+                            "term": {
+                                "condition": "alternative",
+                                "terms": [
+                                    {
+                                        "condition": "location_check",
+                                        "offsetY": -1,
+                                        "predicate": {
+                                            "block": {
+                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"toughness\"}]}}}]}"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "location_check",
+                                        "offsetY": -1,
+                                        "predicate": {
+                                            "block": {
+                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"vulnerability\"}]}}}]}"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "main:craft/enchantments/wisdom",
+                    "conditions": [
+                        {
+                            "condition": "inverted",
+                            "term": {
+                                "condition": "alternative",
+                                "terms": [
+                                    {
+                                        "condition": "location_check",
+                                        "offsetY": -1,
+                                        "predicate": {
+                                            "block": {
+                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"wisdom\"}]}}}]}"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "location_check",
+                                        "offsetY": -1,
+                                        "predicate": {
+                                            "block": {
+                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"stupidity\"}]}}}]}"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "main:craft/enchantments/agility",
+                    "conditions": [
+                        {
+                            "condition": "inverted",
+                            "term": {
+                                "condition": "alternative",
+                                "terms": [
+                                    {
+                                        "condition": "location_check",
+                                        "offsetY": -1,
+                                        "predicate": {
+                                            "block": {
+                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"agility\"}]}}}]}"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "location_check",
+                                        "offsetY": -1,
+                                        "predicate": {
+                                            "block": {
+                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"burden\"}]}}}]}"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "main:craft/enchantments/intense",
+                    "conditions": [
+                        {
+                            "condition": "inverted",
+                            "term": {
+                                "condition": "alternative",
+                                "terms": [
+                                    {
+                                        "condition": "location_check",
+                                        "offsetY": -1,
+                                        "predicate": {
+                                            "block": {
+                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"intense\"}]}}}]}"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "location_check",
+                                        "offsetY": -1,
+                                        "predicate": {
+                                            "block": {
+                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"dizziness\"}]}}}]}"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

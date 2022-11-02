@@ -1,0 +1,85 @@
+[
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.ui.hpheal",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "score": {
+              "name": "#healamounthp",
+              "objective": "buffer"
+            },
+            "color": "green",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#healamounthp"
+          },
+          "score": "buffer"
+        },
+        "range": {
+          "min": 1
+        }
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.ui.mpheal",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "score": {
+              "name": "#healamountmp",
+              "objective": "buffer"
+            },
+            "color": "aqua",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#healamountmp"
+          },
+          "score": "buffer"
+        },
+        "range": {
+          "min": 1
+        }
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": " "
+      }
+    ]
+  }
+]

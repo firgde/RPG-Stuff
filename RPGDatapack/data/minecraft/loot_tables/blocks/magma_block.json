@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": {
+                "translate": "item.magma_stone",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "item.magma_stone.lore",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "item.magma_stone.lore.second",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": " "
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "item.ui.rarity.open",
+                  "color": "white",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "translate": "item.ui.rarity.uncommon",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false,
+                      "extra": [
+                        {
+                          "translate": "item.ui.rarity.close",
+                          "color": "white",
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Customnbt:{id:\"magma_stone\",ItemType:0,LoreCount:2,rarity:1},CustomModelData:7}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

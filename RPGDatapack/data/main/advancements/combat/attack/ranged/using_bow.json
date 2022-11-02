@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "bow"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:combat/attack/ranged/charging"
+    }
+}

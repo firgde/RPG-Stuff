@@ -1,0 +1,16 @@
+[
+  {
+    "function": "copy_nbt",
+    "source": {
+      "type": "storage",
+      "source": "item:"
+    },
+    "ops": [
+      {
+        "source": "Item.tag.Customnbt.Enchantments[0].Text",
+        "target": "display.Lore",
+        "op": "append"
+      }
+    ]
+  }
+]

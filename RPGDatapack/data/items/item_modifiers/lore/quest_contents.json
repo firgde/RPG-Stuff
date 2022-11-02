@@ -1,0 +1,39 @@
+[
+  {
+    "function": "copy_nbt",
+    "source": {
+      "type": "storage",
+      "source": "item:"
+    },
+    "ops": [
+      {
+        "source": "Item.tag.Customnbt.Quest.Name",
+        "target": "display.Lore",
+        "op": "append"
+      }
+    ]
+  },
+  {
+    "function": "copy_nbt",
+    "source": {
+      "type": "storage",
+      "source": "item:"
+    },
+    "ops": [
+      {
+        "source": "Item.tag.Customnbt.Quest.Rewards",
+        "target": "display.Lore",
+        "op": "append"
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": " "
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "nbt": "{Customnbt:{Skills:{Main:{id:\"none\"}}}}"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+              "usedRod": {
+                "min": 1
+              }
+            }
+          },
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_sneaking": false
+              },
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{Customnbt:{HasSkill:1b}}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:combat/skills/use"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "criteria": {
+    "mainhand": {
+      "trigger": "using_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "golden_apple"
+              ]
+            }
+          }
+        },
+        "item": {
+          "items": [
+            "golden_apple"
+          ],
+          "nbt": "{Customnbt:{food:1b}}"
+        }
+      }
+    },
+    "offhand": {
+      "trigger": "using_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "offhand": {
+              "items": [
+                "golden_apple"
+              ]
+            }
+          }
+        },
+        "item": {
+          "items": [
+            "golden_apple"
+          ],
+          "nbt": "{Customnbt:{food:1b}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "mainhand",
+      "offhand"
+    ]
+  ],
+  "rewards": {
+    "function": "main:combat/heal/food"
+  }
+}

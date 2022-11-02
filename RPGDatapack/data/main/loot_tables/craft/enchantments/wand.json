@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "main:craft/enchantments/will",
+          "conditions": [
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "alternative",
+                "terms": [
+                  {
+                    "condition": "location_check",
+                    "offsetY": -1,
+                    "predicate": {
+                      "block": {
+                        "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"will\"}]}}}]}"
+                      }
+                    }
+                  },
+                  {
+                    "condition": "location_check",
+                    "offsetY": -1,
+                    "predicate": {
+                      "block": {
+                        "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"passivity\"}]}}}]}"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

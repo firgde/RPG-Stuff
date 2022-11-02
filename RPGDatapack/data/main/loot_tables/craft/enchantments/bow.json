@@ -1,0 +1,42 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls":  1,
+            "entries": [
+              {
+                "type": "loot_table",
+                "name": "main:craft/enchantments/power",
+                "conditions": [
+                  {
+                    "condition": "inverted",
+                    "term": {
+                      "condition": "alternative",
+                      "terms": [
+                        {
+                          "condition": "location_check",
+                          "offsetY": -1,
+                          "predicate": {
+                            "block": {
+                              "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"power\"}]}}}]}"
+                            }
+                          }
+                        },
+                        {
+                          "condition": "location_check",
+                          "offsetY": -1,
+                          "predicate": {
+                            "block": {
+                              "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"looseness\"}]}}}]}"
+                        }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:1,Enchant:{id:\"dizziness\",lvl:2s,Buffs:{atk:0,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:-30},\"Text\":'[{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" II: \",\"color\":\"red\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" -30\",\"color\":\"red\"}]'}}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": "this",
+                "score": "conc"
+              },
+              "range": {
+                "min": 0,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:1,Enchant:{id:\"dizziness\",lvl:1s,Buffs:{atk:-5,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:-15},\"Text\":'[{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" I: \",\"color\":\"red\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" -15\",\"color\":\"red\"}]'}}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": "this",
+                "score": "conc"
+              },
+              "range": {
+                "min": 0,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 10,
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:1s,Buffs:{atk:0,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:5},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I: \",\"color\":\"gray\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +5\",\"color\":\"dark_green\"}]'}}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": "this",
+                "score": "conc"
+              },
+              "range": {
+                "min": 0,
+                "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 10,
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:2s,Buffs:{atk:0,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:10},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II: \",\"color\":\"gray\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +10\",\"color\":\"dark_green\"}]'}}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": "this",
+                "score": "conc"
+              },
+              "range": {
+                "min": 20,
+                "max": 40
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 15,
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:3s,Buffs:{atk:0,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:20},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III: \",\"color\":\"gray\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +20\",\"color\":\"dark_green\"}]'}}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": "this",
+                "score": "conc"
+              },
+              "range": {
+                "min": 30,
+                "max": 60
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 12,
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:4s,Buffs:{atk:0,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:35},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV: \",\"color\":\"gray\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +35\",\"color\":\"dark_green\"}]'}}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": "this",
+                "score": "conc"
+              },
+              "range": {
+                "min": 40
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 10,
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:5s,Buffs:{atk:0,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:50},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" V: \",\"color\":\"gray\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +50\",\"color\":\"dark_green\"}]'}}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": "this",
+                "score": "conc"
+              },
+              "range": {
+                "min": 60
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

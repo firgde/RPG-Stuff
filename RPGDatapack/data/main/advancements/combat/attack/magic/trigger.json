@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "mainhand": {
+      "trigger": "tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{Customnbt:{weaponType:\"wand\"}}"
+                }
+              }
+            }
+          },
+          {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+              "usedRod": {
+                "min": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:combat/attack/magic/trigger"
+  }
+}

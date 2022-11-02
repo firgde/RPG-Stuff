@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "item:"
+    },
+    "ops": [
+      {
+        "source": "Item.tag.Customnbt.Durability",
+        "target": "Customnbt.Durability",
+        "op": "replace"
+      }
+    ]
+  }
+]

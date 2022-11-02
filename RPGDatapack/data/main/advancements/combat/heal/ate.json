@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"eating\"]}"
+            }
+          },
+          {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+              "foodTimer": {
+                "min": 32
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:combat/heal/ate"
+  }
+}

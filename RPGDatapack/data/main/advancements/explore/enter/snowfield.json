@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "main:overworld/snowfield"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:explore/enter/snowfield"
+  }
+}

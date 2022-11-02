@@ -1,0 +1,56 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": " "
+      }
+    ],
+    "replace": true
+  },
+  {
+    "function": "copy_nbt",
+    "source": {
+      "type": "storage",
+      "source": "item:"
+    },
+    "ops": [
+      {
+        "source": "Item.tag.display.Lore[0]",
+        "target": "display.Lore[0]",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "copy_nbt",
+    "source": {
+      "type": "storage",
+      "source": "item:"
+    },
+    "ops": [
+      {
+        "source": "Item.tag.display.Lore[1]",
+        "target": "display.Lore",
+        "op": "append"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#Lore"
+          },
+          "score": "buffer"
+        },
+        "range": {
+          "min": 2
+        }
+      }
+    ]
+  }
+]
