@@ -1,0 +1,41 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "item/warped_fungus_on_a_stick"
+    },
+    "overrides": [
+        {"predicate":{"custom_model_data":1000}, "model":"item/wooden_sword"},
+        {"predicate":{"custom_model_data":1001}, "model":"item/stone_sword"},
+        {"predicate":{"custom_model_data":1002}, "model":"item/iron_sword"},
+        {"predicate":{"custom_model_data":1003}, "model":"item/golden_sword"},
+        {"predicate":{"custom_model_data":1004}, "model":"item/diamond_sword"},
+        {"predicate":{"custom_model_data":1005}, "model":"item/netherite_sword"},
+        {"predicate":{"custom_model_data":1006}, "model":"item/amethyst_sword"},
+
+        {"predicate":{"custom_model_data":1100}, "model":"item/wooden_hammer"},
+        {"predicate":{"custom_model_data":1101}, "model":"item/stone_hammer"},
+        {"predicate":{"custom_model_data":1102}, "model":"item/iron_hammer"},
+        {"predicate":{"custom_model_data":1103}, "model":"item/golden_hammer"},
+        {"predicate":{"custom_model_data":1104}, "model":"item/diamond_hammer"},
+        {"predicate":{"custom_model_data":1105}, "model":"item/netherite_hammer"},
+        {"predicate":{"custom_model_data":1106}, "model":"item/amethyst_hammer"},
+        
+        {"predicate":{"custom_model_data":1110}, "model":"item/bread_hammer"},
+
+        {"predicate":{"custom_model_data":1203}, "model":"item/golden_wand"},
+        {"predicate":{"custom_model_data":1204}, "model":"item/diamond_wand"},
+        {"predicate":{"custom_model_data":1206}, "model":"item/amethyst_wand"},
+
+        {"predicate":{"custom_model_data":1402}, "model":"item/iron_dagger"},
+        {"predicate":{"custom_model_data":1403}, "model":"item/golden_dagger"},
+        {"predicate":{"custom_model_data":1404}, "model":"item/diamond_dagger"},
+        {"predicate":{"custom_model_data":1406}, "model":"item/amethyst_dagger"},
+
+        {"predicate":{"custom_model_data":2000}, "model":"item/fire_ring"},
+        {"predicate":{"custom_model_data":2001}, "model":"item/ice_ring"},
+        {"predicate":{"custom_model_data":2002}, "model":"item/thunder_ring"},
+        {"predicate":{"custom_model_data":2003}, "model":"item/wind_ring"},
+        {"predicate":{"custom_model_data":2004}, "model":"item/poison_ring"},
+        {"predicate":{"custom_model_data":2005}, "model":"item/wither_ring"}
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/flint"
+    },
+    "overrides": [
+        {"predicate":{"custom_model_data":1}, "model":"item/stone_brick_like"},
+        {"predicate":{"custom_model_data":2}, "model":"item/crafting_table_like"},
+        {"predicate":{"custom_model_data":3}, "model":"item/enchanting_cube"}
+    ]
+}

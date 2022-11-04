@@ -1,0 +1,193 @@
+{
+    "providers": [
+        {
+            "type":"bitmap",
+            "file":"font/heart_0.png",
+            "ascent": -26,
+            "height": 9,
+            "chars":[
+                "\u0030"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_1.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0031"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_2.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0032"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_3.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0033"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_4.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0034"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_5.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0035"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_6.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0036"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_7.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0037"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_8.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0038"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_9.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0039"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_10.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0041"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_11.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0042"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_12.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0043"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_13.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0044"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_14.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0045"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_15.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0046"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_16.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0047"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_17.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0048"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_18.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u0049"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_19.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u004A"
+            ]
+        },
+        {
+            "type":"bitmap",
+            "file":"font/burning_heart_20.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\u004B"
+            ]
+        }
+    ]
+}
