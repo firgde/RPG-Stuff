@@ -1,5 +1,12 @@
 {
     "item.comment":"アイテム名",
+    "item.stick":"棒",
+
+    "item.coal":"石炭",
+    "item.iron_ingot":"鉄インゴット",
+    "item.diamond":"ダイヤモンド",
+    "item.magma_stone":"マグマストーン",
+
     "item.wooden_sword":"木の剣",
     "item.stone_sword":"石の剣",
     "item.iron_sword":"鉄の剣",
@@ -41,11 +48,6 @@
     "item.thunder_ring":"雷撃の指輪",
     "item.wind_ring":"疾風の指輪",
     
-    "item.coal":"石炭",
-    "item.iron_ingot":"鉄インゴット",
-    "item.diamond":"ダイヤモンド",
-    "item.magma_stone":"マグマストーン",
-
     "item.bread":"パン",
 
     "item.quest_paper":"クエスト用紙",
@@ -139,6 +141,7 @@
     "item.ui.enchantment.ice_aspect":"氷属性",
     "item.ui.enchantment.thunder_aspect":"雷属性",
     "item.ui.enchantment.wind_aspect":"風属性",
+    "item.ui.enchantment.knockback":"ノックバック",
 
     "item.ui.comment.skills":"スキル名",
     "item.ui.skill":"【スキル】",

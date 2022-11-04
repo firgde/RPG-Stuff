@@ -1,5 +1,13 @@
 {
     "item.comment":"Item Name",
+
+    "item.stick":"Stick",
+
+    "item.coal":"Coal",
+    "item.iron_ingot":"Iron Ingot",
+    "item.diamond":"Diamond",
+    "item.magma_stone":"Magma Stone",
+
     "item.wooden_sword":"Wooden Sword",
     "item.stone_sword":"Stone Sword",
     "item.iron_sword":"Iron Sword",
@@ -40,11 +48,6 @@
     "item.ice_ring":"Ring of Freeze",
     "item.thunder_ring":"Ring of Lightning",
     "item.wind_ring":"Ring of Gale",
-
-    "item.coal":"Coal",
-    "item.iron_ingot":"Iron Ingot",
-    "item.diamond":"Diamond",
-    "item.magma_stone":"Magma Stone",
     
     "item.bread":"Bread",
 
@@ -138,6 +141,7 @@
     "item.ui.enchantment.ice_aspect":"Ice Aspect",
     "item.ui.enchantment.thunder_aspect":"Thunder Aspect",
     "item.ui.enchantment.wind_aspect":"Wind Aspect",
+    "item.ui.enchantment.knockback":"Knockback",
 
     "item.ui.comment.skills":"Skill Names",
     "item.ui.skill":"MAINSKILL: ",
