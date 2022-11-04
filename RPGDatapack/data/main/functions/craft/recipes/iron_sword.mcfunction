@@ -8,5 +8,5 @@
     execute if score #craft buffer = #craft2 buffer run function items:1002_iron_sword
     execute at @s as @e[tag=crafter_middle,sort=nearest,limit=1] at @s if score #craft buffer = #craft2 buffer run function main:craft/common
 #リセット
-    advancement revoke @s only main:craft/test3
+    advancement revoke @s only main:craft/iron_sword
     tag @s remove crafted

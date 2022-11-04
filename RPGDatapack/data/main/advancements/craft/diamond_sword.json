@@ -11,7 +11,7 @@
                             "blocks": [
                                 "dispenser"
                             ],
-                            "nbt": "{Items:[{id:\"minecraft:oak_planks\",Count:1b,Slot:0b},{id:\"minecraft:oak_planks\",Count:1b,Slot:3b},{id:\"minecraft:stick\",Count:1b,Slot:6b}]}"
+                            "nbt": "{Items:[{Count:1b,Slot:0b,tag:{Customnbt:{id:\"diamond\"}}},{Count:1b,Slot:3b,tag:{Customnbt:{id:\"diamond\"}}},{tag:{Customnbt:{id:\"stick\"}},Count:1b,Slot:6b}]}"
                         }
                     }
                 }
@@ -28,7 +28,7 @@
                             "blocks": [
                                 "dispenser"
                             ],
-                            "nbt": "{Items:[{id:\"minecraft:oak_planks\",Count:1b,Slot:1b},{id:\"minecraft:oak_planks\",Count:1b,Slot:4b},{id:\"minecraft:stick\",Count:1b,Slot:7b}]}"
+                            "nbt": "{Items:[{Count:1b,Slot:1b,tag:{Customnbt:{id:\"diamond\"}}},{Count:1b,Slot:4b,tag:{Customnbt:{id:\"diamond\"}}},{tag:{Customnbt:{id:\"stick\"}},Count:1b,Slot:7b}]}"
                         }
                     }
                 }
@@ -45,7 +45,7 @@
                             "blocks": [
                                 "dispenser"
                             ],
-                            "nbt": "{Items:[{id:\"minecraft:oak_planks\",Count:1b,Slot:2b},{id:\"minecraft:oak_planks\",Count:1b,Slot:5b},{id:\"minecraft:stick\",Count:1b,Slot:8b}]}"
+                            "nbt": "{Items:[{Count:1b,Slot:2b,tag:{Customnbt:{id:\"diamond\"}}},{Count:1b,Slot:5b,tag:{Customnbt:{id:\"diamond\"}}},{tag:{Customnbt:{id:\"stick\"}},Count:1b,Slot:8b}]}"
                         }
                     }
                 }
@@ -56,6 +56,6 @@
         ["","2","3"]
     ],
     "rewards": {
-        "function": "main:craft/recipes/test5"
+        "function": "main:craft/recipes/diamond_sword"
     }
 }
