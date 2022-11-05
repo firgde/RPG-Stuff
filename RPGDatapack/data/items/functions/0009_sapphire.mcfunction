@@ -1,6 +1,6 @@
 #名前だとか説明文だとか
     data modify storage item: Item.id set value "minecraft:stick"
-    data modify storage item: Item.tag.display.Name set value '{"italic":false,"color":"green","translate":"item.sapphire"}'
+    data modify storage item: Item.tag.display.Name set value '{"italic":false,"color":"dark_purple","translate":"item.sapphire"}'
     data modify storage item: Item.tag.display.Lore set value ['{"italic":false,"color":"white","translate":"item.sapphire.lore"}','{"italic":false,"color":"white","translate":"item.sapphire.lore.second"}']
     data modify storage item: Item.tag.Customnbt.LoreCount set value 2
     scoreboard players set #Lore buffer 2

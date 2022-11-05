@@ -3,6 +3,7 @@
     advancement revoke @s only main:explore/enter/mountains
     advancement revoke @s only main:explore/enter/volcano
     advancement revoke @s only main:explore/enter/desert
+    advancement revoke @s only main:explore/enter/underworld
 #採掘可能ブロックの操作
     execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{tool:1b}}}}] run function main:collect/mining/modify_minables
 #雪原

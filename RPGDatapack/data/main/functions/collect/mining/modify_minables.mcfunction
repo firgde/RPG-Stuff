@@ -8,6 +8,7 @@
     execute if predicate main:explore/location/mountains run data modify storage collect: Minables set value "#main:collect/location/mountains"
     execute if predicate main:explore/location/volcano run data modify storage collect: Minables set value "#main:collect/location/volcano"
     execute if predicate main:explore/location/desert run data modify storage collect: Minables set value "#main:collect/location/desert"
+    execute if predicate main:explore/location/underworld run data modify storage collect: Minables set value "#main:collect/location/underworld"
     item modify entity @s weapon.mainhand main:collect/break_op/location
 #リセット
     data remove storage collect: Minables

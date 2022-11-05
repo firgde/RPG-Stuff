@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": {
+                "translate": "item.ruby",
+                "color": "blue",
+                "italic": false
+              }
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "item.ruby.lore",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "item.ruby.lore.second",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": " "
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "item.ui.rarity.open",
+                  "color": "white",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "translate": "item.ui.rarity.epic",
+                      "color": "blue",
+                      "bold": true,
+                      "italic": false,
+                      "extra": [
+                        {
+                          "translate": "item.ui.rarity.close",
+                          "color": "white",
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Customnbt:{id:\"ruby\",ItemType:0,LoreCount:2,rarity:3},CustomModelData:8}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
