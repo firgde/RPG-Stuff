@@ -1,11 +1,14 @@
 {
     "item.comment":"アイテム名",
+
     "item.stick":"棒",
 
     "item.coal":"石炭",
     "item.iron_ingot":"鉄インゴット",
     "item.diamond":"ダイヤモンド",
     "item.magma_stone":"マグマストーン",
+    "item.ruby":"ルビー",
+    "item.sapphire":"サファイア",
 
     "item.wooden_sword":"木の剣",
     "item.stone_sword":"石の剣",
@@ -54,6 +57,17 @@
 
 
     "item.comment.lore":"アイテム説明",
+    
+    "item.coal.lore":"燃料。",
+    "item.iron_ingot.lore":"道具作りのお供。",
+    "item.diamond.lore":"みんな大好きあの素材。",
+    "item.magma_stone.lore":"熱い溶岩が混じった石。",
+    "item.magma_stone.lore.second":"火属性アイテムのクラフトに使われる。",
+    "item.ruby.lore":"地下世界で見つかる素材の一つ。",
+    "item.ruby.lore.second":"炎の力を強める。",
+    "item.sapphire.lore":"地下世界で見つかる素材の一つ。",
+    "item.sapphire.lore.second":"氷の力を強める。",
+
     "item.wooden_sword.lore":"素朴な木で出来た剣。",
     "item.wooden_sword.lore.second":"強くはない。",
     "item.stone_sword.lore":"",
@@ -85,12 +99,6 @@
     "item.ice_ring.lore":"氷の力を宿した指輪。",
     "item.thunder_ring.lore":"雷の力を宿した指輪。",
     "item.wind_ring.lore":"風の力を宿した指輪。",
-
-    "item.coal.lore":"燃料。",
-    "item.iron_ingot.lore":"道具作りのお供。",
-    "item.diamond.lore":"みんな大好きあの素材。",
-    "item.magma_stone.lore":"熱い溶岩が混じった石。",
-    "item.magma_stone.lore.second":"火属性アイテムのクラフトに使われる。",
     
     "item.bread.lore":"こんがりと焼けた美味しそうなパン。",
 

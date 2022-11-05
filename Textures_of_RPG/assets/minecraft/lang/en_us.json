@@ -7,6 +7,8 @@
     "item.iron_ingot":"Iron Ingot",
     "item.diamond":"Diamond",
     "item.magma_stone":"Magma Stone",
+    "item.ruby":"Ruby",
+    "item.sapphire":"Sapphire",
 
     "item.wooden_sword":"Wooden Sword",
     "item.stone_sword":"Stone Sword",
@@ -53,7 +55,19 @@
 
     "item.quest_paper":"Quest Paper",
 
+
     "item.comment.lore":"Item Lore",
+
+    "item.coal.lore":"Fuel.",
+    "item.iron_ingot.lore":"The most used material.",
+    "item.diamond.lore":"The most popular material.",
+    "item.magma_stone.lore":"A stone mixed with lava.",
+    "item.magma_stone.lore.second":"It's used for crafting.",
+    "item.ruby.lore":"A material which is found in the underworld.",
+    "item.ruby.lore.second":"It increases power of fire.",
+    "item.sapphire.lore":"A material which is found in the underworld.",
+    "item.sapphire.lore.second":"It increases power of ice.",
+
     "item.wooden_sword.lore":"A Sword made from normal wood.",
     "item.wooden_sword.lore.second":"Don't expect much from it.",
     "item.stone_sword.lore":"",
@@ -86,12 +100,6 @@
     "item.ice_ring.lore":"The magical ring with the power of ice.",
     "item.thunder_ring.lore":"The magical ring with the power of thunder.",
     "item.wind_ring.lore":"The magical ring with the power of wind.",
-
-    "item.coal.lore":"It burns.",
-    "item.iron_ingot.lore":"The most used material.",
-    "item.diamond.lore":"The most popular material.",
-    "item.magma_stone.lore":"A stone mixed with lava.",
-    "item.magma_stone.lore.second":"It's used for crafting.",
     
     "item.bread.lore":"Oh, this one seems well-baked and tasty...",
 
