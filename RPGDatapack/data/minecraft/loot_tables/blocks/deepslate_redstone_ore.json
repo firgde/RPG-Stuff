@@ -12,7 +12,7 @@
               "entity": "this",
               "name": {
                 "translate": "item.ruby",
-                "color": "blue",
+                "color": "dark_purple",
                 "italic": false
               }
             },
@@ -58,7 +58,7 @@
                   "extra": [
                     {
                       "translate": "item.ui.rarity.epic",
-                      "color": "blue",
+                      "color": "dark_purple",
                       "bold": true,
                       "italic": false,
                       "extra": [
