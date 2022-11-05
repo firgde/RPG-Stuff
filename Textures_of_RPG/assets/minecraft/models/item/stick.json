@@ -10,7 +10,8 @@
         {"predicate":{"custom_model_data":3}, "model":"item/gold_ingot"},
         {"predicate":{"custom_model_data":4}, "model":"item/diamond"},
         {"predicate":{"custom_model_data":7}, "model":"item/magma_stone"},
-        {"predicate":{"custom_model_data":8}, "model":"item/echo_shard"},
+        {"predicate":{"custom_model_data":8}, "model":"item/ruby"},
+        {"predicate":{"custom_model_data":9}, "model":"item/sapphire"},
 
         {"predicate":{"custom_model_data":8000}, "model":"item/quest_paper_red"}
     ]
