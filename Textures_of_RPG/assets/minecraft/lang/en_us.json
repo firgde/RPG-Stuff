@@ -194,7 +194,7 @@
 
     "social.text.npc.continue":"[CONTINUE]",
 
-    "social.text.quest_book.current":"Status",
+    "social.text.quest_book.status":"Status",
     "social.text.quest_book.lvl_total":"Total Level: ",
     "social.text.quest_book.lvl_combat":"Combat Level: ",
     "social.text.quest_book.lvl_explore":"Exploring Level: ",

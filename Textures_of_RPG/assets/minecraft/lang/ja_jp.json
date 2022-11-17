@@ -193,7 +193,7 @@
 
     "social.text.npc.continue":"[続きを読む]",
 
-    "social.text.quest_book.current":"ステータス",
+    "social.text.quest_book.status":"ステータス",
     "social.text.quest_book.lvl_total":"総合レベル：",
     "social.text.quest_book.lvl_combat":"戦闘レベル：",
     "social.text.quest_book.lvl_explore":"探索レベル：",
