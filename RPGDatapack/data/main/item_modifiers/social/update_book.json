@@ -1,0 +1,6 @@
+[
+    {
+        "function": "set_nbt",
+        "tag": "{pages:['[{\"translate\":\"social.text.quest_book.status\"},{\"text\":\"\n\"},{\"translate\":\"social.text.quest_book.lvl_total\"},{\"score\":{\"name\":\"@s\",\"objective\":\"lvl_total\"}}]']}"
+    }    
+]
