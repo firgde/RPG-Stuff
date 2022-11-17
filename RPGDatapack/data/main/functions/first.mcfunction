@@ -42,7 +42,7 @@
         #scoreboard objectives add mov_dis dummy
         #scoreboard objectives add mov_point dummy
         #採集(防御、体力、魔法、運)
-        scoreboard objectives add lvl_colltect dummy
+        scoreboard objectives add lvl_collect dummy
         scoreboard objectives add xp_collect dummy
         scoreboard objectives add xp_need_collect dummy
         #手工(攻撃、知能、速度、集中)
