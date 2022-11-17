@@ -210,7 +210,7 @@
 
     "comment.vanilla.text":"change/remove vanilla texts",
     "container.crafting": "",
-    "gui.advancements":"Quests",
+    "gui.advancements":"Quest Book",
     "advancements.toast.task": "Quest Completed!",
     "advancements.toast.challenge": "Quest Completed!",
     "advancements.toast.goal": "Quest Completed!"
