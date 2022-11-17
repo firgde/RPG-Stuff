@@ -193,6 +193,15 @@
 
     "social.text.npc.continue":"[続きを読む]",
 
+    "social.text.quest_book.current":"ステータス",
+    "social.text.quest_book.lvl_total":"総合レベル：",
+    "social.text.quest_book.lvl_combat":"戦闘レベル：",
+    "social.text.quest_book.lvl_explore":"探索レベル：",
+    "social.text.quest_book.lvl_collect":"採取レベル：",
+    "social.text.quest_book.lvl_craft":"手工レベル：",
+    "social.text.quest_book.lvl_social":"社交レベル：",
+
+
     "social.text.npc.000":"どうも最近眠くてな...",
     "social.text.npc.000_1":"ゾンビのせいだと思っているんだ。",
     "social.text.npc.000_2":"どうかゾンビを倒してくれないか？",

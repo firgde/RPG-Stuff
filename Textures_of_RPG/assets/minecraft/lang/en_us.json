@@ -194,6 +194,14 @@
 
     "social.text.npc.continue":"[CONTINUE]",
 
+    "social.text.quest_book.current":"Status",
+    "social.text.quest_book.lvl_total":"Total Level: ",
+    "social.text.quest_book.lvl_combat":"Combat Level: ",
+    "social.text.quest_book.lvl_explore":"Exploring Level: ",
+    "social.text.quest_book.lvl_collect":"Collecting Level: ",
+    "social.text.quest_book.lvl_craft":"Crafting Level: ",
+    "social.text.quest_book.lvl_social":"Socialing Level: ",
+
     "social.text.npc.000":"I feel tired these days.",
     "social.text.npc.000_1":"The Zombies are haunting me, I think.",
     "social.text.npc.000_2":"So could you kill a zombie for me?",
