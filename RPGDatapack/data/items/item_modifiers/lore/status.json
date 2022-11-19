@@ -165,7 +165,8 @@
       [
         {
           "text": " \uE009",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.atk",
@@ -211,7 +212,8 @@
       [
         {
           "text": " \uE009",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.atk",
@@ -255,7 +257,8 @@
       [
         {
           "text": " \uE00A",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.mag",
@@ -301,7 +304,8 @@
       [
         {
           "text": " \uE00A",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.mag",
@@ -345,7 +349,8 @@
       [
         {
           "text": " \uE00B",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.tec",
@@ -391,7 +396,8 @@
       [
         {
           "text": " \uE00B",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.tec",
@@ -435,7 +441,8 @@
       [
         {
           "text": " \uE00C",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.hp",
@@ -481,7 +488,8 @@
       [
         {
           "text": " \uE00C",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.hp",
@@ -525,7 +533,8 @@
       [
         {
           "text": " \uE00D",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.int",
@@ -571,7 +580,8 @@
       [
         {
           "text": " \uE00D",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.int",
@@ -615,7 +625,8 @@
       [
         {
           "text": " \uE00E",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.def",
@@ -661,7 +672,8 @@
       [
         {
           "text": " \uE00E",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.def",
@@ -705,7 +717,8 @@
       [
         {
           "text": " \uE00F",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.spd",
@@ -751,7 +764,8 @@
       [
         {
           "text": " \uE00F",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.spd",
@@ -795,7 +809,8 @@
       [
         {
           "text": " \uE010",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.crt",
@@ -841,7 +856,8 @@
       [
         {
           "text": " \uE010",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.crt",
@@ -885,7 +901,8 @@
       [
         {
           "text": " \uE011",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.luk",
@@ -931,7 +948,8 @@
       [
         {
           "text": " \uE011",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.luk",
@@ -975,7 +993,8 @@
       [
         {
           "text": " \uE012",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.conc",
@@ -1021,7 +1040,8 @@
       [
         {
           "text": " \uE012",
-          "color":"white"
+          "color":"white",
+          "italic": false
         },
         {
           "translate": "item.ui.status.conc",
