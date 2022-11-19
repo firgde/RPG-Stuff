@@ -34,6 +34,8 @@
     function status:hp/adjust
 #エリアごとに採掘できるアイテムの設定
     execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{tool:1b}}}}] run function main:collect/mining/modify_minables
+#クエストブックなら内容を更新
+    execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{id:"quest_book"}}}}] run function main:social/quest_book/update
 #0より小さいなら調整
     scoreboard players operation @s atk > #0 const
     scoreboard players operation @s mag > #0 const
