@@ -1,7 +1,7 @@
 #ダメージ計算
     execute as @a[tag=attacker] run function status:_general/get/update
     #代入
-    scoreboard players operation @a[tag=attacker] atkBuffer = @a[tag=attacker] tec
+    scoreboard players operation @a[tag=attacker] atkBuffer = @a[tag=attacker] dex
     #引き絞った時間をダメージに(tick*5%)
     scoreboard players operation @a[tag=attacker] chargeTimer *= #5 const
     scoreboard players operation @a[tag=attacker] atkBuffer *= @a[tag=attacker] chargeTimer

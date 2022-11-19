@@ -70,11 +70,11 @@
         scoreboard objectives add mag_enchant dummy
         scoreboard objectives add mag_buff dummy
         #技巧(遠距離攻撃力)
-        scoreboard objectives add tec dummy
-        scoreboard objectives add tec_bonus dummy
-        scoreboard objectives add tec_base dummy
-        scoreboard objectives add tec_enchant dummy
-        scoreboard objectives add tec_buff dummy
+        scoreboard objectives add dex dummy
+        scoreboard objectives add dex_bonus dummy
+        scoreboard objectives add dex_base dummy
+        scoreboard objectives add dex_enchant dummy
+        scoreboard objectives add dex_buff dummy
         #体力(HPとその回復速度)
         scoreboard objectives add max_hp dummy
         scoreboard objectives add hp dummy

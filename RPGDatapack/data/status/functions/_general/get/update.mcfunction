@@ -1,7 +1,7 @@
 #bonus値リセット
     scoreboard players set @s atk_bonus 0
     scoreboard players set @s mag_bonus 0
-    scoreboard players set @s tec_bonus 0
+    scoreboard players set @s dex_bonus 0
     scoreboard players set @s max_hp_bonus 0
     scoreboard players set @s int_bonus 0
     scoreboard players set @s def_bonus 0
@@ -12,7 +12,7 @@
 #無印ステータスリセット
     scoreboard players operation @s atk = @s atk_base
     scoreboard players operation @s mag = @s mag_base
-    scoreboard players operation @s tec = @s tec_base
+    scoreboard players operation @s dex = @s dex_base
     scoreboard players operation @s max_hp = @s max_hp_base
     scoreboard players operation @s int = @s int_base
     scoreboard players operation @s def = @s def_base
@@ -39,7 +39,7 @@
 #0より小さいなら調整
     scoreboard players operation @s atk > #0 const
     scoreboard players operation @s mag > #0 const
-    scoreboard players operation @s tec > #0 const
+    scoreboard players operation @s dex > #0 const
     scoreboard players operation @s max_hp > #0 const
     scoreboard players operation @s int > #0 const
     scoreboard players operation @s def > #0 const

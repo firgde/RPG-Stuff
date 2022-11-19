@@ -13,7 +13,7 @@
 #ステータスとレア度設定
     scoreboard players set #atkbonus buffer 0
     scoreboard players set #magbonus buffer 0
-    scoreboard players set #tecbonus buffer 0
+    scoreboard players set #dexbonus buffer 0
     scoreboard players set #hpbonus buffer 0
     scoreboard players set #intbonus buffer 0
     scoreboard players set #defbonus buffer 0

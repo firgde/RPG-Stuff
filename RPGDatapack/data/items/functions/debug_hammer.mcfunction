@@ -20,7 +20,7 @@
 #ステータスとレア度、耐久値設定
     scoreboard players set #atkbonus buffer 999
     scoreboard players set #magbonus buffer 0
-    scoreboard players set #tecbonus buffer 0
+    scoreboard players set #dexbonus buffer 0
     scoreboard players set #hpbonus buffer 0
     scoreboard players set #intbonus buffer 0
     scoreboard players set #defbonus buffer 0
@@ -36,7 +36,7 @@
 #実際のステータス
     data modify storage item: Item.tag.Customnbt.status.atk set value 999
     data modify storage item: Item.tag.Customnbt.status.mag set value 0
-    data modify storage item: Item.tag.Customnbt.status.tec set value 0
+    data modify storage item: Item.tag.Customnbt.status.dex set value 0
     data modify storage item: Item.tag.Customnbt.status.hp set value 0
     data modify storage item: Item.tag.Customnbt.status.int set value 0
     data modify storage item: Item.tag.Customnbt.status.def set value 0

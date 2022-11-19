@@ -21,7 +21,7 @@
 #ステータスとレア度、耐久値設定
     scoreboard players set #atkbonus buffer 35
     scoreboard players set #magbonus buffer 0
-    scoreboard players set #tecbonus buffer 0
+    scoreboard players set #dexbonus buffer 0
     scoreboard players set #hpbonus buffer 0
     scoreboard players set #intbonus buffer 0
     scoreboard players set #defbonus buffer 0
@@ -37,7 +37,7 @@
     #実際のステータス
     data modify storage item: Item.tag.Customnbt.status.atk set value 35
     data modify storage item: Item.tag.Customnbt.status.mag set value 0
-    data modify storage item: Item.tag.Customnbt.status.tec set value 0
+    data modify storage item: Item.tag.Customnbt.status.dex set value 0
     data modify storage item: Item.tag.Customnbt.status.hp set value 0
     data modify storage item: Item.tag.Customnbt.status.int set value 0
     data modify storage item: Item.tag.Customnbt.status.def set value 0
@@ -48,6 +48,6 @@
     data modify storage item: Item.tag.Customnbt.Durability set value 1561
     data modify storage item: Item.tag.Customnbt.MaxDurability set value 1561
     data modify storage item: Item.tag.Customnbt.Enchantments set value [{id:"sharpness",lvl:2s,display:{"Name":"ダメージ増加 ","lvl":"II","status":"：攻撃",buff:10},Type:1},{id:"critical_strike",lvl:2s,display:{"Name":"急所突き ","lvl":"III","status":"：会心",buff:25},Type:1},{id:"fragility",lvl:2s,display:{"Name":"脆弱の呪い ","lvl":"I","status":"：耐久",buff:-5},Type:0}]
-    data modify storage item: Item.tag.Customnbt.Enchantbuff set value {atk:10,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:25,luk:0,conc:.0}
+    data modify storage item: Item.tag.Customnbt.Enchantbuff set value {atk:10,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:25,luk:0,conc:.0}
 #共通
     function items:set_data/

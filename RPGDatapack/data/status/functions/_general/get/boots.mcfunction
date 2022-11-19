@@ -1,7 +1,7 @@
 #/dATa gEt
     execute store result score @s atk_bonus run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.status.atk
     execute store result score @s mag_bonus run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.status.mag
-    execute store result score @s tec_bonus run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.status.tec
+    execute store result score @s dex_bonus run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.status.dex
     execute store result score @s max_hp_bonus run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.status.hp
     execute store result score @s int_bonus run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.status.int
     execute store result score @s def_bonus run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.status.def
@@ -12,7 +12,7 @@
 #エンチャント
     execute store result score @s atk_enchant run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.Enchantbuff.atk
     execute store result score @s mag_enchant run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.Enchantbuff.mag
-    execute store result score @s tec_enchant run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.Enchantbuff.tec
+    execute store result score @s dex_enchant run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.Enchantbuff.dex
     execute store result score @s max_hp_enchant run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.Enchantbuff.hp
     execute store result score @s int_enchant run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.Enchantbuff.int
     execute store result score @s def_enchant run data get entity @s Inventory[{Slot:100b}].tag.Customnbt.Enchantbuff.def
@@ -23,7 +23,7 @@
 #合計
     scoreboard players operation @s atk_bonus += @s atk_enchant
     scoreboard players operation @s mag_bonus += @s mag_enchant
-    scoreboard players operation @s tec_bonus += @s tec_enchant
+    scoreboard players operation @s dex_bonus += @s dex_enchant
     scoreboard players operation @s max_hp_bonus += @s max_hp_enchant
     scoreboard players operation @s int_bonus += @s int_enchant
     scoreboard players operation @s def_bonus += @s def_enchant

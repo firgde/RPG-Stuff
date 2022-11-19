@@ -353,7 +353,7 @@
           "italic": false
         },
         {
-          "translate": "item.ui.status.tec",
+          "translate": "item.ui.status.dex",
           "color": "white",
           "italic": false
         },
@@ -364,7 +364,7 @@
         },
         {
           "score": {
-            "name": "#tecbonus",
+            "name": "#dexbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -379,7 +379,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#tecbonus"
+            "name": "#dexbonus"
           },
           "score": "buffer"
         },
@@ -400,7 +400,7 @@
           "italic": false
         },
         {
-          "translate": "item.ui.status.tec",
+          "translate": "item.ui.status.dex",
           "color": "white",
           "italic": false
         },
@@ -409,7 +409,7 @@
         },
         {
           "score": {
-            "name": "#tecbonus",
+            "name": "#dexbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -424,7 +424,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#tecbonus"
+            "name": "#dexbonus"
           },
           "score": "buffer"
         },

@@ -115,7 +115,7 @@
 
     "item.ui.status.atk":"Atk\uF828\uF821",
     "item.ui.status.mag":"Mag \uF822",
-    "item.ui.status.tec":"Tec \uF822",
+    "item.ui.status.dex":"Dex \uF822",
     "item.ui.status.hp":"HP\uF828\uF824",
     "item.ui.status.int":"Int\uF828\uF822",
     "item.ui.status.def":"Def\uF827",
@@ -135,7 +135,7 @@
     "item.ui.enchantment.vulnerability":"Vulnerability",
     "item.ui.enchantment.wisdom":"Wisdom",
     "item.ui.enchantment.stupidity":"Stupidity",
-    "item.ui.enchantment.protection":"Protection",
+    "item.ui.enchantment.prodextion":"Prodextion",
     "item.ui.enchantment.scantiness":"Scantiness",
     "item.ui.enchantment.agility":"Agility",
     "item.ui.enchantment.burden":"Burden",

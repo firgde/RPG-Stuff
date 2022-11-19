@@ -11,7 +11,7 @@
 #ｽﾃｰﾀｽ更新
     execute store result score #atkbonus atk_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.atk
     execute store result score #magbonus mag_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.mag
-    execute store result score #tecbonus tec_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.tec
+    execute store result score #dexbonus dex_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.dex
     execute store result score #hpbonus max_hp_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.hp
     execute store result score #intbonus int_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.int
     execute store result score #defbonus def_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.def
@@ -21,7 +21,7 @@
     execute store result score #concbonus conc_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.conc
     execute store result score #atkbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.atk
     execute store result score #magbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.mag
-    execute store result score #tecbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.tec
+    execute store result score #dexbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.dex
     execute store result score #hpbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.hp
     execute store result score #intbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.int
     execute store result score #defbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.def
@@ -31,7 +31,7 @@
     execute store result score #concbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.conc
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.atk int 1 run scoreboard players operation #atkbonus buffer += #atkbonus atk_enchant
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.mag int 1 run scoreboard players operation #magbonus buffer += #magbonus mag_enchant
-    execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.tec int 1 run scoreboard players operation #tecbonus buffer += #tecbonus tec_enchant
+    execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.dex int 1 run scoreboard players operation #dexbonus buffer += #dexbonus dex_enchant
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.hp int 1 run scoreboard players operation #hpbonus buffer += #hpbonus max_hp_enchant
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.int int 1 run scoreboard players operation #intbonus buffer += #intbonus int_enchant
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantbuff.def int 1 run scoreboard players operation #defbonus buffer += #defbonus def_enchant

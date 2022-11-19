@@ -5,7 +5,7 @@
     #増加ｽﾃｰﾀｽ
     execute store result score #atkbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.atk
     execute store result score #magbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.mag
-    execute store result score #tecbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.tec
+    execute store result score #dexbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.dex
     execute store result score #hpbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.hp
     execute store result score #intbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.int
     execute store result score #defbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.def

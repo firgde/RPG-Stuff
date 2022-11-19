@@ -115,7 +115,7 @@
 
     "item.ui.status.atk":"攻撃 ",
     "item.ui.status.mag":"魔法 ",
-    "item.ui.status.tec":"技巧 ",
+    "item.ui.status.dex":"技巧 ",
     "item.ui.status.hp":"体力 ",
     "item.ui.status.int":"知能 ",
     "item.ui.status.def":"防御 ",
@@ -135,7 +135,7 @@
     "item.ui.enchantment.vulnerability":"柔弱の呪い",
     "item.ui.enchantment.wisdom":"知性",
     "item.ui.enchantment.stupidity":"愚鈍の呪い",
-    "item.ui.enchantment.protection":"ダメージ軽減",
+    "item.ui.enchantment.prodextion":"ダメージ軽減",
     "item.ui.enchantment.scantiness":"脆弱の呪い",
     "item.ui.enchantment.agility":"移動速度上昇",
     "item.ui.enchantment.burden":"移動速度低下",

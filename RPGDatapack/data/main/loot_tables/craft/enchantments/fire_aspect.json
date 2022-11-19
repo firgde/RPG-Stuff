@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"fire_aspect\",lvl:1s,\"Text\":'[{\"translate\":\"item.ui.enchantment.fire_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"fire_aspect\",lvl:1s,\"Text\":'[{\"translate\":\"item.ui.enchantment.fire_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:0}}}"
             }
           ],
           "conditions": [
@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"fire_aspect\",lvl:2s,\"Text\":'[{\"translate\":\"item.ui.enchantment.fire_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"fire_aspect\",lvl:2s,\"Text\":'[{\"translate\":\"item.ui.enchantment.fire_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:0}}}"
             }
           ],
           "conditions": [
@@ -61,7 +61,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"fire_aspect\",lvl:3s,\"Text\":'[{\"translate\":\"item.ui.enchantment.fire_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,tec:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"fire_aspect\",lvl:3s,\"Text\":'[{\"translate\":\"item.ui.enchantment.fire_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:0}}}"
             }
           ],
           "conditions": [

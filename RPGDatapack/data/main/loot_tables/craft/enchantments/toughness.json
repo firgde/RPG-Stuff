@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"vulnerability\",lvl:4s,Buffs:{atk:0,mag:0,tec:0,hp:-50,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" IV: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" -50\",\"color\":\"red\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"vulnerability\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:-50,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" IV: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" -50\",\"color\":\"red\"}]'}}"
             }
           ],
           "conditions": [
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"vulnerability\",lvl:3s,Buffs:{atk:0,mag:0,tec:0,hp:-30,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" III: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" -30\",\"color\":\"red\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"vulnerability\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:-30,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" III: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" -30\",\"color\":\"red\"}]'}}"
             }
           ],
           "conditions": [
@@ -59,7 +59,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"vulnerability\",lvl:2s,Buffs:{atk:0,mag:0,tec:0,hp:-20,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" II: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" -20\",\"color\":\"red\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"vulnerability\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:-20,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" II: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" -20\",\"color\":\"red\"}]'}}"
             }
           ],
           "conditions": [
@@ -83,7 +83,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"vulnerability\",lvl:1s,Buffs:{atk:0,mag:0,tec:0,hp:-10,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" I: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" -10\",\"color\":\"red\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"vulnerability\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:-10,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" I: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" -10\",\"color\":\"red\"}]'}}"
             }
           ],
           "conditions": [
@@ -108,7 +108,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:1s,Buffs:{atk:0,mag:0,tec:0,hp:15,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" +15\",\"color\":\"dark_green\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:15,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" +15\",\"color\":\"dark_green\"}]'}}"
             }
           ],
           "conditions": [
@@ -133,7 +133,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:2s,Buffs:{atk:0,mag:0,tec:0,hp:20,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" +20\",\"color\":\"dark_green\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:20,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" +20\",\"color\":\"dark_green\"}]'}}"
             }
           ],
           "conditions": [
@@ -158,7 +158,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:3s,Buffs:{atk:0,mag:0,tec:0,hp:35,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" +35\",\"color\":\"dark_green\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:35,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" +35\",\"color\":\"dark_green\"}]'}}"
             }
           ],
           "conditions": [
@@ -183,7 +183,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:4s,Buffs:{atk:0,mag:0,tec:0,hp:50,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" +60\",\"color\":\"dark_green\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:50,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.hp\",\"color\":\"gray\"},{\"text\":\" +60\",\"color\":\"dark_green\"}]'}}"
             }
           ],
           "conditions": [

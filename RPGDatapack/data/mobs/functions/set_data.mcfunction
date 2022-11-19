@@ -2,7 +2,7 @@
     execute store result score @s hp run data get storage mob: Data.status.hp
     execute store result score @s atk run data get storage mob: Data.status.baseAtk
     execute store result score @s mag run data get storage mob: Data.status.baseMag
-    execute store result score @s tec run data get storage mob: Data.status.baseTec
+    execute store result score @s dex run data get storage mob: Data.status.baseDex
     execute store result score @s def run data get storage mob: Data.status.baseDef
     execute store result score @s spd run data get storage mob: Data.status.baseSpd
     execute store result score @s add_pt run data get storage mob: Data.loot.xp
