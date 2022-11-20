@@ -3,5 +3,5 @@
 #Mob絞り込み(断じてパクッていない)
     execute as @e[team=hostile] run function main:combat/attack/specify/9
 #リセット
-    advancement revoke @s only main:combat/attack/dedext
+    advancement revoke @s only main:combat/attack/detect
     tag @s remove attacker
