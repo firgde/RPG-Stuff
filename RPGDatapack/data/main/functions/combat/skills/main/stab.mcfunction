@@ -15,6 +15,9 @@
     scoreboard players set #kbpowery buffer 10
     scoreboard players set #kbpowerz buffer 15
     execute rotated ~ 0 as @e[tag=hurt_skill] run function main:combat/damage/knockback
+    scoreboard players operation @e[tag=hurt_skill] damage = @s atkBuffer
     execute as @e[tag=hurt_skill] run function main:combat/damage/deal
+    #演出
+    playsound entity.drowned.shoot master @s ~ ~ ~ 1 2
 #リセット
     tag @s remove attacker
