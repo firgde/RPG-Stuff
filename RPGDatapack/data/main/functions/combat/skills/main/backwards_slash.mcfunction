@@ -22,5 +22,4 @@
     playsound entity.player.attack.sweep master @s ~ ~ ~ 1 1
     execute rotated ~ 0 run particle sweep_attack ^ ^1 ^-1
 #リセット
-    kill @e[sort=nearest,limit=1,tag=slash]
     tag @s remove attacker
