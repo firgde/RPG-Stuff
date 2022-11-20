@@ -153,6 +153,7 @@
     scoreboard players set #20 const 20
     scoreboard players set #80 const 80
     scoreboard players set #100 const 100
+    scoreboard players set #120 const 120
     scoreboard players set #1024 const 1024
     scoreboard players set #2000 const 2000
     scoreboard players set #10000 const 10000
