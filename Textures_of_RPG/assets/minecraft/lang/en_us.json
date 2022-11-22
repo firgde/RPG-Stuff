@@ -68,7 +68,7 @@
     "item.sapphire.lore":"A material which is found in the underworld.",
     "item.sapphire.lore.second":"It increases power of ice.",
 
-    "item.wooden_sword.lore":"A Sword made from normal wood.",
+    "item.wooden_sword.lore":"A Sword made of normal wood.",
     "item.wooden_sword.lore.second":"Don't expect much from it.",
     "item.stone_sword.lore":"",
     "item.iron_sword.lore":"",
@@ -78,8 +78,8 @@
     "item.amethyst_sword.lore":"This sword contains a vast amount of magical power.",
     "item.amethyst_sword.lore.second":"That increases various status.",
 
-    "item.wooden_hammer.lore":"A hammer made from normal wood.",
-    "item.wooden_hammer.lore.second":"Though, its hit is strong enough to fight.",
+    "item.wooden_hammer.lore":"A hammer made of normal wood.",
+    "item.wooden_hammer.lore.second":"Though, it's strong enough to fight.",
     "item.stone_hammer.lore":"A hammer made out of hard stone.",
     "item.stone_hammer.lore.second":"The stone makes it more durable.",
     "item.iron_hammer.lore":"The Smith's hand-made hammer.",
@@ -94,7 +94,6 @@
     "item.golden_wand.lore":"",
     "item.diamond_wand.lore":"",
     "item.amethyst_wand.lore":"The most powerful wand.",
-    "item.amethyst_wand.lore.second":"Increasing",
 
     "item.fire_ring.lore":"The magical ring with the power of fire.",
     "item.ice_ring.lore":"The magical ring with the power of ice.",
