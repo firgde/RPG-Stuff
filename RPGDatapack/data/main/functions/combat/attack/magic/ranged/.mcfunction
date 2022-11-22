@@ -4,7 +4,7 @@
     tp @s[tag=spd.normal] ^ ^ ^0.3
     tp @s[tag=spd.fast] ^ ^ ^1
     #当たり判定
-    execute at @s unless score @s playerID = @e[limit=1,dx=0,team=hostile] playerID as @e[dx=0] run function main:combat/attack/magic/damage
+    execute at @s unless score @s playerID = @e[limit=1,dx=0,team=hostile,type=!player] playerID as @e[limit=1,dx=0,team=hostile,type=!player] run function main:combat/attack/magic/damage
     #タイマー加算
     scoreboard players add @s flyTimer 1
     #時間切れで/kill
