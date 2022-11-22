@@ -165,4 +165,5 @@
     team add hostile
 #タイトルの表示時間
     title @a times 10 40 10
-    #execute as @a run attribute @s generic.attack_damage base set 10.19をどこかに追加して武器の攻撃力attributeを0に
+#攻撃力を一律10.19に
+    execute as @a run attribute @s generic.attack_damage base set 10.19
