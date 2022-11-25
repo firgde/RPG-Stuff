@@ -5,6 +5,7 @@
     scoreboard players set @s max_hp_base 100
     scoreboard players set @s int_base 0
     scoreboard players set @s def_base 0
+    scoreboard players set @s spd_base 0
     scoreboard players set @s crt_base 0
     scoreboard players set @s luk_base 0
     scoreboard players set @s conc_base 0
