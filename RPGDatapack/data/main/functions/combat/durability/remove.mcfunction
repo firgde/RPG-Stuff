@@ -24,3 +24,4 @@
     item modify entity @s weapon.mainhand items:lore/info
 #リセット
     data remove storage item: durability
+    data remove storage item: Item
