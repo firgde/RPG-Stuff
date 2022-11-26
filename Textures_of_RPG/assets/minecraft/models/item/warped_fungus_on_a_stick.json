@@ -12,6 +12,8 @@
         {"predicate":{"custom_model_data":1005}, "model":"item/netherite_sword"},
         {"predicate":{"custom_model_data":1006}, "model":"item/amethyst_sword"},
 
+        {"predicate":{"custom_model_data":1010}, "model":"item/ice_sword"},
+
         {"predicate":{"custom_model_data":1100}, "model":"item/wooden_hammer"},
         {"predicate":{"custom_model_data":1101}, "model":"item/stone_hammer"},
         {"predicate":{"custom_model_data":1102}, "model":"item/iron_hammer"},
