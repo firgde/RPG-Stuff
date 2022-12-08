@@ -182,7 +182,12 @@
     "combat.text.magic.no_cooldown":"Cooldown hasn't finished yet!",
     "combat.text.crit":"Critical Hit!",
 
-    "explore.text.enter.plains":"",
+    "explore.text.enter.plains":"The Plains",
+    "explore.text.enter.snowfield":"The Snowfield",
+    "explore.text.enter.mountains":"The Mountains",
+    "explore.text.enter.volcano":"The Volcano",
+    "explore.text.enter.desert":"The Desert",
+    "explore.text.enter.underworld":"The Underworld",
 
     "social.comment":"Texts for Social genre",
     "social.text.quest.recieve":"NEW QUEST RECIEVED",
