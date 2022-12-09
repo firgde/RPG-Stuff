@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 3,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Type:\"zombie\",CustomModelData:1,Pickup:0b}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Type:\"skeleton\",CustomModelData:1,Pickup:0b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

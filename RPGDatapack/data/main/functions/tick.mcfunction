@@ -20,6 +20,9 @@
     execute as @a run function status:int/tick
 #Mobスポナーのチェック
     execute at @a as @e[tag=spawner,type=!item,distance=..15] at @s run function mobs:summon/spawner/tick
+#自然スポーンするMob
+    #execute as @a at @s if biome #main:field if score @s spawnTimer matches 1.. run function mobs:tick
+    #1.19.3対応はよ
 #採掘スポットの鉱石抽選
     execute as @e[tag=mining_spot] at @s if block ~ ~ ~ air if data entity @s {PortalCooldown:0} unless entity @a[distance=10..] run function main:collect/mining/regenerate
     #function main:collect/mining/tick
