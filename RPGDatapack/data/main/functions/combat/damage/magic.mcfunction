@@ -1,5 +1,6 @@
 #引く
-    scoreboard players operation @s hp -= @s debuffDamage
+    scoreboard players operation @s damage = @s debuffDamage
+    function main:combat/damage/deal
 #演出
     function main:combat/damage/display
 #体力が0ならﾀﾋ
