@@ -15,7 +15,7 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt":"Damage.Amount",
+								"nbt":"Amount",
 								"storage":"damage:"
 							}
 						}

@@ -13,7 +13,7 @@
 #ダメージ減算
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage
     #ダメージ表示
-    execute store result storage damage: Damage.Amount int 1 run scoreboard players get @s damage
+    execute store result storage damage: Amount int 1 run scoreboard players get @s damage
     execute at @s run loot spawn ~ ~1.5 ~ loot main:combat/damage
     execute as @e[limit=1,sort=nearest,type=item] if entity @s[nbt={Item:{tag:{DisplayDamage:1b}}}] run tag @s add dmg_display
     execute as @e[tag=dmg_display,limit=1,sort=nearest] run data modify entity @s CustomName set from entity @s Item.tag.display.Name
@@ -30,5 +30,5 @@
 #処理終わり
     tag @s remove hurt
     tag @s remove hurt_skill
-    #data remove storage damage: Damage.Amount
+    #data remove storage damage: Amount
     scoreboard players set #10000 buffer 10000
