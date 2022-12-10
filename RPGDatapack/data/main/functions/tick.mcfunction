@@ -27,5 +27,5 @@
     execute as @e[tag=mining_spot] at @s if block ~ ~ ~ air if data entity @s {PortalCooldown:0} unless entity @a[distance=10..] run function main:collect/mining/regenerate
     #function main:collect/mining/tick
 #ｴﾝﾁｬﾝﾄ台周りの仕様
-    execute as @e[type=item_frame,tag=enchanter] at @s run function main:craft/enchanting/display_item
+    execute as @e[type=item_frame,tag=enchanter] at @s if entity @p[distance=..5] run function main:craft/enchanting/display_item
 ###(どれもプレイヤーが近くにいると動作するものなので統合できるかも)
