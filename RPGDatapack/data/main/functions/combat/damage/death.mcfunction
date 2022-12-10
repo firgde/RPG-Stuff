@@ -5,5 +5,3 @@
     scoreboard players operation @s[type=player] hp = @s[type=player] max_hp
     kill @s
     playsound entity.arrow.hit_player master @p[tag=attacker] ~ ~ ~ 1 1
-#消す
-    tag @s remove attacker
