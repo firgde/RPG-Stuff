@@ -5,9 +5,15 @@
 #ダメージを取得
     execute store result score @s damage run scoreboard players get @e[limit=1,sort=nearest,tag=magic.attack] mag
 #演出
-    execute at @s run particle explosion ~ ~ ~ 0.5 0.5 0.5 0 1
+    execute at @s run particle enchanted_hit ~ ~ ~ 0.5 0.5 0.5 0.5 10
     effect give @s[type=!#main:undead] instant_damage 1 0 true
     effect give @s[type=#main:undead] instant_health 1 0 true
+#属性を特定
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.generic] run scoreboard players set #damagecolor buffer 0
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.fire] run scoreboard players set #damagecolor buffer 2
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.ice] run scoreboard players set #damagecolor buffer 3
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.thunder] run scoreboard players set #damagecolor buffer 4
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.wind] run scoreboard players set #damagecolor buffer 5
 #多段ヒット防止
     kill @e[tag=magic,sort=nearest,limit=1,tag=!multiple_hit]
 #からの計算
