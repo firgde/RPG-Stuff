@@ -5,7 +5,8 @@
 #ダメージを取得
     execute store result score @s damage run scoreboard players get @e[limit=1,sort=nearest,tag=magic.attack] mag
 #演出
-    execute at @s run particle enchanted_hit ~ ~ ~ 0.5 0.5 0.5 0.5 10
+    particle enchanted_hit ~ ~ ~ 0.1 0.1 0.1 0.5 25
+    particle crit ~ ~ ~ 0.1 0.3 0.1 0.5 25
     effect give @s[type=!#main:undead] instant_damage 1 0 true
     effect give @s[type=#main:undead] instant_health 1 0 true
 #属性を特定
