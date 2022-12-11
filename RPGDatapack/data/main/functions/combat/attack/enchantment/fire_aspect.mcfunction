@@ -7,5 +7,7 @@
     execute if score #lvl buffer matches 1 store result storage damage: Damage.debuffDamage int 0.05 run scoreboard players get @a[limit=1,tag=attacker] atk
     execute if score #lvl buffer matches 2 store result storage damage: Damage.debuffDamage int 0.05 run scoreboard players get @a[limit=1,tag=attacker] atk
     execute if score #lvl buffer matches 3 store result storage damage: Damage.debuffDamage int 0.1 run scoreboard players get @a[limit=1,tag=attacker] atk
+#表示する色
+    scoreboard players set #damagecolor buffer 2
 #そして適用
     execute as @e[tag=hurt] run function main:combat/debuff/fire

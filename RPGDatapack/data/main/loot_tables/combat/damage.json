@@ -15,9 +15,188 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt":"Amount",
-								"storage":"damage:"
+								"nbt": "Amount",
+								"storage": "damage:"
 							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#damagecolor"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"nbt": "Amount",
+								"storage": "damage:",
+								"color": "red"
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#damagecolor"
+								},
+								"score": "buffer"
+							},
+							"range": 1
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"nbt": "Amount",
+								"storage": "damage:",
+								"color": "#FF4500"
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#damagecolor"
+								},
+								"score": "buffer"
+							},
+							"range": 2
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"nbt": "Amount",
+								"storage": "damage:",
+								"color": "aqua"
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#damagecolor"
+								},
+								"score": "buffer"
+							},
+							"range": 3
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"nbt": "Amount",
+								"storage": "damage:",
+								"color": "yellow"
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#damagecolor"
+								},
+								"score": "buffer"
+							},
+							"range": 4
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"nbt": "Amount",
+								"storage": "damage:",
+								"color": "green"
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#damagecolor"
+								},
+								"score": "buffer"
+							},
+							"range": 5
 						}
 					]
 				}
