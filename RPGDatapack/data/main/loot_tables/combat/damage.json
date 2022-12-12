@@ -16,7 +16,8 @@
 							"entity": "this",
 							"name": {
 								"nbt": "Amount",
-								"storage": "damage:"
+								"storage": "damage:",
+								"font":"damage"
 							}
 						}
 					],
@@ -49,7 +50,8 @@
 							"name": {
 								"nbt": "Amount",
 								"storage": "damage:",
-								"color": "red"
+								"color": "red",
+								"font":"damage"
 							}
 						}
 					],
@@ -82,7 +84,8 @@
 							"name": {
 								"nbt": "Amount",
 								"storage": "damage:",
-								"color": "#FF4500"
+								"color": "#FF4500",
+								"font":"damage"
 							}
 						}
 					],
@@ -115,7 +118,8 @@
 							"name": {
 								"nbt": "Amount",
 								"storage": "damage:",
-								"color": "aqua"
+								"color": "aqua",
+								"font":"damage"
 							}
 						}
 					],
@@ -148,7 +152,8 @@
 							"name": {
 								"nbt": "Amount",
 								"storage": "damage:",
-								"color": "yellow"
+								"color": "yellow",
+								"font":"damage"
 							}
 						}
 					],
@@ -181,7 +186,8 @@
 							"name": {
 								"nbt": "Amount",
 								"storage": "damage:",
-								"color": "green"
+								"color": "green",
+								"font":"damage"
 							}
 						}
 					],
