@@ -1,5 +1,5 @@
 #演出
-    execute at @s run particle cloud ~ ~0.75 ~ 0.0075 0.0075 0.0075 0.01 15 normal
+    execute at @s run particle snowflake ~ ~0.75 ~ 0.0075 0.0075 0.0075 0.01 15 normal
 #時間の減算
     scoreboard players remove @s debuffTimer 1
     #もしタイマー<=0なら、デバフ除去
