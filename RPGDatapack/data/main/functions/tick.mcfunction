@@ -1,7 +1,3 @@
-#ダメージ処理のために無敵に
-    effect give @a resistance 1000000 255 true
-#餓死しないために満腹度回復
-    effect give @a saturation 1000000 255 true
 #体力の表示
     execute as @a run function main:update_health
 #魔法攻撃の処理

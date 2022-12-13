@@ -33,6 +33,10 @@
 #他のスコアに関与するもの
     function status:int/calc
     function status:hp/adjust
+#ダメージ処理のために無敵に
+    effect give @a resistance 1000000 255 true
+#餓死しないために満腹度回復
+    effect give @a saturation 1000000 255 true
 #エリアごとに採掘できるアイテムの設定
     execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{tool:1b}}}}] run function main:collect/mining/modify_minables
 #クエストブックなら内容を更新
