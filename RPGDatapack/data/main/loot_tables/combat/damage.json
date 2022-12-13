@@ -50,7 +50,7 @@
 							"name": {
 								"nbt": "Amount",
 								"storage": "damage:",
-								"color": "red",
+								"color": "#FF0000",
 								"font":"damage"
 							}
 						}

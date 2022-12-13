@@ -5,4 +5,4 @@
 #表示する色を変える
     scoreboard players set #damagecolor buffer 1
 #通知
-    tellraw @s {"translate":"combat.text.crit","color":"red"}
+    tellraw @s {"translate":"combat.text.crit","color":"#FF0000"}
