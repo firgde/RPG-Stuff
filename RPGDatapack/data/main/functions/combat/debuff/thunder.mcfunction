@@ -1,8 +1,9 @@
 #他のデバフを上書き
+    execute if entity @s[tag=!debuff.thunder] run scoreboard players set @s debuffTimer 0
+    execute if entity @s[tag=debuff.ice] run scoreboard players operation @s atk -= @s atk_buff
     tag @s remove debuff.fire
     tag @s remove debuff.ice
     tag @s remove debuff.wind
-    execute if entity @s[tag=!debuff.thunder] run scoreboard players set @s debuffTimer 0
     data modify entity @s HasVisualFire set value 0b
 #痺れる
     execute store result score #buff debuffTimer run data get storage damage: Damage.debuffTimer
