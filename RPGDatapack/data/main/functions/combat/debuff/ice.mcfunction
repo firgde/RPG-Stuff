@@ -2,6 +2,7 @@
     tag @s remove debuff.fire
     tag @s remove debuff.thunder
     tag @s remove debuff.wind
+    execute if entity @s[tag=!debuff.ice] run scoreboard players set @s debuffTimer 0
     data modify entity @s HasVisualFire set value 0b
 #凍る
     execute store result score #buff debuffTimer run data get storage damage: Damage.debuffTimer
