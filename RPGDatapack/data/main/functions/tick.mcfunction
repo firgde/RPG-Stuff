@@ -1,7 +1,7 @@
 #体力の表示
     execute as @a run function main:update_health
 #魔法攻撃の処理
-    execute as @e[type=armor_stand,tag=magic] at @s run function main:combat/attack/magic/common
+    execute as @e[type=armor_stand,tag=magic] at @s run function main:combat/attack/magic/tick/
 #デバフ処理
     execute as @e[tag=debuffed] run function main:combat/debuff/tick/
 #スキルのクールダウン
