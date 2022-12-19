@@ -17,5 +17,7 @@
     execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.wind] run scoreboard players set #damagecolor buffer 5
 #多段ヒット防止
     kill @e[tag=magic,sort=nearest,limit=1,tag=!multiple_hit]
+#追尾されません
+    tag @s remove target
 #からの計算
     function main:combat/damage/deal
