@@ -1,0 +1,78 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "stick",
+                    "functions": [
+                        {
+                            "function": "copy_nbt",
+                            "source": {
+                                "type": "storage",
+                                "source": "money:"
+                            },
+                            "ops": [
+                                {
+                                    "op": "replace",
+                                    "source": "sum",
+                                    "target": "Customnbt.sum"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "translate":"item.purse",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "translate":"item.purse.lore",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": " "
+                                },
+                                {
+                                    "translate":"social.text.money",
+                                    "color": "gray",
+                                    "italic": false,
+                                    "extra":[
+                                        {
+                                            "score": {
+                                                "name": "@s",
+                                                "objective": "money"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": " "
+                                },
+                                {
+                                    "translate": "item.ui.rarity.common",
+                                    "color":"white",
+                                    "bold": true,
+                                    "italic":false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:8998}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

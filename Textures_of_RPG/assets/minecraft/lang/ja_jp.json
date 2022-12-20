@@ -52,6 +52,7 @@
     "item.wind_ring":"疾風の指輪",
 
     "item.whetstone":"砥石",
+    "item.quest_book":"クエストブック",
     
     "item.bread":"パン",
 
@@ -216,6 +217,9 @@
     "social.text.quest.000.name":"テスト",
     "social.text.quest.000.content":"ゾンビを一体倒す",
     "social.text.quest.000.rewards":"ダイヤモンドx5",
+
+    "social.text.money":"総額：",
+
 
     "comment.debugging":"デバッグ用メッセージ",
     "debugging.damage":"ダメージ:",

@@ -52,6 +52,7 @@
         #社交(魔法、知能、技巧、会心)
         scoreboard objectives add dialogue trigger
         scoreboard objectives add dprogress dummy
+        scoreboard objectives add money dummy
         scoreboard objectives add lvl_social dummy
         scoreboard objectives add xp_social dummy
         scoreboard objectives add xp_need_social dummy

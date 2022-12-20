@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "villager_trade",
+            "conditions": {
+                "item": {
+                    "nbt": "{CustomModelData:1100}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:social/npc/001/buy/1100_wooden_hammer"
+    }
+}

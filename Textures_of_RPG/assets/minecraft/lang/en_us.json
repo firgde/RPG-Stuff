@@ -52,6 +52,7 @@
     "item.wind_ring":"Ring of Gale",
 
     "item.whetstone":"Whetstone",
+    "item.quest_book":"Quest Book",
     
     "item.bread":"Bread",
 
@@ -221,7 +222,10 @@
     "social.text.quest.000.content":"Defeat a Zombie",
     "social.text.quest.000.rewards":"5xDiamond",
 
-    "comment.debugging":"Debugging Messages",
+    "social.text.money":"Sum: ",
+
+
+    "comment.debugging":"Debugging go brrrrrr",
     "debugging.damage":"Damage: ",
     "debugging.maybehedied":"Maybe I died.   ",
 
