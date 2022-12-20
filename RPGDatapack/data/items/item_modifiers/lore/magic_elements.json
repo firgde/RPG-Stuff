@@ -4,13 +4,16 @@
     "entity": "this",
     "lore": [
       {
-        "translate": "item.ui.text.magic.element",
+        "translate": "item.ui.repairamount",
         "color": "gray",
         "italic": false,
         "extra": [
           {
-            "text": "\uE000",
-            "color": "white",
+            "score": {
+              "name": "#repairamount",
+              "objective": "buffer"
+            },
+            "color": "gray",
             "italic": false
           }
         ]
@@ -41,7 +44,7 @@
         "italic": false,
         "extra": [
           {
-            "text": "\uE001",
+            "text": "\uE000",
             "color": "white",
             "italic": false
           }
@@ -73,7 +76,7 @@
         "italic": false,
         "extra": [
           {
-            "text": "\uE002",
+            "text": "\uE001",
             "color": "white",
             "italic": false
           }
@@ -105,7 +108,7 @@
         "italic": false,
         "extra": [
           {
-            "text": "\uE003",
+            "text": "\uE002",
             "color": "white",
             "italic": false
           }
@@ -137,7 +140,7 @@
         "italic": false,
         "extra": [
           {
-            "text": "\uE004",
+            "text": "\uE003",
             "color": "white",
             "italic": false
           }
@@ -169,7 +172,7 @@
         "italic": false,
         "extra": [
           {
-            "text": "\uE005",
+            "text": "\uE004",
             "color": "white",
             "italic": false
           }
@@ -188,6 +191,38 @@
           "score": "buffer"
         },
         "range": 5
+      }
+    ]
+  },
+  {
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.ui.text.magic.element",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "\uE005",
+            "color": "white",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "target": {
+            "type": "fixed",
+            "name": "#element"
+          },
+          "score": "buffer"
+        },
+        "range": 6
       }
     ]
   },

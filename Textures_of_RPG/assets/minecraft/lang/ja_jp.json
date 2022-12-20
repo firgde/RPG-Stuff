@@ -50,6 +50,8 @@
     "item.ice_ring":"氷結の指輪",
     "item.thunder_ring":"雷撃の指輪",
     "item.wind_ring":"疾風の指輪",
+
+    "item.whetstone":"砥石",
     
     "item.bread":"パン",
 
@@ -99,6 +101,8 @@
     "item.ice_ring.lore":"氷の力を宿した指輪。",
     "item.thunder_ring.lore":"雷の力を宿した指輪。",
     "item.wind_ring.lore":"風の力を宿した指輪。",
+
+    "item.whetstone.lore":"武器の修理を可能にする石。",
     
     "item.bread.lore":"こんがりと焼けた美味しそうなパン。",
 
@@ -175,6 +179,7 @@
 
     "item.ui.hpheal":"HP回復量：",
     "item.ui.mpheal":"MP回復量：",
+    "item.ui.repairamount":"耐久値回復量：",
 
     "combat.comment":"戦闘テキスト",
     "combat.text.skill.pre":"",

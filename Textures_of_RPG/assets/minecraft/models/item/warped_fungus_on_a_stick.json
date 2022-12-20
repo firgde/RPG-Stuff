@@ -38,6 +38,7 @@
         {"predicate":{"custom_model_data":2002}, "model":"item/thunder_ring"},
         {"predicate":{"custom_model_data":2003}, "model":"item/wind_ring"},
         {"predicate":{"custom_model_data":2004}, "model":"item/poison_ring"},
-        {"predicate":{"custom_model_data":2005}, "model":"item/wither_ring"}
+        {"predicate":{"custom_model_data":2005}, "model":"item/wither_ring"},
+        {"predicate":{"custom_model_data":2100}, "model":"item/whetstone"}
     ]
 }

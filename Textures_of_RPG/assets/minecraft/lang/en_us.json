@@ -50,6 +50,8 @@
     "item.ice_ring":"Ring of Freeze",
     "item.thunder_ring":"Ring of Lightning",
     "item.wind_ring":"Ring of Gale",
+
+    "item.whetstone":"Whetstone",
     
     "item.bread":"Bread",
 
@@ -99,6 +101,8 @@
     "item.ice_ring.lore":"The magical ring with the power of ice.",
     "item.thunder_ring.lore":"The magical ring with the power of thunder.",
     "item.wind_ring.lore":"The magical ring with the power of wind.",
+
+    "item.whetstone.lore":"This makes the repair of weapons possible.",
     
     "item.bread.lore":"Oh, this one seems well-baked and tasty...",
 
@@ -174,6 +178,7 @@
 
     "item.ui.hpheal":"HP healing: ",
     "item.ui.mpheal":"MP healing: ",
+    "item.ui.repairamount":"Repairing: ",
 
     "combat.text.skill.pre":"Used ",
     "combat.text.skill.end":"!",
