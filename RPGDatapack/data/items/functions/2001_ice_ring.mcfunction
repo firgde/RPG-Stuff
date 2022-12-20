@@ -23,7 +23,7 @@
     data modify storage item: Item.tag.Customnbt.magicType.ArmorItems set value [{},{},{},{id:"minecraft:stick",tag:{CustomModelData:1,CustomDamage:{damageType:"ice",debuffTimer:100,buffAmount:-5}},Count:1b}]
     #data modify storage item: Item.tag.Customnbt.magicType.Time set value 3
     #data modify storage item: Item.tag.Customnbt.magicType.CoolDown set value 3
-    scoreboard players set #element buffer 1
+    scoreboard players set #element buffer 2
 #ステータスとレア度、耐久値設定
     scoreboard players set #atkbonus buffer 0
     scoreboard players set #magbonus buffer 5
