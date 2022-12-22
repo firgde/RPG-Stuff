@@ -162,6 +162,7 @@
     scoreboard players set #2^20 const 1048576
     scoreboard players set #2^21 const 2097152
     scoreboard players set #2^24 const 16777216
+    scoreboard players set #2^26 const 67108864
 #チーム
     team add hostile
 #タイトルの表示時間
