@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{Customnbt:{money:1b}}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:social/get_money"
+    }
+}

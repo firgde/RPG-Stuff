@@ -6,6 +6,8 @@
     execute store result score @s def run data get storage mob: Data.status.baseDef
     execute store result score @s spd run data get storage mob: Data.status.baseSpd
     execute store result score @s add_pt run data get storage mob: Data.loot.xp
+#loot_tableを参照
+    data modify entity @s DeathLootTable set from storage mob: Data.loot.DeathLootTable
 #ID指定
     scoreboard players add #ID buffer 1
     scoreboard players operation #ID buffer %= #1024 const
@@ -42,7 +44,6 @@
     execute unless score #IDbuffer buffer matches 1.. run tag @s add 0.0
     execute if score #IDbuffer buffer matches 1.. run scoreboard players remove #IDbuffer buffer 1
 #attributeに関与するもの
-    #execute store result entity @s Attributes[{Name:"minecraft:generic.attack_damage"}].Base float 0.666666 run data get storage mob: Data.status.baseAtk
     execute store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base float 0.01 run data get storage mob: Data.status.baseSpd
 #演出
     execute at @s run particle poof ~ ~ ~ 0.2 0.5 0.2 0.01 15
