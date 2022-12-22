@@ -222,7 +222,7 @@
     "social.text.quest.000.content":"Defeat a Zombie",
     "social.text.quest.000.rewards":"5xDiamond",
 
-    "social.text.money":"Sum: ",
+    "social.text.nomoney":"You don't have enough money!",
 
 
     "comment.debugging":"Debugging go brrrrrr",

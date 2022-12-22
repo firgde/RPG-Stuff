@@ -5,22 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "stick",
+                    "name": "warped_fungus_on_a_stick",
                     "functions": [
-                        {
-                            "function": "copy_nbt",
-                            "source": {
-                                "type": "storage",
-                                "source": "money:"
-                            },
-                            "ops": [
-                                {
-                                    "op": "replace",
-                                    "source": "sum",
-                                    "target": "Customnbt.sum"
-                                }
-                            ]
-                        },
                         {
                             "function": "set_name",
                             "entity": "this",
@@ -43,22 +29,6 @@
                                     "text": " "
                                 },
                                 {
-                                    "translate":"social.text.money",
-                                    "color": "gray",
-                                    "italic": false,
-                                    "extra":[
-                                        {
-                                            "score": {
-                                                "name": "@s",
-                                                "objective": "money"
-                                            }
-                                        }
-                                    ]
-                                },
-                                {
-                                    "text": " "
-                                },
-                                {
                                     "translate": "item.ui.rarity.common",
                                     "color":"white",
                                     "bold": true,
@@ -68,7 +38,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:8998}"
+                            "tag": "{CustomModelData:8998,Customnbt:{id:\"purse\"}}"
                         }
                     ]
                 }
