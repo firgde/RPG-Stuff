@@ -19,13 +19,12 @@
     #data modify storage item: Item.tag.Customnbt.HasSkill set value 0b
     data modify storage item: Item.tag.Customnbt.rarity set value 1
     data modify storage item: Item.tag.Customnbt.repairAmount set value 10
-    scoreboard players set #repairamount buffer 10
     #魔法専用
     #data modify storage item: Item.tag.Customnbt.magicType.Tag set value "magic.fire"
     #data modify storage item: Item.tag.Customnbt.magicType.ArmorItems set value [{},{},{},{id:"minecraft:stick",tag:{CustomModelData:1,CustomDamage:{damageType:"fire",debuffTimer:40,debuffDamage:1}},Count:1b}]
     #data modify storage item: Item.tag.Customnbt.magicType.Time set value 3
     #data modify storage item: Item.tag.Customnbt.magicType.CoolDown set value 3
-    scoreboard players set #element buffer 0
+    #scoreboard players set #element buffer 0
 #ステータスとレア度、耐久値設定
     scoreboard players set #atkbonus buffer -25
     scoreboard players set #magbonus buffer 0
@@ -38,8 +37,8 @@
     scoreboard players set #lukbonus buffer 0
     scoreboard players set #concbonus buffer -25
     scoreboard players set #rarity buffer 1
-    scoreboard players set #durability buffer 5
-    scoreboard players set #maxdurability buffer 5
+    scoreboard players set #durability buffer 0
+    scoreboard players set #maxdurability buffer 0
     scoreboard players set #enchantcount buffer 0
     scoreboard players set #hasskill buffer 0
 #実際のステータス
@@ -53,7 +52,7 @@
     data modify storage item: Item.tag.Customnbt.status.crt set value 0
     data modify storage item: Item.tag.Customnbt.status.luk set value 0
     data modify storage item: Item.tag.Customnbt.status.conc set value -25
-    data modify storage item: Item.tag.Customnbt.Durability set value 5
-    data modify storage item: Item.tag.Customnbt.MaxDurability set value 5
+    data modify storage item: Item.tag.Customnbt.Durability set value 0
+    data modify storage item: Item.tag.Customnbt.MaxDurability set value 0
 #共通
     function items:set_data/

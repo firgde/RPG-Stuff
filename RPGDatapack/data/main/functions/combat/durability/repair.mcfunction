@@ -23,6 +23,8 @@
     item modify entity @s weapon.mainhand items:lore/status
     function items:set_data/loop_mainhand
     item modify entity @s weapon.mainhand items:lore/info
+#砥石は消える
+    item replace entity @s weapon.offhand with air
 #リセット
     advancement revoke @s only main:combat/attack/r_click_offhand
     data remove storage item: durability

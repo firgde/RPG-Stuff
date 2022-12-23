@@ -4,41 +4,6 @@
     "entity": "this",
     "lore": [
       {
-        "translate": "item.ui.repairamount",
-        "color": "gray",
-        "italic": false,
-        "extra": [
-          {
-            "score": {
-              "name": "#repairamount",
-              "objective": "buffer"
-            },
-            "color": "gray",
-            "italic": false
-          }
-        ]
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "#element"
-          },
-          "score": "buffer"
-        },
-        "range": 0
-      }
-    ]
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
         "translate": "item.ui.text.magic.element",
         "color": "gray",
         "italic": false,

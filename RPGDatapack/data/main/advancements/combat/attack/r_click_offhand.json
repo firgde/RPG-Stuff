@@ -18,12 +18,29 @@
             "entity": "this",
             "predicate": {
               "equipment": {
-                  "offhand": {
-                      "nbt": "{Customnbt:{offhandOnly:1b}}"
-                  }
+				"mainhand": {
+					"nbt": "{Customnbt:{weapon:1b}}"
+				},
+                "offhand": {
+                    "nbt": "{Customnbt:{offhandOnly:1b}}"
+                }
               }
             }
-          }
+          },
+		  {
+			"condition": "inverted",
+			"term": {
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"equipment": {
+						"mainhand": {
+							"nbt":"{Damage:0}"
+						}
+					}
+				}
+			}
+		  }
         ]
       }
     }
