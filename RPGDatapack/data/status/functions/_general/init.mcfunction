@@ -9,12 +9,19 @@
     scoreboard players set @s crt_base 0
     scoreboard players set @s luk_base 0
     scoreboard players set @s conc_base 0
-#全レベルリセット
+#全レベル&経験値リセット
     scoreboard players set @s lvl_total 0
     scoreboard players set @s lvl_combat 0
     scoreboard players set @s lvl_explore 0
     scoreboard players set @s lvl_collect 0
     scoreboard players set @s lvl_craft 0
     scoreboard players set @s lvl_social 0
+    
+    scoreboard players set @s xp_total 0
+    scoreboard players set @s xp_combat 0
+    scoreboard players set @s xp_explore 0
+    scoreboard players set @s xp_collect 0
+    scoreboard players set @s xp_craft 0
+    scoreboard players set @s xp_social 0
 #更新
     function status:_general/get/update

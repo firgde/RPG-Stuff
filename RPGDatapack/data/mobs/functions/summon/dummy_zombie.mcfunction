@@ -4,7 +4,7 @@
     data modify storage mob: Data.status.baseDef set value 10
     data modify storage mob: Data.status.baseSpd set value 20
     data modify storage mob: Data.status.hp set value 100
-    data modify storage mob: Data.loot.xp set value 0
+    data modify storage mob: Data.loot.xp set value 100
     data modify storage mob: Data.loot.DeathLootTable set value "mobs:drops/dummy_zombie"
 #共通
     execute as @e[sort=nearest,limit=1,team=hostile,tag=spawn] run function mobs:set_data

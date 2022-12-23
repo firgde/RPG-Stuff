@@ -1,13 +1,16 @@
+#剰余計算
+    scoreboard players operation #%2 buffer = @s lvl_combat
+    scoreboard players operation #%10 buffer = @s lvl_combat
+    scoreboard players operation #%2 buffer %= #2 const
+    scoreboard players operation #%10 buffer %= #10 const
 #わーいﾚﾍﾞﾙｱｯﾌﾟだー
-    scoreboard players operation @s buffer = @s lvl_combat
-    scoreboard players add @s lvl_combat 1
-    tellraw @a ["", {"selector": "@s","bold": true}, {"text": "の"},{"text": "戦闘","color": "red"},{"text": "レベルがアップした！   "},{"score": {"name": "*","objective": "buffer"},"color": "#B5FFBA"}, {"text": " → "}, {"score": {"name": "*","objective": "lvl_combat"},"color": "green"}]
-#次に必要なXP計算((Lv^2+Lv)*5)
-    scoreboard players operation @s buffer = @s lvl_combat
-    scoreboard players operation @s buffer *= @s buffer
-    scoreboard players operation @s buffer += @s lvl_combat
-    scoreboard players operation @s buffer *= #5 const
-    scoreboard players operation @s buffer += @s xp_need_combat
-    scoreboard players operation @s xp_need_combat = @s buffer
+    execute if score #%10 buffer matches 0 run scoreboard players add @s atk_base 4
+    execute if score #%10 buffer matches 0 run scoreboard players add @s tec_base 4
+    execute if score #%10 buffer matches 0 run scoreboard players add @s def_base 4
+    execute if score #%2 buffer matches 0 run scoreboard players add @s crt_base 2
 #合計レベルの更新
     function status:_general/set_level
+#リセット
+    scoreboard players reset #lvlbuffer buffer
+    scoreboard players reset #%2 buffer
+    scoreboard players reset #%10 buffer

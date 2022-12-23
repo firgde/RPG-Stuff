@@ -7,7 +7,6 @@
         #戦闘(攻撃、防御、技巧、会心)
         scoreboard objectives add lvl_combat dummy
         scoreboard objectives add xp_combat dummy
-        scoreboard objectives add xp_need_combat dummy
         scoreboard objectives add temporalHealth dummy
         scoreboard objectives add damage dummy
         scoreboard objectives add atkBuffer dummy
@@ -31,7 +30,6 @@
         #探索(体力、速度、集中、運)
         scoreboard objectives add lvl_explore dummy
         scoreboard objectives add xp_explore dummy
-        scoreboard objectives add xp_need_explore dummy
         #scoreboard objectives add mov_walk custom:walk_one_cm
         #scoreboard objectives add mov_run custom:sprint_one_cm
         #scoreboard objectives add mov_swim custom:swim_one_cm
@@ -44,18 +42,15 @@
         #採集(防御、体力、魔法、運)
         scoreboard objectives add lvl_collect dummy
         scoreboard objectives add xp_collect dummy
-        scoreboard objectives add xp_need_collect dummy
         #手工(攻撃、知能、速度、集中)
         scoreboard objectives add lvl_craft dummy
         scoreboard objectives add xp_craft dummy
-        scoreboard objectives add xp_need_craft dummy
         #社交(魔法、知能、技巧、会心)
         scoreboard objectives add dialogue trigger
         scoreboard objectives add dprogress dummy
         scoreboard objectives add money dummy
         scoreboard objectives add lvl_social dummy
         scoreboard objectives add xp_social dummy
-        scoreboard objectives add xp_need_social dummy
 
         #ステータス類(実際の値と基礎,追加値)
         #攻撃(物理攻撃力)
