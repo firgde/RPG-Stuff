@@ -144,6 +144,7 @@
     scoreboard objectives add prevslot dummy
     #定数
     scoreboard objectives add const dummy
+    scoreboard players set #-1 const -1
     scoreboard players set #0 const 0
     scoreboard players set #2 const 2
     scoreboard players set #4 const 4
@@ -161,6 +162,7 @@
     scoreboard players set #10000 buffer 10000
     scoreboard players set #2^20 const 1048576
     scoreboard players set #2^21 const 2097152
+    scoreboard players set #2^23 const 8388608
     scoreboard players set #2^24 const 16777216
     scoreboard players set #2^26 const 67108864
 #チーム
