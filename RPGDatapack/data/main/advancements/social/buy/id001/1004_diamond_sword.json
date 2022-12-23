@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "villager_trade",
+            "conditions": {
+                "item": {
+                    "nbt": "{CustomModelData:1004}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:social/npc/001/buy/1004_diamond_sword"
+    }
+}

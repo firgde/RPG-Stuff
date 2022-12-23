@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "villager_trade",
+            "conditions": {
+                "item": {
+                    "nbt": "{CustomModelData:1105}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:social/npc/001/buy/1105_netherite_hammer"
+    }
+}
