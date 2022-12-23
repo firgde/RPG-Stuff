@@ -10,9 +10,17 @@
     attribute @s generic.movement_speed modifier remove 1-0-0-0-2
     attribute @s generic.movement_speed modifier remove 1-0-0-0-1
     attribute @s generic.movement_speed modifier remove 1-0-0-0-0
+    attribute @s generic.movement_speed modifier remove 1-0-0-1-7
+    attribute @s generic.movement_speed modifier remove 1-0-0-1-6
+    attribute @s generic.movement_speed modifier remove 1-0-0-1-5
+    attribute @s generic.movement_speed modifier remove 1-0-0-1-4
+    attribute @s generic.movement_speed modifier remove 1-0-0-1-3
+    attribute @s generic.movement_speed modifier remove 1-0-0-1-2
+    attribute @s generic.movement_speed modifier remove 1-0-0-1-1
+    attribute @s generic.movement_speed modifier remove 1-0-0-1-0
 #移動速度のAttributeModifier適用
-    execute if score @s spd matches ..-1 run function status:spd/update_negative
     scoreboard players operation #spdbuffer buffer = @s spd
+    execute if score @s spd matches ..-1 run function status:spd/update_negative
     scoreboard players operation #spdbuffer buffer *= #2^20 const
     scoreboard players operation #spdbuffer buffer *= #2 const
     execute if score #spdbuffer buffer matches ..-1 run attribute @s generic.movement_speed modifier add 1-0-0-0-A "movSpeed9" 0.4096 add
