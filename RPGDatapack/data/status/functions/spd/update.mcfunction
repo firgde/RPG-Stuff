@@ -11,6 +11,7 @@
     attribute @s generic.movement_speed modifier remove 1-0-0-0-1
     attribute @s generic.movement_speed modifier remove 1-0-0-0-0
 #移動速度のAttributeModifier適用
+    execute if score @s spd matches ..-1 run function status:spd/update_negative
     scoreboard players operation #spdbuffer buffer = @s spd
     scoreboard players operation #spdbuffer buffer *= #2^20 const
     scoreboard players operation #spdbuffer buffer *= #2 const
