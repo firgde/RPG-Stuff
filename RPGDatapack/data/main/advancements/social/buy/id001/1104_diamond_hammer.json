@@ -4,7 +4,7 @@
             "trigger": "villager_trade",
             "conditions": {
                 "item": {
-                    "nbt": "{CustomModelData:1102}"
+                    "nbt": "{CustomModelData:1104}"
                 }
             }
         }
