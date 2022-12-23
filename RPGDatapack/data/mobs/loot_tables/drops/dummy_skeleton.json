@@ -2,7 +2,7 @@
     "pools": [
         {
             "rolls": {
-                "min": 1,
+                "min": 0,
                 "max": 2
             },
             "entries": [
@@ -12,7 +12,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{Customnbt:{money:1b,Amount:5},CustomModelData:3}"
+                            "tag": "{Customnbt:{money:1b,Amount:2},CustomModelData:3}"
                         }
                     ]
                 }
