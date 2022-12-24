@@ -9,7 +9,7 @@
     data modify storage item: Item.tag.Customnbt.ItemType set value 3
     data modify storage item: Item.tag.HideFlags set value 127
     data modify storage item: Item.tag.Customnbt.food set value 1b
-    data modify storage item: Item.tag.CustomModelData set value 1
+    data modify storage item: Item.tag.CustomModelData set value 7000
 #ステータスとレア度設定
     scoreboard players set #atkbonus buffer 0
     scoreboard players set #magbonus buffer 0

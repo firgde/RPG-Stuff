@@ -4,6 +4,6 @@
         "layer0": "item/golden_apple"
     },
     "overrides": [
-        {"predicate":{"custom_model_data":1}, "model":"item/bread"}
+        {"predicate":{"custom_model_data":7000}, "model":"item/bread"}
     ]
 }

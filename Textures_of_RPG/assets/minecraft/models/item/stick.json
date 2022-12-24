@@ -50,6 +50,8 @@
         {"predicate":{"custom_model_data":2005}, "model":"item/wither_ring"},
         {"predicate":{"custom_model_data":2100}, "model":"item/whetstone"},
 
+        {"predicate":{"custom_model_data":7000}, "model":"item/bread"},
+
         {"predicate":{"custom_model_data":8000}, "model":"item/quest_paper_red"},
 
         {"predicate":{"custom_model_data":8998}, "model":"item/bundle_filled"}
