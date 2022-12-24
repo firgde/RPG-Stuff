@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "villager_trade",
+            "conditions": {
+                "item": {
+                    "nbt": "{CustomModelData:1203}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:social/npc/002/buy/1203_golden_wand"
+    }
+}

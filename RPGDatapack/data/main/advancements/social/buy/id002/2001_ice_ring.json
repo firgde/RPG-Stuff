@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "villager_trade",
+            "conditions": {
+                "item": {
+                    "nbt": "{CustomModelData:2001}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:social/npc/002/buy/2001_ice_ring"
+    }
+}
