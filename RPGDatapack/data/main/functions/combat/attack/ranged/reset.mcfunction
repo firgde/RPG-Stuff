@@ -1,2 +1,2 @@
-#弓を使った判定とため時間リセット
+#弓を使った判定リセット
     scoreboard players set @s usedBow 0
