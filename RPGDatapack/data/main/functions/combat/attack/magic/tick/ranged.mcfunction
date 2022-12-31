@@ -15,6 +15,8 @@
     scoreboard players operation #flyratio buffer = @s flyTimer
     scoreboard players operation #flyratio buffer *= #100 const
     scoreboard players operation #flyratio buffer /= @s flyTime
-    execute if score #flyratio buffer <= #frate buffer positioned ^ ^ ^10.1 as @e[distance=..10,team=hostile,sort=nearest,limit=1] positioned as @s positioned ^ ^ ^1000 rotated ~7 ~15 facing entity @e[tag=magic.ranged] eyes positioned ^ ^ ^1000 positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[distance=..2] run tag @s add target
+    execute if score #flyratio buffer <= #frate buffer positioned ^ ^ ^10.1 as @e[distance=..10,team=hostile,sort=nearest,limit=1] positioned as @s positioned ^ ^ ^1000 facing entity @e[tag=magic.ranged] eyes positioned ^ ^ ^1000 positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[distance=..2] run tag @s add target
+    execute if score #flyratio buffer <= #frate buffer positioned ^ ^ ^10.1 as @e[distance=..10,team=hostile,sort=nearest,limit=1] positioned as @s positioned ^ ^ ^1000 rotated ~15 ~0 facing entity @e[tag=magic.ranged] eyes positioned ^ ^ ^1000 positioned ~-0.5 ~-0.5 ~-0.5 unless entity @s[distance=..2] run tag @s remove target
+    execute if score #flyratio buffer <= #frate buffer positioned ^ ^ ^10.1 as @e[distance=..10,team=hostile,sort=nearest,limit=1] positioned as @s positioned ^ ^ ^1000 rotated ~-15 ~0 facing entity @e[tag=magic.ranged] eyes positioned ^ ^ ^1000 positioned ~-0.5 ~-0.5 ~-0.5 unless entity @s[distance=..2] run tag @s remove target
     #時間切れで/kill
     execute if score @s flyTimer >= @s flyTime run kill @s
