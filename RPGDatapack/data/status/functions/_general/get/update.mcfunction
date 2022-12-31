@@ -27,13 +27,12 @@
     execute if entity @s[nbt={Inventory:[{Slot:102b,tag:{Customnbt:{armorType:"chestplate",armor:1b}}}]}] run function status:_general/get/chestplate
     execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{Customnbt:{armorType:"leggings",armor:1b}}}]}] run function status:_general/get/leggings
     execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]}] run function status:_general/get/boots
-#attributeに関与するもの
+#attributeや他のスコアに関与するもの
     execute unless score @s spd_prv = @s spd run function status:spd/update
     function status:hp/update
     execute as @a run attribute @s generic.attack_damage base set 10.19
-#他のスコアに関与するもの
     function status:int/calc
-    #function status:hp/adjust
+    function status:conc/calc
 #ダメージ処理のために無敵に
     effect give @a resistance 1000000 255 true
 #餓死しないために満腹度回復

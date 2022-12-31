@@ -4,6 +4,9 @@
 #ダメージ&ノックバック再現
     tag @e[team=hostile,distance=..1.5,tag=!hurt] add hurt_skill
     scoreboard players operation @e[tag=hurt_skill] damage = @a[tag=attacker] atkBuffer
+    #集中の値によってダメージ減衰する
+    scoreboard players operation @e[tag=hurt_skill] damage *= @p[tag=attacker] dmg_eff
+    scoreboard players operation @e[tag=hurt_skill] damage /= #100 const
     scoreboard players set #kbpowerx buffer 10
     scoreboard players set #kbpowery buffer 10
     scoreboard players set #kbpowerz buffer 10

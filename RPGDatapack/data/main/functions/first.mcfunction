@@ -117,12 +117,14 @@
         scoreboard objectives add luk_base dummy
         scoreboard objectives add luk_enchant dummy
         scoreboard objectives add luk_buff dummy
-        #集中(当たり判定の増加、索敵の効率化、クラフトの成功率の向上などその他)
+        #集中(範囲攻撃のダメージ増加、魔法攻撃の追尾開始のタイミングなどその他)
         scoreboard objectives add conc dummy
         scoreboard objectives add conc_bonus dummy
         scoreboard objectives add conc_base dummy
         scoreboard objectives add conc_enchant dummy
         scoreboard objectives add conc_buff dummy
+        scoreboard objectives add dmg_eff dummy
+        scoreboard objectives add follow_rate dummy
         
         #(...分類できねぇ)
         scoreboard objectives add durability dummy
@@ -147,6 +149,8 @@
     scoreboard players set #10 const 10
     scoreboard players set #15 const 15
     scoreboard players set #20 const 20
+    scoreboard players set #50 const 50
+    scoreboard players set #75 const 75
     scoreboard players set #80 const 80
     scoreboard players set #89 const 89
     scoreboard players set #100 const 100
