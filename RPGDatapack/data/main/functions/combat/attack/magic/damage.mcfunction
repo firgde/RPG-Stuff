@@ -21,3 +21,6 @@
     tag @s remove target
 #からの計算
     function main:combat/damage/deal
+#HP表示
+    execute if entity @s[type=player] run function status:hp/calc_ratio
+    execute if entity @s[type=player] run function status:hp/update
