@@ -1,26 +1,11 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "tick",
+      "trigger": "consume_item",
       "conditions": {
-        "player": [
-          {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-              "nbt": "{Tags:[\"eating\"]}"
-            }
-          },
-          {
-            "condition": "entity_scores",
-            "entity": "this",
-            "scores": {
-              "foodTimer": {
-                "min": 32
-              }
-            }
-          }
-        ]
+        "item": {
+          "nbt": "{Customnbt:{food:1b}}"
+        }
       }
     }
   },

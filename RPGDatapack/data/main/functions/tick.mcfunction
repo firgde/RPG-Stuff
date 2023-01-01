@@ -7,8 +7,6 @@
     execute as @a at @s if score @s sideSkillCooldown matches 1.. run function main:combat/skills/side/remove_cooldown
 #手に持っているアイテム
     execute as @a run function status:_general/get/slot
-#食べたタイマー
-    execute as @a[tag=!eating] run scoreboard players set @s foodTimer 0
 #MPの処理
     #execute as @a unless score @s max_mp_base = @s max_mp unless score @s mp = @s max_mp run function status:int/tick
     execute as @a run function status:int/tick
