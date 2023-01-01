@@ -26,6 +26,8 @@
         scoreboard objectives add slimeCount dummy
         scoreboard objectives add spawnTimer dummy
         scoreboard objectives add spawnDelay dummy
+        scoreboard objectives add aiTimer dummy
+        scoreboard objectives add mob_id dummy
         #探索(体力、速度、集中、運)
         scoreboard objectives add lvl_explore dummy
         scoreboard objectives add xp_explore dummy

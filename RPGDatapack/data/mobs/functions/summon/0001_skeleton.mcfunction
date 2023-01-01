@@ -5,6 +5,7 @@
     data modify storage mob: Data.status.baseSpd set value 25
     data modify storage mob: Data.status.hp set value 15
     data modify storage mob: Data.loot.xp set value 2
-    data modify storage mob: Data.loot.DeathLootTable set value "mobs:drops/dummy_skeleton"
+    data modify storage mob: Data.loot.DeathLootTable set value "mobs:drops/0001_skeleton"
+    data modify storage mob: Data.id set value 1
 #共通
     execute as @e[sort=nearest,limit=1,team=hostile,tag=spawn] run function mobs:set_data

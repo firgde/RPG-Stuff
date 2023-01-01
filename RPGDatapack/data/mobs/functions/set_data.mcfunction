@@ -6,6 +6,8 @@
     execute store result score @s def run data get storage mob: Data.status.baseDef
     execute store result score @s spd run data get storage mob: Data.status.baseSpd
     execute store result score @s add_pt run data get storage mob: Data.loot.xp
+#何のMob?
+    execute store result score @s mob_id run data get storage mob: Data.id
 #loot_tableを参照
     data modify entity @s DeathLootTable set from storage mob: Data.loot.DeathLootTable
 #ID指定

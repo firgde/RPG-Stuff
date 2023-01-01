@@ -12,13 +12,8 @@
 #種類
     data modify storage magic: Data set from entity @s[tag=verify_cooldown,tag=verify_mp,type=player] SelectedItem.tag.Customnbt.magicType
     data modify storage magic: Data.offhand set from entity @s[tag=verify_cooldown,tag=verify_mp,type=player] Inventory[{Slot:-106b}].tag.Customnbt.magicType
-    #Mobだって魔法が使いたい！
-    data modify storage magic: Data set from entity @s[type=!player] HandItems[0].tag.Customnbt.magicType
-    data modify storage magic: Data.offhand set from entity @s[type=!player] Inventory[{Slot:-106b}].tag.Customnbt.magicType
-    execute as @s[type=player] run function status:_general/get/update
 #ｻﾓｫｫｫｫﾝ
     execute if entity @s[tag=verify_cooldown,tag=verify_mp] run function main:combat/attack/magic/summon
-    execute if entity @s[type=!player] run function main:combat/attack/magic/summon
 #残念空振りまた明日
     execute if entity @s[tag=!verify_cooldown] run tellraw @s {"translate":"combat.text.magic.no_cooldown","color": "red"}
     execute if entity @s[tag=!verify_mp] run tellraw @s {"translate":"combat.text.magic.no_mp","color": "red"}

@@ -5,10 +5,10 @@
 #アイテムﾊﾞﾗｧ
     execute at @s run spreadplayers ~ ~ 4 15 false @e[tag=spawner,distance=..1.5,type=item]
 #Mobｻﾓｫｫｫｫﾝ
-    execute as @e[tag=spawner,distance=..15,nbt={Item:{tag:{Type:"zombie"}}}] run function mobs:summon/dummy_zombie
-    execute as @e[tag=spawner,distance=..15,nbt={Item:{tag:{Type:"skeleton"}}}] run function mobs:summon/dummy_skeleton
-    execute as @e[tag=spawner,distance=..15,nbt={Item:{tag:{Type:"husk"}}}] run function mobs:summon/dummy_husk
-    execute as @e[tag=spawner,distance=..15,nbt={Item:{tag:{Type:"stray"}}}] run function mobs:summon/dummy_stray
+    execute as @e[tag=spawner,distance=..15,nbt={Item:{tag:{Type:"zombie"}}}] run function mobs:summon/0000_zombie
+    execute as @e[tag=spawner,distance=..15,nbt={Item:{tag:{Type:"skeleton"}}}] run function mobs:summon/0001_skeleton
+    execute as @e[tag=spawner,distance=..15,nbt={Item:{tag:{Type:"husk"}}}] run function mobs:summon/0002_husk
+    execute as @e[tag=spawner,distance=..15,nbt={Item:{tag:{Type:"stray"}}}] run function mobs:summon/0003_stray
 #リセット
     kill @e[tag=spawner,distance=..15,type=item]
     tag @s remove spawn_check
