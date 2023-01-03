@@ -4,7 +4,7 @@
     data modify storage item: Item.tag.display.Name set value '{"italic":false,"color":"green","translate":"item.quest_book"}'
     data modify storage item: Item.tag.display.Lore set value ['{"italic":false,"color":"white","translate":"item.quest_book.lore"}']
     #data modify storage item: Item.tag.Customnbt.weaponType set value ""
-    scoreboard players set #itemtype buffer 9
+    scoreboard players set $itemtype buffer 9
     data modify storage item: Item.tag.Customnbt.ItemType set value 8
     #data modify storage item: Item.tag.HideFlags set value 127
     #data modify storage item: Item.tag.Customnbt.weapon set value 0b
@@ -17,21 +17,21 @@
     data modify storage item: Item.tag.Customnbt.rarity set value 1
     data modify storage item: Item.tag.Customnbt.id set value "quest_book"
 #ステータスとレア度、耐久値設定
-    scoreboard players set #atkbonus buffer 0
-    scoreboard players set #magbonus buffer 0
-    scoreboard players set #dexbonus buffer 0
-    scoreboard players set #hpbonus buffer 0
-    scoreboard players set #intbonus buffer 0
-    scoreboard players set #defbonus buffer 0
-    scoreboard players set #spdbonus buffer 0
-    scoreboard players set #crtbonus buffer 0
-    scoreboard players set #lukbonus buffer 0
-    scoreboard players set #concbonus buffer 0
-    scoreboard players set #rarity buffer 1
-    scoreboard players set #durability buffer 0
-    scoreboard players set #maxdurability buffer 0
-    scoreboard players set #enchantcount buffer 0
-    scoreboard players set #hasskill buffer 0
+    scoreboard players set $atkbonus buffer 0
+    scoreboard players set $magbonus buffer 0
+    scoreboard players set $dexbonus buffer 0
+    scoreboard players set $hpbonus buffer 0
+    scoreboard players set $intbonus buffer 0
+    scoreboard players set $defbonus buffer 0
+    scoreboard players set $spdbonus buffer 0
+    scoreboard players set $crtbonus buffer 0
+    scoreboard players set $lukbonus buffer 0
+    scoreboard players set $concbonus buffer 0
+    scoreboard players set $rarity buffer 1
+    scoreboard players set $durability buffer 0
+    scoreboard players set $maxdurability buffer 0
+    scoreboard players set $enchantcount buffer 0
+    scoreboard players set $hasskill buffer 0
 #クエスト用紙専用
     #data modify storage item: Item.tag.Customnbt.Quest.id set value 000
     #data modify storage item: Item.tag.Customnbt.Quest.Type set value "combat"

@@ -1,14 +1,14 @@
 #防御力を取得、攻撃力(ダメージ)との比率を計算
     scoreboard players operation @s defBuffer = @s def
-    scoreboard players operation @s defBuffer *= #100 const
+    scoreboard players operation @s defBuffer *= $100 const
     scoreboard players operation @s defBuffer /= @s damage
     scoreboard players add @s defBuffer 100
 #軽減率を取得
-    scoreboard players operation #10000 buffer /= @s defBuffer
+    scoreboard players operation $10000 buffer /= @s defBuffer
 #からの軽減
-    scoreboard players operation @s damage *= #100 const
-    scoreboard players operation @s damage *= #10000 buffer
-    scoreboard players operation @s damage /= #10000 const
+    scoreboard players operation @s damage *= $100 const
+    scoreboard players operation @s damage *= $10000 buffer
+    scoreboard players operation @s damage /= $10000 const
 
 #ダメージ減算
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage
@@ -27,4 +27,4 @@
     tag @s remove hurt
     tag @s remove hurt_skill
     #data remove storage damage: Amount
-    scoreboard players set #10000 buffer 10000
+    scoreboard players set $10000 buffer 10000

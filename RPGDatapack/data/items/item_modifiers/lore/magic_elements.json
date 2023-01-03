@@ -23,7 +23,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#element"
+            "name": "$element"
           },
           "score": "buffer"
         },
@@ -55,7 +55,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#element"
+            "name": "$element"
           },
           "score": "buffer"
         },
@@ -87,7 +87,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#element"
+            "name": "$element"
           },
           "score": "buffer"
         },
@@ -119,7 +119,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#element"
+            "name": "$element"
           },
           "score": "buffer"
         },
@@ -151,7 +151,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#element"
+            "name": "$element"
           },
           "score": "buffer"
         },
@@ -183,7 +183,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#element"
+            "name": "$element"
           },
           "score": "buffer"
         },

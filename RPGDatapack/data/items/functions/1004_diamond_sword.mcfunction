@@ -4,9 +4,9 @@
     data modify storage item: Item.tag.display.Name set value '{"italic":false,"color":"blue","translate":"item.diamond_sword"}'
     data modify storage item: Item.tag.display.Lore set value ['{"translate":"item.diamond_sword.lore","color":"white","italic":false}']
     data modify storage item: Item.tag.Customnbt.LoreCount set value 1
-    scoreboard players set #Lore buffer 1
+    scoreboard players set $Lore buffer 1
     data modify storage item: Item.tag.Customnbt.weaponType set value "sword"
-    scoreboard players set #itemtype buffer 1
+    scoreboard players set $itemtype buffer 1
     data modify storage item: Item.tag.Customnbt.ItemType set value 1
     data modify storage item: Item.tag.HideFlags set value 127
     data modify storage item: Item.tag.Customnbt.weapon set value 1b
@@ -18,21 +18,21 @@
     data modify storage item: Item.tag.Customnbt.HasSkill set value 0b
     data modify storage item: Item.tag.Customnbt.rarity set value 2
 #ステータスとレア度、耐久値設定
-    scoreboard players set #atkbonus buffer 35
-    scoreboard players set #magbonus buffer 0
-    scoreboard players set #dexbonus buffer 0
-    scoreboard players set #hpbonus buffer 0
-    scoreboard players set #intbonus buffer 0
-    scoreboard players set #defbonus buffer 0
-    scoreboard players set #spdbonus buffer 0
-    scoreboard players set #crtbonus buffer 0
-    scoreboard players set #lukbonus buffer 0
-    scoreboard players set #concbonus buffer 0
-    scoreboard players set #rarity buffer 2
-    scoreboard players set #durability buffer 1561
-    scoreboard players set #maxdurability buffer 1561
-    scoreboard players set #enchantcount buffer 0
-    scoreboard players set #hasskill buffer 0
+    scoreboard players set $atkbonus buffer 35
+    scoreboard players set $magbonus buffer 0
+    scoreboard players set $dexbonus buffer 0
+    scoreboard players set $hpbonus buffer 0
+    scoreboard players set $intbonus buffer 0
+    scoreboard players set $defbonus buffer 0
+    scoreboard players set $spdbonus buffer 0
+    scoreboard players set $crtbonus buffer 0
+    scoreboard players set $lukbonus buffer 0
+    scoreboard players set $concbonus buffer 0
+    scoreboard players set $rarity buffer 2
+    scoreboard players set $durability buffer 1561
+    scoreboard players set $maxdurability buffer 1561
+    scoreboard players set $enchantcount buffer 0
+    scoreboard players set $hasskill buffer 0
     #実際のステータス
     data modify storage item: Item.tag.Customnbt.status.atk set value 35
     data modify storage item: Item.tag.Customnbt.status.mag set value 0

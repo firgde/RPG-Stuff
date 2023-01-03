@@ -142,31 +142,31 @@
     scoreboard objectives add prevslot dummy
     #定数
     scoreboard objectives add const dummy
-    scoreboard players set #-1 const -1
-    scoreboard players set #0 const 0
-    scoreboard players set #2 const 2
-    scoreboard players set #4 const 4
-    scoreboard players set #5 const 5
-    scoreboard players set #8 const 8
-    scoreboard players set #10 const 10
-    scoreboard players set #15 const 15
-    scoreboard players set #20 const 20
-    scoreboard players set #50 const 50
-    scoreboard players set #75 const 75
-    scoreboard players set #80 const 80
-    scoreboard players set #89 const 89
-    scoreboard players set #100 const 100
-    scoreboard players set #100 buffer 100
-    scoreboard players set #120 const 120
-    scoreboard players set #1024 const 1024
-    scoreboard players set #2000 const 2000
-    scoreboard players set #10000 const 10000
-    scoreboard players set #10000 buffer 10000
-    scoreboard players set #2^20 const 1048576
-    scoreboard players set #2^21 const 2097152
-    scoreboard players set #2^23 const 8388608
-    scoreboard players set #2^24 const 16777216
-    scoreboard players set #2^26 const 67108864
+    scoreboard players set $-1 const -1
+    scoreboard players set $0 const 0
+    scoreboard players set $2 const 2
+    scoreboard players set $4 const 4
+    scoreboard players set $5 const 5
+    scoreboard players set $8 const 8
+    scoreboard players set $10 const 10
+    scoreboard players set $15 const 15
+    scoreboard players set $20 const 20
+    scoreboard players set $50 const 50
+    scoreboard players set $75 const 75
+    scoreboard players set $80 const 80
+    scoreboard players set $89 const 89
+    scoreboard players set $100 const 100
+    scoreboard players set $100 buffer 100
+    scoreboard players set $120 const 120
+    scoreboard players set $1024 const 1024
+    scoreboard players set $2000 const 2000
+    scoreboard players set $10000 const 10000
+    scoreboard players set $10000 buffer 10000
+    scoreboard players set $2^20 const 1048576
+    scoreboard players set $2^21 const 2097152
+    scoreboard players set $2^23 const 8388608
+    scoreboard players set $2^24 const 16777216
+    scoreboard players set $2^26 const 67108864
 #チーム
     team add hostile
 #ボスバー

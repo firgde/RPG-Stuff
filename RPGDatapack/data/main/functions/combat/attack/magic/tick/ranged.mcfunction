@@ -14,13 +14,13 @@
     scoreboard players add @s flyTimer 1
     #追尾システム(無理)
     #まずは進んだ時間を算出
-    execute at @a if score @s playerID = @p playerID store result score #frate buffer run scoreboard players get @p follow_rate
-    execute store result score #frate buffer run scoreboard players operation #100 buffer -= #frate buffer
-    scoreboard players set #100 buffer 100
+    execute at @a if score @s playerID = @p playerID store result score $frate buffer run scoreboard players get @p follow_rate
+    execute store result score $frate buffer run scoreboard players operation $100 buffer -= $frate buffer
+    scoreboard players set $100 buffer 100
 
-    scoreboard players operation #flyratio buffer = @s flyTimer
-    scoreboard players operation #flyratio buffer *= #100 const
-    scoreboard players operation #flyratio buffer /= @s flyTime
-    execute if score #flyratio buffer >= #frate buffer positioned ^ ^ ^10.1 as @e[distance=..10,team=hostile] positioned as @s positioned ^ ^ ^1000.1 facing entity @e[tag=magic.ranged] eyes positioned ^ ^ ^1000.1 positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[distance=..15] run tag @s add target
+    scoreboard players operation $flyratio buffer = @s flyTimer
+    scoreboard players operation $flyratio buffer *= $100 const
+    scoreboard players operation $flyratio buffer /= @s flyTime
+    execute if score $flyratio buffer >= $frate buffer positioned ^ ^ ^10.1 as @e[distance=..10,team=hostile] positioned as @s positioned ^ ^ ^1000.1 facing entity @e[tag=magic.ranged] eyes positioned ^ ^ ^1000.1 positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[distance=..15] run tag @s add target
     #時間切れで/kill
     execute if score @s flyTimer >= @s flyTime run kill @s

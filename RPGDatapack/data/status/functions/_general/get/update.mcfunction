@@ -44,15 +44,15 @@
 #クエストブックなら内容を更新
     execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{id:"quest_book"}}}}] run function main:social/quest_book/update
 #0より小さいなら調整
-    scoreboard players operation @s atk > #0 const
-    scoreboard players operation @s mag > #0 const
-    scoreboard players operation @s dex > #0 const
-    scoreboard players operation @s max_hp > #0 const
-    scoreboard players operation @s int > #0 const
-    scoreboard players operation @s def > #0 const
-    scoreboard players operation @s spd > #0 const
-    scoreboard players operation @s crt > #0 const
-    scoreboard players operation @s luk > #0 const
-    scoreboard players operation @s conc > #0 const
+    scoreboard players operation @s atk > $0 const
+    scoreboard players operation @s mag > $0 const
+    scoreboard players operation @s dex > $0 const
+    scoreboard players operation @s max_hp > $0 const
+    scoreboard players operation @s int > $0 const
+    scoreboard players operation @s def > $0 const
+    scoreboard players operation @s spd > $0 const
+    scoreboard players operation @s crt > $0 const
+    scoreboard players operation @s luk > $0 const
+    scoreboard players operation @s conc > $0 const
 #リセット
     advancement revoke @s only status:equipped

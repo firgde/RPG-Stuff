@@ -10,11 +10,11 @@
     effect give @s[type=!#main:undead] instant_damage 1 0 true
     effect give @s[type=#main:undead] instant_health 1 0 true
 #属性を特定
-    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.generic] run scoreboard players set #damagecolor buffer 0
-    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.fire] run scoreboard players set #damagecolor buffer 2
-    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.ice] run scoreboard players set #damagecolor buffer 3
-    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.thunder] run scoreboard players set #damagecolor buffer 4
-    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.wind] run scoreboard players set #damagecolor buffer 5
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.generic] run scoreboard players set $damagecolor buffer 0
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.fire] run scoreboard players set $damagecolor buffer 2
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.ice] run scoreboard players set $damagecolor buffer 3
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.thunder] run scoreboard players set $damagecolor buffer 4
+    execute if entity @e[tag=magic,sort=nearest,limit=1,tag=magic.wind] run scoreboard players set $damagecolor buffer 5
 #多段ヒット防止
     kill @e[tag=magic,sort=nearest,limit=1,tag=!multiple_hit]
 #追尾されません

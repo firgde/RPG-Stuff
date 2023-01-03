@@ -1,6 +1,6 @@
 #クールダウン更新
-    execute store result score #timeused buffer run time query gametime
-    execute store result storage magic: CoolDown int 1 run scoreboard players get #timeused buffer
+    execute store result score $timeused buffer run time query gametime
+    execute store result storage magic: CoolDown int 1 run scoreboard players get $timeused buffer
     item modify entity @s weapon.mainhand main:magic/get_cooldown
 #本体
     summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Small:1b,Tags:["magic"]}

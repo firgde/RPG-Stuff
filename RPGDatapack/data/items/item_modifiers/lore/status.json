@@ -25,7 +25,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#itemtype"
+            "name": "$itemtype"
           },
           "score": "buffer"
         },
@@ -50,7 +50,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#itemtype"
+            "name": "$itemtype"
           },
           "score": "buffer"
         },
@@ -75,7 +75,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#itemtype"
+            "name": "$itemtype"
           },
           "score": "buffer"
         },
@@ -100,7 +100,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#itemtype"
+            "name": "$itemtype"
           },
           "score": "buffer"
         },
@@ -125,7 +125,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#itemtype"
+            "name": "$itemtype"
           },
           "score": "buffer"
         },
@@ -150,7 +150,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#itemtype"
+            "name": "$itemtype"
           },
           "score": "buffer"
         },
@@ -180,7 +180,7 @@
         },
         {
           "score": {
-            "name": "#atkbonus",
+            "name": "$atkbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -195,7 +195,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#atkbonus"
+            "name": "$atkbonus"
           },
           "score": "buffer"
         },
@@ -225,7 +225,7 @@
         },
         {
           "score": {
-            "name": "#atkbonus",
+            "name": "$atkbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -240,7 +240,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#atkbonus"
+            "name": "$atkbonus"
           },
           "score": "buffer"
         },
@@ -272,7 +272,7 @@
         },
         {
           "score": {
-            "name": "#magbonus",
+            "name": "$magbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -287,7 +287,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#magbonus"
+            "name": "$magbonus"
           },
           "score": "buffer"
         },
@@ -317,7 +317,7 @@
         },
         {
           "score": {
-            "name": "#magbonus",
+            "name": "$magbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -332,7 +332,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#magbonus"
+            "name": "$magbonus"
           },
           "score": "buffer"
         },
@@ -364,7 +364,7 @@
         },
         {
           "score": {
-            "name": "#dexbonus",
+            "name": "$dexbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -379,7 +379,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#dexbonus"
+            "name": "$dexbonus"
           },
           "score": "buffer"
         },
@@ -409,7 +409,7 @@
         },
         {
           "score": {
-            "name": "#dexbonus",
+            "name": "$dexbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -424,7 +424,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#dexbonus"
+            "name": "$dexbonus"
           },
           "score": "buffer"
         },
@@ -456,7 +456,7 @@
         },
         {
           "score": {
-            "name": "#hpbonus",
+            "name": "$hpbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -471,7 +471,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#hpbonus"
+            "name": "$hpbonus"
           },
           "score": "buffer"
         },
@@ -501,7 +501,7 @@
         },
         {
           "score": {
-            "name": "#hpbonus",
+            "name": "$hpbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -516,7 +516,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#hpbonus"
+            "name": "$hpbonus"
           },
           "score": "buffer"
         },
@@ -548,7 +548,7 @@
         },
         {
           "score": {
-            "name": "#intbonus",
+            "name": "$intbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -563,7 +563,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#intbonus"
+            "name": "$intbonus"
           },
           "score": "buffer"
         },
@@ -593,7 +593,7 @@
         },
         {
           "score": {
-            "name": "#intbonus",
+            "name": "$intbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -608,7 +608,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#intbonus"
+            "name": "$intbonus"
           },
           "score": "buffer"
         },
@@ -640,7 +640,7 @@
         },
         {
           "score": {
-            "name": "#defbonus",
+            "name": "$defbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -655,7 +655,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#defbonus"
+            "name": "$defbonus"
           },
           "score": "buffer"
         },
@@ -685,7 +685,7 @@
         },
         {
           "score": {
-            "name": "#defbonus",
+            "name": "$defbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -700,7 +700,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#defbonus"
+            "name": "$defbonus"
           },
           "score": "buffer"
         },
@@ -732,7 +732,7 @@
         },
         {
           "score": {
-            "name": "#spdbonus",
+            "name": "$spdbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -747,7 +747,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#spdbonus"
+            "name": "$spdbonus"
           },
           "score": "buffer"
         },
@@ -777,7 +777,7 @@
         },
         {
           "score": {
-            "name": "#spdbonus",
+            "name": "$spdbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -792,7 +792,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#spdbonus"
+            "name": "$spdbonus"
           },
           "score": "buffer"
         },
@@ -824,7 +824,7 @@
         },
         {
           "score": {
-            "name": "#crtbonus",
+            "name": "$crtbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -839,7 +839,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#crtbonus"
+            "name": "$crtbonus"
           },
           "score": "buffer"
         },
@@ -869,7 +869,7 @@
         },
         {
           "score": {
-            "name": "#crtbonus",
+            "name": "$crtbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -884,7 +884,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#crtbonus"
+            "name": "$crtbonus"
           },
           "score": "buffer"
         },
@@ -916,7 +916,7 @@
         },
         {
           "score": {
-            "name": "#lukbonus",
+            "name": "$lukbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -931,7 +931,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#lukbonus"
+            "name": "$lukbonus"
           },
           "score": "buffer"
         },
@@ -961,7 +961,7 @@
         },
         {
           "score": {
-            "name": "#lukbonus",
+            "name": "$lukbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -976,7 +976,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#lukbonus"
+            "name": "$lukbonus"
           },
           "score": "buffer"
         },
@@ -1008,7 +1008,7 @@
         },
         {
           "score": {
-            "name": "#concbonus",
+            "name": "$concbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -1023,7 +1023,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#concbonus"
+            "name": "$concbonus"
           },
           "score": "buffer"
         },
@@ -1053,7 +1053,7 @@
         },
         {
           "score": {
-            "name": "#concbonus",
+            "name": "$concbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -1068,7 +1068,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#concbonus"
+            "name": "$concbonus"
           },
           "score": "buffer"
         },

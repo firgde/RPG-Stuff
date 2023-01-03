@@ -14,7 +14,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#hasskill"
+            "name": "$hasskill"
           },
           "score": "buffer"
         },
@@ -42,7 +42,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#hasskill"
+            "name": "$hasskill"
           },
           "score": "buffer"
         },
@@ -70,7 +70,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#hasskill"
+            "name": "$hasskill"
           },
           "score": "buffer"
         },
@@ -89,7 +89,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#hasskill"
+            "name": "$hasskill"
           },
           "score": "buffer"
         },
@@ -117,7 +117,7 @@
                 "type": "score",
                 "target": {
                   "type": "fixed",
-                  "name": "#durability"
+                  "name": "$durability"
                 },
                 "score": "buffer"
               },
@@ -132,7 +132,7 @@
                 "type": "score",
                 "target": {
                   "type": "fixed",
-                  "name": "#maxdurability"
+                  "name": "$maxdurability"
                 },
                 "score": "buffer"
               },
@@ -154,7 +154,7 @@
         "extra": [
           {
             "score": {
-              "name": "#durability",
+              "name": "$durability",
               "objective": "buffer"
             },
             "extra": [
@@ -165,7 +165,7 @@
                 "extra": [
                   {
                     "score": {
-                      "name": "#maxdurability",
+                      "name": "$maxdurability",
                       "objective": "buffer"
                     },
                     "color": "white",
@@ -190,7 +190,7 @@
                 "type": "score",
                 "target": {
                   "type": "fixed",
-                  "name": "#durability"
+                  "name": "$durability"
                 },
                 "score": "buffer"
               },
@@ -205,7 +205,7 @@
                 "type": "score",
                 "target": {
                   "type": "fixed",
-                  "name": "#maxdurability"
+                  "name": "$maxdurability"
                 },
                 "score": "buffer"
               },
@@ -247,7 +247,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#rarity"
+            "name": "$rarity"
           },
           "score": "buffer"
         },
@@ -287,7 +287,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#rarity"
+            "name": "$rarity"
           },
           "score": "buffer"
         },
@@ -327,7 +327,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#rarity"
+            "name": "$rarity"
           },
           "score": "buffer"
         },
@@ -367,7 +367,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#rarity"
+            "name": "$rarity"
           },
           "score": "buffer"
         },
@@ -407,7 +407,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "#rarity"
+            "name": "$rarity"
           },
           "score": "buffer"
         },
