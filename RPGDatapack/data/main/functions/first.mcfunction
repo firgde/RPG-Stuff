@@ -23,7 +23,7 @@
         scoreboard objectives add skillCooldown dummy
         scoreboard objectives add sideSkillCooldown dummy
         scoreboard objectives add sideSuccess dummy
-        scoreboard objectives add slimeCount dummy
+        scoreboard objectives add recCount dummy
         scoreboard objectives add spawnTimer dummy
         scoreboard objectives add spawnDelay dummy
         scoreboard objectives add aiTimer dummy
