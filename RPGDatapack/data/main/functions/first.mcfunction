@@ -169,6 +169,8 @@
     scoreboard players set #2^26 const 67108864
 #チーム
     team add hostile
+#ボスバー
+    bossbar add health: ""
 #タイトルの表示時間
     title @a times 10 40 10
 #攻撃力を一律10.19に

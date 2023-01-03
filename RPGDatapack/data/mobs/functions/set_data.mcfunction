@@ -1,5 +1,5 @@
 #ストレージからスコアに代入
-    execute store result score @s hp run data get storage mob: Data.status.hp
+    execute store result score @s[tag=!boss] hp run data get storage mob: Data.status.hp
     execute store result score @s atk run data get storage mob: Data.status.baseAtk
     execute store result score @s mag run data get storage mob: Data.status.baseMag
     execute store result score @s dex run data get storage mob: Data.status.baseDex
@@ -49,6 +49,8 @@
     execute store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base float 0.01 run data get storage mob: Data.status.baseSpd
 #演出
     execute at @s run particle poof ~ ~ ~ 0.2 0.5 0.2 0.01 15
+    #ボス限定
+    function mobs:summon/boss/load_bossbar
 #リセット
     data remove storage mob: Data
-    tag @s remove spawn
+    tag @s[tag=!boss] remove spawn

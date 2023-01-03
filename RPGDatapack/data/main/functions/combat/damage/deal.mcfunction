@@ -13,7 +13,9 @@
 #ダメージ減算
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage
     execute at @s run function main:combat/damage/display_amount
-    execute if score @s hp matches ..0 run function main:combat/damage/death
+    execute if score @s[tag=!boss] hp matches ..0 run function main:combat/damage/death
+    #ボスは専用の演出
+    execute if entity @s[tag=boss] run function main:combat/damage/boss
 #防具の耐久を減らす
     execute as @s[nbt={Inventory:[{Slot:103b,tag:{Customnbt:{armorType:"helmet",armor:1b}}}]},type=player] run function main:combat/durability/remove_head
     execute as @s[nbt={Inventory:[{Slot:102b,tag:{Customnbt:{armorType:"chestplate",armor:1b}}}]},type=player] run function main:combat/durability/remove_chest
