@@ -4,4 +4,5 @@
 #このアイテムは不要です。
     clear @s stick{Customnbt:{money:1b}}
 #リセット
+    scoreboard players reset $money buffer
     advancement revoke @s only main:social/get_money
