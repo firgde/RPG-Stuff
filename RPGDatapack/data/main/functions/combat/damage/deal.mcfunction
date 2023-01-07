@@ -1,3 +1,5 @@
+#無敵時間のあるなし
+    execute if entity @s[tag=spawn] run scoreboard players operation @s damage /= $20 const
 #防御力を取得、攻撃力(ダメージ)との比率を計算
     scoreboard players operation @s defBuffer = @s def
     scoreboard players operation @s defBuffer *= $100 const

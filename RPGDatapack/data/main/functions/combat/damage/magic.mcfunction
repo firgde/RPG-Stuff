@@ -5,7 +5,7 @@
     execute at @s run function main:combat/damage/display_amount
     function main:combat/damage/display
     #ボス限定
-    function main:combat/damage/boss
+    execute if entity @s[tag=boss] run function main:combat/damage/boss
 #体力が0ならﾀﾋ
     execute if score @s hp matches ..0 run tag @s remove debuff.fire
     execute if score @s hp matches ..0 run data modify entity @s HasVisualFire set value 0b
