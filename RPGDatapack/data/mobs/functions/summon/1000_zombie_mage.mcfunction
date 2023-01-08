@@ -5,7 +5,7 @@
     data modify storage mob: Data.status.hp set value 130
     data modify storage mob: Data.loot.xp set value 0
     data modify storage mob: Data.loot.DeathLootTable set value "mobs:drops/0000_zombie"
-    data modify storage mob: Data.id set value 4
+    data modify storage mob: Data.id set value 1000
 #AITimer
     scoreboard players set @e[sort=nearest,limit=1,team=hostile,tag=spawn] aiTimer 60
 #共通
