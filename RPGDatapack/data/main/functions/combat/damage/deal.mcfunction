@@ -28,5 +28,5 @@
 #処理終わり
     tag @s remove hurt
     tag @s remove hurt_skill
-    #data remove storage damage: Amount
+    scoreboard players reset $damagecolor buffer
     scoreboard players set $10000 buffer 10000
