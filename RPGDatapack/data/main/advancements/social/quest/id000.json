@@ -48,7 +48,7 @@
                     "team": "hostile"
                 },
                 "player": {
-                    "nbt": "{Inventory:[{tag:{Customnbt:{Quest:{id:000}}}}]}"
+                    "nbt": "{Inventory:[{tag:{Customnbt:{Quest:{id:0}}}}]}"
                 }
             }
         }
