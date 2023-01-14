@@ -13,38 +13,6 @@
 		"melee": {
 			"trigger": "player_hurt_entity",
 			"conditions": {
-				"player": [
-					{
-						"condition": "inverted",
-						"term": {
-							"condition": "alternative",
-							"terms": [
-								{
-									"condition": "entity_properties",
-									"entity": "this",
-									"predicate": {
-										"equipment": {
-											"mainhand": {
-												"nbt": "{Customnbt:{weaponType:\"wand\"}}"
-											}
-										}
-									}
-								},
-								{
-									"condition": "entity_properties",
-									"entity": "this",
-									"predicate": {
-										"equipment": {
-											"mainhand": {
-												"nbt": "{Customnbt:{weaponType:\"bow\"}}"
-											}
-										}
-									}
-								}
-							]
-						}
-					}
-				],
 				"damage": {
 					"type": {
 						"is_projectile": false

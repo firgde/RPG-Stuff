@@ -10,6 +10,6 @@
     scoreboard players operation @a[tag=attacker] atkBuffer *= @a[tag=attacker] dealtDamage
     scoreboard players operation @a[tag=attacker] atkBuffer /= $100 const
 #耐久を減らす
-    execute as @a[tag=attacker] if entity @s[nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b,weapon:1b}}}},gamemode=!creative] run function main:combat/durability/remove
+    execute as @a[tag=attacker] if entity @s[nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b,weapon:1b}}}},gamemode=!creative] unless data entity @s SelectedItem{tag:{Customnbt:{weaponType:"wand"}}} unless data entity @s SelectedItem{tag:{Customnbt:{weaponType:"bow"}}} run function main:combat/durability/remove
 #最後にダメージ処理
     function main:combat/damage/general
