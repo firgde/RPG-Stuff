@@ -25,3 +25,23 @@
 #リセット
     data remove storage item: durability
     data remove storage item: Item
+    scoreboard players reset $Lore buffer
+    scoreboard players reset $itemtype buffer
+    scoreboard players reset $healamounthp buffer
+    scoreboard players reset $healamountmp buffer
+    scoreboard players reset $element buffer
+    scoreboard players reset $atkbonus buffer
+    scoreboard players reset $magbonus buffer
+    scoreboard players reset $dexbonus buffer
+    scoreboard players reset $hpbonus buffer
+    scoreboard players reset $intbonus buffer
+    scoreboard players reset $defbonus buffer
+    scoreboard players reset $spdbonus buffer
+    scoreboard players reset $crtbonus buffer
+    scoreboard players reset $lukbonus buffer
+    scoreboard players reset $concbonus buffer
+    scoreboard players reset $rarity buffer
+    scoreboard players reset $durability buffer
+    scoreboard players reset $maxdurability buffer
+    scoreboard players reset $enchantcount buffer
+    scoreboard players reset $hasskill buffer
