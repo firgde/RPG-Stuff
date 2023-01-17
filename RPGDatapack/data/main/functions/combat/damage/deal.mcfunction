@@ -15,6 +15,8 @@
 #ダメージ減算
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage
     execute at @s run function main:combat/damage/display_amount
+    #プレイヤーは体力の割合を計算
+    execute if entity @s[type=player] run function status:hp/calc_ratio
     execute if score @s[tag=!boss] hp matches ..0 run function main:combat/damage/death
     #ボスは専用の演出
     execute if entity @s[tag=boss] run function main:combat/damage/boss

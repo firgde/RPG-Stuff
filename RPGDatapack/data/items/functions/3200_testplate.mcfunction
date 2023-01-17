@@ -1,12 +1,12 @@
 #名前だとか説明文だとか
     data modify storage item: Item.Count set value 1b
-    data modify storage item: Item.id set value "minecraft:golden_chestplate"
-    data modify storage item: Item.tag.display.Name set value '{"italic":false,"color":"white","translate":"item.golden_chestplate"}'
-    data modify storage item: Item.tag.display.Lore set value ['{"translate":"item.golden_chestplate.lore","color":"white","italic":false}','{"translate":"item.golden_chestplate.lore.second","color":"white","italic":false}']
+    data modify storage item: Item.id set value "minecraft:leather_chestplate"
+    data modify storage item: Item.tag.display.Name set value '{"italic":false,"color":"white","translate":"item.leather_chestplate"}'
+    data modify storage item: Item.tag.display.Lore set value ['{"translate":"item.leather_chestplate.lore","color":"white","italic":false}','{"translate":"item.leather_chestplate.lore.second","color":"white","italic":false}']
     data modify storage item: Item.tag.Customnbt.LoreCount set value 2
     scoreboard players set $Lore buffer 2
     #data modify storage item: Item.tag.Customnbt.weaponType set value ""
-    scoreboard players set $itemtype buffer 5
+    scoreboard players set $itemtype buffer 32
     data modify storage item: Item.tag.Customnbt.ItemType set value 1
     data modify storage item: Item.tag.HideFlags set value 127
     data modify storage item: Item.tag.Customnbt.armor set value 1b

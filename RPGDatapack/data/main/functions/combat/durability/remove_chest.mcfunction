@@ -9,10 +9,10 @@
 #アイテムの耐久ゲージを更新
     execute store result score @s maxDurability run data get entity @s Inventory[{Slot:102b}].tag.Customnbt.MaxDurability
     scoreboard players operation $maxdurability buffer = @s maxDurability
-    #中身は金の防具
-    scoreboard players operation @s durability *= $100 const
+    #中身は革の防具
+    scoreboard players operation @s durability *= $80 const
     execute store result score @s dur_ratio run scoreboard players operation @s durability /= @s maxDurability
-    scoreboard players set @s buffer 100
+    scoreboard players set @s buffer 80
     execute store result storage item: Data.Damage int 1 run scoreboard players operation @s buffer -= @s dur_ratio
 #代入
     data modify storage item: Item set from entity @s Inventory[{Slot:102b}]

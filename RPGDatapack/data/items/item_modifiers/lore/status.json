@@ -79,7 +79,7 @@
           },
           "score": "buffer"
         },
-        "range": 3
+        "range": 30
       }
     ]
   },
@@ -104,7 +104,7 @@
           },
           "score": "buffer"
         },
-        "range": 4
+        "range": 31
       }
     ]
   },
@@ -129,7 +129,7 @@
           },
           "score": "buffer"
         },
-        "range": 5
+        "range": 32
       }
     ]
   },
@@ -154,7 +154,7 @@
           },
           "score": "buffer"
         },
-        "range": 6
+        "range": 33
       }
     ]
   },

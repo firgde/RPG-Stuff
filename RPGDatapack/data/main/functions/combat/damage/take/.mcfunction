@@ -5,7 +5,6 @@
 #共通
     function main:combat/damage/deal
 #HP表示
-    function status:hp/calc_ratio
     function status:hp/update
 #リセット
     tag @s remove hurt

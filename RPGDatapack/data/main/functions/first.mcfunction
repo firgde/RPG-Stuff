@@ -154,6 +154,8 @@
     scoreboard players set $15 const 15
     scoreboard players set $20 const 20
     scoreboard players set $50 const 50
+    scoreboard players set $55 const 55
+    scoreboard players set $65 const 65
     scoreboard players set $75 const 75
     scoreboard players set $80 const 80
     scoreboard players set $89 const 89
