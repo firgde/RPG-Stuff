@@ -5,7 +5,7 @@
     scoreboard players set $kbpowerx buffer 5
     scoreboard players set $kbpowery buffer 10
     scoreboard players set $kbpowerz buffer 5
-    execute as @s at @a[tag=attacker] run function main:combat/damage/knockback
+    execute at @a[tag=attacker] run function main:combat/damage/knockback
 #リセット
     scoreboard players reset $kbpowerx buffer
     scoreboard players reset $kbpowery buffer

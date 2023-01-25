@@ -1,7 +1,7 @@
 #検知ｨ！
     scoreboard players set @s usedRod 0
 #クールダウンチェック
-    execute as @s[type=player] run function main:combat/attack/magic/check_cooldown
+    execute if entity @s[type=player] run function main:combat/attack/magic/check_cooldown
     execute if entity @s[type=!player] run tag @s add verify_cooldown
 #MP消費&チェック
     execute store result score $mprequire buffer run data get entity @s SelectedItem.tag.Customnbt.mpRequire

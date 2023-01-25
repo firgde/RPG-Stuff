@@ -32,4 +32,4 @@
     scoreboard players operation @s luk_bonus += @s crt_enchant
     scoreboard players operation @s conc_bonus += @s conc_enchant
 #更新
-    execute as @s run function status:_general/get/add_bonus
+    function status:_general/get/add_bonus
