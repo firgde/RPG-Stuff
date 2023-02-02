@@ -6,3 +6,5 @@
     scoreboard players set $damagecolor buffer 1
 #通知
     tellraw @s {"translate":"combat.text.crit","color":"#FF0000"}
+#リセット
+    scoreboard players reset @s crtBuffer
