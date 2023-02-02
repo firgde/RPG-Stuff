@@ -12,5 +12,5 @@
 #離れたor当たったならkill
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[dx=1] run kill @s
     execute unless entity @e[tag=boss,distance=..10] run kill @s
-    #ボスが近くにいるなら再起
+    #ボスが近くにいるなら再帰
     execute if score @e[tag=boss,distance=..10,limit=1] mob_id matches 2000 at @s rotated as @e[tag=boss,tag=this] run function mobs:ai/2000_boss/fire_attack/rec
