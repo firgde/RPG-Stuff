@@ -8,7 +8,7 @@
     tellraw @p[tag=crafted] [{"text": "アイテムをクラフトした！  ("},{"text": "手工","color": "yellow"},{"text": "+"},{"score":{"name": "*","objective": "add_pt"},"color": "gold"},{"text": ")"}]
     function status:_general/craft/update_xp
 #音を止める
-    #stopsound @a * entity.item_frame.rotate_item
+    #stopsound @p * entity.item_frame.rotate_item
 #リセット
     scoreboard players reset @s buffer
     data remove storage item: Item

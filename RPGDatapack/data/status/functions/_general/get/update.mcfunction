@@ -30,13 +30,13 @@
 #attributeや他のスコアに関与するもの
     execute unless score @s spd_prv = @s spd run function status:spd/update
     function status:hp/update
-    execute as @a run attribute @s generic.attack_damage base set 10.19
+    attribute @s generic.attack_damage base set 10.19
     function status:int/calc
     function status:conc/calc
 #ダメージ処理のために無敵に
-    effect give @a resistance 1000000 255 true
+    effect give @p resistance 1000000 255 true
 #餓死しないために満腹度回復
-    effect give @a saturation 1000000 255 true
+    effect give @p saturation 1000000 255 true
 #いらん棒は消す
     clear @s stick{CustomModelData:1}
 #エリアごとに採掘できるアイテムの設定

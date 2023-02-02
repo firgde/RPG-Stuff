@@ -1,5 +1,5 @@
 #ﾀﾋんだんじゃないの～☆
-    tellraw @a [{"translate":"debugging.maybehedied"},{"score":{"name": "@s","objective": "add_pt"}}]
+    tellraw @p [{"translate":"debugging.maybehedied"},{"score":{"name": "@s","objective": "add_pt"}}]
     #戦闘経験値加算
     execute if entity @s[team=hostile] run scoreboard players operation @p[tag=attacker] add_pt = @s add_pt
     execute if entity @s[team=hostile] as @p[tag=attacker] run function status:_general/combat/update_xp

@@ -1,5 +1,5 @@
 #金リンゴエフェクトいらね
-    effect clear @a[advancements={main:combat/heal/ate=true}] absorption
-    effect clear @a[advancements={main:combat/heal/ate=true}] regeneration
+    effect clear @p[advancements={main:combat/heal/ate=true}] absorption
+    effect clear @p[advancements={main:combat/heal/ate=true}] regeneration
 #リセット
-    advancement revoke @a[advancements={main:combat/heal/ate=true}] only main:combat/heal/ate
+    advancement revoke @p[advancements={main:combat/heal/ate=true}] only main:combat/heal/ate

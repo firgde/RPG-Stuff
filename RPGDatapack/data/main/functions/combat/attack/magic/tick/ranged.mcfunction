@@ -14,7 +14,7 @@
     scoreboard players add @s flyTimer 1
     #追尾システム(無理)
     #まずは進んだ時間を算出
-    execute at @a if score @s playerID = @p playerID store result score @s frate run scoreboard players get @p follow_rate
+    execute at @p if score @s playerID = @p playerID store result score @s frate run scoreboard players get @p follow_rate
     execute store result score @s frate run scoreboard players operation $100 buffer -= @s frate
     scoreboard players set $100 buffer 100
 
