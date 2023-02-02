@@ -21,4 +21,6 @@
     #function main:collect/mining/tick
 #ｴﾝﾁｬﾝﾄ台周りの仕様
     execute as @e[type=item_frame,tag=enchanter] at @s if entity @p[distance=..5] run function main:craft/enchanting/display_item
+#UI付きディスペンサー
+    execute as @a at @s store success score @s pick if entity @e[tag=ui,distance=..6] run clear @a[distance=..6] stick{ui:1b}
 ###(どれもプレイヤーが近くにいると動作するものなので統合できるかも)

@@ -9,17 +9,6 @@
     execute store result score @s crt_bonus run data get entity @s SelectedItem.tag.Customnbt.status.crt
     execute store result score @s luk_bonus run data get entity @s SelectedItem.tag.Customnbt.status.luk
     execute store result score @s conc_bonus run data get entity @s SelectedItem.tag.Customnbt.status.conc
-#エンチャント
-    execute store result score @s atk_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.atk
-    execute store result score @s mag_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.mag
-    execute store result score @s dex_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.dex
-    execute store result score @s max_hp_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.hp
-    execute store result score @s int_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.int
-    execute store result score @s def_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.def
-    execute store result score @s spd_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.spd
-    execute store result score @s crt_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.crt
-    execute store result score @s luk_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.luk
-    execute store result score @s conc_enchant run data get entity @s SelectedItem.tag.Customnbt.Enchantbuff.conc
 #合計
     scoreboard players operation @s atk_bonus += @s atk_enchant
     scoreboard players operation @s mag_bonus += @s mag_enchant

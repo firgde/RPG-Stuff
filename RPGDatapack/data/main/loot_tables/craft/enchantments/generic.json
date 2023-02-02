@@ -101,7 +101,7 @@
                 },
                 {
                     "type": "loot_table",
-                    "name": "main:craft/enchantments/intense",
+                    "name": "main:craft/enchantments/elaborateness",
                     "conditions": [
                         {
                             "condition": "inverted",
@@ -113,7 +113,7 @@
                                         "offsetY": -1,
                                         "predicate": {
                                             "block": {
-                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"intense\"}]}}}]}"
+                                                "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{Enchantments:[{id:\"elaborateness\"}]}}}]}"
                                             }
                                         }
                                     },

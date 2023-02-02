@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"dizziness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:-30},\"Text\":'[{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" II: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" -30\",\"color\":\"red\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:-30},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" II \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"dizziness\",lvl:1s,Buffs:{atk:-5,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:-15},\"Text\":'[{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" I: \",\"color\":\"red\",\"italic\":false},{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" -15\",\"color\":\"red\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:1s,Buffs:{atk:-5,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:-15},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" I \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -61,7 +61,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:5},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +5\",\"color\":\"dark_green\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:5},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -86,7 +86,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:10},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +10\",\"color\":\"dark_green\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:10},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -111,7 +111,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:20},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +20\",\"color\":\"dark_green\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:20},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -136,7 +136,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:35},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +35\",\"color\":\"dark_green\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:35},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -160,7 +160,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"intense\",lvl:5s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:50},\"Text\":'[{\"translate\":\"item.ui.enchantment.intense\",\"color\":\"gray\",\"italic\":false},{\"text\":\" V: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.status.conc\",\"color\":\"gray\"},{\"text\":\" +50\",\"color\":\"dark_green\"}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:5s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:50},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" V \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [

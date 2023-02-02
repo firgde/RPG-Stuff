@@ -48,6 +48,8 @@
         #手工(攻撃、知能、速度、集中)
         scoreboard objectives add lvl_craft dummy
         scoreboard objectives add xp_craft dummy
+        scoreboard objectives add pick dummy
+        scoreboard objectives add throw custom:drop
         #社交(魔法、知能、技巧、会心)
         scoreboard objectives add dialogue trigger
         scoreboard objectives add dprogress dummy

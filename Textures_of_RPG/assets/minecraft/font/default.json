@@ -24,6 +24,15 @@
             ]
         },
         {
+            "type":"bitmap",
+            "file":"font/enchanter.png",
+            "ascent": 13,
+            "height": 256,
+            "chars":[
+                "\uE019"
+            ]
+        },
+        {
             "type":"space",
             "advances":{
                 " ": 4,
