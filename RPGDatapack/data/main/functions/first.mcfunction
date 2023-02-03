@@ -51,7 +51,6 @@
         scoreboard objectives add pick dummy
         scoreboard objectives add throw custom:drop
         #社交(魔法、知能、技巧、会心)
-        scoreboard objectives add dialogue trigger
         scoreboard objectives add dprogress dummy
         scoreboard objectives add money dummy
         scoreboard objectives add lvl_social dummy

@@ -11,6 +11,6 @@
         }
     },
     "rewards": {
-        "function": "main:social/npc/000/talk"
+        "function": "main:social/npc/000/talk_0"
     }
 }
