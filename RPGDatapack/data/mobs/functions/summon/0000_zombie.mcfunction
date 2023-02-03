@@ -4,7 +4,7 @@
     data modify storage mob: Data.status.baseDef set value 10
     data modify storage mob: Data.status.baseSpd set value 20
     data modify storage mob: Data.status.hp set value 100
-    data modify storage mob: Data.loot.xp set value 10
+    data modify storage mob: Data.loot.xp set value 0
     data modify storage mob: Data.loot.DeathLootTable set value "mobs:drops/0000_zombie"
     data modify storage mob: Data.id set value 0
 #共通

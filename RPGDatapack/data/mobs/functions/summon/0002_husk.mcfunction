@@ -4,7 +4,7 @@
     data modify storage mob: Data.status.baseDef set value 0
     data modify storage mob: Data.status.baseSpd set value 35
     data modify storage mob: Data.status.hp set value 150
-    data modify storage mob: Data.loot.xp set value 25
+    data modify storage mob: Data.loot.xp set value 0
     data modify storage mob: Data.loot.DeathLootTable set value "mobs:drops/0002_husk"
     data modify storage mob: Data.id set value 2
 #共通
