@@ -6,7 +6,7 @@
     #表示する色
     scoreboard players set $damagecolor buffer 2
     execute at @s if score $damage buffer matches 0 if score @s hp matches 1.. run particle lava ~ ~ ~ 0.1 0.1 0.1 0.75 10 normal
-    execute if score $damage buffer matches 0 if score @s hp matches 1.. run function main:combat/damage/magic
+    execute if score $damage buffer matches 0 if score @s hp matches 1.. run function main:combat/damage/debuff
     #もしタイマー<=0なら、デバフ除去
     execute if score @s debuffTimer matches ..0 run tag @s remove debuff.fire
     execute if score @s debuffTimer matches ..0 run data modify entity @s HasVisualFire set value 0
