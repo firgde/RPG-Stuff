@@ -227,7 +227,7 @@
     "social.ui.quest_book.status.explore":"Exploring",
     "social.ui.quest_book.status.collect":"Collecting",
     "social.ui.quest_book.status.craft":"Crafting",
-    "social.ui.quest_book.status.social":"Socialing",
+    "social.ui.quest_book.status.social":"Socializing",
     "social.ui.quest_book.status.lvl_total":"Total Level: %s",
 
     "social.ui.quest_book.quests":"Ongoing Quests",
