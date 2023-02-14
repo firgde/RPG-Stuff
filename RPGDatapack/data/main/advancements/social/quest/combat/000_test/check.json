@@ -6,14 +6,11 @@
                 "entity": {
                     "type": "zombie",
                     "team": "hostile"
-                },
-                "player": {
-                    "nbt": "{Inventory:[{tag:{Customnbt:{Quest:{id:0}}}}]}"
                 }
             }
         }
     },
     "rewards": {
-        "function": "main:social/quest/000/rewards"
+        "function": "main:social/quest/000_test/check"
     }
 }
