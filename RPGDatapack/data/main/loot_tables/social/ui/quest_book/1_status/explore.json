@@ -16,7 +16,7 @@
                             "name": [
                                 {
                                     "translate": "social.ui.quest_book.status.explore",
-                                    "color": "blue",
+                                    "color": "aqua",
                                     "italic": false,
                                     "bold": true
                                 }
@@ -36,7 +36,7 @@
                                                 "name": "@s",
                                                 "objective": "lvl_explore"
                                             },
-                                            "color": "dark_blue"
+                                            "color": "dark_aqua"
                                         }
                                     ]
                                 }
