@@ -52,11 +52,10 @@
     "item.wind_ring":"Ring of Gale",
 
     "item.whetstone":"Whetstone",
+
     "item.quest_book":"Quest Book",
     
     "item.bread":"Bread",
-
-    "item.quest_paper":"Quest Paper",
 
 
     "item.comment.lore":"Item Lore",
@@ -104,10 +103,12 @@
     "item.wind_ring.lore":"The magical ring with the power of wind.",
 
     "item.whetstone.lore":"This makes the repair of weapons possible.",
+
+    "item.quest_book.lore":"A book showing information relating to Quests.",
+    "item.quest_book.lore.second":"Once getting this, you are a full-fledged warrior.",
     
     "item.bread.lore":"Oh, this one seems well-baked and tasty...",
 
-    "item.quest_paper.lore":"This shows the Quest to complete.",
 
     "item.ui.comment":"UI texts",
     "item.ui.status.text.mainhand":"When in Main Hand:",
@@ -202,16 +203,6 @@
     "social.text.quest.genre.combat":"Combat",
     "social.text.quest.genre.combat.description":"Quests relating with the defeat of Monsters",
 
-    "social.text.npc.continue":"[CONTINUE]",
-
-    "social.text.quest_book.status":"Status",
-    "social.text.quest_book.lvl_total":"Total Level: ",
-    "social.text.quest_book.lvl_combat":"Combat Level: ",
-    "social.text.quest_book.lvl_explore":"Exploring Level: ",
-    "social.text.quest_book.lvl_collect":"Collecting Level: ",
-    "social.text.quest_book.lvl_craft":"Crafting Level: ",
-    "social.text.quest_book.lvl_social":"Socialing Level: ",
-
     "social.text.npc.000":"I feel tired these days.",
     "social.text.npc.000_1":"The Zombies are haunting me, I think.",
     "social.text.npc.000_2":"So could you kill a zombie for me?",
@@ -223,6 +214,29 @@
     "social.text.quest.000.rewards":"5xDiamond",
 
     "social.text.nomoney":"You don't have enough money!",
+    "social.text.money":"Money Amount: %s",
+
+    "social.ui.comment":"Texts in UI",
+
+    "social.ui.quest_book.page.main.name":"\uF80C\uF80A\uF808\uF803Quest Book",
+    "social.ui.quest_book.page.main.ui":"\uF808\uE01A",
+
+    "social.ui.quest_book.status":"Status",
+    "social.ui.quest_book.status.lvl":"Level: %s",
+    "social.ui.quest_book.status.combat":"Combat",
+    "social.ui.quest_book.status.explore":"Exploring",
+    "social.ui.quest_book.status.collect":"Collecting",
+    "social.ui.quest_book.status.craft":"Crafting",
+    "social.ui.quest_book.status.social":"Socialing",
+    "social.ui.quest_book.status.lvl_total":"Total Level: %s",
+
+    "social.ui.quest_book.quests":"Ongoing Quests",
+    "social.ui.quest_book.next":"Next",
+    "social.ui.quest_book.prev":"Previous",
+
+    "social.ui.quest_book.tips":"Tips",
+
+    "social.ui.quest_book.back":"Back",
 
 
     "comment.debugging":"Debugging go brrrrrr",

@@ -25,4 +25,4 @@
 #リセット
     scoreboard players set @s throw 0
     scoreboard players set @s pick 0
-    advancement revoke @s only main:craft/ui/pick_stick
+    advancement revoke @s only main:craft/ui/dispenser/pick_stick

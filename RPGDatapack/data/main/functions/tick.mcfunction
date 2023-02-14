@@ -22,5 +22,9 @@
 #ｴﾝﾁｬﾝﾄ台周りの仕様
     execute as @e[type=item_frame,tag=enchanter] at @s if entity @p[distance=..5] run function main:craft/enchanting/display_item
 #UI付きディスペンサー
-    execute as @p at @s store success score @s pick if entity @e[tag=ui,distance=..6] run clear @p[distance=..6] stick{ui:1b}
+    execute as @p at @s store success score @s pick if entity @e[tag=ui,distance=..6] run clear @p[distance=..6] stick{ui:1b,menu:"dispenser"}
 ###(どれもプレイヤーが近くにいると動作するものなので統合できるかも)
+#チェストトロッコ式GUI
+    execute as @p at @s run function main:social/ui/tick
+
+###見れば見るほど汚い記述

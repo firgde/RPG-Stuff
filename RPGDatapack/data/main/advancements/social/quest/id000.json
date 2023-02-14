@@ -1,44 +1,4 @@
 {
-    "parent": "main:social/quest/combat/root",
-    "display": {
-        "icon": {
-            "item": "zombie_head"
-        },
-        "title": {
-            "translate": "social.text.quest.000.name"
-        },
-        "description": [
-            {
-                "translate": "social.text.quest.000.content",
-                "color":"red",
-                "extra":[
-                    {
-                        "text": "\uF829"
-                    }
-                ]
-            },
-            {
-                "translate": "social.text.quest.rewards",
-                "color": "green",
-                "underlined": true,
-                "extra": [
-                    {
-                        "text": " ",
-                        "underlined": false,
-                        "extra": [
-                            {
-                                "translate": "social.text.quest.000.rewards",
-                                "color": "white",
-                                "underlined": false
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "hidden": true,
-        "announce_to_chat": false
-    },
     "criteria": {
         "": {
             "trigger": "player_killed_entity",

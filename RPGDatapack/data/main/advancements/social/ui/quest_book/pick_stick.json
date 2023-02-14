@@ -1,0 +1,85 @@
+{
+    "criteria": {
+        "pick": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "pick": {
+                                "min": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Tags:[\"ui_opening\"]}"
+                        }
+                    }
+                ]
+            }
+        },
+        "shift": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{ui:1b,menu:\"quest_book\"}"
+                    }
+                ],
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "player",
+                                "advancements": {
+                                    "main:social/ui/quest_book/pick_stick": false
+                                }
+                            },
+                            "nbt": "{Tags:[\"ui_opening\"]}"
+                        }
+                    }
+                ]
+            }
+        },
+        "throw": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "throw": {
+                                "min": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Tags:[\"ui_opening\"]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "pick",
+            "shift",
+            "throw"
+        ]
+    ],
+    "rewards": {
+        "function": "main:social/ui/quest_book/manage"
+    }
+}

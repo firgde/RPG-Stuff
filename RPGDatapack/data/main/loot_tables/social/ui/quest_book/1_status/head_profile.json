@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "player_head",
+                    "functions": [
+                        {
+                            "function": "fill_player_head",
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ui:1b,menu:\"quest_book\"}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "translate": "social.ui.quest_book.status",
+                                "color": "white",
+                                "bold": true,
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

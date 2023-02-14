@@ -1,0 +1,269 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "player_head",
+                    "functions": [
+                        {
+                            "function": "fill_player_head",
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ui:1b,menu:\"quest_book\"}"
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "translate": "social.ui.quest_book.status.lvl_total",
+                                    "color": "white",
+                                    "italic": false,
+                                    "bold": true,
+                                    "with": [
+                                        {
+                                            "score": {
+                                                "name": "@s",
+                                                "objective": "lvl_total"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "\uE009",
+                                    "color": "white",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.ui.status.atk",
+                                            "color": "gray",
+                                            "italic": false,
+                                            "extra": [
+                                                {
+                                                    "score": {
+                                                        "name": "@s",
+                                                        "objective": "atk_base"
+                                                    },
+                                                    "color": "dark_green"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "nbt": "text.atk",
+                                            "storage": "space:"
+                                        },
+                                        {
+                                            "text": "\uE00E",
+                                            "extra": [
+                                                {
+                                                    "translate": "item.ui.status.def",
+                                                    "color": "gray",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "score": {
+                                                                "name": "@s",
+                                                                "objective": "def_base"
+                                                            },
+                                                            "color": "dark_green"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "\uE00A",
+                                    "color": "white",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.ui.status.mag",
+                                            "color": "gray",
+                                            "italic": false,
+                                            "extra": [
+                                                {
+                                                    "score": {
+                                                        "name": "@s",
+                                                        "objective": "mag_base"
+                                                    },
+                                                    "color": "dark_green"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "nbt": "text.mag",
+                                            "storage": "space:"
+                                        },
+                                        {
+                                            "text": "\uE00F",
+                                            "extra": [
+                                                {
+                                                    "translate": "item.ui.status.spd",
+                                                    "color": "gray",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "score": {
+                                                                "name": "@s",
+                                                                "objective": "spd_base"
+                                                            },
+                                                            "color": "dark_green"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "\uE00B",
+                                    "color": "white",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.ui.status.dex",
+                                            "color": "gray",
+                                            "italic": false,
+                                            "extra": [
+                                                {
+                                                    "score": {
+                                                        "name": "@s",
+                                                        "objective": "dex_base"
+                                                    },
+                                                    "color": "dark_green"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "nbt": "text.dex",
+                                            "storage": "space:"
+                                        },
+                                        {
+                                            "text": "\uE010",
+                                            "extra": [
+                                                {
+                                                    "translate": "item.ui.status.crt",
+                                                    "color": "gray",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "score": {
+                                                                "name": "@s",
+                                                                "objective": "crt_base"
+                                                            },
+                                                            "color": "dark_green"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "\uE00C",
+                                    "color": "white",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.ui.status.hp",
+                                            "color": "gray",
+                                            "italic": false,
+                                            "extra": [
+                                                {
+                                                    "score": {
+                                                        "name": "@s",
+                                                        "objective": "max_hp_base"
+                                                    },
+                                                    "color": "dark_green"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "nbt": "text.hp",
+                                            "storage": "space:"
+                                        },
+                                        {
+                                            "text": "\uE011",
+                                            "extra": [
+                                                {
+                                                    "translate": "item.ui.status.luk",
+                                                    "color": "gray",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "score": {
+                                                                "name": "@s",
+                                                                "objective": "luk_base"
+                                                            },
+                                                            "color": "dark_green"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "\uE00D",
+                                    "color": "white",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.ui.status.int",
+                                            "color": "gray",
+                                            "italic": false,
+                                            "extra": [
+                                                {
+                                                    "score": {
+                                                        "name": "@s",
+                                                        "objective": "int_base"
+                                                    },
+                                                    "color": "dark_green"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "nbt": "text.int",
+                                            "storage": "space:"
+                                        },
+                                        {
+                                            "text": "\uE012",
+                                            "extra": [
+                                                {
+                                                    "translate": "item.ui.status.conc",
+                                                    "color": "gray",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "score": {
+                                                                "name": "@s",
+                                                                "objective": "conc_base"
+                                                            },
+                                                            "color": "dark_green"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

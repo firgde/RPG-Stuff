@@ -1,0 +1,88 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "stick",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ui:1b,menu:\"quest_book\"}"
+                        },
+                        {
+                            "function": "copy_nbt",
+                            "source": {
+                                "type": "storage",
+                                "source": "temp:"
+                            },
+                            "ops": [
+                                {
+                                    "op": "replace",
+                                    "source": "data.Quest[-5].CustomModelData",
+                                    "target": "CustomModelData"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "copy_nbt",
+                            "source": {
+                                "type": "storage",
+                                "source": "temp:"
+                            },
+                            "ops": [
+                                {
+                                    "op": "replace",
+                                    "source": "data.Quest[-5].Name",
+                                    "target": "display.Name"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "copy_nbt",
+                            "source": {
+                                "type": "storage",
+                                "source": "temp:"
+                            },
+                            "ops": [
+                                {
+                                    "op": "append",
+                                    "source": "data.Quest[-5].Content",
+                                    "target": "display.Lore"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "translate": "social.text.quest.rewards",
+                                    "color": "green",
+                                    "italic": false,
+                                    "underlined": true
+                                }
+                            ],
+                            "replace": false
+                        },
+                        {
+                            "function": "copy_nbt",
+                            "source": {
+                                "type": "storage",
+                                "source": "temp:"
+                            },
+                            "ops": [
+                                {
+                                    "op": "append",
+                                    "source": "data.Quest[-5].Rewards",
+                                    "target": "display.Lore"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

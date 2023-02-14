@@ -54,6 +54,17 @@
 
         {"predicate":{"custom_model_data":8000}, "model":"item/quest_paper_red"},
 
-        {"predicate":{"custom_model_data":8998}, "model":"item/bundle_filled"}
+        {"predicate":{"custom_model_data":8998}, "model":"item/bundle_filled"},
+        {"predicate":{"custom_model_data":8999}, "model":"item/knowledge_book"},
+
+        {"predicate":{"custom_model_data":10003}, "model":"item/combat"},
+        {"predicate":{"custom_model_data":10004}, "model":"item/explore"},
+        {"predicate":{"custom_model_data":10005}, "model":"item/collect"},
+        {"predicate":{"custom_model_data":10006}, "model":"item/craft"},
+        {"predicate":{"custom_model_data":10007}, "model":"item/social"},
+
+        {"predicate":{"custom_model_data":10024}, "model":"item/back"},
+        {"predicate":{"custom_model_data":10025}, "model":"item/next"},
+        {"predicate":{"custom_model_data":10026}, "model":"item/prev"}
     ]
 }

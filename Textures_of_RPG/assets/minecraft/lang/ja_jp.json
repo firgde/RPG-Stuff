@@ -52,11 +52,10 @@
     "item.wind_ring":"疾風の指輪",
 
     "item.whetstone":"砥石",
+
     "item.quest_book":"クエストブック",
     
     "item.bread":"パン",
-
-    "item.quest_paper":"クエスト用紙",
 
 
     "item.comment.lore":"アイテム説明",
@@ -104,10 +103,11 @@
     "item.wind_ring.lore":"風の力を宿した指輪。",
 
     "item.whetstone.lore":"武器の修理を可能にする石。",
+
+    "item.quest_book.lore":"クエストを始めとした情報が書かれた本",
+    "item.quest_book.lore.second":"これを手にできれば一人前の戦士だ。",
     
     "item.bread.lore":"こんがりと焼けた美味しそうなパン。",
-
-    "item.quest_paper.lore":"受注したクエストの情報が書いてある。",
 
 
     "item.ui.comment":"UIテキスト",
@@ -197,17 +197,6 @@
     "social.text.quest.genre.combat":"戦闘",
     "social.text.quest.genre.combat.description":"魔物の討伐に関連するクエスト",
 
-    "social.text.npc.continue":"[続きを読む]",
-
-    "social.text.quest_book.status":"ステータス",
-    "social.text.quest_book.lvl_total":"総合レベル：",
-    "social.text.quest_book.lvl_combat":"戦闘レベル：",
-    "social.text.quest_book.lvl_explore":"探索レベル：",
-    "social.text.quest_book.lvl_collect":"採取レベル：",
-    "social.text.quest_book.lvl_craft":"手工レベル：",
-    "social.text.quest_book.lvl_social":"社交レベル：",
-
-
     "social.text.npc.000":"どうも最近眠くてな...",
     "social.text.npc.000_1":"ゾンビのせいだと思っているんだ。",
     "social.text.npc.000_2":"どうかゾンビを倒してくれないか？",
@@ -218,7 +207,30 @@
     "social.text.quest.000.content":"ゾンビを一体倒す",
     "social.text.quest.000.rewards":"ダイヤモンドx5",
 
-    "social.text.money":"総額：",
+    "social.text.nomoney":"所持金が足りない！",
+    "social.text.money":"所持金：%s",
+
+    "social.ui.comment":"UIテキスト",
+
+    "social.ui.quest_book.page.main.name":"\uF80C\uF80A\uF808\uF803クエストブック",
+    "social.ui.quest_book.page.main.ui":"\uF808\uE01A",
+
+    "social.ui.quest_book.status":"ステータス",
+    "social.ui.quest_book.status.lvl":"レベル：%s",
+    "social.ui.quest_book.status.combat":"戦闘",
+    "social.ui.quest_book.status.explore":"探索",
+    "social.ui.quest_book.status.collect":"採取",
+    "social.ui.quest_book.status.craft":"手工",
+    "social.ui.quest_book.status.social":"社交",
+    "social.ui.quest_book.status.lvl_total":"総合レベル：%s",
+
+    "social.ui.quest_book.quests":"進行中のクエスト",
+    "social.ui.quest_book.next":"次へ",
+    "social.ui.quest_book.prev":"前へ",
+
+    "social.ui.quest_book.tips":"冒険の手引き",
+
+    "social.ui.quest_book.back":"戻る",
 
 
     "comment.debugging":"デバッグ用メッセージ",

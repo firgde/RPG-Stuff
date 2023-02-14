@@ -12,6 +12,21 @@
                                 "min": 1
                             }
                         }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "player",
+                                    "looking_at": {
+                                        "nbt": "{Tags:[\"minecartUI\"]}"
+                                    }
+                                }
+                            }
+                        }
                     }
                 ]
             }
@@ -21,7 +36,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{ui:1b}"
+                        "nbt": "{ui:1b,menu:\"dispenser\"}"
                     }
                 ],
                 "player": [
@@ -32,7 +47,7 @@
                             "type_specific": {
                                 "type": "player",
                                 "advancements": {
-                                    "main:craft/ui/pick_stick": false
+                                    "main:craft/ui/dispenser/pick_stick": false
                                 }
                             }
                         }
@@ -50,6 +65,21 @@
                         "scores": {
                             "throw": {
                                 "min": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "player",
+                                    "looking_at": {
+                                        "nbt": "{Tags:[\"minecartUI\"]}"
+                                    }
+                                }
                             }
                         }
                     }

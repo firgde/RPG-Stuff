@@ -48,11 +48,14 @@
         #手工(攻撃、知能、速度、集中)
         scoreboard objectives add lvl_craft dummy
         scoreboard objectives add xp_craft dummy
-        scoreboard objectives add pick dummy
-        scoreboard objectives add throw custom:drop
         #社交(魔法、知能、技巧、会心)
         scoreboard objectives add dprogress dummy
         scoreboard objectives add money dummy
+        scoreboard objectives add page dummy
+        scoreboard objectives add sub_page dummy
+        scoreboard objectives add pick dummy
+        scoreboard objectives add throw custom:drop
+        scoreboard objectives add pick_action dummy
         scoreboard objectives add lvl_social dummy
         scoreboard objectives add xp_social dummy
 
@@ -150,6 +153,7 @@
     scoreboard players set $2 const 2
     scoreboard players set $4 const 4
     scoreboard players set $5 const 5
+    scoreboard players set $7 const 7
     scoreboard players set $8 const 8
     scoreboard players set $10 const 10
     scoreboard players set $15 const 15
@@ -174,6 +178,8 @@
     scoreboard players set $2^26 const 67108864
 #チーム
     team add hostile
+    team add no_col
+    team modify no_col collisionRule never
 #ボスバー
     bossbar add health: ""
 #タイトルの表示時間

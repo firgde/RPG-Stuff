@@ -41,6 +41,7 @@
         {"predicate":{"custom_model_data":2005}, "model":"item/wither_ring"},
         {"predicate":{"custom_model_data":2100}, "model":"item/whetstone"},
 
-        {"predicate":{"custom_model_data":8998}, "model":"item/bundle_filled"}
+        {"predicate":{"custom_model_data":8998}, "model":"item/bundle_filled"},
+        {"predicate":{"custom_model_data":8999}, "model":"item/knowledge_book"}
     ]
 }
