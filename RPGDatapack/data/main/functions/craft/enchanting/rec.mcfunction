@@ -21,7 +21,7 @@
     execute store result score $spdbonus spd_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.spd
     execute store result score $crtbonus crt_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.crt
     execute store result score $lukbonus luk_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.luk
-    execute store result score $concbonus conc_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.conc
+    execute store result score $accbonus acc_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.acc
     #追加アイテムから加算値を取得
     scoreboard players operation $atkbonus atk_enchant += $ebonusatk atk_enchant
     scoreboard players operation $magbonus mag_enchant += $ebonusmag mag_enchant
@@ -32,7 +32,7 @@
     scoreboard players operation $spdbonus spd_enchant += $ebonusspd spd_enchant
     scoreboard players operation $crtbonus crt_enchant += $ebonuscrt crt_enchant
     scoreboard players operation $lukbonus luk_enchant += $ebonusluk luk_enchant
-    scoreboard players operation $concbonus conc_enchant += $ebonusconc conc_enchant
+    scoreboard players operation $accbonus acc_enchant += $ebonusacc acc_enchant
     #元の値を取得
     execute store result score $atkbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.atk
     execute store result score $magbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.mag
@@ -43,7 +43,7 @@
     execute store result score $spdbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.spd
     execute store result score $crtbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.crt
     execute store result score $lukbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.luk
-    execute store result score $concbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.conc
+    execute store result score $accbonus buffer run data get block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.acc
     #エンチャントで増加する値を加算
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.atk int 1 run scoreboard players operation $atkbonus buffer += $atkbonus atk_enchant
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.mag int 1 run scoreboard players operation $magbonus buffer += $magbonus mag_enchant
@@ -54,7 +54,7 @@
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.spd int 1 run scoreboard players operation $spdbonus buffer += $spdbonus spd_enchant
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.crt int 1 run scoreboard players operation $crtbonus buffer += $crtbonus crt_enchant
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.luk int 1 run scoreboard players operation $lukbonus buffer += $lukbonus luk_enchant
-    execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.conc int 1 run scoreboard players operation $concbonus buffer += $concbonus conc_enchant
+    execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.acc int 1 run scoreboard players operation $accbonus buffer += $accbonus acc_enchant
 #ｱｲﾃﾑﾓﾃﾞｨﾌｧｲｱを適用
     data modify storage item: Item set from block ~ ~-1 ~ Items[{Slot:4b}]
     data remove storage item: Item.Slot

@@ -126,11 +126,11 @@
         scoreboard objectives add luk_enchant dummy
         scoreboard objectives add luk_buff dummy
         #集中(範囲攻撃のダメージ増加、魔法攻撃の追尾開始のタイミングなどその他)
-        scoreboard objectives add conc dummy
-        scoreboard objectives add conc_bonus dummy
-        scoreboard objectives add conc_base dummy
-        scoreboard objectives add conc_enchant dummy
-        scoreboard objectives add conc_buff dummy
+        scoreboard objectives add acc dummy
+        scoreboard objectives add acc_bonus dummy
+        scoreboard objectives add acc_base dummy
+        scoreboard objectives add acc_enchant dummy
+        scoreboard objectives add acc_buff dummy
         scoreboard objectives add dmg_eff dummy
         scoreboard objectives add follow_rate dummy
         

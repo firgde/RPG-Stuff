@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:2s,\"Text\":'[{\"translate\":\"item.ui.enchantment.burden\",\"color\":\"red\",\"italic\":false},{\"text\":\" II \",\"color\":\"red\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:-25,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:2s,\"Text\":'[{\"translate\":\"item.ui.enchantment.burden\",\"color\":\"red\",\"italic\":false},{\"text\":\" II \",\"color\":\"red\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:-25,crt:0,luk:0,acc:0}}}"
             }
           ],
           "conditions": [
@@ -20,7 +20,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": 0
             }
@@ -33,7 +33,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:1s,\"Text\":'[{\"text\":\"\uE00F\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.burden\",\"color\":\"red\",\"italic\":false},{\"text\":\" III \",\"color\":\"red\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:-10,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:1s,\"Text\":'[{\"text\":\"\uE00F\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.burden\",\"color\":\"red\",\"italic\":false},{\"text\":\" III \",\"color\":\"red\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:-10,crt:0,luk:0,acc:0}}}"
             }
           ],
           "conditions": [
@@ -42,7 +42,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -58,7 +58,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:1s,\"Text\":'[{\"text\":\"\uE00F\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.agility\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:15,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:1s,\"Text\":'[{\"text\":\"\uE00F\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.agility\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:15,crt:0,luk:0,acc:0}}}"
             }
           ],
           "conditions": [
@@ -67,7 +67,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -83,7 +83,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:2s,\"Text\":'[{\"text\":\"\uE00F\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.agility\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:25,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:2s,\"Text\":'[{\"text\":\"\uE00F\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.agility\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:25,crt:0,luk:0,acc:0}}}"
             }
           ],
           "conditions": [
@@ -92,7 +92,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 20,
@@ -108,7 +108,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:3s,\"Text\":'[{\"text\":\"\uE00F\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.agility\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:40,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"agility\",lvl:3s,\"Text\":'[{\"text\":\"\uE00F\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.agility\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:40,crt:0,luk:0,acc:0}}}"
             }
           ],
           "conditions": [
@@ -117,7 +117,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 35

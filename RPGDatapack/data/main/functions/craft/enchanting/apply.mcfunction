@@ -19,7 +19,7 @@
     scoreboard players reset $ebonusspd
     scoreboard players reset $ebonuscrt
     scoreboard players reset $ebonusluk
-    scoreboard players reset $ebonusconc
+    scoreboard players reset $ebonusacc
     scoreboard players reset $efire
     scoreboard players reset $eice
     scoreboard players reset $ethunder

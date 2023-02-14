@@ -8,7 +8,7 @@
     scoreboard players set @s spd_bonus 0
     scoreboard players set @s crt_bonus 0
     scoreboard players set @s luk_bonus 0
-    scoreboard players set @s conc_bonus 0
+    scoreboard players set @s acc_bonus 0
 #無印ステータスリセット
     scoreboard players operation @s atk = @s atk_base
     scoreboard players operation @s mag = @s mag_base
@@ -19,7 +19,7 @@
     scoreboard players operation @s spd = @s spd_base
     scoreboard players operation @s crt = @s crt_base
     scoreboard players operation @s luk = @s luk_base
-    scoreboard players operation @s conc = @s conc_base
+    scoreboard players operation @s acc = @s acc_base
 #ステータス取得
     execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{weapon:1b}}}}] run function status:_general/get/mainhand
     execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}]}] run function status:_general/get/offhand
@@ -32,7 +32,7 @@
     function status:hp/update
     attribute @s generic.attack_damage base set 10.19
     function status:int/calc
-    function status:conc/calc
+    function status:acc/calc
 #ダメージ処理のために無敵に
     effect give @p resistance 1000000 255 true
 #餓死しないために満腹度回復
@@ -55,6 +55,6 @@
     scoreboard players operation @s spd > $0 const
     scoreboard players operation @s crt > $0 const
     scoreboard players operation @s luk > $0 const
-    scoreboard players operation @s conc > $0 const
+    scoreboard players operation @s acc > $0 const
 #リセット
     advancement revoke @s only status:equipped

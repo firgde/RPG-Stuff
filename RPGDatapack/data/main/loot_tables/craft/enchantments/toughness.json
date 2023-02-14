@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:-50,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" IV \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:-50,int:0,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" IV \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -20,7 +20,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "max": 45
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:-30,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" III \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:-30,int:0,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" III \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -44,7 +44,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "max": 35
@@ -59,7 +59,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:-20,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" II \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:-20,int:0,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" II \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -68,7 +68,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "max": 30
@@ -83,7 +83,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:-10,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" I \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:-10,int:0,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.vulnerability\",\"color\":\"red\",\"italic\":false},{\"text\":\" I \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -92,7 +92,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -108,7 +108,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:15,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:15,int:0,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -117,7 +117,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -133,7 +133,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:20,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:20,int:0,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -142,7 +142,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 30,
@@ -158,7 +158,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:35,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:35,int:0,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -167,7 +167,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 40,
@@ -183,7 +183,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:50,int:0,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"toughness\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:50,int:0,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00C\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.toughness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -192,7 +192,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 60

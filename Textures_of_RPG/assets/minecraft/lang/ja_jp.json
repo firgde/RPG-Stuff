@@ -127,7 +127,7 @@
     "item.ui.status.spd":"速度 ",
     "item.ui.status.crt":"会心\uF825",
     "item.ui.status.luk":"運\uF828\uF825",
-    "item.ui.status.conc":"集中\uF824",
+    "item.ui.status.acc":"集中\uF824",
 
     "item.ui.comment.enchantments":"エンチャント名",
     "item.ui.enchantment.sharpness":"ダメージ増加",

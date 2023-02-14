@@ -22,7 +22,7 @@
 					"nbt": "{Customnbt:{weapon:1b}}"
 				},
                 "offhand": {
-                    "nbt": "{Customnbt:{offhandOnly:1b,status:{conc:-25}}}"
+                    "nbt": "{Customnbt:{offhandOnly:1b,status:{acc:-25}}}"
                 }
               }
             }

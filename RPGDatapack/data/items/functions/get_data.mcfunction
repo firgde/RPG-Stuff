@@ -12,7 +12,7 @@
     execute store result score $spdbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.spd
     execute store result score $crtbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.crt
     execute store result score $lukbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.luk
-    execute store result score $concbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.conc
+    execute store result score $accbonus buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.status.acc
     #レア度
     execute store result score $rarity buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.rarity
     #耐久度

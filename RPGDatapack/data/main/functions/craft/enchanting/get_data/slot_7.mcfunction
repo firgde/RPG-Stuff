@@ -9,7 +9,7 @@
     execute store result score $ebonusspd buffer run data get block ~ ~-1 ~ Items[{Slot:7b}].tag.Customnbt.EnchantingData.bonus.spd
     execute store result score $ebonuscrt buffer run data get block ~ ~-1 ~ Items[{Slot:7b}].tag.Customnbt.EnchantingData.bonus.crt
     execute store result score $ebonusluk buffer run data get block ~ ~-1 ~ Items[{Slot:7b}].tag.Customnbt.EnchantingData.bonus.luk
-    execute store result score $ebonusconc buffer run data get block ~ ~-1 ~ Items[{Slot:7b}].tag.Customnbt.EnchantingData.bonus.conc
+    execute store result score $ebonusacc buffer run data get block ~ ~-1 ~ Items[{Slot:7b}].tag.Customnbt.EnchantingData.bonus.acc
 
     #属性+αエンチャントの出やすさ
     execute store result score $efire buffer run data get block ~ ~-1 ~ Items[{Slot:7b}].tag.Customnbt.EnchantingData.bonus.extra.fire
@@ -29,6 +29,6 @@
     scoreboard players operation $ebonusspd spd_enchant += $ebonusspd buffer
     scoreboard players operation $ebonuscrt crt_enchant += $ebonuscrt buffer
     scoreboard players operation $ebonusluk luk_enchant += $ebonusluk buffer
-    scoreboard players operation $ebonusconc conc_enchant += $ebonusconc buffer
+    scoreboard players operation $ebonusacc acc_enchant += $ebonusacc buffer
 #ディスペンサーから削除
     data remove block ~ ~-1 ~ Items[{Slot:7b}]

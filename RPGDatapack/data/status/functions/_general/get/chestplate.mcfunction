@@ -8,7 +8,7 @@
     execute store result score @s spd_bonus run data get entity @s Inventory[{Slot:102b}].tag.Customnbt.status.spd
     execute store result score @s crt_bonus run data get entity @s Inventory[{Slot:102b}].tag.Customnbt.status.crt
     execute store result score @s luk_bonus run data get entity @s Inventory[{Slot:102b}].tag.Customnbt.status.luk
-    execute store result score @s conc_bonus run data get entity @s Inventory[{Slot:102b}].tag.Customnbt.status.conc
+    execute store result score @s acc_bonus run data get entity @s Inventory[{Slot:102b}].tag.Customnbt.status.acc
 #合計
     scoreboard players operation @s atk_bonus += @s atk_enchant
     scoreboard players operation @s mag_bonus += @s mag_enchant
@@ -19,6 +19,6 @@
     scoreboard players operation @s spd_bonus += @s spd_enchant
     scoreboard players operation @s crt_bonus += @s crt_enchant
     scoreboard players operation @s luk_bonus += @s crt_enchant
-    scoreboard players operation @s conc_bonus += @s conc_enchant
+    scoreboard players operation @s acc_bonus += @s acc_enchant
 #更新
     function status:_general/get/add_bonus

@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:-50,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.stupidity\",\"color\":\"red\",\"italic\":false},{\"text\":\" IV \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:-50,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.stupidity\",\"color\":\"red\",\"italic\":false},{\"text\":\" IV \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -20,7 +20,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:-30,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.stupidity\",\"color\":\"red\",\"italic\":false},{\"text\":\" III \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:-30,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.stupidity\",\"color\":\"red\",\"italic\":false},{\"text\":\" III \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -45,7 +45,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -61,7 +61,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:-20,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.stupidity\",\"color\":\"red\",\"italic\":false},{\"text\":\" II \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:-20,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.stupidity\",\"color\":\"red\",\"italic\":false},{\"text\":\" II \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -70,7 +70,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -86,7 +86,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:-10,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.stupidity\",\"color\":\"red\",\"italic\":false},{\"text\":\" I \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:-10,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.stupidity\",\"color\":\"red\",\"italic\":false},{\"text\":\" I \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -95,7 +95,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -111,7 +111,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:15,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.wisdom\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:15,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.wisdom\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -120,7 +120,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -136,7 +136,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:20,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.wisdom\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:20,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.wisdom\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -145,7 +145,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 30,
@@ -161,7 +161,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:35,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.wisdom\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:35,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.wisdom\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -170,7 +170,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 40,
@@ -186,7 +186,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:50,def:0,spd:0,crt:0,luk:0,conc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.wisdom\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"wisdom\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:50,def:0,spd:0,crt:0,luk:0,acc:0},\"Text\":'[{\"text\":\"\uE00D\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.wisdom\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -195,7 +195,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 60

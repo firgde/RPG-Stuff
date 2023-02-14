@@ -36,7 +36,7 @@
     scoreboard players reset $spdbonus
     scoreboard players reset $crtbonus
     scoreboard players reset $lukbonus
-    scoreboard players reset $concbonus
+    scoreboard players reset $accbonus
     scoreboard players reset $rarity buffer
     scoreboard players reset $durability buffer
     scoreboard players reset $maxdurability buffer

@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:-30},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" II \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:-30},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" II \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -20,7 +20,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:1s,Buffs:{atk:-5,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:-15},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" I \",\"color\":\"red\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:1s,Buffs:{atk:-5,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:-15},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.dizziness\",\"color\":\"red\",\"italic\":false},{\"text\":\" I \",\"color\":\"red\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -45,7 +45,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -61,7 +61,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:5},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:1s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:5},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -70,7 +70,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -86,7 +86,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:10},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:2s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:10},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -95,7 +95,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 20,
@@ -111,7 +111,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:20},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:3s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:20},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -120,7 +120,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 30,
@@ -136,7 +136,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:35},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:4s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:35},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" IV \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -145,7 +145,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 40
@@ -160,7 +160,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:5s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:50},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" V \",\"color\":\"gray\",\"italic\":false}]'}}"
+              "tag": "{CustomModelData:1,Enchant:{id:\"elaborateness\",lvl:5s,Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:50},\"Text\":'[{\"text\":\"\uE012\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.elaborateness\",\"color\":\"gray\",\"italic\":false},{\"text\":\" V \",\"color\":\"gray\",\"italic\":false}]'}}"
             }
           ],
           "conditions": [
@@ -169,7 +169,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 60

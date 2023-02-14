@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"ice_aspect\",lvl:1s,\"Text\":'[{\"text\":\"\uE001\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.ice_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"ice_aspect\",lvl:1s,\"Text\":'[{\"text\":\"\uE001\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.ice_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" I \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:0}}}"
             }
           ],
           "conditions": [
@@ -20,7 +20,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 0,
@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"ice_aspect\",lvl:2s,\"Text\":'[{\"text\":\"\uE001\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.ice_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"ice_aspect\",lvl:2s,\"Text\":'[{\"text\":\"\uE001\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.ice_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" II \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:0}}}"
             }
           ],
           "conditions": [
@@ -45,7 +45,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 20,
@@ -61,7 +61,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"ice_aspect\",lvl:3s,\"Text\":'[{\"text\":\"\uE001\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.ice_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,conc:0}}}"
+              "tag": "{CustomModelData:1,Enchant:{extra:1b,id:\"ice_aspect\",lvl:3s,\"Text\":'[{\"text\":\"\uE001\",\"color\":\"white\",\"italic\":false},{\"translate\":\"item.ui.enchantment.ice_aspect\",\"color\":\"gray\",\"italic\":false},{\"text\":\" III \",\"color\":\"gray\",\"italic\":false}]',Buffs:{atk:0,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:0,luk:0,acc:0}}}"
             }
           ],
           "conditions": [
@@ -70,7 +70,7 @@
               "value": {
                 "type": "score",
                 "target": "this",
-                "score": "conc"
+                "score": "acc"
               },
               "range": {
                 "min": 35

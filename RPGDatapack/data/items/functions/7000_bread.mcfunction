@@ -20,7 +20,7 @@
     scoreboard players set $spdbonus buffer 0
     scoreboard players set $crtbonus buffer 0
     scoreboard players set $lukbonus buffer 0
-    scoreboard players set $concbonus buffer 0
+    scoreboard players set $accbonus buffer 0
     scoreboard players set $rarity buffer 0
     scoreboard players set $durability buffer 0
     scoreboard players set $maxdurability buffer 0

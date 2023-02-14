@@ -8,4 +8,4 @@
     scoreboard players operation @s spd += @s spd_bonus
     scoreboard players operation @s crt += @s crt_bonus
     scoreboard players operation @s luk += @s luk_bonus
-    scoreboard players operation @s conc += @s conc_bonus
+    scoreboard players operation @s acc += @s acc_bonus

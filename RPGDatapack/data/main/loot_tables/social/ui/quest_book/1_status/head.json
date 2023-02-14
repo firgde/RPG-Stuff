@@ -242,14 +242,14 @@
                                             "text": "\uE012",
                                             "extra": [
                                                 {
-                                                    "translate": "item.ui.status.conc",
+                                                    "translate": "item.ui.status.acc",
                                                     "color": "gray",
                                                     "italic": false,
                                                     "extra": [
                                                         {
                                                             "score": {
                                                                 "name": "@s",
-                                                                "objective": "conc_base"
+                                                                "objective": "acc_base"
                                                             },
                                                             "color": "dark_green"
                                                         }

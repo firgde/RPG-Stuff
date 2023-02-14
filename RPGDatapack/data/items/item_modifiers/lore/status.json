@@ -997,7 +997,7 @@
           "italic": false
         },
         {
-          "translate": "item.ui.status.conc",
+          "translate": "item.ui.status.acc",
           "color": "white",
           "italic": false
         },
@@ -1008,7 +1008,7 @@
         },
         {
           "score": {
-            "name": "$concbonus",
+            "name": "$accbonus",
             "objective": "buffer"
           },
           "color": "green",
@@ -1023,7 +1023,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "$concbonus"
+            "name": "$accbonus"
           },
           "score": "buffer"
         },
@@ -1044,7 +1044,7 @@
           "italic": false
         },
         {
-          "translate": "item.ui.status.conc",
+          "translate": "item.ui.status.acc",
           "color": "white",
           "italic": false
         },
@@ -1053,7 +1053,7 @@
         },
         {
           "score": {
-            "name": "$concbonus",
+            "name": "$accbonus",
             "objective": "buffer"
           },
           "color": "red",
@@ -1068,7 +1068,7 @@
           "type": "score",
           "target": {
             "type": "fixed",
-            "name": "$concbonus"
+            "name": "$accbonus"
           },
           "score": "buffer"
         },

@@ -27,7 +27,7 @@
     scoreboard players set $spdbonus buffer 0
     scoreboard players set $crtbonus buffer 10
     scoreboard players set $lukbonus buffer 0
-    scoreboard players set $concbonus buffer 0
+    scoreboard players set $accbonus buffer 0
     scoreboard players set $rarity buffer 1
     scoreboard players set $durability buffer 250
     scoreboard players set $maxdurability buffer 250
@@ -43,7 +43,7 @@
     data modify storage item: Item.tag.Customnbt.status.spd set value 0
     data modify storage item: Item.tag.Customnbt.status.crt set value 10
     data modify storage item: Item.tag.Customnbt.status.luk set value 0
-    data modify storage item: Item.tag.Customnbt.status.conc set value 0
+    data modify storage item: Item.tag.Customnbt.status.acc set value 0
     data modify storage item: Item.tag.Customnbt.Durability set value 250
     data modify storage item: Item.tag.Customnbt.MaxDurability set value 250
 #共通
