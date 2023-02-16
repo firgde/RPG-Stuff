@@ -127,7 +127,7 @@
     "item.ui.status.spd":"Spd\uF826",
     "item.ui.status.crt":"Crt\uF828\uF821",
     "item.ui.status.luk":"Luk\uF827",
-    "item.ui.status.acc":"Acc\uF828\uF821",
+    "item.ui.status.acc":"Acc\uF826",
 
     "item.ui.comment.enchantments":"Enchantment Names",
     "item.ui.enchantment.sharpness":"Sharpness",
