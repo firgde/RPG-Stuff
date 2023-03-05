@@ -1,5 +1,5 @@
 #どのGUIを開いているか
-    execute if entity @s[tag=book] run function main:social/ui/quest_book/tick
+    execute if entity @s[tag=book] run function asset:social/ui/quest_book/tick
 
 #開かれなかったUIはkill
     execute positioned ~ ~1.2 ~ as @e[tag=summon,tag=minecartUI,distance=..1.5] if data entity @s {PortalCooldown:0} run function main:social/ui/kill
