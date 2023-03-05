@@ -53,6 +53,5 @@
     execute if entity @s[tag=boss] run function mobs:summon/boss/load_bossbar
 #リセット
     scoreboard players reset $IDbuffer buffer
-    scoreboard players reset $ID buffer
     data remove storage mob: Data
     tag @s[tag=!boss] remove spawn
