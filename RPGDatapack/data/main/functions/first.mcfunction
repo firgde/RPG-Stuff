@@ -78,7 +78,7 @@
         scoreboard objectives add dex_base dummy
         scoreboard objectives add dex_enchant dummy
         scoreboard objectives add dex_buff dummy
-        #体力(HPとその回復速度)
+        #体力(最大HP)
         scoreboard objectives add max_hp dummy
         scoreboard objectives add hp dummy
         scoreboard objectives add max_hp_bonus dummy
@@ -119,12 +119,13 @@
         scoreboard objectives add crt_base dummy
         scoreboard objectives add crt_enchant dummy
         scoreboard objectives add crt_buff dummy
-        #運(ドロップ率、回避率などのRNG操作ステータス)
+        #運(ドロップ率などのRNG操作ステータス)
         scoreboard objectives add luk dummy
         scoreboard objectives add luk_bonus dummy
         scoreboard objectives add luk_base dummy
         scoreboard objectives add luk_enchant dummy
         scoreboard objectives add luk_buff dummy
+        scoreboard objectives add luk_prv dummy
         #集中(範囲攻撃のダメージ増加、魔法攻撃の追尾開始のタイミングなどその他)
         scoreboard objectives add acc dummy
         scoreboard objectives add acc_bonus dummy

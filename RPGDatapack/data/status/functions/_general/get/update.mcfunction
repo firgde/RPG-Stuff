@@ -28,10 +28,11 @@
     execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{Customnbt:{armorType:"leggings",armor:1b}}}]}] run function status:_general/get/leggings
     execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]}] run function status:_general/get/boots
 #attributeや他のスコアに関与するもの
-    execute unless score @s spd_prv = @s spd run function status:spd/update
     function status:hp/update
     attribute @s generic.attack_damage base set 10.19
     function status:int/calc
+    execute unless score @s spd_prv = @s spd run function status:spd/update
+    execute unless score @s luk_prv = @s luk run function status:luk/calc
     function status:acc/calc
 #ダメージ処理のために無敵に
     effect give @p resistance 1000000 255 true
