@@ -6,5 +6,5 @@
     #バニラMobに色々行動させるボス(2000~)
     execute if score @s mob_id matches 2000 run function asset:mob/2000_boss/ai/tick
 
-    #アマスタ+バニラMobのカスタムモデルボス(3000~)
+    #Display+Interactionのカスタムモデルボス(3000~)
     

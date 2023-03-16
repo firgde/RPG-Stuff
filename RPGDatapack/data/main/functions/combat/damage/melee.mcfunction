@@ -1,5 +1,3 @@
-#攻撃されました
-    tag @s add hurt
 #エンチャント処理
     data modify storage damage: Damage set from entity @p[tag=attacker,limit=1] SelectedItem.tag.Customnbt.Enchantments
     execute if data storage damage: Damage[{extra:1b}] run function main:combat/attack/enchantment/specify

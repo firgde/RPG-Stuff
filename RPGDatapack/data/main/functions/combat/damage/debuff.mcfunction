@@ -3,7 +3,7 @@
     scoreboard players operation @s hp -= @s debuffDamage
 #演出
     execute at @s run function main:combat/damage/display_amount
-    function main:combat/damage/display
+    damage @s 1 generic
     #ボス限定
     execute if entity @s[tag=boss] run function main:combat/damage/boss
 #体力が0ならﾀﾋ

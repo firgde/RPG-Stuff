@@ -26,7 +26,7 @@
     execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{Customnbt:{armorType:"leggings",armor:1b}}}]},type=player] run function main:combat/durability/remove_legs
     execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]},type=player] run function main:combat/durability/remove_feet
 #必要ならば、演出
-    execute if entity @s[tag=hurt_skill] run function main:combat/damage/display
+    execute if entity @s[tag=hurt_skill] run damage @s 1 generic
 #処理終わり
     tag @s remove hurt
     tag @s remove hurt_skill

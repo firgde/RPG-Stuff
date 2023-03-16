@@ -5,7 +5,8 @@
 			"conditions": {
 				"damage": {
 					"type": {
-						"is_projectile": true
+						"id": "arrow",
+						"expected": true
 					}
 				}
 			}
@@ -15,7 +16,8 @@
 			"conditions": {
 				"damage": {
 					"type": {
-						"is_projectile": false
+						"id": "player_attack",
+						"expected": true
 					}
 				}
 			}
