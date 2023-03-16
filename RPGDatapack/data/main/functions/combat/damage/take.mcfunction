@@ -1,7 +1,6 @@
 #痛い
     tag @s add hurt
 #誰に何でダメージを与えられたか
-    #function main:combat/damage/take/specify/9
     execute store result score @s[advancements={main:combat/damage_taken={melee=true}}] damage on attacker run scoreboard players get @s atk
     execute store result score @s[advancements={main:combat/damage_taken={projectile=true}}] damage on attacker run scoreboard players get @s dex
 #共通
