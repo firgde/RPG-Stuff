@@ -5,7 +5,7 @@
 			"conditions": {
 				"damage": {
 					"type": {
-						"id": "mob_attack",
+						"id": "arrow",
 						"expected": true
 					}
 				}
@@ -16,7 +16,7 @@
 			"conditions": {
 				"damage": {
 					"type": {
-						"id": "arrow",
+						"id": "mob_attack",
 						"expected": true
 					}
 				}
