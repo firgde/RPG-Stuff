@@ -34,10 +34,6 @@
     execute unless score @s spd_prv = @s spd run function status:spd/update
     execute unless score @s luk_prv = @s luk run function status:luk/calc
     function status:acc/calc
-#ダメージ処理のために無敵に
-    effect give @p resistance 1000000 255 true
-#餓死しないために満腹度回復
-    effect give @p saturation 1000000 255 true
 #いらん棒は消す
     clear @s stick{CustomModelData:1}
 #エリアごとに採掘できるアイテムの設定
