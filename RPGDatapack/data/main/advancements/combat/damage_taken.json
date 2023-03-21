@@ -5,8 +5,12 @@
 			"conditions": {
 				"damage": {
 					"type": {
-						"id": "mob_projectile",
-						"expected": true
+						"tags": [
+							{
+								"id": "is_projectile",
+								"expected": true
+							}
+						]
 					}
 				}
 			}
@@ -16,13 +20,23 @@
 			"conditions": {
 				"damage": {
 					"type": {
-						"id": "mob_attack",
-						"expected": true
+						"tags": [
+							{
+								"id": "asset:melee",
+								"expected": true
+							}
+						]
 					}
 				}
 			}
 		}
 	},
+	"requirements": [
+		[
+			"projectile",
+			"melee"
+		]
+	],
 	"rewards": {
 		"function": "main:combat/damage/take"
 	}
