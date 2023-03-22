@@ -5,8 +5,12 @@
 			"conditions": {
 				"damage": {
 					"type": {
-						"id": "arrow",
-						"expected": true
+						"tags": [
+							{
+								"id": "is_projectile",
+								"expected": true
+							}
+						]
 					}
 				}
 			}
@@ -16,8 +20,12 @@
 			"conditions": {
 				"damage": {
 					"type": {
-						"id": "player_attack",
-						"expected": true
+						"tags": [
+							{
+								"id": "asset:melee_player",
+								"expected": true
+							}
+						]
 					}
 				}
 			}
