@@ -21,9 +21,6 @@
         scoreboard objectives add debuffDamage dummy
         scoreboard objectives add usedRod used:warped_fungus_on_a_stick
         scoreboard objectives add skillCooldown dummy
-        scoreboard objectives add sideSkillCooldown dummy
-        scoreboard objectives add sideSuccess dummy
-        scoreboard objectives add recCount dummy
         scoreboard objectives add spawnTimer dummy
         scoreboard objectives add spawnDelay dummy
         scoreboard objectives add aiTimer dummy
@@ -143,11 +140,11 @@
         scoreboard objectives add foodTimer dummy
     #プレイヤー区別用のID
     scoreboard objectives add playerID dummy
-    #バッファ
-    scoreboard objectives add buffer dummy
     #手に持っているアイテムのスロット
     scoreboard objectives add slot dummy
     scoreboard objectives add prevslot dummy
+    #バッファ
+    scoreboard objectives add buffer dummy
     #定数
     scoreboard objectives add const dummy
     scoreboard players set $-1 const -1
@@ -186,5 +183,11 @@
     bossbar add health: ""
 #タイトルの表示時間
     title @p times 10 40 10
+
+#いずれload.mcfunctionに移動される分
 #攻撃力を一律10.19に
     execute as @p run attribute @s generic.attack_damage base set 10.19
+#ダメージ処理のために無敵に
+    effect give @p resistance infinite 255 true
+#餓死しないために満腹度回復
+    effect give @p saturation infinite 255 true
