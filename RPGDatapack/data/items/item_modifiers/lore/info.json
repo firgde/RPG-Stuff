@@ -1,418 +1,390 @@
 [
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
-        "text": " "
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "$hasskill"
-          },
-          "score": "buffer"
-        },
-        "range": 1
-      }
-    ]
-  },
-  {
-    "function": "copy_nbt",
-    "source": {
-      "type": "storage",
-      "source": "item:"
-    },
-    "ops": [
-      {
-        "source": "Item.tag.Customnbt.Skills.Main.display.Name",
-        "target": "display.Lore",
-        "op": "append"
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "$hasskill"
-          },
-          "score": "buffer"
-        },
-        "range": 1
-      }
-    ]
-  },
-  {
-    "function": "copy_nbt",
-    "source": {
-      "type": "storage",
-      "source": "item:"
-    },
-    "ops": [
-      {
-        "source": "Item.tag.Customnbt.Skills.Side.display.Name",
-        "target": "display.Lore",
-        "op": "append"
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "$hasskill"
-          },
-          "score": "buffer"
-        },
-        "range": 1
-      }
-    ]
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "$hasskill"
-          },
-          "score": "buffer"
-        },
-        "range": 1
-      }
-    ]
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
-        "text": " "
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "alternative",
-        "terms": [
-          {
-            "condition": "inverted",
-            "term": {
-              "condition": "value_check",
-              "value": {
-                "type": "score",
-                "target": {
-                  "type": "fixed",
-                  "name": "$durability"
-                },
-                "score": "buffer"
-              },
-              "range": 0
-            }
-          },
-          {
-            "condition": "inverted",
-            "term": {
-              "condition": "value_check",
-              "value": {
-                "type": "score",
-                "target": {
-                  "type": "fixed",
-                  "name": "$maxdurability"
-                },
-                "score": "buffer"
-              },
-              "range": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
-        "translate": "item.ui.durability",
-        "color": "white",
-        "italic": false,
-        "extra": [
-          {
-            "score": {
-              "name": "$durability",
-              "objective": "buffer"
-            },
-            "extra": [
-              {
-                "text": "/",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "score": {
-                      "name": "$maxdurability",
-                      "objective": "buffer"
-                    },
-                    "color": "white",
-                    "italic": false
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "alternative",
-        "terms": [
-          {
-            "condition": "inverted",
-            "term": {
-              "condition": "value_check",
-              "value": {
-                "type": "score",
-                "target": {
-                  "type": "fixed",
-                  "name": "$durability"
-                },
-                "score": "buffer"
-              },
-              "range": 0
-            }
-          },
-          {
-            "condition": "inverted",
-            "term": {
-              "condition": "value_check",
-              "value": {
-                "type": "score",
-                "target": {
-                  "type": "fixed",
-                  "name": "$maxdurability"
-                },
-                "score": "buffer"
-              },
-              "range": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
-        "translate": "item.ui.rarity.open",
-        "color": "white",
-        "italic": false,
-        "extra": [
-          {
-            "translate": "item.ui.rarity.common",
-            "bold": true,
-            "italic": false,
-            "extra": [
-              {
-                "translate": "item.ui.rarity.close",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "$rarity"
-          },
-          "score": "buffer"
-        },
-        "range": 0
-      }
-    ]
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
-        "translate": "item.ui.rarity.open",
-        "color": "white",
-        "italic": false,
-        "extra": [
-          {
-            "translate": "item.ui.rarity.uncommon",
-            "color": "green",
-            "bold": true,
-            "italic": false,
-            "extra": [
-              {
-                "translate": "item.ui.rarity.close",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "$rarity"
-          },
-          "score": "buffer"
-        },
-        "range": 1
-      }
-    ]
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
-        "translate": "item.ui.rarity.open",
-        "color": "white",
-        "italic": false,
-        "extra": [
-          {
-            "translate": "item.ui.rarity.rare",
-            "color": "blue",
-            "bold": true,
-            "italic": false,
-            "extra": [
-              {
-                "translate": "item.ui.rarity.close",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "$rarity"
-          },
-          "score": "buffer"
-        },
-        "range": 2
-      }
-    ]
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
-        "translate": "item.ui.rarity.open",
-        "color": "white",
-        "italic": false,
-        "extra": [
-          {
-            "translate": "item.ui.rarity.epic",
-            "color": "dark_purple",
-            "bold": true,
-            "italic": false,
-            "extra": [
-              {
-                "translate": "item.ui.rarity.close",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "$rarity"
-          },
-          "score": "buffer"
-        },
-        "range": 3
-      }
-    ]
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
-        "translate": "item.ui.rarity.open",
-        "color": "white",
-        "italic": false,
-        "extra": [
-          {
-            "translate": "item.ui.rarity.legendary",
-            "color": "gold",
-            "bold": true,
-            "italic": false,
-            "extra": [
-              {
-                "translate": "item.ui.rarity.close",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "value_check",
-        "value": {
-          "type": "score",
-          "target": {
-            "type": "fixed",
-            "name": "$rarity"
-          },
-          "score": "buffer"
-        },
-        "range": 4
-      }
-    ]
-  }
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"text": " "
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$hasskill"
+					},
+					"score": "buffer"
+				},
+				"range": 1
+			}
+		]
+	},
+	{
+		"function": "copy_nbt",
+		"source": {
+			"type": "storage",
+			"source": "item:"
+		},
+		"ops": [
+			{
+				"source": "Item.tag.Customnbt.Skill.display.Name",
+				"target": "display.Lore",
+				"op": "append"
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$hasskill"
+					},
+					"score": "buffer"
+				},
+				"range": 1
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$hasskill"
+					},
+					"score": "buffer"
+				},
+				"range": 1
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"text": " "
+			}
+		],
+		"conditions": [
+			{
+				"condition": "alternative",
+				"terms": [
+					{
+						"condition": "inverted",
+						"term": {
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$durability"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						}
+					},
+					{
+						"condition": "inverted",
+						"term": {
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$maxdurability"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.durability",
+				"color": "white",
+				"italic": false,
+				"extra": [
+					{
+						"score": {
+							"name": "$durability",
+							"objective": "buffer"
+						},
+						"extra": [
+							{
+								"text": "/",
+								"color": "white",
+								"italic": false,
+								"extra": [
+									{
+										"score": {
+											"name": "$maxdurability",
+											"objective": "buffer"
+										},
+										"color": "white",
+										"italic": false
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "alternative",
+				"terms": [
+					{
+						"condition": "inverted",
+						"term": {
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$durability"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						}
+					},
+					{
+						"condition": "inverted",
+						"term": {
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$maxdurability"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.rarity.open",
+				"color": "white",
+				"italic": false,
+				"extra": [
+					{
+						"translate": "item.ui.rarity.common",
+						"bold": true,
+						"italic": false,
+						"extra": [
+							{
+								"translate": "item.ui.rarity.close",
+								"color": "white",
+								"italic": false
+							}
+						]
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$rarity"
+					},
+					"score": "buffer"
+				},
+				"range": 0
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.rarity.open",
+				"color": "white",
+				"italic": false,
+				"extra": [
+					{
+						"translate": "item.ui.rarity.uncommon",
+						"color": "green",
+						"bold": true,
+						"italic": false,
+						"extra": [
+							{
+								"translate": "item.ui.rarity.close",
+								"color": "white",
+								"italic": false
+							}
+						]
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$rarity"
+					},
+					"score": "buffer"
+				},
+				"range": 1
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.rarity.open",
+				"color": "white",
+				"italic": false,
+				"extra": [
+					{
+						"translate": "item.ui.rarity.rare",
+						"color": "blue",
+						"bold": true,
+						"italic": false,
+						"extra": [
+							{
+								"translate": "item.ui.rarity.close",
+								"color": "white",
+								"italic": false
+							}
+						]
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$rarity"
+					},
+					"score": "buffer"
+				},
+				"range": 2
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.rarity.open",
+				"color": "white",
+				"italic": false,
+				"extra": [
+					{
+						"translate": "item.ui.rarity.epic",
+						"color": "dark_purple",
+						"bold": true,
+						"italic": false,
+						"extra": [
+							{
+								"translate": "item.ui.rarity.close",
+								"color": "white",
+								"italic": false
+							}
+						]
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$rarity"
+					},
+					"score": "buffer"
+				},
+				"range": 3
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.rarity.open",
+				"color": "white",
+				"italic": false,
+				"extra": [
+					{
+						"translate": "item.ui.rarity.legendary",
+						"color": "gold",
+						"bold": true,
+						"italic": false,
+						"extra": [
+							{
+								"translate": "item.ui.rarity.close",
+								"color": "white",
+								"italic": false
+							}
+						]
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$rarity"
+					},
+					"score": "buffer"
+				},
+				"range": 4
+			}
+		]
+	}
 ]

@@ -3,8 +3,7 @@
 #デバフ処理
     execute as @e[tag=debuffed] run function main:combat/debuff/tick/
 #スキルのクールダウン
-    execute as @p at @s if score @s skillCooldown matches 1.. run function main:combat/skills/main/remove_cooldown
-    execute as @p at @s if score @s sideSkillCooldown matches 1.. run function main:combat/skills/side/remove_cooldown
+    execute as @p at @s if score @s skillCooldown matches 1.. run function main:combat/skills/remove_cooldown
 #手に持っているアイテム
     execute as @p run function status:_general/get/slot
 #MPの処理
