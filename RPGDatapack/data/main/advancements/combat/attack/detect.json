@@ -31,6 +31,12 @@
 			}
 		}
 	},
+	"requirements": [
+		[
+			"melee",
+			"projectile"
+		]
+	],
 	"rewards": {
 		"function": "main:combat/attack/general"
 	}
