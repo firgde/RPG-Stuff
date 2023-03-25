@@ -191,8 +191,8 @@
     title @p times 10 40 10
 
 #いずれload.mcfunctionに移動される分
-#攻撃力を一律10.19に
-    execute as @p run attribute @s generic.attack_damage base set 10.19
+#攻撃力を一律0に
+    attribute @p generic.attack_damage base set 0.0
 #ダメージ処理のために無敵に
     effect give @p resistance infinite 255 true
 #餓死しないために満腹度回復

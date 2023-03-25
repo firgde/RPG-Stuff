@@ -29,7 +29,7 @@
     execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]}] run function status:_general/get/boots
 #attributeや他のスコアに関与するもの
     function status:hp/update
-    attribute @s generic.attack_damage base set 10.19
+    attribute @s generic.attack_damage base set 0.0
     function status:int/calc
     execute unless score @s spd_prv = @s spd run function status:spd/update
     execute unless score @s luk_prv = @s luk run function status:luk/calc
