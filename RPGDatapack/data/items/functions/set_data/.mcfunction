@@ -3,8 +3,6 @@
     item replace block 0 -59 0 container.0 with stick{}
 #説明文やらidやらを先に代入
     data modify block 0 -59 0 Items[{Slot:0b}] set from storage item: Item
-    #(デバッグ)
-    data modify storage buffer: Item set from storage item: Item
 #item_modifierを適用
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
