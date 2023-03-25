@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "values": [
+        "#impact_projectiles",
+        "armor_stand",
+        "item_frame",
+        "glow_item_frame",
+        "item",
+        "potion",
+        "area_effect_cloud",
+        "item_display",
+        "block_display",
+        "text_display",
+        "interaction"
+    ]
+}

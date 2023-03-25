@@ -22,5 +22,5 @@
     #時間切れで/kill
     execute if score @s flyTimer >= @s flyTime run kill @s
     #当たり判定
-    execute align xz if entity @s[tag=!mob_summoned] unless score @s playerID = @e[limit=1,dx=0] playerID as @e[limit=1,dx=0] positioned ~0.5 ~ ~0.5 run function main:combat/attack/magic/damage
+    execute align xz if entity @s[tag=!mob_summoned] unless score @s playerID = @e[limit=1,dx=0] playerID as @e[limit=1,dx=0,type=!#main:non_mob] positioned ~0.5 ~ ~0.5 run function main:combat/attack/magic/damage
     execute align xz if entity @s[tag=mob_summoned] as @e[limit=1,dx=0,type=player] positioned ~0.5 ~ ~0.5 run function main:combat/attack/magic/damage
