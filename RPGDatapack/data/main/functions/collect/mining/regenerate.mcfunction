@@ -1,7 +1,7 @@
 #足元にディスc...ディスペンサー
     setblock ~ ~ ~ dispenser
 #loot_table万能説
-    loot replace block ~ ~ ~ container.0 loot main:collect/mining/regenerate
+    loot replace block ~ ~ ~ container.0 loot asset:collect/mining/all
 #種類を分ける
     execute if data block ~ ~ ~ Items[{tag:{Customnbt:{type:"coal_ore"}},id:"minecraft:stick"}] run setblock ~ ~ ~ coal_ore
     execute if data block ~ ~ ~ Items[{tag:{Customnbt:{type:"iron_ore"}},id:"minecraft:stick"}] run setblock ~ ~ ~ iron_ore

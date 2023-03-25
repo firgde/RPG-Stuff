@@ -7,7 +7,7 @@
     },
     "ops": [
       {
-        "source": "Minables",
+        "source": "data.Mineables",
         "target": "CanDestroy",
         "op": "append"
       }

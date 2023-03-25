@@ -1,0 +1,302 @@
+[
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/plains/tier0\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:0}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/plains"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/snowfield/tier0\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:0}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/snowfield"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/mountains/tier0\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:0}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/mountains"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/volcano/tier0\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:0}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/volcano"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/desert/tier0\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:0}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/desert"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/plains/tier1\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:1}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/plains"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/snowfield/tier1\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:1}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/snowfield"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/mountains/tier1\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:1}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/mountains"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/volcano/tier1\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:1}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/volcano"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/desert/tier1\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:1}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/desert"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/plains/tier2\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:2}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/plains"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/snowfield/tier2\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:2}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/snowfield"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/mountains/tier2\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:2}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/mountains"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/volcano/tier2\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:2}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/volcano"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CanDestroy:[\"#asset:collect/mining/location/desert/tier2\"]}",
+        "conditions": [
+            {
+                "entity": "this",
+                "condition": "entity_properties",
+                "predicate": {
+                    "nbt": "{SelectedItem:{tag:{Customnbt:{tier:2}}}}"
+                }
+            },
+            {
+                "condition": "location_check",
+                "entity": "this",
+                "predicate": {
+                    "biome": "asset:overworld/desert"
+                }
+            }
+        ]
+    }
+]

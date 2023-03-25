@@ -7,7 +7,7 @@
     },
     "ops": [
       {
-        "source": "Data.Damage",
+        "source": "data.Damage",
         "target": "Damage",
         "op": "replace"
       }

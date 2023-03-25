@@ -40,9 +40,15 @@
         #scoreboard objectives add mov_fly custom:fly_one_cm
         #scoreboard objectives add mov_dis dummy
         #scoreboard objectives add mov_point dummy
-        #採集(防御、体力、魔法、運)
+        #採取(防御、体力、魔法、運)
         scoreboard objectives add lvl_collect dummy
         scoreboard objectives add xp_collect dummy
+        scoreboard objectives add use_pick_0 used:wooden_pickaxe
+        scoreboard objectives add use_pick_1 used:stone_pickaxe
+        scoreboard objectives add use_pick_2 used:iron_pickaxe
+        scoreboard objectives add use_pick_3 used:golden_pickaxe
+        scoreboard objectives add use_pick_4 used:diamond_pickaxe
+        scoreboard objectives add use_pick_5 used:netherite_pickaxe
         #手工(攻撃、知能、速度、集中)
         scoreboard objectives add lvl_craft dummy
         scoreboard objectives add xp_craft dummy

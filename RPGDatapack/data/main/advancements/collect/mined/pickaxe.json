@@ -1,0 +1,87 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "alternative",
+                        "terms": [
+                            {
+                                "condition": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "use_pick_0": {
+                                        "min": 1
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "use_pick_1": {
+                                        "min": 1
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "use_pick_2": {
+                                        "min": 1
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "use_pick_3": {
+                                        "min": 1
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "use_pick_4": {
+                                        "min": 1
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "use_pick_5": {
+                                        "min": 1
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "nbt": "{Customnbt:{Unbreakable:1b}}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:collect/durability/remove"
+    }
+}

@@ -13,7 +13,7 @@
     scoreboard players operation @s durability *= @s maxDurability
     execute store result score @s dur_ratio run scoreboard players operation @s durability /= @s maxDurability
     scoreboard players set @s buffer 55
-    execute store result storage item: Data.Damage int 1 run scoreboard players operation @s buffer -= @s dur_ratio
+    execute store result storage item: data.Damage int 1 run scoreboard players operation @s buffer -= @s dur_ratio
 #代入
     data modify storage item: Item set from entity @s Inventory[{Slot:103b}]
     item modify entity @s armor.head main:update_durability_display
@@ -24,8 +24,9 @@
     execute if score $enchantcount buffer matches 1.. run function items:set_data/loop_head
     item modify entity @s armor.head items:lore/info
 #リセット
-    data remove storage item: durability
+    data remove storage item: data
     data remove storage item: Item
+    scoreboard players reset @s buffer
     scoreboard players reset $Lore buffer
     scoreboard players reset $itemtype buffer
     scoreboard players reset $healamounthp buffer

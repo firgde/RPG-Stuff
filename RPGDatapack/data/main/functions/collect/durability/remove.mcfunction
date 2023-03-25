@@ -9,9 +9,18 @@
 #アイテムの耐久ゲージを更新
     execute store result score @s maxDurability run data get entity @s SelectedItem.tag.Customnbt.MaxDurability
     scoreboard players operation $maxdurability buffer = @s maxDurability
-    scoreboard players operation @s durability *= $100 const
+    #ツールの種類に応じて耐久変化
+    data modify storage item: data.id set string entity @s SelectedItem.id 10
+    execute if data storage item: data{id:"wooden_pickaxe"} run scoreboard players set $vanilladur buffer 60
+    execute if data storage item: data{id:"stone_pickaxe"} run scoreboard players set $vanilladur buffer 132
+    execute if data storage item: data{id:"iron_pickaxe"} run scoreboard players set $vanilladur buffer 251
+    execute if data storage item: data{id:"golden_pickaxe"} run scoreboard players set $vanilladur buffer 33
+    execute if data storage item: data{id:"diamond_pickaxe"} run scoreboard players set $vanilladur buffer 1562
+    execute if data storage item: data{id:"netherite_pickaxe"} run scoreboard players set $vanilladur buffer 2032
+
+    scoreboard players operation @s durability *= $vanilladur buffer
     execute store result score @s dur_ratio run scoreboard players operation @s durability /= @s maxDurability
-    scoreboard players set @s buffer 100
+    scoreboard players operation @s buffer = $vanilladur buffer
     execute store result storage item: data.Damage int 1 run scoreboard players operation @s buffer -= @s dur_ratio
 #代入
     data modify storage item: Item set from entity @s SelectedItem
@@ -23,9 +32,17 @@
     function items:set_data/loop_mainhand
     item modify entity @s weapon.mainhand items:lore/info
 #リセット
+    scoreboard players reset @s use_pick_0
+    scoreboard players reset @s use_pick_1
+    scoreboard players reset @s use_pick_2
+    scoreboard players reset @s use_pick_3
+    scoreboard players reset @s use_pick_4
+    scoreboard players reset @s use_pick_5
+
     data remove storage item: data
     data remove storage item: Item
     scoreboard players reset @s buffer
+    scoreboard players reset $vanilladur buffer
     scoreboard players reset $Lore buffer
     scoreboard players reset $itemtype buffer
     scoreboard players reset $healamounthp buffer
@@ -46,3 +63,5 @@
     scoreboard players reset $maxdurability buffer
     scoreboard players reset $enchantcount buffer
     scoreboard players reset $hasskill buffer
+
+    advancement revoke @s only main:collect/mined/pickaxe
