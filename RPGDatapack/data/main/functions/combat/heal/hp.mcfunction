@@ -3,3 +3,5 @@
     scoreboard players operation @s hp < @s max_hp
     function status:hp/calc_ratio
     function status:hp/update
+#リセット
+    scoreboard players reset @s healAmountHP
