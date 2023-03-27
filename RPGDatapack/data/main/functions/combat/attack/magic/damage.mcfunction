@@ -1,5 +1,5 @@
 #そもそも誰が放ったのか
-    execute as @e[limit=1,sort=nearest,tag=magic] at @p if score @s playerID = @p playerID run tag @p add attacker
+    #execute as @e[limit=1,sort=nearest,tag=magic] at @p if score @s playerID = @p playerID run tag @p add attacker
 #デバフ
     execute at @s run function main:combat/debuff/get
 #ダメージを取得

@@ -24,4 +24,3 @@
     scoreboard players reset $cooldown buffer
     tag @s remove verify_cooldown
     tag @s remove verify_mp
-    advancement revoke @s only main:combat/attack/magic/trigger
