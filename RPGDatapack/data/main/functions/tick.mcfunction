@@ -1,7 +1,7 @@
 #魔法攻撃の処理
     execute as @e[type=armor_stand,tag=magic] at @s run function main:combat/attack/magic/tick/
 #デバフ処理
-    execute as @e[tag=debuffed] run function main:combat/debuff/tick/
+    execute as @e[tag=debuffed] run function asset:combat/debuff/tick
 #スキルのクールダウン
     execute as @p at @s if score @s skillCooldown matches 1.. run function main:combat/skills/remove_cooldown
 #手に持っているアイテム

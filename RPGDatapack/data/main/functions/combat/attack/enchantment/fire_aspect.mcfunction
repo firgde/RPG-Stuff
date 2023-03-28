@@ -10,6 +10,6 @@
 #表示する色
     scoreboard players set $damagecolor buffer 2
 #そして適用
-    execute as @e[tag=hurt] run function main:combat/debuff/fire
+    execute as @e[tag=hurt] run function asset:combat/debuff/fire/apply
 #リセット
     scoreboard players reset $lvl buffer

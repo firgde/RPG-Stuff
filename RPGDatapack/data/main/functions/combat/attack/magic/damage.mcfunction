@@ -1,7 +1,7 @@
 #そもそも誰が放ったのか
     #execute as @e[limit=1,sort=nearest,tag=magic] at @p if score @s playerID = @p playerID run tag @p add attacker
 #デバフ
-    execute at @s run function main:combat/debuff/get
+    execute at @s run function asset:combat/debuff/get
 #ダメージを取得
     execute store result score @s damage run scoreboard players get @e[limit=1,sort=nearest,tag=magic.attack] mag
     #(HurtTime * 20)%減
