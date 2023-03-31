@@ -1,5 +1,6 @@
 #演出
     playsound item.shield.block master @p[tag=attacker] ~ ~ ~ 1 0.5
+    playsound entity.player.attack.knockback master @p[tag=attacker] ~ ~ ~ 1 1
     execute rotated ~ 0 run particle explosion ~ ~1 ~
 #ダメージ&ノックバック再現
     tag @e[team=hostile,distance=..1.5,tag=!hurt] add hurt_skill
