@@ -1,0 +1,63 @@
+{
+    "criteria": {
+        "right": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"crafting\",\"slot.1\"]}"
+                },
+                "player": [
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "nbt": "{Customnbt:{id:5000}}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "left": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"crafting\",\"slot.1\"]}"
+                },
+                "player": [
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "nbt": "{Customnbt:{id:5000}}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "right",
+            "left"
+        ]
+    ],
+    "rewards": {
+        "function": "main:craft/slot_1/pick"
+    }
+}

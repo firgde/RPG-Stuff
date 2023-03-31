@@ -52,6 +52,7 @@
         #手工(攻撃、知能、速度、集中)
         scoreboard objectives add lvl_craft dummy
         scoreboard objectives add xp_craft dummy
+        scoreboard objectives add hasTarget dummy
         #社交(魔法、知能、技巧、会心)
         scoreboard objectives add dprogress dummy
         scoreboard objectives add money dummy
@@ -169,6 +170,7 @@
     scoreboard players set $75 const 75
     scoreboard players set $80 const 80
     scoreboard players set $89 const 89
+    scoreboard players set $90 const 90
     scoreboard players set $100 const 100
     scoreboard players set $100 buffer 100
     scoreboard players set $120 const 120

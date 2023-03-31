@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"crafting\"]}"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{Customnbt:{id:5000}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:craft/detect"
+    }
+}
