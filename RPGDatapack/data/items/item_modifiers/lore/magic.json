@@ -1,69 +1,56 @@
 [
-  {
-    "function": "set_lore",
-    "lore": [
-      {
-        "text": " "
-      }
-    ],
-    "replace": false
-  },
-  {
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-      {
-        "translate":"item.ui.text.magic.mprequire",
-        "italic": false,
-        "color": "gray",
-        "extra":[
-          {
-            "nbt":"Item.tag.Customnbt.mpRequire",
-            "storage":"item:",
-            "color":"aqua"
-          }
-        ]
-      },
-      {
-        "translate": "item.ui.text.magic.time",
-        "color": "gray",
-        "italic": false,
-        "extra": [
-          {
-            "nbt": "Item.tag.Customnbt.magicType.display.Time",
-            "storage": "item:",
-            "color": "light_purple",
-            "italic": false,
-            "extra": [
-              {
-                "translate": "item.ui.text.magic.time.s",
-                "color": "gray"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "translate": "item.ui.text.magic.cooldown",
-        "color": "gray",
-        "italic": false,
-        "extra": [
-          {
-            "nbt": "Item.tag.Customnbt.magicType.display.CoolDown",
-            "storage": "item:",
-            "color": "light_purple",
-            "italic": false,
-            "extra": [
-              {
-                "translate": "item.ui.text.magic.time.s",
-                "color": "gray",
-                "italic": false
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "replace": false
-  }
+	{
+		"function": "set_lore",
+		"lore": [
+			{
+				"text": " "
+			}
+		],
+		"replace": false
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.text.magic.mprequire",
+				"color": "gray",
+				"italic": false,
+				"with": [
+					{
+						"nbt": "Item.tag.Customnbt.mpRequire",
+						"storage": "item:",
+						"color": "aqua"
+					}
+				]
+			},
+			{
+				"translate": "item.ui.text.magic.time",
+				"color": "gray",
+				"italic": false,
+				"with": [
+					{
+						"nbt": "Item.tag.Customnbt.magicType.display.Time",
+						"storage": "item:",
+						"color": "light_purple",
+						"italic": false
+					}
+				]
+			},
+			{
+				"translate": "item.ui.text.magic.cooldown",
+				"color": "gray",
+				"italic": false,
+				"with": [
+					{
+						"nbt": "Item.tag.Customnbt.magicType.display.CoolDown",
+						"storage": "item:",
+						"color": "light_purple",
+						"italic": false
+					}
+				]
+			}
+		],
+		"replace": false
+	}
 ]

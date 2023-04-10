@@ -21,7 +21,7 @@
     item modify entity @s weapon.mainhand items:lore/text
     item modify entity @s weapon.mainhand items:lore/status
     execute if data storage item: Item.tag.Customnbt{weaponType:"wand"} run item modify entity @s weapon.mainhand items:lore/magic
-    function items:set_data/loop_mainhand
+    function items:set_data/rec_mainhand
     item modify entity @s weapon.mainhand items:lore/info
 #リセット
     data remove storage item: data

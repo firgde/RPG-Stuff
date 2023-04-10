@@ -20,7 +20,7 @@
     execute positioned 0 -59 0 run function items:get_data
     item modify entity @s weapon.mainhand items:lore/text
     item modify entity @s weapon.mainhand items:lore/status
-    function items:set_data/loop_mainhand
+    function items:set_data/rec_mainhand
     item modify entity @s weapon.mainhand items:lore/info
 #リセット
     advancement revoke @s only main:combat/attack/r_click_offhand

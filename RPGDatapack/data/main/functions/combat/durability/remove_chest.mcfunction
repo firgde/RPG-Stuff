@@ -21,7 +21,7 @@
     execute positioned 0 -59 0 run function items:get_data
     item modify entity @s armor.chest items:lore/text
     item modify entity @s armor.chest items:lore/status
-    execute if score $enchantcount buffer matches 1.. run function items:set_data/loop_chest
+    execute if score $enchantcount buffer matches 1.. run function items:set_data/rec_chest
     item modify entity @s armor.chest items:lore/info
 #リセット
     data remove storage item: data

@@ -1,16 +1,13 @@
 [
-  {
-    "function": "copy_nbt",
-    "source": {
-      "type": "storage",
-      "source": "item:"
-    },
-    "ops": [
-      {
-        "source": "Item.tag.Customnbt.Enchantments[0].Text",
-        "target": "display.Lore",
-        "op": "append"
-      }
-    ]
-  }
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"nbt": "Item.tag.Customnbt.Enchantments[0].Text",
+				"storage": "item:",
+				"interpret": true
+			}
+		]
+	}
 ]

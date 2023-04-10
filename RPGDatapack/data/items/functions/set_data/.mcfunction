@@ -6,11 +6,10 @@
 #item_modifierを適用
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
-    execute positioned 0 -59 0 run function items:set_data/loop
+    execute positioned 0 -59 0 run function items:set_data/rec
     execute if data storage item: Item.tag.Customnbt{weaponType:"wand"} run item modify block 0 -59 0 container.0 items:lore/magic
     execute if data storage item: Item.tag.Customnbt{food:1b} run item modify block 0 -59 0 container.0 items:lore/heal
     execute if data storage item: Item.tag.Customnbt{ItemType:2} run item modify block 0 -59 0 container.0 items:lore/magic_elements
-    execute if data storage item: Item.tag.Customnbt{ItemType:8} run item modify block 0 -59 0 container.0 items:lore/quest_contents
     item modify block 0 -59 0 container.0 items:lore/info
 #アイテムｶﾓｫｫｫｫﾝ
     item replace block 0 -59 0 container.1 with air
