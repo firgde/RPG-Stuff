@@ -6,6 +6,6 @@
     #体力リセット
     scoreboard players set @s hp_ratio 100
     #ﾁﾈ
-    kill @s
-    function status:_general/get/update
+    execute if entity @s[type=player] run function status:_general/get/update
     playsound entity.arrow.hit_player master @p[tag=attacker] ~ ~ ~ 1 1
+    kill @s

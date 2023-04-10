@@ -3,7 +3,7 @@
 #デバフ処理
     execute as @e[tag=debuffed] run function asset:combat/debuff/tick
 #スキルのクールダウン
-    execute as @p at @s if score @s skillCooldown matches 1.. run function main:combat/skills/remove_cooldown
+    execute as @p at @s if score @s currentSkillCooldown matches 1.. run function main:combat/skills/tick
 #手に持っているアイテム
     execute as @p run function status:_general/get/slot
 #MPの処理
@@ -25,5 +25,7 @@
 ###(どれもプレイヤーが近くにいると動作するものなので統合できるかも)
 #チェストトロッコ式GUI
     execute as @p at @s run function main:social/ui/tick
+#HUDの処理
+    function hud:tick
 
 ###見れば見るほど汚い記述

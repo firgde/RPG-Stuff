@@ -14,10 +14,13 @@
 
 #ダメージ減算
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage
+    scoreboard players operation @s hp > $0 const
     execute at @s run function main:combat/damage/display_amount
     #プレイヤーは体力の割合を計算
     execute if entity @s[type=player] run function status:hp/calc_ratio
     execute if score @s[tag=!boss] hp matches ..0 run function main:combat/damage/death
+    #敵は体力をHUDに表示
+    execute if entity @s[team=hostile,tag=!boss] run function hud:hp_bar/calc
     #ボスは専用の演出
     execute if entity @s[tag=boss] run function main:combat/damage/boss
 #防具の耐久を減らす

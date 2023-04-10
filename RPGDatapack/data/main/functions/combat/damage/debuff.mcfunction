@@ -1,9 +1,12 @@
 #引く
     scoreboard players operation @s damage = @s debuffDamage
     scoreboard players operation @s hp -= @s debuffDamage
+    scoreboard players operation @s hp > $0 const
 #演出
     execute at @s run function main:combat/damage/display_amount
     damage @s 1 generic
+    #敵は体力をHUDに表示
+    execute if entity @s[team=hostile,tag=!boss] run function hud:hp_bar/calc
     #ボス限定
     execute if entity @s[tag=boss] run function main:combat/damage/boss
 #体力が0ならﾀﾋ

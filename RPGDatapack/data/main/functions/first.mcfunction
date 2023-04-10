@@ -21,6 +21,7 @@
         scoreboard objectives add debuffDamage dummy
         scoreboard objectives add usedRod used:warped_fungus_on_a_stick
         scoreboard objectives add skillCooldown dummy
+        scoreboard objectives add currentSkillCooldown dummy
         scoreboard objectives add spawnTimer dummy
         scoreboard objectives add spawnDelay dummy
         scoreboard objectives add aiTimer dummy
@@ -164,6 +165,9 @@
     scoreboard players set $10 const 10
     scoreboard players set $15 const 15
     scoreboard players set $20 const 20
+    scoreboard players set $20 buffer 20
+    scoreboard players set $40 const 40
+    scoreboard players set $40 buffer 40
     scoreboard players set $50 const 50
     scoreboard players set $55 const 55
     scoreboard players set $65 const 65
