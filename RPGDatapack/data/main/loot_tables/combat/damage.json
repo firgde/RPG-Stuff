@@ -15,7 +15,7 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "Amount",
+								"nbt": "data.Amount",
 								"storage": "damage:",
 								"font":"damage"
 							}
@@ -48,7 +48,7 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "Amount",
+								"nbt": "data.Amount",
 								"storage": "damage:",
 								"color": "#FF0000",
 								"font":"damage"
@@ -82,7 +82,7 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "Amount",
+								"nbt": "data.Amount",
 								"storage": "damage:",
 								"color": "#FF4500",
 								"font":"damage"
@@ -116,7 +116,7 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "Amount",
+								"nbt": "data.Amount",
 								"storage": "damage:",
 								"color": "aqua",
 								"font":"damage"
@@ -150,7 +150,7 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "Amount",
+								"nbt": "data.Amount",
 								"storage": "damage:",
 								"color": "yellow",
 								"font":"damage"
@@ -184,7 +184,7 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "Amount",
+								"nbt": "data.Amount",
 								"storage": "damage:",
 								"color": "green",
 								"font":"damage"

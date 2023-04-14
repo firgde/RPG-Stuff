@@ -30,8 +30,10 @@
     execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]},type=player] run function main:combat/durability/remove_feet
 #必要ならば、演出
     execute if entity @s[tag=hurt_skill] run damage @s 1 generic
-#処理終わり
+#リセット
     tag @s remove hurt
     tag @s remove hurt_skill
+    scoreboard players reset @p atkBuffer
+    scoreboard players set @p dealtDamage 0
     scoreboard players reset $damagecolor buffer
     scoreboard players set $10000 buffer 10000

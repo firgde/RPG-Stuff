@@ -1,6 +1,6 @@
 #そもそも誰が放ったのか
     #execute as @e[limit=1,sort=nearest,tag=magic] at @p if score @s playerID = @p playerID run tag @p add attacker
-#デバフ
+#属性
     execute at @s run function asset:combat/debuff/get
 #ダメージを取得
     execute store result score @s damage run scoreboard players get @e[limit=1,sort=nearest,tag=magic.attack] mag
@@ -24,8 +24,9 @@
     kill @e[tag=magic,sort=nearest,limit=1,tag=!multiple_hit]
 #追尾されません
     tag @s remove target
+    tag @s remove followTarget
 #からの計算
-    function main:combat/damage/deal
+    function main:combat/damage/calc
 #HP表示
     execute if entity @s[type=player] run function status:hp/calc_ratio
     execute if entity @s[type=player] run function status:hp/update
