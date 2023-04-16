@@ -7,8 +7,6 @@
     execute store result score $mprequire buffer run data get entity @s SelectedItem.tag.Customnbt.mpRequire
     execute unless score @s mp < $mprequire buffer run tag @s add verify_mp
     scoreboard players operation @s[tag=verify_mp,gamemode=!creative,tag=verify_cooldown] mp -= $mprequire buffer
-#耐久減らす
-    execute if entity @s[gamemode=!creative,nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b}}}},tag=verify_cooldown,tag=verify_mp] run function main:combat/durability/remove
 #種類
     data modify storage combat: data.magic set from entity @s[tag=verify_cooldown,tag=verify_mp,type=player] SelectedItem.tag.Customnbt.magicType
     data modify storage combat: data.magic.offhand set from entity @s[tag=verify_cooldown,tag=verify_mp,type=player] Inventory[{Slot:-106b}].tag.Customnbt.magicType

@@ -17,8 +17,8 @@
         scoreboard objectives add usedBow used:bow
         scoreboard objectives add flyTimer dummy
         scoreboard objectives add flyTime dummy
-        scoreboard objectives add debuffTimer dummy
-        scoreboard objectives add debuffDamage dummy
+        scoreboard objectives add buff_timer dummy
+        scoreboard objectives add buff_amount dummy
         scoreboard objectives add usedRod used:warped_fungus_on_a_stick
         scoreboard objectives add skillCooldown dummy
         scoreboard objectives add currentSkillCooldown dummy
@@ -140,7 +140,16 @@
         scoreboard objectives add acc_buff dummy
         scoreboard objectives add dmg_eff dummy
         scoreboard objectives add follow_rate dummy
-        
+
+        #属性相性
+        scoreboard objectives add resistance_melee dummy
+        scoreboard objectives add resistance_magic dummy
+        scoreboard objectives add resistance_ranged dummy
+        scoreboard objectives add resistance_fire dummy
+        scoreboard objectives add resistance_ice dummy
+        scoreboard objectives add resistance_wind dummy
+        scoreboard objectives add resistance_thunder dummy
+
         #(...分類できねぇ)
         scoreboard objectives add durability dummy
         scoreboard objectives add maxDurability dummy

@@ -10,7 +10,7 @@
     tp @s[tag=spd.normal] ^ ^ ^0.3
     tp @s[tag=spd.fast] ^ ^ ^1
 #taretタグが付いたEntityがいるならそちらを追尾
-    execute at @e[tag=followTarget] unless score @e[limit=1,sort=nearest] playerID = @s playerID at @s facing entity @e[tag=followTarget,limit=1] eyes run tp @s ~ ~ ~ ~ ~-30
+    execute at @e[tag=followTarget] unless score @e[limit=1,sort=nearest] playerID = @s playerID at @s facing entity @e[tag=followTarget,limit=1] eyes run tp @s ~ ~ ~ ~ ~
 #追跡後、一旦タグ削除
     tag @e[tag=followTarget,distance=..20] remove followTarget
 #タイマー加算
@@ -27,7 +27,7 @@
 #追尾対象絞り込み
     execute if score @s flyratio >= @s frate run function main:combat/attack/magic/follow/specify
 #当たり判定
-    execute align xz if entity @s[tag=!mob_summoned] unless score @s playerID = @e[limit=1,dx=0,type=!#main:non_mob] playerID as @e[limit=1,dx=0,type=!#main:non_mob] positioned ~0.5 ~ ~0.5 run function main:combat/damage/magic
-    execute align xz if entity @s[tag=mob_summoned] as @e[limit=1,dx=0,type=player] positioned ~0.5 ~ ~0.5 run function main:combat/damage/magic
+    execute align xz if entity @s[tag=!mob_summoned] unless score @s playerID = @e[limit=1,dx=0,type=!#main:non_mob] playerID as @e[limit=1,dx=0,type=!#main:non_mob] positioned ~0.5 ~ ~0.5 if data entity @s {HurtTime:0s} run damage @s 1 asset:magic/generic by @p
+    execute align xz if entity @s[tag=mob_summoned] at @e[distance=..50] if score @s playerID = @e[limit=1,sort=nearest] playerID as @e[limit=1,sort=nearest] if entity @p[dx=0] positioned ~0.5 ~ ~0.5 run damage @p 1 asset:magic/generic by @s
 #時間切れで/kill
     execute if score @s flyTimer >= @s flyTime run kill @s

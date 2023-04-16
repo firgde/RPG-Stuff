@@ -29,15 +29,31 @@
 					}
 				}
 			}
+		},
+		"magic": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"type": {
+						"tags": [
+							{
+								"id": "asset:magic",
+								"expected": true
+							}
+						]
+					}
+				}
+			}
 		}
 	},
 	"requirements": [
 		[
 			"projectile",
-			"melee"
+			"melee",
+			"magic"
 		]
 	],
 	"rewards": {
-		"function": "main:combat/damage/take"
+		"function": "main:combat/damage/take/"
 	}
 }

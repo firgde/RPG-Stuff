@@ -9,6 +9,14 @@
     scoreboard players set @s crt_base 0
     scoreboard players set @s luk_base 0
     scoreboard players set @s acc_base 0
+
+    scoreboard players set @s resistance_melee 100
+    scoreboard players set @s resistance_magic 100
+    scoreboard players set @s resistance_ranged 100
+    scoreboard players set @s resistance_fire 100
+    scoreboard players set @s resistance_ice 100
+    scoreboard players set @s resistance_wind 100
+    scoreboard players set @s resistance_thunder 100
 #全レベル&経験値リセット
     scoreboard players set @s lvl_total 0
     scoreboard players set @s lvl_combat 0

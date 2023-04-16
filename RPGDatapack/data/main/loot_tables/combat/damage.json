@@ -15,8 +15,8 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "data.Amount",
-								"storage": "damage:",
+								"nbt": "data.Damage.Amount",
+								"storage": "combat:",
 								"font":"damage"
 							}
 						}
@@ -28,7 +28,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagecolor"
+									"name": "$damagetype"
 								},
 								"score": "buffer"
 							},
@@ -48,9 +48,9 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "data.Amount",
-								"storage": "damage:",
-								"color": "#FF0000",
+								"nbt": "data.Damage.Amount",
+								"storage": "combat:",
+								"color": "#FF4500",
 								"font":"damage"
 							}
 						}
@@ -62,7 +62,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagecolor"
+									"name": "$damagetype"
 								},
 								"score": "buffer"
 							},
@@ -82,9 +82,9 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "data.Amount",
-								"storage": "damage:",
-								"color": "#FF4500",
+								"nbt": "data.Damage.Amount",
+								"storage": "combat:",
+								"color": "aqua",
 								"font":"damage"
 							}
 						}
@@ -96,7 +96,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagecolor"
+									"name": "$damagetype"
 								},
 								"score": "buffer"
 							},
@@ -116,9 +116,9 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "data.Amount",
-								"storage": "damage:",
-								"color": "aqua",
+								"nbt": "data.Damage.Amount",
+								"storage": "combat:",
+								"color": "green",
 								"font":"damage"
 							}
 						}
@@ -130,7 +130,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagecolor"
+									"name": "$damagetype"
 								},
 								"score": "buffer"
 							},
@@ -150,8 +150,8 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "data.Amount",
-								"storage": "damage:",
+								"nbt": "data.Damage.Amount",
+								"storage": "combat:",
 								"color": "yellow",
 								"font":"damage"
 							}
@@ -164,7 +164,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagecolor"
+									"name": "$damagetype"
 								},
 								"score": "buffer"
 							},
@@ -184,9 +184,9 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"nbt": "data.Amount",
-								"storage": "damage:",
-								"color": "green",
+								"nbt": "data.Damage.Amount",
+								"storage": "combat:",
+								"color": "#FF0000",
 								"font":"damage"
 							}
 						}
@@ -198,7 +198,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagecolor"
+									"name": "$damagetype"
 								},
 								"score": "buffer"
 							},

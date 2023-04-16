@@ -7,6 +7,13 @@
     execute store result score @s def run data get storage mob: Data.status.baseDef
     execute store result score @s spd run data get storage mob: Data.status.baseSpd
     execute store result score @s add_pt run data get storage mob: Data.loot.xp
+    execute store result score @s resistance_melee run data get storage mob: Data.resistance.melee 100
+    execute store result score @s resistance_magic run data get storage mob: Data.resistance.magic 100
+    execute store result score @s resistance_ranged run data get storage mob: Data.resistance.ranged 100
+    execute store result score @s resistance_fire run data get storage mob: Data.resistance.fire 100
+    execute store result score @s resistance_ice run data get storage mob: Data.resistance.ice 100
+    execute store result score @s resistance_wind run data get storage mob: Data.resistance.wind 100
+    execute store result score @s resistance_thunder run data get storage mob: Data.resistance.thunder 100
 #何のMob?
     execute store result score @s mob_id run data get storage mob: Data.id
 #loot_tableを参照

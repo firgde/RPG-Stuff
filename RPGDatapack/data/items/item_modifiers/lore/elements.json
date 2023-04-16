@@ -1,0 +1,154 @@
+[
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.text.magic.element",
+				"color": "gray",
+				"italic": false,
+				"extra": [
+					{
+						"text": "",
+						"color": "white",
+						"italic": false
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$element"
+					},
+					"score": "buffer"
+				},
+				"range": 1
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.text.magic.element",
+				"color": "gray",
+				"italic": false,
+				"extra": [
+					{
+						"text": "",
+						"color": "white",
+						"italic": false
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$element"
+					},
+					"score": "buffer"
+				},
+				"range": 2
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.text.magic.element",
+				"color": "gray",
+				"italic": false,
+				"extra": [
+					{
+						"text": "",
+						"color": "white",
+						"italic": false
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$element"
+					},
+					"score": "buffer"
+				},
+				"range": 3
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.text.magic.element",
+				"color": "gray",
+				"italic": false,
+				"extra": [
+					{
+						"text": "",
+						"color": "white",
+						"italic": false
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$element"
+					},
+					"score": "buffer"
+				},
+				"range": 4
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"lore": [
+			{
+				"text": " "
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$element"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	}
+]
