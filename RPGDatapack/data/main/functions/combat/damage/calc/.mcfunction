@@ -7,7 +7,7 @@
     execute if entity @s[type=player] if score $damagetype buffer matches 1..4 run function main:combat/damage/calc/element_hostile
     execute if entity @p[tag=attack.crit] run scoreboard players set $damagetype buffer 5
 #属性相性を参照
-    function main:combat/damage/calc/resistance
+    execute unless entity @s[tag=hurt_skill] run function main:combat/damage/calc/resistance
 #無敵時間のあるなし
     execute if entity @s[tag=spawn] run scoreboard players operation @s damage /= $20 const
 #防御力を取得、攻撃力(ダメージ)との比率を計算
