@@ -1,4 +1,4 @@
-#中身削除
+# 中身削除
     data remove entity @s Items
-#/kill
+# /kill
     kill @s

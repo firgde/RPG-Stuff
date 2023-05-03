@@ -42,10 +42,9 @@
     clear @s stick{CustomModelData:1}
 #エリアごとに採掘できるアイテムの設定
     execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{tool:1b}}}}] run function main:collect/mining/modify_mineables
-#クエストブックなら内容を更新
-    execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{id:8999}}}}] run tag @s add book
-    execute unless entity @s[nbt={SelectedItem:{tag:{Customnbt:{id:8999}}}}] run tag @s remove book
-    execute unless entity @s[nbt={SelectedItem:{tag:{Customnbt:{id:8999}}}}] if entity @e[tag=quest_book,distance=..5,tag=open] run function main:social/ui/close
+#UI持ちアイテムなら内容を更新
+    execute unless predicate asset:social/ui/holding_purse if entity @e[tag=purse,distance=..5,tag=open] run function main:social/ui/close
+    execute unless predicate asset:social/ui/holding_quest_book if entity @e[tag=quest_book,distance=..5,tag=open] run function main:social/ui/close
 #0より小さいなら調整
     scoreboard players operation @s atk > $0 const
     scoreboard players operation @s mag > $0 const

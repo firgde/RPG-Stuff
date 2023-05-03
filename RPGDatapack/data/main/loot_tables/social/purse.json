@@ -38,7 +38,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:8998,Customnbt:{id:\"purse\"}}"
+                            "tag": "{CustomModelData:8998,Customnbt:{id:8998}}"
                         }
                     ]
                 }
