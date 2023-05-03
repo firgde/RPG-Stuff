@@ -1,4 +1,4 @@
-#移動速度のAttributeModifier適用
+# 移動速度のAttributeModifier適用
     scoreboard players operation $spdbuffer buffer *= $-1 const
     scoreboard players operation $spdbuffer buffer *= $2^23 const
     scoreboard players operation $spdbuffer buffer *= $2 const
@@ -17,5 +17,5 @@
     execute if score $spdbuffer buffer matches ..-1 run attribute @s minecraft:generic.movement_speed modifier add 1-0-0-1-1 "movSpeed11" -0.0008 add
     scoreboard players operation $spdbuffer buffer *= $2 const
     execute if score $spdbuffer buffer matches ..-1 run attribute @s minecraft:generic.movement_speed modifier add 1-0-0-1-0 "movSpeed10" -0.0004 add
-#リセット
+# リセット
     scoreboard players set $spdbuffer buffer 0

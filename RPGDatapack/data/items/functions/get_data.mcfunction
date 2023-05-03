@@ -1,4 +1,4 @@
-#Customnbtをスコアに
+# Customnbtをスコアに
     #説明文
     execute store result score $Lore buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.LoreCount
     execute store result score $itemtype buffer run data get block ~ ~ ~ Items[0].tag.Customnbt.ItemType

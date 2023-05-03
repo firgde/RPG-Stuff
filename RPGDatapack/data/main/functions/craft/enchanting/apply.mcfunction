@@ -1,14 +1,14 @@
-#タグ
+# タグ
     tag @s add enchanting
-#ｽﾃｰﾀｽ更新
+# ｽﾃｰﾀｽ更新
     function status:_general/get/update
-#再帰する回数を抽選
+# 再帰する回数を抽選
     function main:get_rng
     execute store result score $rec buffer run scoreboard players operation $rng buffer %= $4 const
     scoreboard players reset $rng buffer
-#再帰function
+# 再帰function
     function main:craft/enchanting/rec
-#リセット
+# リセット
     tag @s remove enchanting
     scoreboard players reset $ebonusatk
     scoreboard players reset $ebonusmag

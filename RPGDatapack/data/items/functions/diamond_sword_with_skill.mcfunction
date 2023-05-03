@@ -1,4 +1,4 @@
-#名前だとか説明文だとか
+# 名前だとか説明文だとか
     data modify storage item: Item.Count set value 1b
     data modify storage item: Item.id set value "minecraft:warped_fungus_on_a_stick"
     data modify storage item: Item.tag.display.Name set value '{"italic":false,"color":"dark_purple","translate":"item.diamond_sword"}'
@@ -17,7 +17,7 @@
     data modify storage item: Item.tag.Customnbt.Skills set value {Main:{id:"backwards_slash",display:{"Name":'[{"translate":"item.ui.skill","color":"white","italic":false},{"translate":"item.ui.skill.backwards_slash","color":"aqua","italic":false,"bold":true}]'}},Side:{id:"backstep",display:{"Name":'[{"translate":"item.ui.side_skill","color":"white","italic":false},{"translate":"item.ui.skill.backstep","color":"dark_aqua","italic":false,"bold":true}]'}}}
     data modify storage item: Item.tag.Customnbt.HasSkill set value 1b
     data modify storage item: Item.tag.Customnbt.rarity set value 3
-#ステータスとレア度、耐久値設定
+# ステータスとレア度、耐久値設定
     scoreboard players set $atkbonus buffer 35
     scoreboard players set $magbonus buffer 0
     scoreboard players set $dexbonus buffer 0
@@ -46,5 +46,5 @@
     data modify storage item: Item.tag.Customnbt.status.acc set value 0
     data modify storage item: Item.tag.Customnbt.Durability set value 1561
     data modify storage item: Item.tag.Customnbt.MaxDurability set value 1561
-#共通
+# 共通
     function items:set_data/

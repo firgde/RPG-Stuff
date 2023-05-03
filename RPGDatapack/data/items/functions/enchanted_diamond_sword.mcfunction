@@ -1,4 +1,4 @@
-#名前だとか説明文だとか
+# 名前だとか説明文だとか
     data modify storage item: Item.Count set value 1b
     data modify storage item: Item.id set value "minecraft:warped_fungus_on_a_stick"
     data modify storage item: Item.tag.display.Name set value '{"translate":"item.diamond_sword","color":"dark_purple","italic":false}'
@@ -18,7 +18,7 @@
     data modify storage item: Item.tag.Customnbt.Skills set value {Main:{id:"none"},Side:{id:"none"}}
     data modify storage item: Item.tag.Customnbt.HasSkill set value 0b
     data modify storage item: Item.tag.Customnbt.rarity set value 3
-#ステータスとレア度、耐久値設定
+# ステータスとレア度、耐久値設定
     scoreboard players set $atkbonus buffer 35
     scoreboard players set $magbonus buffer 0
     scoreboard players set $dexbonus buffer 0
@@ -49,5 +49,5 @@
     data modify storage item: Item.tag.Customnbt.MaxDurability set value 1561
     data modify storage item: Item.tag.Customnbt.Enchantments set value [{id:"sharpness",lvl:2s,display:{"Name":"ダメージ増加 ","lvl":"II","status":"：攻撃",buff:10},Type:1},{id:"critical_strike",lvl:2s,display:{"Name":"急所突き ","lvl":"III","status":"：会心",buff:25},Type:1},{id:"fragility",lvl:2s,display:{"Name":"脆弱の呪い ","lvl":"I","status":"：耐久",buff:-5},Type:0}]
     data modify storage item: Item.tag.Customnbt.Enchantbuff set value {atk:10,mag:0,dex:0,hp:0,int:0,def:0,spd:0,crt:25,luk:0,acc:.0}
-#共通
+# 共通
     function items:set_data/

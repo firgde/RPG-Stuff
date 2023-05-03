@@ -1,31 +1,31 @@
-#魔法攻撃の処理
+# 魔法攻撃の処理
     execute as @e[type=armor_stand,tag=magic] at @s run function main:combat/attack/magic/tick/
-#デバフ処理
+# デバフ処理
     execute as @e[tag=debuffed] run function asset:combat/debuff/tick
-#スキルのクールダウン
+# スキルのクールダウン
     execute as @p at @s if score @s currentSkillCooldown matches 1.. run function main:combat/skills/tick
-#手に持っているアイテム
+# 手に持っているアイテム
     execute as @p run function status:_general/get/slot
-#MPの処理
+# MPの処理
     #execute as @p unless score @s max_mp_base = @s max_mp unless score @s mp = @s max_mp run function status:int/tick
     execute as @p run function status:int/tick
-#Mobスポナーのチェック
+# Mobスポナーのチェック
     execute at @p as @e[tag=spawner,type=!item,distance=..15] at @s run function mobs:summon/spawner/tick
-#自然スポーンするMob
-    #execute as @p at @s if biome #main:field if score @s spawnTimer matches 1.. run function mobs:summon/tick
-#AIを持ったMobの挙動
+# 自然スポーンするMob
+    #execute as @p at @s if biome # main:field if score @s spawnTimer matches 1.. run function mobs:summon/tick
+# AIを持ったMobの挙動
     execute as @e[team=hostile,tag=HasAI] at @s if entity @p[distance=..50,gamemode=!creative] run function mobs:ai/tick
-#採掘スポットの鉱石抽選
+# 採掘スポットの鉱石抽選
     execute as @e[tag=mining_spot] at @s if block ~ ~ ~ air if data entity @s {PortalCooldown:0} unless entity @p[distance=10..] run function main:collect/mining/regenerate
     #function main:collect/mining/tick
-#ｴﾝﾁｬﾝﾄ台周りの仕様
+# ｴﾝﾁｬﾝﾄ台周りの仕様
     execute as @e[type=item_frame,tag=enchanter] at @s if entity @p[distance=..5] run function main:craft/enchanting/display_item
-#UI付きディスペンサー
+# UI付きディスペンサー
     execute as @p at @s store success score @s pick if entity @e[tag=ui,distance=..6] run clear @p[distance=..6] stick{ui:1b,menu:"dispenser"}
-###(どれもプレイヤーが近くにいると動作するものなので統合できるかも)
-#チェストトロッコ式GUI
+### (どれもプレイヤーが近くにいると動作するものなので統合できるかも)
+# チェストトロッコ式GUI
     execute as @p at @s run function main:social/ui/tick
-#HUDの処理
+# HUDの処理
     function hud:tick
 
-###見れば見るほど汚い記述
+### 見れば見るほど汚い記述

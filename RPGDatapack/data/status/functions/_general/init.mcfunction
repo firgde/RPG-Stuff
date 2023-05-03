@@ -1,4 +1,4 @@
-#全ステータスリセット
+# 全ステータスリセット
     scoreboard players set @s atk_base 0
     scoreboard players set @s mag_base 0
     scoreboard players set @s dex_base 0
@@ -17,7 +17,7 @@
     scoreboard players set @s resistance_ice 100
     scoreboard players set @s resistance_wind 100
     scoreboard players set @s resistance_thunder 100
-#全レベル&経験値リセット
+# 全レベル&経験値リセット
     scoreboard players set @s lvl_total 0
     scoreboard players set @s lvl_combat 0
     scoreboard players set @s lvl_explore 0
@@ -31,5 +31,5 @@
     scoreboard players set @s xp_collect 0
     scoreboard players set @s xp_craft 0
     scoreboard players set @s xp_social 0
-#更新
+# 更新
     function status:_general/get/update

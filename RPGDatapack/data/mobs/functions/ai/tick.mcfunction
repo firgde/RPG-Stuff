@@ -1,4 +1,4 @@
-#どのMobか特定
+# どのMobか特定
 
     #普通のAI付きのMob(1000~)
     execute if score @s mob_id matches 1000 run function asset:mob/1000_zombie_mage/ai/tick

@@ -1,21 +1,21 @@
-#検知ｨ！
+# 検知ｨ！
     scoreboard players set @s usedRod 0
-#クールダウンチェック
+# クールダウンチェック
     execute if entity @s[type=player] run function main:combat/attack/magic/check_cooldown
     execute if entity @s[type=!player] run tag @s add verify_cooldown
-#MP消費&チェック
+# MP消費&チェック
     execute store result score $mprequire buffer run data get entity @s SelectedItem.tag.Customnbt.mpRequire
     execute unless score @s mp < $mprequire buffer run tag @s add verify_mp
     scoreboard players operation @s[tag=verify_mp,gamemode=!creative,tag=verify_cooldown] mp -= $mprequire buffer
-#種類
+# 種類
     data modify storage combat: data.magic set from entity @s[tag=verify_cooldown,tag=verify_mp,type=player] SelectedItem.tag.Customnbt.magicType
     data modify storage combat: data.magic.offhand set from entity @s[tag=verify_cooldown,tag=verify_mp,type=player] Inventory[{Slot:-106b}].tag.Customnbt.magicType
-#ｻﾓｫｫｫｫﾝ
+# ｻﾓｫｫｫｫﾝ
     execute if entity @s[tag=verify_cooldown,tag=verify_mp] run function main:combat/attack/magic/summon
-#残念空振りまた明日
+# 残念空振りまた明日
     execute if entity @s[tag=!verify_cooldown] run tellraw @s {"translate":"combat.text.magic.no_cooldown","color": "red"}
     execute if entity @s[tag=!verify_mp] run tellraw @s {"translate":"combat.text.magic.no_mp","color": "red"}
-#リセット
+# リセット
     scoreboard players reset $timeused buffer
     scoreboard players reset $gametime buffer
     scoreboard players reset $mprequire buffer

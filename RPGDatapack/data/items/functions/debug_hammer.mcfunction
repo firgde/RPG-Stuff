@@ -1,4 +1,4 @@
-#名前だとか説明文だとか
+# 名前だとか説明文だとか
     data modify storage item: Item.Count set value 1b
     data modify storage item: Item.id set value "minecraft:warped_fungus_on_a_stick"
     data modify storage item: Item.tag.display.Name set value '{"italic":false,"color":"gold","text":"デバッグハンマー"}'
@@ -17,7 +17,7 @@
     data modify storage item: Item.tag.Customnbt.Skills set value {Main:{id:"none"},Side:{id:"none"}}
     data modify storage item: Item.tag.Customnbt.HasSkill set value 0b
     data modify storage item: Item.tag.Customnbt.rarity set value 2
-#ステータスとレア度、耐久値設定
+# ステータスとレア度、耐久値設定
     scoreboard players set $atkbonus buffer 999
     scoreboard players set $magbonus buffer 0
     scoreboard players set $dexbonus buffer 0
@@ -33,7 +33,7 @@
     scoreboard players set $maxdurability buffer 0
     scoreboard players set $enchantcount buffer 0
     scoreboard players set $hasskill buffer 0
-#実際のステータス
+# 実際のステータス
     data modify storage item: Item.tag.Customnbt.status.atk set value 999
     data modify storage item: Item.tag.Customnbt.status.mag set value 0
     data modify storage item: Item.tag.Customnbt.status.dex set value 0
@@ -46,5 +46,5 @@
     data modify storage item: Item.tag.Customnbt.status.acc set value 0
     data modify storage item: Item.tag.Customnbt.Durability set value 0
     data modify storage item: Item.tag.Customnbt.MaxDurability set value 0
-#共通
+# 共通
     function items:set_data/

@@ -1,4 +1,4 @@
-#シュルカーボックスにアイテムを避難させた後、棒を入れる
+# シュルカーボックスにアイテムを避難させた後、棒を入れる
     item replace block 0 -59 0 container.0 with stick
     data modify block 0 -59 0 Items[0].id set from block ~ ~-1 ~ Items[{Slot:6b}].id
     data modify block 0 -59 0 Items[0].Count set from block ~ ~-1 ~ Items[{Slot:6b}].Count

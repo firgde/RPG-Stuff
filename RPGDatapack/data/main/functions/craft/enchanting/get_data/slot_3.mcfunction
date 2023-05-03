@@ -1,4 +1,4 @@
-#Slot:3bのエンチャント加算値を取得
+# Slot:3bのエンチャント加算値を取得
     #それぞれのステータス
     execute store result score $ebonusatk buffer run data get block ~ ~-1 ~ Items[{Slot:3b}].tag.Customnbt.EnchantingData.bonus.atk
     execute store result score $ebonusmag buffer run data get block ~ ~-1 ~ Items[{Slot:3b}].tag.Customnbt.EnchantingData.bonus.mag
@@ -19,7 +19,7 @@
 
     #スキルエンチャントの出やすさ
     execute store result score $eskill buffer run data get block ~ ~-1 ~ Items[{Slot:3b}].tag.Customnbt.EnchantingData.bonus.skill
-#加算
+# 加算
     scoreboard players operation $ebonusatk atk_enchant += $ebonusatk buffer
     scoreboard players operation $ebonusmag mag_enchant += $ebonusmag buffer
     scoreboard players operation $ebonusdex dex_enchant += $ebonusdex buffer
@@ -30,5 +30,5 @@
     scoreboard players operation $ebonuscrt crt_enchant += $ebonuscrt buffer
     scoreboard players operation $ebonusluk luk_enchant += $ebonusluk buffer
     scoreboard players operation $ebonusacc acc_enchant += $ebonusacc buffer
-#ディスペンサーから削除
+# ディスペンサーから削除
     data remove block ~ ~-1 ~ Items[{Slot:3b}]

@@ -1,17 +1,17 @@
-#再帰回数を減らす
+# 再帰回数を減らす
     scoreboard players remove $rec buffer 1
-#ルートテーブル万能説
+# ルートテーブル万能説
     loot replace block 0 -59 0 container.2 loot main:craft/enchantments/all
-#追加アイテムが入っているなら追加で要素を増加
+# 追加アイテムが入っているなら追加で要素を増加
     execute if data block ~ ~-1 ~ Items[{Slot:1b,tag:{Customnbt:{EnchantMaterial:1b}}}] run function main:craft/enchanting/get_data/slot_1
     execute if data block ~ ~-1 ~ Items[{Slot:3b,tag:{Customnbt:{EnchantMaterial:1b}}}] run function main:craft/enchanting/get_data/slot_3
     execute if data block ~ ~-1 ~ Items[{Slot:5b,tag:{Customnbt:{EnchantMaterial:1b}}}] run function main:craft/enchanting/get_data/slot_5
     execute if data block ~ ~-1 ~ Items[{Slot:7b,tag:{Customnbt:{EnchantMaterial:1b}}}] run function main:craft/enchanting/get_data/slot_7
-#ｴﾝﾁｬﾝﾄ適用
+# ｴﾝﾁｬﾝﾄ適用
     data modify block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantments append from block 0 -59 0 Items[{Slot:2b}].tag.Enchant
     execute store result score $enchantcount buffer if data block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.Enchantments
     data modify block ~ ~-1 ~ Items[{Slot:4b}].tag.Enchantments set value [{}]
-#ｽﾃｰﾀｽ更新
+# ｽﾃｰﾀｽ更新
     execute store result score $atkbonus atk_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.atk
     execute store result score $magbonus mag_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.mag
     execute store result score $dexbonus dex_enchant run data get block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Buffs.dex
@@ -55,7 +55,7 @@
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.crt int 1 run scoreboard players operation $crtbonus buffer += $crtbonus crt_enchant
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.luk int 1 run scoreboard players operation $lukbonus buffer += $lukbonus luk_enchant
     execute store result block ~ ~-1 ~ Items[{Slot:4b}].tag.Customnbt.status.acc int 1 run scoreboard players operation $accbonus buffer += $accbonus acc_enchant
-#ｱｲﾃﾑﾓﾃﾞｨﾌｧｲｱを適用
+# ｱｲﾃﾑﾓﾃﾞｨﾌｧｲｱを適用
     data modify storage item: Item set from block ~ ~-1 ~ Items[{Slot:4b}]
     data remove storage item: Item.Slot
     data modify storage item: Item.tag.Enchant.Text set from block 0 -59 0 Items[{Slot:2b}].tag.Enchant.Text
@@ -63,5 +63,5 @@
     execute positioned 0 -59 0 run function items:get_data
     execute positioned 0 -59 0 run function items:set_data/
     item replace block ~ ~-1 ~ container.4 from block 0 -59 0 container.0
-#再帰
+# 再帰
     execute if score $rec buffer matches 1.. run function main:craft/enchanting/rec

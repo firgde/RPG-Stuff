@@ -1,4 +1,4 @@
-#base値に加算
+# base値に加算
     scoreboard players operation @s atk += @s atk_bonus
     scoreboard players operation @s mag += @s mag_bonus
     scoreboard players operation @s dex += @s dex_bonus

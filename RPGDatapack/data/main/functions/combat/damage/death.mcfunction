@@ -1,4 +1,4 @@
-#ﾀﾋんだんじゃないの～☆
+# ﾀﾋんだんじゃないの～☆
     tellraw @p [{"translate":"debugging.maybehedied"},{"score":{"name": "@s","objective": "add_pt"}}]
     #戦闘経験値加算
     execute if entity @s[team=hostile] run scoreboard players operation @p add_pt = @s add_pt

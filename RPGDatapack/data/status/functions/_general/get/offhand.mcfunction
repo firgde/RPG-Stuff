@@ -1,4 +1,4 @@
-#/dATa gEt
+# /dATa gEt
     execute store result score @s atk_bonus run data get entity @s Inventory[{Slot:-106b}].tag.Customnbt.status.atk
     execute store result score @s mag_bonus run data get entity @s Inventory[{Slot:-106b}].tag.Customnbt.status.mag
     execute store result score @s dex_bonus run data get entity @s Inventory[{Slot:-106b}].tag.Customnbt.status.dex
@@ -9,7 +9,7 @@
     execute store result score @s crt_bonus run data get entity @s Inventory[{Slot:-106b}].tag.Customnbt.status.crt
     execute store result score @s luk_bonus run data get entity @s Inventory[{Slot:-106b}].tag.Customnbt.status.luk
     execute store result score @s acc_bonus run data get entity @s Inventory[{Slot:-106b}].tag.Customnbt.status.acc
-#合計
+# 合計
     scoreboard players operation @s atk_bonus += @s atk_enchant
     scoreboard players operation @s mag_bonus += @s mag_enchant
     scoreboard players operation @s dex_bonus += @s dex_enchant
@@ -20,5 +20,5 @@
     scoreboard players operation @s crt_bonus += @s crt_enchant
     scoreboard players operation @s luk_bonus += @s crt_enchant
     scoreboard players operation @s acc_bonus += @s acc_enchant
-#更新
+# 更新
     function status:_general/get/add_bonus

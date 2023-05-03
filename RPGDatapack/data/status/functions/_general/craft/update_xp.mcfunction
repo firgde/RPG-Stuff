@@ -1,4 +1,4 @@
-#経験値加算
+# 経験値加算
     scoreboard players operation @s xp_craft += @s add_pt
     scoreboard players operation @s buffer = @s lvl_craft
     scoreboard players operation @s lvl_craft = @s xp_craft

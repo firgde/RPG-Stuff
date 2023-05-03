@@ -1,4 +1,4 @@
-#どのレシピか
+# どのレシピか
     execute if score $length buffer matches 3 if data storage craft: data{ingredients:[{id:4},{id:4},{id:0}]} as @e[distance=..10,tag=slot] if data entity @s item{tag:{Customnbt:{id:0}}} at @s positioned ^ ^ ^0.2 as @e[limit=1,sort=nearest,tag=slot] if data entity @s item{tag:{Customnbt:{id:4}}} at @s positioned ^ ^ ^0.2 as @e[limit=1,sort=nearest,tag=slot] if data entity @s item{tag:{Customnbt:{id:4}}} as @p run function asset:item/1004_diamond_sword/craft
     execute if score $length buffer matches 3 if data storage craft: data{ingredients:[{id:6},{id:6},{id:0}]} as @e[distance=..10,tag=slot] if data entity @s item{tag:{Customnbt:{id:0}}} at @s positioned ^ ^ ^0.2 as @e[limit=1,sort=nearest,tag=slot] if data entity @s item{tag:{Customnbt:{id:6}}} at @s positioned ^ ^ ^0.2 as @e[limit=1,sort=nearest,tag=slot] if data entity @s item{tag:{Customnbt:{id:6}}} as @p run function asset:item/1006_amethyst_sword/craft
 

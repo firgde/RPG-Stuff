@@ -1,4 +1,4 @@
-#AttributeModifierリセット
+# AttributeModifierリセット
     attribute @s generic.luck modifier remove 1-0-0-0-A
     attribute @s generic.luck modifier remove 1-0-0-0-9
     attribute @s generic.luck modifier remove 1-0-0-0-8
@@ -18,7 +18,7 @@
     attribute @s generic.luck modifier remove 1-0-0-1-2
     attribute @s generic.luck modifier remove 1-0-0-1-1
     attribute @s generic.luck modifier remove 1-0-0-1-0
-#運のAttributeModifier適用
+# 運のAttributeModifier適用
     scoreboard players operation $lukbuffer buffer = @s luk
     scoreboard players operation $lukbuffer buffer *= $2^20 const
     scoreboard players operation $lukbuffer buffer *= $2 const
@@ -43,7 +43,7 @@
     execute if score $lukbuffer buffer matches ..-1 run attribute @s generic.luck modifier add 1-0-0-0-1 "Luck1" 0.02 add
     scoreboard players operation $lukbuffer buffer *= $2 const
     execute if score $lukbuffer buffer matches ..-1 run attribute @s generic.luck modifier add 1-0-0-0-0 "Luck0" 0.01 add
-#lukの値を保存
+# lukの値を保存
     scoreboard players operation @s luk_prv = @s luk
-#リセット
+# リセット
     scoreboard players reset $lukbuffer

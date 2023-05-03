@@ -1,4 +1,4 @@
-#AttributeModifierリセット(spd>=0)
+# AttributeModifierリセット(spd>=0)
     attribute @s generic.movement_speed modifier remove 1-0-0-0-A
     attribute @s generic.movement_speed modifier remove 1-0-0-0-9
     attribute @s generic.movement_speed modifier remove 1-0-0-0-8
@@ -18,7 +18,7 @@
     attribute @s generic.movement_speed modifier remove 1-0-0-1-2
     attribute @s generic.movement_speed modifier remove 1-0-0-1-1
     attribute @s generic.movement_speed modifier remove 1-0-0-1-0
-#移動速度のAttributeModifier適用
+# 移動速度のAttributeModifier適用
     scoreboard players operation $spdbuffer buffer = @s spd
     execute if score @s spd matches ..-1 run function status:spd/update_negative
     scoreboard players operation $spdbuffer buffer *= $2^20 const
@@ -44,7 +44,7 @@
     execute if score $spdbuffer buffer matches ..-1 run attribute @s generic.movement_speed modifier add 1-0-0-0-1 "movSpeed1" 0.0002 add
     scoreboard players operation $spdbuffer buffer *= $2 const
     execute if score $spdbuffer buffer matches ..-1 run attribute @s generic.movement_speed modifier add 1-0-0-0-0 "movSpeed0" 0.0001 add
-#spdの値を保存
+# spdの値を保存
     scoreboard players operation @s spd_prv = @s spd
-#リセット
+# リセット
     scoreboard players reset $spdbuffer

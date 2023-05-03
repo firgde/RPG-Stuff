@@ -1,10 +1,10 @@
-#スコア類
+###スコア類
     #レベル・ステータス系
     scoreboard objectives add lvl_total dummy
-        #ステータスジャンル(仮)
+        # ステータスジャンル(仮)
         #戦闘、探索、採集、手工、社交の五つのジャンルが存在し、それぞれに対応した行動を取る事でレベルが個別に溜まっていく
         scoreboard objectives add add_pt dummy
-        #戦闘(攻撃、防御、技巧、会心)
+        # 戦闘(攻撃、防御、技巧、会心)
         scoreboard objectives add lvl_combat dummy
         scoreboard objectives add xp_combat dummy
         scoreboard objectives add temporalHealth dummy
@@ -29,7 +29,7 @@
         scoreboard objectives add flyratio dummy
         scoreboard objectives add frate dummy
         scoreboard objectives add hasAttacker dummy
-        #探索(体力、速度、集中、運)
+        # 探索(体力、速度、集中、運)
         scoreboard objectives add lvl_explore dummy
         scoreboard objectives add xp_explore dummy
         #scoreboard objectives add mov_walk custom:walk_one_cm
@@ -41,7 +41,7 @@
         #scoreboard objectives add mov_fly custom:fly_one_cm
         #scoreboard objectives add mov_dis dummy
         #scoreboard objectives add mov_point dummy
-        #採取(防御、体力、魔法、運)
+        # 採取(防御、体力、魔法、運)
         scoreboard objectives add lvl_collect dummy
         scoreboard objectives add xp_collect dummy
         scoreboard objectives add use_pick_0 used:wooden_pickaxe
@@ -50,11 +50,11 @@
         scoreboard objectives add use_pick_3 used:golden_pickaxe
         scoreboard objectives add use_pick_4 used:diamond_pickaxe
         scoreboard objectives add use_pick_5 used:netherite_pickaxe
-        #手工(攻撃、知能、速度、集中)
+        # 手工(攻撃、知能、速度、集中)
         scoreboard objectives add lvl_craft dummy
         scoreboard objectives add xp_craft dummy
         scoreboard objectives add hasTarget dummy
-        #社交(魔法、知能、技巧、会心)
+        # 社交(魔法、知能、技巧、会心)
         scoreboard objectives add dprogress dummy
         scoreboard objectives add money dummy
         scoreboard objectives add page dummy
@@ -66,25 +66,25 @@
         scoreboard objectives add xp_social dummy
 
         #ステータス類(実際の値と基礎,追加値)
-        #攻撃(物理攻撃力)
+        # 攻撃(物理攻撃力)
         scoreboard objectives add atk dummy
         scoreboard objectives add atk_bonus dummy
         scoreboard objectives add atk_base dummy
         scoreboard objectives add atk_enchant dummy
         scoreboard objectives add atk_buff dummy
-        #魔法(魔法攻撃力)
+        # 魔法(魔法攻撃力)
         scoreboard objectives add mag dummy
         scoreboard objectives add mag_bonus dummy
         scoreboard objectives add mag_base dummy
         scoreboard objectives add mag_enchant dummy
         scoreboard objectives add mag_buff dummy
-        #技巧(遠距離攻撃力)
+        # 技巧(遠距離攻撃力)
         scoreboard objectives add dex dummy
         scoreboard objectives add dex_bonus dummy
         scoreboard objectives add dex_base dummy
         scoreboard objectives add dex_enchant dummy
         scoreboard objectives add dex_buff dummy
-        #体力(最大HP)
+        # 体力(最大HP)
         scoreboard objectives add max_hp dummy
         scoreboard objectives add hp dummy
         scoreboard objectives add max_hp_bonus dummy
@@ -94,7 +94,7 @@
         scoreboard objectives add hp_buffer dummy
         scoreboard objectives add max_hp_buff dummy
         scoreboard objectives add healAmountHP dummy
-        #知能(MPとその回復速度)
+        # 知能(MPとその回復速度)
         scoreboard objectives add max_mp dummy
         scoreboard objectives add mp dummy
         scoreboard objectives add mp_regen dummy
@@ -106,33 +106,33 @@
         scoreboard objectives add healAmountMP dummy
         scoreboard objectives add healTimerMP dummy
         scoreboard objectives add healAmountMP dummy
-        #防御(防御力)
+        # 防御(防御力)
         scoreboard objectives add def dummy
         scoreboard objectives add def_bonus dummy
         scoreboard objectives add def_base dummy
         scoreboard objectives add def_enchant dummy
         scoreboard objectives add def_buff dummy
-        #速度(移動&攻撃速度)
+        # 速度(移動&攻撃速度)
         scoreboard objectives add spd dummy
         scoreboard objectives add spd_bonus dummy
         scoreboard objectives add spd_base dummy
         scoreboard objectives add spd_enchant dummy
         scoreboard objectives add spd_buff dummy
         scoreboard objectives add spd_prv dummy
-        #会心(クリティカル率、クリティカル倍率)
+        # 会心(クリティカル率、クリティカル倍率)
         scoreboard objectives add crt dummy
         scoreboard objectives add crt_bonus dummy
         scoreboard objectives add crt_base dummy
         scoreboard objectives add crt_enchant dummy
         scoreboard objectives add crt_buff dummy
-        #運(ドロップ率などのRNG操作ステータス)
+        # 運(ドロップ率などのRNG操作ステータス)
         scoreboard objectives add luk dummy
         scoreboard objectives add luk_bonus dummy
         scoreboard objectives add luk_base dummy
         scoreboard objectives add luk_enchant dummy
         scoreboard objectives add luk_buff dummy
         scoreboard objectives add luk_prv dummy
-        #集中(範囲攻撃のダメージ増加、魔法攻撃の追尾開始のタイミングなどその他)
+        # 集中(範囲攻撃のダメージ増加、魔法攻撃の追尾開始のタイミングなどその他)
         scoreboard objectives add acc dummy
         scoreboard objectives add acc_bonus dummy
         scoreboard objectives add acc_base dummy
@@ -141,7 +141,7 @@
         scoreboard objectives add dmg_eff dummy
         scoreboard objectives add follow_rate dummy
 
-        #属性相性
+        # 属性相性
         scoreboard objectives add resistance_melee dummy
         scoreboard objectives add resistance_magic dummy
         scoreboard objectives add resistance_ranged dummy
@@ -150,19 +150,19 @@
         scoreboard objectives add resistance_wind dummy
         scoreboard objectives add resistance_thunder dummy
 
-        #(...分類できねぇ)
+        # (...分類できねぇ)
         scoreboard objectives add durability dummy
         scoreboard objectives add maxDurability dummy
         scoreboard objectives add dur_ratio dummy
         scoreboard objectives add foodTimer dummy
-    #プレイヤー区別用のID
+    # プレイヤー区別用のID
     scoreboard objectives add playerID dummy
-    #手に持っているアイテムのスロット
+    # 手に持っているアイテムのスロット
     scoreboard objectives add slot dummy
     scoreboard objectives add prevslot dummy
-    #バッファ
+    # バッファ
     scoreboard objectives add buffer dummy
-    #定数
+    # 定数
     scoreboard objectives add const dummy
     scoreboard players set $-1 const -1
     scoreboard players set $0 const 0
@@ -196,19 +196,19 @@
     scoreboard players set $2^23 const 8388608
     scoreboard players set $2^24 const 16777216
     scoreboard players set $2^26 const 67108864
-#チーム
+# チーム
     team add hostile
     team add no_col
     team modify no_col collisionRule never
-#ボスバー
+# ボスバー
     bossbar add health: ""
-#タイトルの表示時間
+# タイトルの表示時間
     title @p times 10 40 10
 
-#いずれload.mcfunctionに移動される分
-#攻撃力を一律0に
+# いずれload.mcfunctionに移動される分
+    #攻撃力を一律0に
     attribute @p generic.attack_damage base set 0.0
-#ダメージ処理のために無敵に
+    #ダメージ処理のために無敵に
     effect give @p resistance infinite 255 true
-#餓死しないために満腹度回復
+    #餓死しないために満腹度回復
     effect give @p saturation infinite 255 true

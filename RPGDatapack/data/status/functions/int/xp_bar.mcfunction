@@ -1,8 +1,8 @@
-#初期化
+# 初期化
     xp set @s 40 levels
     xp set @s 0 points
     scoreboard players operation $mpbuffer buffer = @s mp
-#ポイント
+# ポイント
     scoreboard players operation $lv% buffer *= $2^24 const
     scoreboard players operation $lv% buffer *= $2 const
     execute if score $lv% buffer matches ..-1 run xp add @s 128 points
@@ -20,7 +20,7 @@
     execute if score $lv% buffer matches ..-1 run xp add @s 2 points
     scoreboard players operation $lv% buffer *= $2 const
     execute if score $lv% buffer matches ..-1 run xp add @s 1 points
-#レベル
+# レベル
     xp set @s 0 levels
     scoreboard players operation $mpbuffer buffer *= $2^20 const
     scoreboard players operation $mpbuffer buffer *= $2 const

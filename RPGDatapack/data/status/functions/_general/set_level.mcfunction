@@ -1,4 +1,4 @@
-#取り敢えず五つのジャンルの平均
+# 取り敢えず五つのジャンルの平均
     scoreboard players operation @s buffer = @s lvl_total
     scoreboard players set @s lvl_total 0
     scoreboard players operation @s lvl_total = @s lvl_combat

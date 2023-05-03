@@ -1,23 +1,23 @@
-#0 0 0を基準にして+0.1の位置にkb_vectorをtp
+# 0 0 0を基準にして+0.1の位置にkb_vectorをtp
     execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^-0.05 {Tags:["kb_vector"]}
-#mov:にkb_vectorのPosを保存 ( mov: {mov:[X,Y,Z]} )
+# mov:にkb_vectorのPosを保存 ( mov: {mov:[X,Y,Z]} )
     data modify storage mov: mov set from entity @e[tag=kb_vector,limit=1] Pos
     data modify storage mov: mov[1] set value -0.032
-#XYZにmov:から100倍して取得
+# XYZにmov:から100倍して取得
     execute store result score $xpower buffer run data get storage mov: mov[0] 10000
     execute store result score $ypower buffer run data get storage mov: mov[1] 10000
     execute store result score $zpower buffer run data get storage mov: mov[2] 10000
-#それぞれにkbpower掛ける
+# それぞれにkbpower掛ける
     scoreboard players operation $xpower buffer *= $kbpowerx buffer
     scoreboard players operation $ypower buffer *= $kbpowery buffer
     scoreboard players operation $zpower buffer *= $kbpowerz buffer
-#mov:にそれぞれを戻す
+# mov:にそれぞれを戻す
     execute store result storage mov: mov[0] double -0.0001 run scoreboard players get $xpower buffer
     execute store result storage mov: mov[1] double -0.0001 run scoreboard players get $ypower buffer
     execute store result storage mov: mov[2] double -0.0001 run scoreboard players get $zpower buffer
-#対象のEntityにmov:をそのままセット
+# 対象のEntityにmov:をそのままセット
     data modify entity @s Motion set from storage mov: mov
-#リセット
+# リセット
     scoreboard players reset $kbpowerx buffer
     scoreboard players reset $kbpowery buffer
     scoreboard players reset $kbpowerz buffer
