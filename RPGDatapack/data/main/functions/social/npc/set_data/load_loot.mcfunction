@@ -1,7 +1,5 @@
 # 0 -59 0 のシュルカーボックスにストレージからアイテムを入れる
     item replace block 0 -59 0 container.0 with air
-    # 通貨
-    execute if data storage social: data.npc.Recipes[-1].Item{LootReference:"gemstone_shard"} run loot replace block 0 -59 0 container.0 loot asset:social/trading/gemstone_shard
     # 0000-0999 無機能アイテム
 
     # 1000-1999 武器
@@ -65,6 +63,11 @@
 
     # 8000-8999 その他
 
+    # 通貨
+    #moneycountを1に
+    scoreboard players set $moneycount buffer 1
+    execute if data storage social: data.npc.Recipes[-1].Item{LootReference:"gemstone_shard"} run loot replace block 0 -59 0 container.0 loot asset:social/trading/gemstone_shard
+
 # 個数設定
     data modify storage social: data.buffer.Count set from storage social: data.npc.Recipes[-1].Item.Count
 # ストレージに実際のアイテムデータを入れる
@@ -73,3 +76,4 @@
     data modify storage social: data.npc.Recipes[-1].Item.Count set from storage social: data.buffer.Count
 # リセット
     data remove storage social: data.buffer.Count
+    scoreboard players reset $moneycount buffer
