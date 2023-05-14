@@ -1,5 +1,5 @@
 # 耐久減らす
-    execute if entity @s[gamemode=!creative,nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b}}}}] run function main:combat/durability/remove
+    execute if entity @s[gamemode=!creative,nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b}}}}] run function items:durability/remove
 # クールダウン更新
     execute store result score $timeused buffer run time query gametime
     execute store result storage combat: data.magic.CoolDown int 1 run scoreboard players get $timeused buffer

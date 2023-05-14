@@ -187,6 +187,7 @@
     scoreboard players set $100 const 100
     scoreboard players set $100 buffer 100
     scoreboard players set $120 const 120
+    scoreboard players set $384 const 384
     scoreboard players set $1024 const 1024
     scoreboard players set $2000 const 2000
     scoreboard players set $10000 const 10000
@@ -203,7 +204,7 @@
 # ボスバー
     bossbar add health: ""
 # タイトルの表示時間
-    title @p times 10 40 10
+    title @p times 5 40 10
 
 # いずれload.mcfunctionに移動される分
     #攻撃力を一律0に

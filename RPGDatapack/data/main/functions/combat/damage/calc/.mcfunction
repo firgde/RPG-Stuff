@@ -35,10 +35,10 @@
     #ボスは専用の演出
     execute if entity @s[tag=boss] run function main:combat/damage/boss
 # 防具の耐久を減らす
-    execute if entity @s[nbt={Inventory:[{Slot:103b,tag:{Customnbt:{armorType:"helmet",armor:1b}}}]},type=player] run function main:combat/durability/remove_head
-    execute if entity @s[nbt={Inventory:[{Slot:102b,tag:{Customnbt:{armorType:"chestplate",armor:1b}}}]},type=player] run function main:combat/durability/remove_chest
-    execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{Customnbt:{armorType:"leggings",armor:1b}}}]},type=player] run function main:combat/durability/remove_legs
-    execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]},type=player] run function main:combat/durability/remove_feet
+    execute if entity @s[nbt={Inventory:[{Slot:103b,tag:{Customnbt:{armorType:"helmet",armor:1b}}}]},type=player] run function items:durability/remove_head
+    execute if entity @s[nbt={Inventory:[{Slot:102b,tag:{Customnbt:{armorType:"chestplate",armor:1b}}}]},type=player] run function items:durability/remove_chest
+    execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{Customnbt:{armorType:"leggings",armor:1b}}}]},type=player] run function items:durability/remove_legs
+    execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]},type=player] run function items:durability/remove_feet
 # 必要ならば、演出
     execute if score $damagetype buffer matches 1 run playsound entity.player.hurt_on_fire player @s[type=player] ~ ~ ~ 1 1
     execute if score $damagetype buffer matches 2 run playsound entity.player.hurt_freeze player @s[type=player] ~ ~ ~ 1 1

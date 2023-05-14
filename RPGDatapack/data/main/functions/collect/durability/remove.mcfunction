@@ -5,7 +5,7 @@
     execute store result storage item: Item.tag.Customnbt.Durability int 1 run scoreboard players get $durability buffer
     item modify entity @s weapon.mainhand main:update_durability
 # 0なら壊す
-    execute if score @s durability matches ..0 run function main:combat/durability/break
+    execute if score @s durability matches ..0 run function items:durability/break
 # アイテムの耐久ゲージを更新
     execute store result score @s maxDurability run data get entity @s SelectedItem.tag.Customnbt.MaxDurability
     scoreboard players operation $maxdurability buffer = @s maxDurability
@@ -28,8 +28,7 @@
     item replace block 0 -59 0 container.0 from entity @s weapon.mainhand
     execute positioned 0 -59 0 run function items:get_data
     item modify entity @s weapon.mainhand items:lore/text
-    item modify entity @s weapon.mainhand items:lore/status
-    function items:set_data/rec_mainhand
+    execute if score $enchantcount buffer matches 1.. run function items:set_data/rec_mainhand
     item modify entity @s weapon.mainhand items:lore/info
 # リセット
     scoreboard players reset @s use_pick_0
@@ -64,4 +63,4 @@
     scoreboard players reset $enchantcount buffer
     scoreboard players reset $hasskill buffer
 
-    advancement revoke @s only main:collect/mined/pickaxe
+    advancement revoke @s only main:collect/broken/pickaxe

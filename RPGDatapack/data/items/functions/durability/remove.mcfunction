@@ -1,28 +1,28 @@
 # Customnbtの耐久値を減算
-    execute store result score @s durability run data get entity @s Inventory[{Slot:101b}].tag.Customnbt.Durability
+    execute store result score @s durability run data get entity @s SelectedItem.tag.Customnbt.Durability
     scoreboard players remove @s durability 1
     scoreboard players operation $durability buffer = @s durability
     execute store result storage item: Item.tag.Customnbt.Durability int 1 run scoreboard players get $durability buffer
-    item modify entity @s armor.legs main:update_durability
+    item modify entity @s weapon.mainhand main:update_durability
 # 0なら壊す
-    execute if score @s durability matches ..0 run function main:combat/durability/break
+    execute if score @s durability matches ..0 run function items:durability/break
 # アイテムの耐久ゲージを更新
-    execute store result score @s maxDurability run data get entity @s Inventory[{Slot:101b}].tag.Customnbt.MaxDurability
+    execute store result score @s maxDurability run data get entity @s SelectedItem.tag.Customnbt.MaxDurability
     scoreboard players operation $maxdurability buffer = @s maxDurability
-    #中身は革の防具
-    scoreboard players operation @s durability *= $75 const
+    scoreboard players operation @s durability *= $100 const
     execute store result score @s dur_ratio run scoreboard players operation @s durability /= @s maxDurability
     scoreboard players set @s buffer 100
     execute store result storage item: data.Damage int 1 run scoreboard players operation @s buffer -= @s dur_ratio
 # 代入
-    data modify storage item: Item set from entity @s Inventory[{Slot:101b}]
-    item modify entity @s armor.legs main:update_durability_display
-    item replace block 0 -59 0 container.0 from entity @s armor.legs
+    data modify storage item: Item set from entity @s SelectedItem
+    item modify entity @s weapon.mainhand main:update_durability_display
+    item replace block 0 -59 0 container.0 from entity @s weapon.mainhand
     execute positioned 0 -59 0 run function items:get_data
-    item modify entity @s armor.legs items:lore/text
-    item modify entity @s armor.legs items:lore/status
-    execute if score $enchantcount buffer matches 1.. run function items:set_data/rec_legs
-    item modify entity @s armor.legs items:lore/info
+    item modify entity @s weapon.mainhand items:lore/text
+    item modify entity @s weapon.mainhand items:lore/status
+    execute if data storage item: Item.tag.Customnbt{weaponType:"wand"} run item modify entity @s weapon.mainhand items:lore/magic
+    execute if score $enchantcount buffer matches 1.. run function items:set_data/rec_mainhand
+    item modify entity @s weapon.mainhand items:lore/info
 # リセット
     data remove storage item: data
     data remove storage item: Item
