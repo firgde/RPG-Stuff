@@ -148,6 +148,18 @@
 				"range": {
 					"min": 1
 				}
+			},
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$durability"
+					},
+					"score": "buffer"
+				},
+				"range": 0
 			}
 		]
 	}
