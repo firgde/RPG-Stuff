@@ -38,6 +38,8 @@
     effect give @s resistance infinite 255 true
 # 餓死しないために満腹度回復
     effect give @s saturation infinite 255 true
+# 体力を常に最大体力に合わせる為に回復
+    effect give @s instant_health infinite 28 true
 # いらん棒は消す
     clear @s stick{CustomModelData:1}
 # エリアごとに採掘できるアイテムの設定
