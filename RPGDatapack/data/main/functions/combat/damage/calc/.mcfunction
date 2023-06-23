@@ -1,11 +1,8 @@
 # 属性/デバフ取得
-    execute if entity @s[type=!player,tag=!hurt_skill] unless data entity @p SelectedItem.tag{Customnbt:{Element:{Type:0}}} store result score $damagetype buffer run data get entity @p SelectedItem.tag.Customnbt.Element.Type
-    execute if entity @s[type=!player,tag=!hurt_skill] if data entity @p SelectedItem.tag{Customnbt:{Element:{Type:0}}} if data entity @p Inventory[{Slot:-106b}].tag{Customnbt:{offhandOnly:1b}} store result score $damagetype buffer run data get entity @p Inventory[{Slot:-106b}].tag.Customnbt.Element.Type
-    execute if entity @s[type=player] on attacker if data entity @s HandItems[0].tag.Customnbt.Element.Type store result score $damagetype buffer run data get entity @s HandItems[0].tag.Customnbt.Element.Type
-    execute if entity @s[type=player] on attacker unless data entity @s HandItems[0].tag.Customnbt.Element.Type if data entity @s HandItems[1].tag{Customnbt:{offhandOnly:1b}} store result score $damagetype buffer run data get entity @s HandItems[1].tag.Customnbt.Element.Type
-    execute if entity @s[type=!player] if score $damagetype buffer matches 1..4 run function main:combat/damage/calc/element
-    execute if entity @s[type=player] if score $damagetype buffer matches 1..4 run function main:combat/damage/calc/element_hostile
-    execute if entity @p[tag=attack.crit] run scoreboard players set $damagetype buffer 5
+    execute unless score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run say combine
+    execute if entity @s[type=player] if score $damageType buffer matches 1..4 run function main:combat/damage/calc/element_hostile
+    execute if entity @s[type=!player] if score $damageType buffer matches 1..4 run function main:combat/damage/calc/element
+    execute if entity @p[tag=attack.crit] run scoreboard players set $damageType buffer 5
 # 属性相性を参照
     execute unless entity @s[tag=hurt_skill] run function main:combat/damage/calc/resistance
 # 無敵時間のあるなし
@@ -40,13 +37,18 @@
     execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{Customnbt:{armorType:"leggings",armor:1b}}}]},type=player] run function items:durability/remove_legs
     execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]},type=player] run function items:durability/remove_feet
 # 必要ならば、演出
-    execute if score $damagetype buffer matches 1 run playsound entity.player.hurt_on_fire player @s[type=player] ~ ~ ~ 1 1
-    execute if score $damagetype buffer matches 2 run playsound entity.player.hurt_freeze player @s[type=player] ~ ~ ~ 1 1
+    execute if score $damageType buffer matches 1 run playsound entity.player.hurt_on_fire player @s[type=player] ~ ~ ~ 1 1
+    execute if score $damageType buffer matches 2 run playsound entity.player.hurt_freeze player @s[type=player] ~ ~ ~ 1 1
     execute if entity @s[tag=hurt_skill] run damage @s 1 generic
 # リセット
     scoreboard players reset @p atkBuffer
     scoreboard players set @p dealtDamage 0
     tag @s remove hurt
+    tag @s remove hurt.melee
+    tag @s remove hurt.ranged
+    tag @s remove hurt.magic
     tag @s remove hurt_skill
-    scoreboard players reset $damagetype buffer
+    scoreboard players reset $damageType buffer
+    scoreboard players reset $mainElement buffer
+    scoreboard players reset $sideElement buffer
     scoreboard players set $10000 buffer 10000

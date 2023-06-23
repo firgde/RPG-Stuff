@@ -28,7 +28,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagetype"
+									"name": "$damageType"
 								},
 								"score": "buffer"
 							},
@@ -62,7 +62,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagetype"
+									"name": "$damageType"
 								},
 								"score": "buffer"
 							},
@@ -96,7 +96,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagetype"
+									"name": "$damageType"
 								},
 								"score": "buffer"
 							},
@@ -130,7 +130,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagetype"
+									"name": "$damageType"
 								},
 								"score": "buffer"
 							},
@@ -164,7 +164,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagetype"
+									"name": "$damageType"
 								},
 								"score": "buffer"
 							},
@@ -198,7 +198,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$damagetype"
+									"name": "$damageType"
 								},
 								"score": "buffer"
 							},

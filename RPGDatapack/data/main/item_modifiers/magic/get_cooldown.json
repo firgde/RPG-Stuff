@@ -7,8 +7,8 @@
 		},
 		"ops": [
 			{
-				"source": "data.magic.CoolDown",
-				"target": "Customnbt.magicType.TimeUsed",
+				"source": "data.magic[0].CoolDown",
+				"target": "Customnbt.magicData.TimeUsed",
 				"op": "replace"
 			}
 		]

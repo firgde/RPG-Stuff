@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "asset:magic"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:combat/attack/magic/hit"
+    }
+}

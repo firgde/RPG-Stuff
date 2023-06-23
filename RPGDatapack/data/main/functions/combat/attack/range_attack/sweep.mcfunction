@@ -12,6 +12,11 @@
     scoreboard players set $kbpowery buffer 10
     scoreboard players set $kbpowerz buffer 10
     execute as @e[tag=hurt_skill] at @p run function main:combat/damage/knockback
+    tag @e[tag=hurt_skill] add hurt.melee
+    execute store result score $mainElement buffer run data get entity @p SelectedItem.tag.Customnbt.Element.Type
+    execute store result score $sideElement buffer run data get entity @p Inventory[{Slot:-106b}].tag.Customnbt.Element.Type
+    execute unless score $mainElement buffer matches 0 if score $sideElement buffer matches 0 run scoreboard players operation $damageType buffer = $mainElement buffer
+    execute if score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run scoreboard players operation $damageType buffer = $sideElement buffer
     execute as @e[tag=hurt_skill] run function main:combat/damage/calc/
 # リセット
     scoreboard players reset $kbpowerx buffer

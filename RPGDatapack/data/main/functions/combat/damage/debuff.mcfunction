@@ -17,4 +17,4 @@
     execute if score @s hp matches ..0 run data modify entity @s HasVisualFire set value 0b
     execute if score @s[tag=!boss] hp matches ..0 run function main:combat/damage/death
 # リセット
-    scoreboard players reset $damagetype buffer
+    scoreboard players reset $damageType buffer

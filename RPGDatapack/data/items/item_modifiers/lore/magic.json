@@ -30,7 +30,7 @@
 				"italic": false,
 				"with": [
 					{
-						"nbt": "Item.tag.Customnbt.magicType.display.Time",
+						"nbt": "Item.tag.Customnbt.magicData.display.Time",
 						"storage": "item:",
 						"color": "light_purple",
 						"italic": false
@@ -43,7 +43,7 @@
 				"italic": false,
 				"with": [
 					{
-						"nbt": "Item.tag.Customnbt.magicType.display.CoolDown",
+						"nbt": "Item.tag.Customnbt.magicData.display.CoolDown",
 						"storage": "item:",
 						"color": "light_purple",
 						"italic": false

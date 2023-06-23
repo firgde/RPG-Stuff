@@ -29,6 +29,9 @@
         scoreboard objectives add flyratio dummy
         scoreboard objectives add frate dummy
         scoreboard objectives add hasAttacker dummy
+        scoreboard objectives add hasTarget dummy
+        scoreboard objectives add higher dummy
+        scoreboard objectives add homing_priority dummy
         # 探索(体力、速度、集中、運)
         scoreboard objectives add lvl_explore dummy
         scoreboard objectives add xp_explore dummy

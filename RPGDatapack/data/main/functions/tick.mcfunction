@@ -1,5 +1,5 @@
-# 魔法攻撃の処理
-    execute as @e[type=armor_stand,tag=magic] at @s run function main:combat/attack/magic/tick/
+# 魔術攻撃の処理
+    execute as @e[type=item_display,tag=magic] at @s run function main:combat/attack/magic/tick/
 # デバフ処理
     execute as @e[tag=debuffed] run function asset:combat/debuff/tick
 # スキルのクールダウン
