@@ -8,7 +8,7 @@
           "name": "main:craft/enchantments/melee",
           "conditions": [
             {
-              "condition": "alternative",
+              "condition": "any_of",
               "terms": [
                 {
                   "condition": "location_check",

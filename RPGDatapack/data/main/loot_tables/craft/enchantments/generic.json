@@ -10,7 +10,7 @@
                         {
                             "condition": "inverted",
                             "term": {
-                                "condition": "alternative",
+                                "condition": "any_of",
                                 "terms": [
                                     {
                                         "condition": "location_check",
@@ -42,7 +42,7 @@
                         {
                             "condition": "inverted",
                             "term": {
-                                "condition": "alternative",
+                                "condition": "any_of",
                                 "terms": [
                                     {
                                         "condition": "location_check",
@@ -74,7 +74,7 @@
                         {
                             "condition": "inverted",
                             "term": {
-                                "condition": "alternative",
+                                "condition": "any_of",
                                 "terms": [
                                     {
                                         "condition": "location_check",
@@ -106,7 +106,7 @@
                         {
                             "condition": "inverted",
                             "term": {
-                                "condition": "alternative",
+                                "condition": "any_of",
                                 "terms": [
                                     {
                                         "condition": "location_check",

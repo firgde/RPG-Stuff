@@ -11,7 +11,7 @@
                   {
                     "condition": "inverted",
                     "term": {
-                      "condition": "alternative",
+                      "condition": "any_of",
                       "terms": [
                         {
                           "condition": "location_check",

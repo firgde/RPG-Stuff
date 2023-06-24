@@ -63,7 +63,7 @@
 		],
 		"conditions": [
 			{
-				"condition": "alternative",
+				"condition": "any_of",
 				"terms": [
 					{
 						"condition": "inverted",
@@ -127,7 +127,7 @@
 		],
 		"conditions": [
 			{
-				"condition": "alternative",
+				"condition": "any_of",
 				"terms": [
 					{
 						"condition": "inverted",

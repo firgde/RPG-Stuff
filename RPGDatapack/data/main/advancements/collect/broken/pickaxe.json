@@ -5,7 +5,7 @@
             "conditions": {
                 "player": [
                     {
-                        "condition": "alternative",
+                        "condition": "any_of",
                         "terms": [
                             {
                                 "condition": "entity_scores",
