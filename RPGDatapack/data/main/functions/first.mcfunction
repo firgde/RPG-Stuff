@@ -14,6 +14,8 @@
         scoreboard objectives add crtBuffer dummy
         scoreboard objectives add takenDamage custom:damage_resisted
         scoreboard objectives add dealtDamage custom:damage_dealt_resisted
+        scoreboard objectives add bowCharge dummy
+        scoreboard objectives add prevBowCharge dummy
         scoreboard objectives add usedBow used:bow
         scoreboard objectives add flyTimer dummy
         scoreboard objectives add flyTime dummy
@@ -32,6 +34,9 @@
         scoreboard objectives add hasTarget dummy
         scoreboard objectives add higher dummy
         scoreboard objectives add homing_priority dummy
+        scoreboard objectives add main_element dummy
+        scoreboard objectives add side_element dummy
+        scoreboard objectives add element dummy
         # 探索(体力、速度、集中、運)
         scoreboard objectives add lvl_explore dummy
         scoreboard objectives add xp_explore dummy

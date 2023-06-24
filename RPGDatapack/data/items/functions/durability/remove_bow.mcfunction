@@ -47,4 +47,3 @@
     scoreboard players reset $maxdurability buffer
     scoreboard players reset $enchantcount buffer
     scoreboard players reset $hasskill buffer
-    advancement revoke @s only main:combat/attack/used_bow
