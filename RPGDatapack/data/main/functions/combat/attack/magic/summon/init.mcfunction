@@ -3,6 +3,7 @@
 
 ###メインハンドとオフハンドからitem_displayのitem.tagにデータ代入
     # 魔術攻撃はこの時点で属性を定めておく
+    data modify entity @s item.tag.data.Element.Type append from storage combat: data.magic[0].Element.Type
     data modify entity @s item.tag.data.Element.Debuff append from storage combat: data.magic[0].Element.Debuff
     execute unless data storage combat: data.magic[0].Element.Type run data modify entity @s item.tag.data.Element.Type append value 0
     execute unless data storage combat: data.magic[0].Element.Type run data modify entity @s item.tag.data.Element.Debuff append value {}
