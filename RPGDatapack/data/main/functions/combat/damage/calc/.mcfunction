@@ -7,17 +7,14 @@
     execute unless entity @s[tag=hurt_skill] run function main:combat/damage/calc/resistance
 # 無敵時間のあるなし
     execute if entity @s[tag=spawn] run scoreboard players operation @s damage /= $20 const
-# 防御力を取得、攻撃力(ダメージ)との比率を計算
+# 実際の計算式
+###damage = damage/1+(def/damage)
     scoreboard players operation @s defBuffer = @s def
     scoreboard players operation @s defBuffer *= $100 const
     scoreboard players operation @s defBuffer /= @s damage
     scoreboard players add @s defBuffer 100
-# 軽減率を取得
-    scoreboard players operation $10000 buffer /= @s defBuffer
-# からの軽減
     scoreboard players operation @s damage *= $100 const
-    scoreboard players operation @s damage *= $10000 buffer
-    scoreboard players operation @s damage /= $10000 const
+    scoreboard players operation @s damage /= @s defBuffer
 
 # ダメージ減算
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage
@@ -52,3 +49,7 @@
     scoreboard players reset $mainElement buffer
     scoreboard players reset $sideElement buffer
     scoreboard players set $10000 buffer 10000
+    scoreboard players reset @p atkBuffer
+    scoreboard players reset @p dealtDamage
+    scoreboard players reset @s damage
+    scoreboard players reset @s defBuffer

@@ -190,12 +190,15 @@
     scoreboard players set $65 const 65
     scoreboard players set $75 const 75
     scoreboard players set $80 const 80
-    scoreboard players set $89 const 89
     scoreboard players set $90 const 90
     scoreboard players set $100 const 100
     scoreboard players set $100 buffer 100
     scoreboard players set $120 const 120
     scoreboard players set $384 const 384
+    scoreboard players set $407 const 407
+    scoreboard players set $481 const 481
+    scoreboard players set $555 const 555
+    scoreboard players set $592 const 592
     scoreboard players set $1024 const 1024
     scoreboard players set $2000 const 2000
     scoreboard players set $10000 const 10000

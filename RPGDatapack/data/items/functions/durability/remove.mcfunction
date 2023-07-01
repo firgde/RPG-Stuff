@@ -4,8 +4,8 @@
     scoreboard players operation $durability buffer = @s durability
     execute store result storage item: Item.tag.Customnbt.Durability int 1 run scoreboard players get $durability buffer
     item modify entity @s weapon.mainhand main:update_durability
-# 0なら壊す
-    execute if score @s durability matches ..0 run function items:durability/break
+# 0未満なら壊す
+    execute if score @s durability matches ..-1 run function items:durability/break
 # アイテムの耐久ゲージを更新
     execute store result score @s maxDurability run data get entity @s SelectedItem.tag.Customnbt.MaxDurability
     scoreboard players operation $maxdurability buffer = @s maxDurability
@@ -27,6 +27,9 @@
     data remove storage item: data
     data remove storage item: Item
     scoreboard players reset @s buffer
+    scoreboard players reset @s durability
+    scoreboard players reset @s maxDurability
+    scoreboard players reset @s dur_ratio
     scoreboard players reset $Lore buffer
     scoreboard players reset $itemtype buffer
     scoreboard players reset $healamounthp buffer
