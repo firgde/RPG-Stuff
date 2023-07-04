@@ -202,7 +202,6 @@
     scoreboard players set $1024 const 1024
     scoreboard players set $2000 const 2000
     scoreboard players set $10000 const 10000
-    scoreboard players set $10000 buffer 10000
     scoreboard players set $2^20 const 1048576
     scoreboard players set $2^21 const 2097152
     scoreboard players set $2^23 const 8388608
