@@ -2,8 +2,8 @@
     execute as @e[type=item_display,tag=magic] at @s run function main:combat/attack/magic/tick/
 # 遠距離攻撃の処理
     execute as @p run function main:combat/attack/ranged/tick/
-# デバフ処理
-    execute as @e[tag=debuffed] run function asset:combat/debuff/tick
+# バフ処理
+    execute as @e[tag=buff] run function status:buff/tick
 # スキルのクールダウン
     execute as @p at @s if score @s currentSkillCooldown matches 1.. run function main:combat/skills/tick
 # 手に持っているアイテム

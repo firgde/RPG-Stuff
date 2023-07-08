@@ -163,6 +163,7 @@
         scoreboard objectives add maxDurability dummy
         scoreboard objectives add dur_ratio dummy
         scoreboard objectives add foodTimer dummy
+        scoreboard objectives add hasOrigin dummy
     # プレイヤー区別用のID
     scoreboard objectives add playerID dummy
     # 手に持っているアイテムのスロット
@@ -180,6 +181,7 @@
     scoreboard players set $7 const 7
     scoreboard players set $8 const 8
     scoreboard players set $10 const 10
+    scoreboard players set $10 buffer 10
     scoreboard players set $15 const 15
     scoreboard players set $20 const 20
     scoreboard players set $20 buffer 20

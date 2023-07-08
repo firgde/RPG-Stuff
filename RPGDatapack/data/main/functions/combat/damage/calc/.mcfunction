@@ -8,13 +8,14 @@
 # 無敵時間のあるなし
     execute if entity @s[tag=spawn] run scoreboard players operation @s damage /= $20 const
 # 実際の計算式
-###damage = damage/1+(def/damage)
+###damage = damage/1+(def/damage) >= 0
     scoreboard players operation @s defBuffer = @s def
     scoreboard players operation @s defBuffer *= $100 const
     scoreboard players operation @s defBuffer /= @s damage
     scoreboard players add @s defBuffer 100
     scoreboard players operation @s damage *= $100 const
     scoreboard players operation @s damage /= @s defBuffer
+    scoreboard players operation @s damage > $0 const
 
 # ダメージ減算
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage

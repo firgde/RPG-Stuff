@@ -1,11 +1,11 @@
 # ストレージからスコアに代入
     execute store result score @s[tag=!boss] hp run data get storage mob: Data.status.hp
-    execute store result score @s max_hp run data get storage mob: Data.status.hp
-    execute store result score @s atk run data get storage mob: Data.status.baseAtk
-    execute store result score @s mag run data get storage mob: Data.status.baseMag
-    execute store result score @s dex run data get storage mob: Data.status.baseDex
-    execute store result score @s def run data get storage mob: Data.status.baseDef
-    execute store result score @s spd run data get storage mob: Data.status.baseSpd
+    execute store result score @s max_hp_base run data get storage mob: Data.status.hp
+    execute store result score @s atk_base run data get storage mob: Data.status.baseAtk
+    execute store result score @s mag_base run data get storage mob: Data.status.baseMag
+    execute store result score @s dex_base run data get storage mob: Data.status.baseDex
+    execute store result score @s def_base run data get storage mob: Data.status.baseDef
+    execute store result score @s spd_base run data get storage mob: Data.status.baseSpd
     execute store result score @s add_pt run data get storage mob: Data.loot.xp
     execute store result score @s resistance_melee run data get storage mob: Data.resistance.melee 100
     execute store result score @s resistance_magic run data get storage mob: Data.resistance.magic 100
@@ -14,6 +14,8 @@
     execute store result score @s resistance_ice run data get storage mob: Data.resistance.ice 100
     execute store result score @s resistance_wind run data get storage mob: Data.resistance.wind 100
     execute store result score @s resistance_thunder run data get storage mob: Data.resistance.thunder 100
+# ステータス設定
+    function status:_general/get/update
 # 何のMob?
     execute store result score @s mob_id run data get storage mob: Data.id
 # loot_tableを参照
