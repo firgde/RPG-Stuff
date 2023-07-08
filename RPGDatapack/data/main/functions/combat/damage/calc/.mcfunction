@@ -49,7 +49,6 @@
     scoreboard players reset $damageType buffer
     scoreboard players reset $mainElement buffer
     scoreboard players reset $sideElement buffer
-    scoreboard players set $10000 buffer 10000
     scoreboard players reset @p atkBuffer
     scoreboard players reset @p dealtDamage
     scoreboard players reset @s damage
