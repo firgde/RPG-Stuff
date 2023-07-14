@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"enchanting\"]}"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{Customnbt:{id:5100}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:craft/enchanting/detect"
+    }
+}

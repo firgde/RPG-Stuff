@@ -21,9 +21,7 @@
     execute as @e[tag=mining_spot] at @s if block ~ ~ ~ air if data entity @s {PortalCooldown:0} unless entity @p[distance=10..] run function main:collect/mining/regenerate
     #function main:collect/mining/tick
 # ｴﾝﾁｬﾝﾄ台周りの仕様
-    execute as @e[type=item_frame,tag=enchanter] at @s if entity @p[distance=..5] run function main:craft/enchanting/display_item
-# UI付きディスペンサー
-    execute as @p at @s store success score @s pick if entity @e[tag=ui,distance=..6] run clear @p[distance=..6] stick{ui:1b,menu:"dispenser"}
+    execute as @e[type=item_display,tag=enchanter] at @s if entity @p[distance=..5] run function main:craft/enchanting/tick
 ### (どれもプレイヤーが近くにいると動作するものなので統合できるかも)
 # チェストトロッコ式GUI
     execute as @p at @s run function main:social/ui/tick

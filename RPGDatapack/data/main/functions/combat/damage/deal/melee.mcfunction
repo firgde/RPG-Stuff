@@ -1,8 +1,5 @@
 # 近接攻撃
     tag @s add hurt.melee
-# エンチャント処理
-    #data modify storage combat:data.Damage set from entity @p SelectedItem.tag.Customnbt.Enchantments
-    #execute if data storage combat:data.Damage[{extra:1b}] run function main:combat/attack/enchantment/specify
 # 耐久を減らす
     execute as @p if entity @s[nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b,weapon:1b}}}},gamemode=!creative] run function items:durability/remove
 # からの攻撃力を検出して計算式へ

@@ -36,7 +36,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{ui:1b,menu:\"dispenser\"}"
+                        "nbt": "{ui:1b,menu:\"enchanter\"}"
                     }
                 ],
                 "player": [
@@ -47,7 +47,7 @@
                             "type_specific": {
                                 "type": "player",
                                 "advancements": {
-                                    "main:craft/ui/dispenser/pick_stick": false
+                                    "main:craft/enchanting/pick_stick": false
                                 }
                             }
                         }

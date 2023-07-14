@@ -47,16 +47,16 @@
     scoreboard players reset $healamounthp buffer
     scoreboard players reset $healamountmp buffer
     scoreboard players reset $element buffer
-    scoreboard players reset $atkbonus buffer
-    scoreboard players reset $magbonus buffer
-    scoreboard players reset $dexbonus buffer
-    scoreboard players reset $hpbonus buffer
-    scoreboard players reset $intbonus buffer
-    scoreboard players reset $defbonus buffer
-    scoreboard players reset $spdbonus buffer
-    scoreboard players reset $crtbonus buffer
-    scoreboard players reset $lukbonus buffer
-    scoreboard players reset $accbonus buffer
+    scoreboard players reset $atkBonus buffer
+    scoreboard players reset $magBonus buffer
+    scoreboard players reset $dexBonus buffer
+    scoreboard players reset $hpBonus buffer
+    scoreboard players reset $intBonus buffer
+    scoreboard players reset $defBonus buffer
+    scoreboard players reset $spdBonus buffer
+    scoreboard players reset $crtBonus buffer
+    scoreboard players reset $lukBonus buffer
+    scoreboard players reset $accBonus buffer
     scoreboard players reset $rarity buffer
     scoreboard players reset $durability buffer
     scoreboard players reset $maxdurability buffer

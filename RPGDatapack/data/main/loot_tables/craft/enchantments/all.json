@@ -1,96 +1,108 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "loot_table",
-          "name": "main:craft/enchantments/melee",
-          "conditions": [
-            {
-              "condition": "any_of",
-              "terms": [
-                {
-                  "condition": "location_check",
-                  "offsetY": -1,
-                  "predicate": {
-                    "block": {
-                      "blocks": [
-                        "dispenser"
-                      ],
-                      "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"sword\"}}}]}"
-                    }
-                  }
-                },
-                {
-                  "condition": "location_check",
-                  "offsetY": -1,
-                  "predicate": {
-                    "block": {
-                      "blocks": [
-                        "dispenser"
-                      ],
-                      "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"hammer\"}}}]}"
-                    }
-                  }
-                },
-                {
-                  "condition": "location_check",
-                  "offsetY": -1,
-                  "predicate": {
-                    "block": {
-                      "blocks": [
-                        "dispenser"
-                      ],
-                      "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"dagger\"}}}]}"
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "loot_table",
-          "name": "main:craft/enchantments/wand",
-          "conditions": [
-            {
-              "condition": "location_check",
-              "offsetY": -1,
-              "predicate": {
-                "block": {
-                  "blocks": [
-                    "dispenser"
-                  ],
-                  "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"wand\"}}}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "loot_table",
-          "name": "main:craft/enchantments/bow",
-          "conditions": [
-            {
-              "condition": "location_check",
-              "offsetY": -1,
-              "predicate": {
-                "block": {
-                  "blocks": [
-                    "dispenser"
-                  ],
-                  "nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"bow\"}}}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "loot_table",
-          "name": "main:craft/enchantments/generic"
-        }
-      ]
-    }
-  ]
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "asset:craft/enchantments/melee",
+					"conditions": [
+						{
+							"condition": "any_of",
+							"terms": [
+								{
+									"condition": "location_check",
+									"predicate": {
+										"block": {
+											"blocks": [
+												"dispenser"
+											],
+											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"sword\"}}}]}"
+										}
+									}
+								},
+								{
+									"condition": "location_check",
+									"predicate": {
+										"block": {
+											"blocks": [
+												"dispenser"
+											],
+											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"hammer\"}}}]}"
+										}
+									}
+								},
+								{
+									"condition": "location_check",
+									"predicate": {
+										"block": {
+											"blocks": [
+												"dispenser"
+											],
+											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"dagger\"}}}]}"
+										}
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"name": "asset:craft/enchantments/wand",
+					"conditions": [
+						{
+							"condition": "location_check",
+							"predicate": {
+								"block": {
+									"blocks": [
+										"dispenser"
+									],
+									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"wand\"}}}]}"
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"name": "asset:craft/enchantments/bow",
+					"conditions": [
+						{
+							"condition": "location_check",
+							"predicate": {
+								"block": {
+									"blocks": [
+										"dispenser"
+									],
+									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"bow\"}}}]}"
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"name": "asset:craft/enchantments/armor",
+					"conditions": [
+						{
+							"condition": "location_check",
+							"predicate": {
+								"block": {
+									"blocks": [
+										"dispenser"
+									],
+									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{armor:1b}}}]}"
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"name": "asset:craft/enchantments/generic"
+				}
+			]
+		}
+	]
 }

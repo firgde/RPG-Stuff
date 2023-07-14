@@ -2,6 +2,7 @@
     scoreboard players operation @s crtBuffer = @s crt
     scoreboard players operation @s crtBuffer /= $2 const
 # 乱数取得
+    scoreboard players set $rngMax buffer 100
     function main:get_rng
 # 会心率が乱数より高いならｸﾘﾃｨｶﾙ
     execute if score @s crtBuffer >= $rng buffer run function main:combat/attack/crit/calc

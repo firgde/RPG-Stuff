@@ -14,7 +14,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$atkbonus"
+						"name": "$atkBonus"
 					},
 					"score": "buffer"
 				},
@@ -28,7 +28,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$magbonus"
+						"name": "$magBonus"
 					},
 					"score": "buffer"
 				},
@@ -42,7 +42,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$dexbonus"
+						"name": "$dexBonus"
 					},
 					"score": "buffer"
 				},
@@ -56,7 +56,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$hpbonus"
+						"name": "$hpBonus"
 					},
 					"score": "buffer"
 				},
@@ -70,7 +70,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$intbonus"
+						"name": "$intBonus"
 					},
 					"score": "buffer"
 				},
@@ -84,7 +84,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$defbonus"
+						"name": "$defBonus"
 					},
 					"score": "buffer"
 				},
@@ -98,7 +98,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$spdbonus"
+						"name": "$spdBonus"
 					},
 					"score": "buffer"
 				},
@@ -112,7 +112,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$crtbonus"
+						"name": "$crtBonus"
 					},
 					"score": "buffer"
 				},
@@ -126,7 +126,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$lukbonus"
+						"name": "$lukBonus"
 					},
 					"score": "buffer"
 				},
@@ -140,7 +140,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$accbonus"
+						"name": "$accBonus"
 					},
 					"score": "buffer"
 				},
@@ -322,7 +322,7 @@
 				},
 				{
 					"score": {
-						"name": "$atkbonus",
+						"name": "$atkBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -337,7 +337,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$atkbonus"
+						"name": "$atkBonus"
 					},
 					"score": "buffer"
 				},
@@ -367,7 +367,7 @@
 				},
 				{
 					"score": {
-						"name": "$atkbonus",
+						"name": "$atkBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -382,7 +382,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$atkbonus"
+						"name": "$atkBonus"
 					},
 					"score": "buffer"
 				},
@@ -414,7 +414,7 @@
 				},
 				{
 					"score": {
-						"name": "$magbonus",
+						"name": "$magBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -429,7 +429,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$magbonus"
+						"name": "$magBonus"
 					},
 					"score": "buffer"
 				},
@@ -459,7 +459,7 @@
 				},
 				{
 					"score": {
-						"name": "$magbonus",
+						"name": "$magBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -474,7 +474,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$magbonus"
+						"name": "$magBonus"
 					},
 					"score": "buffer"
 				},
@@ -506,7 +506,7 @@
 				},
 				{
 					"score": {
-						"name": "$dexbonus",
+						"name": "$dexBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -521,7 +521,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$dexbonus"
+						"name": "$dexBonus"
 					},
 					"score": "buffer"
 				},
@@ -551,7 +551,7 @@
 				},
 				{
 					"score": {
-						"name": "$dexbonus",
+						"name": "$dexBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -566,7 +566,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$dexbonus"
+						"name": "$dexBonus"
 					},
 					"score": "buffer"
 				},
@@ -598,7 +598,7 @@
 				},
 				{
 					"score": {
-						"name": "$hpbonus",
+						"name": "$hpBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -613,7 +613,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$hpbonus"
+						"name": "$hpBonus"
 					},
 					"score": "buffer"
 				},
@@ -643,7 +643,7 @@
 				},
 				{
 					"score": {
-						"name": "$hpbonus",
+						"name": "$hpBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -658,7 +658,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$hpbonus"
+						"name": "$hpBonus"
 					},
 					"score": "buffer"
 				},
@@ -690,7 +690,7 @@
 				},
 				{
 					"score": {
-						"name": "$intbonus",
+						"name": "$intBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -705,7 +705,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$intbonus"
+						"name": "$intBonus"
 					},
 					"score": "buffer"
 				},
@@ -735,7 +735,7 @@
 				},
 				{
 					"score": {
-						"name": "$intbonus",
+						"name": "$intBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -750,7 +750,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$intbonus"
+						"name": "$intBonus"
 					},
 					"score": "buffer"
 				},
@@ -782,7 +782,7 @@
 				},
 				{
 					"score": {
-						"name": "$defbonus",
+						"name": "$defBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -797,7 +797,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$defbonus"
+						"name": "$defBonus"
 					},
 					"score": "buffer"
 				},
@@ -827,7 +827,7 @@
 				},
 				{
 					"score": {
-						"name": "$defbonus",
+						"name": "$defBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -842,7 +842,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$defbonus"
+						"name": "$defBonus"
 					},
 					"score": "buffer"
 				},
@@ -874,7 +874,7 @@
 				},
 				{
 					"score": {
-						"name": "$spdbonus",
+						"name": "$spdBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -889,7 +889,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$spdbonus"
+						"name": "$spdBonus"
 					},
 					"score": "buffer"
 				},
@@ -919,7 +919,7 @@
 				},
 				{
 					"score": {
-						"name": "$spdbonus",
+						"name": "$spdBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -934,7 +934,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$spdbonus"
+						"name": "$spdBonus"
 					},
 					"score": "buffer"
 				},
@@ -966,7 +966,7 @@
 				},
 				{
 					"score": {
-						"name": "$crtbonus",
+						"name": "$crtBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -981,7 +981,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$crtbonus"
+						"name": "$crtBonus"
 					},
 					"score": "buffer"
 				},
@@ -1011,7 +1011,7 @@
 				},
 				{
 					"score": {
-						"name": "$crtbonus",
+						"name": "$crtBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -1026,7 +1026,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$crtbonus"
+						"name": "$crtBonus"
 					},
 					"score": "buffer"
 				},
@@ -1058,7 +1058,7 @@
 				},
 				{
 					"score": {
-						"name": "$lukbonus",
+						"name": "$lukBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -1073,7 +1073,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$lukbonus"
+						"name": "$lukBonus"
 					},
 					"score": "buffer"
 				},
@@ -1103,7 +1103,7 @@
 				},
 				{
 					"score": {
-						"name": "$lukbonus",
+						"name": "$lukBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -1118,7 +1118,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$lukbonus"
+						"name": "$lukBonus"
 					},
 					"score": "buffer"
 				},
@@ -1150,7 +1150,7 @@
 				},
 				{
 					"score": {
-						"name": "$accbonus",
+						"name": "$accBonus",
 						"objective": "buffer"
 					},
 					"color": "green",
@@ -1165,7 +1165,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$accbonus"
+						"name": "$accBonus"
 					},
 					"score": "buffer"
 				},
@@ -1195,7 +1195,7 @@
 				},
 				{
 					"score": {
-						"name": "$accbonus",
+						"name": "$accBonus",
 						"objective": "buffer"
 					},
 					"color": "red",
@@ -1210,7 +1210,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$accbonus"
+						"name": "$accBonus"
 					},
 					"score": "buffer"
 				},
