@@ -21,6 +21,6 @@
     execute store result score $hasskill buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.HasSkill
     #耐久度
     execute store result score $durability buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.Durability
-    execute store result score $maxdurability buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.MaxDurability
+    execute store result score $maxDurability buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.MaxDurability
     #レア度
     execute store result score $rarity buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.rarity

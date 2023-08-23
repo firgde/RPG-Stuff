@@ -1,31 +1,31 @@
-# Offhandから取得した値をCustomnbtの耐久値に加算
-    execute store result score @s durability run data get entity @s SelectedItem.tag.Customnbt.Durability
-    execute store result score @s maxDurability run data get entity @s SelectedItem.tag.Customnbt.MaxDurability
-    scoreboard players operation @s durability += $durheal buffer
-    scoreboard players operation @s durability < @s maxDurability 
-    scoreboard players operation $durability buffer = @s durability
-    execute store result storage item: Item.tag.Customnbt.Durability int 1 run scoreboard players get $durability buffer
-    item modify entity @s weapon.mainhand main:update_durability
+# durHealをCustomnbtの耐久値に加算
+    execute store result score $durability buffer run data get entity @s item.tag.Customnbt.Durability
+    execute store result score $maxDurability buffer run data get entity @s item.tag.Customnbt.MaxDurability
+    scoreboard players operation $durability buffer += $durHeal buffer
+    execute store result storage item: Item.tag.Customnbt.Durability int 1 run scoreboard players operation $durability buffer < $maxDurability buffer
+    item modify entity @s container.0 main:update_durability
 # アイテムの耐久ゲージを更新
-    execute store result score @s maxDurability run data get entity @s SelectedItem.tag.Customnbt.MaxDurability
-    scoreboard players operation $maxdurability buffer = @s maxDurability
-    scoreboard players operation @s durability *= $100 const
-    execute store result score @s dur_ratio run scoreboard players operation @s durability /= @s maxDurability
-    scoreboard players set @s buffer 100
-    execute store result storage item: data.Damage int 1 run scoreboard players operation @s buffer -= @s dur_ratio
+    scoreboard players operation $durability buffer *= $100 const
+    execute store result score $durRatio buffer run scoreboard players operation $durability buffer /= $maxDurability buffer
+    execute store result storage item: data.Damage int 1 run scoreboard players operation $100 buffer -= $durRatio buffer
 # 代入
-    data modify storage item: Item set from entity @s SelectedItem
-    item modify entity @s weapon.mainhand main:update_durability_display
-    item replace block 0 -59 0 container.0 from entity @s weapon.mainhand
+    data modify storage item: Item set from entity @s item
+    item modify entity @s container.0 main:update_durability_display
+    item replace block 0 -59 0 container.0 from entity @s container.0
     execute positioned 0 -59 0 run function items:get_data
-    item modify entity @s weapon.mainhand items:lore/text
-    item modify entity @s weapon.mainhand items:lore/status
-    function items:set_data/rec_mainhand
-    item modify entity @s weapon.mainhand items:lore/info
+    item modify block 0 -59 0 container.0 items:lore/text
+    item modify block 0 -59 0 container.0 items:lore/status
+    execute positioned 0 -59 0 run function items:set_data/rec
+    item modify block 0 -59 0 container.0 items:lore/info
+    item replace entity @s container.0 from block 0 -59 0 container.0
+# 修理素材を消す
+    execute as @e[tag=repair_material,distance=..3] run data remove entity @s item
+# 演出
+    playsound block.anvil.use block @p ~ ~ ~ 1 1
 # リセット
-    advancement revoke @s only main:combat/attack/r_click_offhand
-    data remove storage item: durability
+    data remove storage item: data
     data remove storage item: Item
+    scoreboard players set $100 buffer 100
     scoreboard players reset $Lore buffer
     scoreboard players reset $itemtype buffer
     scoreboard players reset $healamounthp buffer
@@ -43,7 +43,7 @@
     scoreboard players reset $accBonus buffer
     scoreboard players reset $rarity buffer
     scoreboard players reset $durability buffer
-    scoreboard players reset $maxdurability buffer
+    scoreboard players reset $maxDurability buffer
     scoreboard players reset $enchantcount buffer
     scoreboard players reset $hasskill buffer
-    scoreboard players reset $durheal buffer
+    scoreboard players reset $durRatio buffer

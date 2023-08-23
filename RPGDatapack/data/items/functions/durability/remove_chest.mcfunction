@@ -8,7 +8,7 @@
     execute if score @s durability matches ..-1 run function items:durability/break_chest
 # アイテムの耐久ゲージを更新
     execute store result score @s maxDurability run data get entity @s Inventory[{Slot:102b}].tag.Customnbt.MaxDurability
-    scoreboard players operation $maxdurability buffer = @s maxDurability
+    scoreboard players operation $maxDurability buffer = @s maxDurability
     #中身はネザライトの防具
     scoreboard players operation @s durability *= $592 const
     execute store result score @s dur_ratio run scoreboard players operation @s durability /= @s maxDurability
@@ -47,6 +47,6 @@
     scoreboard players reset $accBonus buffer
     scoreboard players reset $rarity buffer
     scoreboard players reset $durability buffer
-    scoreboard players reset $maxdurability buffer
+    scoreboard players reset $maxDurability buffer
     scoreboard players reset $enchantcount buffer
     scoreboard players reset $hasskill buffer

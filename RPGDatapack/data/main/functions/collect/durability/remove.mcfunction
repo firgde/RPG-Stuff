@@ -8,7 +8,7 @@
     execute if score @s durability matches ..0 run function items:durability/break
 # アイテムの耐久ゲージを更新
     execute store result score @s maxDurability run data get entity @s SelectedItem.tag.Customnbt.MaxDurability
-    scoreboard players operation $maxdurability buffer = @s maxDurability
+    scoreboard players operation $maxDurability buffer = @s maxDurability
     #ツールの種類に応じて耐久変化
     data modify storage item: data.id set string entity @s SelectedItem.id 10
     execute if data storage item: data{id:"wooden_pickaxe"} run scoreboard players set $vanilladur buffer 60
@@ -59,7 +59,7 @@
     scoreboard players reset $accBonus buffer
     scoreboard players reset $rarity buffer
     scoreboard players reset $durability buffer
-    scoreboard players reset $maxdurability buffer
+    scoreboard players reset $maxDurability buffer
     scoreboard players reset $enchantcount buffer
     scoreboard players reset $hasskill buffer
 

@@ -36,6 +36,6 @@
     scoreboard players reset $accBonus
     scoreboard players reset $rarity buffer
     scoreboard players reset $durability buffer
-    scoreboard players reset $maxdurability buffer
+    scoreboard players reset $maxDurability buffer
     scoreboard players reset $enchantcount buffer
     scoreboard players reset $hasskill buffer

@@ -88,7 +88,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$maxdurability"
+									"name": "$maxDurability"
 								},
 								"score": "buffer"
 							},
@@ -116,7 +116,7 @@
 					},
 					{
 						"score": {
-							"name": "$maxdurability",
+							"name": "$maxDurability",
 							"objective": "buffer"
 						},
 						"color": "white",
@@ -152,7 +152,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$maxdurability"
+									"name": "$maxDurability"
 								},
 								"score": "buffer"
 							},
