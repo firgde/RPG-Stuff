@@ -15,7 +15,7 @@
     execute positioned 0 -59 0 run function items:get_data
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
-    execute positioned 0 -59 0 run function items:set_data/rec
+    execute if score $enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
     item modify block 0 -59 0 container.0 items:lore/info
     item replace entity @s container.0 from block 0 -59 0 container.0
 # 修理素材を消す
