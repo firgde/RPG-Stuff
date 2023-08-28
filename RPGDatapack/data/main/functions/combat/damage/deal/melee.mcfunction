@@ -1,7 +1,7 @@
 # 近接攻撃
     tag @s add hurt.melee
 # 耐久を減らす
-    execute as @p if entity @s[nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b,weapon:1b}}}},gamemode=!creative] run function items:durability/remove
+    execute as @p if entity @s[nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b,weapon:1b}}}},gamemode=!creative] unless data entity @s SelectedItem{tag:{Customnbt:{weaponType:"wand"}}} run function items:durability/remove
 # からの攻撃力を検出して計算式へ
     #剣の薙ぎ払い
     execute if data entity @p SelectedItem{tag:{Customnbt:{weaponType:"sword"}}} if score @p dealtDamage matches 100..149 at @s run function main:combat/attack/range_attack/sweep
