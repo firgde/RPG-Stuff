@@ -58,6 +58,6 @@
         ]
     ],
     "rewards": {
-        "function": "main:craft/slot_6/pick"
+        "function": "main:craft/crafting/slot_6/pick"
     }
 }

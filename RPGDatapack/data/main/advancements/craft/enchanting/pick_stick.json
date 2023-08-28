@@ -95,6 +95,6 @@
         ]
     ],
     "rewards": {
-        "function": "main:craft/ui/manage"
+        "function": "main:craft/enchanting/ui/manage"
     }
 }

@@ -16,10 +16,10 @@
     #0,-59,0のシュルカーボックスのアイテム削除
     data remove block 0 -59 0 Items
     #どこのスロットが変えられたか
-    execute at @e[tag=enchanter,distance=..6] unless data block ~ ~ ~ {Items:[{Slot:0b,tag:{ui:1b}}]} run function main:craft/ui/return/slot_0
-    execute at @e[tag=enchanter,distance=..6] unless data block ~ ~ ~ {Items:[{Slot:2b,tag:{ui:1b}}]} run function main:craft/ui/return/slot_2
-    execute at @e[tag=enchanter,distance=..6] unless data block ~ ~ ~ {Items:[{Slot:6b,tag:{ui:1b}}]} run function main:craft/ui/return/slot_6
-    execute at @e[tag=enchanter,distance=..6] unless data block ~ ~ ~ {Items:[{Slot:8b,tag:{ui:1b}}]} run function main:craft/ui/return/slot_8
+    execute at @e[tag=enchanter,distance=..6] unless data block ~ ~ ~ {Items:[{Slot:0b,tag:{ui:1b}}]} run function main:craft/enchanting/ui/return/slot_0
+    execute at @e[tag=enchanter,distance=..6] unless data block ~ ~ ~ {Items:[{Slot:2b,tag:{ui:1b}}]} run function main:craft/enchanting/ui/return/slot_2
+    execute at @e[tag=enchanter,distance=..6] unless data block ~ ~ ~ {Items:[{Slot:6b,tag:{ui:1b}}]} run function main:craft/enchanting/ui/return/slot_6
+    execute at @e[tag=enchanter,distance=..6] unless data block ~ ~ ~ {Items:[{Slot:8b,tag:{ui:1b}}]} run function main:craft/enchanting/ui/return/slot_8
     #そしてアイテム還元
     loot give @s mine 0 -59 0 mainhand
 # リセット
