@@ -1,4 +1,8 @@
 # 属性/デバフ取得
+    #範囲攻撃の場合は属性なし
+    execute if entity @s[tag=hurt_skill] run scoreboard players set $mainElement buffer 0
+    execute if entity @s[tag=hurt_skill] run scoreboard players set $sideElement buffer 0
+    execute if entity @s[tag=hurt_skill] run scoreboard players set $damageType buffer 0
     execute unless score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run say combine
     execute if entity @s[type=player] if score $damageType buffer matches 1..4 run function main:combat/damage/calc/element_hostile
     execute if entity @s[type=!player] if score $damageType buffer matches 1..4 run function main:combat/damage/calc/element
@@ -39,8 +43,6 @@
     execute if score $damageType buffer matches 2 run playsound entity.player.hurt_freeze player @s[type=player] ~ ~ ~ 1 1
     execute if entity @s[tag=hurt_skill] run damage @s 1 generic
 # リセット
-    scoreboard players reset @p atkBuffer
-    scoreboard players set @p dealtDamage 0
     tag @s remove hurt
     tag @s remove hurt.melee
     tag @s remove hurt.ranged
@@ -50,6 +52,5 @@
     scoreboard players reset $mainElement buffer
     scoreboard players reset $sideElement buffer
     scoreboard players reset @p atkBuffer
-    scoreboard players reset @p dealtDamage
     scoreboard players reset @s damage
     scoreboard players reset @s defBuffer
