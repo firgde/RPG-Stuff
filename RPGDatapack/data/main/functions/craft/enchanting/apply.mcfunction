@@ -26,10 +26,10 @@
     execute store result score $slot3 buffer run data get block ~ ~ ~ Items[{Slot:3b,tag:{Customnbt:{EnchantMaterial:1b}}}].tag.Customnbt.EnchantBoost
     execute store result score $slot5 buffer run data get block ~ ~ ~ Items[{Slot:5b,tag:{Customnbt:{EnchantMaterial:1b}}}].tag.Customnbt.EnchantBoost
     execute store result score $slot7 buffer run data get block ~ ~ ~ Items[{Slot:7b,tag:{Customnbt:{EnchantMaterial:1b}}}].tag.Customnbt.EnchantBoost
-    data remove block ~ ~ ~ Items[{Slot:1b,tag:{Customnbt:{EnchantMaterial:1b}}}]
-    data remove block ~ ~ ~ Items[{Slot:3b,tag:{Customnbt:{EnchantMaterial:1b}}}]
-    data remove block ~ ~ ~ Items[{Slot:5b,tag:{Customnbt:{EnchantMaterial:1b}}}]
-    data remove block ~ ~ ~ Items[{Slot:7b,tag:{Customnbt:{EnchantMaterial:1b}}}]
+    item modify block ~ ~ ~ container.1 main:craft/remove
+    item modify block ~ ~ ~ container.3 main:craft/remove
+    item modify block ~ ~ ~ container.5 main:craft/remove
+    item modify block ~ ~ ~ container.7 main:craft/remove
     scoreboard players operation $enchantLv buffer += $slot1 buffer
     scoreboard players operation $enchantLv buffer += $slot3 buffer
     scoreboard players operation $enchantLv buffer += $slot5 buffer
