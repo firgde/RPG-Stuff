@@ -9,7 +9,7 @@
     execute if data entity @s SelectedItem run loot give @s mine 0 -59 0 mainhand
     execute unless data entity @s SelectedItem run loot replace entity @s weapon.mainhand mine 0 -59 0 mainhand
 # 向き調整
-    function main:craft/rotate
+    function main:craft/crafting/rotate
 # リセット
     item replace block 0 -59 0 container.0 with air
     advancement revoke @s only main:craft/interact/slot_4
