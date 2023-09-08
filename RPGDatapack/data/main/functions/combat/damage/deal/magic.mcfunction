@@ -1,5 +1,7 @@
 # 魔術攻撃
     tag @s add hurt.magic
+# リセット
+    scoreboard players reset @p dealtDamage
 # ダメージを取得
     scoreboard players operation @s damage = @e[tag=magic,sort=nearest,limit=1] mag
 # 属性を取得
