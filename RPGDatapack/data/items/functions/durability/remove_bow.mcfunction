@@ -25,6 +25,7 @@
 # リセット
     data remove storage item: data
     data remove storage item: Item
+    data modify storage item: Item.Count set value 1b
     scoreboard players reset @s buffer
     scoreboard players reset @s usedBow
     scoreboard players reset @s durability
@@ -50,3 +51,4 @@
     scoreboard players reset $maxDurability buffer
     scoreboard players reset $enchantcount buffer
     scoreboard players reset $hasskill buffer
+    item replace block 0 -59 0 container.0 with air

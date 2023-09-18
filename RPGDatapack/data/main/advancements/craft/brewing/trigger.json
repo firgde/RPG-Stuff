@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"brewing\"]}"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{Customnbt:{id:5300}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:craft/brewing/detect"
+    }
+}

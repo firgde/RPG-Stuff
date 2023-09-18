@@ -15,7 +15,7 @@
     item replace block 0 -59 0 container.1 with air
     item replace block 0 -59 0 container.2 with air
     item replace block 0 -59 0 container.3 with air
-    loot give @s[tag=!crafted,tag=!enchanting] mine 0 -59 0 mainhand
+    loot give @s[tag=!not_give] mine 0 -59 0 mainhand
 # リセット
     data remove storage item: Item
     data modify storage item: Item.Count set value 1b

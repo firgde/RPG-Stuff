@@ -1,5 +1,5 @@
 # タグ
-    tag @s add enchanting
+    tag @s add not_give
 # int・acc更新
     function status:_general/get/update
 # エンチャントレベル算出
@@ -54,4 +54,4 @@
     scoreboard players reset $slot3 buffer
     scoreboard players reset $slot5 buffer
     scoreboard players reset $slot7 buffer
-    tag @s remove enchanting
+    tag @s remove not_give

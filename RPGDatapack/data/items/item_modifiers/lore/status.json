@@ -304,6 +304,31 @@
 		"function": "set_lore",
 		"entity": "this",
 		"lore": [
+			{
+				"translate": "item.ui.status.text.potion",
+				"color": "dark_purple",
+				"italic": false
+			}
+		],
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "$itemtype"
+					},
+					"score": "buffer"
+				},
+				"range": 7
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
 			[
 				{
 					"text": " ",

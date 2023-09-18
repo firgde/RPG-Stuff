@@ -1,5 +1,5 @@
 # クラフトします
-    tag @s add crafted
+    tag @s add not_give
 # データをstorageにまるっと移動
     data modify storage craft: data.ingredients set value [{Slot:0b,id:"none"},{Slot:1b,id:"none"},{Slot:2b,id:"none"},{Slot:3b,id:"none"},{Slot:4b,id:"none"},{Slot:5b,id:"none"},{Slot:6b,id:"none"},{Slot:7b,id:"none"},{Slot:8b,id:"none"}]
     execute at @e[tag=slot.0,sort=nearest,limit=1] run data modify storage craft: data.ingredients[{Slot:0b}].id set from entity @e[limit=1,tag=slot,sort=nearest] item.tag.Customnbt.id
@@ -24,6 +24,6 @@
 # リセット
     scoreboard players reset $success buffer
     scoreboard players reset $length buffer
-    tag @s remove crafted
+    tag @s remove not_give
     data remove storage craft: data
     advancement revoke @s only main:craft/interact/craft
