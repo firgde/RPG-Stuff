@@ -16,14 +16,12 @@
 # 配列の長さをスコアに
     execute store result score $length buffer run data get storage craft: data.ingredients
 # レシピ特定
-    function main:craft/specify
-
+    function main:craft/crafting/specify
 # アイテム召喚
-    execute if score $success buffer matches 1 at @e[tag=slot.4,distance=..10] run function main:craft/common
-
+    execute if score $success buffer matches 1 at @e[tag=slot.4,distance=..10] run function main:craft/crafting/common
 # リセット
     scoreboard players reset $success buffer
     scoreboard players reset $length buffer
     tag @s remove not_give
     data remove storage craft: data
-    advancement revoke @s only main:craft/interact/craft
+    advancement revoke @s only main:craft/crafting/trigger

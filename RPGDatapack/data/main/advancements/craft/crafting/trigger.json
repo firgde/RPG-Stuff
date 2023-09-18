@@ -17,6 +17,6 @@
         }
     },
     "rewards": {
-        "function": "main:craft/detect"
+        "function": "main:craft/crafting/detect"
     }
 }
