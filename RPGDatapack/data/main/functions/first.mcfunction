@@ -62,6 +62,7 @@
         scoreboard objectives add lvl_craft dummy
         scoreboard objectives add xp_craft dummy
         scoreboard objectives add hasTarget dummy
+        scoreboard objectives add mov_direction dummy
         # 社交(魔法、知能、技巧、会心)
         scoreboard objectives add dprogress dummy
         scoreboard objectives add money dummy

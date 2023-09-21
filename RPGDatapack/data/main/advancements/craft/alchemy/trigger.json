@@ -1,0 +1,57 @@
+{
+    "criteria": {
+        "right": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"alchemy\"]}"
+                },
+                "player": [
+                    {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                "mainhand": {
+                                    "nbt": "{Customnbt:{id:5400}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "left": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"alchemy\"]}"
+                },
+                "player": [
+                    {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                "mainhand": {
+                                    "nbt": "{Customnbt:{id:5400}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "right",
+            "left"
+        ]
+    ],
+    "rewards": {
+        "function": "main:craft/alchemy/detect"
+    }
+}

@@ -22,6 +22,8 @@
     #function main:collect/mining/tick
 # ｴﾝﾁｬﾝﾄ台周りの仕様
     execute as @e[type=item_display,tag=enchanter] at @s if entity @p[distance=..5] run function main:craft/enchanting/tick
+# 大釜周りの仕様
+    execute at @p as @e[tag=alchemy.item,distance=..5] at @s run function main:craft/alchemy/tick
 ### (どれもプレイヤーが近くにいると動作するものなので統合できるかも)
 # チェストトロッコ式GUI
     execute as @p at @s run function main:social/ui/tick
