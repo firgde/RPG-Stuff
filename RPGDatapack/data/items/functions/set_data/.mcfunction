@@ -19,6 +19,7 @@
 # リセット
     data remove storage item: Item
     data modify storage item: Item.Count set value 1b
+    execute if entity @s[tag=!not_give] run data remove block 0 -59 0 Items
     scoreboard players reset $Lore buffer
     scoreboard players reset $itemtype buffer
     scoreboard players reset $healamounthp buffer

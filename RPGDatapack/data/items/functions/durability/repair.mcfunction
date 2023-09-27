@@ -25,6 +25,8 @@
 # リセット
     data remove storage item: data
     data remove storage item: Item
+    data modify storage item: Item.Count set value 1b
+    data remove block 0 -59 0 Items
     scoreboard players set $100 buffer 100
     scoreboard players reset $Lore buffer
     scoreboard players reset $itemtype buffer
