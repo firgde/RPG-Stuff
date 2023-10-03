@@ -20,8 +20,9 @@
     scoreboard players add @s flyTimer 1
 # 進んだ時間を算出
     execute store result score @s frate run scoreboard players get @p follow_rate
-    execute store result score @s frate run scoreboard players operation $100 buffer -= @s frate
     scoreboard players set $100 buffer 100
+    execute store result score @s frate run scoreboard players operation $100 buffer -= @s frate
+    scoreboard players reset $100 buffer
     scoreboard players operation @s flyratio = @s flyTimer
     scoreboard players operation @s flyratio *= $100 const
     scoreboard players operation @s flyratio /= @s flyTime

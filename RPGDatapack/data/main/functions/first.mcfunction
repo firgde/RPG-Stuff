@@ -188,12 +188,9 @@
     scoreboard players set $7 const 7
     scoreboard players set $8 const 8
     scoreboard players set $10 const 10
-    scoreboard players set $10 buffer 10
     scoreboard players set $15 const 15
     scoreboard players set $20 const 20
-    scoreboard players set $20 buffer 20
     scoreboard players set $40 const 40
-    scoreboard players set $40 buffer 40
     scoreboard players set $50 const 50
     scoreboard players set $55 const 55
     scoreboard players set $65 const 65
@@ -201,7 +198,6 @@
     scoreboard players set $80 const 80
     scoreboard players set $90 const 90
     scoreboard players set $100 const 100
-    scoreboard players set $100 buffer 100
     scoreboard players set $120 const 120
     scoreboard players set $384 const 384
     scoreboard players set $407 const 407

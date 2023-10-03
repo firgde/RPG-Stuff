@@ -10,10 +10,11 @@
 # 割合の分だけストレージにバーを追加
     function hud:hp_bar/rec
 # 減った分を追加
+    scoreboard players set $20 buffer 20
     execute store result score $rec buffer run scoreboard players operation $20 buffer -= @s hp_ratio
     function hud:hp_bar/rec_removed
 # リセット
-    scoreboard players set $20 buffer 20
+    scoreboard players reset $20 buffer
     scoreboard players reset @s hp_ratio
     scoreboard players reset $rec buffer
 # 5秒後に消える

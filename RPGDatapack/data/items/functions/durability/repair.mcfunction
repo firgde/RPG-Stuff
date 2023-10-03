@@ -7,6 +7,7 @@
 # アイテムの耐久ゲージを更新
     scoreboard players operation $durability buffer *= $100 const
     execute store result score $durRatio buffer run scoreboard players operation $durability buffer /= $maxDurability buffer
+    scoreboard players set $100 buffer 100
     execute store result storage item: data.Damage int 1 run scoreboard players operation $100 buffer -= $durRatio buffer
 # 代入
     data modify storage item: Item set from entity @s item
@@ -27,7 +28,7 @@
     data remove storage item: Item
     data modify storage item: Item.Count set value 1b
     data remove block 0 -59 0 Items
-    scoreboard players set $100 buffer 100
+    scoreboard players reset $100 buffer
     scoreboard players reset $Lore buffer
     scoreboard players reset $itemtype buffer
     scoreboard players reset $healamounthp buffer
