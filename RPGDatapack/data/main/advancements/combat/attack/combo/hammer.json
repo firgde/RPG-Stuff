@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"atk_combo\"]}"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{Customnbt:{weaponType:\"hammer\"}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:combat/attack/combo/hammer/"
+    }
+}

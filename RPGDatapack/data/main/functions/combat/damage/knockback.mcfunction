@@ -8,9 +8,9 @@
     execute store result score $ypower buffer run data get storage mov: mov[1] 10000
     execute store result score $zpower buffer run data get storage mov: mov[2] 10000
 # それぞれにkbpower掛ける
-    scoreboard players operation $xpower buffer *= $kbpowerx buffer
-    scoreboard players operation $ypower buffer *= $kbpowery buffer
-    scoreboard players operation $zpower buffer *= $kbpowerz buffer
+    scoreboard players operation $xpower buffer *= $kbPowerX buffer
+    scoreboard players operation $ypower buffer *= $kbPowerY buffer
+    scoreboard players operation $zpower buffer *= $kbPowerZ buffer
 # mov:にそれぞれを戻す
     execute store result storage mov: mov[0] double -0.0001 run scoreboard players get $xpower buffer
     execute store result storage mov: mov[1] double -0.0001 run scoreboard players get $ypower buffer
@@ -18,9 +18,9 @@
 # 対象のEntityにmov:をそのままセット
     data modify entity @s Motion set from storage mov: mov
 # リセット
-    scoreboard players reset $kbpowerx buffer
-    scoreboard players reset $kbpowery buffer
-    scoreboard players reset $kbpowerz buffer
+    scoreboard players reset $kbPowerX buffer
+    scoreboard players reset $kbPowerY buffer
+    scoreboard players reset $kbPowerZ buffer
     scoreboard players reset $xpower buffer
     scoreboard players reset $ypower buffer
     scoreboard players reset $zpower buffer

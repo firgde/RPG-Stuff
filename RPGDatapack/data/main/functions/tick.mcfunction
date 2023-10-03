@@ -6,6 +6,8 @@
     execute as @e[tag=buff] run function status:buff/tick
 # スキルのクールダウン
     execute as @p at @s if score @s currentSkillCooldown matches 1.. run function main:combat/skills/tick
+# 連撃interactionの処理
+    execute as @e[tag=atk_combo] run function main:combat/attack/combo/tick
 # 手に持っているアイテム
     execute as @p run function status:_general/get/slot
 # MPの処理

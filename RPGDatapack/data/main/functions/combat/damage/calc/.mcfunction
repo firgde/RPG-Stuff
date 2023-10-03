@@ -41,7 +41,8 @@
 # 必要ならば、演出
     execute if score $damageType buffer matches 1 run playsound entity.player.hurt_on_fire player @s[type=player] ~ ~ ~ 1 1
     execute if score $damageType buffer matches 2 run playsound entity.player.hurt_freeze player @s[type=player] ~ ~ ~ 1 1
-    execute if entity @s[tag=hurt_skill] run damage @s 1 generic
+    execute if entity @s[tag=hurt_skill] run damage @s 0.01 generic
+    execute on passengers if entity @s[tag=atk_combo] on vehicle run damage @s 0.01 asset:combo_attack
 # リセット
     tag @s remove hurt
     tag @s remove hurt.melee
