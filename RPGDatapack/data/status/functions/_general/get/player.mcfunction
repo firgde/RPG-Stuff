@@ -20,8 +20,12 @@
     function status:hp/update
     attribute @s generic.attack_damage base set 0.0
     function status:int/calc
-    execute unless score @s spd_prv = @s spd run function status:spd/update
-    execute unless score @s luk_prv = @s luk run function status:luk/calc
+    scoreboard players operation $spdBuffer buffer = @s spd
+    scoreboard players add $spdBuffer buffer 100
+    execute store result storage status: data.spd double 0.001 run scoreboard players get $spdBuffer buffer
+    execute store result storage status: data.luk double 0.001 run scoreboard players get @s luk
+    function status:spd/calc with storage status: data
+    function status:luk/calc with storage status: data
     function status:acc/calc
 # ダメージ処理のために無敵に
     effect give @s resistance infinite 255 true
@@ -36,3 +40,5 @@
 # UI持ちアイテムなら内容を更新
     execute unless predicate asset:social/ui/holding_purse if entity @e[tag=purse,distance=..5,tag=open] run function main:social/ui/close
     execute unless predicate asset:social/ui/holding_quest_book if entity @e[tag=quest_book,distance=..5,tag=open] run function main:social/ui/close
+# リセット
+    data remove storage status: data

@@ -132,7 +132,6 @@
         scoreboard objectives add spd_base dummy
         scoreboard objectives add spd_enchant dummy
         scoreboard objectives add spd_buff dummy
-        scoreboard objectives add spd_prv dummy
         # 会心(クリティカル率、クリティカル倍率)
         scoreboard objectives add crt dummy
         scoreboard objectives add crt_bonus dummy
@@ -145,7 +144,6 @@
         scoreboard objectives add luk_base dummy
         scoreboard objectives add luk_enchant dummy
         scoreboard objectives add luk_buff dummy
-        scoreboard objectives add luk_prv dummy
         # 集中(範囲攻撃のダメージ増加、魔法攻撃の追尾開始のタイミングなどその他)
         scoreboard objectives add acc dummy
         scoreboard objectives add acc_bonus dummy
@@ -207,11 +205,6 @@
     scoreboard players set $1024 const 1024
     scoreboard players set $2000 const 2000
     scoreboard players set $10000 const 10000
-    scoreboard players set $2^20 const 1048576
-    scoreboard players set $2^21 const 2097152
-    scoreboard players set $2^23 const 8388608
-    scoreboard players set $2^24 const 16777216
-    scoreboard players set $2^26 const 67108864
 # チーム
     team add hostile
     team add no_col
