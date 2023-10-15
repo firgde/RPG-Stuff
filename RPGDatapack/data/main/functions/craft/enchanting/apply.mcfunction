@@ -1,7 +1,7 @@
 # タグ
     tag @s add not_give
 # int・acc更新
-    function status:_general/get/update
+    function status:update/
 # エンチャントレベル算出
 ###EnchantLv = Enchantability + ranInt(0, int) + ranInt(0, acc/4) + Items + 1
     #Enchantability

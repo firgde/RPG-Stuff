@@ -10,7 +10,7 @@
     scoreboard players operation @s luk = @s luk_base
     scoreboard players operation @s acc = @s acc_base
 # プレイヤー限定
-    execute if entity @s[type=player] run function status:_general/get/player
+    execute if entity @s[type=player] run function status:update/player
 # バフ値取得
     scoreboard players operation @s atk += @s atk_buff
     scoreboard players operation @s mag += @s mag_buff

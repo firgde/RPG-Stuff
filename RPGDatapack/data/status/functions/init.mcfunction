@@ -32,4 +32,4 @@
     scoreboard players set @s xp_craft 0
     scoreboard players set @s xp_social 0
 # 更新
-    function status:_general/get/update
+    function status:update/

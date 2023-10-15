@@ -18,7 +18,7 @@
     execute if score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run scoreboard players operation $damageType buffer = $sideElement buffer
     #会心攻撃の処理
     execute as @p if score @s dealtDamage matches 150.. run function main:combat/attack/crit/
-    execute as @p run function status:_general/get/update
+    execute as @p run function status:update/
     scoreboard players operation @p atkBuffer = @p atk
     scoreboard players operation @p atkBuffer *= @p dealtDamage
     scoreboard players operation @p atkBuffer /= $100 const

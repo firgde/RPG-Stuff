@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "status:_general/get/update"
+        "function": "status:update/"
     }
 }

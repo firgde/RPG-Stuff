@@ -21,4 +21,4 @@
     scoreboard players operation @s luk_bonus += @s crt_enchant
     scoreboard players operation @s acc_bonus += @s acc_enchant
 # 更新
-    function status:_general/get/add_bonus
+    function status:update/add_bonus

@@ -10,4 +10,4 @@
     scoreboard players operation @s luk_buff += @e[limit=1,sort=nearest,tag=buff.init] luk_buff
     scoreboard players operation @s acc_buff += @e[limit=1,sort=nearest,tag=buff.init] acc_buff
 # ステータス更新
-    function status:_general/get/update
+    function status:update/

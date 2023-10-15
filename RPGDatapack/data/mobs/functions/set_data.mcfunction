@@ -15,7 +15,7 @@
     execute store result score @s resistance_wind run data get storage mob: Data.resistance.wind 100
     execute store result score @s resistance_thunder run data get storage mob: Data.resistance.thunder 100
 # ステータス設定
-    function status:_general/get/update
+    function status:update/
 # 何のMob?
     execute store result score @s mob_id run data get storage mob: Data.id
 # loot_tableを参照

@@ -10,12 +10,12 @@
     scoreboard players set @s luk_bonus 0
     scoreboard players set @s acc_bonus 0
 # ステータス取得
-    execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{weapon:1b}}}}] run function status:_general/get/mainhand
-    execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}]}] run function status:_general/get/offhand
-    execute if entity @s[nbt={Inventory:[{Slot:103b,tag:{Customnbt:{armorType:"helmet",armor:1b}}}]}] run function status:_general/get/helmet
-    execute if entity @s[nbt={Inventory:[{Slot:102b,tag:{Customnbt:{armorType:"chestplate",armor:1b}}}]}] run function status:_general/get/chestplate
-    execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{Customnbt:{armorType:"leggings",armor:1b}}}]}] run function status:_general/get/leggings
-    execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]}] run function status:_general/get/boots
+    execute if entity @s[nbt={SelectedItem:{tag:{Customnbt:{weapon:1b}}}}] run function status:update/slot/mainhand
+    execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}]}] run function status:update/slot/offhand
+    execute if entity @s[nbt={Inventory:[{Slot:103b,tag:{Customnbt:{armorType:"helmet",armor:1b}}}]}] run function status:update/slot/helmet
+    execute if entity @s[nbt={Inventory:[{Slot:102b,tag:{Customnbt:{armorType:"chestplate",armor:1b}}}]}] run function status:update/slot/chestplate
+    execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{Customnbt:{armorType:"leggings",armor:1b}}}]}] run function status:update/slot/leggings
+    execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]}] run function status:update/slot/boots
 # attributeや他のスコアに関与するもの
     function status:hp/update
     attribute @s generic.attack_damage base set 0.0

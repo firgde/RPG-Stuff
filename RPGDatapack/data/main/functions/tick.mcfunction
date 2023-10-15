@@ -8,8 +8,8 @@
     execute as @p at @s if score @s currentSkillCooldown matches 1.. run function main:combat/skills/tick
 # 連撃interactionの処理
     execute as @e[tag=atk_combo] run function main:combat/attack/combo/tick
-# 手に持っているアイテム
-    execute as @p run function status:_general/get/slot
+# ステータスのtick処理
+    execute as @p run function status:tick
 # MPの処理
     #execute as @p unless score @s max_mp_base = @s max_mp unless score @s mp = @s max_mp run function status:int/tick
     execute as @p run function status:int/tick
