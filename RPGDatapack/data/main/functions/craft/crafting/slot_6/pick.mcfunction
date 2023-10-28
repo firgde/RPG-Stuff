@@ -7,7 +7,7 @@
     execute if entity @s[advancements={main:craft/crafting/slot_6={right=true}}] run function main:craft/crafting/slot_6/place
     #そしてアイテム還元
     execute if data entity @s SelectedItem run loot give @s mine 0 -59 0 mainhand
-    execute unless data entity @s SelectedItem run loot replace entity @s weapon.mainhand mine 0 -59 0 mainhand
+    execute unless data entity @s SelectedItem run item replace entity @s weapon.mainhand from block 0 -59 0 container.0
 # 向き調整
     function main:craft/crafting/rotate
 # リセット
