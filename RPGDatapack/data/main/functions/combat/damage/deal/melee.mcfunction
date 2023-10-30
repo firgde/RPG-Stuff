@@ -1,14 +1,14 @@
 # 近接攻撃
     tag @s add hurt.melee
 # 耐久を減らす
-    execute as @p if entity @s[nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b,weapon:1b}}}},gamemode=!creative] unless data entity @s SelectedItem{tag:{Customnbt:{weaponType:"wand"}}} run function items:durability/remove
+    execute as @p if entity @s[nbt={SelectedItem:{tag:{Customnbt:{Unbreakable:0b,weapon:1b}}}},gamemode=!creative] unless data entity @s SelectedItem{tag:{Customnbt:{weaponType:2}}} run function items:durability/remove
 # からの攻撃力を検出して計算式へ
     #剣の薙ぎ払い
-    execute if data entity @p SelectedItem{tag:{Customnbt:{weaponType:"sword"}}} if score @p dealtDamage matches 100..149 at @s run function main:combat/attack/range_attack/sweep
+    execute if data entity @p SelectedItem{tag:{Customnbt:{weaponType:0}}} if score @p dealtDamage matches 100..149 at @s run function main:combat/attack/range_attack/sweep
     #ハンマーの衝撃
-    execute if data entity @p SelectedItem{tag:{Customnbt:{weaponType:"hammer"}}} if score @p dealtDamage matches 100..149 at @s run function main:combat/attack/range_attack/impact
+    execute if data entity @p SelectedItem{tag:{Customnbt:{weaponType:1}}} if score @p dealtDamage matches 100..149 at @s run function main:combat/attack/range_attack/impact
     #短剣の突き
-    execute if data entity @p SelectedItem{tag:{Customnbt:{weaponType:"dagger"}}} if score @p dealtDamage matches 100..149 at @s run function main:combat/attack/range_attack/stab
+    execute if data entity @p SelectedItem{tag:{Customnbt:{weaponType:4}}} if score @p dealtDamage matches 100..149 at @s run function main:combat/attack/range_attack/stab
 
 # ダメージ計算
     #属性を取得

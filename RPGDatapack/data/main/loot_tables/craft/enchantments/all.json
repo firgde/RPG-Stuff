@@ -17,7 +17,7 @@
 											"blocks": [
 												"dispenser"
 											],
-											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"sword\"}}}]}"
+											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:0}}}]}"
 										}
 									}
 								},
@@ -28,7 +28,7 @@
 											"blocks": [
 												"dispenser"
 											],
-											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"hammer\"}}}]}"
+											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:1}}}]}"
 										}
 									}
 								},
@@ -39,7 +39,7 @@
 											"blocks": [
 												"dispenser"
 											],
-											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"dagger\"}}}]}"
+											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:4}}}]}"
 										}
 									}
 								}
@@ -58,7 +58,7 @@
 									"blocks": [
 										"dispenser"
 									],
-									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"wand\"}}}]}"
+									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:2}}}]}"
 								}
 							}
 						}
@@ -75,7 +75,7 @@
 									"blocks": [
 										"dispenser"
 									],
-									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:\"bow\"}}}]}"
+									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:3}}}]}"
 								}
 							}
 						}

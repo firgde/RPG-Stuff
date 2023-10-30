@@ -20,7 +20,7 @@
     execute positioned 0 -59 0 run function items:get_data
     item modify entity @s weapon.mainhand items:lore/text
     item modify entity @s weapon.mainhand items:lore/status
-    execute if data storage item: Item.tag.Customnbt{weaponType:"wand"} run item modify entity @s weapon.mainhand items:lore/magic
+    execute if data storage item: Item.tag.Customnbt{weaponType:2} run item modify entity @s weapon.mainhand items:lore/magic
     execute if score $enchantcount buffer matches 1.. run function items:set_data/rec_mainhand
     item modify entity @s weapon.mainhand items:lore/info
 # リセット
@@ -32,7 +32,7 @@
     scoreboard players reset @s maxDurability
     scoreboard players reset @s dur_ratio
     scoreboard players reset $Lore buffer
-    scoreboard players reset $itemtype buffer
+    scoreboard players reset $itemType buffer
     scoreboard players reset $healamounthp buffer
     scoreboard players reset $healamountmp buffer
     scoreboard players reset $element buffer

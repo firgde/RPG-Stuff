@@ -10,7 +10,7 @@
                 "player": {
                     "equipment": {
                         "mainhand": {
-                            "nbt": "{Customnbt:{weaponType:\"sword\"}}"
+                            "nbt": "{Customnbt:{weaponType:0}}"
                         }
                     }
                 }

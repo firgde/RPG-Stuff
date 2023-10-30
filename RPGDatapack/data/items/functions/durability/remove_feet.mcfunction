@@ -32,7 +32,7 @@
     scoreboard players reset @s maxDurability
     scoreboard players reset @s dur_ratio
     scoreboard players reset $Lore buffer
-    scoreboard players reset $itemtype buffer
+    scoreboard players reset $itemType buffer
     scoreboard players reset $healamounthp buffer
     scoreboard players reset $healamountmp buffer
     scoreboard players reset $element buffer

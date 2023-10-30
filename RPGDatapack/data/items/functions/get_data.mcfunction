@@ -1,7 +1,7 @@
 # Customnbtをスコアに
     #説明文
     execute store result score $Lore buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.LoreCount
-    execute store result score $itemtype buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.ItemType
+    execute store result score $itemType buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.ItemType
     #増加ｽﾃｰﾀｽ
     execute store result score $atkBonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.status.atk
     execute store result score $magBonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.status.mag

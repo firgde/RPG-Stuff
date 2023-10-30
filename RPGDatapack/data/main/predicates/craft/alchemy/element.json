@@ -1,0 +1,66 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "all_of",
+                "terms": [
+                    {
+                        "condition": "value_check",
+                        "value": {
+                            "type": "score",
+                            "target": {
+                                "type": "fixed",
+                                "name": "$element0"
+                            },
+                            "score": "buffer"
+                        },
+                        "range": 0
+                    },
+                    {
+                        "condition": "value_check",
+                        "value": {
+                            "type": "score",
+                            "target": {
+                                "type": "fixed",
+                                "name": "$element1"
+                            },
+                            "score": "buffer"
+                        },
+                        "range": 0
+                    }
+                ]
+            }
+        },
+        {
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "score",
+                        "target": {
+                            "type": "fixed",
+                            "name": "$element0"
+                        },
+                        "score": "buffer"
+                    },
+                    "range": 0
+                },
+                {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "score",
+                        "target": {
+                            "type": "fixed",
+                            "name": "$element1"
+                        },
+                        "score": "buffer"
+                    },
+                    "range": 0
+                }
+            ]
+        }
+    ]
+}

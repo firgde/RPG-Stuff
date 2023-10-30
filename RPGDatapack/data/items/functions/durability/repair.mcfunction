@@ -30,7 +30,7 @@
     data remove block 0 -59 0 Items
     scoreboard players reset $100 buffer
     scoreboard players reset $Lore buffer
-    scoreboard players reset $itemtype buffer
+    scoreboard players reset $itemType buffer
     scoreboard players reset $healamounthp buffer
     scoreboard players reset $healamountmp buffer
     scoreboard players reset $element buffer
