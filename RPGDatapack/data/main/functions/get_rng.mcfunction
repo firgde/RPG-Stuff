@@ -1,6 +1,5 @@
 # /random
-    execute store result score $rng buffer run random roll -2147483648..2147483647
-# 最大値セット
-    scoreboard players operation $rng buffer %= $rngMax buffer
+$execute store result score $rng buffer run random value $(Min)..$(Max)
 # リセット
     scoreboard players reset $rngMax buffer
+    data remove storage rng: data

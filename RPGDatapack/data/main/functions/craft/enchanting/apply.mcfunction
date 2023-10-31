@@ -3,7 +3,7 @@
 # int・acc更新
     function status:update/
 # エンチャントレベル算出
-###EnchantLv = Enchantability + ranInt(0, int) + ranInt(0, acc/4) + Items + 1
+##EnchantLv = Enchantability + ranInt(0, int) + ranInt(0, acc/4) + Items + 1
     #Enchantability
     execute store result score $enchantLv buffer run data get block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantability
     #+1
@@ -11,14 +11,18 @@
     #ranInt(0, int)
     execute store result score $rngMax buffer run scoreboard players operation $enchantLv int = @s int
     execute if score $enchantLv int matches 0 store result score $rngMax buffer run scoreboard players set $enchantLv int 1
-    function main:get_rng
+    execute store result storage rng: data.Max int 1 run scoreboard players get $rngMax buffer
+    data modify storage rng: data.Min set value 0
+    function main:get_rng with storage rng: data
     scoreboard players operation $rng buffer %= $enchantLv int
     scoreboard players operation $enchantLv buffer += $rng buffer
     #ranInt(0, acc/4)
     scoreboard players operation $enchantLv acc = @s acc
     execute store result score $rngMax buffer run scoreboard players operation $enchantLv acc /= $4 const
     execute if score $enchantLv acc matches 0 store result score $rngMax buffer run scoreboard players set $enchantLv acc 1
-    function main:get_rng
+    execute store result storage rng: data.Max int 1 run scoreboard players get $rngMax buffer
+    data modify storage rng: data.Min set value 0
+    function main:get_rng with storage rng: data
     scoreboard players operation $rng buffer %= $enchantLv acc
     scoreboard players operation $enchantLv buffer += $rng buffer
     #Items
