@@ -1,7 +1,23 @@
 {
     "criteria": {
-        "": {
+        "left": {
             "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"atk_combo\"]}"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{Customnbt:{weaponType:2}}"
+                        }
+                    }
+                }
+            }
+        },
+        "right": {
+            "trigger": "player_interacted_with_entity",
             "conditions": {
                 "entity": {
                     "type": "interaction",
@@ -17,6 +33,12 @@
             }
         }
     },
+    "requirements": [
+        [
+            "left",
+            "right"
+        ]
+    ],
     "rewards": {
         "function": "main:combat/attack/combo/wand/"
     }

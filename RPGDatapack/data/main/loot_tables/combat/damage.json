@@ -205,6 +205,43 @@
 							"range": 5
 						}
 					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"nbt": "data.Damage.Amount",
+								"storage": "combat:",
+								"color": "white",
+								"font":"damage"
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"#": "TODO Color Settings",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": {
+								"min": 11
+							}
+						}
+					]
 				}
 			]
 		}

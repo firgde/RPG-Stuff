@@ -5,15 +5,15 @@
     playsound entity.player.attack.knockback player @p ~ ~ ~ 1 1
     execute rotated ~ 0 run particle explosion ~ ~1 ~
 # ダメージ&ノックバック再現
-    tag @e[team=hostile,distance=..1.5,tag=!this] add hurt_skill
-    scoreboard players operation @e[tag=hurt_skill] damage = @p atk
+    tag @e[team=hostile,distance=..1.5,tag=!this] add hurt.indirect
+    scoreboard players operation @e[tag=hurt.indirect] damage = @p atk
     #集中の値によってダメージ減衰する
-    scoreboard players operation @e[tag=hurt_skill] damage *= @p dmg_eff
-    scoreboard players operation @e[tag=hurt_skill] damage /= $100 const
+    scoreboard players operation @e[tag=hurt.indirect] damage *= @p dmg_eff
+    scoreboard players operation @e[tag=hurt.indirect] damage /= $100 const
     scoreboard players set $kbPowerX buffer 10
     scoreboard players set $kbPowerY buffer 10
     scoreboard players set $kbPowerZ buffer 10
-    execute as @e[tag=hurt_skill] at @s facing entity @p feet rotated ~180 0 run function main:combat/damage/knockback
+    execute as @e[tag=hurt.indirect] at @s facing entity @p feet rotated ~180 0 run function main:combat/damage/knockback
 # プレイヤーが近くにいるなら連撃判定のinteraction召喚
     execute at @s if entity @p[distance=..3] unless data entity @s Passengers[{Tags:["atk_combo"]}] run summon interaction ~ ~ ~ {Tags:["atk_combo","atk_combo.init"]}
     execute at @s run ride @e[tag=atk_combo.init,limit=1,sort=nearest,distance=..1] mount @s

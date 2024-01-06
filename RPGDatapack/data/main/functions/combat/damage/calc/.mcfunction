@@ -1,27 +1,16 @@
-# 属性/デバフ取得
-    #範囲攻撃の場合は属性なし
-    execute if entity @s[tag=hurt_skill] run scoreboard players set $mainElement buffer 0
-    execute if entity @s[tag=hurt_skill] run scoreboard players set $sideElement buffer 0
-    execute if entity @s[tag=hurt_skill] run scoreboard players set $damageType buffer 0
-    execute unless score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run say combine
+# 属性デバフ取得(直接攻撃していない場合は無視)
+    execute unless entity @s[tag=hurt.indirect] unless score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run function main:combat/damage/calc/element_combined
     execute if entity @s[type=player] if score $damageType buffer matches 1..4 run function main:combat/damage/calc/element_hostile
-    execute if entity @s[type=!player] if score $damageType buffer matches 1..4 run function main:combat/damage/calc/element
-    execute if entity @p[tag=attack.crit] run scoreboard players set $damageType buffer 5
+    execute if entity @s[type=!player,tag=!hurt.indirect] if score $damageType buffer matches 1..4 run function main:combat/damage/calc/element
 # 属性相性を参照
-    execute unless entity @s[tag=hurt_skill] run function main:combat/damage/calc/resistance
+    execute unless entity @s[tag=hurt.indirect] run function main:combat/damage/calc/resistance
 # 無敵時間のあるなし
     execute if entity @s[tag=spawn] run scoreboard players operation @s damage /= $20 const
-# 実際の計算式
-###damage = damage/1+(def/damage) >= 0
-    scoreboard players operation @s defBuffer = @s def
-    scoreboard players operation @s defBuffer *= $100 const
-    scoreboard players operation @s defBuffer /= @s damage
-    scoreboard players add @s defBuffer 100
-    scoreboard players operation @s damage *= $100 const
-    scoreboard players operation @s damage /= @s defBuffer
-    scoreboard players operation @s damage > $0 const
-
+# 防御計算
+    execute unless entity @s[tag=hurt.bypass_defense] run function main:combat/damage/calc/defense
 # ダメージ減算
+    #クリティカルの場合は色変更
+    execute if entity @p[tag=attack.crit] run scoreboard players set $damageType buffer 5
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage
     scoreboard players operation @s hp > $0 const
     execute at @s run function main:combat/damage/display_amount
@@ -39,19 +28,21 @@
     execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{Customnbt:{armorType:"leggings",armor:1b}}}]},type=player] run function items:durability/remove_legs
     execute if entity @s[nbt={Inventory:[{Slot:100b,tag:{Customnbt:{armorType:"boots",armor:1b}}}]},type=player] run function items:durability/remove_feet
 # 必要ならば、演出
-    execute if score $damageType buffer matches 1 run playsound entity.player.hurt_on_fire player @s[type=player] ~ ~ ~ 1 1
-    execute if score $damageType buffer matches 2 run playsound entity.player.hurt_freeze player @s[type=player] ~ ~ ~ 1 1
-    execute if entity @s[tag=hurt_skill] run damage @s 0.01 generic
+    execute if entity @s[tag=hurt.indirect] run damage @s 0.01 generic
     execute on passengers if entity @s[tag=atk_combo] on vehicle run damage @s 0.01 asset:combo_attack
+    execute if score $damageType buffer matches 5 run playsound entity.player.attack.crit hostile @p ~ ~ ~ 1 1
+    #属性ダメージ
+    execute unless score $damageType buffer matches 0 unless score $damageType buffer matches 5 run function main:combat/damage/sound/
 # リセット
     tag @s remove hurt
     tag @s remove hurt.melee
     tag @s remove hurt.ranged
     tag @s remove hurt.magic
-    tag @s remove hurt_skill
+    tag @s remove hurt.bypass_defense
+    tag @s remove hurt.indirect
     scoreboard players reset $damageType buffer
-    scoreboard players reset $mainElement buffer
-    scoreboard players reset $sideElement buffer
+    scoreboard players reset $mainElement
+    scoreboard players reset $sideElement
     scoreboard players reset @p atkBuffer
     scoreboard players reset @s damage
     scoreboard players reset @s defBuffer

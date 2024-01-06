@@ -1,3 +1,5 @@
+say reload
+
 ###スコア類
     #レベル・ステータス系
     scoreboard objectives add lvl_total dummy

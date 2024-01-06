@@ -1,0 +1,3 @@
+# どっかーん！ぶわわーん！みたいな...
+    playsound entity.wither.hurt hostile @p ~ ~ ~ 1 1
+    playsound entity.breeze.hurt hostile @p ~ ~ ~ 1 0.5

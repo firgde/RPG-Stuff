@@ -8,6 +8,8 @@
 # 演出
     execute at @s run function main:combat/damage/display_amount
     execute if entity @e[tag=this,tag=debuff,tag=debuff.fire] run damage @s 1 asset:magic/fire
+    execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_fire] run damage @s 1 asset:magic/fire
+    execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_thunder] run damage @s 1 asset:magic/fire
     #敵は体力をHUDに表示
     execute if entity @s[team=hostile,tag=!boss] unless score @s max_hp matches 2147483647 run function hud:hp_bar/calc
     #ボス限定

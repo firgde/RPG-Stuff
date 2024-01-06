@@ -3,7 +3,7 @@
     execute if entity @s[tag=!magic.combined] run function main:combat/attack/magic/tick/particle/thunder/simple
 
     #雷×炎
-    execute if entity @s[tag=magic.combine.fire] run function main:combat/attack/magic/tick/particle/fire/fire
+    execute if entity @s[tag=magic.combine.fire] run function main:combat/attack/magic/tick/particle/thunder/fire
     #雷×氷
     execute if entity @s[tag=magic.combine.ice] run function main:combat/attack/magic/tick/particle/thunder/ice
     #雷×風

@@ -49,7 +49,7 @@
 # エンチャントがついたなら演出
     execute if data block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantments run data modify block ~ ~ ~ Items[{Slot:4b}].tag.Enchantments set value [{}]
     execute if data block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantments run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1
-    execute if data block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantments run particle enchant ~ ~2 ~ 0.25 0.25 0.25 2 50 normal
+    execute if data block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantments run particle enchant ~ ~2 ~ 0.25 0.25 0.25 2 50
 # リセット
     scoreboard players reset $rng buffer
     scoreboard players reset $rec buffer

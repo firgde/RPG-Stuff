@@ -24,10 +24,10 @@
 
     # タグに変換する
     execute if data storage buffer: data run function main:combat/attack/magic/summon/element/get
-    # 氷意外は音
-    execute if entity @s[tag=!magic.ice] run playsound block.amethyst_block.chime player @p ~ ~ ~ 1000 1.5
-    execute if entity @s[tag=!magic.ice] run playsound block.amethyst_block.break player @p ~ ~ ~ 0.5 1.25
-    execute if entity @s[tag=!magic.ice] run playsound block.soul_soil.break player @p ~ ~ ~ 0.5 1.8
+    # 氷単体意外は音
+    execute unless entity @s[tag=magic.ice,tag=!magic.combined] run playsound block.amethyst_block.chime player @p ~ ~ ~ 1000 1.5
+    execute unless entity @s[tag=magic.ice,tag=!magic.combined] run playsound block.amethyst_block.break player @p ~ ~ ~ 0.5 1.25
+    execute unless entity @s[tag=magic.ice,tag=!magic.combined] run playsound block.soul_soil.break player @p ~ ~ ~ 0.5 1.8
 
     # 速度、飛ぶ時間などの設定
     data modify entity @s Tags append from storage combat: data.magic[0].Tags.Type

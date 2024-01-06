@@ -24,7 +24,7 @@
     scoreboard players operation @p atkBuffer /= $100 const
     scoreboard players operation @s damage = @p atkBuffer
     function main:combat/damage/calc/
-    execute as @e[tag=hurt_skill] run function main:combat/damage/calc/
+    execute as @e[tag=hurt.indirect] run function main:combat/damage/calc/
 # リセット
     data remove storage combat: data.Damage
     tag @p remove attack.crit

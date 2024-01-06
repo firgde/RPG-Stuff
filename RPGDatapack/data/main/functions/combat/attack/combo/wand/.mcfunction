@@ -1,6 +1,7 @@
-# 殴られたinteraction特定
+# クリックされたinteraction特定
     execute store result score $atkTime buffer run time query gametime
-    execute at @s as @e[distance=..5,tag=atk_combo] store result score @s timestamp run data get entity @s attack.timestamp
+    execute at @s[advancements={main:combat/attack/combo/wand={left=true}}] as @e[distance=..5,tag=atk_combo] store result score @s timestamp run data get entity @s attack.timestamp
+    execute at @s[advancements={main:combat/attack/combo/wand={right=true}}] as @e[distance=..5,tag=atk_combo] store result score @s timestamp run data get entity @s interaction.timestamp
     execute at @s as @e[tag=atk_combo,distance=..5] if score @s timestamp = $atkTime buffer run tag @s add atk_combo.target
 # 杖の連撃に変更
     execute as @e[tag=atk_combo.target,limit=1] unless entity @s[tag=atk_combo.wand] run function main:combat/attack/combo/wand/init

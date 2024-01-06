@@ -1,6 +1,6 @@
 # パーティクル
     #基本の紫
-    particle witch ~ ~ ~ 0 0 0 1 1 normal
+    particle witch ~ ~ ~ 0 0 0 1 1
     #メインの属性
     #炎
     execute if entity @s[tag=magic.fire] run function main:combat/attack/magic/tick/particle/fire/
