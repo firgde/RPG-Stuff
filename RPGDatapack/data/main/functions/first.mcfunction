@@ -44,6 +44,7 @@ say reload
         scoreboard objectives add combo_time dummy
         scoreboard objectives add timestamp dummy
         scoreboard objectives add hasVehicle dummy
+        scoreboard objectives add hurt_time dummy
         # 探索(体力、速度、集中、運)
         scoreboard objectives add lvl_explore dummy
         scoreboard objectives add xp_explore dummy
