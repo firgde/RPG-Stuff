@@ -1,5 +1,5 @@
 # 音
-    playsound entity.player.attack.sweep player @p ~ ~ ~ 1 1.7
+    playsound ogg:entity.player.attack.sweep1 player @p ~ ~ ~ 1 1.7
     playsound entity.player.attack.knockback player @p ~ ~ ~ 1 1
 # パーティクル
     execute rotated ~ 0 run particle sweep_attack ~ ~1 ~

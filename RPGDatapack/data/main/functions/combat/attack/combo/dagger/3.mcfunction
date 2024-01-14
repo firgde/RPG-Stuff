@@ -1,5 +1,5 @@
 # 音
-    playsound entity.player.attack.sweep player @p ~ ~ ~ 1 1.9
+    playsound ogg:entity.player.attack.sweep1 player @p ~ ~ ~ 1 1.9
 # パーティクル
     particle crit ~ ~0.5 ~ 0.1 0.1 0.1 0.5 10
 # ノックバック
