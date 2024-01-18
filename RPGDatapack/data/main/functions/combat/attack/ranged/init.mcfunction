@@ -1,16 +1,24 @@
-# this
-    tag @s add this
+# タグ
     tag @s add playerArrow
 # チャージ率と攻撃力をかけて保存
     execute store result score @s dex run scoreboard players operation @p bowCharge *= @p dex
     scoreboard players operation @s dex /= $20 const
-# 2体まで貫通
-    # data modify entity @s PierceLevel set value 2b
 # 属性
-    execute store result score @s main_element run data get entity @p SelectedItem.tag.Customnbt.Element.Type
-    execute store result score @s side_element run data get entity @p Inventory[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}].tag.Customnbt.Element.Type
-    execute unless score @s main_element matches 0 if score @s side_element matches 0 run scoreboard players operation @s element = @s main_element
-    execute if score @s main_element matches 0 unless score @s side_element matches 0 run scoreboard players operation @s element = @s side_element
-    execute unless score @s main_element matches 0 unless score @s side_element matches 0 run say combine
+    execute store result score $mainElement buffer run data get entity @p SelectedItem.tag.Customnbt.Element.Type
+    execute store result score $sideElement buffer run data get entity @p Inventory[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}].tag.Customnbt.Element.Type
+    execute unless score $mainElement buffer matches 0 if score $sideElement buffer matches 0 run scoreboard players operation $element buffer = $mainElement buffer
+    execute if score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run scoreboard players operation $element buffer = $sideElement buffer
+    execute if score $element buffer matches 1.. run function main:combat/attack/ranged/element/get
+    execute unless score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run function main:combat/attack/ranged/element/combine
+    execute if entity @s[tag=arrow.fire] run data modify entity @s HasVisualFire set value 1b
+# デバフ
+    execute store result score $mainElement buff_amount run data get entity @p SelectedItem.tag.Customnbt.Element.Debuff.Amount
+    execute store result score $mainElement buff_timer run data get entity @p SelectedItem.tag.Customnbt.Element.Debuff.Timer
+    execute store result score $sideElement buff_amount run data get entity @p Inventory[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}].tag.Customnbt.Element.Debuff.Amount
+    execute store result score $sideElement buff_timer run data get entity @p Inventory[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}].tag.Customnbt.Element.Debuff.Timer
+    execute store result score @s buff_amount run scoreboard players operation $mainElement buff_amount += $sideElement buff_amount
+    execute store result score @s buff_timer run scoreboard players operation $mainElement buff_timer += $sideElement buff_timer
 # リセット
-    tag @s remove this
+    scoreboard players reset $element buffer
+    scoreboard players reset $mainElement
+    scoreboard players reset $sideElement

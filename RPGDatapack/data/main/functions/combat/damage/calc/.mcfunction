@@ -7,7 +7,7 @@
 # 無敵時間のあるなし
     execute if entity @s[tag=spawn] run scoreboard players operation @s damage /= $20 const
 # 無敵時間
-    execute if entity @s[tag=hurt.melee,tag=!hurt.indirect,type=!player] unless data entity @s Passengers run function main:combat/damage/calc/hurt_time
+    execute if entity @s[tag=!hurt.indirect,type=!player] unless entity @s[tag=!hurt.melee,tag=!hurt.ranged] unless data entity @s Passengers run function main:combat/damage/calc/hurt_time
 # 防御計算
     execute unless entity @s[tag=hurt.bypass_defense] run function main:combat/damage/calc/defense
 # ダメージ減算

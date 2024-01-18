@@ -1,7 +1,7 @@
 # 魔術攻撃の処理
     execute as @e[type=item_display,tag=magic] at @s run function main:combat/attack/magic/tick/
 # 遠距離攻撃の処理
-    execute as @p run function main:combat/attack/ranged/tick/
+    execute as @p run function main:combat/attack/ranged/tick
 # バフ処理
     execute as @e[tag=buff] run function status:buff/tick
 # スキルのクールダウン
