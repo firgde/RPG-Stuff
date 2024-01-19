@@ -212,6 +212,7 @@ say reload
     team add hostile
     team add no_col
     team modify no_col collisionRule never
+    team add ui
 # ボスバー
     bossbar add health: ""
 # タイトルの表示時間
