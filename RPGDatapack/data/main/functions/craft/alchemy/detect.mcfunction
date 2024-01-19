@@ -4,7 +4,8 @@
     execute store result score $id0 buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.tag.Customnbt.id
     execute store result score $id1 buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.tag.Customnbt.id
 # IDによってアイテム設定
-    function main:craft/alchemy/specify
+    # function main:craft/alchemy/specify
+    execute store result score $success buffer run function #asset:craft/recipes/alchemy
 # そうでないならアイテムの種類/レア度によってアイテム生成
     execute unless score $success buffer matches 1 run function main:craft/alchemy/generic
 # 成功判定

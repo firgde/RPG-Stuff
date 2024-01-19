@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "consume": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{Customnbt:{consumable:1b}}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:trigger_offhand"
+    }
+}

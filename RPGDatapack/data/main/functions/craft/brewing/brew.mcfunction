@@ -8,8 +8,7 @@
     scoreboard players add $material buffer 7000
 # 結合結果を見て醸造台&item_displayのポーション置き換え
     item replace block 0 -59 0 container.0 with air
-    ### (マクロ使うといい感じかも)
-    execute if score $material buffer matches 7100 run function asset:item/7100_strength_potion/give
+    function #asset:craft/recipes/brewing
     item replace block ~ ~ ~ container.0 from block 0 -59 0 container.0
     item replace block ~ ~ ~ container.1 from block 0 -59 0 container.0
     item replace block ~ ~ ~ container.2 from block 0 -59 0 container.0

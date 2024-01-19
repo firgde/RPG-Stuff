@@ -1,0 +1,109 @@
+{
+    "criteria": {
+        "melee": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+					"type": {
+						"tags": [
+							{
+								"id": "asset:melee_player",
+								"expected": true
+							}
+						]
+					}
+				},
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{Customnbt:{weapon:1b}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "bow": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+				"damage": {
+					"type": {
+						"tags": [
+							{
+								"id": "is_projectile",
+								"expected": true
+							}
+						]
+					}
+				}
+            }
+        },
+        "magic": {
+            "trigger": "tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "entity_scores",
+						"entity": "this",
+						"scores": {
+							"usedRod": {
+								"min": 1
+							}
+						}
+					},
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{Customnbt:{weapon:1b}}"
+                                }
+                            }
+                        }
+                    }
+				]
+			}
+        },
+        "magic_hit": {
+            "trigger": "player_hurt_entity",
+			"conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "asset:magic",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+			}
+        },
+        "consume": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{Customnbt:{consumable:1b}}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "melee",
+            "bow",
+            "magic",
+            "magic_hit",
+            "consume"
+        ]
+    ],
+    "rewards": {
+        "function": "main:trigger"
+    }
+}
