@@ -1,0 +1,777 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#FF9000",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#FF4500",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 11
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#FF4500",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "aqua",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 12
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#FF4500",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "green",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 13
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#FF4500",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "yellow",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 14
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "aqua",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#FF4500",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 21
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#D4FEFE",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "aqua",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 22
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "aqua",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "green",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 23
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "aqua",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "yellow",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 24
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "green",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#FF4500",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 31
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "green",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "aqua",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 32
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "green",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "dark_green",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 33
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "green",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "yellow",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 34
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "yellow",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#FF4500",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 41
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "yellow",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "aqua",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 42
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "yellow",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "green",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 43
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "#EEEECC",
+									"font":"damage_top"
+								},
+								{
+									"nbt": "data.Damage.space",
+									"storage": "combat:",
+									"font": "default",
+									"interpret": true
+								},
+								{
+									"nbt": "data.Damage.Amount",
+									"storage": "combat:",
+									"color": "yellow",
+									"font":"damage_bottom"
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "$damageType"
+								},
+								"score": "buffer"
+							},
+							"range": 44
+						}
+					]
+				}
+            ]
+        }
+    ]
+}

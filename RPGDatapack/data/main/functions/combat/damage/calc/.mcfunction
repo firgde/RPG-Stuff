@@ -15,7 +15,7 @@
     execute if entity @p[tag=attack.crit] run scoreboard players set $damageType buffer 5
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage
     scoreboard players operation @s hp > $0 const
-    execute at @s run function main:combat/damage/display_amount
+    execute at @s run function main:combat/damage/display/
     #プレイヤーは体力の割合を計算
     execute if entity @s[type=player] run function status:hp/calc_ratio
     #死亡処理
