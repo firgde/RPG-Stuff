@@ -6,7 +6,7 @@
     execute if entity @s[type=player] run function status:hp/calc_ratio
     execute if entity @s[type=player] run function status:hp/update
 # 演出
-    execute at @s run function main:combat/damage/display_amount
+    execute at @s run function main:combat/damage/display/
     execute if entity @e[tag=this,tag=debuff,tag=debuff.fire] run damage @s 1 asset:magic/fire
     execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_fire] run damage @s 1 asset:magic/fire
     execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_thunder] run damage @s 1 asset:magic/fire
