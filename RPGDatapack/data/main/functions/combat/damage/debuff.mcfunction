@@ -1,7 +1,7 @@
 # 引く
-    scoreboard players operation @s damage = $damage buff_amount
+    scoreboard players operation @s damage = #damage buff_amount
     scoreboard players operation @s hp -= @s damage
-    scoreboard players operation @s hp > $0 const
+    scoreboard players operation @s hp > #0 const
 # プレイヤーは体力の割合を計算
     execute if entity @s[type=player] run function status:hp/calc_ratio
     execute if entity @s[type=player] run function status:hp/update
@@ -18,4 +18,4 @@
     execute if score @s hp matches ..0 run data modify entity @s HasVisualFire set value 0b
     execute if score @s[tag=!boss] hp matches ..0 run function main:combat/damage/death
 # リセット
-    scoreboard players reset $damageType buffer
+    scoreboard players reset #damageType buffer

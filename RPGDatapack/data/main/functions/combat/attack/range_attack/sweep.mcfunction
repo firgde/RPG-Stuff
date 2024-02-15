@@ -9,10 +9,10 @@
     scoreboard players operation @e[tag=hurt.indirect] damage = @p atk
     #集中の値によってダメージ減衰する
     scoreboard players operation @e[tag=hurt.indirect] damage *= @p dmg_eff
-    scoreboard players operation @e[tag=hurt.indirect] damage /= $100 const
-    scoreboard players set $kbPowerX buffer 10
-    scoreboard players set $kbPowerY buffer 10
-    scoreboard players set $kbPowerZ buffer 10
+    scoreboard players operation @e[tag=hurt.indirect] damage /= #100 const
+    scoreboard players set #kbPowerX buffer 10
+    scoreboard players set #kbPowerY buffer 10
+    scoreboard players set #kbPowerZ buffer 10
     execute as @e[tag=hurt.indirect] at @p run function main:combat/damage/knockback
     tag @e[tag=hurt.indirect] add hurt.melee
 # プレイヤーが近くにいるなら連撃判定のinteraction召喚
@@ -21,6 +21,6 @@
     execute on passengers run function main:combat/attack/combo/sword/init
 # リセット
     tag @s remove this
-    scoreboard players reset $kbPowerX buffer
-    scoreboard players reset $kbPowerY buffer
-    scoreboard players reset $kbPowerZ buffer
+    scoreboard players reset #kbPowerX buffer
+    scoreboard players reset #kbPowerY buffer
+    scoreboard players reset #kbPowerZ buffer

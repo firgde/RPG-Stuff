@@ -39,18 +39,18 @@
 # Targetに向く
     execute facing entity @e[tag=homingTarget,limit=1,sort=nearest] eyes run tp @s ~ ~ ~ ~ ~
     #自分のRotationをプレイヤーのRotationとの平均値に
-    execute store result score $rot buffer run data get entity @s Rotation[0] 100
-    execute store result score $playerRot buffer run data get entity @p Rotation[0] 100
-    execute if score $rot buffer matches 1.. if score $playerRot buffer matches ..-1 run scoreboard players operation $playerRot buffer *= $-1 const
-    execute if score $rot buffer matches ..-1 if score $playerRot buffer matches 1.. run scoreboard players operation $playerRot buffer *= $-1 const
-    scoreboard players operation $rot buffer += $playerRot buffer
-    execute unless score $rot buffer = $playerRot buffer store result entity @s Rotation[0] float 0.005 run scoreboard players get $rot buffer
+    execute store result score #rot buffer run data get entity @s Rotation[0] 100
+    execute store result score #playerRot buffer run data get entity @p Rotation[0] 100
+    execute if score #rot buffer matches 1.. if score #playerRot buffer matches ..-1 run scoreboard players operation #playerRot buffer *= #-1 const
+    execute if score #rot buffer matches ..-1 if score #playerRot buffer matches 1.. run scoreboard players operation #playerRot buffer *= #-1 const
+    scoreboard players operation #rot buffer += #playerRot buffer
+    execute unless score #rot buffer = #playerRot buffer store result entity @s Rotation[0] float 0.005 run scoreboard players get #rot buffer
     #Pitch補正
     data modify entity @s Rotation[1] set from entity @p Rotation[1]
 
 # リセット
-    scoreboard players reset $rot buffer
-    scoreboard players reset $playerRot buffer
+    scoreboard players reset #rot buffer
+    scoreboard players reset #playerRot buffer
     scoreboard players reset @e[tag=homingCandidate] homing_priority
     tag @e[tag=homingCandidate] remove target
     tag @e[tag=homingCandidate] remove homingTarget

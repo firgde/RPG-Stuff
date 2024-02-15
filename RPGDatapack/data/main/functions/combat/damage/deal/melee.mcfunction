@@ -12,21 +12,21 @@
 
 # ダメージ計算
     #属性を取得
-    execute store result score $mainElement buffer run data get entity @p SelectedItem.tag.Customnbt.Element.Type
-    execute store result score $sideElement buffer run data get entity @p Inventory[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}].tag.Customnbt.Element.Type
-    execute unless score $mainElement buffer matches 0 if score $sideElement buffer matches 0 run scoreboard players operation $damageType buffer = $mainElement buffer
-    execute if score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run scoreboard players operation $damageType buffer = $sideElement buffer
+    execute store result score #mainElement buffer run data get entity @p SelectedItem.tag.Customnbt.Element.Type
+    execute store result score #sideElement buffer run data get entity @p Inventory[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}].tag.Customnbt.Element.Type
+    execute unless score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #mainElement buffer
+    execute if score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #sideElement buffer
     #デバフ
-    execute store result score $mainElement buff_amount run data get entity @p SelectedItem.tag.Customnbt.Element.Debuff.Amount
-    execute store result score $mainElement buff_timer run data get entity @p SelectedItem.tag.Customnbt.Element.Debuff.Timer
-    execute store result score $sideElement buff_amount run data get entity @p Inventory[{Slot:-106b}].tag.Customnbt.Element.Debuff.Amount
-    execute store result score $sideElement buff_timer run data get entity @p Inventory[{Slot:-106b}].tag.Customnbt.Element.Debuff.Timer
+    execute store result score #mainElement buff_amount run data get entity @p SelectedItem.tag.Customnbt.Element.Debuff.Amount
+    execute store result score #mainElement buff_timer run data get entity @p SelectedItem.tag.Customnbt.Element.Debuff.Timer
+    execute store result score #sideElement buff_amount run data get entity @p Inventory[{Slot:-106b}].tag.Customnbt.Element.Debuff.Amount
+    execute store result score #sideElement buff_timer run data get entity @p Inventory[{Slot:-106b}].tag.Customnbt.Element.Debuff.Timer
     #会心攻撃の処理
     execute as @p if score @s dealtDamage matches 150.. run function main:combat/attack/crit/
     execute as @p run function status:update/
     scoreboard players operation @p atkBuffer = @p atk
     scoreboard players operation @p atkBuffer *= @p dealtDamage
-    scoreboard players operation @p atkBuffer /= $100 const
+    scoreboard players operation @p atkBuffer /= #100 const
     scoreboard players operation @s damage = @p atkBuffer
     function main:combat/damage/calc/
     execute as @e[tag=hurt.indirect] run function main:combat/damage/calc/

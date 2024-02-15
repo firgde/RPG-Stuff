@@ -20,9 +20,9 @@
     function status:hp/update
     attribute @s generic.attack_damage base set 0.0
     function status:int/calc
-    scoreboard players operation $spdBuffer buffer = @s spd
-    scoreboard players add $spdBuffer buffer 100
-    execute store result storage status: data.spd double 0.001 run scoreboard players get $spdBuffer buffer
+    scoreboard players operation #spdBuffer buffer = @s spd
+    scoreboard players add #spdBuffer buffer 100
+    execute store result storage status: data.spd double 0.001 run scoreboard players get #spdBuffer buffer
     execute store result storage status: data.luk double 0.001 run scoreboard players get @s luk
     function status:spd/calc with storage status: data
     function status:luk/calc with storage status: data

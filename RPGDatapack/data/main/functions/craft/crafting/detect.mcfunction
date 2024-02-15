@@ -14,14 +14,14 @@
 # 何も入っていないデータは消す
     data remove storage craft: data.ingredients[{id:"none"}]
 # 配列の長さをスコアに
-    execute store result score $length buffer run data get storage craft: data.ingredients
+    execute store result score #length buffer run data get storage craft: data.ingredients
 # レシピ特定
-    execute store result score $success buffer run function #asset:craft/recipes/crafting
+    execute store result score #success buffer run function #asset:craft/recipes/crafting
 # アイテム召喚
-    execute if score $success buffer matches 1 at @e[tag=slot.4,distance=..10] run function main:craft/crafting/common
+    execute if score #success buffer matches 1 at @e[tag=slot.4,distance=..10] run function main:craft/crafting/common
 # リセット
-    scoreboard players reset $success buffer
-    scoreboard players reset $length buffer
+    scoreboard players reset #success buffer
+    scoreboard players reset #length buffer
     tag @s remove not_give
     data remove storage craft: data
     advancement revoke @s only main:craft/crafting/trigger

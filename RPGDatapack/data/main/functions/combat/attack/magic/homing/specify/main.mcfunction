@@ -5,4 +5,4 @@
 # 同じ優先度のEntityが複数いるなら一番近いものをターゲットに
     execute positioned as @p as @e[tag=target,limit=1,sort=nearest] run tag @s add homingTarget
 # リセット
-    scoreboard players reset $candidateCount buffer
+    scoreboard players reset #candidateCount buffer

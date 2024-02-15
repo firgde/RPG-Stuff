@@ -180,34 +180,34 @@ say reload
     scoreboard objectives add buffer dummy
     # 定数
     scoreboard objectives add const dummy
-    scoreboard players set $-1 const -1
-    scoreboard players set $0 const 0
-    scoreboard players set $2 const 2
-    scoreboard players set $4 const 4
-    scoreboard players set $5 const 5
-    scoreboard players set $6 const 6
-    scoreboard players set $7 const 7
-    scoreboard players set $8 const 8
-    scoreboard players set $10 const 10
-    scoreboard players set $15 const 15
-    scoreboard players set $20 const 20
-    scoreboard players set $40 const 40
-    scoreboard players set $50 const 50
-    scoreboard players set $55 const 55
-    scoreboard players set $65 const 65
-    scoreboard players set $75 const 75
-    scoreboard players set $80 const 80
-    scoreboard players set $90 const 90
-    scoreboard players set $100 const 100
-    scoreboard players set $120 const 120
-    scoreboard players set $384 const 384
-    scoreboard players set $407 const 407
-    scoreboard players set $481 const 481
-    scoreboard players set $555 const 555
-    scoreboard players set $592 const 592
-    scoreboard players set $1024 const 1024
-    scoreboard players set $2000 const 2000
-    scoreboard players set $10000 const 10000
+    scoreboard players set #-1 const -1
+    scoreboard players set #0 const 0
+    scoreboard players set #2 const 2
+    scoreboard players set #4 const 4
+    scoreboard players set #5 const 5
+    scoreboard players set #6 const 6
+    scoreboard players set #7 const 7
+    scoreboard players set #8 const 8
+    scoreboard players set #10 const 10
+    scoreboard players set #15 const 15
+    scoreboard players set #20 const 20
+    scoreboard players set #40 const 40
+    scoreboard players set #50 const 50
+    scoreboard players set #55 const 55
+    scoreboard players set #65 const 65
+    scoreboard players set #75 const 75
+    scoreboard players set #80 const 80
+    scoreboard players set #90 const 90
+    scoreboard players set #100 const 100
+    scoreboard players set #120 const 120
+    scoreboard players set #384 const 384
+    scoreboard players set #407 const 407
+    scoreboard players set #481 const 481
+    scoreboard players set #555 const 555
+    scoreboard players set #592 const 592
+    scoreboard players set #1024 const 1024
+    scoreboard players set #2000 const 2000
+    scoreboard players set #10000 const 10000
 # チーム
     team add hostile
     team add no_col

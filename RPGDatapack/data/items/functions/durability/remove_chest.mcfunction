@@ -1,16 +1,16 @@
 # Customnbtの耐久値を減算
     execute store result score @s durability run data get entity @s Inventory[{Slot:102b}].tag.Customnbt.Durability
     scoreboard players remove @s durability 1
-    scoreboard players operation $durability buffer = @s durability
-    execute store result storage item: Item.tag.Customnbt.Durability int 1 run scoreboard players get $durability buffer
+    scoreboard players operation #durability buffer = @s durability
+    execute store result storage item: Item.tag.Customnbt.Durability int 1 run scoreboard players get #durability buffer
     item modify entity @s armor.chest main:update_durability
 # 0未満なら壊す
     execute if score @s durability matches ..-1 run function items:durability/break_chest
 # アイテムの耐久ゲージを更新
     execute store result score @s maxDurability run data get entity @s Inventory[{Slot:102b}].tag.Customnbt.MaxDurability
-    scoreboard players operation $maxDurability buffer = @s maxDurability
+    scoreboard players operation #maxDurability buffer = @s maxDurability
     #中身はネザライトの防具
-    scoreboard players operation @s durability *= $592 const
+    scoreboard players operation @s durability *= #592 const
     execute store result score @s dur_ratio run scoreboard players operation @s durability /= @s maxDurability
     scoreboard players set @s buffer 592
     execute store result storage item: data.Damage int 1 run scoreboard players operation @s buffer -= @s dur_ratio
@@ -21,7 +21,7 @@
     execute positioned 0 -59 0 run function items:get_data
     item modify entity @s armor.chest items:lore/text
     item modify entity @s armor.chest items:lore/status
-    execute if score $enchantcount buffer matches 1.. run function items:set_data/rec_chest
+    execute if score #enchantcount buffer matches 1.. run function items:set_data/rec_chest
     item modify entity @s armor.chest items:lore/info
 # リセット
     data remove storage item: data
@@ -31,24 +31,24 @@
     scoreboard players reset @s durability
     scoreboard players reset @s maxDurability
     scoreboard players reset @s dur_ratio
-    scoreboard players reset $Lore buffer
-    scoreboard players reset $itemType buffer
-    scoreboard players reset $healamounthp buffer
-    scoreboard players reset $healamountmp buffer
-    scoreboard players reset $element buffer
-    scoreboard players reset $atkBonus buffer
-    scoreboard players reset $magBonus buffer
-    scoreboard players reset $dexBonus buffer
-    scoreboard players reset $hpBonus buffer
-    scoreboard players reset $intBonus buffer
-    scoreboard players reset $defBonus buffer
-    scoreboard players reset $spdBonus buffer
-    scoreboard players reset $crtBonus buffer
-    scoreboard players reset $lukBonus buffer
-    scoreboard players reset $accBonus buffer
-    scoreboard players reset $rarity buffer
-    scoreboard players reset $durability buffer
-    scoreboard players reset $maxDurability buffer
-    scoreboard players reset $enchantcount buffer
-    scoreboard players reset $hasskill buffer
+    scoreboard players reset #Lore buffer
+    scoreboard players reset #itemType buffer
+    scoreboard players reset #healamounthp buffer
+    scoreboard players reset #healamountmp buffer
+    scoreboard players reset #element buffer
+    scoreboard players reset #atkBonus buffer
+    scoreboard players reset #magBonus buffer
+    scoreboard players reset #dexBonus buffer
+    scoreboard players reset #hpBonus buffer
+    scoreboard players reset #intBonus buffer
+    scoreboard players reset #defBonus buffer
+    scoreboard players reset #spdBonus buffer
+    scoreboard players reset #crtBonus buffer
+    scoreboard players reset #lukBonus buffer
+    scoreboard players reset #accBonus buffer
+    scoreboard players reset #rarity buffer
+    scoreboard players reset #durability buffer
+    scoreboard players reset #maxDurability buffer
+    scoreboard players reset #enchantcount buffer
+    scoreboard players reset #hasskill buffer
     item replace block 0 -59 0 container.0 with air

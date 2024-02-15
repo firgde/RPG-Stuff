@@ -7,16 +7,16 @@
     execute if entity @p[advancements={main:combat/attack/combo/wand=true}] run tag @s add hurt.magic
 # ダメージ減衰
     execute on passengers run scoreboard players operation @e[tag=this] damage *= @s dmg_reduction
-    execute on passengers run scoreboard players operation @e[tag=this] damage /= $10 const
+    execute on passengers run scoreboard players operation @e[tag=this] damage /= #10 const
 # クリティカル判定抽選
     execute as @p run function main:combat/attack/crit/
     scoreboard players operation @s damage *= @p dealtDamage
-    scoreboard players operation @s damage /= $100 const
+    scoreboard players operation @s damage /= #100 const
 # 属性取得
-    execute store result score $mainElement buffer run data get entity @p SelectedItem.tag.Customnbt.Element.Type
-    execute store result score $sideElement buffer run data get entity @p Inventory[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}].tag.Customnbt.Element.Type
-    execute unless score $mainElement buffer matches 0 if score $sideElement buffer matches 0 run scoreboard players operation $damageType buffer = $mainElement buffer
-    execute if score $mainElement buffer matches 0 unless score $sideElement buffer matches 0 run scoreboard players operation $damageType buffer = $sideElement buffer
+    execute store result score #mainElement buffer run data get entity @p SelectedItem.tag.Customnbt.Element.Type
+    execute store result score #sideElement buffer run data get entity @p Inventory[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}].tag.Customnbt.Element.Type
+    execute unless score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #mainElement buffer
+    execute if score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #sideElement buffer
 # ダメージ付与
     function main:combat/damage/calc/
 # リセット
