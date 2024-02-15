@@ -28,7 +28,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$Lore"
+						"name": "#Lore"
 					},
 					"score": "buffer"
 				},

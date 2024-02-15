@@ -12,7 +12,7 @@
                             "type": "score",
                             "target": {
                                 "type": "fixed",
-                                "name": "$element0"
+                                "name": "#element0"
                             },
                             "score": "buffer"
                         },
@@ -24,7 +24,7 @@
                             "type": "score",
                             "target": {
                                 "type": "fixed",
-                                "name": "$element1"
+                                "name": "#element1"
                             },
                             "score": "buffer"
                         },
@@ -42,7 +42,7 @@
                         "type": "score",
                         "target": {
                             "type": "fixed",
-                            "name": "$element0"
+                            "name": "#element0"
                         },
                         "score": "buffer"
                     },
@@ -54,7 +54,7 @@
                         "type": "score",
                         "target": {
                             "type": "fixed",
-                            "name": "$element1"
+                            "name": "#element1"
                         },
                         "score": "buffer"
                     },

@@ -10,7 +10,7 @@
 				"with": [
 					{
 						"score": {
-							"name": "$healamounthp",
+							"name": "#healamounthp",
 							"objective": "buffer"
 						},
 						"color": "green",
@@ -26,7 +26,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$healamounthp"
+						"name": "#healamounthp"
 					},
 					"score": "buffer"
 				},
@@ -47,7 +47,7 @@
 				"with": [
 					{
 						"score": {
-							"name": "$healamountmp",
+							"name": "#healamountmp",
 							"objective": "buffer"
 						},
 						"color": "aqua",
@@ -63,7 +63,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$healamountmp"
+						"name": "#healamountmp"
 					},
 					"score": "buffer"
 				},

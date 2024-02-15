@@ -26,7 +26,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$hasskill"
+						"name": "#hasskill"
 					},
 					"score": "buffer"
 				},
@@ -45,7 +45,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$hasskill"
+						"name": "#hasskill"
 					},
 					"score": "buffer"
 				},
@@ -73,7 +73,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$durability"
+									"name": "#durability"
 								},
 								"score": "buffer"
 							},
@@ -88,7 +88,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$maxDurability"
+									"name": "#maxDurability"
 								},
 								"score": "buffer"
 							},
@@ -110,13 +110,13 @@
 				"with": [
 					{
 						"score": {
-							"name": "$durability",
+							"name": "#durability",
 							"objective": "buffer"
 						}
 					},
 					{
 						"score": {
-							"name": "$maxDurability",
+							"name": "#maxDurability",
 							"objective": "buffer"
 						},
 						"color": "white",
@@ -137,7 +137,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$durability"
+									"name": "#durability"
 								},
 								"score": "buffer"
 							},
@@ -152,7 +152,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "$maxDurability"
+									"name": "#maxDurability"
 								},
 								"score": "buffer"
 							},
@@ -187,7 +187,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$rarity"
+						"name": "#rarity"
 					},
 					"score": "buffer"
 				},
@@ -220,7 +220,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$rarity"
+						"name": "#rarity"
 					},
 					"score": "buffer"
 				},
@@ -253,7 +253,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$rarity"
+						"name": "#rarity"
 					},
 					"score": "buffer"
 				},
@@ -286,7 +286,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$rarity"
+						"name": "#rarity"
 					},
 					"score": "buffer"
 				},
@@ -319,7 +319,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "$rarity"
+						"name": "#rarity"
 					},
 					"score": "buffer"
 				},

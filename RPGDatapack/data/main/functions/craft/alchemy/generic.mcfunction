@@ -12,14 +12,14 @@
     execute store result score #rarity buffer run scoreboard players operation #rarity0 buffer += #rarity1 buffer
     scoreboard players operation #rarity buffer > #3 const
 # IDに結合 (種類、属性、レア度の順番)
-    # tellraw @s [{"text": "Type: "},{"score":{"name": "$weaponType","objective": "buffer"}}]
-    # tellraw @s [{"text": "Element: "},{"score":{"name": "$element","objective": "buffer"}}]
-    # tellraw @s [{"text": "Rarity: "},{"score":{"name": "$rarity","objective": "buffer"}}]
+    # tellraw @s [{"text": "Type: "},{"score":{"name": "#weaponType","objective": "buffer"}}]
+    # tellraw @s [{"text": "Element: "},{"score":{"name": "#element","objective": "buffer"}}]
+    # tellraw @s [{"text": "Rarity: "},{"score":{"name": "#rarity","objective": "buffer"}}]
     scoreboard players operation #weaponType buffer *= #100 const
     scoreboard players operation #element buffer *= #10 const
     scoreboard players operation #weaponType buffer += #element buffer
     scoreboard players operation #weaponType buffer += #rarity buffer
     scoreboard players add #weaponType buffer 1000
-    # tellraw @s [{"text": "Result: "},{"score":{"name": "$weaponType","objective": "buffer"}}]
+    # tellraw @s [{"text": "Result: "},{"score":{"name": "#weaponType","objective": "buffer"}}]
 # 武器特定
     function #asset:craft/recipes/alchemy_generic
