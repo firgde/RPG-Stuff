@@ -21,6 +21,9 @@
     scoreboard players remove @e[team=hostile,scores={hurt_time=1..}] hurt_time 1
 # AIを持ったMobの挙動
     execute as @e[team=hostile,tag=HasAI] at @s if entity @p[distance=..50,gamemode=!creative] run function mobs:ai/tick
+# 落下ダメージ処理
+    execute at @p as @e[distance=..50] unless data entity @s {FallDistance:0.0f} store result score @s fall_distance run data get entity @s FallDistance
+    execute at @p as @e[distance=..50] unless entity @s[gamemode=creative] if data entity @s {OnGround:1b} if score @s fall_distance matches 3.. run function main:combat/damage/natural/fall
 # 採掘スポットの鉱石抽選
     execute as @e[tag=mining_spot] at @s if block ~ ~ ~ air if data entity @s {PortalCooldown:0} unless entity @p[distance=10..] run function main:collect/mining/regenerate
     #function main:collect/mining/tick
