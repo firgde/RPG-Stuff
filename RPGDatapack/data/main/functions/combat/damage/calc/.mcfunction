@@ -1,7 +1,7 @@
-# 属性デバフ取得(直接攻撃していない場合は無視)
-    execute unless entity @s[tag=hurt.indirect] unless score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run function main:combat/damage/calc/element_combined
+# 属性取得(直接攻撃していない場合は無視)
+    execute unless score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run function main:combat/damage/calc/element_combined
     execute if entity @s[type=player] if score #damageType buffer matches 1..4 run function main:combat/damage/calc/element_hostile
-    execute if entity @s[type=!player,tag=!hurt.indirect,tag=!hurt.combo] if score #damageType buffer matches 1..4 run function main:combat/damage/calc/element
+    execute if entity @s[type=!player] if score #damageType buffer matches 1..4 run function main:combat/damage/calc/element
 # 属性相性を参照
     execute unless entity @s[tag=hurt.indirect] run function main:combat/damage/calc/resistance
 # 無敵時間のあるなし
@@ -36,7 +36,7 @@
     execute on passengers if entity @s[tag=atk_combo] on vehicle run damage @s 0.01 asset:combo_attack
     execute if score #damageType buffer matches 5 run playsound entity.player.attack.crit hostile @p ~ ~ ~ 1 1
     #属性ダメージ
-    execute unless score #damageType buffer matches 0 unless score #damageType buffer matches 5 run function main:combat/damage/sound/
+    execute unless entity @s[tag=hurt.indirect] unless score #damageType buffer matches 0 unless score #damageType buffer matches 5 run function main:combat/damage/sound/
 # リセット
     tag @s remove hurt
     tag @s remove hurt.melee

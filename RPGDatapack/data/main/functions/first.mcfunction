@@ -183,6 +183,7 @@ say reload
     scoreboard objectives add const dummy
     scoreboard players set #-1 const -1
     scoreboard players set #0 const 0
+    scoreboard players set #1 const 1
     scoreboard players set #2 const 2
     scoreboard players set #4 const 4
     scoreboard players set #5 const 5

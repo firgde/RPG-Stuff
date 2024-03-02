@@ -1,5 +1,7 @@
 # 引く
-    scoreboard players operation @s damage = #damage buff_amount
+    scoreboard players operation @s damage = #buff buff_amount
+    #ダメージは最低でも1
+    scoreboard players operation @s damage > #1 const
     scoreboard players operation @s hp -= @s damage
     scoreboard players operation @s hp > #0 const
 # プレイヤーは体力の割合を計算
@@ -10,6 +12,8 @@
     execute if entity @e[tag=this,tag=debuff,tag=debuff.fire] run damage @s 1 asset:magic/fire
     execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_fire] run damage @s 1 asset:magic/fire
     execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_thunder] run damage @s 1 asset:magic/fire
+    execute if entity @e[tag=this,tag=debuff,tag=debuff.wind_fire] run damage @s 1 asset:magic/fire
+    execute if entity @e[tag=this,tag=debuff,tag=debuff.thunder_wind] run damage @s 1 asset:magic/generic
     #敵は体力をHUDに表示
     execute if entity @s[team=hostile,tag=!boss] unless score @s max_hp matches 2147483647 run function hud:hp_bar/calc
     #ボス限定
