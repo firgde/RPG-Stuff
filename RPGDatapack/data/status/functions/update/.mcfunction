@@ -1,3 +1,5 @@
+# intを比較するために保存しておく
+    scoreboard players operation #prevInt buffer = @s int
 # 無印ステータスリセット
     scoreboard players operation @s atk = @s atk_base
     scoreboard players operation @s mag = @s mag_base
@@ -36,4 +38,5 @@
 # Mob限定
     execute if entity @s[type=!player] store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base float 0.01 run scoreboard players get @s spd
 # リセット
+    scoreboard players reset #prevInt
     advancement revoke @s only status:equipped

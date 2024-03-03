@@ -19,7 +19,7 @@
 # attributeや他のスコアに関与するもの
     function status:hp/update
     attribute @s generic.attack_damage base set 0.0
-    function status:int/calc
+    execute unless score #prevInt buffer = @s int run function status:int/calc
     scoreboard players operation #spdBuffer buffer = @s spd
     scoreboard players add #spdBuffer buffer 100
     execute store result storage status: data.spd double 0.001 run scoreboard players get #spdBuffer buffer

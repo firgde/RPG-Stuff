@@ -124,6 +124,7 @@ say reload
         scoreboard objectives add healAmountMP dummy
         scoreboard objectives add healTimerMP dummy
         scoreboard objectives add healAmountMP dummy
+        scoreboard objectives add mp_ratio dummy
         # 防御(防御力)
         scoreboard objectives add def dummy
         scoreboard objectives add def_bonus dummy
