@@ -3,6 +3,8 @@
     scoreboard players set @s mag_base 0
     scoreboard players set @s dex_base 0
     scoreboard players set @s max_hp_base 100
+    scoreboard players set @s hp_ratio 100
+    scoreboard players set @s hp 100
     scoreboard players set @s int_base 0
     scoreboard players set @s def_base 0
     scoreboard players set @s spd_base 0
@@ -17,6 +19,8 @@
     scoreboard players set @s resistance_ice 100
     scoreboard players set @s resistance_wind 100
     scoreboard players set @s resistance_thunder 100
+# バフ状態リセット
+    data modify storage combat: data.hud.heart set value '{"text":"\\uE000"}'
 # 全レベル&経験値リセット
     scoreboard players set @s lvl_total 0
     scoreboard players set @s lvl_combat 0
