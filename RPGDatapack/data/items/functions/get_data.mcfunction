@@ -18,7 +18,7 @@
     #属性
     execute store result score #element buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.Element.Type
     #スキルの有無
-    execute store result score #hasskill buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.HasSkill
+    execute store result score #hasAbility buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.HasAbility
     #耐久度
     execute store result score #durability buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.Durability
     execute store result score #maxDurability buffer run data get block ~ ~ ~ Items[{Slot:0b}].tag.Customnbt.MaxDurability

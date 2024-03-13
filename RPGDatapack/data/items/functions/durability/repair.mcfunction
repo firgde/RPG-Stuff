@@ -48,5 +48,5 @@
     scoreboard players reset #durability buffer
     scoreboard players reset #maxDurability buffer
     scoreboard players reset #enchantcount buffer
-    scoreboard players reset #hasskill buffer
+    scoreboard players reset #hasAbility buffer
     scoreboard players reset #durRatio buffer

@@ -7,12 +7,14 @@
 				"text": " "
 			},
 			{
-				"translate": "item.ui.skill",
+				"translate": "item.ui.ability",
 				"with": [
 					{
-						"nbt": "Item.tag.Customnbt.Skill.display.Name",
+						"nbt": "Item.tag.Customnbt.Ability.Name",
 						"storage": "item:",
-						"interpret": true
+						"interpret": true,
+						"color": "aqua",
+						"bold": true
 					}
 				],
 				"color": "white",
@@ -26,7 +28,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "#hasskill"
+						"name": "#hasAbility"
 					},
 					"score": "buffer"
 				},
@@ -45,7 +47,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "#hasskill"
+						"name": "#hasAbility"
 					},
 					"score": "buffer"
 				},

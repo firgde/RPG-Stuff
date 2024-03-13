@@ -5,7 +5,7 @@
 # バフ処理
     execute as @e[tag=buff] run function status:buff/tick
 # スキルのクールダウン
-    execute as @p at @s if score @s currentSkillCooldown matches 1.. run function main:combat/skills/tick
+    execute as @p at @s if score @s current_ability_cooldown matches 1.. run function main:combat/ability/tick
 # 連撃interactionの処理
     execute as @e[tag=atk_combo] run function main:combat/attack/combo/tick
 # ステータスのtick処理

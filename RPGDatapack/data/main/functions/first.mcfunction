@@ -24,8 +24,8 @@ say reload
         scoreboard objectives add buff_timer dummy
         scoreboard objectives add buff_amount dummy
         scoreboard objectives add usedRod used:warped_fungus_on_a_stick
-        scoreboard objectives add skillCooldown dummy
-        scoreboard objectives add currentSkillCooldown dummy
+        scoreboard objectives add ability_cooldown dummy
+        scoreboard objectives add current_ability_cooldown dummy
         scoreboard objectives add spawnTimer dummy
         scoreboard objectives add spawnDelay dummy
         scoreboard objectives add aiTimer dummy

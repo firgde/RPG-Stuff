@@ -92,6 +92,33 @@
                     "nbt": "{Customnbt:{consumable:1b}}"
                 }
             }
+        },
+        "ability": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "usedRod": {
+                                "min": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{Customnbt:{HasAbility:1b}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     },
     "requirements": [
@@ -100,7 +127,8 @@
             "bow",
             "magic",
             "magic_hit",
-            "consume"
+            "consume",
+            "ability"
         ]
     ],
     "rewards": {

@@ -4,6 +4,7 @@
     execute if entity @s[advancements={main:trigger={magic=true}}] run function #asset:item/trigger/right_click
     execute if entity @s[advancements={main:trigger={bow=true}}] run function main:combat/attack/ranged/
     execute if entity @s[advancements={main:trigger={consume=true}}] run function #asset:item/trigger/consume
+    execute if entity @s[advancements={main:trigger={ability=true}}] run function #asset:combat/trigger/ability
 # リセット
     advancement revoke @s only main:trigger
     scoreboard players reset #itemID buffer

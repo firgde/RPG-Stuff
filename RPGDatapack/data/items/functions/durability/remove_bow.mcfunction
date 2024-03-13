@@ -50,5 +50,5 @@
     scoreboard players reset #durability buffer
     scoreboard players reset #maxDurability buffer
     scoreboard players reset #enchantcount buffer
-    scoreboard players reset #hasskill buffer
+    scoreboard players reset #hasAbility buffer
     item replace block 0 -59 0 container.0 with air
