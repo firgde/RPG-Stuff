@@ -31,8 +31,8 @@
     scoreboard players reset #100 buffer
     scoreboard players reset #Lore buffer
     scoreboard players reset #itemType buffer
-    scoreboard players reset #healamounthp buffer
-    scoreboard players reset #healamountmp buffer
+    scoreboard players reset #heal_amount_hp buffer
+    scoreboard players reset #heal_amount_mana buffer
     scoreboard players reset #element buffer
     scoreboard players reset #atkBonus buffer
     scoreboard players reset #magBonus buffer

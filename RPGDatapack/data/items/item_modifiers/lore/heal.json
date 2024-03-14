@@ -10,7 +10,7 @@
 				"with": [
 					{
 						"score": {
-							"name": "#healamounthp",
+							"name": "#heal_amount_hp",
 							"objective": "buffer"
 						},
 						"color": "green",
@@ -26,7 +26,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "#healamounthp"
+						"name": "#heal_amount_hp"
 					},
 					"score": "buffer"
 				},
@@ -41,13 +41,13 @@
 		"entity": "this",
 		"lore": [
 			{
-				"translate": "item.ui.mpheal",
+				"translate": "item.ui.mana_heal",
 				"color": "gray",
 				"italic": false,
 				"with": [
 					{
 						"score": {
-							"name": "#healamountmp",
+							"name": "#heal_amount_mana",
 							"objective": "buffer"
 						},
 						"color": "aqua",
@@ -63,7 +63,7 @@
 					"type": "score",
 					"target": {
 						"type": "fixed",
-						"name": "#healamountmp"
+						"name": "#heal_amount_mana"
 					},
 					"score": "buffer"
 				},

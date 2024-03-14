@@ -13,12 +13,12 @@
 		"entity": "this",
 		"lore": [
 			{
-				"translate": "item.ui.text.magic.mprequire",
+				"translate": "item.ui.text.magic.mana_require",
 				"color": "gray",
 				"italic": false,
 				"with": [
 					{
-						"nbt": "Item.tag.Customnbt.mpRequire",
+						"nbt": "Item.tag.Customnbt.mana_require",
 						"storage": "item:",
 						"color": "aqua"
 					}

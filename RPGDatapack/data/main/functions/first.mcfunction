@@ -111,20 +111,18 @@ say reload
         scoreboard objectives add hp_ratio dummy
         scoreboard objectives add hp_buffer dummy
         scoreboard objectives add max_hp_buff dummy
-        scoreboard objectives add healAmountHP dummy
         # 知能(MPとその回復速度)
-        scoreboard objectives add max_mp dummy
-        scoreboard objectives add mp dummy
-        scoreboard objectives add mp_regen dummy
+        scoreboard objectives add max_mana dummy
+        scoreboard objectives add mana dummy
+        scoreboard objectives add mana_regen dummy
         scoreboard objectives add int dummy
         scoreboard objectives add int_bonus dummy
         scoreboard objectives add int_base dummy
         scoreboard objectives add int_enchant dummy
         scoreboard objectives add int_buff dummy
-        scoreboard objectives add healAmountMP dummy
-        scoreboard objectives add healTimerMP dummy
-        scoreboard objectives add healAmountMP dummy
-        scoreboard objectives add mp_ratio dummy
+        scoreboard objectives add heal_amount_mana dummy
+        scoreboard objectives add heal_timer_mana dummy
+        scoreboard objectives add mana_ratio dummy
         # 防御(防御力)
         scoreboard objectives add def dummy
         scoreboard objectives add def_bonus dummy

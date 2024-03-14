@@ -22,8 +22,8 @@
     execute if entity @s[tag=!not_give] run data remove block 0 -59 0 Items
     scoreboard players reset #Lore buffer
     scoreboard players reset #itemType buffer
-    scoreboard players reset #healamounthp buffer
-    scoreboard players reset #healamountmp buffer
+    scoreboard players reset #heal_amount_hp buffer
+    scoreboard players reset #heal_amount_mana buffer
     scoreboard players reset #element buffer
     scoreboard players reset #atkBonus
     scoreboard players reset #magBonus
@@ -40,4 +40,4 @@
     scoreboard players reset #maxDurability buffer
     scoreboard players reset #enchantcount buffer
     scoreboard players reset #hasAbility buffer
-    scoreboard players reset #mprequire buffer
+    scoreboard players reset #mana_require buffer

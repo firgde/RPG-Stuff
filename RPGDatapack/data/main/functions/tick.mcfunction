@@ -11,7 +11,7 @@
 # ステータスのtick処理
     execute as @p run function status:tick
 # MPの処理
-    #execute as @p unless score @s max_mp_base = @s max_mp unless score @s mp = @s max_mp run function status:int/tick
+    #execute as @p unless score @s max_mana_base = @s max_mana unless score @s mana = @s max_mana run function status:int/tick
     execute as @p run function status:int/tick
 # Mobスポナーのチェック
     execute at @p as @e[tag=spawner,type=!item,distance=..15] at @s run function mobs:summon/spawner/tick
