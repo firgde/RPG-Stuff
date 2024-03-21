@@ -19,6 +19,10 @@
     execute store result score #success buffer run function #asset:craft/recipes/crafting
 # アイテム召喚
     execute if score #success buffer matches 1 at @e[tag=slot.4,distance=..10] run function main:craft/crafting/common
+# 演出
+    execute if score #success buffer matches 1 run playsound ogg:block.smithing_table.smithing_table block @s ~ ~ ~ 1 1
+    execute if score #success buffer matches 1 run playsound block.copper.fall block @s ~ ~ ~ 1 1.25
+    execute if score #success buffer matches 1 run playsound block.tuff.break block @s ~ ~ ~ 1 1.5
 # リセット
     scoreboard players reset #success buffer
     scoreboard players reset #length buffer
