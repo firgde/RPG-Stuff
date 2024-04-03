@@ -211,6 +211,7 @@ say reload
     scoreboard players set #10000 const 10000
 # チーム
     team add hostile
+    team modify hostile color dark_purple
     team add no_col
     team modify no_col collisionRule never
     team add ui
