@@ -1,4 +1,6 @@
-# potionCountに1足す
+# 演出(itemCount >= 1のときだけ)
+    execute if score #itemCount buffer matches 1.. run playsound entity.item.pickup block @s ~ ~ ~ 1 0.75
+# itemCountから1引く
     scoreboard players remove #itemCount buffer 1
 # アイテムが入っている、一番数の大きいスロットからポーションを持ってくる
     execute if score #itemCount buffer matches 0 run item replace block 0 -59 0 container.0 from block ~ ~ ~ container.0

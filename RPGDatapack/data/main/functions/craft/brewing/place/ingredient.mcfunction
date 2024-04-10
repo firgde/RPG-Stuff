@@ -6,6 +6,9 @@
 # 醸造台のItemsにアイテムを足す
     execute if data entity @s SelectedItem.tag{Customnbt:{brewingMaterial:1b,brewingPowder:0b}} at @e[tag=brewing,limit=1,distance=..6,sort=nearest,scores={hasTarget=1}] run item replace block ~ ~ ~ container.3 from block 0 -59 0 container.0
     execute if data entity @s SelectedItem.tag{Customnbt:{brewingMaterial:1b,brewingPowder:1b}} at @e[tag=brewing,limit=1,distance=..6,sort=nearest,scores={hasTarget=1}] run item replace block ~ ~ ~ container.4 from block 0 -59 0 container.0
+# 素材か粉の演出
+    execute if data entity @s SelectedItem.tag{Customnbt:{brewingPowder:0b}} run playsound block.decorated_pot.insert block @s ~ ~ ~ 1 1
+    execute if data entity @s SelectedItem.tag{Customnbt:{brewingPowder:1b}} run playsound block.suspicious_sand.place block @s ~ ~ ~ 1 1
 # アイテムを一個減らす
     item modify entity @s weapon.mainhand main:craft/remove
 # リセット

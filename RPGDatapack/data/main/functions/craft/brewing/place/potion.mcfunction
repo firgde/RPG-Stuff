@@ -13,6 +13,8 @@
     execute if score #itemCount buffer matches 3.. run item replace entity @e[tag=brewing.slot.2,limit=1,sort=nearest] container.0 with glass_bottle{CustomModelData:1}
 # アイテムを一個減らす
     item modify entity @s weapon.mainhand main:craft/remove
+# 演出
+    playsound block.copper_bulb.place block @s ~ ~ ~ 1 0.75
 # リセット
     scoreboard players reset #itemCount buffer
     item replace block 0 -59 0 container.0 with air
