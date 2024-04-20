@@ -12,9 +12,6 @@
     item modify block 0 -59 0 container.0 items:lore/elements
     item modify block 0 -59 0 container.0 items:lore/info
 # アイテムｶﾓｫｫｫｫﾝ
-    item replace block 0 -59 0 container.1 with air
-    item replace block 0 -59 0 container.2 with air
-    item replace block 0 -59 0 container.3 with air
     loot give @s[tag=!not_give] mine 0 -59 0 mainhand
 # リセット
     data remove storage item: Item
