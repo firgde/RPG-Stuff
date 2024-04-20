@@ -3,7 +3,9 @@
 # ルートテーブル万能説
     loot replace block 0 -59 0 container.1 loot main:craft/enchantments/all
 # 生成されたアイテムのタグからエンチャントを特定
-    function main:craft/enchanting/specify
+    #スキルエンチャントの場合はアイテムによって特定
+    execute if data block 0 -59 0 Items[{tag:{EnchantData:{ability_enchantment:1b}}}] run function main:craft/enchanting/ability/apply
+    function #asset:craft/enchantments
 # エンチャント適用
     data modify block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantments append from block 0 -59 0 Items[{Slot:1b}].tag.EnchantData
     execute store result score #enchantcount buffer if data block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantments

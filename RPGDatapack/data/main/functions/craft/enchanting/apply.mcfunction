@@ -30,10 +30,6 @@
     execute store result score #slot3 buffer run data get block ~ ~ ~ Items[{Slot:3b,tag:{Customnbt:{EnchantMaterial:1b}}}].tag.Customnbt.EnchantBoost
     execute store result score #slot5 buffer run data get block ~ ~ ~ Items[{Slot:5b,tag:{Customnbt:{EnchantMaterial:1b}}}].tag.Customnbt.EnchantBoost
     execute store result score #slot7 buffer run data get block ~ ~ ~ Items[{Slot:7b,tag:{Customnbt:{EnchantMaterial:1b}}}].tag.Customnbt.EnchantBoost
-    item modify block ~ ~ ~ container.1 main:craft/remove
-    item modify block ~ ~ ~ container.3 main:craft/remove
-    item modify block ~ ~ ~ container.5 main:craft/remove
-    item modify block ~ ~ ~ container.7 main:craft/remove
     scoreboard players operation #enchantLv buffer += #slot1 buffer
     scoreboard players operation #enchantLv buffer += #slot3 buffer
     scoreboard players operation #enchantLv buffer += #slot5 buffer
@@ -46,11 +42,17 @@
     scoreboard players operation #rec buffer /= #10 const
     scoreboard players add #rec buffer 1
     function main:craft/enchanting/rec
+# アイテム減らす
+    item modify block ~ ~ ~ container.1 main:craft/remove
+    item modify block ~ ~ ~ container.3 main:craft/remove
+    item modify block ~ ~ ~ container.5 main:craft/remove
+    item modify block ~ ~ ~ container.7 main:craft/remove
 # エンチャントがついたなら演出
     execute if data block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantments run data modify block ~ ~ ~ Items[{Slot:4b}].tag.Enchantments set value [{}]
     execute if data block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantments run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1
     execute if data block ~ ~ ~ Items[{Slot:4b}].tag.Customnbt.Enchantments run particle enchant ~ ~2 ~ 0.25 0.25 0.25 2 50
 # リセット
+    data remove block 0 -59 0 Items
     scoreboard players reset #rng buffer
     scoreboard players reset #rec buffer
     scoreboard players reset #enchantLv
