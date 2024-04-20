@@ -1,7 +1,6 @@
 # 0 -59 0 のシュルカーボックスにストレージからアイテムを入れる
     item replace block 0 -59 0 container.0 with air
 # LootReferenceに応じてアイテムをシュル箱に入れる
-    $say $(LootReference)
     $execute unless data storage social: data.npc.Recipes[-1].Item{LootReference:"gemstone_shard"} run function asset:item/$(LootReference)/give
 # 宝石の欠片
     #moneycountを1に
