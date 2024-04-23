@@ -5,7 +5,7 @@
             "conditions": {
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags:[\"crafting\",\"slot.1\"]}"
+                    "nbt": "{Tags:[\"crafting\"]}"
                 },
                 "player": [
                     {
@@ -30,7 +30,7 @@
             "conditions": {
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags:[\"crafting\",\"slot.1\"]}"
+                    "nbt": "{Tags:[\"crafting\"]}"
                 },
                 "player": [
                     {
@@ -58,6 +58,6 @@
         ]
     ],
     "rewards": {
-        "function": "main:craft/crafting/slot_1/pick"
+        "function": "main:craft/crafting/interact"
     }
 }

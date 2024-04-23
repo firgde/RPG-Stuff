@@ -6,5 +6,6 @@
     execute if entity @s[advancements={main:craft/brewing/interact={left=true}}] at @e[tag=brewing,limit=1,distance=..6,sort=nearest,scores={hasTarget=1}] run function main:craft/brewing/pick
 # リセット
     scoreboard players reset #itemCount buffer
+    scoreboard players reset #modify_count buffer
     scoreboard players reset @e[scores={hasTarget=1..}] hasTarget
     advancement revoke @s only main:craft/brewing/interact

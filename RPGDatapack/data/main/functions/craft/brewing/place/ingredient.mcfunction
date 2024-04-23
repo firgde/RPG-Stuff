@@ -10,7 +10,9 @@
     execute if data entity @s SelectedItem.tag{Customnbt:{brewingPowder:0b}} run playsound block.decorated_pot.insert block @s ~ ~ ~ 1 1
     execute if data entity @s SelectedItem.tag{Customnbt:{brewingPowder:1b}} run playsound block.suspicious_sand.place block @s ~ ~ ~ 1 1
 # アイテムを一個減らす
-    item modify entity @s weapon.mainhand main:craft/remove
+    scoreboard players set #modify_count buffer -1
+    item modify entity @s weapon.mainhand items:count
 # リセット
+    scoreboard players reset #modify_count buffer
     scoreboard players reset #itemCount buffer
     item replace block 0 -59 0 container.0 with air
