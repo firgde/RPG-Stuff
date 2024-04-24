@@ -2,7 +2,7 @@
     item replace block 0 -59 0 container.1 with air
     execute at @s run data modify block 0 -59 0 Items[{Slot:0b}] set from entity @e[limit=1,sort=nearest,tag=slot,type=item_display] item
     #左クリックしていたらアイテム消去
-    execute if entity @p[advancements={main:craft/crafting/interact={left=true}}] at @s run item replace entity @e[limit=1,sort=nearest,tag=slot,type=item_display] container.0 with air
+    execute if entity @p[advancements={main:craft/crafting/interact={left=true}}] at @s run item replace entity @e[limit=1,sort=nearest,tag=slot,type=item_display] contents with air
     #右クリックしていたら交換
     execute if entity @p[advancements={main:craft/crafting/interact={right=true}}] run function main:craft/crafting/slot/place
     #そしてアイテム還元

@@ -1,9 +1,9 @@
-# durHealをCustomnbtの耐久値に加算
-    execute store result score #durability buffer run data get entity @s item.tag.Customnbt.Durability
-    execute store result score #maxDurability buffer run data get entity @s item.tag.Customnbt.MaxDurability
+# durHealをcustom_dataの耐久値に加算
+    execute store result score #durability buffer run data get entity @s item.components.custom_data.Durability
+    execute store result score #maxDurability buffer run data get entity @s item.components.custom_data.MaxDurability
     scoreboard players operation #durability buffer += #durHeal buffer
-    execute store result storage item: Item.tag.Customnbt.Durability int 1 run scoreboard players operation #durability buffer < #maxDurability buffer
-    item modify entity @s container.0 main:update_durability
+    execute store result storage item: Item.components.custom_data.Durability int 1 run scoreboard players operation #durability buffer < #maxDurability buffer
+    item modify entity @s contents main:update_durability
 # アイテムの耐久ゲージを更新
     scoreboard players operation #durability buffer *= #100 const
     execute store result score #durRatio buffer run scoreboard players operation #durability buffer /= #maxDurability buffer
@@ -11,14 +11,14 @@
     execute store result storage item: data.Damage int 1 run scoreboard players operation #100 buffer -= #durRatio buffer
 # 代入
     data modify storage item: Item set from entity @s item
-    item modify entity @s container.0 main:update_durability_display
-    item replace block 0 -59 0 container.0 from entity @s container.0
+    item modify entity @s contents main:update_durability_display
+    item replace block 0 -59 0 container.0 from entity @s contents
     execute positioned 0 -59 0 run function items:get_data
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
     execute if score #enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
     item modify block 0 -59 0 container.0 items:lore/info
-    item replace entity @s container.0 from block 0 -59 0 container.0
+    item replace entity @s contents from block 0 -59 0 container.0
 # 修理素材を消す
     execute as @e[tag=repair_material,distance=..3] run data remove entity @s item
 # 演出

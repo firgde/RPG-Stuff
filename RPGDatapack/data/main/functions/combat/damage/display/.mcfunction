@@ -9,8 +9,8 @@
     execute store result storage combat: data.Damage.Amount int 1 run scoreboard players get @s damage
     execute unless score #damageType buffer matches 10.. run loot spawn ~ ~1.5 ~ loot main:combat/damage/single
     execute if score #damageType buffer matches 10.. run loot spawn ~ ~1.5 ~ loot main:combat/damage/combined
-    execute at @s positioned ~ ~1.5 ~ as @e[sort=nearest,type=item,distance=..0.5] if entity @s[nbt={Item:{tag:{DisplayDamage:1b}}}] run tag @s add dmg_display
-    execute as @e[tag=dmg_display,sort=nearest] run data modify entity @s CustomName set from entity @s Item.tag.display.Name
+    execute at @s positioned ~ ~1.5 ~ as @e[sort=nearest,type=item,distance=..0.5] if entity @s[nbt={Item:{components:{custom_data:{DisplayDamage:1b}}}}] run tag @s add dmg_display
+    execute as @e[tag=dmg_display,sort=nearest] run data modify entity @s CustomName set from entity @s Item.components.item_name
     execute as @e[tag=dmg_display,distance=..5,sort=nearest] run data merge entity @s {PickupDelay:32767,Age:5985,CustomNameVisible:1b}
 # リセット
     scoreboard players reset #damage buffer

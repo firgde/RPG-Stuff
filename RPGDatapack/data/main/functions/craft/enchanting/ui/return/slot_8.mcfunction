@@ -2,6 +2,6 @@
     item replace block 0 -59 0 container.0 with stick
     data modify block 0 -59 0 Items[0].id set from block ~ ~ ~ Items[{Slot:8b}].id
     data modify block 0 -59 0 Items[0].Count set from block ~ ~ ~ Items[{Slot:8b}].Count
-    data modify block 0 -59 0 Items[0].tag set from block ~ ~ ~ Items[{Slot:8b}].tag
+    data modify block 0 -59 0 Items[0].components set from block ~ ~ ~ Items[{Slot:8b}].components
     execute unless data block ~ ~ ~ Items[{Slot:8b}] run item replace block 0 -59 0 container.0 with air
-    item replace block ~ ~ ~ container.8 with stick{CustomModelData:1,ui:1b,menu:"enchanter",display:{Name:'{"text": ""}'}}
+    item replace block ~ ~ ~ container.8 with stick[custom_model_data=1,hide_tooltip={},custom_data={ui:1b,menu:"enchanter"}]

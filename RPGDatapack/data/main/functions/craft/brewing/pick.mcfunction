@@ -16,9 +16,9 @@
     execute if score #itemCount buffer matches ..3 run data remove block ~ ~ ~ Items[{Slot:3b}]
     execute if score #itemCount buffer matches ..4 run data remove block ~ ~ ~ Items[{Slot:4b}]
 # potionCountに応じてitem_displayの表示を変える
-    execute if score #itemCount buffer matches 0 run item replace entity @e[tag=brewing.slot.0,limit=1,sort=nearest] container.0 with air
-    execute if score #itemCount buffer matches ..1 run item replace entity @e[tag=brewing.slot.1,limit=1,sort=nearest] container.0 with air
-    execute if score #itemCount buffer matches ..2 run item replace entity @e[tag=brewing.slot.2,limit=1,sort=nearest] container.0 with air
+    execute if score #itemCount buffer matches 0 run item replace entity @e[tag=brewing.slot.0,limit=1,sort=nearest] contents with air
+    execute if score #itemCount buffer matches ..1 run item replace entity @e[tag=brewing.slot.1,limit=1,sort=nearest] contents with air
+    execute if score #itemCount buffer matches ..2 run item replace entity @e[tag=brewing.slot.2,limit=1,sort=nearest] contents with air
 # リセット
     scoreboard players reset #itemCount buffer
     data remove block 0 -59 0 Items

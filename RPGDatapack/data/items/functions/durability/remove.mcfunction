@@ -1,13 +1,13 @@
-# Customnbtの耐久値を減算
-    execute store result score @s durability run data get entity @s SelectedItem.tag.Customnbt.Durability
+# custom_dataの耐久値を減算
+    execute store result score @s durability run data get entity @s SelectedItem.components.custom_data.Durability
     scoreboard players remove @s durability 1
     scoreboard players operation #durability buffer = @s durability
-    execute store result storage item: Item.tag.Customnbt.Durability int 1 run scoreboard players get #durability buffer
+    execute store result storage item: Item.components.custom_data.Durability int 1 run scoreboard players get #durability buffer
     item modify entity @s weapon.mainhand main:update_durability
 # 0未満なら壊す
     execute if score @s durability matches ..-1 run function items:durability/break
 # アイテムの耐久ゲージを更新
-    execute store result score @s maxDurability run data get entity @s SelectedItem.tag.Customnbt.MaxDurability
+    execute store result score @s maxDurability run data get entity @s SelectedItem.components.custom_data.MaxDurability
     scoreboard players operation #maxDurability buffer = @s maxDurability
     scoreboard players operation @s durability *= #100 const
     execute store result score @s dur_ratio run scoreboard players operation @s durability /= @s maxDurability
@@ -20,7 +20,7 @@
     execute positioned 0 -59 0 run function items:get_data
     item modify entity @s weapon.mainhand items:lore/text
     item modify entity @s weapon.mainhand items:lore/status
-    execute if data storage item: Item.tag.Customnbt{weaponType:2} run item modify entity @s weapon.mainhand items:lore/magic
+    execute if data storage item: Item.components.custom_data{weaponType:2} run item modify entity @s weapon.mainhand items:lore/magic
     execute if score #enchantcount buffer matches 1.. run function items:set_data/rec_mainhand
     item modify entity @s weapon.mainhand items:lore/info
 # リセット

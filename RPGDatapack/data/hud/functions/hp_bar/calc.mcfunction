@@ -1,7 +1,7 @@
 # ストレージを一旦リセット
     data remove storage combat: data.hud.hpBar
 # 名前
-    data modify storage combat: data.hud.Name set from entity @s ArmorItems[3].tag.display.Name
+    data modify storage combat: data.hud.Name set from entity @s ArmorItems[3].components.item_name
 # 残り体力の割合を5%単位で算出
     scoreboard players operation @s hp_ratio = @s hp
     scoreboard players operation @s hp_ratio *= #20 const

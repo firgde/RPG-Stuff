@@ -5,15 +5,15 @@
 # ダメージを取得
     scoreboard players operation @s damage = @e[tag=magic,sort=nearest,limit=1] mag
 # 属性を取得
-    execute store result score #mainElement buffer run data get entity @e[tag=magic,sort=nearest,limit=1] item.tag.data.Element.Type[0]
-    execute store result score #sideElement buffer run data get entity @e[tag=magic,sort=nearest,limit=1] item.tag.data.Element.Type[1]
+    execute store result score #mainElement buffer run data get entity @e[tag=magic,sort=nearest,limit=1] item.components.data.Element.Type[0]
+    execute store result score #sideElement buffer run data get entity @e[tag=magic,sort=nearest,limit=1] item.components.data.Element.Type[1]
     execute unless score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #mainElement buffer
     execute if score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #sideElement buffer
 # デバフデータ取得
-    execute store result score #mainElement buff_amount run data get entity @e[tag=magic,sort=nearest,limit=1] item.tag.data.Element.Debuff[0].Amount
-    execute store result score #mainElement buff_timer run data get entity @e[tag=magic,sort=nearest,limit=1] item.tag.data.Element.Debuff[0].Timer
-    execute store result score #sideElement buff_amount run data get entity @e[tag=magic,sort=nearest,limit=1] item.tag.data.Element.Debuff[1].Amount
-    execute store result score #sideElement buff_timer run data get entity @e[tag=magic,sort=nearest,limit=1] item.tag.data.Element.Debuff[1].Timer
+    execute store result score #mainElement buff_amount run data get entity @e[tag=magic,sort=nearest,limit=1] item.components.data.Element.Debuff[0].Amount
+    execute store result score #mainElement buff_timer run data get entity @e[tag=magic,sort=nearest,limit=1] item.components.data.Element.Debuff[0].Timer
+    execute store result score #sideElement buff_amount run data get entity @e[tag=magic,sort=nearest,limit=1] item.components.data.Element.Debuff[1].Amount
+    execute store result score #sideElement buff_timer run data get entity @e[tag=magic,sort=nearest,limit=1] item.components.data.Element.Debuff[1].Timer
 # 演出
     particle enchanted_hit ~ ~ ~ 0.1 0.1 0.1 0.5 25
     particle crit ~ ~ ~ 0.1 0.3 0.1 0.5 25

@@ -1,8 +1,8 @@
 # アイテムgive防止タグ
     tag @s add not_give
 # 二つのアイテムのID度取得
-    execute store result score #id0 buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.tag.Customnbt.id
-    execute store result score #id1 buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.tag.Customnbt.id
+    execute store result score #id0 buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.components.custom_data.id
+    execute store result score #id1 buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.components.custom_data.id
 # IDによってアイテム設定
     # function main:craft/alchemy/specify
     execute store result score #success buffer run function #asset:craft/recipes/alchemy
