@@ -4,10 +4,11 @@
 		"entity": "this",
 		"lore": [
 			{
-				"nbt": "Item.tag.Customnbt.Enchantments[0].Text",
+				"nbt": "Item.components.custom_data.Enchantments[0].Text",
 				"storage": "item:",
 				"interpret": true
 			}
-		]
+		],
+		"mode": "append"
 	}
 ]

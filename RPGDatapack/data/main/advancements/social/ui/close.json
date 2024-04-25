@@ -6,13 +6,17 @@
                 "player": {
                     "equipment": {
                         "head": {
-                            "nbt": "{Customnbt:{onUI:1b}}"
+                            "predicates": {
+                                "custom_data": "{onUI:1b}"
+                            }
                         }
                     }
                 },
                 "items": [
                     {
-                        "nbt": "{Customnbt:{onUI:1b}}"
+                        "predicates": {
+                            "custom_data": "{onUI:1b}"
+                        }
                     }
                 ]
             }

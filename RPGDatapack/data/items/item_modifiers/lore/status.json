@@ -7,6 +7,7 @@
 				"text": " "
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -160,6 +161,7 @@
 				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -185,6 +187,7 @@
 				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -210,6 +213,7 @@
 				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -235,6 +239,7 @@
 				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -260,6 +265,7 @@
 				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -285,6 +291,7 @@
 				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -310,6 +317,7 @@
 				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -355,6 +363,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -400,6 +409,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -447,6 +457,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -492,6 +503,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -539,6 +551,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -584,6 +597,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -631,6 +645,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -676,6 +691,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -723,6 +739,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -768,6 +785,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -815,6 +833,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -860,6 +879,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -907,6 +927,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -952,6 +973,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -999,6 +1021,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -1044,6 +1067,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -1091,6 +1115,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -1136,6 +1161,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -1183,6 +1209,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -1228,6 +1255,7 @@
 				}
 			]
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -1252,6 +1280,7 @@
 				"text": " "
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",

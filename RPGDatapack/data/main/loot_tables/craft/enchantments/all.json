@@ -17,7 +17,7 @@
 											"blocks": [
 												"dispenser"
 											],
-											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:0}}}]}"
+											"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:0}}}]}"
 										}
 									}
 								},
@@ -28,7 +28,7 @@
 											"blocks": [
 												"dispenser"
 											],
-											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:1}}}]}"
+											"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:1}}}]}"
 										}
 									}
 								},
@@ -39,7 +39,7 @@
 											"blocks": [
 												"dispenser"
 											],
-											"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:4}}}]}"
+											"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:4}}}]}"
 										}
 									}
 								}
@@ -58,7 +58,7 @@
 									"blocks": [
 										"dispenser"
 									],
-									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:2}}}]}"
+									"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:2}}}]}"
 								}
 							}
 						}
@@ -75,7 +75,7 @@
 									"blocks": [
 										"dispenser"
 									],
-									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{weaponType:3}}}]}"
+									"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:3}}}]}"
 								}
 							}
 						}
@@ -92,7 +92,7 @@
 									"blocks": [
 										"dispenser"
 									],
-									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{armor:1b}}}]}"
+									"nbt": "{Items:[{Slot:4b,components:{custom_data:{armor:1b}}}]}"
 								}
 							}
 						}
@@ -108,7 +108,7 @@
 					"weight": 100000000000,
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "set_custom_data",
 							"tag": "{EnchantData:{ability_enchantment:1b}}"
 						}
 					],
@@ -117,7 +117,7 @@
 							"condition": "location_check",
 							"predicate": {
 								"block": {
-									"nbt": "{Items:[{Slot:4b,tag:{Customnbt:{HasAbility:0b}}}]}"
+									"nbt": "{Items:[{Slot:4b,components:{custom_data:{HasAbility:0b}}}]}"
 								}
 							}
 						}

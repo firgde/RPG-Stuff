@@ -1,7 +1,7 @@
 [
 	{
 		"function": "set_lore",
-		"entity":"this",
+		"entity": "this",
 		"lore": [
 			{
 				"text": " "
@@ -10,7 +10,7 @@
 				"translate": "item.ui.ability",
 				"with": [
 					{
-						"nbt": "Item.tag.Customnbt.Ability.Name",
+						"nbt": "Item.components.custom_data.Ability.Name",
 						"storage": "item:",
 						"interpret": true,
 						"color": "aqua",
@@ -21,6 +21,7 @@
 				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -63,6 +64,7 @@
 				"text": " "
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "any_of",
@@ -107,8 +109,6 @@
 		"lore": [
 			{
 				"translate": "item.ui.durability",
-				"color": "white",
-				"italic": false,
 				"with": [
 					{
 						"score": {
@@ -124,9 +124,12 @@
 						"color": "white",
 						"italic": false
 					}
-				]
+				],
+				"color": "white",
+				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "any_of",
@@ -171,17 +174,18 @@
 		"lore": [
 			{
 				"translate": "item.ui.rarity",
-				"color": "white",
-				"italic": false,
 				"with": [
 					{
 						"translate": "item.ui.rarity.common",
 						"bold": true,
 						"italic": false
 					}
-				]
+				],
+				"color": "white",
+				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -203,8 +207,6 @@
 		"lore": [
 			{
 				"translate": "item.ui.rarity",
-				"color": "white",
-				"italic": false,
 				"with": [
 					{
 						"translate": "item.ui.rarity.uncommon",
@@ -212,9 +214,12 @@
 						"bold": true,
 						"italic": false
 					}
-				]
+				],
+				"color": "white",
+				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -236,8 +241,6 @@
 		"lore": [
 			{
 				"translate": "item.ui.rarity",
-				"color": "white",
-				"italic": false,
 				"with": [
 					{
 						"translate": "item.ui.rarity.rare",
@@ -245,9 +248,12 @@
 						"bold": true,
 						"italic": false
 					}
-				]
+				],
+				"color": "white",
+				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -269,8 +275,6 @@
 		"lore": [
 			{
 				"translate": "item.ui.rarity",
-				"color": "white",
-				"italic": false,
 				"with": [
 					{
 						"translate": "item.ui.rarity.epic",
@@ -278,9 +282,12 @@
 						"bold": true,
 						"italic": false
 					}
-				]
+				],
+				"color": "white",
+				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -302,8 +309,6 @@
 		"lore": [
 			{
 				"translate": "item.ui.rarity",
-				"color": "white",
-				"italic": false,
 				"with": [
 					{
 						"translate": "item.ui.rarity.legendary",
@@ -311,9 +316,12 @@
 						"bold": true,
 						"italic": false
 					}
-				]
+				],
+				"color": "white",
+				"italic": false
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",

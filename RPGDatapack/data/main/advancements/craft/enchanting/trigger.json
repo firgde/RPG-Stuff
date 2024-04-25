@@ -9,7 +9,9 @@
                 "player": {
                     "equipment": {
                         "mainhand": {
-                            "nbt": "{Customnbt:{id:5100}}"
+                            "predicates": {
+                                "custom_data": "{id:5100}"
+                            }
                         }
                     }
                 }

@@ -7,8 +7,8 @@
 		},
 		"ops": [
 			{
-				"source": "Item.tag.Customnbt.Durability",
-				"target": "Customnbt.Durability",
+				"source": "Item.components.custom_data.Durability",
+				"target": "custom_data.Durability",
 				"op": "replace"
 			}
 		]

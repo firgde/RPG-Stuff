@@ -4,7 +4,9 @@
             "trigger": "consume_item",
             "conditions": {
                 "item": {
-                    "nbt": "{Customnbt:{consumable:1b}}"
+                    "predicates": {
+                        "custom_data": "{consumable:1b}"
+                    }
                 }
             }
         }

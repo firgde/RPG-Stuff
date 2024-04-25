@@ -37,8 +37,14 @@
                             ]
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomModelData:8998,Customnbt:{id:8998}}"
+                            "function": "set_custom_data",
+                            "entity": "this",
+                            "tag": "{id:8998}"
+                        },
+                        {
+                            "function": "set_custom_model_data",
+                            "entity": "this",
+                            "value": 8998
                         }
                     ]
                 }

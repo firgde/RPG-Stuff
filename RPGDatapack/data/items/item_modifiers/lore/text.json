@@ -4,19 +4,19 @@
 		"entity": "this",
 		"lore": [
 			{
-				"nbt": "Item.tag.display.Lore[0]",
+				"nbt": "Item.components.lore[0]",
 				"storage": "item:",
 				"interpret": true
 			}
 		],
-		"replace": true
+		"mode": "replace_all"
 	},
 	{
 		"function": "set_lore",
 		"entity": "this",
 		"lore": [
 			{
-				"nbt": "Item.tag.display.Lore[1]",
+				"nbt": "Item.components.lore[1]",
 				"storage": "item:",
 				"interpret": true
 			}
@@ -34,6 +34,7 @@
 				},
 				"range": 2
 			}
-		]
+		],
+		"mode": "append"
 	}
 ]

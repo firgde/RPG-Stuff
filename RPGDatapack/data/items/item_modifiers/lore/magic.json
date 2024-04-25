@@ -6,7 +6,7 @@
 				"text": " "
 			}
 		],
-		"replace": false
+		"mode": "append"
 	},
 	{
 		"function": "set_lore",
@@ -14,43 +14,43 @@
 		"lore": [
 			{
 				"translate": "item.ui.text.magic.mana_require",
-				"color": "gray",
-				"italic": false,
 				"with": [
 					{
-						"nbt": "Item.tag.Customnbt.mana_require",
+						"nbt": "Item.components.custom_data.mana_require",
 						"storage": "item:",
 						"color": "aqua"
 					}
-				]
+				],
+				"color": "gray",
+				"italic": false
 			},
 			{
 				"translate": "item.ui.text.magic.time",
-				"color": "gray",
-				"italic": false,
 				"with": [
 					{
-						"nbt": "Item.tag.Customnbt.magicData.display.Time",
+						"nbt": "Item.components.custom_data.magicData.display.Time",
 						"storage": "item:",
 						"color": "light_purple",
 						"italic": false
 					}
-				]
+				],
+				"color": "gray",
+				"italic": false
 			},
 			{
 				"translate": "item.ui.text.magic.cooldown",
-				"color": "gray",
-				"italic": false,
 				"with": [
 					{
-						"nbt": "Item.tag.Customnbt.magicData.display.CoolDown",
+						"nbt": "Item.components.custom_data.magicData.display.CoolDown",
 						"storage": "item:",
 						"color": "light_purple",
 						"italic": false
 					}
-				]
+				],
+				"color": "gray",
+				"italic": false
 			}
 		],
-		"replace": false
+		"mode": "append"
 	}
 ]

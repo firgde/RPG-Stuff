@@ -36,7 +36,9 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{ui:1b,menu:\"enchanter\"}"
+                        "predicates": {
+                            "custom_data": "{ui:1b,menu:\"enchanter\"}"
+                        }
                     }
                 ],
                 "player": [

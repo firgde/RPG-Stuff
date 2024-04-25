@@ -1,6 +1,6 @@
 [
 	{
-		"function": "copy_nbt",
+		"function": "copy_custom_data",
 		"source": {
 			"type": "storage",
 			"source": "combat:"
@@ -8,7 +8,7 @@
 		"ops": [
 			{
 				"source": "data.magic[0].CoolDown",
-				"target": "Customnbt.magicData.TimeUsed",
+				"target": "magicData.TimeUsed",
 				"op": "replace"
 			}
 		]
