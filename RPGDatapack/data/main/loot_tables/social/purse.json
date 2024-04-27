@@ -9,6 +9,7 @@
                     "functions": [
                         {
                             "function": "set_name",
+                            "target": "item_name",
                             "entity": "this",
                             "name": {
                                 "translate":"item.purse",
@@ -34,7 +35,8 @@
                                     "bold": true,
                                     "italic":false
                                 }
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_custom_data",
