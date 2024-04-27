@@ -6,7 +6,7 @@
     #右クリックしていたら交換
     execute if entity @p[advancements={main:craft/crafting/interact={right=true}}] run function main:craft/crafting/slot/place
     #そしてアイテム還元
-    execute if data entity @p SelectedItem run loot give @p mine 0 -59 0 mainhand
+    execute as @p if data entity @s SelectedItem run loot give @s mine 0 -59 0 mainhand
     execute unless data entity @p SelectedItem run item replace entity @p weapon.mainhand from block 0 -59 0 container.0
 # リセット
     item replace block 0 -59 0 container.0 with air
