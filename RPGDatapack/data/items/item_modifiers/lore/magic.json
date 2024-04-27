@@ -16,7 +16,7 @@
 				"translate": "item.ui.text.magic.mana_require",
 				"with": [
 					{
-						"nbt": "Item.components.custom_data.mana_require",
+						"nbt": "Item.components.\"minecraft:custom_data\".mana_require",
 						"storage": "item:",
 						"color": "aqua"
 					}
@@ -28,7 +28,7 @@
 				"translate": "item.ui.text.magic.time",
 				"with": [
 					{
-						"nbt": "Item.components.custom_data.magicData.display.Time",
+						"nbt": "Item.components.\"minecraft:custom_data\".magicData.display.Time",
 						"storage": "item:",
 						"color": "light_purple",
 						"italic": false
@@ -41,7 +41,7 @@
 				"translate": "item.ui.text.magic.cooldown",
 				"with": [
 					{
-						"nbt": "Item.components.custom_data.magicData.display.CoolDown",
+						"nbt": "Item.components.\"minecraft:custom_data\".magicData.display.CoolDown",
 						"storage": "item:",
 						"color": "light_purple",
 						"italic": false

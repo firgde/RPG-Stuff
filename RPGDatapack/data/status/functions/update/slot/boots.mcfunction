@@ -1,14 +1,14 @@
 # /dATa gEt
-    execute store result score @s atk_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.atk
-    execute store result score @s mag_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.mag
-    execute store result score @s dex_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.dex
-    execute store result score @s max_hp_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.hp
-    execute store result score @s int_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.int
-    execute store result score @s def_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.def
-    execute store result score @s spd_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.spd
-    execute store result score @s crt_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.crt
-    execute store result score @s luk_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.luk
-    execute store result score @s acc_bonus run data get entity @s Inventory[{Slot:100b}].components.custom_data.status.acc
+    execute store result score @s atk_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.atk
+    execute store result score @s mag_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.mag
+    execute store result score @s dex_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.dex
+    execute store result score @s max_hp_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.hp
+    execute store result score @s int_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.int
+    execute store result score @s def_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.def
+    execute store result score @s spd_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.spd
+    execute store result score @s crt_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.crt
+    execute store result score @s luk_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.luk
+    execute store result score @s acc_bonus run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".status.acc
 # 合計
     scoreboard players operation @s atk_bonus += @s atk_enchant
     scoreboard players operation @s mag_bonus += @s mag_enchant

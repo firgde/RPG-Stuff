@@ -13,8 +13,8 @@
     scoreboard players operation @s damage *= @p dealtDamage
     scoreboard players operation @s damage /= #100 const
 # デバフなしで属性取得
-    execute store result score #mainElement buffer run data get entity @p SelectedItem.components.custom_data.Element.Type
-    execute store result score #sideElement buffer run data get entity @p Inventory[{Slot:-106b,components:{custom_data:{offhandOnly:1b}}}].components.custom_data.Element.Type
+    execute store result score #mainElement buffer run data get entity @p SelectedItem.components."minecraft:custom_data".Element.Type
+    execute store result score #sideElement buffer run data get entity @p Inventory[{Slot:-106b,components:{"minecraft:custom_data":{offhandOnly:1b}}}].components."minecraft:custom_data".Element.Type
     execute unless score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #mainElement buffer
     execute if score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #sideElement buffer
     tag @s add hurt.combo

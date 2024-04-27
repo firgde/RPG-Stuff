@@ -21,7 +21,7 @@
 # loot_tableを参照
     data modify entity @s DeathLootTable set from storage mob: Data.loot.DeathLootTable
 # 名前を参照
-    data modify entity @s ArmorItems[3].components.item_name set from storage mob: Data.Name
+    data modify entity @s ArmorItems[3].components."minecraft:item_name" set from storage mob: Data.Name
     data modify entity @s CustomNameVisible set value 0b
 # attributeに関与するもの
     execute store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base float 0.01 run data get storage mob: Data.status.baseSpd

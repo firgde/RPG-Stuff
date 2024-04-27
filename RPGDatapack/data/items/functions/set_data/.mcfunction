@@ -7,8 +7,8 @@
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
     execute if score #enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
-    execute if data storage item: Item.components.custom_data{weaponType:2} run item modify block 0 -59 0 container.0 items:lore/magic
-    execute if data storage item: Item.components.custom_data{food:1b} run item modify block 0 -59 0 container.0 items:lore/heal
+    execute if data storage item: Item.components."minecraft:custom_data"{weaponType:2} run item modify block 0 -59 0 container.0 items:lore/magic
+    execute if data storage item: Item.components."minecraft:custom_data"{food:1b} run item modify block 0 -59 0 container.0 items:lore/heal
     item modify block 0 -59 0 container.0 items:lore/elements
     item modify block 0 -59 0 container.0 items:lore/info
 # アイテムｶﾓｫｫｫｫﾝ

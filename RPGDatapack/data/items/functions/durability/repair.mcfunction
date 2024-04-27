@@ -1,8 +1,8 @@
 # durHealをcustom_dataの耐久値に加算
-    execute store result score #durability buffer run data get entity @s item.components.custom_data.Durability
-    execute store result score #maxDurability buffer run data get entity @s item.components.custom_data.MaxDurability
+    execute store result score #durability buffer run data get entity @s item.components."minecraft:custom_data".Durability
+    execute store result score #maxDurability buffer run data get entity @s item.components."minecraft:custom_data".MaxDurability
     scoreboard players operation #durability buffer += #durHeal buffer
-    execute store result storage item: Item.components.custom_data.Durability int 1 run scoreboard players operation #durability buffer < #maxDurability buffer
+    execute store result storage item: Item.components."minecraft:custom_data".Durability int 1 run scoreboard players operation #durability buffer < #maxDurability buffer
     item modify entity @s contents main:update_durability
 # アイテムの耐久ゲージを更新
     scoreboard players operation #durability buffer *= #100 const

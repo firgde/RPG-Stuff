@@ -7,7 +7,7 @@
 		},
 		"ops": [
 			{
-				"source": "Item.components.custom_data.Durability",
+				"source": "Item.components."minecraft:custom_data".Durability",
 				"target": "custom_data.Durability",
 				"op": "replace"
 			}

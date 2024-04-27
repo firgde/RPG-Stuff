@@ -10,7 +10,7 @@
 				"translate": "item.ui.ability",
 				"with": [
 					{
-						"nbt": "Item.components.custom_data.Ability.Name",
+						"nbt": "Item.components.minecraft:\"custom_data\".Ability.Name",
 						"storage": "item:",
 						"interpret": true,
 						"color": "aqua",
@@ -41,6 +41,7 @@
 		"function": "set_lore",
 		"entity": "this",
 		"lore": [],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",

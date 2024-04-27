@@ -1,7 +1,7 @@
 # スロット3と4から素材ID+ポーションレベルを取得
-    execute store result score #material buffer run data get block ~ ~ ~ Items[{Slot:3b}].components.custom_data.materialID 100
-    execute store result score #powder buffer run data get block ~ ~ ~ Items[{Slot:4b}].components.custom_data.powderID 10
-    execute store result score #powderLevel buffer run data get block ~ ~ ~ Items[{Slot:4b}].components.custom_data.powderLv
+    execute store result score #material buffer run data get block ~ ~ ~ Items[{Slot:3b}].components."minecraft:custom_data".materialID 100
+    execute store result score #powder buffer run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".powderID 10
+    execute store result score #powderLevel buffer run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".powderLv
 # ID結合
     scoreboard players operation #material buffer += #powder buffer
     scoreboard players operation #material buffer += #powderLevel buffer

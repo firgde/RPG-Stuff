@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "loot_table",
-					"name": "asset:craft/enchantments/melee",
+					"value": "asset:craft/enchantments/melee",
 					"conditions": [
 						{
 							"condition": "any_of",
@@ -17,7 +17,7 @@
 											"blocks": [
 												"dispenser"
 											],
-											"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:0}}}]}"
+											"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:0}}}]}"
 										}
 									}
 								},
@@ -28,7 +28,7 @@
 											"blocks": [
 												"dispenser"
 											],
-											"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:1}}}]}"
+											"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:1}}}]}"
 										}
 									}
 								},
@@ -39,7 +39,7 @@
 											"blocks": [
 												"dispenser"
 											],
-											"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:4}}}]}"
+											"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:4}}}]}"
 										}
 									}
 								}
@@ -49,7 +49,7 @@
 				},
 				{
 					"type": "loot_table",
-					"name": "asset:craft/enchantments/wand",
+					"value": "asset:craft/enchantments/wand",
 					"conditions": [
 						{
 							"condition": "location_check",
@@ -58,7 +58,7 @@
 									"blocks": [
 										"dispenser"
 									],
-									"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:2}}}]}"
+									"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:2}}}]}"
 								}
 							}
 						}
@@ -66,7 +66,7 @@
 				},
 				{
 					"type": "loot_table",
-					"name": "asset:craft/enchantments/bow",
+					"value": "asset:craft/enchantments/bow",
 					"conditions": [
 						{
 							"condition": "location_check",
@@ -75,7 +75,7 @@
 									"blocks": [
 										"dispenser"
 									],
-									"nbt": "{Items:[{Slot:4b,components:{custom_data:{weaponType:3}}}]}"
+									"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:3}}}]}"
 								}
 							}
 						}
@@ -83,7 +83,7 @@
 				},
 				{
 					"type": "loot_table",
-					"name": "asset:craft/enchantments/armor",
+					"value": "asset:craft/enchantments/armor",
 					"conditions": [
 						{
 							"condition": "location_check",
@@ -92,7 +92,7 @@
 									"blocks": [
 										"dispenser"
 									],
-									"nbt": "{Items:[{Slot:4b,components:{custom_data:{armor:1b}}}]}"
+									"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{armor:1b}}}]}"
 								}
 							}
 						}
@@ -100,7 +100,7 @@
 				},
 				{
 					"type": "loot_table",
-					"name": "asset:craft/enchantments/generic"
+					"value": "asset:craft/enchantments/generic"
 				},
 				{
 					"type": "item",
@@ -117,7 +117,7 @@
 							"condition": "location_check",
 							"predicate": {
 								"block": {
-									"nbt": "{Items:[{Slot:4b,components:{custom_data:{HasAbility:0b}}}]}"
+									"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{HasAbility:0b}}}]}"
 								}
 							}
 						}

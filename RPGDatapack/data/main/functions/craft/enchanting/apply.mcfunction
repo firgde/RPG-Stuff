@@ -5,7 +5,7 @@
 # エンチャントレベル算出
 ##EnchantLv = Enchantability + ranInt(0, int) + ranInt(0, acc/4) + Items + 1
     #Enchantability
-    execute store result score #enchantLv buffer run data get block ~ ~ ~ Items[{Slot:4b}].components.custom_data.Enchantability
+    execute store result score #enchantLv buffer run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantability
     #+1
     scoreboard players add #enchantLv buffer 1
     #ranInt(0, int)
@@ -26,10 +26,10 @@
     scoreboard players operation #rng buffer %= #enchantLv acc
     scoreboard players operation #enchantLv buffer += #rng buffer
     #Items
-    execute store result score #slot1 buffer run data get block ~ ~ ~ Items[{Slot:1b,components:{custom_data:{EnchantMaterial:1b}}}].components.custom_data.EnchantBoost
-    execute store result score #slot3 buffer run data get block ~ ~ ~ Items[{Slot:3b,components:{custom_data:{EnchantMaterial:1b}}}].components.custom_data.EnchantBoost
-    execute store result score #slot5 buffer run data get block ~ ~ ~ Items[{Slot:5b,components:{custom_data:{EnchantMaterial:1b}}}].components.custom_data.EnchantBoost
-    execute store result score #slot7 buffer run data get block ~ ~ ~ Items[{Slot:7b,components:{custom_data:{EnchantMaterial:1b}}}].components.custom_data.EnchantBoost
+    execute store result score #slot1 buffer run data get block ~ ~ ~ Items[{Slot:1b,components:{"minecraft:custom_data":{EnchantMaterial:1b}}}].components."minecraft:custom_data".EnchantBoost
+    execute store result score #slot3 buffer run data get block ~ ~ ~ Items[{Slot:3b,components:{"minecraft:custom_data":{EnchantMaterial:1b}}}].components."minecraft:custom_data".EnchantBoost
+    execute store result score #slot5 buffer run data get block ~ ~ ~ Items[{Slot:5b,components:{"minecraft:custom_data":{EnchantMaterial:1b}}}].components."minecraft:custom_data".EnchantBoost
+    execute store result score #slot7 buffer run data get block ~ ~ ~ Items[{Slot:7b,components:{"minecraft:custom_data":{EnchantMaterial:1b}}}].components."minecraft:custom_data".EnchantBoost
     scoreboard players operation #enchantLv buffer += #slot1 buffer
     scoreboard players operation #enchantLv buffer += #slot3 buffer
     scoreboard players operation #enchantLv buffer += #slot5 buffer
@@ -49,9 +49,9 @@
     item modify block ~ ~ ~ container.5 items:count
     item modify block ~ ~ ~ container.7 items:count
 # エンチャントがついたなら演出
-    execute if data block ~ ~ ~ Items[{Slot:4b}].components.custom_data.Enchantments run data modify block ~ ~ ~ Items[{Slot:4b}].components.Enchantments set value [{}]
-    execute if data block ~ ~ ~ Items[{Slot:4b}].components.custom_data.Enchantments run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1
-    execute if data block ~ ~ ~ Items[{Slot:4b}].components.custom_data.Enchantments run particle enchant ~ ~2 ~ 0.25 0.25 0.25 2 50
+    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run data modify block ~ ~ ~ Items[{Slot:4b}].components.Enchantments set value [{}]
+    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1
+    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run particle enchant ~ ~2 ~ 0.25 0.25 0.25 2 50
 # リセット
     data remove block 0 -59 0 Items
     scoreboard players reset #modify_count buffer

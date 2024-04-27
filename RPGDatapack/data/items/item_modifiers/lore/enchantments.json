@@ -4,7 +4,7 @@
 		"entity": "this",
 		"lore": [
 			{
-				"nbt": "Item.components.custom_data.Enchantments[0].Text",
+				"nbt": "Item.components.\"minecraft:custom_data\".Enchantments[0].Text",
 				"storage": "item:",
 				"interpret": true
 			}

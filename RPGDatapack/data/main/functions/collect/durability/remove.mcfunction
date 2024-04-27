@@ -1,13 +1,13 @@
 # custom_dataの耐久値を減算
-    execute store result score @s durability run data get entity @s SelectedItem.components.custom_data.Durability
+    execute store result score @s durability run data get entity @s SelectedItem.components."minecraft:custom_data".Durability
     scoreboard players remove @s durability 1
     scoreboard players operation #durability buffer = @s durability
-    execute store result storage item: Item.components.custom_data.Durability int 1 run scoreboard players get #durability buffer
+    execute store result storage item: Item.components."minecraft:custom_data".Durability int 1 run scoreboard players get #durability buffer
     item modify entity @s weapon.mainhand main:update_durability
 # 0なら壊す
     execute if score @s durability matches ..0 run function items:durability/break
 # アイテムの耐久ゲージを更新
-    execute store result score @s maxDurability run data get entity @s SelectedItem.components.custom_data.MaxDurability
+    execute store result score @s maxDurability run data get entity @s SelectedItem.components."minecraft:custom_data".MaxDurability
     scoreboard players operation #maxDurability buffer = @s maxDurability
     #ツールの種類に応じて耐久変化
     data modify storage item: data.id set string entity @s SelectedItem.id 10
