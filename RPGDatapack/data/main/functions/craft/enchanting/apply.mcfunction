@@ -49,7 +49,7 @@
     item modify block ~ ~ ~ container.5 items:count
     item modify block ~ ~ ~ container.7 items:count
 # エンチャントがついたなら演出
-    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run data modify block ~ ~ ~ Items[{Slot:4b}].components.Enchantments set value [{}]
+    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run data modify block ~ ~ ~ Items[{Slot:4b}].components."minecraft:enchantment_glint_override" set value true
     execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1
     execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run particle enchant ~ ~2 ~ 0.25 0.25 0.25 2 50
 # リセット
