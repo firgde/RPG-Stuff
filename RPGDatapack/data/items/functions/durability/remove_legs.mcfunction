@@ -26,7 +26,7 @@
 # リセット
     data remove storage item: data
     data remove storage item: Item
-    data modify storage item: Item.Count set value 1b
+    data modify storage item: Item.count set value 1b
     scoreboard players reset @s buffer
     scoreboard players reset @s durability
     scoreboard players reset @s maxDurability

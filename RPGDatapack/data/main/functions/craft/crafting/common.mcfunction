@@ -9,5 +9,5 @@
 # リセット
     item replace block 0 -59 0 container.0 with air
     data remove storage item: Item
-    data remove storage item: Item.Count
+    data remove storage item: Item.count
     data remove block ~ ~-1 ~ Items

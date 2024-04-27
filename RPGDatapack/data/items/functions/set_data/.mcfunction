@@ -16,7 +16,7 @@
     loot give @s[tag=!not_give] mine 0 -59 0 mainhand
 # リセット
     data remove storage item: Item
-    data modify storage item: Item.Count set value 1b
+    data modify storage item: Item.count set value 1b
     execute if entity @s[tag=!not_give] run data remove block 0 -59 0 Items
     scoreboard players reset #Lore buffer
     scoreboard players reset #itemType buffer
