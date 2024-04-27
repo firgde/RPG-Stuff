@@ -13,16 +13,16 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target": "item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -51,7 +51,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -61,7 +60,7 @@
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "#FF4500",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -90,17 +89,17 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target": "item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "aqua",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -129,17 +128,17 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target": "item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "green",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -168,17 +167,17 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target": "item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "yellow",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -207,7 +206,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -217,7 +215,7 @@
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "#FF0000",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],

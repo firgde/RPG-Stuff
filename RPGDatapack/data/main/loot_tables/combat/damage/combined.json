@@ -18,6 +18,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -72,6 +73,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -126,6 +128,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -180,6 +183,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -234,6 +238,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -288,6 +293,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -342,6 +348,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -396,6 +403,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -450,6 +458,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -504,6 +513,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -558,6 +568,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -612,6 +623,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -666,6 +678,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -720,6 +733,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -774,6 +788,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -828,6 +843,7 @@
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
