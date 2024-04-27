@@ -1,5 +1,5 @@
 # loot_table万能説
-    loot spawn ~ ~ ~ loot mobs:spawner/dummies
+    loot spawn ~ ~ ~ loot asset:mob/spawner/dummies
     execute as @e[type=item,distance=..1.5] if entity @s[nbt={Item:{components:{"minecraft:custom_data":{Pickup:0b}}}}] run tag @s add spawner
     execute as @e[tag=spawner,type=item,distance=..1.5] run data merge entity @s {PickupDelay:32767,Age:5999}
 # アイテムﾊﾞﾗｧ
