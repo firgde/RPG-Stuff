@@ -2,7 +2,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/plains/tier0"
 			}
 		},
@@ -31,7 +31,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/snowfield/tier0"
 			}
 		},
@@ -60,7 +60,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/mountains/tier0"
 			}
 		},
@@ -89,7 +89,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/volcano/tier0"
 			}
 		},
@@ -118,7 +118,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/desert/tier0"
 			}
 		},
@@ -147,7 +147,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/plains/tier1"
 			}
 		},
@@ -176,7 +176,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/snowfield/tier1"
 			}
 		},
@@ -205,7 +205,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/mountains/tier1"
 			}
 		},
@@ -234,7 +234,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/volcano/tier1"
 			}
 		},
@@ -263,7 +263,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/desert/tier1"
 			}
 		},
@@ -292,7 +292,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/plains/tier2"
 			}
 		},
@@ -321,7 +321,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/snowfield/tier2"
 			}
 		},
@@ -350,7 +350,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/mountains/tier2"
 			}
 		},
@@ -379,7 +379,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/volcano/tier2"
 			}
 		},
@@ -408,7 +408,7 @@
 	{
 		"function": "set_components",
 		"components": {
-			"can_break": {
+			"minecraft:can_break": {
 				"blocks": "#asset:collect/mining/location/desert/tier2"
 			}
 		},
