@@ -1,36 +1,26 @@
-# custom_dataの耐久値を減算
-    execute store result score @s durability run data get entity @s Inventory[{Slot:103b}].components."minecraft:custom_data".Durability
-    scoreboard players remove @s durability 1
-    scoreboard players operation #durability buffer = @s durability
-    execute store result storage item: Item.components."minecraft:custom_data".Durability int 1 run scoreboard players get #durability buffer
-    item modify entity @s armor.head main:update_durability
-# 0未満なら壊す
-    execute if score @s durability matches ..-1 run function items:durability/break_head
-# アイテムの耐久ゲージを更新
-    execute store result score @s maxDurability run data get entity @s Inventory[{Slot:103b}].components."minecraft:custom_data".MaxDurability
-    scoreboard players operation #maxDurability buffer = @s maxDurability
-    #中身はネザライトの防具
-    scoreboard players operation @s durability *= #407 const
-    execute store result score @s dur_ratio run scoreboard players operation @s durability /= @s maxDurability
-    scoreboard players set @s buffer 407
-    execute store result storage item: data.Damage int 1 run scoreboard players operation @s buffer -= @s dur_ratio
-# 代入
-    data modify storage item: Item set from entity @s Inventory[{Slot:103b}]
-    item modify entity @s armor.head main:update_durability_display
+# シュル箱にアイテムを移してデータ編集
     item replace block 0 -59 0 container.0 from entity @s armor.head
+# custom_dataの耐久値減算
+    execute store result score #durability buffer run data get entity @s Inventory[{Slot:103b}].components."minecraft:custom_data".Durability
+    execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:custom_data".Durability int 1 run scoreboard players remove #durability buffer 1
+# 0未満なら壊す
+    execute if score #durability buffer matches ..-1 run function items:durability/break
+# 差をminecraft:damageに代入
+    execute store result score #max_durability buffer run data get entity @s Inventory[{Slot:103b}].components."minecraft:max_damage"
+    execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:damage" int 1 run scoreboard players operation #max_durability buffer -= #durability buffer
+    #UI表記も更新
+    data modify storage item: Item set from block 0 -59 0 Items[{Slot:0b}]
     execute positioned 0 -59 0 run function items:get_data
-    item modify entity @s armor.head items:lore/text
-    item modify entity @s armor.head items:lore/status
-    execute if score #enchantcount buffer matches 1.. run function items:set_data/rec_head
-    item modify entity @s armor.head items:lore/info
+    item modify block 0 -59 0 container.0 items:lore/text
+    item modify block 0 -59 0 container.0 items:lore/status
+    execute if data storage item: Item.components."minecraft:custom_data"{weaponType:2} run item modify block 0 -59 0 container.0 items:lore/magic
+    execute if score #enchantcount buffer matches 1.. run function items:set_data/rec_mainhand
+    item modify block 0 -59 0 container.0 items:lore/info
+    item replace entity @s armor.head from block 0 -59 0 container.0
 # リセット
     data remove storage item: data
     data remove storage item: Item
     data modify storage item: Item.count set value 1b
-    scoreboard players reset @s buffer
-    scoreboard players reset @s durability
-    scoreboard players reset @s maxDurability
-    scoreboard players reset @s dur_ratio
     scoreboard players reset #Lore buffer
     scoreboard players reset #itemType buffer
     scoreboard players reset #heal_amount_hp buffer
@@ -49,6 +39,7 @@
     scoreboard players reset #rarity buffer
     scoreboard players reset #durability buffer
     scoreboard players reset #maxDurability buffer
+    scoreboard players reset #max_durability buffer
     scoreboard players reset #enchantcount buffer
     scoreboard players reset #hasAbility buffer
     item replace block 0 -59 0 container.0 with air

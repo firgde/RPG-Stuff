@@ -1,5 +1,5 @@
 # 耐久値の無いアイテムは置けない
-    execute if data entity @s SelectedItem unless data entity @s SelectedItem.components."minecraft:custom_data".MaxDurability if entity @s[advancements={main:craft/repairing/slot_0={right=true}}] run advancement revoke @s only main:craft/repairing/slot_0
+    execute if data entity @s SelectedItem unless data entity @s SelectedItem.components."minecraft:max_damage" if entity @s[advancements={main:craft/repairing/slot_0={right=true}}] run advancement revoke @s only main:craft/repairing/slot_0
 # そうでなければslot.0のitem_displayからインベントリにアイテムを持ってくる
     item replace block 0 -59 0 container.1 with air
     execute if entity @s[advancements={main:craft/repairing/slot_0=true}] at @e[type=interaction,tag=repair_slot.0,limit=1,sort=nearest] run data modify block 0 -59 0 Items[{Slot:0b}] set from entity @e[limit=1,sort=nearest,tag=repair_item,type=item_display] item

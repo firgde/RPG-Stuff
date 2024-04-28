@@ -84,6 +84,6 @@
         }
     },
     "rewards": {
-        "function": "main:collect/durability/remove"
+        "function": "items:durability/remove"
     }
 }

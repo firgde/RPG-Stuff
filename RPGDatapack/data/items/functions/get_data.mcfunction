@@ -21,6 +21,6 @@
     execute store result score #hasAbility buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".HasAbility
     #耐久度
     execute store result score #durability buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".Durability
-    execute store result score #maxDurability buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".MaxDurability
+    execute store result score #maxDurability buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:max_damage"
     #レア度
     execute store result score #rarity buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".rarity
