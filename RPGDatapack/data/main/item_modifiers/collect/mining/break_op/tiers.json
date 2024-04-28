@@ -52,7 +52,7 @@
 			{
 				"condition": "location_check",
 				"predicate": {
-					"biomes": "asset:overworld/swnofield"
+					"biomes": "asset:overworld/snowfield"
 				}
 			}
 		]
