@@ -1,24 +1,24 @@
 # 基本データの設定
-    data merge entity @s {Tags:["magic"],item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:1}}}
+    data merge entity @s {Tags:["magic"],item:{id:"minecraft:stick",Count:1b,components:{custom_model_data:1}}}
 
 ###メインハンドとオフハンドからitem_displayのitem.tagにデータ代入
     # 魔術攻撃はこの時点で属性を定めておく
-    data modify entity @s item.tag.data.Element.Type append from storage combat: data.magic[0].Element.Type
-    data modify entity @s item.tag.data.Element.Debuff append from storage combat: data.magic[0].Element.Debuff
-    execute unless data storage combat: data.magic[0].Element.Type run data modify entity @s item.tag.data.Element.Type append value 0
-    execute unless data storage combat: data.magic[0].Element.Type run data modify entity @s item.tag.data.Element.Debuff append value {}
-    data modify entity @s item.tag.data.Element.Type append from storage combat: data.magic[1].Element.Type
-    data modify entity @s item.tag.data.Element.Debuff append from storage combat: data.magic[1].Element.Debuff
-    # nbtの属性をスコアに代入
-    execute store result score #mainElement buffer run data get entity @s item.tag.data.Element.Type[0]
-    execute store result score #sideElement buffer run data get entity @s item.tag.data.Element.Type[1]
+    data modify entity @s item.components."minecraft:custom_data".Element.Type append from storage combat: data.magic[0].Element.Type
+    data modify entity @s item.components."minecraft:custom_data".Element.Debuff append from storage combat: data.magic[0].Element.Debuff
+    execute unless data storage combat: data.magic[0].Element.Type run data modify entity @s item.components."minecraft:custom_data".Element.Type append value 0
+    execute unless data storage combat: data.magic[0].Element.Type run data modify entity @s item.components."minecraft:custom_data".Element.Debuff append value {}
+    data modify entity @s item.components."minecraft:custom_data".Element.Type append from storage combat: data.magic[1].Element.Type
+    data modify entity @s item.components."minecraft:custom_data".Element.Debuff append from storage combat: data.magic[1].Element.Debuff
+    # componentの属性をスコアに代入
+    execute store result score #mainElement buffer run data get entity @s item.components."minecraft:custom_data".Element.Type[0]
+    execute store result score #sideElement buffer run data get entity @s item.components."minecraft:custom_data".Element.Type[1]
     # 属性を二つ検知したら合成
     execute unless score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run function main:combat/attack/magic/summon/element/combine
     # なければ存在する方に属性を絞り、仮ストレージにデータ移動
     #メインハンドが属性を持っている場合
-    execute unless score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run data modify storage buffer: data.Element set from entity @s item.tag.data.Element.Type[0]
+    execute unless score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run data modify storage buffer: data.Element set from entity @s item.components."minecraft:custom_data".Element.Type[0]
     #オフハンドが属性を持っている場合
-    execute if score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run data modify storage buffer: data.Element set from entity @s item.tag.data.Element.Type[1]
+    execute if score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run data modify storage buffer: data.Element set from entity @s item.components."minecraft:custom_data".Element.Type[1]
     # 属性が全くなければそのまま一般タグ
     execute if score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run tag @s add magic.generic
 

@@ -71,7 +71,9 @@
                             "predicate": {
                                 "equipment": {
                                     "mainhand": {
-                                        "nbt": "{Customnbt:{Unbreakable:1b}}"
+                                        "predicates": {
+                                            "custom_data": "{Unbreakable:1b}"
+                                        }
                                     }
                                 }
                             }
@@ -82,6 +84,6 @@
         }
     },
     "rewards": {
-        "function": "main:collect/durability/remove"
+        "function": "items:durability/remove"
     }
 }

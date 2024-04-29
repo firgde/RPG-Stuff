@@ -5,7 +5,9 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{Customnbt:{money:1b}}"
+                        "predicates": {
+                            "custom_data": "{money:1b}"
+                        }
                     }
                 ]
             }

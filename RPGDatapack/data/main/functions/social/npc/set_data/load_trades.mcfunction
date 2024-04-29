@@ -5,13 +5,13 @@
 # 宝石の欠片
     #moneycountを1に
     scoreboard players set #moneycount buffer 1
-    execute if data storage social: data.npc.Recipes[-1].Item{LootReference:"gemstone_shard"} run loot replace block 0 -59 0 container.0 loot asset:social/trading/gemstone_shard
+    execute if data storage social: data.npc.Recipes[-1].Item{LootReference:"gemstone_shard"} run loot replace block 0 -59 0 container.0 loot asset:social/ui/purse/gemstone_shard
 # 個数設定
-    data modify storage social: data.buffer.Count set from storage social: data.npc.Recipes[-1].Item.Count
+    data modify storage social: data.buffer.count set from storage social: data.npc.Recipes[-1].Item.count
 # ストレージに実際のアイテムデータを入れる
     data modify storage social: data.npc.Recipes[-1].Item set from block 0 -59 0 Items[{Slot:0b}]
     data remove storage social: data.npc.Recipes[-1].Item.Slot
-    data modify storage social: data.npc.Recipes[-1].Item.Count set from storage social: data.buffer.Count
+    data modify storage social: data.npc.Recipes[-1].Item.count set from storage social: data.buffer.count
 # リセット
-    data remove storage social: data.buffer.Count
+    data remove storage social: data.buffer.count
     scoreboard players reset #moneycount buffer

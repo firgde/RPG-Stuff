@@ -10,7 +10,9 @@
                 "player": {
                     "equipment": {
                         "mainhand": {
-                            "nbt": "{Customnbt:{weaponType:2}}"
+                            "predicates": {
+                                "custom_data": "{weaponType:2}"
+                            }
                         }
                     }
                 }
@@ -26,7 +28,9 @@
                 "player": {
                     "equipment": {
                         "mainhand": {
-                            "nbt": "{Customnbt:{weaponType:2}}"
+                            "predicates": {
+                                "custom_data": "{weaponType:2}"
+                            }
                         }
                     }
                 }

@@ -20,7 +20,9 @@
                         "predicate": {
                             "equipment": {
                                 "mainhand": {
-                                    "nbt": "{Customnbt:{weapon:1b}}"
+                                    "predicates": {
+                                        "custom_data": "{weapon:1b}"
+                                    }
                                 }
                             }
                         }
@@ -62,7 +64,9 @@
                         "predicate": {
                             "equipment": {
                                 "mainhand": {
-                                    "nbt": "{Customnbt:{weapon:1b}}"
+                                    "predicates": {
+                                        "custom_data": "{weapon:1b}"
+                                    }
                                 }
                             }
                         }
@@ -89,7 +93,9 @@
             "trigger": "consume_item",
             "conditions": {
                 "item": {
-                    "nbt": "{Customnbt:{consumable:1b}}"
+                    "predicates": {
+                        "custom_data": "{consumable:1b}"
+                    }
                 }
             }
         },
@@ -112,7 +118,9 @@
                         "predicate": {
                             "equipment": {
                                 "mainhand": {
-                                    "nbt": "{Customnbt:{HasAbility:1b}}"
+                                    "predicates": {
+                                        "custom_data":"{HasAbility:1b}"
+                                    }
                                 }
                             }
                         }

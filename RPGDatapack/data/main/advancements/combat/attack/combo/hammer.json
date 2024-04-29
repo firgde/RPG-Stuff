@@ -10,7 +10,9 @@
                 "player": {
                     "equipment": {
                         "mainhand": {
-                            "nbt": "{Customnbt:{weaponType:1}}"
+                            "predicates": {
+                                "custom_data": "{weaponType:1}"
+                            }
                         }
                     }
                 }

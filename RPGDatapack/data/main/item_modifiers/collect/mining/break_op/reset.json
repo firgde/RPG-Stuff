@@ -1,4 +1,8 @@
-{
-    "function": "set_nbt",
-    "tag": "{CanDestroy:[]}"
-}
+[
+	{
+		"function": "minecraft:set_components",
+		"components": {
+			"can_break": {}
+		}
+	}
+]

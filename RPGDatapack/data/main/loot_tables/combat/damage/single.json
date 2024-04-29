@@ -8,16 +8,21 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target": "item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -41,17 +46,22 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target":"item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "#FF4500",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -75,17 +85,22 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target": "item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "aqua",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -109,17 +124,22 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target": "item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "green",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -143,17 +163,22 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target": "item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "yellow",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],
@@ -177,17 +202,22 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target": "item_name",
 							"entity": "this",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "#FF0000",
-								"font":"damage"
+								"font": "damage"
 							}
 						}
 					],

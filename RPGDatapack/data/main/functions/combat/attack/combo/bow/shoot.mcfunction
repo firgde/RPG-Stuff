@@ -8,8 +8,8 @@
     #属性
     scoreboard players set #mainElement buffer 0
     scoreboard players set #sideElement buffer 0
-    execute store result score #mainElement buffer run data get entity @p SelectedItem.tag.Customnbt.Element.Type
-    execute store result score #sideElement buffer run data get entity @p Inventory[{Slot:-106b,tag:{Customnbt:{offhandOnly:1b}}}].tag.Customnbt.Element.Type
+    execute store result score #mainElement buffer run data get entity @p SelectedItem.components."minecraft:custom_data".Element.Type
+    execute store result score #sideElement buffer run data get entity @p Inventory[{Slot:-106b,components:{"minecraft:custom_data":{offhandOnly:1b}}}].components."minecraft:custom_data".Element.Type
     execute unless score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run scoreboard players operation #element buffer = #mainElement buffer
     execute if score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run scoreboard players operation #element buffer = #sideElement buffer
     execute if score #element buffer matches 1.. run function main:combat/attack/ranged/element/get

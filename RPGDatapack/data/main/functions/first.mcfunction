@@ -167,9 +167,6 @@ say reload
         scoreboard objectives add resistance_thunder dummy
 
         # (...分類できねぇ)
-        scoreboard objectives add durability dummy
-        scoreboard objectives add maxDurability dummy
-        scoreboard objectives add dur_ratio dummy
         scoreboard objectives add foodTimer dummy
         scoreboard objectives add hasOrigin dummy
     # プレイヤー区別用のID

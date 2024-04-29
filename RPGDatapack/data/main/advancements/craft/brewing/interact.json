@@ -16,7 +16,9 @@
                             "predicate": {
                                 "equipment": {
                                     "mainhand": {
-                                        "nbt": "{Customnbt:{id:5300}}"
+                                        "predicates": {
+                                            "custom_data": "{id:5300}"
+                                        }
                                     }
                                 }
                             }
@@ -41,7 +43,9 @@
                             "predicate": {
                                 "equipment": {
                                     "mainhand": {
-                                        "nbt": "{Customnbt:{id:5300}}"
+                                        "predicates": {
+                                            "custom_data": "{id:5300}"
+                                        }
                                     }
                                 }
                             }

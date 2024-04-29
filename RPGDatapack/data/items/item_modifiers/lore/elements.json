@@ -16,6 +16,7 @@
 				]
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -48,6 +49,7 @@
 				]
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -80,6 +82,7 @@
 				]
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -112,6 +115,7 @@
 				]
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",
@@ -134,6 +138,7 @@
 				"text": " "
 			}
 		],
+		"mode": "append",
 		"conditions": [
 			{
 				"condition": "value_check",

@@ -8,11 +8,17 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -55,12 +61,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -103,12 +116,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -151,12 +171,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -199,12 +226,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -247,12 +281,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -295,12 +336,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -343,12 +391,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -391,12 +446,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -439,12 +501,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -487,12 +556,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -535,12 +611,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -583,12 +666,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -631,12 +721,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -679,12 +776,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
@@ -727,12 +831,19 @@
 					"type": "item",
 					"name": "stick",
 					"functions": [
+						
 						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:1,DisplayDamage:1b}"
+							"function": "set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "set_custom_data",
+							"entity": "this",
+							"tag": "{DisplayDamage:1b}"
 						},
 						{
 							"function": "set_name",
+							"target":"item_name",
 							"entity": "this",
 							"name": [
 								{
