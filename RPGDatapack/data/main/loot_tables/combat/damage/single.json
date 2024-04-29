@@ -56,6 +56,7 @@
 						{
 							"function": "set_name",
 							"entity": "this",
+							"target":"item_name",
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
