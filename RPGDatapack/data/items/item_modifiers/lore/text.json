@@ -4,7 +4,7 @@
 		"entity": "this",
 		"lore": [
 			{
-				"nbt": "Item.components.lore[0]",
+				"nbt": "Item.components.\"minecraft:lore\"[0]",
 				"storage": "item:",
 				"interpret": true
 			}
@@ -16,7 +16,7 @@
 		"entity": "this",
 		"lore": [
 			{
-				"nbt": "Item.components.lore[1]",
+				"nbt": "Item.components.\"minecraft:lore\"[1]",
 				"storage": "item:",
 				"interpret": true
 			}
