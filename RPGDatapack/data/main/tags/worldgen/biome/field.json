@@ -1,11 +1,11 @@
 {
     "replace": false,
     "values": [
-        "main:overworld/plains",
-        "main:overworld/snowfield",
-        "main:overworld/mountains",
-        "main:overworld/volcano",
-        "main:overworld/desert",
-        "main:underworld"
+        "asset:overworld/plains",
+        "asset:overworld/snowfield",
+        "asset:overworld/mountains",
+        "asset:overworld/volcano",
+        "asset:overworld/desert",
+        "asset:underworld"
     ]
 }
