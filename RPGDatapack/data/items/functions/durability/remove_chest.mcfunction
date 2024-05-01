@@ -13,8 +13,8 @@
     execute positioned 0 -59 0 run function items:get_data
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
+    execute if score #enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
     execute if data storage item: Item.components."minecraft:custom_data"{weaponType:2} run item modify block 0 -59 0 container.0 items:lore/magic
-    execute if score #enchantcount buffer matches 1.. run function items:set_data/rec_mainhand
     item modify block 0 -59 0 container.0 items:lore/info
     item replace entity @s armor.chest from block 0 -59 0 container.0
 # リセット
