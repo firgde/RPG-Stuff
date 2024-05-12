@@ -10,7 +10,7 @@
 				"translate": "item.ui.ability",
 				"with": [
 					{
-						"nbt": "Item.components.minecraft:\"custom_data\".Ability.Name",
+						"nbt": "Item.components.\"minecraft:custom_data\".Ability.Name",
 						"storage": "item:",
 						"interpret": true,
 						"color": "aqua",
