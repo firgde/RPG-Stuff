@@ -117,7 +117,7 @@
 							"condition": "location_check",
 							"predicate": {
 								"block": {
-									"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{HasAbility:0b}}}]}"
+									"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{HasAbility:0b}}},{components:{\"minecraft:custom_data\":{HasAbility:1b,ItemType:0}}}]}"
 								}
 							}
 						}

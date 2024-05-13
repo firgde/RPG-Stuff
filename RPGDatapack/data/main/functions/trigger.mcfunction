@@ -5,6 +5,7 @@
     execute if entity @s[advancements={main:trigger={bow=true}}] run function main:combat/attack/ranged/
     execute if entity @s[advancements={main:trigger={consume=true}}] run function #asset:item/trigger/consume
     execute if entity @s[advancements={main:trigger={ability=true}}] run function #asset:combat/trigger/ability
+    execute if entity @s[advancements={main:trigger={mine=true}}] run function items:durability/remove
 # リセット
     advancement revoke @s only main:trigger
     scoreboard players reset #itemID buffer

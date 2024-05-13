@@ -11,6 +11,7 @@
     scoreboard players set @s acc_bonus 0
 # ステータス取得
     execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{weapon:1b}}}}] run function status:update/slot/mainhand
+    execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tool:1b}}}}] run function status:update/slot/mainhand
     execute if entity @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{offhandOnly:1b}}}]}] run function status:update/slot/offhand
     execute if entity @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_data":{armorType:"helmet",armor:1b}}}]}] run function status:update/slot/helmet
     execute if entity @s[nbt={Inventory:[{Slot:102b,components:{"minecraft:custom_data":{armorType:"chestplate",armor:1b}}}]}] run function status:update/slot/chestplate

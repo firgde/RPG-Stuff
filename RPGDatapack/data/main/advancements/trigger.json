@@ -127,6 +127,26 @@
                     }
                 ]
             }
+        },
+        "mine": {
+            "trigger": "item_durability_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "custom_data":"{tool:1b}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     },
     "requirements": [
@@ -136,7 +156,8 @@
             "magic",
             "magic_hit",
             "consume",
-            "ability"
+            "ability",
+            "mine"
         ]
     ],
     "rewards": {
