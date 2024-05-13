@@ -7,14 +7,15 @@
     execute if score #durability buffer matches ..-1 run function items:durability/break
 # 差をminecraft:damageに代入
     execute store result score #max_durability buffer run data get entity @s Inventory[{Slot:102b}].components."minecraft:max_damage"
+    execute unless data entity @s Inventory[{Slot:102b}].components."minecraft:max_damage" run scoreboard players set #max_durability buffer 592
     execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:damage" int 1 run scoreboard players operation #max_durability buffer -= #durability buffer
     #UI表記も更新
     data modify storage item: Item set from block 0 -59 0 Items[{Slot:0b}]
     execute positioned 0 -59 0 run function items:get_data
+    execute unless data entity @s Inventory[{Slot:102b}].components."minecraft:max_damage" run scoreboard players set #maxDurability buffer 592
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
     execute if score #enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
-    execute if data storage item: Item.components."minecraft:custom_data"{weaponType:2} run item modify block 0 -59 0 container.0 items:lore/magic
     item modify block 0 -59 0 container.0 items:lore/info
     item replace entity @s armor.chest from block 0 -59 0 container.0
 # リセット
