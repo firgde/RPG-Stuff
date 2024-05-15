@@ -10,4 +10,4 @@
     data modify entity @e[tag=alchemy.item.1,limit=1,sort=nearest] transformation.scale set value [0.25f,0.25f,0.25f]
     scoreboard players set @e[tag=alchemy.item.0,limit=1,sort=nearest] mov_direction 1
 # 全体のクリック検知interaction
-    summon interaction ~0.5 ~ ~0.5 {Tags:["alchemy"],width:1.01f,height:1.01f}
+    summon interaction ~0.5 ~ ~0.5 {Tags:["alchemy","craft"],width:1.01f,height:1.01f}
