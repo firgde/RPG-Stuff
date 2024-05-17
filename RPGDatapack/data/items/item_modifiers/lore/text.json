@@ -36,5 +36,32 @@
 			}
 		],
 		"mode": "append"
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"text": " "
+			}
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "inverted",
+				"term": {
+					"condition": "value_check",
+					"value": {
+						"type": "score",
+						"target": {
+							"type": "fixed",
+							"name": "#itemType"
+						},
+						"score": "buffer"
+					},
+					"range": 1
+				}
+			}
+		]
 	}
 ]
