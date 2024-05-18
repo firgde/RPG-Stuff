@@ -40,6 +40,42 @@
 	{
 		"function": "set_lore",
 		"entity": "this",
+		"lore": [
+			{
+				"text": " "
+			}
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#hasAbility"
+					},
+					"score": "buffer"
+				},
+				"range": 1
+			},
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#itemType"
+					},
+					"score": "buffer"
+				},
+				"range": 0
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
 		"lore": [],
 		"mode": "append",
 		"conditions": [
