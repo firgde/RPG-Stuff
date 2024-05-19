@@ -5,7 +5,7 @@
             "conditions": {
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags:[\"alchemy.slot.0\"]}"
+                    "nbt": "{Tags:[\"alchemy.slot\"]}"
                 },
                 "player": [
                     {
@@ -32,7 +32,7 @@
             "conditions": {
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags:[\"alchemy.slot.0\"]}"
+                    "nbt": "{Tags:[\"alchemy.slot\"]}"
                 },
                 "player": [
                     {
@@ -62,6 +62,6 @@
         ]
     ],
     "rewards": {
-        "function": "main:craft/alchemy/slot_0/pick"
+        "function": "main:craft/alchemy/interact"
     }
 }

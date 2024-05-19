@@ -4,7 +4,6 @@
     execute store result score #id0 buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.components."minecraft:custom_data".id
     execute store result score #id1 buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.components."minecraft:custom_data".id
 # IDによってアイテム設定
-    # function main:craft/alchemy/specify
     execute store result score #success buffer run function #asset:craft/recipes/alchemy
 # そうでないならアイテムの種類/レア度によってアイテム生成
     execute unless score #success buffer matches 1 run function main:craft/alchemy/generic
@@ -12,6 +11,12 @@
     execute if data block 0 -59 0 Items[{Slot:0b}] run scoreboard players set #success buffer 1
 # アイテム本体召喚+飛ばす
     execute if score #success buffer matches 1 run function main:craft/alchemy/summon_item
+# 演出
+    execute at @e[tag=alchemy.item.0] positioned ~ ~ ~-0.2 run particle block{block_state:"minecraft:water"} ~ ~ ~ 0.1 0.1 0.1 0.5 25
+    execute at @e[tag=alchemy.item.0] positioned ~ ~ ~-0.2 run particle flash ~ ~ ~ 0 0 0 1 1
+    playsound item.bucket.empty block @s ~ ~ ~ 1 1
+    playsound item.trident.return block @s ~ ~ ~ 1 0.75
+    playsound block.amethyst_cluster.break block @s ~ ~ ~ 1 1
 # リセット
     scoreboard players reset #id0 buffer
     scoreboard players reset #id1 buffer
