@@ -1,5 +1,6 @@
 # アイテムの種類
     execute store result score #weaponType buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.components."minecraft:custom_data".weaponType
+    execute unless score #weaponType buffer matches -2147483648..2147483647 store result score #weaponType buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.components."minecraft:custom_data".weaponType
 # 属性
     execute store result score #element0 buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.components."minecraft:custom_data".Element.Type
     execute store result score #element1 buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.components."minecraft:custom_data".Element.Type
@@ -10,6 +11,8 @@
     execute store result score #rarity0 buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.components."minecraft:custom_data".rarity
     execute store result score #rarity1 buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.components."minecraft:custom_data".rarity
     execute store result score #rarity buffer run scoreboard players operation #rarity0 buffer += #rarity1 buffer
+    scoreboard players operation #rarity buffer /= #2 const
+    execute if score #rarity buffer matches 0 run scoreboard players set #rarity buffer 1
     scoreboard players operation #rarity buffer > #3 const
 # IDに結合 (種類、属性、レア度の順番)
     # tellraw @s [{"text": "Type: "},{"score":{"name": "#weaponType","objective": "buffer"}}]
