@@ -1,6 +1,13 @@
-# slotとmainhandのアイテム交換
-    execute at @s run item replace entity @e[limit=1,sort=nearest,tag=slot,type=item_display] contents from entity @p weapon.mainhand
-    execute at @s run data modify entity @e[limit=1,sort=nearest,tag=slot,type=item_display] item.count set value 1
-    scoreboard players set #modify_count buffer -1
-    item modify entity @p weapon.mainhand items:count
-    scoreboard players reset #modify_count buffer
+# アイテムが一致しているなら加算
+    execute store result storage craft:buffer data.id int 1 run data get entity @p SelectedItem.components."minecraft:custom_data".id
+    execute store result storage craft:buffer data.id_1 int 1 run data get entity @e[limit=1,sort=nearest,tag=slot,type=item_display] item.components."minecraft:custom_data".id
+    execute if items entity @e[limit=1,sort=nearest,tag=slot,type=item_display] contents * store success score #success buffer run data modify storage craft:buffer data.id set from storage craft:buffer data.id_1
+    execute unless items entity @e[limit=1,sort=nearest,tag=slot,type=item_display] contents * run scoreboard players set #success buffer 1
+# success == 0 → 一致
+    execute if score #success buffer matches 0 run function main:craft/crafting/slot/add
+# success == 1 → 相違
+    execute if score #success buffer matches 1 run function main:craft/crafting/slot/replace
+# リセット
+    scoreboard players reset #success buffer
+    scoreboard players reset #max_stack_size buffer
+    data remove storage craft:buffer data
