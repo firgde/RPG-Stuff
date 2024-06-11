@@ -14,7 +14,6 @@ say reload
         scoreboard objectives add atkBuffer dummy
         scoreboard objectives add defBuffer dummy
         scoreboard objectives add crtBuffer dummy
-        scoreboard objectives add takenDamage custom:damage_resisted
         scoreboard objectives add dealtDamage custom:damage_dealt_resisted
         scoreboard objectives add bowCharge dummy
         scoreboard objectives add prevBowCharge dummy
@@ -62,12 +61,6 @@ say reload
         # 採取(防御、体力、魔法、運)
         scoreboard objectives add lvl_collect dummy
         scoreboard objectives add xp_collect dummy
-        scoreboard objectives add use_pick_0 used:wooden_pickaxe
-        scoreboard objectives add use_pick_1 used:stone_pickaxe
-        scoreboard objectives add use_pick_2 used:iron_pickaxe
-        scoreboard objectives add use_pick_3 used:golden_pickaxe
-        scoreboard objectives add use_pick_4 used:diamond_pickaxe
-        scoreboard objectives add use_pick_5 used:netherite_pickaxe
         # 手工(攻撃、知能、速度、集中)
         scoreboard objectives add lvl_craft dummy
         scoreboard objectives add xp_craft dummy
