@@ -1,14 +1,11 @@
 # bonus値リセット
-    scoreboard players set @s atk_bonus 0
-    scoreboard players set @s mag_bonus 0
-    scoreboard players set @s dex_bonus 0
-    scoreboard players set @s max_hp_bonus 0
-    scoreboard players set @s int_bonus 0
-    scoreboard players set @s def_bonus 0
-    scoreboard players set @s spd_bonus 0
-    scoreboard players set @s crt_bonus 0
-    scoreboard players set @s luk_bonus 0
-    scoreboard players set @s acc_bonus 0
+    scoreboard players set @s resistance_melee 100
+    scoreboard players set @s resistance_magic 100
+    scoreboard players set @s resistance_ranged 100
+    scoreboard players set @s resistance_fire 100
+    scoreboard players set @s resistance_ice 100
+    scoreboard players set @s resistance_wind 100
+    scoreboard players set @s resistance_thunder 100
 # ステータス取得
     execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{weapon:1b}}}}] run function status:update/slot/mainhand
     execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tool:1b}}}}] run function status:update/slot/mainhand
@@ -42,4 +39,21 @@
     execute unless predicate asset:social/ui/holding_purse if entity @e[tag=purse,distance=..5,tag=open] run function main:social/ui/close
     execute unless predicate asset:social/ui/holding_quest_book if entity @e[tag=quest_book,distance=..5,tag=open] run function main:social/ui/close
 # リセット
+    scoreboard players reset #atk_equipment buffer
+    scoreboard players reset #mag_equipment buffer
+    scoreboard players reset #dex_equipment buffer
+    scoreboard players reset #hp_equipment buffer
+    scoreboard players reset #int_equipment buffer
+    scoreboard players reset #def_equipment buffer
+    scoreboard players reset #spd_equipment buffer
+    scoreboard players reset #crt_equipment buffer
+    scoreboard players reset #luk_equipment buffer
+    scoreboard players reset #acc_equipment buffer
+    scoreboard players reset #resistance_melee_equipment buffer
+    scoreboard players reset #resistance_magic_equipment buffer
+    scoreboard players reset #resistance_ranged_equipment buffer
+    scoreboard players reset #resistance_fire_equipment buffer
+    scoreboard players reset #resistance_ice_equipment buffer
+    scoreboard players reset #resistance_wind_equipment buffer
+    scoreboard players reset #resistance_thunder_equipment buffer
     data remove storage status: data

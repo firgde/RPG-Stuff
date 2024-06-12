@@ -14,6 +14,13 @@
     execute store result score @s crt_buff run data get storage combat: data.buff.status.crt
     execute store result score @s luk_buff run data get storage combat: data.buff.status.luk
     execute store result score @s acc_buff run data get storage combat: data.buff.status.acc
+    execute store result score @s resistance_melee_buff run data get storage combat: data.buff.resistance.melee
+    execute store result score @s resistance_magic_buff run data get storage combat: data.buff.resistance.magic
+    execute store result score @s resistance_ranged_buff run data get storage combat: data.buff.resistance.ranged
+    execute store result score @s resistance_fire_buff run data get storage combat: data.buff.resistance.fire
+    execute store result score @s resistance_ice_buff run data get storage combat: data.buff.resistance.ice
+    execute store result score @s resistance_wind_buff run data get storage combat: data.buff.resistance.wind
+    execute store result score @s resistance_thunder_buff run data get storage combat: data.buff.resistance.thunder
     #スリップダメージなら量を設定
     execute store result score @s buff_amount run data get storage combat: data.buff.Amount
 # HUDを更新

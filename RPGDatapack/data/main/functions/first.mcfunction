@@ -80,28 +80,20 @@ say reload
         #ステータス類(実際の値と基礎,追加値)
         # 攻撃(物理攻撃力)
         scoreboard objectives add atk dummy
-        scoreboard objectives add atk_bonus dummy
         scoreboard objectives add atk_base dummy
-        scoreboard objectives add atk_enchant dummy
         scoreboard objectives add atk_buff dummy
         # 魔法(魔法攻撃力)
         scoreboard objectives add mag dummy
-        scoreboard objectives add mag_bonus dummy
         scoreboard objectives add mag_base dummy
-        scoreboard objectives add mag_enchant dummy
         scoreboard objectives add mag_buff dummy
         # 技巧(遠距離攻撃力)
         scoreboard objectives add dex dummy
-        scoreboard objectives add dex_bonus dummy
         scoreboard objectives add dex_base dummy
-        scoreboard objectives add dex_enchant dummy
         scoreboard objectives add dex_buff dummy
         # 体力(最大HP)
         scoreboard objectives add max_hp dummy
         scoreboard objectives add hp dummy
-        scoreboard objectives add max_hp_bonus dummy
         scoreboard objectives add max_hp_base dummy
-        scoreboard objectives add max_hp_enchant dummy
         scoreboard objectives add hp_ratio dummy
         scoreboard objectives add hp_buffer dummy
         scoreboard objectives add max_hp_buff dummy
@@ -110,57 +102,50 @@ say reload
         scoreboard objectives add mana dummy
         scoreboard objectives add mana_regen dummy
         scoreboard objectives add int dummy
-        scoreboard objectives add int_bonus dummy
         scoreboard objectives add int_base dummy
-        scoreboard objectives add int_enchant dummy
         scoreboard objectives add int_buff dummy
         scoreboard objectives add heal_amount_mana dummy
         scoreboard objectives add heal_timer_mana dummy
         scoreboard objectives add mana_ratio dummy
         # 防御(防御力)
         scoreboard objectives add def dummy
-        scoreboard objectives add def_bonus dummy
         scoreboard objectives add def_base dummy
-        scoreboard objectives add def_enchant dummy
         scoreboard objectives add def_buff dummy
         # 速度(移動&攻撃速度)
         scoreboard objectives add spd dummy
-        scoreboard objectives add spd_bonus dummy
         scoreboard objectives add spd_base dummy
-        scoreboard objectives add spd_enchant dummy
         scoreboard objectives add spd_buff dummy
         # 会心(クリティカル率、クリティカル倍率)
         scoreboard objectives add crt dummy
-        scoreboard objectives add crt_bonus dummy
         scoreboard objectives add crt_base dummy
-        scoreboard objectives add crt_enchant dummy
         scoreboard objectives add crt_buff dummy
         # 運(ドロップ率などのRNG操作ステータス)
         scoreboard objectives add luk dummy
-        scoreboard objectives add luk_bonus dummy
         scoreboard objectives add luk_base dummy
-        scoreboard objectives add luk_enchant dummy
         scoreboard objectives add luk_buff dummy
         # 集中(範囲攻撃のダメージ増加、魔法攻撃の追尾開始のタイミングなどその他)
         scoreboard objectives add acc dummy
-        scoreboard objectives add acc_bonus dummy
         scoreboard objectives add acc_base dummy
-        scoreboard objectives add acc_enchant dummy
         scoreboard objectives add acc_buff dummy
         scoreboard objectives add dmg_eff dummy
         scoreboard objectives add follow_rate dummy
 
         # 属性相性
         scoreboard objectives add resistance_melee dummy
+        scoreboard objectives add resistance_melee_buff dummy
         scoreboard objectives add resistance_magic dummy
+        scoreboard objectives add resistance_magic_buff dummy
         scoreboard objectives add resistance_ranged dummy
+        scoreboard objectives add resistance_ranged_buff dummy
         scoreboard objectives add resistance_fire dummy
+        scoreboard objectives add resistance_fire_buff dummy
         scoreboard objectives add resistance_ice dummy
+        scoreboard objectives add resistance_ice_buff dummy
         scoreboard objectives add resistance_wind dummy
+        scoreboard objectives add resistance_wind_buff dummy
         scoreboard objectives add resistance_thunder dummy
-
-        # (...分類できねぇ)
-        scoreboard objectives add foodTimer dummy
+        scoreboard objectives add resistance_thunder_buff dummy
+        # バフ用AECとEntity紐づけスコア
         scoreboard objectives add hasOrigin dummy
     # プレイヤー区別用のID
     scoreboard objectives add playerID dummy

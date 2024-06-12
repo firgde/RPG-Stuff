@@ -13,6 +13,13 @@
     execute store result score #crtBonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".status.crt
     execute store result score #lukBonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".status.luk
     execute store result score #accBonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".status.acc
+    execute store result score #resistance_melee_bonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".resistance.melee
+    execute store result score #resistance_magic_bonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".resistance.magic
+    execute store result score #resistance_ranged_bonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".resistance.ranged
+    execute store result score #resistance_fire_bonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".resistance.fire
+    execute store result score #resistance_ice_bonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".resistance.ice
+    execute store result score #resistance_wind_bonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".resistance.wind
+    execute store result score #resistance_thunder_bonus buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".resistance.thunder
     #ｴﾝﾁｬﾝﾄの数
     execute store result score #enchantcount buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".Enchantments
     #属性

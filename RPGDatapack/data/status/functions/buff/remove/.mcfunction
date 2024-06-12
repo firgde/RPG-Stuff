@@ -13,6 +13,13 @@
     scoreboard players set @s crt_buff 0
     scoreboard players set @s luk_buff 0
     scoreboard players set @s acc_buff 0
+    scoreboard players set @s resistance_melee_buff 0
+    scoreboard players set @s resistance_magic_buff 0
+    scoreboard players set @s resistance_ranged_buff 0
+    scoreboard players set @s resistance_fire_buff 0
+    scoreboard players set @s resistance_ice_buff 0
+    scoreboard players set @s resistance_wind_buff 0
+    scoreboard players set @s resistance_thunder_buff 0
     execute on origin if entity @s[type=player] run function hud:buff/update
 # 属性デバフは別途処理
     execute if entity @s[tag=debuff.element] run function status:buff/remove/element

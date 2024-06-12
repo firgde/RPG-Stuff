@@ -21,16 +21,16 @@
     execute store result score #lukBonus buffer run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.luk
     execute store result score #accBonus buffer run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.acc
     #エンチャントで増加する値を加算
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.atk int 1 run scoreboard players operation #atkBonus buffer += #atkBonus atk_enchant
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.mag int 1 run scoreboard players operation #magBonus buffer += #magBonus mag_enchant
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.dex int 1 run scoreboard players operation #dexBonus buffer += #dexBonus dex_enchant
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.hp int 1 run scoreboard players operation #hpBonus buffer += #hpBonus max_hp_enchant
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.int int 1 run scoreboard players operation #intBonus buffer += #intBonus int_enchant
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.def int 1 run scoreboard players operation #defBonus buffer += #defBonus def_enchant
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.spd int 1 run scoreboard players operation #spdBonus buffer += #spdBonus spd_enchant
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.crt int 1 run scoreboard players operation #crtBonus buffer += #crtBonus crt_enchant
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.luk int 1 run scoreboard players operation #lukBonus buffer += #lukBonus luk_enchant
-    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.acc int 1 run scoreboard players operation #accBonus buffer += #accBonus acc_enchant
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.atk int 1 run scoreboard players operation #atkBonus buffer += #atk_bonus_enchant buffer
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.mag int 1 run scoreboard players operation #magBonus buffer += #mag_bonus_enchant buffer
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.dex int 1 run scoreboard players operation #dexBonus buffer += #dex_bonus_enchant buffer
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.hp int 1 run scoreboard players operation #hpBonus buffer += #hp_bonus_enchant buffer
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.int int 1 run scoreboard players operation #intBonus buffer += #int_bonus_enchant buffer
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.def int 1 run scoreboard players operation #defBonus buffer += #def_bonus_enchant buffer
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.spd int 1 run scoreboard players operation #spdBonus buffer += #spd_bonus_enchant buffer
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.crt int 1 run scoreboard players operation #crtBonus buffer += #crt_bonus_enchant buffer
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.luk int 1 run scoreboard players operation #lukBonus buffer += #luk_bonus_enchant buffer
+    execute store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".status.acc int 1 run scoreboard players operation #accBonus buffer += #acc_bonus_enchant buffer
 # アイテムのlore設定
     data modify storage item: Item set from block ~ ~ ~ Items[{Slot:4b}]
     data remove storage item: Item.Slot

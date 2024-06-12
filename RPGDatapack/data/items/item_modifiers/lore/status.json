@@ -1123,6 +1123,782 @@
 	},
 	{
 		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"text": " "
+			}
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "inverted",
+				"term": {
+					"condition": "all_of",
+					"terms": [
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#resistance_melee_bonus"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						},
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#resistance_magic_bonus"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						},
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#resistance_ranged_bonus"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						},
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#resistance_fire_bonus"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						},
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#resistance_ice_bonus"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						},
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#resistance_wind_bonus"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						},
+						{
+							"condition": "value_check",
+							"value": {
+								"type": "score",
+								"target": {
+									"type": "fixed",
+									"name": "#resistance_thunder_bonus"
+								},
+								"score": "buffer"
+							},
+							"range": 0
+						}
+					]
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.melee",
+					"color": "gray",
+					"italic": false,
+					"with": [
+					{
+						"text": " +",
+						"color": "green",
+						"italic": false
+					},
+					{
+						"score": {
+							"name": "#resistance_melee_bonus",
+							"objective": "buffer"
+						},
+						"color": "green",
+						"italic": false
+					},
+					{
+						"text": "%",
+						"color": "green"
+					}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_melee_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.melee",
+					"color": "gray",
+					"italic": false,
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"score": {
+								"name": "#resistance_melee_bonus",
+								"objective": "buffer"
+							},
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_melee_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.magic",
+					"color": "dark_purple",
+					"italic": false,
+					"with": [
+						{
+							"text": " +",
+							"color": "green",
+							"italic": false
+						},
+						{
+							"score": {
+								"name": "#resistance_magic_bonus",
+								"objective": "buffer"
+							},
+							"color": "green",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "green"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_magic_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.magic",
+					"color": "dark_purple",
+					"italic": false,
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"score": {
+								"name": "#resistance_magic_bonus",
+								"objective": "buffer"
+							},
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_magic_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.ranged",
+					"color": "#6B4B1A",
+					"italic": false,
+					"with": [
+						{
+							"text": " +",
+							"color": "green",
+							"italic": false
+						},
+						{
+							"score": {
+								"name": "#resistance_ranged_bonus",
+								"objective": "buffer"
+							},
+							"color": "green",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "green"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_ranged_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.ranged",
+					"color": "#6B4B1A",
+					"italic": false,
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"score": {
+								"name": "#resistance_ranged_bonus",
+								"objective": "buffer"
+							},
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_ranged_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.fire",
+					"color": "#C23400",
+					"italic": false,
+					"with": [
+						{
+							"text": " +",
+							"color": "green",
+							"italic": false
+						},
+						{
+							"score": {
+								"name": "#resistance_fire_bonus",
+								"objective": "buffer"
+							},
+							"color": "green",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "green"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_fire_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.fire",
+					"color": "#C23400",
+					"italic": false,
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"score": {
+								"name": "#resistance_fire_bonus",
+								"objective": "buffer"
+							},
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_fire_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.ice",
+					"color": "dark_aqua",
+					"italic": false,
+					"with": [
+						{
+							"text": " +",
+							"color": "green",
+							"italic": false
+						},
+						{
+							"score": {
+								"name": "#resistance_ice_bonus",
+								"objective": "buffer"
+							},
+							"color": "green",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "green"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_ice_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.ice",
+					"color": "dark_aqua",
+					"italic": false,
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"score": {
+								"name": "#resistance_ice_bonus",
+								"objective": "buffer"
+							},
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_ice_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.wind",
+					"color": "dark_green",
+					"italic": false,
+					"with": [
+						{
+							"text": " +",
+							"color": "green",
+							"italic": false
+						},
+						{
+							"score": {
+								"name": "#resistance_wind_bonus",
+								"objective": "buffer"
+							},
+							"color": "green",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "green"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_wind_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.wind",
+					"color": "dark_green",
+					"italic": false,
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"score": {
+								"name": "#resistance_wind_bonus",
+								"objective": "buffer"
+							},
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_wind_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.thunder",
+					"color": "#776F00",
+					"italic": false,
+					"with": [
+						{
+							"text": " +",
+							"color": "green",
+							"italic": false
+						},
+						{
+							"score": {
+								"name": "#resistance_thunder_bonus",
+								"objective": "buffer"
+							},
+							"color": "green",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "green"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_thunder_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"translate": "item.ui.resistance.thunder",
+					"color": "#776F00",
+					"italic": false,
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"score": {
+								"name": "#resistance_thunder_bonus",
+								"objective": "buffer"
+							},
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "score",
+					"target": {
+						"type": "fixed",
+						"name": "#resistance_thunder_bonus"
+					},
+					"score": "buffer"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
 		"lore": [
 			{
 				"text": " "

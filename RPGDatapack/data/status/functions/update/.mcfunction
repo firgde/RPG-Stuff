@@ -24,6 +24,13 @@
     scoreboard players operation @s crt += @s crt_buff
     scoreboard players operation @s luk += @s luk_buff
     scoreboard players operation @s acc += @s acc_buff
+    scoreboard players operation @s resistance_melee += @s resistance_melee_buff
+    scoreboard players operation @s resistance_magic += @s resistance_magic_buff
+    scoreboard players operation @s resistance_ranged += @s resistance_ranged_buff
+    scoreboard players operation @s resistance_fire += @s resistance_fire_buff
+    scoreboard players operation @s resistance_ice += @s resistance_ice_buff
+    scoreboard players operation @s resistance_wind += @s resistance_wind_buff
+    scoreboard players operation @s resistance_thunder += @s resistance_thunder_buff
 # 0より小さいなら調整
     scoreboard players operation @s atk > #0 const
     scoreboard players operation @s mag > #0 const
@@ -35,6 +42,13 @@
     scoreboard players operation @s crt > #0 const
     scoreboard players operation @s luk > #0 const
     scoreboard players operation @s acc > #0 const
+    scoreboard players operation @s resistance_melee > #0 const
+    scoreboard players operation @s resistance_magic > #0 const
+    scoreboard players operation @s resistance_ranged > #0 const
+    scoreboard players operation @s resistance_fire > #0 const
+    scoreboard players operation @s resistance_ice > #0 const
+    scoreboard players operation @s resistance_wind > #0 const
+    scoreboard players operation @s resistance_thunder > #0 const
 # Mob限定
     execute if entity @s[type=!player] store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base float 0.01 run scoreboard players get @s spd
 # リセット
