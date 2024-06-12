@@ -4,6 +4,9 @@
     execute if entity @s[advancements={main:combat/damage_taken={melee=true}}] on attacker run function main:combat/damage/take/melee
     execute if entity @s[advancements={main:combat/damage_taken={magic=true}}] on attacker run function main:combat/damage/take/magic
     execute if entity @s[advancements={main:combat/damage_taken={projectile=true}}] on attacker run function main:combat/damage/take/ranged
+# 属性取得
+    execute unless score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #mainElement buffer
+    execute if score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run scoreboard players operation #damageType buffer = #sideElement buffer
 # 被ダメージ時の処理
     function #asset:combat/trigger/on_hurt_player
 # 共通
