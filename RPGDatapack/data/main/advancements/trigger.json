@@ -147,6 +147,86 @@
                     }
                 ]
             }
+        },
+        "equip_head": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.head": {
+                                    "predicates": {
+                                        "custom_data": "{armorType:\"helmet\"}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "equip_chest": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.chest": {
+                                    "predicates": {
+                                        "custom_data": "{armorType:\"chestplate\"}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "equip_legs": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.legs": {
+                                    "predicates": {
+                                        "custom_data": "{armorType:\"leggings\"}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "equip_feet": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.feet": {
+                                    "predicates": {
+                                        "custom_data": "{armorType:\"boots\"}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     },
     "requirements": [
@@ -157,7 +237,11 @@
             "magic_hit",
             "consume",
             "ability",
-            "mine"
+            "mine",
+            "equip_head",
+            "equip_chest",
+            "equip_legs",
+            "equip_feet"
         ]
     ],
     "rewards": {
