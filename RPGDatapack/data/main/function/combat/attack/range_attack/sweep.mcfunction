@@ -17,7 +17,7 @@
     tag @e[tag=hurt.indirect] add hurt.melee
 # プレイヤーが近くにいるなら連撃判定のinteraction召喚
     execute at @s if entity @p[distance=..3] unless data entity @s Passengers[{Tags:["atk_combo"]}] run summon interaction ~ ~ ~ {Tags:["atk_combo","atk_combo.init"]}
-    execute at @s run ride @e[tag=atk_combo.init,limit=1,sort=nearest,distance=..1] mount @s
+    execute at @s run ride @n[tag=atk_combo.init,distance=..1] mount @s
     execute on passengers run function main:combat/attack/combo/sword/init
 # リセット
     tag @s remove this

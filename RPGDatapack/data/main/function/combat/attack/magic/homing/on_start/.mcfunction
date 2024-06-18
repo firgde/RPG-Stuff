@@ -37,7 +37,7 @@
     # say Target: @e[tag=homingTarget]
 
 # Targetに向く
-    execute facing entity @e[tag=homingTarget,limit=1,sort=nearest] eyes run tp @s ~ ~ ~ ~ ~
+    execute facing entity @n[tag=homingTarget] eyes run tp @s ~ ~ ~ ~ ~
     #自分のRotationをプレイヤーのRotationとの平均値に
     execute store result score #rot buffer run data get entity @s Rotation[0] 100
     execute store result score #playerRot buffer run data get entity @p Rotation[0] 100

@@ -1,7 +1,7 @@
 # 0 0 0を基準にして+0.1の位置にkb_vectorをtp
     execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^-0.05 {Tags:["kb_vector"]}
 # mov:にkb_vectorのPosを保存 ( mov: {mov:[X,Y,Z]} )
-    data modify storage mov: mov set from entity @e[tag=kb_vector,limit=1] Pos
+    data modify storage mov: mov set from entity @n[tag=kb_vector] Pos
     data modify storage mov: mov[1] set value -0.032
 # XYZにmov:から100倍して取得
     execute store result score #xpower buffer run data get storage mov: mov[0] 10000

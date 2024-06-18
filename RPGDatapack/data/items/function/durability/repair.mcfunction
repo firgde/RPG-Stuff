@@ -20,9 +20,9 @@
     item modify block 0 -59 0 container.0 items:lore/info
     item replace entity @s contents from block 0 -59 0 container.0
 # 修理素材を消す
-    execute if score #slot_1 buffer matches 1 at @e[limit=1,sort=nearest,tag=repair_slot.1] run data remove entity @e[limit=1,sort=nearest,tag=repair_material] item
-    execute if score #slot_2 buffer matches 1 at @e[limit=1,sort=nearest,tag=repair_slot.2] run data remove entity @e[limit=1,sort=nearest,tag=repair_material] item
-    execute if score #slot_3 buffer matches 1 at @e[limit=1,sort=nearest,tag=repair_slot.3] run data remove entity @e[limit=1,sort=nearest,tag=repair_material] item
+    execute if score #slot_1 buffer matches 1 at @n[tag=repair_slot.1] run data remove entity @n[tag=repair_material] item
+    execute if score #slot_2 buffer matches 1 at @n[tag=repair_slot.2] run data remove entity @n[tag=repair_material] item
+    execute if score #slot_3 buffer matches 1 at @n[tag=repair_slot.3] run data remove entity @n[tag=repair_material] item
 # 演出
     playsound block.anvil.use block @p ~ ~ ~ 1 1
 # リセット

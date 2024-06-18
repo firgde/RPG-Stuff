@@ -1,15 +1,15 @@
 # アイテムの種類
-    execute store result score #weaponType buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.components."minecraft:custom_data".weaponType
-    execute unless score #weaponType buffer matches -2147483648..2147483647 store result score #weaponType buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.components."minecraft:custom_data".weaponType
+    execute store result score #weaponType buffer run data get entity @n[tag=alchemy.item.0] item.components."minecraft:custom_data".weaponType
+    execute unless score #weaponType buffer matches -2147483648..2147483647 store result score #weaponType buffer run data get entity @n[tag=alchemy.item.1] item.components."minecraft:custom_data".weaponType
 # 属性
-    execute store result score #element0 buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.components."minecraft:custom_data".Element.Type
-    execute store result score #element1 buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.components."minecraft:custom_data".Element.Type
+    execute store result score #element0 buffer run data get entity @n[tag=alchemy.item.0] item.components."minecraft:custom_data".Element.Type
+    execute store result score #element1 buffer run data get entity @n[tag=alchemy.item.1] item.components."minecraft:custom_data".Element.Type
     #両方0または両方0でないなら中止
     execute unless predicate main:craft/alchemy/element run return 0
     execute store result score #element buffer run scoreboard players operation #element0 buffer += #element1 buffer
 # レア度
-    execute store result score #rarity0 buffer run data get entity @e[tag=alchemy.item.0,limit=1,sort=nearest] item.components."minecraft:custom_data".rarity
-    execute store result score #rarity1 buffer run data get entity @e[tag=alchemy.item.1,limit=1,sort=nearest] item.components."minecraft:custom_data".rarity
+    execute store result score #rarity0 buffer run data get entity @n[tag=alchemy.item.0] item.components."minecraft:custom_data".rarity
+    execute store result score #rarity1 buffer run data get entity @n[tag=alchemy.item.1] item.components."minecraft:custom_data".rarity
     execute store result score #rarity buffer run scoreboard players operation #rarity0 buffer += #rarity1 buffer
     scoreboard players operation #rarity buffer /= #2 const
     execute if score #rarity buffer matches 0 run scoreboard players set #rarity buffer 1

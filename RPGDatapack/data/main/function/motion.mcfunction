@@ -1,7 +1,7 @@
 # 0 0 0を基準にして+0.05の位置に_vectorを召喚
     execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^0.05 {Tags:["vector"]}
 # mov:に_vectorのPosを保存
-    data modify storage mov: mov set from entity @e[tag=vector,limit=1] Pos
+    data modify storage mov: mov set from entity @n[tag=vector] Pos
 # XYZにmov:から100倍して取得
     execute store result score #xpower buffer run data get storage mov: mov[0] 10000
     execute store result score #ypower buffer run data get storage mov: mov[1] 10000

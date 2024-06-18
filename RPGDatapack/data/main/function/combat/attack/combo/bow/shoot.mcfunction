@@ -17,7 +17,7 @@
 # 0 0 0を基準にして+0.05の位置に_vectorを召喚
     execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^0.5 {Tags:["vector"]}
 # mov:に_vectorのPosを保存
-    data modify storage mov: mov set from entity @e[tag=vector,limit=1] Pos
+    data modify storage mov: mov set from entity @n[tag=vector] Pos
 # 対象のEntityにmov:をそのままセット
     data modify entity @s Motion set from storage mov: mov
 # リセット

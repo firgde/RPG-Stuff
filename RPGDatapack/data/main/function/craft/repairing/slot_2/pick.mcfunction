@@ -1,15 +1,15 @@
 # スロットも手も空の場合や耐久値のあるアイテムを持ってる場合はslot.0にアクセス
-    execute at @e[type=interaction,tag=repair_slot.2,limit=1,sort=nearest] unless data entity @e[limit=1,sort=nearest,tag=repair_material,type=item_display] item if entity @s[advancements={main:craft/repairing/slot_2={left=true}}] run advancement grant @s only main:craft/repairing/slot_0 left
-    execute unless data entity @s SelectedItem at @e[type=interaction,tag=repair_slot.2,limit=1,sort=nearest] unless data entity @e[limit=1,sort=nearest,tag=repair_material,type=item_display] item if entity @s[advancements={main:craft/repairing/slot_2={right=true}}] run advancement grant @s only main:craft/repairing/slot_0 right
+    execute at @n[type=interaction,tag=repair_slot.2] unless data entity @n[tag=repair_material,type=item_display] item if entity @s[advancements={main:craft/repairing/slot_2={left=true}}] run advancement grant @s only main:craft/repairing/slot_0 left
+    execute unless data entity @s SelectedItem at @n[type=interaction,tag=repair_slot.2] unless data entity @n[tag=repair_material,type=item_display] item if entity @s[advancements={main:craft/repairing/slot_2={right=true}}] run advancement grant @s only main:craft/repairing/slot_0 right
     execute if data entity @s SelectedItem.components."minecraft:max_damage" if entity @s[advancements={main:craft/repairing/slot_2={right=true}}] run advancement grant @s only main:craft/repairing/slot_0 right
 # 修復専用アイテムしか置けない
     execute if data entity @s SelectedItem unless data entity @s SelectedItem.components{"minecraft:custom_data":{repairMaterial:1b}} if entity @s[advancements={main:craft/repairing/slot_2={right=true}}] run advancement revoke @s only main:craft/repairing/slot_2
     execute if data entity @s SelectedItem unless data entity @s SelectedItem.components{"minecraft:custom_data":{repairMaterial:1b}} if entity @s[advancements={main:craft/repairing/slot_2={right=true}}] run return 0
 # slot.2のitem_displayからインベントリにアイテムを持ってくる
     item replace block 0 -59 0 container.1 with air
-    execute if entity @s[advancements={main:craft/repairing/slot_2=true}] at @e[type=interaction,tag=repair_slot.2,limit=1,sort=nearest] run data modify block 0 -59 0 Items[{Slot:0b}] set from entity @e[limit=1,sort=nearest,tag=repair_material,type=item_display] item
+    execute if entity @s[advancements={main:craft/repairing/slot_2=true}] at @n[type=interaction,tag=repair_slot.2] run data modify block 0 -59 0 Items[{Slot:0b}] set from entity @n[tag=repair_material,type=item_display] item
     #左クリックしていたらアイテム消去
-    execute if entity @s[advancements={main:craft/repairing/slot_2={left=true}}] at @e[type=interaction,tag=repair_slot.2,limit=1,sort=nearest] run item replace entity @e[limit=1,sort=nearest,tag=repair_material,type=item_display] contents with air
+    execute if entity @s[advancements={main:craft/repairing/slot_2={left=true}}] at @n[type=interaction,tag=repair_slot.2] run item replace entity @n[tag=repair_material,type=item_display] contents with air
     #右クリックしていたら交換
     execute if entity @s[advancements={main:craft/repairing/slot_2={right=true}}] run function main:craft/repairing/slot_2/place
     #そしてアイテム還元

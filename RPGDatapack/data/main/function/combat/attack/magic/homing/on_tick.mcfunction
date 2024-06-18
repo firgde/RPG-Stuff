@@ -15,13 +15,13 @@
     execute positioned ^ ^ ^10.1 as @e[tag=homingCandidate,distance=..10] positioned ^ ^ ^-10.1 rotated ~5 ~ positioned ^1000.1 ^ ^ positioned ~ ~-1.6 ~ if entity @s[distance=..1000] positioned ~ ~1.6 ~ positioned ^-1000.1 ^ ^ rotated ~-10 ~ positioned ^1000.1 ^ ^ positioned ~ ~-1.6 ~ unless entity @s[distance=..1000] run scoreboard players add @s homing_priority 8
 
 # 一体に絞る
-    tag @e[tag=homingCandidate,distance=..20,limit=1,sort=nearest] add homingTarget
+    tag @n[tag=homingCandidate,distance=..20] add homingTarget
     tag @e[tag=homingCandidate,distance=..20] remove homingCandidate
 
 # 自分から見てどこにいるかによって回転
     #対象が右に居たら右に旋回
-        execute facing entity @e[team=hostile,limit=1,tag=homingTarget,sort=nearest] eyes positioned ^0.3 ^ ^3.0 rotated as @s positioned ^4.0 ^ ^ if entity @s[distance=..5] at @s run tp @s ~ ~ ~ ~1.0 ~
+        execute facing entity @n[team=hostile,tag=homingTarget] eyes positioned ^0.3 ^ ^3.0 rotated as @s positioned ^4.0 ^ ^ if entity @s[distance=..5] at @s run tp @s ~ ~ ~ ~1.0 ~
     #対象が左に居たら左に旋回
-        execute facing entity @e[team=hostile,limit=1,tag=homingTarget,sort=nearest] eyes positioned ^-0.3 ^ ^3.0 rotated as @s positioned ^-4.0 ^ ^ if entity @s[distance=..5] at @s run tp @s ~ ~ ~ ~-1.0 ~
+        execute facing entity @n[team=hostile,tag=homingTarget] eyes positioned ^-0.3 ^ ^3.0 rotated as @s positioned ^-4.0 ^ ^ if entity @s[distance=..5] at @s run tp @s ~ ~ ~ ~-1.0 ~
 # リセット
     tag @e remove homingTarget
