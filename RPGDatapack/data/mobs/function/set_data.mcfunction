@@ -24,7 +24,7 @@
     data modify entity @s ArmorItems[3].components."minecraft:item_name" set from storage mob: Data.Name
     data modify entity @s CustomNameVisible set value 0b
 # attributeに関与するもの
-    execute store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base float 0.01 run data get storage mob: Data.status.baseSpd
+    execute store result entity @s attributes[{id:"minecraft:generic.movement_speed"}].base float 0.01 run data get storage mob: Data.status.baseSpd
 # 演出
     execute at @s run particle poof ~ ~ ~ 0.2 0.5 0.2 0.01 15
     #ボス限定
