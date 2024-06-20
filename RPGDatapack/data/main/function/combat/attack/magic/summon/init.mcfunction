@@ -43,7 +43,5 @@
     execute at @s run tp @s ^ ^ ^0.5
 # 召喚時のホーミング
     execute at @s run function main:combat/attack/magic/homing/on_start/
-# IDスコア割り当て
-    scoreboard players operation @s playerID = @p playerID
 # summonタグ消し
     tag @s remove magic.summon

@@ -6,4 +6,4 @@
     item modify entity @s weapon.mainhand main:magic/get_cooldown
 # 本体となるitem_display召喚
     execute summon item_display run tag @s add magic.summon
-    execute as @e[type=item_display,tag=magic.summon] run function main:combat/attack/magic/summon/init
+    execute as @n[type=item_display,tag=magic.summon] run function main:combat/attack/magic/summon/init

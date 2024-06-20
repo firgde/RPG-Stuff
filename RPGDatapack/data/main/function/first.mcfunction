@@ -147,8 +147,6 @@ say reload
         scoreboard objectives add resistance_thunder_buff dummy
         # バフ用AECとEntity紐づけスコア
         scoreboard objectives add hasOrigin dummy
-    # プレイヤー区別用のID
-    scoreboard objectives add playerID dummy
     # 手に持っているアイテムのスロット
     scoreboard objectives add slot dummy
     scoreboard objectives add prevslot dummy
