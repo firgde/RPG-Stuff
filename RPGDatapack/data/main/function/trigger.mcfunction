@@ -7,13 +7,13 @@
     execute if entity @s[advancements={main:trigger={ability=true}}] run function #asset:combat/trigger/ability
     execute if entity @s[advancements={main:trigger={mine=true}}] run function items:durability/remove
     execute if entity @s[advancements={main:trigger={equip_head=true}}] store result score #itemID buffer run data get entity @s Inventory[{Slot:103b}].components."minecraft:custom_data".id
-    execute if entity @s[advancements={main:trigger={equip_head=true}}] run function #asset:item/trigger/equip/head
+    execute unless entity @s[advancements={main:trigger={equip_head=false,disequip_head=false}}] run function #asset:item/trigger/equip/head
     execute if entity @s[advancements={main:trigger={equip_chest=true}}] store result score #itemID buffer run data get entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".id
-    execute if entity @s[advancements={main:trigger={equip_chest=true}}] run function #asset:item/trigger/equip/chest
+    execute unless entity @s[advancements={main:trigger={equip_chest=false,disequip_chest=false}}] run function #asset:item/trigger/equip/chest
     execute if entity @s[advancements={main:trigger={equip_legs=true}}] store result score #itemID buffer run data get entity @s Inventory[{Slot:101b}].components."minecraft:custom_data".id
-    execute if entity @s[advancements={main:trigger={equip_legs=true}}] run function #asset:item/trigger/equip/legs
+    execute unless entity @s[advancements={main:trigger={equip_legs=false,disequip_legs=false}}] run function #asset:item/trigger/equip/legs
     execute if entity @s[advancements={main:trigger={equip_feet=true}}] store result score #itemID buffer run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".id
-    execute if entity @s[advancements={main:trigger={equip_feet=true}}] run function #asset:item/trigger/equip/feet
+    execute unless entity @s[advancements={main:trigger={equip_feet=false,disequip_feet=false}}] run function #asset:item/trigger/equip/feet
 # リセット
     advancement revoke @s only main:trigger
     scoreboard players reset #itemID buffer

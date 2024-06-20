@@ -227,6 +227,78 @@
                     }
                 ]
             }
+        },
+        "disequip_head": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.head": {
+                                    "items": "air"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "disequip_chest": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.chest": {
+                                    "items": "air"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "disequip_legs": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.legs": {
+                                    "items": "air"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "disequip_feet": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.feet": {
+                                    "items": "air"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     },
     "requirements": [
@@ -241,7 +313,11 @@
             "equip_head",
             "equip_chest",
             "equip_legs",
-            "equip_feet"
+            "equip_feet",
+            "disequip_head",
+            "disequip_chest",
+            "disequip_legs",
+            "disequip_feet"
         ]
     ],
     "rewards": {
