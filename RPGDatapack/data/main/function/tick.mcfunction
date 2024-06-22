@@ -16,8 +16,8 @@
 ## 手工のtick処理
     execute as @p at @s if entity @e[tag=craft,distance=..6] run function main:craft/tick
 
-## GUIのtick処理
-    execute as @p at @s run function main:social/ui/tick
+## 社交のtick処理
+    execute as @p at @s run function main:social/tick
 
 ## HUDのtick処理
     function hud:tick
