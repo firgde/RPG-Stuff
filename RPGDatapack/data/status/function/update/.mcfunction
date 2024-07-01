@@ -11,6 +11,13 @@
     scoreboard players operation @s crt = @s crt_base
     scoreboard players operation @s luk = @s luk_base
     scoreboard players operation @s acc = @s acc_base
+    scoreboard players operation @s resistance_melee = @s resistance_melee_base
+    scoreboard players operation @s resistance_magic = @s resistance_magic_base
+    scoreboard players operation @s resistance_ranged = @s resistance_ranged_base
+    scoreboard players operation @s resistance_fire = @s resistance_fire_base
+    scoreboard players operation @s resistance_ice = @s resistance_ice_base
+    scoreboard players operation @s resistance_wind = @s resistance_wind_base
+    scoreboard players operation @s resistance_thunder = @s resistance_thunder_base
 # プレイヤー限定
     execute if entity @s[type=player] run function status:update/player
 # バフ値取得

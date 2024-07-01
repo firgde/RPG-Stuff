@@ -132,18 +132,25 @@ say reload
 
         # 属性相性
         scoreboard objectives add resistance_melee dummy
+        scoreboard objectives add resistance_melee_base dummy
         scoreboard objectives add resistance_melee_buff dummy
         scoreboard objectives add resistance_magic dummy
+        scoreboard objectives add resistance_magic_base dummy
         scoreboard objectives add resistance_magic_buff dummy
         scoreboard objectives add resistance_ranged dummy
+        scoreboard objectives add resistance_ranged_base dummy
         scoreboard objectives add resistance_ranged_buff dummy
         scoreboard objectives add resistance_fire dummy
+        scoreboard objectives add resistance_fire_base dummy
         scoreboard objectives add resistance_fire_buff dummy
         scoreboard objectives add resistance_ice dummy
+        scoreboard objectives add resistance_ice_base dummy
         scoreboard objectives add resistance_ice_buff dummy
         scoreboard objectives add resistance_wind dummy
+        scoreboard objectives add resistance_wind_base dummy
         scoreboard objectives add resistance_wind_buff dummy
         scoreboard objectives add resistance_thunder dummy
+        scoreboard objectives add resistance_thunder_base dummy
         scoreboard objectives add resistance_thunder_buff dummy
         # バフ用AECとEntity紐づけスコア
         scoreboard objectives add hasOrigin dummy
@@ -169,6 +176,7 @@ say reload
     scoreboard players set #40 const 40
     scoreboard players set #50 const 50
     scoreboard players set #55 const 55
+    scoreboard players set #60 const 60
     scoreboard players set #65 const 65
     scoreboard players set #75 const 75
     scoreboard players set #80 const 80

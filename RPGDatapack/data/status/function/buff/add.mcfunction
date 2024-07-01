@@ -9,5 +9,12 @@
     scoreboard players operation @s crt_buff += @n[tag=buff.init] crt_buff
     scoreboard players operation @s luk_buff += @n[tag=buff.init] luk_buff
     scoreboard players operation @s acc_buff += @n[tag=buff.init] acc_buff
+    scoreboard players operation @s resistance_melee_buff += @n[tag=buff.init] resistance_melee_buff
+    scoreboard players operation @s resistance_magic_buff += @n[tag=buff.init] resistance_magic_buff
+    scoreboard players operation @s resistance_ranged_buff += @n[tag=buff.init] resistance_ranged_buff
+    scoreboard players operation @s resistance_fire_buff += @n[tag=buff.init] resistance_fire_buff
+    scoreboard players operation @s resistance_ice_buff += @n[tag=buff.init] resistance_ice_buff
+    scoreboard players operation @s resistance_wind_buff += @n[tag=buff.init] resistance_wind_buff
+    scoreboard players operation @s resistance_thunder_buff += @n[tag=buff.init] resistance_thunder_buff
 # ステータス更新
     function status:update/

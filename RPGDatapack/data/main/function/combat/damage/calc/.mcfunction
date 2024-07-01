@@ -26,6 +26,8 @@
     execute if entity @s[tag=boss] run function main:combat/damage/boss
     #HurtTime設定
     scoreboard players set @s[type=!player] hurt_time 10
+    #被ダメージ時の処理
+    execute unless entity @s[type=player] run function #asset:combat/trigger/on_hurt
 # 防具の耐久を減らす
     execute if entity @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_data":{armorType:"helmet",armor:1b}}}]},type=player] run function items:durability/remove_head
     execute if entity @s[nbt={Inventory:[{Slot:102b,components:{"minecraft:custom_data":{armorType:"chestplate",armor:1b}}}]},type=player] run function items:durability/remove_chest

@@ -1,11 +1,3 @@
-# bonus値リセット
-    scoreboard players set @s resistance_melee 100
-    scoreboard players set @s resistance_magic 100
-    scoreboard players set @s resistance_ranged 100
-    scoreboard players set @s resistance_fire 100
-    scoreboard players set @s resistance_ice 100
-    scoreboard players set @s resistance_wind 100
-    scoreboard players set @s resistance_thunder 100
 # ステータス取得
     execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{weapon:1b}}}}] run function status:update/slot/mainhand
     execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tool:1b}}}}] run function status:update/slot/mainhand

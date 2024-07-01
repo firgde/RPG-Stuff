@@ -7,13 +7,13 @@
     execute store result score @s def_base run data get storage mob: Data.status.baseDef
     execute store result score @s spd_base run data get storage mob: Data.status.baseSpd
     execute store result score @s add_pt run data get storage mob: Data.loot.xp
-    execute store result score @s resistance_melee run data get storage mob: Data.resistance.melee 100
-    execute store result score @s resistance_magic run data get storage mob: Data.resistance.magic 100
-    execute store result score @s resistance_ranged run data get storage mob: Data.resistance.ranged 100
-    execute store result score @s resistance_fire run data get storage mob: Data.resistance.fire 100
-    execute store result score @s resistance_ice run data get storage mob: Data.resistance.ice 100
-    execute store result score @s resistance_wind run data get storage mob: Data.resistance.wind 100
-    execute store result score @s resistance_thunder run data get storage mob: Data.resistance.thunder 100
+    execute store result score @s resistance_melee_base run data get storage mob: Data.resistance.melee 100
+    execute store result score @s resistance_magic_base run data get storage mob: Data.resistance.magic 100
+    execute store result score @s resistance_ranged_base run data get storage mob: Data.resistance.ranged 100
+    execute store result score @s resistance_fire_base run data get storage mob: Data.resistance.fire 100
+    execute store result score @s resistance_ice_base run data get storage mob: Data.resistance.ice 100
+    execute store result score @s resistance_wind_base run data get storage mob: Data.resistance.wind 100
+    execute store result score @s resistance_thunder_base run data get storage mob: Data.resistance.thunder 100
 # ステータス設定
     function status:update/
 # 何のMob?
