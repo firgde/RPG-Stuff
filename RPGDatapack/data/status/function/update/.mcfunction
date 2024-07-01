@@ -57,7 +57,7 @@
     scoreboard players operation @s resistance_wind > #0 const
     scoreboard players operation @s resistance_thunder > #0 const
 # Mob限定
-    execute if entity @s[type=!player] store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base float 0.01 run scoreboard players get @s spd
+    execute if entity @s[type=!player] store result entity @s attributes[{id:"minecraft:generic.movement_speed"}].base float 0.01 run scoreboard players get @s spd
 # リセット
     scoreboard players reset #prevInt
     advancement revoke @s only status:equipped
