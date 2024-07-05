@@ -9,8 +9,6 @@
 # プレイヤーは体力の割合を計算
     function status:hp/calc_ratio
     execute if entity @s[type=player] run function status:hp/update
-# 敵は体力をHUDに表示
-    execute if entity @s[team=hostile] unless score @s max_hp matches 2147483647 run function hud:hp_bar/calc
 # 死亡処理
     execute if score @s hp matches ..0 run function main:combat/damage/death
 # リセット

@@ -46,6 +46,7 @@ say reload
         scoreboard objectives add hurt_time dummy
         scoreboard objectives add fall_distance dummy
         scoreboard objectives add ability_timer dummy
+        scoreboard objectives add combat_timer dummy
         # 探索(体力、速度、集中、運)
         scoreboard objectives add lvl_explore dummy
         scoreboard objectives add xp_explore dummy
@@ -97,6 +98,7 @@ say reload
         scoreboard objectives add hp_ratio dummy
         scoreboard objectives add hp_buffer dummy
         scoreboard objectives add max_hp_buff dummy
+        scoreboard objectives add prev_hp dummy
         # 知能(MPとその回復速度)
         scoreboard objectives add max_mana dummy
         scoreboard objectives add mana dummy

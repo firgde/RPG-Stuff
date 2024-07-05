@@ -1,3 +1,6 @@
+# 戦闘中
+    tag @p add in_combat
+    scoreboard players set @p combat_timer 100
 # 属性取得(直接攻撃していない場合は無視)
     execute unless score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run function main:combat/damage/calc/element_combined
     execute if entity @s[type=player,tag=!hurt.indirect] if score #damageType buffer matches 1..4 run function main:combat/damage/calc/element_hostile
@@ -10,6 +13,8 @@
     execute if entity @s[tag=!hurt.indirect,type=!player] unless entity @s[tag=!hurt.melee,tag=!hurt.ranged] unless data entity @s Passengers run function main:combat/damage/calc/hurt_time
 # 防御計算
     execute unless entity @s[tag=hurt.bypass_defense] run function main:combat/damage/calc/defense
+# ダメージを受ける前の体力取得
+    scoreboard players operation @s[team=hostile] prev_hp = @s hp
 # ダメージ減算
     #クリティカルの場合は色変更
     execute if entity @p[tag=attack.crit] run scoreboard players set #damageType buffer 5
@@ -18,10 +23,10 @@
     execute at @s run function main:combat/damage/display/
     #プレイヤーは体力の割合を計算
     execute if entity @s[type=player] run function status:hp/calc_ratio
+    #敵は体力をHUDに表示
+    execute if entity @s[tag=!boss,scores={max_hp=..2147483646},team=hostile] run function hud:hp_bar/calc
     #死亡処理
     execute if score @s[tag=!boss] hp matches ..0 run function main:combat/damage/death
-    #敵は体力をHUDに表示
-    execute if entity @s[team=hostile,tag=!boss] unless score @s max_hp matches 2147483647 run function hud:hp_bar/calc
     #ボスは専用の演出
     execute if entity @s[tag=boss] run function main:combat/damage/boss
     #HurtTime設定

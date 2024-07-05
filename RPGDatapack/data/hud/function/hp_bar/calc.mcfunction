@@ -1,21 +1,16 @@
-# ストレージを一旦リセット
-    data remove storage combat: data.hud.hpBar
+# ダメージを受ける前の体力の割合
+    scoreboard players operation @s hp_ratio = @s prev_hp
+    scoreboard players operation @s hp_ratio *= #80 const
+    scoreboard players operation @s hp_ratio /= @s max_hp
+# 新しく攻撃されるならリセット
+    execute if score @s hp_ratio > #prev hp_ratio if data storage combat: data.hud.progress run function hud:hp_bar/reset
 # 名前
     data modify storage combat: data.hud.Name set from entity @s ArmorItems[3].components."minecraft:item_name"
-# 残り体力の割合を5%単位で算出
+# 現在体力の割合
     scoreboard players operation @s hp_ratio = @s hp
-    scoreboard players operation @s hp_ratio *= #20 const
-    execute store result score #rec buffer run scoreboard players operation @s hp_ratio /= @s max_hp
-    scoreboard players operation @s hp_ratio = #rec buffer
-# 割合の分だけストレージにバーを追加
-    function hud:hp_bar/rec
-# 減った分を追加
-    scoreboard players set #20 buffer 20
-    execute store result score #rec buffer run scoreboard players operation #20 buffer -= @s hp_ratio
-    function hud:hp_bar/rec_removed
-# リセット
-    scoreboard players reset #20 buffer
-    scoreboard players reset @s hp_ratio
-    scoreboard players reset #rec buffer
-# 5秒後に消える
-    schedule function hud:hp_bar/reset 100t replace
+    scoreboard players operation @s hp_ratio *= #80 const
+    scoreboard players operation @s hp_ratio /= @s max_hp
+# HPバーの進行度合い
+    execute store result score #prev hp_ratio run data get storage combat: data.hud.progress
+    execute if score @s prev_hp = @s max_hp unless data storage combat: data.hud.progress run scoreboard players set #prev hp_ratio 80
+    execute store result storage combat: data.hud.ratio int 1 run scoreboard players get @s hp_ratio

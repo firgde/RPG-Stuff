@@ -3,6 +3,8 @@
 # 戦闘経験値加算
     execute if entity @s[team=hostile] run scoreboard players operation @p add_pt = @s add_pt
     execute if entity @s[team=hostile] as @p run function status:combat/update_xp
+# 戦闘中タイマーを減らす
+    scoreboard players set @p combat_timer 20
 # 体力リセット
     scoreboard players set @s hp_ratio 100
 # kill
