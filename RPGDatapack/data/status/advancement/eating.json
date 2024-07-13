@@ -1,7 +1,7 @@
 {
     "criteria": {
-        "consume": {
-            "trigger": "consume_item",
+        "": {
+            "trigger": "using_item",
             "conditions": {
                 "item": {
                     "predicates": {
@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "main:trigger_offhand"
+        "function": "status:hp/eating"
     }
 }
