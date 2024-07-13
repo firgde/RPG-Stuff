@@ -45,6 +45,9 @@
     execute if score #damageType buffer matches 5 run playsound entity.player.attack.crit hostile @p ~ ~ ~ 1 1
     #属性ダメージ
     execute unless entity @s[tag=hurt.indirect] unless score #damageType buffer matches 0 unless score #damageType buffer matches 5 run function main:combat/damage/sound/
+# 最後に攻撃されたモブ
+    execute unless entity @s[type=player] run tag @e[distance=..50,team=hostile] remove hurt_last
+    tag @s[type=!player] add hurt_last
 # リセット
     tag @s remove hurt
     tag @s remove hurt.melee

@@ -3,7 +3,7 @@
     scoreboard players operation @s hp_ratio *= #80 const
     scoreboard players operation @s hp_ratio /= @s max_hp
 # 新しく攻撃されるならリセット
-    execute if score @s hp_ratio > #prev hp_ratio if data storage combat: data.hud.progress run function hud:hp_bar/reset
+    execute if entity @s[tag=!hurt_last] run function hud:hp_bar/reset
 # 名前
     data modify storage combat: data.hud.Name set from entity @s ArmorItems[3].components."minecraft:item_name"
 # 現在体力の割合

@@ -4,8 +4,8 @@
     #現在体力との差を求める
     execute store result score #diff hp_ratio run data get storage combat: data.hud.ratio
     scoreboard players operation #diff hp_ratio -= #prev hp_ratio
-
-    scoreboard players operation #diff hp_ratio /= #2 const
+# HPが減った時だけアニメーション
+    execute if score #diff hp_ratio matches ..0 run scoreboard players operation #diff hp_ratio /= #2 const
 
     execute store result storage combat: data.hud.progress int 1 run scoreboard players operation #prev hp_ratio += #diff hp_ratio
 # hudにマクロで反映
