@@ -29,5 +29,6 @@
     #耐久度
     execute store result score #durability buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".Durability
     execute store result score #maxDurability buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:max_damage"
+    execute if items block 0 -59 0 container.0 warped_fungus_on_a_stick[max_damage=100] run scoreboard players set #maxDurability buffer 100
     #レア度
     execute store result score #rarity buffer run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".rarity

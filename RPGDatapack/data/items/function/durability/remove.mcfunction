@@ -7,12 +7,14 @@
     execute if score #durability buffer matches ..-1 run function items:durability/break
 # 差をminecraft:damageに代入
     execute store result score #max_durability buffer run data get entity @s SelectedItem.components."minecraft:max_damage"
-    execute unless data entity @s SelectedItem.components."minecraft:max_damage" run scoreboard players set #max_durability buffer 384
+    execute if items entity @s weapon.mainhand bow run scoreboard players set #max_durability buffer 384
+    execute if items entity @s weapon.mainhand warped_fungus_on_a_stick[max_damage=100] run scoreboard players set #max_durability buffer 100
     execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:damage" int 1 run scoreboard players operation #max_durability buffer -= #durability buffer
     #UI表記も更新
     data modify storage item: Item set from block 0 -59 0 Items[{Slot:0b}]
     execute positioned 0 -59 0 run function items:get_data
-    execute unless data entity @s SelectedItem.components."minecraft:max_damage" run scoreboard players set #maxDurability buffer 384
+    execute if items entity @s weapon.mainhand bow run scoreboard players set #maxDurability buffer 384
+    execute if items entity @s weapon.mainhand warped_fungus_on_a_stick[max_damage=100] run scoreboard players set #max_durability buffer 100
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
     execute if score #enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
