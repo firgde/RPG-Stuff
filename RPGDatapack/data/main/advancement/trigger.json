@@ -89,16 +89,6 @@
                 }
 			}
         },
-        "consume": {
-            "trigger": "consume_item",
-            "conditions": {
-                "item": {
-                    "predicates": {
-                        "custom_data": "{consumable:1b}"
-                    }
-                }
-            }
-        },
         "ability": {
             "trigger": "tick",
             "conditions": {
@@ -307,7 +297,6 @@
             "bow",
             "magic",
             "magic_hit",
-            "consume",
             "ability",
             "mine",
             "equip_head",
