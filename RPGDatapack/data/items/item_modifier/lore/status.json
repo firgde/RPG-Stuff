@@ -1907,18 +1907,35 @@
 		"mode": "append",
 		"conditions": [
 			{
-				"condition": "value_check",
-				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#enchantcount"
+				"condition": "any_of",
+				"terms": [
+					{
+						"condition": "value_check",
+						"value": {
+							"type": "score",
+							"target": {
+								"type": "fixed",
+								"name": "#enchantcount"
+							},
+							"score": "buffer"
+						},
+						"range": {
+							"min": 1
+						}
 					},
-					"score": "buffer"
-				},
-				"range": {
-					"min": 1
-				}
+					{
+						"condition": "value_check",
+						"value": {
+							"type": "score",
+							"target": {
+								"type": "fixed",
+								"name": "#itemType"
+							},
+							"score": "buffer"
+						},
+						"range": 7
+					}
+				]
 			}
 		]
 	}

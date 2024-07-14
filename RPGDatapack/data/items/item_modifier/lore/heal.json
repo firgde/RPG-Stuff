@@ -83,6 +83,6 @@
 				"text": " "
 			}
 		],
-		"mode": "replace_all"
+		"mode": "append"
 	}
 ]
