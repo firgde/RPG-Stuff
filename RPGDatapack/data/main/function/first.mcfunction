@@ -174,6 +174,7 @@ say reload
     scoreboard players set #8 const 8
     scoreboard players set #10 const 10
     scoreboard players set #15 const 15
+    scoreboard players set #18 const 18
     scoreboard players set #20 const 20
     scoreboard players set #40 const 40
     scoreboard players set #50 const 50
