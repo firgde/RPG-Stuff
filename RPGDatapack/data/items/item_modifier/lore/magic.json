@@ -23,28 +23,65 @@
 				],
 				"color": "gray",
 				"italic": false
-			},
+			}
+		],
+		"mode": "append"
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
 			{
-				"translate": "item.ui.text.magic.time",
+				"translate": "item.ui.text.magic.range",
 				"with": [
 					{
-						"nbt": "Item.components.\"minecraft:custom_data\".magicData.display.Time",
+						"nbt": "Item.components.\"minecraft:custom_data\".magicData.display.Range",
 						"storage": "item:",
-						"color": "light_purple",
-						"italic": false
+						"color": "white",
+						"italic": false,
+						"font": "magic_data"
 					}
 				],
 				"color": "gray",
 				"italic": false
-			},
+			}
+		],
+		"mode": "append"
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.text.magic.speed",
+				"with": [
+					{
+						"nbt": "Item.components.\"minecraft:custom_data\".magicData.display.Speed",
+						"storage": "item:",
+						"color": "white",
+						"italic": false,
+						"font": "magic_data"
+					}
+				],
+				"color": "gray",
+				"italic": false
+			}
+		],
+		"mode": "append"
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
 			{
 				"translate": "item.ui.text.magic.cooldown",
 				"with": [
 					{
 						"nbt": "Item.components.\"minecraft:custom_data\".magicData.display.CoolDown",
 						"storage": "item:",
-						"color": "light_purple",
-						"italic": false
+						"color": "white",
+						"italic": false,
+						"font": "magic_data"
 					}
 				],
 				"color": "gray",
