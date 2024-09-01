@@ -60,6 +60,7 @@ say reload
         #scoreboard objectives add mov_dis dummy
         #scoreboard objectives add mov_point dummy
         # 採取(防御、体力、魔法、運)
+        scoreboard objectives add generation_cooldown dummy
         scoreboard objectives add lvl_collect dummy
         scoreboard objectives add xp_collect dummy
         # 手工(攻撃、知能、速度、集中)
