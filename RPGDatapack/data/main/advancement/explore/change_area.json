@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "location",
+            "conditions": {
+                "biomes": "#asset:all"
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:explore/area_changed"
+    }
+}

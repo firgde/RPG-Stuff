@@ -16,6 +16,6 @@
     {"nbt":"data.hud.hasDebuff","storage":"combat:","interpret":true,"font": "hotbar"}, \
     {"nbt":"data.hud.debuff[]","font":"hotbar","storage": "combat:","interpret": true,"separator": ""}, \
     {"text": "\uF828","font": "hotbar"}, \
-    {"nbt":"data.area","interpret":true,"font":"hotbar","storage":"explore:"}, \
+    {"nbt":"data.area.name","interpret":true,"font":"hotbar","storage":"explore:"}, \
     {"text": "\uF80B\uF806"}, \
     {"nbt": "data.hud.Cooldown","storage": "combat:","font": "hotbar","interpret": true}]
