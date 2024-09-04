@@ -47,6 +47,7 @@ say reload
         scoreboard objectives add fall_distance dummy
         scoreboard objectives add ability_timer dummy
         scoreboard objectives add combat_timer dummy
+        scoreboard objectives add usedBook used:knowledge_book
         # 探索(体力、速度、集中、運)
         scoreboard objectives add lvl_explore dummy
         scoreboard objectives add xp_explore dummy

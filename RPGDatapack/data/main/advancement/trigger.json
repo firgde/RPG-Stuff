@@ -49,27 +49,46 @@
             "trigger": "tick",
 			"conditions": {
 				"player": [
-					{
-						"condition": "entity_scores",
-						"entity": "this",
-						"scores": {
-							"usedRod": {
-								"min": 1
-							}
-						}
-					},
                     {
-                        "condition": "entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "equipment": {
-                                "mainhand": {
-                                    "predicates": {
-                                        "custom_data": "{weapon:1b}"
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_scores",
+                                        "entity": "this",
+                                        "scores": {
+                                            "usedRod": {
+                                                "min": 1
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "mainhand": {
+                                                    "predicates": {
+                                                        "custom_data": "{weapon:1b}"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "condition": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "usedBook": {
+                                        "min": 1
                                     }
                                 }
                             }
-                        }
+                        ]
                     }
 				]
 			}
@@ -155,6 +174,13 @@
                             }
                         }
                     }
+                ],
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{armorType:\"helmet\"}"
+                        }
+                    }
                 ]
             }
         },
@@ -173,6 +199,13 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                ],
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{armorType:\"chestplate\"}"
                         }
                     }
                 ]
@@ -195,6 +228,13 @@
                             }
                         }
                     }
+                ],
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{armorType:\"leggings\"}"
+                        }
+                    }
                 ]
             }
         },
@@ -215,6 +255,13 @@
                             }
                         }
                     }
+                ],
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{armorType:\"boots\"}"
+                        }
+                    }
                 ]
             }
         },
@@ -231,6 +278,13 @@
                                     "items": "air"
                                 }
                             }
+                        }
+                    }
+                ],
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{armorType:\"helmet\"}"
                         }
                     }
                 ]
@@ -251,6 +305,13 @@
                             }
                         }
                     }
+                ],
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{armorType:\"chestplate\"}"
+                        }
+                    }
                 ]
             }
         },
@@ -269,6 +330,13 @@
                             }
                         }
                     }
+                ],
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{armorType:\"leggings\"}"
+                        }
+                    }
                 ]
             }
         },
@@ -285,6 +353,13 @@
                                     "items": "air"
                                 }
                             }
+                        }
+                    }
+                ],
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{armorType:\"boots\"}"
                         }
                     }
                 ]

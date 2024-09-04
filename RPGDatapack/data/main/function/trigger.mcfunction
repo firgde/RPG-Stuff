@@ -15,4 +15,5 @@
     execute unless entity @s[advancements={main:trigger={equip_feet=false,disequip_feet=false}}] run function #asset:item/trigger/equip/feet
 # リセット
     advancement revoke @s only main:trigger
+    scoreboard players set @s usedBook 0
     scoreboard players reset #itemID buffer
