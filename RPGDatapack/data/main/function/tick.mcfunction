@@ -10,6 +10,9 @@
 ## Mob関連のtick処理
     execute at @p run function mobs:tick
 
+## 探索のtick処理
+    function main:explore/tick
+
 ## 採取のtick処理
     function main:collect/tick
 

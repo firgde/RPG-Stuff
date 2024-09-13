@@ -1,7 +1,3 @@
-# Mobスポナーのチェック
-    # execute at @p as @e[tag=spawner,type=!item,distance=..15] at @s run function mobs:summon/spawner/tick
-# 自然スポーンするMob
-    #execute as @p at @s if biome # main:field if score @s spawnTimer matches 1.. run function mobs:summon/tick
 # HurtTime減算
     scoreboard players remove @e[team=hostile,scores={hurt_time=1..},distance=..50] hurt_time 1
 # AIを持ったMobの挙動
