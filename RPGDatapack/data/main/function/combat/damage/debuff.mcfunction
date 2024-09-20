@@ -1,3 +1,6 @@
+# 戦闘中
+    tag @p add in_combat
+    scoreboard players set @p combat_timer 100
 # 引く
     scoreboard players operation @s damage = #buff buff_amount
     #ダメージは最低でも1
@@ -21,5 +24,8 @@
 # 体力が0ならﾀﾋ
     execute if score @s hp matches ..0 run data modify entity @s HasVisualFire set value 0b
     execute if score @s[tag=!boss] hp matches ..0 run function main:combat/damage/death
+# 最後に攻撃されたモブ
+    execute unless entity @s[type=player] run tag @e[distance=..50,team=hostile] remove hurt_last
+    tag @s[type=!player] add hurt_last
 # リセット
     scoreboard players reset #damageType buffer
