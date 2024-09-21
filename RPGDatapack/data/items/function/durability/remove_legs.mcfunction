@@ -12,7 +12,7 @@
     #UI表記も更新
     data modify storage item: Item set from block 0 -59 0 Items[{Slot:0b}]
     execute positioned 0 -59 0 run function items:get_data
-    execute unless data entity @s Inventory[{Slot:101b}].components."minecraft:max_damage" run scoreboard players set #maxDurability buffer 555
+    execute unless data entity @s Inventory[{Slot:101b}].components."minecraft:max_damage" run data modify storage item: Item.components."minecraft:max_damage" set value 555
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
     execute if score #enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
@@ -22,25 +22,6 @@
     data remove storage item: data
     data remove storage item: Item
     data modify storage item: Item.count set value 1b
-    scoreboard players reset #Lore buffer
-    scoreboard players reset #itemType buffer
-    scoreboard players reset #heal_amount_hp buffer
-    scoreboard players reset #heal_amount_mana buffer
-    scoreboard players reset #element buffer
-    scoreboard players reset #atkBonus buffer
-    scoreboard players reset #magBonus buffer
-    scoreboard players reset #dexBonus buffer
-    scoreboard players reset #hpBonus buffer
-    scoreboard players reset #intBonus buffer
-    scoreboard players reset #defBonus buffer
-    scoreboard players reset #spdBonus buffer
-    scoreboard players reset #crtBonus buffer
-    scoreboard players reset #lukBonus buffer
-    scoreboard players reset #accBonus buffer
-    scoreboard players reset #rarity buffer
     scoreboard players reset #durability buffer
-    scoreboard players reset #maxDurability buffer
     scoreboard players reset #max_durability buffer
-    scoreboard players reset #enchantcount buffer
-    scoreboard players reset #hasAbility buffer
     item replace block 0 -59 0 container.0 with air

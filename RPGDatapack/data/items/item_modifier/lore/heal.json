@@ -7,10 +7,8 @@
 				"translate": "item.ui.hpheal",
 				"with": [
 					{
-						"score": {
-							"name": "#heal_amount_hp",
-							"objective": "buffer"
-						},
+						"nbt": "Item.components.\"minecraft:custom_data\".HealAmountHP",
+						"storage": "item:",
 						"color": "green",
 						"italic": false
 					}
@@ -24,12 +22,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#heal_amount_hp"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".HealAmountHP"
 				},
 				"range": {
 					"min": 1
@@ -45,10 +40,8 @@
 				"translate": "item.ui.mana_heal",
 				"with": [
 					{
-						"score": {
-							"name": "#heal_amount_mana",
-							"objective": "buffer"
-						},
+						"nbt": "Item.components.\"minecraft:custom_data\".HealAmountMana",
+						"storage": "item:",
 						"color": "aqua",
 						"italic": false
 					}
@@ -62,12 +55,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#heal_amount_mana"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".HealAmountMana"
 				},
 				"range": {
 					"min": 1

@@ -29,25 +29,6 @@
     data remove storage item: data
     data remove storage item: Item
     data modify storage item: Item.count set value 1b
-    scoreboard players reset #Lore buffer
-    scoreboard players reset #itemType buffer
-    scoreboard players reset #heal_amount_hp buffer
-    scoreboard players reset #heal_amount_mana buffer
-    scoreboard players reset #element buffer
-    scoreboard players reset #atkBonus buffer
-    scoreboard players reset #magBonus buffer
-    scoreboard players reset #dexBonus buffer
-    scoreboard players reset #hpBonus buffer
-    scoreboard players reset #intBonus buffer
-    scoreboard players reset #defBonus buffer
-    scoreboard players reset #spdBonus buffer
-    scoreboard players reset #crtBonus buffer
-    scoreboard players reset #lukBonus buffer
-    scoreboard players reset #accBonus buffer
-    scoreboard players reset #rarity buffer
     scoreboard players reset #durability buffer
-    scoreboard players reset #maxDurability buffer
     scoreboard players reset #max_durability
-    scoreboard players reset #enchantcount buffer
-    scoreboard players reset #hasAbility buffer
     item replace block 0 -59 0 container.0 with air

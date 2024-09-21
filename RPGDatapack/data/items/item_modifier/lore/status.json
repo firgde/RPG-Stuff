@@ -14,12 +14,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#itemType"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".ItemType"
 				},
 				"range": 1
 			}
@@ -40,12 +37,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#itemType"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".ItemType"
 				},
 				"range": 2
 			}
@@ -66,12 +60,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#itemType"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".ItemType"
 				},
 				"range": 33
 			}
@@ -92,12 +83,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#itemType"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".ItemType"
 				},
 				"range": 32
 			}
@@ -118,12 +106,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#itemType"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".ItemType"
 				},
 				"range": 31
 			}
@@ -144,12 +129,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#itemType"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".ItemType"
 				},
 				"range": 30
 			}
@@ -170,12 +152,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#itemType"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".ItemType"
 				},
 				"range": 7
 			}
@@ -202,10 +181,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#atkBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.atk",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -216,12 +193,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#atkBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.atk"
 				},
 				"range": {
 					"min": 1
@@ -248,10 +222,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#atkBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.atk",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -262,12 +234,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#atkBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.atk"
 				},
 				"range": {
 					"max": -1
@@ -296,10 +265,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#magBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.mag",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -310,12 +277,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#magBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.mag"
 				},
 				"range": {
 					"min": 1
@@ -342,10 +306,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#magBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.mag",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -356,12 +318,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#magBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.mag"
 				},
 				"range": {
 					"max": -1
@@ -390,10 +349,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#dexBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.dex",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -404,12 +361,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#dexBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.dex"
 				},
 				"range": {
 					"min": 1
@@ -436,10 +390,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#dexBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.dex",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -450,12 +402,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#dexBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.dex"
 				},
 				"range": {
 					"max": -1
@@ -484,10 +433,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#hpBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.hp",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -498,12 +445,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#hpBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.hp"
 				},
 				"range": {
 					"min": 1
@@ -530,10 +474,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#hpBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.hp",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -544,12 +486,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#hpBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.hp"
 				},
 				"range": {
 					"max": -1
@@ -578,10 +517,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#intBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.int",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -592,12 +529,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#intBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.int"
 				},
 				"range": {
 					"min": 1
@@ -624,10 +558,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#intBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.int",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -638,12 +570,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#intBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.int"
 				},
 				"range": {
 					"max": -1
@@ -672,10 +601,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#defBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.def",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -686,12 +613,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#defBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.def"
 				},
 				"range": {
 					"min": 1
@@ -718,10 +642,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#defBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.def",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -732,12 +654,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#defBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.def"
 				},
 				"range": {
 					"max": -1
@@ -766,10 +685,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#spdBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.spd",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -780,12 +697,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#spdBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.spd"
 				},
 				"range": {
 					"min": 1
@@ -812,10 +726,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#spdBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.spd",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -826,12 +738,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#spdBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.spd"
 				},
 				"range": {
 					"max": -1
@@ -860,10 +769,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#crtBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.crt",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -874,12 +781,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#crtBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.crt"
 				},
 				"range": {
 					"min": 1
@@ -906,10 +810,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#crtBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.crt",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -920,12 +822,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#crtBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.crt"
 				},
 				"range": {
 					"max": -1
@@ -954,10 +853,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#lukBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.luk",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -968,12 +865,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#lukBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.luk"
 				},
 				"range": {
 					"min": 1
@@ -1000,10 +894,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#lukBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.luk",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -1014,12 +906,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#lukBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.luk"
 				},
 				"range": {
 					"max": -1
@@ -1048,10 +937,8 @@
 					"italic": false
 				},
 				{
-					"score": {
-						"name": "#accBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status.acc",
+					"storage": "item:",
 					"color": "green",
 					"italic": false
 				}
@@ -1062,12 +949,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#accBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.acc"
 				},
 				"range": {
 					"min": 1
@@ -1094,10 +978,8 @@
 					"text": " "
 				},
 				{
-					"score": {
-						"name": "#accBonus",
-						"objective": "buffer"
-					},
+					"nbt": "Item.components.\"minecraft:custom_data\".status..acc",
+					"storage": "item:",
 					"color": "red",
 					"italic": false
 				}
@@ -1108,12 +990,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#accBonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".status.acc"
 				},
 				"range": {
 					"max": -1
@@ -1139,84 +1018,63 @@
 						{
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#resistance_melee_bonus"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:custom_data\".resistance.melee"
 							},
 							"range": 0
 						},
 						{
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#resistance_magic_bonus"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:custom_data\".resistance.magic"
 							},
 							"range": 0
 						},
 						{
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#resistance_ranged_bonus"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:custom_data\".resistance.ranged"
 							},
 							"range": 0
 						},
 						{
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#resistance_fire_bonus"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:custom_data\".resistance.fire"
 							},
 							"range": 0
 						},
 						{
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#resistance_ice_bonus"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:custom_data\".resistance.ice"
 							},
 							"range": 0
 						},
 						{
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#resistance_wind_bonus"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:custom_data\".resistance.wind"
 							},
 							"range": 0
 						},
 						{
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#resistance_thunder_bonus"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:custom_data\".resistance.thunder"
 							},
 							"range": 0
 						}
@@ -1232,27 +1090,25 @@
 			[
 				{
 					"translate": "item.ui.resistance.melee",
-					"color": "gray",
-					"italic": false,
 					"with": [
-					{
-						"text": " +",
-						"color": "green",
-						"italic": false
-					},
-					{
-						"score": {
-							"name": "#resistance_melee_bonus",
-							"objective": "buffer"
+						{
+							"text": " +",
+							"color": "green",
+							"italic": false
 						},
-						"color": "green",
-						"italic": false
-					},
-					{
-						"text": "%",
-						"color": "green"
-					}
-					]
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.melee",
+							"storage": "item:",
+							"color": "green",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "green"
+						}
+					],
+					"color": "gray",
+					"italic": false
 				}
 			]
 		],
@@ -1261,12 +1117,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_melee_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.melee"
 				},
 				"range": {
 					"min": 1
@@ -1281,25 +1134,23 @@
 			[
 				{
 					"translate": "item.ui.resistance.melee",
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.melee",
+							"storage": "item:",
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					],
 					"color": "gray",
-					"italic": false,
-					"with": [
-						{
-							"text": " "
-						},
-						{
-							"score": {
-								"name": "#resistance_melee_bonus",
-								"objective": "buffer"
-							},
-							"color": "red",
-							"italic": false
-						},
-						{
-							"text": "%",
-							"color": "red"
-						}
-					]
+					"italic": false
 				}
 			]
 		],
@@ -1308,12 +1159,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_melee_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.melee"
 				},
 				"range": {
 					"max": -1
@@ -1328,8 +1176,6 @@
 			[
 				{
 					"translate": "item.ui.resistance.magic",
-					"color": "dark_purple",
-					"italic": false,
 					"with": [
 						{
 							"text": " +",
@@ -1337,10 +1183,8 @@
 							"italic": false
 						},
 						{
-							"score": {
-								"name": "#resistance_magic_bonus",
-								"objective": "buffer"
-							},
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.magic",
+							"storage": "item:",
 							"color": "green",
 							"italic": false
 						},
@@ -1348,7 +1192,9 @@
 							"text": "%",
 							"color": "green"
 						}
-					]
+					],
+					"color": "dark_purple",
+					"italic": false
 				}
 			]
 		],
@@ -1357,12 +1203,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_magic_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.magic"
 				},
 				"range": {
 					"min": 1
@@ -1377,25 +1220,23 @@
 			[
 				{
 					"translate": "item.ui.resistance.magic",
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.magic",
+							"storage": "item:",
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					],
 					"color": "dark_purple",
-					"italic": false,
-					"with": [
-						{
-							"text": " "
-						},
-						{
-							"score": {
-								"name": "#resistance_magic_bonus",
-								"objective": "buffer"
-							},
-							"color": "red",
-							"italic": false
-						},
-						{
-							"text": "%",
-							"color": "red"
-						}
-					]
+					"italic": false
 				}
 			]
 		],
@@ -1404,12 +1245,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_magic_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.magic"
 				},
 				"range": {
 					"max": -1
@@ -1424,8 +1262,6 @@
 			[
 				{
 					"translate": "item.ui.resistance.ranged",
-					"color": "#6B4B1A",
-					"italic": false,
 					"with": [
 						{
 							"text": " +",
@@ -1433,10 +1269,8 @@
 							"italic": false
 						},
 						{
-							"score": {
-								"name": "#resistance_ranged_bonus",
-								"objective": "buffer"
-							},
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.ranged",
+							"storage": "item:",
 							"color": "green",
 							"italic": false
 						},
@@ -1444,7 +1278,9 @@
 							"text": "%",
 							"color": "green"
 						}
-					]
+					],
+					"color": "#6B4B1A",
+					"italic": false
 				}
 			]
 		],
@@ -1453,12 +1289,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_ranged_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.ranged"
 				},
 				"range": {
 					"min": 1
@@ -1473,25 +1306,23 @@
 			[
 				{
 					"translate": "item.ui.resistance.ranged",
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.ranged",
+							"storage": "item:",
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					],
 					"color": "#6B4B1A",
-					"italic": false,
-					"with": [
-						{
-							"text": " "
-						},
-						{
-							"score": {
-								"name": "#resistance_ranged_bonus",
-								"objective": "buffer"
-							},
-							"color": "red",
-							"italic": false
-						},
-						{
-							"text": "%",
-							"color": "red"
-						}
-					]
+					"italic": false
 				}
 			]
 		],
@@ -1500,12 +1331,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_ranged_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.ranged"
 				},
 				"range": {
 					"max": -1
@@ -1520,8 +1348,6 @@
 			[
 				{
 					"translate": "item.ui.resistance.fire",
-					"color": "#C23400",
-					"italic": false,
 					"with": [
 						{
 							"text": " +",
@@ -1529,10 +1355,8 @@
 							"italic": false
 						},
 						{
-							"score": {
-								"name": "#resistance_fire_bonus",
-								"objective": "buffer"
-							},
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.fire",
+							"storage": "item:",
 							"color": "green",
 							"italic": false
 						},
@@ -1540,7 +1364,9 @@
 							"text": "%",
 							"color": "green"
 						}
-					]
+					],
+					"color": "#C23400",
+					"italic": false
 				}
 			]
 		],
@@ -1549,12 +1375,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_fire_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.fire"
 				},
 				"range": {
 					"min": 1
@@ -1569,25 +1392,23 @@
 			[
 				{
 					"translate": "item.ui.resistance.fire",
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.fire",
+							"storage": "item:",
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					],
 					"color": "#C23400",
-					"italic": false,
-					"with": [
-						{
-							"text": " "
-						},
-						{
-							"score": {
-								"name": "#resistance_fire_bonus",
-								"objective": "buffer"
-							},
-							"color": "red",
-							"italic": false
-						},
-						{
-							"text": "%",
-							"color": "red"
-						}
-					]
+					"italic": false
 				}
 			]
 		],
@@ -1596,12 +1417,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_fire_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.fire"
 				},
 				"range": {
 					"max": -1
@@ -1616,8 +1434,6 @@
 			[
 				{
 					"translate": "item.ui.resistance.ice",
-					"color": "dark_aqua",
-					"italic": false,
 					"with": [
 						{
 							"text": " +",
@@ -1625,10 +1441,8 @@
 							"italic": false
 						},
 						{
-							"score": {
-								"name": "#resistance_ice_bonus",
-								"objective": "buffer"
-							},
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.ice",
+							"storage": "item:",
 							"color": "green",
 							"italic": false
 						},
@@ -1636,7 +1450,9 @@
 							"text": "%",
 							"color": "green"
 						}
-					]
+					],
+					"color": "dark_aqua",
+					"italic": false
 				}
 			]
 		],
@@ -1645,12 +1461,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_ice_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.ice"
 				},
 				"range": {
 					"min": 1
@@ -1665,25 +1478,23 @@
 			[
 				{
 					"translate": "item.ui.resistance.ice",
+					"with": [
+						{
+							"text": " "
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.ice",
+							"storage": "item:",
+							"color": "red",
+							"italic": false
+						},
+						{
+							"text": "%",
+							"color": "red"
+						}
+					],
 					"color": "dark_aqua",
-					"italic": false,
-					"with": [
-						{
-							"text": " "
-						},
-						{
-							"score": {
-								"name": "#resistance_ice_bonus",
-								"objective": "buffer"
-							},
-							"color": "red",
-							"italic": false
-						},
-						{
-							"text": "%",
-							"color": "red"
-						}
-					]
+					"italic": false
 				}
 			]
 		],
@@ -1692,12 +1503,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_ice_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.ice"
 				},
 				"range": {
 					"max": -1
@@ -1712,8 +1520,6 @@
 			[
 				{
 					"translate": "item.ui.resistance.wind",
-					"color": "dark_green",
-					"italic": false,
 					"with": [
 						{
 							"text": " +",
@@ -1721,10 +1527,8 @@
 							"italic": false
 						},
 						{
-							"score": {
-								"name": "#resistance_wind_bonus",
-								"objective": "buffer"
-							},
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.wind",
+							"storage": "item:",
 							"color": "green",
 							"italic": false
 						},
@@ -1732,7 +1536,9 @@
 							"text": "%",
 							"color": "green"
 						}
-					]
+					],
+					"color": "dark_green",
+					"italic": false
 				}
 			]
 		],
@@ -1741,12 +1547,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_wind_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.wind"
 				},
 				"range": {
 					"min": 1
@@ -1761,17 +1564,13 @@
 			[
 				{
 					"translate": "item.ui.resistance.wind",
-					"color": "dark_green",
-					"italic": false,
 					"with": [
 						{
 							"text": " "
 						},
 						{
-							"score": {
-								"name": "#resistance_wind_bonus",
-								"objective": "buffer"
-							},
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.wind",
+							"storage": "item:",
 							"color": "red",
 							"italic": false
 						},
@@ -1779,7 +1578,9 @@
 							"text": "%",
 							"color": "red"
 						}
-					]
+					],
+					"color": "dark_green",
+					"italic": false
 				}
 			]
 		],
@@ -1788,12 +1589,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_wind_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.wind"
 				},
 				"range": {
 					"max": -1
@@ -1808,8 +1606,6 @@
 			[
 				{
 					"translate": "item.ui.resistance.thunder",
-					"color": "#776F00",
-					"italic": false,
 					"with": [
 						{
 							"text": " +",
@@ -1817,10 +1613,8 @@
 							"italic": false
 						},
 						{
-							"score": {
-								"name": "#resistance_thunder_bonus",
-								"objective": "buffer"
-							},
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.thunder",
+							"storage": "item:",
 							"color": "green",
 							"italic": false
 						},
@@ -1828,7 +1622,9 @@
 							"text": "%",
 							"color": "green"
 						}
-					]
+					],
+					"color": "#776F00",
+					"italic": false
 				}
 			]
 		],
@@ -1837,12 +1633,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_thunder_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.thunder"
 				},
 				"range": {
 					"min": 1
@@ -1857,25 +1650,23 @@
 			[
 				{
 					"translate": "item.ui.resistance.thunder",
-					"color": "#776F00",
-					"italic": false,
 					"with": [
 						{
 							"text": " "
 						},
 						{
-							"score": {
-								"name": "#resistance_thunder_bonus",
-								"objective": "buffer"
-							},
-							"color": "red",
+							"nbt": "Item.components.\"minecraft:custom_data\".resistance.thunder",
+							"storage": "item:",
+							"color": "green",
 							"italic": false
 						},
 						{
 							"text": "%",
 							"color": "red"
 						}
-					]
+					],
+					"color": "#776F00",
+					"italic": false
 				}
 			]
 		],
@@ -1884,12 +1675,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#resistance_thunder_bonus"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".resistance.thunder"
 				},
 				"range": {
 					"max": -1
@@ -1926,12 +1714,9 @@
 					{
 						"condition": "value_check",
 						"value": {
-							"type": "score",
-							"target": {
-								"type": "fixed",
-								"name": "#itemType"
-							},
-							"score": "buffer"
+							"type": "storage",
+							"storage": "item:",
+							"path": "Item.components.\"minecraft:custom_data\".ItemType"
 						},
 						"range": 7
 					}

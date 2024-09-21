@@ -21,12 +21,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#element"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".Element.Type"
 				},
 				"range": 1
 			}
@@ -54,12 +51,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#element"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".Element.Type"
 				},
 				"range": 2
 			}
@@ -87,12 +81,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#element"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".Element.Type"
 				},
 				"range": 3
 			}
@@ -120,12 +111,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#element"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".Element.Type"
 				},
 				"range": 4
 			}
@@ -143,12 +131,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#element"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".Element.Type"
 				},
 				"range": {
 					"min": 1
@@ -157,12 +142,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#durability"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".Durability"
 				},
 				"range": 0
 			}

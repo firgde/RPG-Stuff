@@ -26,12 +26,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#hasAbility"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".HasAbility"
 				},
 				"range": 1
 			}
@@ -50,24 +47,18 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#hasAbility"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".HasAbility"
 				},
 				"range": 1
 			},
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#itemType"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".ItemType"
 				},
 				"range": 0
 			}
@@ -82,12 +73,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#hasAbility"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".HasAbility"
 				},
 				"range": 1
 			}
@@ -111,12 +99,9 @@
 						"term": {
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#durability"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:custom_data\".Durability"
 							},
 							"range": 0
 						}
@@ -126,12 +111,9 @@
 						"term": {
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#maxDurability"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:max_damage\""
 							},
 							"range": 0
 						}
@@ -148,16 +130,14 @@
 				"translate": "item.ui.durability",
 				"with": [
 					{
-						"score": {
-							"name": "#durability",
-							"objective": "buffer"
-						}
+						"nbt": "Item.components.\"minecraft:custom_data\".Durability",
+						"storage": "item:",
+						"color": "white",
+						"italic": false
 					},
 					{
-						"score": {
-							"name": "#maxDurability",
-							"objective": "buffer"
-						},
+						"nbt": "Item.components.\"minecraft:max_damage\"",
+						"storage": "item:",
 						"color": "white",
 						"italic": false
 					}
@@ -176,12 +156,9 @@
 						"term": {
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#durability"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:custom_data\".Durability"
 							},
 							"range": 0
 						}
@@ -191,12 +168,9 @@
 						"term": {
 							"condition": "value_check",
 							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#maxDurability"
-								},
-								"score": "buffer"
+								"type": "storage",
+								"storage": "item:",
+								"path": "Item.components.\"minecraft:max_damage\""
 							},
 							"range": 0
 						}
@@ -227,12 +201,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#rarity"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".rarity"
 				},
 				"range": 0
 			}
@@ -261,12 +232,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#rarity"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".rarity"
 				},
 				"range": 1
 			}
@@ -295,12 +263,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#rarity"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".rarity"
 				},
 				"range": 2
 			}
@@ -329,12 +294,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#rarity"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".rarity"
 				},
 				"range": 3
 			}
@@ -363,12 +325,9 @@
 			{
 				"condition": "value_check",
 				"value": {
-					"type": "score",
-					"target": {
-						"type": "fixed",
-						"name": "#rarity"
-					},
-					"score": "buffer"
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".rarity"
 				},
 				"range": 4
 			}
