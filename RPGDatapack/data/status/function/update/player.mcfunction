@@ -1,11 +1,11 @@
 # ステータス取得
-    execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{weapon:1b}}}}] run function status:update/slot/mainhand
-    execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tool:1b}}}}] run function status:update/slot/mainhand
-    execute if entity @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{offhandOnly:1b}}}]}] run function status:update/slot/offhand
-    execute if entity @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_data":{armorType:"helmet",armor:1b}}}]}] run function status:update/slot/helmet
-    execute if entity @s[nbt={Inventory:[{Slot:102b,components:{"minecraft:custom_data":{armorType:"chestplate",armor:1b}}}]}] run function status:update/slot/chestplate
-    execute if entity @s[nbt={Inventory:[{Slot:101b,components:{"minecraft:custom_data":{armorType:"leggings",armor:1b}}}]}] run function status:update/slot/leggings
-    execute if entity @s[nbt={Inventory:[{Slot:100b,components:{"minecraft:custom_data":{armorType:"boots",armor:1b}}}]}] run function status:update/slot/boots
+    execute if items entity @s weapon.mainhand *[custom_data~{weapon:1b}] run function status:update/slot/mainhand
+    execute if items entity @s weapon.mainhand *[custom_data~{tool:1b}] run function status:update/slot/mainhand
+    execute if items entity @s weapon.offhand *[custom_data~{offhandOnly:1b}] run function status:update/slot/offhand
+    execute if items entity @s armor.head *[custom_data~{armorType:"helmet",armor:1b}] run function status:update/slot/helmet
+    execute if items entity @s armor.chest *[custom_data~{armorType:"chestplate",armor:1b}] run function status:update/slot/chestplate
+    execute if items entity @s armor.legs *[custom_data~{armorType:"leggings",armor:1b}] run function status:update/slot/leggings
+    execute if items entity @s armor.feet *[custom_data~{armorType:"boots",armor:1b}] run function status:update/slot/boots
 # attributeや他のスコアに関与するもの
     function status:hp/update
     attribute @s generic.attack_damage base set 0.0
@@ -26,7 +26,7 @@
 # いらん棒は消す
     clear @s stick[custom_model_data=1]
 # エリアごとに採掘できるアイテムの設定
-    execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tool:1b}}}}] run function main:collect/mining/modify_mineables
+    execute if items entity @s weapon.mainhand *[custom_data~{tool:1b}] run function main:collect/mining/modify_mineables
 # UI持ちアイテムなら内容を更新
     execute unless predicate asset:social/ui/holding_purse if entity @e[tag=purse,distance=..5,tag=open] run function main:social/ui/close
     execute unless predicate asset:social/ui/holding_knowledge_book if entity @e[tag=knowledge_book,distance=..5,tag=open] run function main:social/ui/close

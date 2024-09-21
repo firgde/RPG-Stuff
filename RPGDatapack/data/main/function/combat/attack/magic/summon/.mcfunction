@@ -1,5 +1,5 @@
 # 耐久減らす
-    execute if entity @s[gamemode=!creative,nbt={SelectedItem:{components:{"minecraft:custom_data":{Unbreakable:0b}}}}] run function items:durability/remove
+    execute if entity @s[gamemode=!creative] unless items entity @s weapon.mainhand *[custom_data~{Unbreakable:1b}] run function items:durability/remove
 # クールダウン更新
     execute store result score #timeused buffer run time query gametime
     execute store result storage combat: data.magic[0].CoolDown int 1 run scoreboard players get #timeused buffer

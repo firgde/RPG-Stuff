@@ -35,10 +35,10 @@
     #被ダメージ時の処理
     execute unless entity @s[type=player] run function #asset:combat/trigger/on_hurt
 # 防具の耐久を減らす
-    execute if entity @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_data":{armorType:"helmet",armor:1b}}}]},type=player] run function items:durability/remove_head
-    execute if entity @s[nbt={Inventory:[{Slot:102b,components:{"minecraft:custom_data":{armorType:"chestplate",armor:1b}}}]},type=player] run function items:durability/remove_chest
-    execute if entity @s[nbt={Inventory:[{Slot:101b,components:{"minecraft:custom_data":{armorType:"leggings",armor:1b}}}]},type=player] run function items:durability/remove_legs
-    execute if entity @s[nbt={Inventory:[{Slot:100b,components:{"minecraft:custom_data":{armorType:"boots",armor:1b}}}]},type=player] run function items:durability/remove_feet
+    execute if items entity @s[type=player] armor.head *[custom_data~{armorType:"helmet",armor:1b}] run function items:durability/remove_head
+    execute if items entity @s[type=player] armor.chest *[custom_data~{armorType:"chestplate",armor:1b}] run function items:durability/remove_chest
+    execute if items entity @s[type=player] armor.legs *[custom_data~{armorType:"leggings",armor:1b}] run function items:durability/remove_legs
+    execute if items entity @s[type=player] armor.feet *[custom_data~{armorType:"boots",armor:1b}] run function items:durability/remove_feet
 # 必要ならば、演出
     execute if entity @s[tag=hurt.indirect] run damage @s 0.01 generic
     execute on passengers if entity @s[tag=atk_combo] on vehicle run damage @s 0.01 asset:combo_attack
