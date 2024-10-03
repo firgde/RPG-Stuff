@@ -1,9 +1,14 @@
 {
     "criteria": {
         "": {
-            "trigger": "location",
+            "trigger": "tick",
             "conditions": {
-                "biomes": "#asset:all"
+                "player": {
+                    "location": {
+                        "biomes": "#asset:all"
+                    },
+                    "periodic_tick": 2
+                }
             }
         }
     },
