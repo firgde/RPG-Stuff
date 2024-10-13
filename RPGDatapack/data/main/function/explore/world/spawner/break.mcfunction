@@ -1,4 +1,4 @@
 # スポナートロッコ消す
     execute on passengers run kill @s
-# 自身も消す
-    kill @s
+# 破壊済みタグ
+    tag @s add spawner.broken

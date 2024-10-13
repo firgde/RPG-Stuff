@@ -1,3 +1,6 @@
+# item_displayにデータを保存
+    execute on vehicle run data modify entity @s item.components."minecraft:custom_data" set from storage explore: data
+    execute on vehicle run data modify entity @s Tags append from storage explore: data.dungeon
 # スポナーのデータ諸々を設定
     data modify entity @s SpawnCount set from storage explore: data.spawner.spawn_count
     data modify entity @s SpawnRange set from storage explore: data.spawner.spawn_range
