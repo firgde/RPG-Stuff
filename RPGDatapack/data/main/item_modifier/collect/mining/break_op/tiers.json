@@ -508,5 +508,107 @@
 				}
 			}
 		]
+	},
+	{
+		"function": "set_components",
+		"components": {
+			"minecraft:can_break": {
+				"predicates": [
+					{
+						"blocks": "#asset:collect/mining/location/dungeon/0000_test/tier0"
+					}
+				],
+				"show_in_tooltip": false
+			}
+		},
+		"conditions": [
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"equipment": {
+						"mainhand": {
+							"predicates": {
+								"custom_data": "{tier:0}"
+							}
+						}
+					}
+				}
+			},
+			{
+				"condition": "location_check",
+				"predicate": {
+					"biomes": "asset:overworld/dungeon/0000_test"
+				}
+			}
+		]
+	},
+	{
+		"function": "set_components",
+		"components": {
+			"minecraft:can_break": {
+				"predicates": [
+					{
+						"blocks": "#asset:collect/mining/location/dungeon/0000_test/tier1"
+					}
+				],
+				"show_in_tooltip": false
+			}
+		},
+		"conditions": [
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"equipment": {
+						"mainhand": {
+							"predicates": {
+								"custom_data": "{tier:1}"
+							}
+						}
+					}
+				}
+			},
+			{
+				"condition": "location_check",
+				"predicate": {
+					"biomes": "asset:overworld/dungeon/0000_test"
+				}
+			}
+		]
+	},
+	{
+		"function": "set_components",
+		"components": {
+			"minecraft:can_break": {
+				"predicates": [
+					{
+						"blocks": "#asset:collect/mining/location/dungeon/0000_test/tier2"
+					}
+				],
+				"show_in_tooltip": false
+			}
+		},
+		"conditions": [
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"equipment": {
+						"mainhand": {
+							"predicates": {
+								"custom_data": "{tier:2}"
+							}
+						}
+					}
+				}
+			},
+			{
+				"condition": "location_check",
+				"predicate": {
+					"biomes": "asset:overworld/dungeon/0000_test"
+				}
+			}
+		]
 	}
 ]

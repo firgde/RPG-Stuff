@@ -7,6 +7,6 @@
 # 周囲にスポーンしたマーカーがあるならそこにモブスポーン
     execute as @e[tag=spawn_potential,distance=..50] at @s run function main:explore/world/spawner/spawn with entity @s ArmorItems[3].components."minecraft:custom_data"
 # 自分の座標にブロックがない⇒壊された
-    execute if block ~ ~ ~ #air run function main:explore/world/spawner/break
+    execute if block ~ ~ ~ #air if data entity @s Passengers run function main:explore/world/spawner/break
 # リセット
     scoreboard players reset #mob_count buffer
