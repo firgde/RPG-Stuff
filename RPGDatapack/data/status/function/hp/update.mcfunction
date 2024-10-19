@@ -1,8 +1,5 @@
-# 割合に合わせてHP調整
-    scoreboard players operation #hpBuffer buffer = @s max_hp
-    scoreboard players operation #hpBuffer buffer *= @s hp_ratio
-    execute store result score @s hp run scoreboard players operation #hpBuffer buffer /= #100 const
-    scoreboard players operation @s hp < @s max_hp
+# 最大体力変更時は値を合わせる
+    execute unless score #prevHP buffer = @s max_hp run function status:hp/adjust
 # HUDでのスペース調整
     execute if score @s hp matches 0..9 run data modify storage combat: data.hud.Space set value '{"text":"\\uF828\\uF824"}'
     execute if score @s hp matches 10..99 run data modify storage combat: data.hud.Space set value '{"text":"\\uF826"}'

@@ -1,4 +1,5 @@
-# intを比較するために保存しておく
+# HPとintを比較するために保存しておく
+    scoreboard players operation #prevHP buffer = @s max_hp
     scoreboard players operation #prevInt buffer = @s int
 # 無印ステータスリセット
     scoreboard players operation @s atk = @s atk_base
@@ -60,4 +61,5 @@
     execute if entity @s[type=!player] store result entity @s attributes[{id:"minecraft:generic.movement_speed"}].base float 0.01 run scoreboard players get @s spd
 # リセット
     scoreboard players reset #prevInt
+    scoreboard players reset #prevHP
     advancement revoke @s only status:equipped
