@@ -1,8 +1,8 @@
 # ジャンプ力と移動速度を0に
-    attribute @s generic.movement_speed modifier add movement_lock -1024 add_value
-    attribute @s generic.jump_strength modifier add jump_lock -1024 add_value
+    attribute @s movement_speed modifier add movement_lock -1024 add_value
+    attribute @s jump_strength modifier add jump_lock -1024 add_value
 # 敵対判定を消す
-    execute at @s as @e[team=hostile,distance=..50] run attribute @s generic.follow_range modifier add follow_lock -1024 add_value
+    execute at @s as @e[team=hostile,distance=..50] run attribute @s follow_range modifier add follow_lock -1024 add_value
 # タグ付け
     tag @s add in_dialogue
 # ダイアログ検知interaction

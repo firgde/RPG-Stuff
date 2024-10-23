@@ -40,12 +40,10 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "entity": "this",
                             "tag": "{id:8998}"
                         },
                         {
                             "function": "set_custom_model_data",
-                            "entity": "this",
                             "value": 8998
                         }
                     ]

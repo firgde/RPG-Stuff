@@ -8,7 +8,7 @@
     execute if items entity @s armor.feet *[custom_data~{armorType:"boots",armor:1b}] run function status:update/slot/boots
 # attributeや他のスコアに関与するもの
     function status:hp/update
-    attribute @s generic.attack_damage base set 0.0
+    attribute @s attack_damage base set 0.0
     execute unless score #prevInt buffer = @s int run function status:int/calc
     scoreboard players operation #spdBuffer buffer = @s spd
     scoreboard players add #spdBuffer buffer 100
@@ -24,7 +24,7 @@
 # 体力を常に最大体力に合わせる為に回復
     effect give @s instant_health infinite 28 true
 # いらん棒は消す
-    clear @s stick[custom_model_data=1]
+    clear @s stick[item_model="air"]
 # エリアごとに採掘できるアイテムの設定
     execute if items entity @s weapon.mainhand *[custom_data~{tool:1b}] run function main:collect/mining/modify_mineables
 # UI持ちアイテムなら内容を更新

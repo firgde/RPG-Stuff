@@ -1,5 +1,5 @@
 # 基本データの設定
-    data merge entity @s {Tags:["magic"],item:{id:"minecraft:stick",Count:1b,components:{custom_model_data:1}}}
+    data merge entity @s {Tags:["magic"],item:{id:"minecraft:stick",count:1,components:{item_model:"air"}}}
 
 ###メインハンドとオフハンドからitem_displayのitem.tagにデータ代入
     # 魔術攻撃はこの時点で属性を定めておく

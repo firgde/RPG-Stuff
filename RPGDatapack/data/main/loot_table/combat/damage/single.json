@@ -8,8 +8,10 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_custom_model_data",
-							"value": 1
+							"function": "set_components",
+							"components": {
+								"item_model": "air"
+							}
 						},
 						{
 							"function": "set_custom_data",
@@ -46,8 +48,10 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_custom_model_data",
-							"value": 1
+							"function": "set_components",
+							"components": {
+								"item_model": "air"
+							}
 						},
 						{
 							"function": "set_custom_data",
@@ -85,8 +89,10 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_custom_model_data",
-							"value": 1
+							"function": "set_components",
+							"components": {
+								"item_model": "air"
+							}
 						},
 						{
 							"function": "set_custom_data",
@@ -124,8 +130,10 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_custom_model_data",
-							"value": 1
+							"function": "set_components",
+							"components": {
+								"item_model": "air"
+							}
 						},
 						{
 							"function": "set_custom_data",
@@ -163,8 +171,10 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_custom_model_data",
-							"value": 1
+							"function": "set_components",
+							"components": {
+								"item_model": "air"
+							}
 						},
 						{
 							"function": "set_custom_data",
@@ -202,8 +212,10 @@
 					"name": "stick",
 					"functions": [
 						{
-							"function": "set_custom_model_data",
-							"value": 1
+							"function": "set_components",
+							"components": {
+								"item_model": "air"
+							}
 						},
 						{
 							"function": "set_custom_data",

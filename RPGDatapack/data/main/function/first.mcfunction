@@ -207,7 +207,7 @@ say reload
 
 # いずれload.mcfunctionに移動される分
     #攻撃力を一律0に
-    attribute @p generic.attack_damage base set 0.0
+    attribute @p attack_damage base set 0.0
     #ダメージ処理のために無敵に
     effect give @p resistance infinite 255 true
     #餓死しないために満腹度回復

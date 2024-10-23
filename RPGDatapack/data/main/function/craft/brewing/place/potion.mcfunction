@@ -8,9 +8,9 @@
     execute if score #itemCount buffer matches 2.. at @n[tag=brewing,distance=..6,scores={hasTarget=1}] run item replace block ~ ~ ~ container.1 from block 0 -59 0 container.0
     execute if score #itemCount buffer matches 3.. at @n[tag=brewing,distance=..6,scores={hasTarget=1}] run item replace block ~ ~ ~ container.2 from block 0 -59 0 container.0
 # potionCountに応じてitem_displayの表示を変える
-    execute if score #itemCount buffer matches 1.. run item replace entity @n[tag=brewing.slot.0] contents with glass_bottle[custom_model_data=1]
-    execute if score #itemCount buffer matches 2.. run item replace entity @n[tag=brewing.slot.1] contents with glass_bottle[custom_model_data=1]
-    execute if score #itemCount buffer matches 3.. run item replace entity @n[tag=brewing.slot.2] contents with glass_bottle[custom_model_data=1]
+    execute if score #itemCount buffer matches 1.. run item replace entity @n[tag=brewing.slot.0] contents with glass_bottle[item_model="air"]
+    execute if score #itemCount buffer matches 2.. run item replace entity @n[tag=brewing.slot.1] contents with glass_bottle[item_model="air"]
+    execute if score #itemCount buffer matches 3.. run item replace entity @n[tag=brewing.slot.2] contents with glass_bottle[item_model="air"]
 # アイテムを一個減らす
     scoreboard players set #modify_count buffer -1
     item modify entity @s weapon.mainhand items:count

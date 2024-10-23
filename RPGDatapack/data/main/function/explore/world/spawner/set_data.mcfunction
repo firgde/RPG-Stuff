@@ -1,7 +1,7 @@
 # item_displayの描画データ
     execute on vehicle run data modify entity @s transformation.scale set value [1.001f,1.001f,1.001f]
     execute on vehicle run data modify entity @s transformation.translation set value [0.0f,0.2f,0.0f]
-    execute on vehicle run data modify entity @s item.components."minecraft:custom_model_data" set from storage explore: data.model
+    execute on vehicle run data modify entity @s item.components."minecraft:item_model" set from storage explore: data.model
 # item_displayにデータを保存
     execute on vehicle run data modify entity @s item.components."minecraft:custom_data" set from storage explore: data
     execute on vehicle run data modify entity @s Tags append from storage explore: data.dungeon
