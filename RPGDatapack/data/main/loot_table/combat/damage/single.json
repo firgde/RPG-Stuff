@@ -24,7 +24,7 @@
 							"name": {
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
-								"font": "damage"
+								"font": "asset:damage"
 							}
 						}
 					],
@@ -65,7 +65,7 @@
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "#FF4500",
-								"font": "damage"
+								"font": "asset:damage"
 							}
 						}
 					],
@@ -106,7 +106,7 @@
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "aqua",
-								"font": "damage"
+								"font": "asset:damage"
 							}
 						}
 					],
@@ -147,7 +147,7 @@
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "green",
-								"font": "damage"
+								"font": "asset:damage"
 							}
 						}
 					],
@@ -188,7 +188,7 @@
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "yellow",
-								"font": "damage"
+								"font": "asset:damage"
 							}
 						}
 					],
@@ -229,7 +229,7 @@
 								"nbt": "data.Damage.Amount",
 								"storage": "combat:",
 								"color": "#FF0000",
-								"font": "damage"
+								"font": "asset:damage"
 							}
 						}
 					],

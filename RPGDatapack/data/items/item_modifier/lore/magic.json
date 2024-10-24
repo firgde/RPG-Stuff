@@ -39,7 +39,7 @@
 						"storage": "item:",
 						"color": "white",
 						"italic": false,
-						"font": "magic_data"
+						"font": "asset:magic_data"
 					}
 				],
 				"color": "gray",
@@ -60,7 +60,7 @@
 						"storage": "item:",
 						"color": "white",
 						"italic": false,
-						"font": "magic_data"
+						"font": "asset:magic_data"
 					}
 				],
 				"color": "gray",
@@ -81,7 +81,7 @@
 						"storage": "item:",
 						"color": "white",
 						"italic": false,
-						"font": "magic_data"
+						"font": "asset:magic_data"
 					}
 				],
 				"color": "gray",

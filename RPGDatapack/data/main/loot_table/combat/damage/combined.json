@@ -27,7 +27,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#FF9000",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -39,7 +39,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#FF4500",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -84,7 +84,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#FF4500",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -96,7 +96,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "aqua",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -141,7 +141,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#FF4500",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -153,7 +153,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "green",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -198,7 +198,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#FF4500",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -210,7 +210,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "yellow",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -255,7 +255,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "aqua",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -267,7 +267,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#FF4500",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -312,7 +312,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#D4FEFE",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -324,7 +324,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "aqua",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -369,7 +369,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "aqua",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -381,7 +381,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "green",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -426,7 +426,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "aqua",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -438,7 +438,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "yellow",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -483,7 +483,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "green",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -495,7 +495,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#FF4500",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -540,7 +540,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "green",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -552,7 +552,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "aqua",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -597,7 +597,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "green",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -609,7 +609,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "dark_green",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -654,7 +654,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "green",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -666,7 +666,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "yellow",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -711,7 +711,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "yellow",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -723,7 +723,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#FF4500",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -768,7 +768,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "yellow",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -780,7 +780,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "aqua",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -825,7 +825,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "yellow",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -837,7 +837,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "green",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
@@ -882,7 +882,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "#EEEECC",
-									"font":"damage_top"
+									"font": "asset:damage_top"
 								},
 								{
 									"nbt": "data.Damage.space",
@@ -894,7 +894,7 @@
 									"nbt": "data.Damage.Amount",
 									"storage": "combat:",
 									"color": "yellow",
-									"font":"damage_bottom"
+									"font": "asset:damage_bottom"
 								}
 							]
 						}
