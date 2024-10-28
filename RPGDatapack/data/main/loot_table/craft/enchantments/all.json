@@ -14,9 +14,6 @@
 									"condition": "location_check",
 									"predicate": {
 										"block": {
-											"blocks": [
-												"dispenser"
-											],
 											"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:0}}}]}"
 										}
 									}
@@ -25,9 +22,6 @@
 									"condition": "location_check",
 									"predicate": {
 										"block": {
-											"blocks": [
-												"dispenser"
-											],
 											"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:1}}}]}"
 										}
 									}
@@ -36,9 +30,6 @@
 									"condition": "location_check",
 									"predicate": {
 										"block": {
-											"blocks": [
-												"dispenser"
-											],
 											"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:4}}}]}"
 										}
 									}
@@ -55,9 +46,6 @@
 							"condition": "location_check",
 							"predicate": {
 								"block": {
-									"blocks": [
-										"dispenser"
-									],
 									"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:2}}}]}"
 								}
 							}
@@ -72,9 +60,6 @@
 							"condition": "location_check",
 							"predicate": {
 								"block": {
-									"blocks": [
-										"dispenser"
-									],
 									"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{weaponType:3}}}]}"
 								}
 							}
@@ -89,9 +74,6 @@
 							"condition": "location_check",
 							"predicate": {
 								"block": {
-									"blocks": [
-										"dispenser"
-									],
 									"nbt": "{Items:[{Slot:4b,components:{\"minecraft:custom_data\":{armor:1b}}}]}"
 								}
 							}
