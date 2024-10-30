@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "interact": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"gimmick\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:explore/world/gimmick/detect"
+    }
+}

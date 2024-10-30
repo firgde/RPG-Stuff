@@ -49,6 +49,7 @@ say reload
         # 探索(体力、速度、集中、運)
         scoreboard objectives add lvl_explore dummy
         scoreboard objectives add xp_explore dummy
+        scoreboard objectives add gimmick_state dummy
         #scoreboard objectives add mov_walk custom:walk_one_cm
         #scoreboard objectives add mov_run custom:sprint_one_cm
         #scoreboard objectives add mov_swim custom:swim_one_cm
