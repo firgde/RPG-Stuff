@@ -1,8 +1,0 @@
-{
-    "parent": "main:impossible",
-    "criteria": {
-        "": {
-            "trigger": "impossible"
-        }
-    }
-}
