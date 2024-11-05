@@ -12,12 +12,12 @@
     item replace block ~ ~ ~ container.0 from block 0 -59 0 container.0
     item replace block ~ ~ ~ container.1 from block 0 -59 0 container.0
     item replace block ~ ~ ~ container.2 from block 0 -59 0 container.0
-    execute at @e[tag=brewing.this] run item replace entity @n[tag=brewing.slot.0] contents with potion[item_model="air"]
-    execute at @e[tag=brewing.this] run data modify entity @n[tag=brewing.slot.0] item.components.CustomPotionColor set from block ~ ~ ~ Items[{Slot:0b}].components.CustomPotionColor
-    execute at @e[tag=brewing.this] run item replace entity @n[tag=brewing.slot.1] contents with potion[item_model="air"]
-    execute at @e[tag=brewing.this] run data modify entity @n[tag=brewing.slot.1] item.components.CustomPotionColor set from block ~ ~ ~ Items[{Slot:1b}].components.CustomPotionColor
-    execute at @e[tag=brewing.this] run item replace entity @n[tag=brewing.slot.2] contents with potion[item_model="air"]
-    execute at @e[tag=brewing.this] run data modify entity @n[tag=brewing.slot.2] item.components.CustomPotionColor set from block ~ ~ ~ Items[{Slot:2b}].components.CustomPotionColor
+    execute at @e[tag=brewing.this] run item replace entity @n[tag=brewing.slot.0] contents with potion[item_model="asset:brewing_stand_potion"]
+    execute at @e[tag=brewing.this] run data modify entity @n[tag=brewing.slot.0] item.components."minecraft:potion_contents".custom_color set from block ~ ~ ~ Items[{Slot:0b}].components."minecraft:potion_contents".custom_color
+    execute at @e[tag=brewing.this] run item replace entity @n[tag=brewing.slot.1] contents with potion[item_model="asset:brewing_stand_potion"]
+    execute at @e[tag=brewing.this] run data modify entity @n[tag=brewing.slot.1] item.components."minecraft:potion_contents".custom_color set from block ~ ~ ~ Items[{Slot:1b}].components."minecraft:potion_contents".custom_color
+    execute at @e[tag=brewing.this] run item replace entity @n[tag=brewing.slot.2] contents with potion[item_model="asset:brewing_stand_potion"]
+    execute at @e[tag=brewing.this] run data modify entity @n[tag=brewing.slot.2] item.components."minecraft:potion_contents".custom_color set from block ~ ~ ~ Items[{Slot:2b}].components."minecraft:potion_contents".custom_color
 # 演出
     playsound block.brewing_stand.brew block @s ~ ~ ~ 1 1
     playsound item.bucket.empty block @s ~ ~ ~ 1 1.25

@@ -2,7 +2,7 @@
     scoreboard players add #itemCount buffer 1
 # 0 -59 0にメインハンドのアイテム移動、Countを1に設定
     data modify block 0 -59 0 Items[{Slot:0b}] set from entity @s SelectedItem
-    data modify block 0 -59 0 Items[{Slot:0b}].count set value 1b
+    data modify block 0 -59 0 Items[{Slot:0b}].count set value 1
 # 醸造台のItemsにアイテムを足す
     execute if data entity @s SelectedItem.components{"minecraft:custom_data":{brewingMaterial:1b,brewingPowder:0b}} at @n[tag=brewing,distance=..6,scores={hasTarget=1}] run item replace block ~ ~ ~ container.3 from block 0 -59 0 container.0
     execute if data entity @s SelectedItem.components{"minecraft:custom_data":{brewingMaterial:1b,brewingPowder:1b}} at @n[tag=brewing,distance=..6,scores={hasTarget=1}] run item replace block ~ ~ ~ container.4 from block 0 -59 0 container.0
