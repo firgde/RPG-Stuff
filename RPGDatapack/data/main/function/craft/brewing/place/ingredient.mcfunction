@@ -1,5 +1,5 @@
 # potionCountに1足す
-    scoreboard players add #itemCount buffer 1
+    scoreboard players add #item_count buffer 1
 # 0 -59 0にメインハンドのアイテム移動、Countを1に設定
     data modify block 0 -59 0 Items[{Slot:0b}] set from entity @s SelectedItem
     data modify block 0 -59 0 Items[{Slot:0b}].count set value 1
@@ -14,5 +14,5 @@
     item modify entity @s weapon.mainhand items:count
 # リセット
     scoreboard players reset #modify_count buffer
-    scoreboard players reset #itemCount buffer
+    scoreboard players reset #item_count buffer
     item replace block 0 -59 0 container.0 with air

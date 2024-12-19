@@ -1,3 +1,5 @@
+# brewedタグ
+    tag @n[tag=brewing.this] add brewing.brewed
 # スロット3と4から素材ID+ポーションレベルを取得
     execute store result score #material buffer run data get block ~ ~ ~ Items[{Slot:3b}].components."minecraft:custom_data".materialID 100
     execute store result score #powder buffer run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".powderID 10
