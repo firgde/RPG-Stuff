@@ -364,6 +364,16 @@
                     }
                 ]
             }
+        },
+        "consume": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": "{consumable:1b}"
+                    }
+                }
+            }
         }
     },
     "requirements": [
@@ -381,7 +391,8 @@
             "disequip_head",
             "disequip_chest",
             "disequip_legs",
-            "disequip_feet"
+            "disequip_feet",
+            "consume"
         ]
     ],
     "rewards": {
