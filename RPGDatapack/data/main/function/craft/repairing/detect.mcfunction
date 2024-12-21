@@ -15,7 +15,7 @@
     execute if score #slot_3 buffer matches 1 at @n[tag=repair_slot.3] store result score #slot buffer run data get entity @n[tag=repair_material] item.components."minecraft:custom_data".repairAmount
     scoreboard players operation #durHeal buffer += #slot buffer
 # slot.0を回復
-    execute as @n[tag=repair_item] unless data entity @s item{id:"minecraft:air"} unless score #durHeal buffer matches 0 run function items:durability/repair
+    execute as @n[tag=repair_item] if items entity @s contents * unless score #durHeal buffer matches 0 run function items:durability/repair
 # リセット
     scoreboard players reset #slot buffer
     scoreboard players reset #slot_1 buffer
