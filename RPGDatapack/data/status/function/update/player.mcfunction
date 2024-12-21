@@ -26,7 +26,7 @@
 # いらん棒は消す
     clear @s stick[item_model="air"]
 # エリアごとに採掘できるアイテムの設定
-    execute if items entity @s weapon.mainhand *[custom_data~{tool:1b}] run function main:collect/mining/modify_mineables
+    execute if items entity @s weapon.mainhand *[custom_data~{tool:1b}] at @s run function main:collect/mining/modify_mineables
 # UI持ちアイテムなら内容を更新
     execute unless predicate asset:social/ui/holding_purse if entity @e[tag=purse,distance=..5,tag=open] run function main:social/ui/close
     execute unless predicate asset:social/ui/holding_knowledge_book if entity @e[tag=knowledge_book,distance=..5,tag=open] run function main:social/ui/close
