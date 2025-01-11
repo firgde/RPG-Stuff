@@ -168,6 +168,7 @@ say reload
     scoreboard players set #0 const 0
     scoreboard players set #1 const 1
     scoreboard players set #2 const 2
+    scoreboard players set #3 const 3
     scoreboard players set #4 const 4
     scoreboard players set #5 const 5
     scoreboard players set #6 const 6
