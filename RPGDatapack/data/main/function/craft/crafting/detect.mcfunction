@@ -40,5 +40,5 @@
     scoreboard players reset #success buffer
     scoreboard players reset #length buffer
     tag @s remove not_give
-    # data remove storage craft: temp
+    data remove storage craft: temp
     advancement revoke @s only main:craft/crafting/trigger
