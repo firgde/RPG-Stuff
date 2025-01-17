@@ -7,7 +7,7 @@
     scoreboard players reset #atk_bonus_enchant buffer
     scoreboard players reset #mag_bonus_enchant buffer
     scoreboard players reset #dex_bonus_enchant buffer
-    scoreboard players reset #hpB_bnus_enchant buffer
+    scoreboard players reset #hp_bonus_enchant buffer
     scoreboard players reset #int_bonus_enchant buffer
     scoreboard players reset #def_bonus_enchant buffer
     scoreboard players reset #spd_bonus_enchant buffer
