@@ -1,16 +1,12 @@
 # brewedタグ
     tag @n[tag=brewing.this] add brewing.brewed
-# スロット3と4から素材ID+ポーションレベルを取得
-    execute store result score #material buffer run data get block ~ ~ ~ Items[{Slot:3b}].components."minecraft:custom_data".materialID 100
-    execute store result score #powder buffer run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".powderID 10
-    execute store result score #powderLevel buffer run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".powderLv
-# ID結合
-    scoreboard players operation #material buffer += #powder buffer
-    scoreboard players operation #material buffer += #powderLevel buffer
-    scoreboard players add #material buffer 7000
+# スロット3と4から素材と粉のデータを取得
+    data modify storage craft:temp data.brewing.material set from block ~ ~ ~ Items[{Slot:3b}].components."minecraft:custom_data".brewing.material_type
+    data modify storage craft:temp data.brewing.powder set from block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".brewing.powder_type
+    data modify storage craft:temp data.brewing.powder_lv set from block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".brewing.powder_level
 # 結合結果を見て醸造台&item_displayのポーション置き換え
     item replace block 0 -59 0 container.0 with air
-    function #asset:craft/recipes/brewing
+    function main:craft/brewing/check_recipe with storage craft:temp data.brewing
     item replace block ~ ~ ~ container.0 from block 0 -59 0 container.0
     item replace block ~ ~ ~ container.1 from block 0 -59 0 container.0
     item replace block ~ ~ ~ container.2 from block 0 -59 0 container.0
@@ -25,6 +21,7 @@
     playsound item.bucket.empty block @s ~ ~ ~ 1 1.25
     playsound block.fire.extinguish block @s ~ ~ ~ 1 2
 # リセット
+    data remove storage craft:temp data
     data remove block 0 -59 0 Items[{Slot:0b}]
     execute at @e[tag=brewing.this] run data remove block ~ ~ ~ Items[{Slot:3b}]
     execute at @e[tag=brewing.this] run data remove block ~ ~ ~ Items[{Slot:4b}]

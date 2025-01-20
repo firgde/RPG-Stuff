@@ -39,6 +39,75 @@
 		"entity": "this",
 		"lore": [
 			{
+				"translate": "item.ui.brewing.material.type",
+				"with": [
+					{
+						"nbt": "Item.components.\"minecraft:custom_data\".brewing.display.material_type",
+						"storage": "item:",
+						"interpret": true
+					}
+				],
+				"color": "gray",
+				"italic": false
+			}
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".brewing_material"
+				},
+				"range": 1
+			},
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".brewing_powder"
+				},
+				"range": 0
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.brewing.powder.type",
+				"with": [
+					{
+						"nbt": "Item.components.\"minecraft:custom_data\".brewing.display.powder_type",
+						"storage": "item:",
+						"interpret": true
+					}
+				],
+				"color": "gray",
+				"italic": false
+			}
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".brewing_powder"
+				},
+				"range": 1
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
 				"text": " "
 			}
 		],
@@ -67,7 +136,25 @@
 	{
 		"function": "set_lore",
 		"entity": "this",
-		"lore": [],
+		"lore": [
+			{
+				"text": " "
+			},
+			{
+				"translate": "item.ui.ability",
+				"with": [
+					{
+						"nbt": "Item.components.\"minecraft:custom_data\".Ability.Name",
+						"storage": "item:",
+						"interpret": true,
+						"color": "aqua",
+						"bold": true
+					}
+				],
+				"color": "white",
+				"italic": false
+			}
+		],
 		"mode": "append",
 		"conditions": [
 			{
@@ -78,6 +165,37 @@
 					"path": "Item.components.\"minecraft:custom_data\".HasAbility"
 				},
 				"range": 1
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "any_of",
+				"terms": [
+					{
+						"condition": "value_check",
+						"value": {
+							"type": "storage",
+							"storage": "item:",
+							"path": "Item.components.\"minecraft:custom_data\".HasAbility"
+						},
+						"range": 1
+					},
+					{
+						"condition": "value_check",
+						"value": {
+							"type": "storage",
+							"storage": "item:",
+							"path": "Item.components.\"minecraft:custom_data\".brewing_material"
+						},
+						"range": 1
+					}
+				]
 			}
 		]
 	},

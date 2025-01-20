@@ -6,9 +6,6 @@
 #全てに数値が存在するならポーション醸造
     execute at @n[tag=brewing.this] if data block ~ ~ ~ Items[{Slot:3b}] if data block ~ ~ ~ Items[{Slot:4b}] run function main:craft/brewing/brew
 # リセット
-    scoreboard players reset #powder buffer
-    scoreboard players reset #material buffer
-    scoreboard players reset #powderLevel buffer
     scoreboard players reset @e[tag=brewing.this] hasTarget
     tag @s remove not_give
     tag @e[tag=brewing.this] remove brewing.this

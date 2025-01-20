@@ -6,5 +6,5 @@
     function main:social/knowledge_book/init/item
     function main:social/knowledge_book/init/recipe/crafting
     function main:social/knowledge_book/init/enchantment
-
+    function main:social/knowledge_book/init/recipe/brewing
     function main:social/knowledge_book/init/recipe/alchemy
