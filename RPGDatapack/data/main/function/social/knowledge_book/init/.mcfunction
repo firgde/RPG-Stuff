@@ -8,3 +8,4 @@
     function main:social/knowledge_book/init/enchantment
     function main:social/knowledge_book/init/recipe/brewing
     function main:social/knowledge_book/init/recipe/alchemy
+    function main:social/knowledge_book/init/npc
