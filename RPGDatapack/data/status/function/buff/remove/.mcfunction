@@ -1,5 +1,7 @@
 # this
     tag @s add buff.this
+# originのdebuffedタグ除去
+    execute on origin run tag @s remove debuffed
 # buffスコア更新
     execute on origin run function status:buff/remove/update
 # HUDからアイコン除去

@@ -12,4 +12,4 @@
     scoreboard players operation #damageType buffer *= #10 const
     scoreboard players operation #damageType buffer += #sideElement buffer
 # メイン属性によって分岐
-    execute if entity @s[tag=!hurt.indirect,tag=!hurt.combo] run function #asset:combat/debuff/apply
+    execute if entity @s[tag=!hurt.indirect,tag=!hurt.combo,tag=!debuffed] run function #asset:combat/debuff/apply
