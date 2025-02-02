@@ -1,4 +1,4 @@
-# 色々
+# 色々表示
     title @p actionbar [{"text":"\uF80B"}, \
     {"nbt":"data.hud.hpBar","storage":"combat:","interpret":true,"font":"asset:hotbar"}, \
     {"text": "\uF80B\uF809\uF802"}, \
@@ -19,3 +19,5 @@
     {"nbt":"data.area.name","interpret":true,"font":"asset:hotbar","storage":"explore:"}, \
     {"text": "\uF80B\uF806"}, \
     {"nbt": "data.hud.Cooldown","storage": "combat:","font": "asset:hotbar","interpret": true}]
+# サイドバーUIの管理
+    execute as @p at @s run function hud:sidebar/tick

@@ -1,0 +1,44 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "predicates": {
+                            "custom_data": "{weaponType:2}"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "predicates": {
+                            "custom_data": "{weaponType:3}"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "items": [
+                            "knowledge_book"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -157,6 +157,10 @@ say reload
         scoreboard objectives add resistance_thunder_buff dummy
         # バフ用AECとEntity紐づけスコア
         scoreboard objectives add hasOrigin dummy
+    # サイドバーUI
+    scoreboard objectives add sidebar_ui dummy
+    scoreboard objectives modify sidebar_ui numberformat blank
+    scoreboard objectives modify sidebar_ui displayname ""
     # 手に持っているアイテムのスロット
     scoreboard objectives add slot dummy
     scoreboard objectives add prevslot dummy
@@ -202,6 +206,19 @@ say reload
     team add no_col
     team modify no_col collisionRule never
     team add ui
+    #サイドバーに表示する情報
+    team add control.attack
+    team join control.attack sidebar.attack
+    team modify control.attack prefix {"text":"\uF80F\uF80F\uF80F\uF80B"}
+    team modify control.attack suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.attack","font": "asset:keybind"},{"translate": "sidebar.control.attack"}]
+    team add control.attack_combo
+    team join control.attack_combo sidebar.attack_combo
+    team modify control.attack_combo prefix {"text":"\uF80F\uF80F\uF80C\uF80A\uF808"}
+    team modify control.attack_combo suffix [{"text":"\uF82F\uF82F\uF82A\uF829\uF828\uF824"},{"keybind": "key.attack","font": "asset:keybind"},{"translate": "sidebar.control.attack_combo"}]
+    team add control.use
+    team join control.use sidebar.use
+    team modify control.use prefix {"text":"\uF80F\uF80F\uF80F\uF80A\uF809\uF803"}
+    team modify control.use suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.use","font": "asset:keybind"},{"translate": "sidebar.control.use"}]
 # ボスバー
     bossbar add health: ""
 # タイトルの表示時間

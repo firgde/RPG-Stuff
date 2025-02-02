@@ -1,0 +1,63 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "predicates": {
+                            "custom_data":"{weapon:1b}"
+                        }
+                    }
+                },
+                "type_specific": {
+                    "type": "player",
+                    "looking_at": {
+                        "team": "hostile",
+                        "distance": {
+                            "absolute": {
+                                "max": 3
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "any_of",
+                "terms": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "custom_data": "{weaponType:2}"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "custom_data": "{weaponType:3}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }        
+    ]
+}
