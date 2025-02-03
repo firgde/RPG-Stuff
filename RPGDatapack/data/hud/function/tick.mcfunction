@@ -1,5 +1,5 @@
 # 色々表示
-    title @p actionbar [{"text":"\uF80B"}, \
+    title @p actionbar [{"text":"\uF80B\uF829\uF828\uF826"}, \
     {"nbt":"data.hud.hpBar","storage":"combat:","interpret":true,"font":"asset:hotbar"}, \
     {"text": "\uF80B\uF809\uF802"}, \
     {"nbt":"data.hud.Name","storage": "combat:","interpret": true,"font": "asset:mob_name"}, \
@@ -16,8 +16,11 @@
     {"nbt":"data.hud.hasDebuff","storage":"combat:","interpret":true,"font": "asset:hotbar"}, \
     {"nbt":"data.hud.debuff[]","font":"asset:hotbar","storage": "combat:","interpret": true,"separator": ""}, \
     {"text": "\uF828","font": "asset:hotbar"}, \
-    {"nbt":"data.area.name","interpret":true,"font":"asset:hotbar","storage":"explore:"}, \
-    {"text": "\uF80B\uF806"}, \
+    {"text": "\uE400","font":"asset:hotbar","shadow_color": 0}, \
+    {"text": "\uF80B\uF824"}, \
+    {"nbt":"data.hud.dimension","interpret":true,"font":"asset:dimension_name","storage":"explore:"}, \
+    {"nbt":"data.hud.name","interpret":true,"font":"asset:area_name","storage":"explore:"}, \
+    {"text":"\uF804"}, \
     {"nbt": "data.hud.Cooldown","storage": "combat:","font": "asset:hotbar","interpret": true}]
 # サイドバーUIの管理
     execute as @p at @s run function hud:sidebar/tick
