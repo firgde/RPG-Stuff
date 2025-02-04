@@ -1,6 +1,6 @@
 # 色々表示
     title @p actionbar [{"text":"\uF80B\uF829\uF828\uF826"}, \
-    {"nbt":"data.hud.hpBar","storage":"combat:","interpret":true,"font":"asset:hotbar"}, \
+    {"nbt":"data.hud.hpBar","storage":"combat:","interpret":true,"font":"asset:hotbar","shadow_color": 0}, \
     {"text": "\uF80B\uF809\uF802"}, \
     {"nbt":"data.hud.Name","storage": "combat:","interpret": true,"font": "asset:mob_name"}, \
     {"text": "\uF82A"}, \
@@ -21,6 +21,6 @@
     {"nbt":"data.hud.dimension","interpret":true,"font":"asset:dimension_name","storage":"explore:"}, \
     {"nbt":"data.hud.name","interpret":true,"font":"asset:area_name","storage":"explore:"}, \
     {"text":"\uF804"}, \
-    {"nbt": "data.hud.Cooldown","storage": "combat:","font": "asset:hotbar","interpret": true}]
+    {"nbt": "data.hud.Cooldown","storage": "combat:","font": "asset:hotbar","interpret": true,"shadow_color": 0}]
 # サイドバーUIの管理
     execute as @p at @s run function hud:sidebar/tick
