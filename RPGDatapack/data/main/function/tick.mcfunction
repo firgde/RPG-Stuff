@@ -25,4 +25,7 @@
 ## HUDのtick処理
     function hud:tick
 
+## カスタムパーティクルのtick処理
+    execute at @p as @e[type=item_display,tag=particle,distance=..128] run function main:particle
+
 ## (チョットは マシナ みた目に なったカナ?)

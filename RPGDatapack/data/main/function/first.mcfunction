@@ -161,6 +161,8 @@ say reload
     scoreboard objectives add sidebar_ui dummy
     scoreboard objectives modify sidebar_ui numberformat blank
     scoreboard objectives modify sidebar_ui displayname ""
+    # パーティクルのタイマー
+    scoreboard objectives add particle_timer dummy
     # 手に持っているアイテムのスロット
     scoreboard objectives add slot dummy
     scoreboard objectives add prevslot dummy

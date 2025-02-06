@@ -15,6 +15,7 @@
     execute store result score #sideElement buff_amount run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[1].Amount
     execute store result score #sideElement buff_timer run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[1].Timer
 # 演出
+    execute at @s positioned ~ ~1 ~ facing entity @p eyes positioned ^ ^ ^0.25 run function asset:particle/magic_hit
     particle enchanted_hit ~ ~ ~ 0.1 0.1 0.1 0.5 25
     particle crit ~ ~ ~ 0.1 0.3 0.1 0.5 25
     playsound block.amethyst_cluster.place hostile @p ~ ~ ~ 1 0.75
