@@ -32,6 +32,18 @@
         {
             "condition": "reference",
             "name": "hud:enchant"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:repairing/place"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:repairing/pick"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:repairing/repair"
         }
     ]
 }

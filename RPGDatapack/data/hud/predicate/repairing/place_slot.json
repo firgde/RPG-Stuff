@@ -1,0 +1,68 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "custom_data": "{id:5200}"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "predicates": {
+                            "custom_data": "{repairMaterial:1b}"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "looking_at": {
+                        "type": "interaction",
+                        "nbt": "{Tags:[\"repair_slot\"]}",
+                        "distance": {
+                            "absolute": {
+                                "max": 3
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "type_specific": {
+                        "type": "player",
+                        "looking_at": {
+                            "type": "interaction",
+                            "nbt": "{Tags:[\"repair_slot.0\"]}"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

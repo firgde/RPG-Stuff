@@ -249,6 +249,11 @@ say reload
             team join control.enchant sidebar.enchant
             team modify control.enchant prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF808\uF801"}
             team modify control.enchant suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.attack","font": "asset:keybind"},{"translate": "sidebar.control.enchant"}]
+        # 修復
+            team add control.repair
+            team join control.repair sidebar.repair
+            team modify control.repair prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF801"}
+            team modify control.repair suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.attack","font": "asset:keybind"},{"translate": "sidebar.control.repair"}]
 # ボスバー
     bossbar add health: ""
 # タイトルの表示時間
