@@ -12,6 +12,22 @@
         {
             "condition": "reference",
             "name": "hud:use"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:consume"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:crafting/place"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:crafting/pick"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:crafting/craft"
         }
     ]
 }

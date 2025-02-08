@@ -1,0 +1,25 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "predicates": {
+                    "custom_data": "{id:5000}"
+                }
+            }
+        },
+        "type_specific": {
+            "type": "player",
+            "looking_at": {
+                "type": "interaction",
+                "nbt": "{Tags:[\"crafting\"]}",
+                "distance": {
+                    "absolute": {
+                        "max": 3
+                    }
+                }
+            }
+        }
+    }
+}

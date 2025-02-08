@@ -39,6 +39,14 @@
                     }
                 }
             }
+        },
+        {
+            "condition": "reference",
+            "name": "asset:social/ui/holding_knowledge_book"
+        },
+        {
+            "condition": "reference",
+            "name": "asset:social/ui/holding_purse"
         }
     ]
 }

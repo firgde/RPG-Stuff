@@ -23,4 +23,4 @@
     {"text":"\uF804"}, \
     {"nbt": "data.hud.Cooldown","storage": "combat:","font": "asset:hotbar","interpret": true,"shadow_color": 0}]
 # サイドバーUIの管理
-    execute as @p at @s run function hud:sidebar/tick
+    execute as @p at @s if predicate hud:all run function hud:sidebar/tick
