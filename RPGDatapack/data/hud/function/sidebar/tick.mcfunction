@@ -19,5 +19,6 @@
 # クラフト
     execute if predicate hud:crafting/craft run function hud:sidebar/crafting/craft
     execute unless predicate hud:crafting/craft run scoreboard players reset sidebar.craft
-# リセット
-    execute unless predicate hud:all run scoreboard objectives setdisplay sidebar
+# エンチャント
+    execute if predicate hud:enchant run function hud:sidebar/enchant
+    execute unless predicate hud:enchant run scoreboard players reset sidebar.enchant

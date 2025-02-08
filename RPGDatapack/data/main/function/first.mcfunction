@@ -240,6 +240,15 @@ say reload
             team modify pick.craft prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF809\uF801"}
             team modify pick.craft suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.attack","font": "asset:keybind"},{"translate": "sidebar.pick.craft"}]
         # クラフト
+            team add control.craft
+            team join control.craft sidebar.craft
+            team modify control.craft prefix {"text":"\uF80F\uF80F\uF80F\uF80A\uF809\uF808\uF804"}
+            team modify control.craft suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.attack","font": "asset:keybind"},{"translate": "sidebar.control.craft"}]
+        # エンチャント
+            team add control.enchant
+            team join control.enchant sidebar.enchant
+            team modify control.enchant prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF808\uF801"}
+            team modify control.enchant suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.attack","font": "asset:keybind"},{"translate": "sidebar.control.enchant"}]
 # ボスバー
     bossbar add health: ""
 # タイトルの表示時間

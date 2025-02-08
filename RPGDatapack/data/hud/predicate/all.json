@@ -28,6 +28,10 @@
         {
             "condition": "reference",
             "name": "hud:crafting/craft"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:enchant"
         }
     ]
 }

@@ -24,3 +24,5 @@
     {"nbt": "data.hud.Cooldown","storage": "combat:","font": "asset:hotbar","interpret": true,"shadow_color": 0}]
 # サイドバーUIの管理
     execute as @p at @s if predicate hud:all run function hud:sidebar/tick
+# リセット
+    execute as @p at @s unless predicate hud:all run scoreboard objectives setdisplay sidebar
