@@ -20,5 +20,5 @@
     execute if predicate hud:crafting/craft run function hud:sidebar/crafting/craft
     execute unless predicate hud:crafting/craft run scoreboard players reset sidebar.craft
 # エンチャント
-    execute if predicate hud:enchant run function hud:sidebar/enchant
+    execute if predicate hud:enchant at @n[tag=enchanting,distance=..3,type=interaction] if items block ~ ~-1 ~ container.4 *[custom_data] run function hud:sidebar/enchant
     execute unless predicate hud:enchant run scoreboard players reset sidebar.enchant
