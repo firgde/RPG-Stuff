@@ -24,10 +24,19 @@
     execute unless predicate hud:enchant run scoreboard players reset sidebar.enchant
 # アイテム設置(修復)
     execute if predicate hud:repairing/place run function hud:sidebar/crafting/place
-    execute unless predicate hud:crafting/craft unless predicate hud:crafting/place run scoreboard players reset sidebar.craft
+    execute unless predicate hud:crafting/place unless predicate hud:repairing/place run scoreboard players reset sidebar.place.craft
 # アイテム取り出し(修復)
     execute if predicate hud:repairing/pick run function hud:sidebar/crafting/pick
     execute unless predicate hud:crafting/pick unless predicate hud:repairing/pick run scoreboard players reset sidebar.pick.craft
 # 修復
     execute if predicate hud:repairing/repair run function hud:sidebar/repair
     execute unless predicate hud:repairing/repair run scoreboard players reset sidebar.repair
+# アイテム設置(錬金術)
+    execute if predicate hud:alchemy/place run function hud:sidebar/crafting/place
+    execute unless predicate hud:crafting/place unless predicate hud:repairing/place unless predicate hud:alchemy/place run scoreboard players reset sidebar.place.craft
+# アイテム取り出し(錬金術)
+    execute if predicate hud:alchemy/pick run function hud:sidebar/crafting/pick
+    execute unless predicate hud:crafting/pick unless predicate hud:repairing/pick unless predicate hud:alchemy/pick run scoreboard players reset sidebar.pick.craft
+# 錬金術
+    execute if predicate hud:alchemy/create run function hud:sidebar/create
+    execute unless predicate hud:alchemy/create run scoreboard players reset sidebar.create

@@ -1,0 +1,55 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "custom_data": "{id:5400}"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "air"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "looking_at": {
+                        "type": "interaction",
+                        "nbt": "{Tags:[\"alchemy.slot\"]}",
+                        "distance": {
+                            "absolute": {
+                                "max": 3
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
