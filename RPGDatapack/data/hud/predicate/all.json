@@ -56,6 +56,10 @@
         {
             "condition": "reference",
             "name": "hud:alchemy/create"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:ability"
         }
     ]
 }

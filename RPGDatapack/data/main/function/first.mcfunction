@@ -259,6 +259,11 @@ say reload
             team join control.create sidebar.create
             team modify control.create prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF809\uF808\uF801"}
             team modify control.create suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.use","font": "asset:keybind"},{"translate": "sidebar.control.create"}]
+        # スキル
+            team add control.ability
+            team join control.ability sidebar.ability
+            team modify control.ability prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF822"}
+            team modify control.ability suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.use","font": "asset:keybind"},{"translate": "sidebar.control.ability"}]
 # ボスバー
     bossbar add health: ""
 # タイトルの表示時間

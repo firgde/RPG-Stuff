@@ -40,3 +40,6 @@
 # 錬金術
     execute if predicate hud:alchemy/create run function hud:sidebar/create
     execute unless predicate hud:alchemy/create run scoreboard players reset sidebar.create
+# スキル
+    execute if predicate hud:ability run function hud:sidebar/ability
+    execute unless predicate hud:ability run scoreboard players reset sidebar.ability
