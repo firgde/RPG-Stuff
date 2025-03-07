@@ -44,7 +44,10 @@
                         },
                         {
                             "function": "set_custom_model_data",
-                            "value": 8998
+                            "floats": {
+                                "values": [8998],
+                                "mode": "replace_all"
+                            }
                         }
                     ]
                 }
