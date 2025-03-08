@@ -1,0 +1,27 @@
+[
+    {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "type_specific": {
+                "type": "player",
+                "looking_at": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"npc.interaction\"]}",
+                    "distance": {
+                        "absolute": {
+                            "max": 3
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "reference",
+            "name": "hud:talk_progress"
+        }
+    }    
+]

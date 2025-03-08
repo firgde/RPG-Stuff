@@ -60,6 +60,18 @@
         {
             "condition": "reference",
             "name": "hud:ability"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:talk"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:talk_progress"
+        },
+        {
+            "condition": "reference",
+            "name": "hud:trade"
         }
     ]
 }

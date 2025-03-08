@@ -43,3 +43,12 @@
 # スキル
     execute if predicate hud:ability run function hud:sidebar/ability
     execute unless predicate hud:ability run scoreboard players reset sidebar.ability
+# 会話
+    execute if predicate hud:talk run function hud:sidebar/talk
+    execute unless predicate hud:talk run scoreboard players reset sidebar.talk
+# 会話の進行
+    execute if predicate hud:talk_progress run function hud:sidebar/talk_progress
+    execute unless predicate hud:talk_progress run scoreboard players reset sidebar.talk_progress
+# 取引
+    execute if predicate hud:trade run function hud:sidebar/trade
+    execute unless predicate hud:trade run scoreboard players reset sidebar.trade

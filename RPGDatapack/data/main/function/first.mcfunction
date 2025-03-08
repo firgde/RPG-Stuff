@@ -264,6 +264,21 @@ say reload
             team join control.ability sidebar.ability
             team modify control.ability prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF822"}
             team modify control.ability suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.use","font": "asset:keybind"},{"translate": "sidebar.control.ability"}]
+        # 会話
+            team add control.talk
+            team join control.talk sidebar.talk
+            team modify control.talk prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF828\uF825"}
+            team modify control.talk suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.use","font": "asset:keybind"},{"translate": "sidebar.control.talk"}]
+        # 会話の進行
+            team add control.talk_progress
+            team join control.talk_progress sidebar.talk_progress
+            team modify control.talk_progress prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF80A\uF808\uF801"}
+            team modify control.talk_progress suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.use","font": "asset:keybind"},{"translate": "sidebar.control.talk_progress"}]
+        # 取引
+            team add control.trade
+            team join control.trade sidebar.trade
+            team modify control.trade prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF823"}
+            team modify control.trade suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.use","font": "asset:keybind"},{"translate": "sidebar.control.trade"}]
 # ボスバー
     bossbar add health: ""
 # タイトルの表示時間
