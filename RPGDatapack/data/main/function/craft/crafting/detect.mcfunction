@@ -30,6 +30,8 @@
     execute store result storage craft: temp.length int 1 run data get storage craft: temp.ingredients_slots
 # ingredientsと同じ配列をレシピに持つアイテムがあるならそれをクラフト
     function main:craft/crafting/check_recipe with storage craft: temp
+# 耐久のあるアイテムは傑作を抽選(仮で50%)
+    execute if items block 0 -59 0 container.0 *[max_damage] run function main:craft/crafting/masterpiece/roll
 # アイテム召喚
     execute if score #success buffer matches 1 at @n[tag=slot.4,distance=..5] run function main:craft/crafting/common
 # 演出
