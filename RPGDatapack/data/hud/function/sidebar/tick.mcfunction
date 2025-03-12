@@ -13,9 +13,11 @@
 # アイテム設置(クラフト)
     execute if predicate hud:crafting/place run function hud:sidebar/crafting/place
     execute unless predicate hud:crafting/place run scoreboard players reset sidebar.place.craft
+    execute unless predicate {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"count":{"min":2}}}}} run scoreboard players reset sidebar.place_all
 # アイテム取り出し(クラフト)
     execute if predicate hud:crafting/pick run function hud:sidebar/crafting/pick
     execute unless predicate hud:crafting/pick run scoreboard players reset sidebar.pick.craft
+    execute unless predicate {"condition":"entity_properties","entity":"this","predicate":{"type_specific":{"type":"player","looking_at":{"type":"interaction","nbt":"{Tags:[\"crafting\"]}","passenger":{"slots":{"contents":{"count":{"min":2}}}}}}}} run scoreboard players reset sidebar.pick_all
 # クラフト
     execute if predicate hud:crafting/craft run function hud:sidebar/crafting/craft
     execute unless predicate hud:crafting/craft run scoreboard players reset sidebar.craft

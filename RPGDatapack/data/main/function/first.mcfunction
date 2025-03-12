@@ -229,16 +229,26 @@ say reload
             team join control.consume sidebar.consume
             team modify control.consume prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF808\uF803"}
             team modify control.consume suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.use","font": "asset:keybind"},{"translate": "sidebar.control.consume"}]
-        # アイテム設置(クラフト&錬金術)
+        # アイテム設置(クラフト&修復&錬金術)
             team add place.craft
             team join place.craft sidebar.place.craft
             team modify place.craft prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF809\uF808\uF801"}
             team modify place.craft suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.use","font": "asset:keybind"},{"translate": "sidebar.place.craft"}]
-        # アイテム取り出し(クラフト&錬金術)
+        # 一括設置
+            team add place_all
+            team join place_all sidebar.place_all
+            team modify place_all prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF808\uF805"}
+            team modify place_all suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.sneak","font": "asset:keybind"},{"text": "+"},{"keybind":"key.use","font": "asset:keybind"},{"translate": "sidebar.place_all"}]
+        # アイテム取り出し(クラフト&修復&錬金術)
             team add pick.craft
             team join pick.craft sidebar.pick.craft
             team modify pick.craft prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF809\uF801"}
             team modify pick.craft suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.attack","font": "asset:keybind"},{"translate": "sidebar.pick.craft"}]
+        # 一括取り出し
+            team add pick_all
+            team join pick_all sidebar.pick_all
+            team modify pick_all prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF809\uF808\uF801"}
+            team modify pick_all suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.sneak","font": "asset:keybind"},{"text": "+"},{"keybind":"key.attack","font": "asset:keybind"},{"translate": "sidebar.pick_all"}]
         # クラフト
             team add control.craft
             team join control.craft sidebar.craft
