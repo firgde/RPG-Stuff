@@ -247,7 +247,7 @@ say reload
         # 一括取り出し
             team add pick_all
             team join pick_all sidebar.pick_all
-            team modify pick_all prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF809\uF808\uF801"}
+            team modify pick_all prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF805"}
             team modify pick_all suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.sneak","font": "asset:keybind"},{"text": "+"},{"keybind":"key.attack","font": "asset:keybind"},{"translate": "sidebar.pick_all"}]
         # クラフト
             team add control.craft
