@@ -25,6 +25,7 @@
     data modify entity @s CustomNameVisible set value 0b
 # attributeに関与するもの
     execute store result entity @s attributes[{id:"minecraft:movement_speed"}].base float 0.01 run data get storage mob: Data.status.baseSpd
+    attribute @s knockback_resistance base set 1.0
 # 演出
     execute at @s run particle poof ~ ~ ~ 0.2 0.5 0.2 0.01 15
     #ボス限定
