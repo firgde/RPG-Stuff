@@ -2,9 +2,9 @@
     tag @p add in_combat
     scoreboard players set @p combat_timer 100
 # 属性取得(直接攻撃していない、既にデバフを持っている場合は無視)
-    execute unless score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run function main:combat/damage/calc/element_combined
-    execute if entity @s[type=player,tag=!hurt.indirect] if score #damageType buffer matches 1..4 run function main:combat/damage/calc/element_hostile
-    execute if entity @s[type=!player,tag=!debuffed] if score #damageType buffer matches 1..4 run function main:combat/damage/calc/element
+    execute unless score #main_element buffer matches 0 unless score #side_element buffer matches 0 run function main:combat/damage/calc/element_combined
+    execute if entity @s[type=player,tag=!hurt.indirect] if score #damage_type buffer matches 1..4 run function main:combat/damage/calc/element_hostile
+    execute if entity @s[type=!player,tag=!debuffed] if score #damage_type buffer matches 1..4 run function main:combat/damage/calc/element
 # 属性相性を参照
     execute unless entity @s[tag=hurt.indirect] run function main:combat/damage/calc/resistance
 # 無敵時間のあるなし
@@ -17,7 +17,7 @@
     scoreboard players operation @s[team=hostile] prev_hp = @s hp
 # ダメージ減算
     #クリティカルの場合は色変更
-    execute if entity @p[tag=attack.crit] run scoreboard players set #damageType buffer 5
+    execute if entity @p[tag=attack.crit] run scoreboard players set #damage_type buffer 5
     execute if score @s damage matches 1.. run scoreboard players operation @s hp -= @s damage
     scoreboard players operation @s hp > #0 const
     execute at @s run function main:combat/damage/display/
@@ -42,9 +42,13 @@
 # 必要ならば、演出
     execute if entity @s[tag=hurt.indirect] run damage @s 0.01 generic
     execute on passengers if entity @s[tag=atk_combo] on vehicle run damage @s 0.01 asset:combo_attack
-    execute if score #damageType buffer matches 5 run playsound entity.player.attack.crit hostile @p ~ ~ ~ 1 1
+    execute if score #damage_type buffer matches 5 run playsound entity.player.attack.crit hostile @p ~ ~ ~ 1 1
+    execute if entity @s[team=hostile] if score #main_element buffer matches 1 at @s positioned ~ ~1 ~ facing entity @p eyes positioned ^ ^ ^0.26 run function asset:particle/fire_hit
+    execute if entity @s[team=hostile] if score #main_element buffer matches 2 at @s positioned ~ ~1 ~ facing entity @p eyes positioned ^ ^ ^0.26 run function asset:particle/ice_hit
+    execute if entity @s[team=hostile] if score #main_element buffer matches 3 at @s positioned ~ ~1 ~ facing entity @p eyes positioned ^ ^ ^0.26 run function asset:particle/wind_hit
+    execute if entity @s[team=hostile] if score #main_element buffer matches 4 at @s positioned ~ ~1 ~ facing entity @p eyes positioned ^ ^ ^0.26 run function asset:particle/thunder_hit
     #属性ダメージ
-    execute unless entity @s[tag=hurt.indirect] unless score #damageType buffer matches 0 unless score #damageType buffer matches 5 run function main:combat/damage/sound/
+    execute unless entity @s[tag=hurt.indirect] unless score #damage_type buffer matches 0 unless score #damage_type buffer matches 5 run function main:combat/damage/sound/
 # 最後に攻撃されたモブ
     execute unless entity @s[type=player] run tag @e[distance=..50,team=hostile] remove hurt_last
     tag @s[type=!player] add hurt_last
@@ -56,9 +60,9 @@
     tag @s remove hurt.bypass_defense
     tag @s remove hurt.indirect
     tag @s remove hurt.combo
-    scoreboard players reset #damageType buffer
-    scoreboard players reset #mainElement
-    scoreboard players reset #sideElement
+    scoreboard players reset #damage_type buffer
+    scoreboard players reset #main_element
+    scoreboard players reset #side_element
     scoreboard players reset #hurtTime buffer
     scoreboard players reset @p atkBuffer
     scoreboard players reset @s damage

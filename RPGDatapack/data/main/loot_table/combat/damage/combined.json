@@ -51,7 +51,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -108,7 +108,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -165,7 +165,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -222,7 +222,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -279,7 +279,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -336,7 +336,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -393,7 +393,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -450,7 +450,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -507,7 +507,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -564,7 +564,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -621,7 +621,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -678,7 +678,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -735,7 +735,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -792,7 +792,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -849,7 +849,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},
@@ -906,7 +906,7 @@
 								"type": "score",
 								"target": {
 									"type": "fixed",
-									"name": "#damageType"
+									"name": "#damage_type"
 								},
 								"score": "buffer"
 							},

@@ -28,4 +28,4 @@
     execute unless entity @s[type=player] run tag @e[distance=..50,team=hostile] remove hurt_last
     tag @s[type=!player] add hurt_last
 # リセット
-    scoreboard players reset #damageType buffer
+    scoreboard players reset #damage_type buffer

@@ -10,17 +10,17 @@
     data modify entity @s item.components."minecraft:custom_data".Element.Type append from storage combat: data.magic[1].Element.Type
     data modify entity @s item.components."minecraft:custom_data".Element.Debuff append from storage combat: data.magic[1].Element.Debuff
     # componentの属性をスコアに代入
-    execute store result score #mainElement buffer run data get entity @s item.components."minecraft:custom_data".Element.Type[0]
-    execute store result score #sideElement buffer run data get entity @s item.components."minecraft:custom_data".Element.Type[1]
+    execute store result score #main_element buffer run data get entity @s item.components."minecraft:custom_data".Element.Type[0]
+    execute store result score #side_element buffer run data get entity @s item.components."minecraft:custom_data".Element.Type[1]
     # 属性を二つ検知したら合成
-    execute unless score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run function main:combat/attack/magic/summon/element/combine
+    execute unless score #main_element buffer matches 0 unless score #side_element buffer matches 0 run function main:combat/attack/magic/summon/element/combine
     # なければ存在する方に属性を絞り、仮ストレージにデータ移動
     #メインハンドが属性を持っている場合
-    execute unless score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run data modify storage buffer: data.Element set from entity @s item.components."minecraft:custom_data".Element.Type[0]
+    execute unless score #main_element buffer matches 0 if score #side_element buffer matches 0 run data modify storage buffer: data.Element set from entity @s item.components."minecraft:custom_data".Element.Type[0]
     #オフハンドが属性を持っている場合
-    execute if score #mainElement buffer matches 0 unless score #sideElement buffer matches 0 run data modify storage buffer: data.Element set from entity @s item.components."minecraft:custom_data".Element.Type[1]
+    execute if score #main_element buffer matches 0 unless score #side_element buffer matches 0 run data modify storage buffer: data.Element set from entity @s item.components."minecraft:custom_data".Element.Type[1]
     # 属性が全くなければそのまま一般タグ
-    execute if score #mainElement buffer matches 0 if score #sideElement buffer matches 0 run tag @s add magic.generic
+    execute if score #main_element buffer matches 0 if score #side_element buffer matches 0 run tag @s add magic.generic
 
     # タグに変換する
     execute if data storage buffer: data run function main:combat/attack/magic/summon/element/get

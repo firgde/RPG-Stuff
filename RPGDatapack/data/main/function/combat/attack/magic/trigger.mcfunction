@@ -23,8 +23,8 @@
     scoreboard players reset #gametime buffer
     scoreboard players reset #mana_require buffer
     scoreboard players reset #cooldown buffer
-    scoreboard players reset #mainElement buffer
-    scoreboard players reset #sideElement buffer
+    scoreboard players reset #main_element buffer
+    scoreboard players reset #side_element buffer
     tag @s remove verify_cooldown
     tag @s remove verify_mana
     data remove storage combat: data.magic
