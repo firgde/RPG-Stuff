@@ -5,6 +5,6 @@
     tag @s add atk_combo
     tag @s add atk_combo.bow
 # Mobに合わせてサイズ変更
-    execute if entity @s[tag=atk_combo.init] run function main:combat/attack/combo/resize
+    function main:combat/attack/combo/resize
 # initタグ削除
     tag @s[tag=atk_combo.init] remove atk_combo.init

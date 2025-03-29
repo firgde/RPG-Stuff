@@ -242,7 +242,7 @@ say reload
         # アイテム取り出し(クラフト&修復&錬金術)
             team add pick.craft
             team join pick.craft sidebar.pick.craft
-            team modify pick_all prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF805"}
+            team modify pick.craft prefix {"text":"\uF80F\uF80F\uF80F\uF80B\uF809\uF801"}
             team modify pick.craft suffix [{"text":"\uF82F\uF82F\uF82F\uF808"},{"keybind": "key.attack","font": "asset:keybind"},{"translate": "sidebar.pick.craft"}]
         # 一括取り出し
             team add pick_all

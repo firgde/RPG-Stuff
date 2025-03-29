@@ -16,11 +16,11 @@
     execute store result score #rec buffer run scoreboard players operation #10 buffer -= #length buffer
     function hud:buff/rec/debuff
 # バフ・デバフアイコンを表示
-    execute if entity @e[tag=!debuff,scores={hasOrigin=1..},tag=!buff.this] run data modify storage combat: data.hud.hasBuff set value '{"text":"\\uE01D"}'
-    execute if entity @e[tag=debuff,scores={hasOrigin=1..},tag=!buff.this] run data modify storage combat: data.hud.hasDebuff set value '{"text":"\\uE02E"}'
+    execute if entity @e[tag=!debuff,scores={hasOrigin=1..},tag=!buff.this] run data modify storage combat: data.hud.hasBuff set value {"text":"\uE01D"}
+    execute if entity @e[tag=debuff,scores={hasOrigin=1..},tag=!buff.this] run data modify storage combat: data.hud.hasDebuff set value {"text":"\uE02E"}
     #バフが存在しないなら9pxを表示
-    execute unless entity @e[tag=!debuff,scores={hasOrigin=1..},tag=!buff.this] run data modify storage combat: data.hud.hasBuff set value '{"text":"\\uF828\\uF821"}'
-    execute unless entity @e[tag=debuff,scores={hasOrigin=1..},tag=!buff.this] run data modify storage combat: data.hud.hasDebuff set value '{"text":"\\uF828\\uF821"}'
+    execute unless entity @e[tag=!debuff,scores={hasOrigin=1..},tag=!buff.this] run data modify storage combat: data.hud.hasBuff set value {"text":"\uF828\uF821"}
+    execute unless entity @e[tag=debuff,scores={hasOrigin=1..},tag=!buff.this] run data modify storage combat: data.hud.hasDebuff set value {"text":"\uF828\uF821"}
 # リセット
     scoreboard players reset #10 buffer
     scoreboard players reset #length buffer

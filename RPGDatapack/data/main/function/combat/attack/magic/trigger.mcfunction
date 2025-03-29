@@ -9,10 +9,10 @@
     scoreboard players operation @s[tag=verify_mana,gamemode=!creative,tag=verify_cooldown] mana -= #mana_require buffer
 # 魔術の種類、属性など
     data modify storage combat: data.magic append from entity @s[tag=verify_cooldown,tag=verify_mana,type=player] SelectedItem.components."minecraft:custom_data".magicData
-    data modify storage combat: data.magic append from entity @s[tag=verify_cooldown,tag=verify_mana,type=player] Inventory[{Slot:-106b}].components."minecraft:custom_data".magicData
-    execute unless data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".magicData run data modify storage combat: data.magic append value {}
+    execute if items entity @p weapon.offhand *[custom_data~{offhandOnly:1b}] run data modify storage combat: data.magic append from entity @s[tag=verify_cooldown,tag=verify_mana,type=player] equipment.offhand.components."minecraft:custom_data".magicData
+    execute unless data entity @s equipment.offhand.components."minecraft:custom_data".magicData run data modify storage combat: data.magic append value {}
     data modify storage combat: data.magic[0].Element set from entity @s[tag=verify_cooldown,tag=verify_mana,type=player] SelectedItem.components."minecraft:custom_data".Element
-    data modify storage combat: data.magic[1].Element set from entity @s[tag=verify_cooldown,tag=verify_mana,type=player] Inventory[{Slot:-106b,components:{"minecraft:custom_data":{offhandOnly:1b}}}].components."minecraft:custom_data".Element
+    execute if items entity @p weapon.offhand *[custom_data~{offhandOnly:1b}] run data modify storage combat: data.magic[1].Element set from entity @s[tag=verify_cooldown,tag=verify_mana,type=player] equipment.offhand.components."minecraft:custom_data".Element
 # ｻﾓｫｫｫｫﾝ
     execute if entity @s[tag=verify_cooldown,tag=verify_mana] run function main:combat/attack/magic/summon/
 # 残念空振りまた明日

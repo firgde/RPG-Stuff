@@ -4,6 +4,7 @@
     execute on attacker if entity @p[advancements={main:combat/damage_taken={melee=true}}] run function main:combat/damage/take/melee
     execute on attacker if entity @p[advancements={main:combat/damage_taken={magic=true}}] run function main:combat/damage/take/magic
     execute on attacker if entity @p[advancements={main:combat/damage_taken={projectile=true}}] run function main:combat/damage/take/ranged
+# tellraw @p {score:{name:"@s",objective:"damage"}}
 # 属性取得
     execute unless score #main_element buffer matches 0 if score #side_element buffer matches 0 run scoreboard players operation #damage_type buffer = #main_element buffer
     execute if score #main_element buffer matches 0 unless score #side_element buffer matches 0 run scoreboard players operation #damage_type buffer = #side_element buffer

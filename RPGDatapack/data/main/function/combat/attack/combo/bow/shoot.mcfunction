@@ -9,7 +9,7 @@
     scoreboard players set #main_element buffer 0
     scoreboard players set #side_element buffer 0
     execute store result score #main_element buffer run data get entity @p SelectedItem.components."minecraft:custom_data".Element.Type
-    execute store result score #side_element buffer run data get entity @p Inventory[{Slot:-106b,components:{"minecraft:custom_data":{offhandOnly:1b}}}].components."minecraft:custom_data".Element.Type
+    execute if items entity @p weapon.offhand *[custom_data~{offhandOnly:1b}] store result score #side_element buffer run data get entity @p equipment.offhand.components."minecraft:custom_data".Element.Type
     execute unless score #main_element buffer matches 0 if score #side_element buffer matches 0 run scoreboard players operation #element buffer = #main_element buffer
     execute if score #main_element buffer matches 0 unless score #side_element buffer matches 0 run scoreboard players operation #element buffer = #side_element buffer
     execute if score #element buffer matches 1.. run function main:combat/attack/ranged/element/get

@@ -15,7 +15,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -72,7 +71,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -129,7 +127,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -186,7 +183,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -243,7 +239,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -300,7 +295,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -357,7 +351,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -414,7 +407,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -471,7 +463,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -528,7 +519,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -585,7 +575,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -642,7 +631,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -699,7 +687,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -756,7 +743,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -813,7 +799,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{
@@ -870,7 +855,6 @@
 						},
 						{
 							"function": "set_custom_data",
-							"entity": "this",
 							"tag": "{DisplayDamage:1b}"
 						},
 						{

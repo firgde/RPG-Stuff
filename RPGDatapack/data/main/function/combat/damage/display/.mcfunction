@@ -3,8 +3,6 @@
     execute if score #damage_type buffer matches 10.. run function main:combat/damage/display/space
     data modify storage combat: data.Damage.space set string storage combat: data.Damage.space
     data modify storage combat: buffer set from storage combat: data.Damage.space
-    data modify storage combat: data.Damage.space set value ''
-    function main:combat/damage/display/to_string with storage combat:
 # ダメージ表示
     execute store result storage combat: data.Damage.Amount int 1 run scoreboard players get @s damage
     execute unless score #damage_type buffer matches 10.. run loot spawn ~ ~1.5 ~ loot main:combat/damage/single

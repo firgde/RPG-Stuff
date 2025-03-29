@@ -20,7 +20,7 @@
     scoreboard players set @s resistance_wind_base 100
     scoreboard players set @s resistance_thunder_base 100
 # バフ状態リセット
-    data modify storage combat: data.hud.heart set value '{"text":"\\uE000"}'
+    data modify storage combat: data.hud.heart set value {"text":"\uE000"}
 # 全レベル&経験値リセット
     scoreboard players set @s lvl_total 0
     scoreboard players set @s lvl_combat 0

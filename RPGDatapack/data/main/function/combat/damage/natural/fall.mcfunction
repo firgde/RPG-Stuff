@@ -1,4 +1,4 @@
-## damage = 5 * (FallDistance - 3)
+## damage = 5 * (fall_distance - 3)
     scoreboard players operation @s damage = @s fall_distance
     scoreboard players operation @s damage *= #5 const
     scoreboard players remove @s damage 15
