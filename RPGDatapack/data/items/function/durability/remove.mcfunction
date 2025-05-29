@@ -3,8 +3,8 @@
 # custom_dataの耐久値減算
     execute store result score #durability buffer run data get entity @s SelectedItem.components."minecraft:custom_data".Durability
     execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:custom_data".Durability int 1 run scoreboard players remove #durability buffer 1
-# 0未満なら壊す
-    execute if score #durability buffer matches ..-1 run function items:durability/break
+# 0以下なら壊す
+    execute if score #durability buffer matches ..0 run function items:durability/break
 # 差をminecraft:damageに代入
     execute store result score #max_durability buffer run data get entity @s SelectedItem.components."minecraft:max_damage"
     execute if items entity @s weapon.mainhand bow run scoreboard players set #max_durability buffer 384

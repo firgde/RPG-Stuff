@@ -1,6 +1,6 @@
 # 棒を消す
     #オフハンドはバグる。おのもや
-    # execute unless data entity @s Inventory[{Slot:-106b}] run item replace entity @s weapon.offhand with stick[hide_tooltip={},custom_data={menu:1b}]
+    # execute unless data entity @s Inventory[{Slot:-106b}] run item replace entity @s weapon.offhand with stick[tooltip_display={hide_tooltip:true},custom_data={menu:1b}]
     clear @s stick[custom_data={ui:1b}]
 
     #ドロップした棒はkill
