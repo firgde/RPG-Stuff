@@ -9,5 +9,5 @@
     execute store result storage craft:buffer data.current_count int 1 run scoreboard players get #max_stack_size buffer
     execute store success score #success_1 buffer run data modify storage craft:buffer data.item_count set from storage craft:buffer data.current_count
 # 個数に余裕があるなら追加
-    execute if score #success_1 buffer matches 1 run item modify entity @p weapon.mainhand [{"function":"set_count","count":-1,"add":true}]
+    execute if score #success_1 buffer matches 1 run item modify entity @a weapon.mainhand [{"function":"set_count","count":-1,"add":true}]
     execute if score #success_1 buffer matches 1 run item modify entity @n[tag=slot,type=item_display] contents [{"function":"set_count","count":1,"add":true}]

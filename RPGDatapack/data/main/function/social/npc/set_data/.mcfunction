@@ -1,5 +1,5 @@
 # アイテム渡さない
-    tag @p add not_give
+    tag @a add not_give
 # 一度別の場所に移し、LootReferenceを実際のアイテムに変える
     #取引データ
     data modify storage social: data.npc.Recipes append value {rewardExp:0b,maxUses:2147483647,xp:0}
@@ -15,6 +15,6 @@
 # リセット
     data remove storage social: data.npc.Recipes.Item
     data remove block 0 -59 0 Items
-    tag @p remove not_give
+    tag @a remove not_give
 # 再帰
     execute if data storage social: data.npc.Trades[0] run function main:social/npc/set_data/

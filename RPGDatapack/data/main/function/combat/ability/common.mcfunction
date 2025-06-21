@@ -5,6 +5,6 @@
 # MP減算
     scoreboard players operation @s[gamemode=!creative] mana -= #mana_require buffer
 # 通知
-    tellraw @s {"translate": "combat.text.ability.use","with":[{"nbt": "SelectedItem.components.\"minecraft:custom_data\".Ability.Name","entity":"@p","interpret": true,"color": "aqua","bold": true}]}
+    tellraw @s {"translate": "combat.text.ability.use","with":[{"nbt": "SelectedItem.components.\"minecraft:custom_data\".Ability.Name","entity":"@a","interpret": true,"color": "aqua","bold": true}]}
 # リセット
     scoreboard players reset #mana_require

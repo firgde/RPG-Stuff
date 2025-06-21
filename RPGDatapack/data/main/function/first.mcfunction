@@ -292,12 +292,12 @@ say reload
 # ボスバー
     bossbar add health: ""
 # タイトルの表示時間
-    title @p times 5 40 10
+    title @a times 5 40 10
 
 # いずれload.mcfunctionに移動される分
     #攻撃力を一律0に
-    attribute @p attack_damage base set 0.0
+    attribute @a[limit=1] attack_damage base set 0.0
     #ダメージ処理のために無敵に
-    effect give @p resistance infinite 255 true
+    effect give @a resistance infinite 255 true
     #餓死しないために満腹度回復
-    effect give @p saturation infinite 255 true
+    effect give @a saturation infinite 255 true

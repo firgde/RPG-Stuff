@@ -4,7 +4,7 @@
     scoreboard players set #powerx buffer 10
     scoreboard players set #powery buffer 10
     scoreboard players set #powerz buffer 10
-    execute as @e[tag=alchemy.result] at @s facing entity @p eyes rotated ~180 ~ run function main:motion
+    execute as @e[tag=alchemy.result] at @s facing entity @a[limit=1] eyes rotated ~180 ~ run function main:motion
 # item_displayリセット
     execute if score #success buffer matches 1 run data remove entity @n[tag=alchemy.item.0] item
     execute if score #success buffer matches 1 run data remove entity @n[tag=alchemy.item.1] item

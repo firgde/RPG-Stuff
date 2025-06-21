@@ -1,17 +1,17 @@
 
-    tag @p add not_give
+    tag @a add not_give
 
 # 各種補正ステータスを+(25 + (dex * 1.5 + acc * 2 + luk) / 8)%
-    scoreboard players operation #dex buffer = @p dex
+    scoreboard players operation #dex buffer = @a dex
     scoreboard players operation #dex buffer *= #3 const
     scoreboard players operation #dex buffer /= #2 const
     scoreboard players operation #amplifier buffer += #dex buffer
 
-    scoreboard players operation #acc buffer = @p acc
+    scoreboard players operation #acc buffer = @a acc
     scoreboard players operation #acc buffer *= #2 const
     scoreboard players operation #amplifier buffer += #acc buffer
 
-    scoreboard players operation #amplifier buffer += @p luk
+    scoreboard players operation #amplifier buffer += @a luk
     scoreboard players operation #amplifier buffer /= #8 const
     execute store result storage craft:temp amplifier float 0.01 run scoreboard players add #amplifier buffer 125
 
@@ -24,11 +24,11 @@
     execute at @n[tag=slot.4] run particle electric_spark ~ ~ ~ 0.2 0.2 0.2 0.01 25
     execute at @n[tag=slot.4] run particle trial_spawner_detection ~ ~ ~ 0.2 0.2 0.2 0 25
     execute at @n[tag=slot.4] run particle flash ~ ~ ~ 0.0 0.0 0.0 0 1
-    execute as @p at @n[tag=slot.4] run playsound block.trial_spawner.open_shutter block @s ~ ~ ~ 1.0 2.0
-    execute as @p at @n[tag=slot.4] run playsound block.vault.insert_item_fail block @s ~ ~ ~ 1.0 0.5
-    execute as @p at @n[tag=slot.4] run playsound block.anvil.destroy block @s ~ ~ ~ 1.0 2.0
+    execute as @a at @n[tag=slot.4] run playsound block.trial_spawner.open_shutter block @s ~ ~ ~ 1.0 2.0
+    execute as @a at @n[tag=slot.4] run playsound block.vault.insert_item_fail block @s ~ ~ ~ 1.0 0.5
+    execute as @a at @n[tag=slot.4] run playsound block.anvil.destroy block @s ~ ~ ~ 1.0 2.0
 # リセット
     scoreboard players reset #dex buffer
     scoreboard players reset #acc buffer
-    tag @p remove not_give
+    tag @a remove not_give
     data remove storage craft:temp amplifier

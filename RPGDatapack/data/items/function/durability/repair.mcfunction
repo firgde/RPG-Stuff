@@ -28,7 +28,7 @@
     execute if score #slot_2 buffer matches 1 at @n[tag=repair_slot.2] run data remove entity @n[tag=repair_material] item
     execute if score #slot_3 buffer matches 1 at @n[tag=repair_slot.3] run data remove entity @n[tag=repair_material] item
 # 演出
-    playsound block.anvil.use block @p ~ ~ ~ 1 1
+    playsound block.anvil.use block @a ~ ~ ~ 1 1
 # リセット
     data remove storage item: data
     data remove storage item: Item

@@ -1,13 +1,13 @@
 # 色々表示
-    title @p actionbar [{"text":"\uF80B\uF829\uF828\uF826"}, \
+    title @a actionbar [{"text":"\uF80B\uF829\uF828\uF826"}, \
     {"nbt":"data.hud.hpBar","storage":"combat:","interpret":true,"font":"asset:hotbar","shadow_color": 0}, \
     {"text": "\uF80B\uF809\uF802"}, \
     {"nbt":"data.hud.Name","storage": "combat:","interpret": true,"font": "asset:mob_name"}, \
     {"text": "\uF82A"}, \
     {"nbt":"data.hud.heart","storage": "combat:","font":"asset:hotbar","interpret": true}, \
-    {"score":{"name":"@p","objective":"hp"},"font":"asset:hotbar"}, \
+    {"score":{"name":"@a","objective":"hp"},"font":"asset:hotbar"}, \
     {"text":"/","font":"asset:hotbar"}, \
-    {"score":{"name":"@p","objective":"max_hp"},"font":"asset:hotbar"}, \
+    {"score":{"name":"@a","objective":"max_hp"},"font":"asset:hotbar"}, \
     {"nbt":"data.hud.Space","storage":"combat:","interpret": true}, \
     {"text": "\uF82A\uF829"}, \
     {"nbt":"data.hud.hasBuff","storage":"combat:","interpret":true,"font": "asset:hotbar"}, \
@@ -23,6 +23,6 @@
     {"text":"\uF804"}, \
     {"nbt": "data.hud.Cooldown","storage": "combat:","font": "asset:hotbar","interpret": true,"shadow_color": 0}]
 # サイドバーUIの管理
-    execute as @p at @s if predicate hud:all run function hud:sidebar/tick
+    execute as @a at @s if predicate hud:all run function hud:sidebar/tick
 # リセット
-    execute as @p at @s unless predicate hud:all run scoreboard objectives setdisplay sidebar
+    execute as @a at @s unless predicate hud:all run scoreboard objectives setdisplay sidebar

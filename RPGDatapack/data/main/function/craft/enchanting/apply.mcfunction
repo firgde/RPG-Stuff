@@ -34,7 +34,7 @@
     scoreboard players operation #enchantLv buffer += #slot3 buffer
     scoreboard players operation #enchantLv buffer += #slot5 buffer
     scoreboard players operation #enchantLv buffer += #slot7 buffer
-    # tellraw @p {"score": {"name": "#enchantLv","objective": "buffer"}}
+    # tellraw @a {"score": {"name": "#enchantLv","objective": "buffer"}}
 
 # 再帰function
     #エンチャントレベル / 10 + 1回実行

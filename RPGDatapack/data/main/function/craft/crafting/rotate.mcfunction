@@ -1,5 +1,5 @@
 # 真ん中のinteractionをプレイヤーに向ける
-    execute as @n[tag=slot.4,tag=crafting] at @s facing entity @p eyes run rotate @s ~ 0
+    execute as @n[tag=slot.4,tag=crafting] at @s facing entity @a[limit=1] eyes run rotate @s ~ 0
 # x軸回転を取得して45を足し、90で割ることで値を1,2,3のどれかに絞る
     execute store result score #rot buffer run data get entity @n[tag=slot.4,tag=crafting] Rotation[0]
     scoreboard players add #rot buffer 45

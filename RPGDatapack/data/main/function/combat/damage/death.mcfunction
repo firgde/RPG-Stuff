@@ -3,10 +3,10 @@
 # 知恵の書に追加
     execute if entity @s[team=hostile] run function main:social/knowledge_book/get_id
 # 戦闘中タイマーを減らす
-    scoreboard players set @p combat_timer 20
+    scoreboard players set @a combat_timer 20
 # 体力リセット
     scoreboard players set @s hp_ratio 100
 # kill
     execute if entity @s[type=player] run function status:update/
-    playsound entity.arrow.hit_player master @p ~ ~ ~ 1 1
+    playsound entity.arrow.hit_player master @a ~ ~ ~ 1 1
     kill @s

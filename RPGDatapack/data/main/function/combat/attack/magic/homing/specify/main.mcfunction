@@ -3,6 +3,6 @@
 # もう一度候補全員を実行者として他とhigherスコアを比較
     function main:combat/attack/magic/homing/specify/
 # 同じ優先度のEntityが複数いるなら一番近いものをターゲットに
-    execute positioned as @p as @n[tag=target] run tag @s add homingTarget
+    execute positioned as @a as @n[tag=target] run tag @s add homingTarget
 # リセット
     scoreboard players reset #candidateCount buffer
