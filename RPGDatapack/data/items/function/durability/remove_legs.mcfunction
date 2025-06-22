@@ -1,12 +1,12 @@
 # シュル箱にアイテムを移してデータ編集
     item replace block 0 -59 0 container.0 from entity @s armor.legs
 # custom_dataの耐久値減算
-    execute store result score #durability buffer run data get entity @s Inventory[{Slot:101b}].components."minecraft:custom_data".Durability
+    execute store result score #durability buffer run data get entity @s equipment.legs.components."minecraft:custom_data".Durability
     execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:custom_data".Durability int 1 run scoreboard players remove #durability buffer 1
 # 0未満なら壊す
     execute if score #durability buffer matches ..-1 run function items:durability/break
 # 差をminecraft:damageに代入
-    execute store result score #max_durability buffer run data get entity @s Inventory[{Slot:101b}].components."minecraft:max_damage"
+    execute store result score #max_durability buffer run data get entity @s equipment.legs.components."minecraft:max_damage"
     execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:damage" int 1 run scoreboard players operation #max_durability buffer -= #durability buffer
     #UI表記も更新
     data modify storage item: Item set from block 0 -59 0 Items[{Slot:0b}]

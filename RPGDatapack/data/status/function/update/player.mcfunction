@@ -2,10 +2,10 @@
     execute if items entity @s weapon.mainhand *[custom_data~{weapon:1b},!custom_data~{broken:1b}] run function status:update/slot/mainhand
     execute if items entity @s weapon.mainhand *[custom_data~{tool:1b}] run function status:update/slot/mainhand
     execute if items entity @s weapon.offhand *[custom_data~{offhandOnly:1b}] run function status:update/slot/offhand
-    execute if items entity @s armor.head *[custom_data~{armorType:"helmet",armor:1b}] run function status:update/slot/helmet
-    execute if items entity @s armor.chest *[custom_data~{armorType:"chestplate",armor:1b}] run function status:update/slot/chestplate
-    execute if items entity @s armor.legs *[custom_data~{armorType:"leggings",armor:1b}] run function status:update/slot/leggings
-    execute if items entity @s armor.feet *[custom_data~{armorType:"boots",armor:1b}] run function status:update/slot/boots
+    execute if items entity @s armor.head *[custom_data~{armorType:"helmet",armor:1b}] run function status:update/slot/head
+    execute if items entity @s armor.chest *[custom_data~{armorType:"chestplate",armor:1b}] run function status:update/slot/chest
+    execute if items entity @s armor.legs *[custom_data~{armorType:"leggings",armor:1b}] run function status:update/slot/legs
+    execute if items entity @s armor.feet *[custom_data~{armorType:"boots",armor:1b}] run function status:update/slot/feet
 # attributeや他のスコアに関与するもの
     function status:hp/update
     attribute @s attack_damage base set 0.0
