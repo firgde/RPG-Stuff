@@ -11,7 +11,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "custom_data": "{weaponType:1}"
+                                "custom_data": "{weaponType:1,broken:0b}"
                             }
                         }
                     }

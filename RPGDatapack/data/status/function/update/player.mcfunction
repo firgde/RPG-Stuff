@@ -1,5 +1,5 @@
 # ステータス取得
-    execute if items entity @s weapon.mainhand *[custom_data~{weapon:1b},!custom_data~{broken:1b}] run function status:update/slot/mainhand
+    execute if items entity @s weapon.mainhand *[custom_data~{weapon:1b,broken:0b}] run function status:update/slot/mainhand
     execute if items entity @s weapon.mainhand *[custom_data~{tool:1b}] run function status:update/slot/mainhand
     execute if items entity @s weapon.offhand *[custom_data~{offhandOnly:1b}] run function status:update/slot/offhand
     execute if items entity @s armor.head *[custom_data~{armorType:"helmet",armor:1b}] run function status:update/slot/head

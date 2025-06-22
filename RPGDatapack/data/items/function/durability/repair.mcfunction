@@ -2,8 +2,7 @@
     item replace block 0 -59 0 container.0 from entity @s contents
 # 破損状態を解除
     data remove block 0 -59 0 Items[{Slot:0b}].components."minecraft:attribute_modifiers"[{id:"minecraft:broken_weapon"}]
-    data remove block 0 -59 0 Items[{Slot:0b}].components."minecraft:attribute_modifiers"[{id:"minecraft:broken_tool"}]
-    data remove block 0 -59 0 Items[{Slot:0b}].components."minecraft:custom_data".broken
+    data modify block 0 -59 0 Items[{Slot:0b}].components."minecraft:custom_data".broken set value false
 # custom_dataの耐久値加算
     execute store result score #durability buffer run data get entity @s item.components."minecraft:custom_data".Durability
     execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:custom_data".Durability int 1 run scoreboard players operation #durability buffer += #durHeal buffer
