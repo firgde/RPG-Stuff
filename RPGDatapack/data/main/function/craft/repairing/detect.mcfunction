@@ -10,8 +10,10 @@
 # slot.1-3から回復量を取得
     execute if score #slot_1 buffer matches 1 at @n[tag=repair_slot.1] store result score #slot buffer run data get entity @n[tag=repair_material] item.components."minecraft:custom_data".repairAmount
     scoreboard players operation #durHeal buffer += #slot buffer
+    scoreboard players reset #slot buffer
     execute if score #slot_2 buffer matches 1 at @n[tag=repair_slot.2] store result score #slot buffer run data get entity @n[tag=repair_material] item.components."minecraft:custom_data".repairAmount
     scoreboard players operation #durHeal buffer += #slot buffer
+    scoreboard players reset #slot buffer
     execute if score #slot_3 buffer matches 1 at @n[tag=repair_slot.3] store result score #slot buffer run data get entity @n[tag=repair_material] item.components."minecraft:custom_data".repairAmount
     scoreboard players operation #durHeal buffer += #slot buffer
 # slot.0を回復
