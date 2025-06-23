@@ -6,6 +6,8 @@
     scoreboard players set @a combat_timer 20
 # 体力リセット
     scoreboard players set @s hp_ratio 100
+# 死亡時の処理
+    function #asset:mob/on_death
 # kill
     execute if entity @s[type=player] run function status:update/
     playsound entity.arrow.hit_player master @a ~ ~ ~ 1 1
