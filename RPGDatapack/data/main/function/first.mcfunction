@@ -50,15 +50,6 @@ say reload
             scoreboard objectives add lvl_explore dummy
             scoreboard objectives add xp_explore dummy
             scoreboard objectives add gimmick_state dummy
-            #scoreboard objectives add mov_walk custom:walk_one_cm
-            #scoreboard objectives add mov_run custom:sprint_one_cm
-            #scoreboard objectives add mov_swim custom:swim_one_cm
-            #scoreboard objectives add mov_walk_water custom:walk_on_water_one_cm
-            #scoreboard objectives add mov_walk_underwater custom:walk_under_water_one_cm
-            #scoreboard objectives add mov_sneak custom:crouch_one_cm
-            #scoreboard objectives add mov_fly custom:fly_one_cm
-            #scoreboard objectives add mov_dis dummy
-            #scoreboard objectives add mov_point dummy
         # 採取(防御、体力、魔法、運)
             scoreboard objectives add generation_cooldown dummy
             scoreboard objectives add lvl_collect dummy
@@ -202,6 +193,7 @@ say reload
         scoreboard players set #1024 const 1024
         scoreboard players set #2000 const 2000
         scoreboard players set #10000 const 10000
+        scoreboard players set #24000 const 24000
 # チーム
     team add hostile
     team modify hostile color dark_purple
