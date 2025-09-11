@@ -22,7 +22,7 @@
 					"type": {
 						"tags": [
 							{
-								"id": "asset:melee",
+								"id": "main:melee",
 								"expected": true
 							}
 						]
@@ -37,7 +37,7 @@
 					"type": {
 						"tags": [
 							{
-								"id": "asset:magic",
+								"id": "main:magic",
 								"expected": true
 							}
 						]

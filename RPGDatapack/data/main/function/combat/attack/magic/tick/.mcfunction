@@ -29,7 +29,7 @@
 # 追尾対象絞り込み
     execute if score @s acc matches -2147483648..2147483647 if score @s flyratio >= @s frate run function main:combat/attack/magic/homing/on_tick
 # 当たり判定
-    execute align xz as @n[dx=0,type=!#main:non_mob,type=!player] positioned ~0.5 ~ ~0.5 run damage @s 1 asset:magic/generic by @a[limit=1]
+    execute align xz as @n[dx=0,type=!#main:non_mob,type=!player] positioned ~0.5 ~ ~0.5 run damage @s 1 main:magic/generic by @a[limit=1]
 # ブロックに衝突して/kill
     execute unless block ~ ~ ~ #main:no_collision run kill @s
 # 時間切れで/kill

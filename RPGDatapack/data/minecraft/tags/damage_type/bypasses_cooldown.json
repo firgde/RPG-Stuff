@@ -1,0 +1,9 @@
+{
+    "replace": true,
+    "values": [
+        "main:magic/generic",
+        "main:combo_attack",
+        "player_attack",
+        "arrow"
+    ]
+}

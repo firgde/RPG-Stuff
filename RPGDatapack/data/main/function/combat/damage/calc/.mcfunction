@@ -41,7 +41,7 @@
     execute if items entity @s[type=player] armor.feet *[custom_data~{armorType:"boots",armor:1b}] run function items:durability/remove_feet
 # 必要ならば、演出
     execute if entity @s[tag=hurt.indirect] run damage @s 0.01 generic
-    execute on passengers if entity @s[tag=atk_combo] on vehicle run damage @s 0.01 asset:combo_attack
+    execute on passengers if entity @s[tag=atk_combo] on vehicle run damage @s 0.01 main:combo_attack
     execute if score #damage_type buffer matches 5 run playsound entity.player.attack.crit hostile @a ~ ~ ~ 1 1
     execute if entity @s[team=hostile] if score #main_element buffer matches 1 at @s positioned ~ ~1 ~ facing entity @a[limit=1] eyes positioned ^ ^ ^0.26 run function asset:particle/fire_hit
     execute if entity @s[team=hostile] if score #main_element buffer matches 2 at @s positioned ~ ~1 ~ facing entity @a[limit=1] eyes positioned ^ ^ ^0.26 run function asset:particle/ice_hit

@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "player_head",
+                    "functions": [
+                        {
+                            "function": "fill_player_head",
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{ui:1b,menu:\"knowledge_book\"}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "translate": "social.ui.knowledge_book.status",
+                                "color": "white",
+                                "bold": true,
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

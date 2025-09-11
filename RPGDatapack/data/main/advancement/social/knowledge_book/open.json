@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"knowledge_book\",\"summon\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:social/knowledge_book/use/open"
+    }
+}

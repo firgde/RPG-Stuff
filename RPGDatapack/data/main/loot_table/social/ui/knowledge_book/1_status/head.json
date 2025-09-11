@@ -1,0 +1,270 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "player_head",
+					"functions": [
+						{
+							"function": "fill_player_head",
+							"entity": "this"
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{ui:1b,menu:\"knowledge_book\"}"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"translate": "social.ui.knowledge_book.status.lvl_total",
+									"with": [
+										{
+											"score": {
+												"name": "@s",
+												"objective": "lvl_total"
+											}
+										}
+									],
+									"color": "white",
+									"bold": true,
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "",
+									"color": "white",
+									"italic": false,
+									"extra": [
+										{
+											"translate": "item.ui.status.atk",
+											"color": "gray",
+											"italic": false,
+											"extra": [
+												{
+													"score": {
+														"name": "@s",
+														"objective": "atk_base"
+													},
+													"color": "dark_green"
+												}
+											]
+										},
+										{
+											"nbt": "text.atk",
+											"storage": "space:"
+										},
+										{
+											"text": "",
+											"extra": [
+												{
+													"translate": "item.ui.status.def",
+													"color": "gray",
+													"italic": false,
+													"extra": [
+														{
+															"score": {
+																"name": "@s",
+																"objective": "def_base"
+															},
+															"color": "dark_green"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"text": "",
+									"color": "white",
+									"italic": false,
+									"extra": [
+										{
+											"translate": "item.ui.status.mag",
+											"color": "gray",
+											"italic": false,
+											"extra": [
+												{
+													"score": {
+														"name": "@s",
+														"objective": "mag_base"
+													},
+													"color": "dark_green"
+												}
+											]
+										},
+										{
+											"nbt": "text.mag",
+											"storage": "space:"
+										},
+										{
+											"text": "",
+											"extra": [
+												{
+													"translate": "item.ui.status.spd",
+													"color": "gray",
+													"italic": false,
+													"extra": [
+														{
+															"score": {
+																"name": "@s",
+																"objective": "spd_base"
+															},
+															"color": "dark_green"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"text": "",
+									"color": "white",
+									"italic": false,
+									"extra": [
+										{
+											"translate": "item.ui.status.dex",
+											"color": "gray",
+											"italic": false,
+											"extra": [
+												{
+													"score": {
+														"name": "@s",
+														"objective": "dex_base"
+													},
+													"color": "dark_green"
+												}
+											]
+										},
+										{
+											"nbt": "text.dex",
+											"storage": "space:"
+										},
+										{
+											"text": "",
+											"extra": [
+												{
+													"translate": "item.ui.status.crt",
+													"color": "gray",
+													"italic": false,
+													"extra": [
+														{
+															"score": {
+																"name": "@s",
+																"objective": "crt_base"
+															},
+															"color": "dark_green"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"text": "",
+									"color": "white",
+									"italic": false,
+									"extra": [
+										{
+											"translate": "item.ui.status.hp",
+											"color": "gray",
+											"italic": false,
+											"extra": [
+												{
+													"score": {
+														"name": "@s",
+														"objective": "max_hp_base"
+													},
+													"color": "dark_green"
+												}
+											]
+										},
+										{
+											"nbt": "text.hp",
+											"storage": "space:"
+										},
+										{
+											"text": "",
+											"extra": [
+												{
+													"translate": "item.ui.status.luk",
+													"color": "gray",
+													"italic": false,
+													"extra": [
+														{
+															"score": {
+																"name": "@s",
+																"objective": "luk_base"
+															},
+															"color": "dark_green"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"text": "",
+									"color": "white",
+									"italic": false,
+									"extra": [
+										{
+											"translate": "item.ui.status.int",
+											"color": "gray",
+											"italic": false,
+											"extra": [
+												{
+													"score": {
+														"name": "@s",
+														"objective": "int_base"
+													},
+													"color": "dark_green"
+												}
+											]
+										},
+										{
+											"nbt": "text.int",
+											"storage": "space:"
+										},
+										{
+											"text": "",
+											"extra": [
+												{
+													"translate": "item.ui.status.acc",
+													"color": "gray",
+													"italic": false,
+													"extra": [
+														{
+															"score": {
+																"name": "@s",
+																"objective": "acc_base"
+															},
+															"color": "dark_green"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							],
+							"mode": "replace_all"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,82 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "type": "score",
+                "score": "buffer",
+                "target": {
+                    "type": "fixed",
+                    "name": "#moneycount"
+                }
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "target": "item_name",
+                            "name": [
+                                {
+                                    "translate": "item.gemstone_shard_20",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.gemstone_shard_20.lore",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": " "
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "translate": "item.ui.rarity",
+                                    "color": "white",
+                                    "italic": false,
+                                    "with": [
+                                        {
+                                            "translate": "item.ui.rarity.common",
+                                            "bold": true,
+                                            "italic": false
+                                        }
+                                    ]
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{Amount:20}"
+                        },
+                        {
+                            "function": "set_custom_model_data",
+                            "floats": {
+                                "mode": "replace_all",
+                                "values": [8902]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

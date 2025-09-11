@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"backpack\",\"summon\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:social/backpack/use/open"
+    }
+}

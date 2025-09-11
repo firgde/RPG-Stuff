@@ -7,7 +7,7 @@
 					"type": {
 						"tags": [
 							{
-								"id": "asset:melee_player",
+								"id": "main:melee_player",
 								"expected": true
 							}
 						]

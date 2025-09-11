@@ -42,15 +42,15 @@
         },
         {
             "condition": "reference",
-            "name": "asset:social/ui/holding_backpack"
+            "name": "main:social/ui/holding_backpack"
         },
         {
             "condition": "reference",
-            "name": "asset:social/ui/holding_purse"
+            "name": "main:social/ui/holding_purse"
         },
         {
             "condition": "reference",
-            "name": "asset:social/ui/holding_knowledge_book"
+            "name": "main:social/ui/holding_knowledge_book"
         }
     ]
 }

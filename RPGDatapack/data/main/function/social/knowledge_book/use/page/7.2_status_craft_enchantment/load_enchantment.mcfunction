@@ -1,0 +1,23 @@
+# 0 -59 0にロード
+    item replace block 0 -59 0 container.0 with stick[custom_data={ui:1b,menu:"knowledge_book"}]
+    $item modify block 0 -59 0 container.0 [{"function":"set_components","components":{"item_model":"asset:enchantment/$(id)","enchantment_glint_override":true}},{"function":"set_name","entity":"this","name":{"translate":"item.ui.enchantment.$(id)","color":"light_purple","italic":false}},{"function":"set_lore","entity":"this","lore":[{"translate":"social.ui.knowledge_book.status.craft.enchantment.$(id).description","color":"gray","italic":false}],"mode":"replace_all"}]
+# 対応アイテムのアイコンを並べる
+    $execute if data storage book: data.craft.enchantment[{id:"$(id)"}].target{sword:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE000","color":"white","font":"asset:enchantment_target"}
+    $execute unless data storage book: data.craft.enchantment[{id:"$(id)"}].target{sword:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE000","color":"dark_gray","font":"asset:enchantment_target"}
+    $execute if data storage book: data.craft.enchantment[{id:"$(id)"}].target{hammer:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE001","color":"white","font":"asset:enchantment_target"}
+    $execute unless data storage book: data.craft.enchantment[{id:"$(id)"}].target{hammer:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE001","color":"dark_gray","font":"asset:enchantment_target"}
+    $execute if data storage book: data.craft.enchantment[{id:"$(id)"}].target{wand:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE002","color":"white","font":"asset:enchantment_target"}
+    $execute unless data storage book: data.craft.enchantment[{id:"$(id)"}].target{wand:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE002","color":"dark_gray","font":"asset:enchantment_target"}
+    $execute if data storage book: data.craft.enchantment[{id:"$(id)"}].target{bow:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE003","color":"white","font":"asset:enchantment_target"}
+    $execute unless data storage book: data.craft.enchantment[{id:"$(id)"}].target{bow:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE003","color":"dark_gray","font":"asset:enchantment_target"}
+    $execute if data storage book: data.craft.enchantment[{id:"$(id)"}].target{dagger:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE004","color":"white","font":"asset:enchantment_target"}
+    $execute unless data storage book: data.craft.enchantment[{id:"$(id)"}].target{dagger:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE004","color":"dark_gray","font":"asset:enchantment_target"}
+    $execute if data storage book: data.craft.enchantment[{id:"$(id)"}].target{accessory:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE005","color":"white","font":"asset:enchantment_target"}
+    $execute unless data storage book: data.craft.enchantment[{id:"$(id)"}].target{accessory:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE005","color":"dark_gray","font":"asset:enchantment_target"}
+    $execute if data storage book: data.craft.enchantment[{id:"$(id)"}].target{armor:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE006","color":"white","font":"asset:enchantment_target"}
+    $execute unless data storage book: data.craft.enchantment[{id:"$(id)"}].target{armor:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE006","color":"dark_gray","font":"asset:enchantment_target"}
+    $execute if data storage book: data.craft.enchantment[{id:"$(id)"}].target{tool:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE007","color":"white","font":"asset:enchantment_target"}
+    $execute unless data storage book: data.craft.enchantment[{id:"$(id)"}].target{tool:true} run data modify storage craft:temp data.enchantment_target append value {"text":"\uE007","color":"dark_gray","font":"asset:enchantment_target"}
+    item modify block 0 -59 0 container.0 {"function":"set_lore","entity":"this","lore":[{"translate":"social.ui.knowledge_book.status.craft.enchantment.target","with":[{"nbt":"data.enchantment_target","storage":"craft:temp","interpret":true,"shadow_color":0,"italic":false}],"color":"gray","italic":false}],"mode":"append"}
+# リセット
+    data remove storage craft:temp data

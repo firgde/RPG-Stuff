@@ -12,11 +12,11 @@
     execute if entity @s[type=player] run function status:hp/update
 # 演出
     execute at @s run function main:combat/damage/display/
-    execute if entity @e[tag=this,tag=debuff,tag=debuff.fire] run damage @s 1 asset:magic/fire
-    execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_fire] run damage @s 1 asset:magic/fire
-    execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_thunder] run damage @s 1 asset:magic/fire
-    execute if entity @e[tag=this,tag=debuff,tag=debuff.wind_fire] run damage @s 1 asset:magic/fire
-    execute if entity @e[tag=this,tag=debuff,tag=debuff.thunder_wind] run damage @s 1 asset:magic/generic
+    execute if entity @e[tag=this,tag=debuff,tag=debuff.fire] run damage @s 1 main:magic/fire
+    execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_fire] run damage @s 1 main:magic/fire
+    execute if entity @e[tag=this,tag=debuff,tag=debuff.fire_thunder] run damage @s 1 main:magic/fire
+    execute if entity @e[tag=this,tag=debuff,tag=debuff.wind_fire] run damage @s 1 main:magic/fire
+    execute if entity @e[tag=this,tag=debuff,tag=debuff.thunder_wind] run damage @s 1 main:magic/generic
     #敵は体力をHUDに表示
     execute if entity @s[team=hostile,tag=!boss] unless score @s max_hp matches 2147483647 run function hud:hp_bar/calc
     #ボス限定

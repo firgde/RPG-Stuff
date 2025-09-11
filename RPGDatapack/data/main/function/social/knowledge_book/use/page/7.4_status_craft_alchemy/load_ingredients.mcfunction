@@ -1,0 +1,2 @@
+# idから材料を逆算
+    $item modify block 0 -59 0 container.1 {"function":"set_lore","entity":"this","lore":[{"nbt":"data.collect.item[{components:{\"minecraft:custom_data\":{id:$(0)}}}].components.\"minecraft:item_name\"","storage":"book:","interpret":true,"color":"gray","italic":false},{"text":"+","color":"light_purple","bold":true,"italic":false},{"nbt":"data.collect.item[{components:{\"minecraft:custom_data\":{id:$(1)}}}].components.\"minecraft:item_name\"","storage":"book:","interpret":true,"color":"gray","italic":false}],"mode":"append"}

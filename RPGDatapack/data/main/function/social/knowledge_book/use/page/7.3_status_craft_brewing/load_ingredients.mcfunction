@@ -1,0 +1,2 @@
+
+    $item modify block 0 -59 0 container.1 {"function":"set_lore","entity":"this","lore":[{"translate":"item.ui.brewing.powder.type","with":[{"translate":"item.ui.brewing.powder.type.$(powder)","italic":false,"color":"white"}],"color":"gray","italic":false},{"translate":"item.ui.brewing.material.type","with":[{"translate":"item.ui.brewing.material.type.$(material)","italic":false,"color":"white"}],"color":"gray","italic":false}],"mode":"replace_all"}
