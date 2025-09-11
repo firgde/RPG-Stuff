@@ -1,9 +1,9 @@
 # 中身リセット
     data remove entity @s Items
 # スコアリセット
-    scoreboard players reset #moneyamount buffer
-    scoreboard players reset #moneycount buffer
-    scoreboard players reset #moneybuffer
+    scoreboard players reset #gem_type buffer
+    scoreboard players reset #gem_count buffer
+    scoreboard players reset #gem_withdrawing
 # ページ移動
     scoreboard players set @s page 2
     scoreboard players set @s sub_page 0

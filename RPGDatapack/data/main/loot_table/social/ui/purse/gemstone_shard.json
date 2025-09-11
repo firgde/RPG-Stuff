@@ -6,7 +6,7 @@
                 "score": "buffer",
                 "target": {
                     "type": "fixed",
-                    "name": "#moneycount"
+                    "name": "#gem_count"
                 }
             },
             "entries": [

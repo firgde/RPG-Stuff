@@ -2,7 +2,7 @@
     data remove entity @s Items
 # ページ移動
     scoreboard players set @s sub_page 1
-    scoreboard players set #moneybuffer buffer 0
+    scoreboard players set #gem_withdrawing buffer 0
 # /itemたくさん
     item replace entity @s container.0 with stick[tooltip_display={hide_tooltip:true},item_model="air",custom_data={ui:1b,menu:"purse"}]
     item replace entity @s container.1 with stick[tooltip_display={hide_tooltip:true},item_model="air",custom_data={ui:1b,menu:"purse"}]

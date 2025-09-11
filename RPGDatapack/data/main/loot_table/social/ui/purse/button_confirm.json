@@ -16,7 +16,7 @@
                                 "with": [
                                     {
                                         "score": {
-                                            "name": "#moneybuffer",
+                                            "name": "#gem_withdrawing",
                                             "objective": "buffer"
                                         }
                                     }
