@@ -16,7 +16,7 @@
 # モブ情報
     function main:social/knowledge_book/use/page/5_status_explore/load_page
 # 音
-    execute as @a at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
+    execute as @a[limit=1] at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
 # リセット
     scoreboard players reset #index buffer
     scoreboard players reset #rec buffer

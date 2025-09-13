@@ -33,4 +33,4 @@
     item replace entity @s container.11 with stick[custom_data={ui:1b,menu:"backpack"},custom_model_data={floats:[8996]},item_name={"translate":"social.ui.backpack.store","italic": false,"bold": true}]
     item replace entity @s container.15 with stick[custom_data={ui:1b,menu:"backpack"},custom_model_data={floats:[8995]},custom_name={"translate":"social.ui.backpack.withdraw","italic": false,"bold": true}]
 # 音
-    execute as @a at @s run playsound ui.button.click master @s ~ ~ ~ 0.5 1.5
+    execute as @a[limit=1] at @s run playsound ui.button.click master @s ~ ~ ~ 0.5 1.5

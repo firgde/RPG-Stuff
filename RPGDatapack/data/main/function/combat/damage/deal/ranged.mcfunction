@@ -27,4 +27,4 @@
 # からの計算式へ
     function main:combat/damage/calc/
 # リセット
-    scoreboard players reset @a dealtDamage
+    scoreboard players reset @a[limit=1] dealtDamage

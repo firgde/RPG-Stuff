@@ -37,4 +37,4 @@
     item replace entity @s container.18 with stick[custom_data={ui:1b,menu:"backpack",button:1b},item_model="asset:back",item_name={"translate":"social.ui.knowledge_book.back"}]
     loot replace entity @s container.26 loot {"pools":[{"rolls":1,"entries":[{"type":"item","name":"stick","functions":[{"function":"set_name","target":"item_name","entity":"this","name":{"translate":"social.ui.backpack.withdraw.confirm","with":[{"score":{"name":"#item_count","objective":"buffer"}}],"italic":false}},{"function":"set_custom_data","tag":"{ui:1b,menu:\"backpack\"}"},{"function":"set_components","components":{"item_model":"asset:confirm"}}]}]}]}
 # 音
-    execute as @a at @s run playsound ui.button.click master @s ~ ~ ~ 0.5 1.5
+    execute as @a[limit=1] at @s run playsound ui.button.click master @s ~ ~ ~ 0.5 1.5

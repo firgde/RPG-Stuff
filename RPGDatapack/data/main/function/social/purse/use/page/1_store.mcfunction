@@ -15,4 +15,4 @@
     item replace entity @s container.18 with stick[custom_data={ui:1b,menu:"purse"},item_model="asset:back",item_name={"translate": "social.ui.knowledge_book.back","italic": false}]
     item replace entity @s container.26 with stick[custom_data={ui:1b,menu:"purse"},item_model="asset:confirm",item_name={"translate": "social.ui.purse.store.confirm","italic": false}]
 # 音
-    execute as @a at @s run playsound ui.loom.select_pattern master @s ~ ~ ~ 1 2
+    execute as @a[limit=1] at @s run playsound ui.loom.select_pattern master @s ~ ~ ~ 1 2

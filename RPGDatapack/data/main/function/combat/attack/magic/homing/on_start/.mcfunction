@@ -17,13 +17,13 @@
 
     # 距離のあれこれ
     #7ブロック以上離れてるなら-5
-    execute as @e[tag=homingCandidate] at @s if entity @a[distance=7..] run scoreboard players remove @s homing_priority 5
+    execute as @e[tag=homingCandidate] at @s if entity @a[limit=1,distance=7..] run scoreboard players remove @s homing_priority 5
     #5ブロック以内なら+1
-    execute as @e[tag=homingCandidate] at @s if entity @a[distance=..5] run scoreboard players add @s homing_priority 1
+    execute as @e[tag=homingCandidate] at @s if entity @a[limit=1,distance=..5] run scoreboard players add @s homing_priority 1
     #3ブロック以内なら+3
-    execute as @e[tag=homingCandidate] at @s if entity @a[distance=..3] run scoreboard players add @s homing_priority 3
+    execute as @e[tag=homingCandidate] at @s if entity @a[limit=1,distance=..3] run scoreboard players add @s homing_priority 3
     #1ブロック以内なら+5
-    execute as @e[tag=homingCandidate] at @s if entity @a[distance=..1] run scoreboard players add @s homing_priority 5
+    execute as @e[tag=homingCandidate] at @s if entity @a[limit=1,distance=..1] run scoreboard players add @s homing_priority 5
 
     # プレイヤーを狙っているなら+3
     execute as @e[tag=homingCandidate] run function main:combat/attack/magic/homing/on_start/has_target

@@ -13,4 +13,4 @@
     execute if score @s page matches 2 if score @s sub_page matches 1 run loot replace entity @s container.26 loot main:social/ui/purse/button_confirm
     execute unless score @s sub_page matches 1 run item replace entity @s container.10 with stick[custom_data={ui:1b,menu:"purse"},tooltip_display={hide_tooltip:true},item_model="air"]
 # 音
-    execute if score @s sub_page matches 1 as @a at @s run playsound block.lantern.place master @s ~ ~ ~ 1 2
+    execute if score @s sub_page matches 1 as @a[limit=1] at @s run playsound block.lantern.place master @s ~ ~ ~ 1 2

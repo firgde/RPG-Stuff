@@ -4,7 +4,7 @@
     data modify block 0 -59 0 Items[{Slot:0b}].count set from entity @s Items[{Slot:10b}].count
     data modify block 0 -59 0 Items[{Slot:0b}].components set from entity @s Items[{Slot:10b}].components
     execute unless data entity @s Items[{Slot:10b}] run item replace block 0 -59 0 container.0 with air
-    execute if score @s page matches 0 as @a run loot replace entity @e[tag=knowledge_book,distance=..5] container.10 loot main:social/ui/knowledge_book/1_status/head_profile
+    execute if score @s page matches 0 as @a[limit=1] run loot replace entity @e[tag=knowledge_book,distance=..5] container.10 loot main:social/ui/knowledge_book/1_status/head_profile
     execute if score @s page matches 2 if data storage social: data.Quest[-1] run loot replace entity @s container.10 loot main:social/ui/knowledge_book/2_quests/quest_10
     execute if score @s page matches 2 unless data storage temp: data.Quest[-1] run item replace entity @s container.10 with stick[custom_data={ui:1b,menu:"knowledge_book"},item_model="air",tooltip_display={hide_tooltip:true}]
     execute if score @s page matches 4 run function main:social/knowledge_book/use/page/4_status_combat/place_from_temp {index:10,slot:10}

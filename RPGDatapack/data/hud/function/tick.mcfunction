@@ -1,5 +1,5 @@
 # 色々表示
-    title @a actionbar [{"text":"\uF80B\uF829\uF828\uF826"}, \
+    title @a[limit=1] actionbar [{"text":"\uF80B\uF829\uF828\uF826"}, \
     {"nbt":"data.hud.hpBar","storage":"combat:","interpret":true,"font":"asset:hotbar","shadow_color": 0}, \
     {"text": "\uF80B\uF809\uF802"}, \
     {"nbt":"data.hud.Name","storage": "combat:","interpret": true,"font": "asset:mob_name"}, \
@@ -23,6 +23,6 @@
     {"text":"\uF804"}, \
     {"nbt": "data.hud.Cooldown","storage": "combat:","font": "asset:hotbar","interpret": true,"shadow_color": 0}]
 # サイドバーUIの管理
-    execute as @a at @s if predicate hud:all run function hud:sidebar/tick
+    execute as @a[limit=1] at @s if predicate hud:all run function hud:sidebar/tick
 # リセット
-    execute as @a at @s unless predicate hud:all run scoreboard objectives setdisplay sidebar
+    execute as @a[limit=1] at @s unless predicate hud:all run scoreboard objectives setdisplay sidebar

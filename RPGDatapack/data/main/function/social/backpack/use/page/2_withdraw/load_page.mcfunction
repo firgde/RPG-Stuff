@@ -1,5 +1,5 @@
 # 先にアイテム返還
-    execute unless items entity @a player.cursor * run item replace entity @a player.cursor from block 0 -59 0 container.0
+    execute unless items entity @a[limit=1] player.cursor * run item replace entity @a[limit=1] player.cursor from block 0 -59 0 container.0
 # 最大ページ数計算
     execute store result score #pages buffer run data get storage player:backpack items
     execute store result score #max_page buffer run scoreboard players operation #pages buffer /= #18 const

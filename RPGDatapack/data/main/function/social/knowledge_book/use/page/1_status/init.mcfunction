@@ -26,15 +26,15 @@
 # 総合ステータスのスペース調整
     function main:social/knowledge_book/use/page/1_status/get_space
 # 色々表示するやつ
-    execute as @a run loot replace entity @e[tag=knowledge_book,distance=..5] container.0 loot main:social/ui/knowledge_book/1_status/combat
-    execute as @a run loot replace entity @e[tag=knowledge_book,distance=..5] container.2 loot main:social/ui/knowledge_book/1_status/explore
-    execute as @a run loot replace entity @e[tag=knowledge_book,distance=..5] container.4 loot main:social/ui/knowledge_book/1_status/collect
-    execute as @a run loot replace entity @e[tag=knowledge_book,distance=..5] container.6 loot main:social/ui/knowledge_book/1_status/craft
-    execute as @a run loot replace entity @e[tag=knowledge_book,distance=..5] container.8 loot main:social/ui/knowledge_book/1_status/social
-    execute as @a run loot replace entity @e[tag=knowledge_book,distance=..5] container.13 loot main:social/ui/knowledge_book/1_status/head
+    execute as @a[limit=1] run loot replace entity @e[tag=knowledge_book,distance=..5] container.0 loot main:social/ui/knowledge_book/1_status/combat
+    execute as @a[limit=1] run loot replace entity @e[tag=knowledge_book,distance=..5] container.2 loot main:social/ui/knowledge_book/1_status/explore
+    execute as @a[limit=1] run loot replace entity @e[tag=knowledge_book,distance=..5] container.4 loot main:social/ui/knowledge_book/1_status/collect
+    execute as @a[limit=1] run loot replace entity @e[tag=knowledge_book,distance=..5] container.6 loot main:social/ui/knowledge_book/1_status/craft
+    execute as @a[limit=1] run loot replace entity @e[tag=knowledge_book,distance=..5] container.8 loot main:social/ui/knowledge_book/1_status/social
+    execute as @a[limit=1] run loot replace entity @e[tag=knowledge_book,distance=..5] container.13 loot main:social/ui/knowledge_book/1_status/head
     item replace entity @s container.18 with stick[custom_data={ui:1b,menu:"knowledge_book"},item_model="asset:back",item_name={"translate": "social.ui.knowledge_book.back","italic": false}]
-    execute as @a run loot replace entity @e[tag=knowledge_book,distance=..5] container.26 loot main:social/ui/knowledge_book/1_status/money
+    execute as @a[limit=1] run loot replace entity @e[tag=knowledge_book,distance=..5] container.26 loot main:social/ui/knowledge_book/1_status/money
 # 音
-    execute as @a at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
+    execute as @a[limit=1] at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
 # リセット
     data remove storage space: text

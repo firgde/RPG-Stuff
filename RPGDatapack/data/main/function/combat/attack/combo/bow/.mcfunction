@@ -11,9 +11,9 @@
     scoreboard players add @n[tag=atk_combo.target] combo_count 1
 # 演出
     #1回目
-    execute as @n[tag=atk_combo.target] if score @s combo_count matches 1 as @a at @s run function main:combat/attack/combo/bow/1
+    execute as @n[tag=atk_combo.target] if score @s combo_count matches 1 as @a[limit=1] at @s run function main:combat/attack/combo/bow/1
     #2回目
-    execute as @n[tag=atk_combo.target] if score @s combo_count matches 2 as @a at @s run function main:combat/attack/combo/bow/2
+    execute as @n[tag=atk_combo.target] if score @s combo_count matches 2 as @a[limit=1] at @s run function main:combat/attack/combo/bow/2
     #2回目なら連撃interaction消す
     execute as @n[tag=atk_combo.target] if score @s combo_count matches 2.. run kill @s
 # リセット

@@ -33,9 +33,9 @@
     item replace entity @s container.23 with stick[tooltip_display={hide_tooltip:true},item_model="air",custom_data={ui:1b,menu:"purse"}]
     item replace entity @s container.24 with stick[tooltip_display={hide_tooltip:true},item_model="air",custom_data={ui:1b,menu:"purse"}]
     item replace entity @s container.25 with stick[tooltip_display={hide_tooltip:true},item_model="air",custom_data={ui:1b,menu:"purse"}]
-    execute as @a run loot replace entity @e[tag=purse,distance=..5] container.26 loot main:social/ui/purse/current
+    execute as @a[limit=1] run loot replace entity @e[tag=purse,distance=..5] container.26 loot main:social/ui/purse/current
 # ボタン
     item replace entity @s container.11 with stick[custom_data={ui:1b,menu:"purse"},custom_model_data={floats:[8998]},item_name={"translate":"social.ui.purse.store","italic": false,"bold": true}]
     item replace entity @s container.15 with stick[custom_data={ui:1b,menu:"purse"},custom_model_data={floats:[8997]},custom_name={"translate":"social.ui.purse.withdraw","italic": false,"bold": true}]
 # 音
-    execute as @a at @s run playsound item.bundle.drop_contents
+    execute as @a[limit=1] at @s run playsound item.bundle.drop_contents

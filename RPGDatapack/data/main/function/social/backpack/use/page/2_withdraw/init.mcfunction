@@ -22,4 +22,4 @@
     data remove storage temp: temp
     data remove storage temp: items
 # 音
-    execute as @a at @s run playsound ui.button.click master @s ~ ~ ~ 0.5 1.5
+    execute as @a[limit=1] at @s run playsound ui.button.click master @s ~ ~ ~ 0.5 1.5

@@ -1,5 +1,5 @@
 # アイテム返還
-    execute unless items entity @s container.10 *[custom_data~{ui:1b}] run item replace entity @a player.cursor from entity @s container.10
+    execute unless items entity @s container.10 *[custom_data~{ui:1b}] run item replace entity @a[limit=1] player.cursor from entity @s container.10
 # 中身リセット
     data remove entity @s Items
 # ページ移動
@@ -18,7 +18,7 @@
 # レシピ情報
     function main:social/knowledge_book/use/page/7.1_status_craft_crafting/load_page
 # 音
-    execute as @a at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
+    execute as @a[limit=1] at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
 # リセット
     scoreboard players reset #index buffer
     scoreboard players reset #rec buffer

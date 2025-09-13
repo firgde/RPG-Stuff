@@ -3,7 +3,7 @@
 # 棒を消す
     clear @s *[custom_data~{ui:1b}]
     #ドロップした棒はkill
-    execute unless score @n[tag=backpack,distance=0..,type=chest_minecart] page matches 2.. if score @s throw matches 1.. at @a as @e[type=item,distance=..5] if items entity @s contents *[custom_data~{ui:1b,menu:"backpack"}] run kill @s
+    execute unless score @n[tag=backpack,distance=0..,type=chest_minecart] page matches 2.. if score @s throw matches 1.. at @a[limit=1] as @e[type=item,distance=..5] if items entity @s contents *[custom_data~{ui:1b,menu:"backpack"}] run kill @s
 
 # なんかアイテムが別に入っていたらインベントリに戻し、棒に置き換える
     #0,-59,0のシュルカーボックスのアイテム削除
@@ -39,9 +39,9 @@
 # アイテム取り出しは固有ページ
     execute if score @n[tag=backpack,distance=0..,type=chest_minecart] page matches 2 if entity @s[tag=withdraw] as @n[tag=backpack,distance=0..,type=chest_minecart] run function main:social/backpack/use/page/item/init
 # そしてアイテム還元
-    execute unless items entity @a player.cursor * run item replace entity @a player.cursor from block 0 -59 0 container.0
+    execute unless items entity @a[limit=1] player.cursor * run item replace entity @a[limit=1] player.cursor from block 0 -59 0 container.0
 # リセット
-    execute if score @s throw matches 1.. at @a as @e[type=item,distance=..5] if items entity @s contents *[custom_data~{ui:1b,menu:"backpack"}] run kill @s
+    execute if score @s throw matches 1.. at @a[limit=1] as @e[type=item,distance=..5] if items entity @s contents *[custom_data~{ui:1b,menu:"backpack"}] run kill @s
     scoreboard players set @s throw 0
     scoreboard players set @s pick 0
     tag @s remove withdraw

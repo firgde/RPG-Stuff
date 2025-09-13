@@ -38,7 +38,7 @@
     ## 錬金術
     item replace entity @s container.16 with stick[item_model="asset:alchemy",custom_data={ui:1b,menu:"knowledge_book"},item_name={"translate": "social.ui.knowledge_book.status.craft.alchemy"}]
 # 音
-    execute as @a at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
+    execute as @a[limit=1] at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
 # リセット
     scoreboard players reset #index buffer
     scoreboard players reset #rec buffer

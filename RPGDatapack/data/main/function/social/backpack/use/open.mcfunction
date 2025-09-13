@@ -9,4 +9,4 @@
 # リセット
     advancement revoke @s only main:social/backpack/open
 # 音
-    execute as @a at @s run playsound block.shulker_box.open master @s ~ ~ ~ 1 1.2
+    execute as @a[limit=1] at @s run playsound block.shulker_box.open master @s ~ ~ ~ 1 1.2

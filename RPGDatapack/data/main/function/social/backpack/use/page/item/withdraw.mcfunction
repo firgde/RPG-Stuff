@@ -1,5 +1,5 @@
 # 先にアイテム返還
-    execute unless items entity @a player.cursor * run item replace entity @a player.cursor from block 0 -59 0 container.0
+    execute unless items entity @a[limit=1] player.cursor * run item replace entity @a[limit=1] player.cursor from block 0 -59 0 container.0
 # 個数が最大スタック数以下なら普通にシュル箱経由、そうでないなら複数回に分ける
     execute store result score #max_stack_size buffer run data get storage player:context data.ui.backpack.item.components."minecraft:max_stack_size"
     execute unless data storage player:context data.ui.backpack.item.components."minecraft:max_stack_size" run scoreboard players set #max_stack_size buffer 64
@@ -12,4 +12,4 @@
     scoreboard players reset #max_stack_size buffer
     scoreboard players reset #max_count buffer
 # 音
-    execute as @a at @s run playsound item.armor.equip_generic
+    execute as @a[limit=1] at @s run playsound item.armor.equip_generic

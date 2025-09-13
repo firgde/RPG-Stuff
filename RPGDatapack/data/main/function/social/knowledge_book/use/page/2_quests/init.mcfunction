@@ -54,6 +54,6 @@
     #クエストがないならないと言う
     execute if data storage temp: data{Quest:[]} run item replace entity @s container.13 with stick[custom_data={ui:1b,menu:"knowledge_book"},item_model="barrier",item_name={"translate": "social.ui.knowledge_book.no_quest","color": "red"}]
 # 音
-    execute as @a at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
+    execute as @a[limit=1] at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
 # リセット
     scoreboard players reset #rec buffer

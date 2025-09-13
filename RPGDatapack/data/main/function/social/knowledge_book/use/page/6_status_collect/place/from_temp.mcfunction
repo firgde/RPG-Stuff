@@ -1,5 +1,5 @@
 # まずアイテム返還
-    $execute unless items entity @a player.cursor * run item replace entity @a player.cursor from entity @s container.$(slot)
+    $execute unless items entity @a[limit=1] player.cursor * run item replace entity @a[limit=1] player.cursor from entity @s container.$(slot)
 # slot番目のスロットにストレージのindex番目のアイテムデータを入れる
     $execute if data storage temp: data.collect.item[$(index)] run item replace entity @s container.$(slot) with stick
 # 発見済みならアイコン、そうでないなら空きスロット配置

@@ -1,7 +1,7 @@
 # slot番目のスロットにストレージのindex番目のレシピデータを入れる
     $execute if predicate {"condition":"value_check","value":{"type":"storage","storage":"book:","path":"data.craft.crafting[$(index)].discovered"},"range":1} if data storage book: data.craft.crafting[$(index)] run function main:social/knowledge_book/use/page/7.1_status_craft_crafting/load_recipe/ with storage temp: temp
 # resultからアイテムの名前とモデルを反映
-    $execute if predicate {"condition":"value_check","value":{"type":"storage","storage":"book:","path":"data.craft.crafting[$(index)].discovered"},"range":1} as @a run function main:social/knowledge_book/use/page/7.1_status_craft_crafting/load_recipe/result with storage book: data.craft.crafting[$(index)]
+    $execute if predicate {"condition":"value_check","value":{"type":"storage","storage":"book:","path":"data.craft.crafting[$(index)].discovered"},"range":1} as @a[limit=1] run function main:social/knowledge_book/use/page/7.1_status_craft_crafting/load_recipe/result with storage book: data.craft.crafting[$(index)]
     $execute if predicate {"condition":"value_check","value":{"type":"storage","storage":"book:","path":"data.craft.crafting[$(index)].discovered"},"range":1} run data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:custom_model_data".floats set from block 0 -59 0 Items[{Slot:0b}].components."minecraft:custom_model_data".floats
     $execute if predicate {"condition":"value_check","value":{"type":"storage","storage":"book:","path":"data.craft.crafting[$(index)].discovered"},"range":1} run data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:item_name" set from block 0 -59 0 Items[{Slot:0b}].components."minecraft:item_name"
 # 発見済みでないなら空きスロット配置

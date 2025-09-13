@@ -1,4 +1,4 @@
 # シュル箱にアイテム
-    tag @a add not_give
+    tag @a[limit=1] add not_give
     $function asset:item/$(result)/craft/
-    tag @a remove not_give
+    tag @a[limit=1] remove not_give

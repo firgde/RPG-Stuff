@@ -1,6 +1,6 @@
 # 戦闘中
-    tag @a add in_combat
-    scoreboard players set @a combat_timer 100
+    tag @a[limit=1] add in_combat
+    scoreboard players set @a[limit=1] combat_timer 100
 # 引く
     scoreboard players operation @s damage = #buff buff_amount
     #ダメージは最低でも1

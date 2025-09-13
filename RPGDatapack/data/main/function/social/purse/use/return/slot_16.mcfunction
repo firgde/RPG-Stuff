@@ -12,4 +12,4 @@
     execute if score @s page matches 2 if score @s sub_page matches 1 run execute store result score #gem_withdrawing buffer run scoreboard players operation #gem_withdrawing buffer *= #gem_type buffer
     execute if score @s page matches 2 if score @s sub_page matches 1 run loot replace entity @s container.26 loot main:social/ui/purse/button_confirm
 # 音
-    execute if score @s sub_page matches 1 as @a at @s run playsound block.lantern.place master @s ~ ~ ~ 1 2
+    execute if score @s sub_page matches 1 as @a[limit=1] at @s run playsound block.lantern.place master @s ~ ~ ~ 1 2

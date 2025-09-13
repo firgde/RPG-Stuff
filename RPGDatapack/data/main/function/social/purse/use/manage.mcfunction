@@ -38,7 +38,7 @@
     execute as @n[tag=purse] unless data entity @s Items[{Slot:25b,components:{"minecraft:custom_data":{ui:1b,menu:"purse"}}}] run function main:social/purse/use/return/slot_25
     execute as @n[tag=purse] unless data entity @s Items[{Slot:26b,components:{"minecraft:custom_data":{ui:1b,menu:"purse"}}}] run function main:social/purse/use/return/slot_26
     #そしてアイテム還元
-    execute unless items entity @a player.cursor * run item replace entity @a player.cursor from block 0 -59 0 container.0
+    execute unless items entity @a[limit=1] player.cursor * run item replace entity @a[limit=1] player.cursor from block 0 -59 0 container.0
 # リセット
     scoreboard players set @s throw 0
     scoreboard players set @s pick 0

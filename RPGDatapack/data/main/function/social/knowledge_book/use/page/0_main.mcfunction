@@ -29,8 +29,8 @@
     item replace entity @s container.25 with stick[custom_data={ui:1b,menu:"knowledge_book"},item_model="air",tooltip_display={hide_tooltip:true}]
     item replace entity @s container.26 with stick[custom_data={ui:1b,menu:"knowledge_book"},item_model="air",tooltip_display={hide_tooltip:true}]
 # ボタン
-    execute as @a run loot replace entity @e[tag=knowledge_book,distance=..5] container.10 loot main:social/ui/knowledge_book/1_status/head_profile
+    execute as @a[limit=1] run loot replace entity @e[tag=knowledge_book,distance=..5] container.10 loot main:social/ui/knowledge_book/1_status/head_profile
     item replace entity @s container.13 with stick[custom_data={ui:1b,menu:"knowledge_book"},custom_model_data={floats:[8999]},item_name={"translate":"social.ui.knowledge_book.quests","italic": false,"bold": true}]
     item replace entity @s container.16 with stick[custom_data={ui:1b,menu:"knowledge_book"},item_model="lantern",item_name={"translate":""}]
 # 音
-    execute as @a at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1
+    execute as @a[limit=1] at @s run playsound item.book.page_turn master @s ~ ~ ~ 2 1

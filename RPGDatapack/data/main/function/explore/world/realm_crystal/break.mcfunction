@@ -1,8 +1,8 @@
 # 演出
     particle flash ~ ~ ~ 0 0 0 0 1
     particle end_rod ~ ~ ~ 0.1 0.1 0.1 0.5 50
-    playsound block.glass.break master @a ~ ~ ~ 1 0.5
-    playsound block.trial_spawner.about_to_spawn_item master @a ~ ~ ~ 1 1.0
+    playsound block.glass.break master @a[limit=1] ~ ~ ~ 1 0.5
+    playsound block.trial_spawner.about_to_spawn_item master @a[limit=1] ~ ~ ~ 1 1.0
 # エリアの進行度に加算
     $execute store result score #realm_crystal buffer run data get storage book: data.explore.area[{id:$(location)}].progress.realm_crystal
     $execute store result storage book: data.explore.area[{id:$(location)}].progress.realm_crystal int 1 run scoreboard players add #realm_crystal buffer 1

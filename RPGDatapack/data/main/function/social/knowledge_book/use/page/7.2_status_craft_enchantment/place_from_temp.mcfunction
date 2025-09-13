@@ -1,5 +1,5 @@
 # まずアイテム返還
-    $execute unless items entity @a player.cursor * run item replace entity @a player.cursor from entity @s container.$(slot)
+    $execute unless items entity @a[limit=1] player.cursor * run item replace entity @a[limit=1] player.cursor from entity @s container.$(slot)
 # データ設定
     data modify storage temp: data.craft set from storage book: data.craft
 # slot番目のスロットにストレージのindex番目のエンチャントデータを入れる

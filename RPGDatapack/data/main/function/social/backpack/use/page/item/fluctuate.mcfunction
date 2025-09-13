@@ -17,4 +17,4 @@
 # リセット
     scoreboard players reset #modify_count buffer
 # 音
-    execute as @a at @s run playsound block.lantern.place master @s ~ ~ ~ 1 2
+    execute as @a[limit=1] at @s run playsound block.lantern.place master @s ~ ~ ~ 1 2

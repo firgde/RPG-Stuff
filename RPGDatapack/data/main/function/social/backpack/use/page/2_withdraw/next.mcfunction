@@ -1,5 +1,5 @@
 # アイテム返還
-    execute unless items entity @a player.cursor * run item replace entity @a player.cursor from block 0 -59 0 container.0
+    execute unless items entity @a[limit=1] player.cursor * run item replace entity @a[limit=1] player.cursor from block 0 -59 0 container.0
 # ページ移動
     scoreboard players add @s sub_page 1
 # 一旦中身リセット
@@ -24,4 +24,4 @@
 # アイテム一覧
     function main:social/backpack/use/page/2_withdraw/load_page
 # 音
-    execute as @a at @s run playsound ui.button.click master @s ~ ~ ~ 0.5 1.5
+    execute as @a[limit=1] at @s run playsound ui.button.click master @s ~ ~ ~ 0.5 1.5

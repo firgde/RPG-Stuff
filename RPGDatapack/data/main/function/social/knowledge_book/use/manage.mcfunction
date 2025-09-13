@@ -4,7 +4,7 @@
     clear @s *[custom_data~{ui:1b}]
 
     #ドロップした棒はkill
-    execute if score @s throw matches 1.. at @a as @e[type=item,distance=..5] if items entity @s contents *[custom_data={ui:1b,menu:"knowledge_book"}] run kill @s
+    execute if score @s throw matches 1.. at @a[limit=1] as @e[type=item,distance=..5] if items entity @s contents *[custom_data={ui:1b,menu:"knowledge_book"}] run kill @s
 
 # なんかアイテムが別に入っていたらインベントリに戻し、棒に置き換える
     #0,-59,0のシュルカーボックスのアイテム削除
@@ -38,7 +38,7 @@
     execute as @n[tag=knowledge_book,distance=0..,type=chest_minecart] unless items entity @s container.25 *[custom_data~{ui:1b,menu:"knowledge_book"}] run function main:social/knowledge_book/use/return/slot_25
     execute as @n[tag=knowledge_book,distance=0..,type=chest_minecart] unless items entity @s container.26 *[custom_data~{ui:1b,menu:"knowledge_book"}] run function main:social/knowledge_book/use/return/slot_26
     #そしてアイテム還元
-    execute unless items entity @a player.cursor * run item replace entity @a player.cursor from block 0 -59 0 container.0
+    execute unless items entity @a[limit=1] player.cursor * run item replace entity @a[limit=1] player.cursor from block 0 -59 0 container.0
 # リセット
     scoreboard players set @s throw 0
     scoreboard players set @s pick 0

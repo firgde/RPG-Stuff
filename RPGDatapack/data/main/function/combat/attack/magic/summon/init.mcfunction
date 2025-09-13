@@ -25,9 +25,9 @@
     # タグに変換する
     execute if data storage buffer: data run function main:combat/attack/magic/summon/element/get
     # 氷単体意外は音
-    execute unless entity @s[tag=magic.ice,tag=!magic.combined] run playsound block.amethyst_block.chime player @a ~ ~ ~ 1000 1.5
-    execute unless entity @s[tag=magic.ice,tag=!magic.combined] run playsound block.amethyst_block.break player @a ~ ~ ~ 0.5 1.25
-    execute unless entity @s[tag=magic.ice,tag=!magic.combined] run playsound block.soul_soil.break player @a ~ ~ ~ 0.5 1.8
+    execute unless entity @s[tag=magic.ice,tag=!magic.combined] run playsound block.amethyst_block.chime player @a[limit=1] ~ ~ ~ 1000 1.5
+    execute unless entity @s[tag=magic.ice,tag=!magic.combined] run playsound block.amethyst_block.break player @a[limit=1] ~ ~ ~ 0.5 1.25
+    execute unless entity @s[tag=magic.ice,tag=!magic.combined] run playsound block.soul_soil.break player @a[limit=1] ~ ~ ~ 0.5 1.8
 
     # 速度、飛ぶ時間などの設定
     data modify entity @s Tags append from storage combat: data.magic[0].Tags.Type
@@ -35,11 +35,11 @@
     execute store result score @s flyTime run data get storage combat: data.magic[0].Time
 
     # 威力と集中を代入
-    scoreboard players operation @s mag = @a mag
-    scoreboard players operation @s acc = @a acc
+    scoreboard players operation @s mag = @a[limit=1] mag
+    scoreboard players operation @s acc = @a[limit=1] acc
 
 # 向き補正
-    execute at @a run tp @s ~ ~1.5 ~ ~ ~
+    execute at @a[limit=1] run tp @s ~ ~1.5 ~ ~ ~
     execute at @s run tp @s ^ ^ ^0.5
 # 召喚時のホーミング
     execute at @s run function main:combat/attack/magic/homing/on_start/

@@ -5,7 +5,7 @@
     execute store result score #gem_type buffer run data get entity @s Items[0].components."minecraft:custom_data".Amount
     execute store result score #gem_withdrawing buffer run scoreboard players operation #gem_type buffer *= #gem_count buffer
 # moneyスコアに加算
-    scoreboard players operation @a money += #gem_withdrawing buffer
+    scoreboard players operation @a[limit=1] money += #gem_withdrawing buffer
 # データ削除
     execute unless data entity @s Items[0].components."minecraft:custom_data".ui run data remove entity @s Items[0]
 # データが残っているなら再帰

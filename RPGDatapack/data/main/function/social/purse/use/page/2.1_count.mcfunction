@@ -34,4 +34,4 @@
     item replace entity @s container.18 with stick[custom_data={ui:1b,menu:"purse",button:1b},item_model="asset:back",item_name={"translate":"social.ui.knowledge_book.back"}]
     loot replace entity @s container.26 loot main:social/ui/purse/button_confirm
 # 音
-    execute as @a at @s run playsound ui.loom.select_pattern master @s ~ ~ ~ 1 2
+    execute as @a[limit=1] at @s run playsound ui.loom.select_pattern master @s ~ ~ ~ 1 2
