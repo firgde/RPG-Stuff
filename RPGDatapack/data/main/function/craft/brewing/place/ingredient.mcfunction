@@ -11,7 +11,7 @@
     execute if items entity @s weapon.mainhand *[custom_data~{brewing_powder:1b}] run playsound block.suspicious_sand.place block @s ~ ~ ~ 1 1
 # アイテムを一個減らす
     scoreboard players set #modify_count buffer -1
-    item modify entity @s weapon.mainhand items:count
+    item modify entity @s weapon.mainhand {function:"set_count",count:{type:"constant",value:-1},add:1b}
 # リセット
     scoreboard players reset #modify_count buffer
     scoreboard players reset #item_count buffer

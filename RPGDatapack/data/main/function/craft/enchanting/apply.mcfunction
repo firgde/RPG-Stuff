@@ -44,10 +44,10 @@
     function main:craft/enchanting/rec
 # アイテム減らす
     scoreboard players set #modify_count buffer -1
-    item modify block ~ ~ ~ container.1 items:count
-    item modify block ~ ~ ~ container.3 items:count
-    item modify block ~ ~ ~ container.5 items:count
-    item modify block ~ ~ ~ container.7 items:count
+    item modify block ~ ~ ~ container.1 {function:"set_count",count:{type:"constant",value:-1},add:1b}
+    item modify block ~ ~ ~ container.3 {function:"set_count",count:{type:"constant",value:-1},add:1b}
+    item modify block ~ ~ ~ container.5 {function:"set_count",count:{type:"constant",value:-1},add:1b}
+    item modify block ~ ~ ~ container.7 {function:"set_count",count:{type:"constant",value:-1},add:1b}
 # エンチャントがついたなら演出
     execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run data modify block ~ ~ ~ Items[{Slot:4b}].components."minecraft:enchantment_glint_override" set value true
     execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1

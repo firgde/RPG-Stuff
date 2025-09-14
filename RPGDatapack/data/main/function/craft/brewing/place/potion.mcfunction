@@ -12,8 +12,7 @@
     execute if score #item_count buffer matches 2.. run item replace entity @n[tag=brewing.slot.1] contents with glass_bottle[item_model="asset:brewing_stand_bottle"]
     execute if score #item_count buffer matches 3.. run item replace entity @n[tag=brewing.slot.2] contents with glass_bottle[item_model="asset:brewing_stand_bottle"]
 # アイテムを一個減らす
-    scoreboard players set #modify_count buffer -1
-    item modify entity @s weapon.mainhand items:count
+    item modify entity @s weapon.mainhand {function:"set_count",count:{type:"constant",value:-1},add:1b}
 # 演出
     playsound block.copper_bulb.place block @s ~ ~ ~ 1 0.75
 # リセット
