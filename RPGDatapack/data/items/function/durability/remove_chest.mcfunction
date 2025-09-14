@@ -14,6 +14,7 @@
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
     execute if score #enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
+    item modify block 0 -59 0 container.0 items:lore/elements
     item modify block 0 -59 0 container.0 items:lore/info
     item replace entity @s armor.chest from block 0 -59 0 container.0
 # リセット

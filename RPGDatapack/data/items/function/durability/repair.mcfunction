@@ -20,6 +20,7 @@
     item modify block 0 -59 0 container.0 items:lore/status
     execute if data storage item: Item.components."minecraft:custom_data"{weaponType:2} run item modify block 0 -59 0 container.0 items:lore/magic
     execute if score #enchantcount buffer matches 1.. run function items:set_data/rec
+    item modify block 0 -59 0 container.0 items:lore/elements
     item modify block 0 -59 0 container.0 items:lore/info
     item replace entity @s contents from block 0 -59 0 container.0
 # 修理素材を消す

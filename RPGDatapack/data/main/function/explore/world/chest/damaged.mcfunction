@@ -10,4 +10,5 @@
     item modify block 0 -59 0 container.0 items:lore/status
     execute if score #enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
     execute if data storage item: Item.components."minecraft:custom_data"{weaponType:2} run item modify block 0 -59 0 container.0 items:lore/magic
+    item modify block 0 -59 0 container.0 items:lore/elements
     item modify block 0 -59 0 container.0 items:lore/info
