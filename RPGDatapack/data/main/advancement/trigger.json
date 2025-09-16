@@ -100,7 +100,7 @@
                     "type": {
                         "tags": [
                             {
-                                "id": "asset:magic",
+                                "id": "main:magic",
                                 "expected": true
                             }
                         ]
