@@ -43,15 +43,14 @@
     scoreboard players add #rec buffer 1
     function main:craft/enchanting/rec
 # アイテム減らす
-    scoreboard players set #modify_count buffer -1
-    item modify block ~ ~ ~ container.1 {function:"set_count",count:{type:"constant",value:-1},add:1b}
-    item modify block ~ ~ ~ container.3 {function:"set_count",count:{type:"constant",value:-1},add:1b}
-    item modify block ~ ~ ~ container.5 {function:"set_count",count:{type:"constant",value:-1},add:1b}
-    item modify block ~ ~ ~ container.7 {function:"set_count",count:{type:"constant",value:-1},add:1b}
+    execute if items block ~ ~ ~ container.1 *[custom_data~{EnchantMaterial:1b}] run item modify block ~ ~ ~ container.1 {function:"set_count",count:{type:"constant",value:-1},add:1b}
+    execute if items block ~ ~ ~ container.3 *[custom_data~{EnchantMaterial:1b}] run item modify block ~ ~ ~ container.3 {function:"set_count",count:{type:"constant",value:-1},add:1b}
+    execute if items block ~ ~ ~ container.5 *[custom_data~{EnchantMaterial:1b}] run item modify block ~ ~ ~ container.5 {function:"set_count",count:{type:"constant",value:-1},add:1b}
+    execute if items block ~ ~ ~ container.7 *[custom_data~{EnchantMaterial:1b}] run item modify block ~ ~ ~ container.7 {function:"set_count",count:{type:"constant",value:-1},add:1b}
 # エンチャントがついたなら演出
-    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run data modify block ~ ~ ~ Items[{Slot:4b}].components."minecraft:enchantment_glint_override" set value true
-    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1
-    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".Enchantments run particle enchant ~ ~2 ~ 0.25 0.25 0.25 2 50
+    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".enchantments.data run data modify block ~ ~ ~ Items[{Slot:4b}].components."minecraft:enchantment_glint_override" set value true
+    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".enchantments.data run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1
+    execute if data block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".enchantments.data run particle enchant ~ ~2 ~ 0.25 0.25 0.25 2 50
 # リセット
     data remove block 0 -59 0 Items
     scoreboard players reset #modify_count buffer

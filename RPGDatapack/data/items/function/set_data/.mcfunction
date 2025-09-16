@@ -6,7 +6,8 @@
 # item_modifierを適用
     item modify block 0 -59 0 container.0 items:lore/text
     item modify block 0 -59 0 container.0 items:lore/status
-    execute if score #enchantcount buffer matches 1.. positioned 0 -59 0 run function items:set_data/rec
+    execute if data storage item: Item.components."minecraft:custom_data".enchantments positioned 0 -59 0 run function items:set_data/rec
+    # execute if data storage item: Item.components."minecraft:custom_data".enchantments run item modify block 0 -59 0 container.0 [{"function":"set_lore","entity":"this","lore":[{"nbt":"Item.components.\"minecraft:custom_data\".enchantments.text","storage":"item:","interpret":true}],"mode":"append"}]
     execute if data storage item: Item.components."minecraft:custom_data"{weaponType:2} run item modify block 0 -59 0 container.0 items:lore/magic
     execute if data storage item: Item.components."minecraft:custom_data"{food:1b} run item modify block 0 -59 0 container.0 items:lore/heal
     item modify block 0 -59 0 container.0 items:lore/elements

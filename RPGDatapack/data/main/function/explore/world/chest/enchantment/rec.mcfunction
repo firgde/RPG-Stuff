@@ -7,8 +7,8 @@
 # 生成されたアイテムのタグからエンチャントを特定
     execute positioned 0 -59 0 run function #asset:craft/enchantments
 # エンチャント適用
-    data modify block 0 -59 0 Items[{Slot:4b}].components."minecraft:custom_data".Enchantments append from block 0 -59 0 Items[{Slot:1b}].components."minecraft:custom_data".EnchantData
-    execute store result score #enchantcount buffer if data block 0 -59 0 Items[{Slot:4b}].components."minecraft:custom_data".Enchantments
+    data modify block 0 -59 0 Items[{Slot:4b}].components."minecraft:custom_data".enchantments.data append from block 0 -59 0 Items[{Slot:1b}].components."minecraft:custom_data"
+    execute store result score #enchantcount buffer if data block 0 -59 0 Items[{Slot:4b}].components."minecraft:custom_data".enchantments.data
     #元の値を取得
     execute store result score #atkBonus buffer run data get block 0 -59 0 Items[{Slot:4b}].components."minecraft:custom_data".status.atk
     execute store result score #magBonus buffer run data get block 0 -59 0 Items[{Slot:4b}].components."minecraft:custom_data".status.mag
