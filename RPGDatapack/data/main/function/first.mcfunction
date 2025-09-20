@@ -18,8 +18,8 @@ say reload
             scoreboard objectives add bowCharge dummy
             scoreboard objectives add prevBowCharge dummy
             scoreboard objectives add usedBow used:bow
-            scoreboard objectives add flyTimer dummy
-            scoreboard objectives add flyTime dummy
+            scoreboard objectives add time_flied dummy
+            scoreboard objectives add max_flying_time dummy
             scoreboard objectives add buff_timer dummy
             scoreboard objectives add buff_amount dummy
             scoreboard objectives add usedRod used:warped_fungus_on_a_stick
@@ -28,7 +28,6 @@ say reload
             scoreboard objectives add aiTimer dummy
             scoreboard objectives add mob_id dummy
             scoreboard objectives add flyratio dummy
-            scoreboard objectives add frate dummy
             scoreboard objectives add hasAttacker dummy
             scoreboard objectives add hasTarget dummy
             scoreboard objectives add higher dummy

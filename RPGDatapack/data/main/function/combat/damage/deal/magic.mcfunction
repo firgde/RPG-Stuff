@@ -14,18 +14,8 @@
     execute store result score #main_element buff_timer run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[0].Timer
     execute store result score #side_element buff_amount run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[1].Amount
     execute store result score #side_element buff_timer run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[1].Timer
-# 演出
-    execute at @s positioned ~ ~1 ~ facing entity @a[limit=1] eyes positioned ^ ^ ^0.25 run function asset:particle/magic_hit
-    particle enchanted_hit ~ ~ ~ 0.1 0.1 0.1 0.5 25
-    particle crit ~ ~ ~ 0.1 0.3 0.1 0.5 25
-    playsound block.amethyst_cluster.place hostile @a[limit=1] ~ ~ ~ 1 0.75
-    execute if score #damage_type buffer matches 1 run playsound entity.firework_rocket.large_blast hostile @a[limit=1] ~ ~ ~ 0.5 1
-    execute if score #damage_type buffer matches 3 run playsound block.grass.break hostile @a[limit=1] ~ ~ ~ 0.5 1.2
-    execute if score #damage_type buffer matches 4 run playsound item.trident.hit hostile @a[limit=1] ~ ~ ~ 0.5 1
-    execute if score #damage_type buffer matches 11 run playsound block.gravel.break hostile @a[limit=1] ~ ~ ~ 0.5 0.5
-    execute if score #damage_type buffer matches 11 run playsound entity.firework_rocket.large_blast hostile @a[limit=1] ~ ~ ~ 1.5 0.5
 # 貫通防止
-    execute as @n[tag=magic,tag=!multiple_hit] run scoreboard players operation @s flyTimer = @s flyTime
+    execute as @n[tag=magic,tag=!multiple_hit] run scoreboard players operation @s time_flied = @s max_flying_time
 # プレイヤーが近くにいるなら連撃判定のinteraction召喚
     execute at @s if entity @a[limit=1,distance=..3] unless data entity @s Passengers[{Tags:["atk_combo"]}] run summon interaction ~ ~ ~ {Tags:["atk_combo","atk_combo.init"]}
     execute at @s run ride @n[tag=atk_combo.init,distance=..1] mount @s

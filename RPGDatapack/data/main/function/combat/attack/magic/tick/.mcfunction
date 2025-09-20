@@ -17,20 +17,20 @@
     tp @s[tag=spd.8] ^ ^ ^0.8
     tp @s[tag=spd.16] ^ ^ ^1.6
 # タイマー加算
-    scoreboard players add @s flyTimer 1
+    scoreboard players add @s time_flied 1
 # 進んだ時間を算出
-    execute store result score @s frate run scoreboard players get @a[limit=1] follow_rate
+    scoreboard players operation @s follow_rate = @a[limit=1] follow_rate
     scoreboard players set #100 buffer 100
-    execute store result score @s frate run scoreboard players operation #100 buffer -= @s frate
+    execute store result score @s follow_rate run scoreboard players operation #100 buffer -= @s follow_rate
     scoreboard players reset #100 buffer
-    scoreboard players operation @s flyratio = @s flyTimer
+    scoreboard players operation @s flyratio = @s time_flied
     scoreboard players operation @s flyratio *= #100 const
-    scoreboard players operation @s flyratio /= @s flyTime
+    scoreboard players operation @s flyratio /= @s max_flying_time
 # 追尾対象絞り込み
-    execute if score @s acc matches -2147483648..2147483647 if score @s flyratio >= @s frate run function main:combat/attack/magic/homing/on_tick
+    execute if score @s acc matches -2147483648..2147483647 if score @s flyratio >= @s follow_rate run function main:combat/attack/magic/homing/on_tick
 # 当たり判定
-    execute align xz as @n[dx=0,type=!#main:non_mob,type=!player] positioned ~0.5 ~ ~0.5 run damage @s 1 main:magic/generic by @a[limit=1]
-# ブロックに衝突して/kill
-    execute unless block ~ ~ ~ #main:no_collision run kill @s
+    execute align xz if entity @n[dx=0,type=!#main:non_mob,type=!player] positioned ~0.5 ~ ~0.5 run scoreboard players operation @s time_flied = @s max_flying_time
+# ブロックに衝突
+    execute unless block ~ ~ ~ #main:no_collision run scoreboard players operation @s time_flied = @s max_flying_time
 # 時間切れで/kill
-    execute if score @s flyTimer >= @s flyTime run kill @s
+    execute if score @s time_flied >= @s max_flying_time run function main:combat/attack/magic/terminate

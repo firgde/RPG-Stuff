@@ -32,7 +32,7 @@
     # 速度、飛ぶ時間などの設定
     data modify entity @s Tags append from storage combat: data.magic[0].Tags.Type
     function main:combat/attack/magic/summon/set_speed
-    execute store result score @s flyTime run data get storage combat: data.magic[0].Time
+    execute store result score @s max_flying_time run data get storage combat: data.magic[0].Time
 
     # 威力と集中を代入
     scoreboard players operation @s mag = @a[limit=1] mag
