@@ -16,7 +16,7 @@
     execute if entity @s[advancements={main:trigger={equip_feet=true}}] store result score #itemID buffer run data get entity @s equipment.feet.components."minecraft:custom_data".id
     execute unless entity @s[advancements={main:trigger={equip_feet=false,disequip_feet=false}}] run function #asset:item/trigger/equip/feet
 
-    execute if entity @s[advancements={main:trigger={consume=true}}] run schedule function items:use/consume/detect 1 append
+    execute if entity @s[advancements={main:trigger={consume=true}}] run schedule function items:use/consume/ 1 append
 # リセット
     advancement revoke @s only main:trigger
     scoreboard players set @s usedBook 0

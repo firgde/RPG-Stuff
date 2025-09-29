@@ -1,7 +1,7 @@
 # this
     tag @s add this
 # デバフ効果中
-    tag @s add debuffed
+    tag @s add on_buff
 # 自分をoriginに設定したaec召喚
     summon area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["buff","buff.init"],Radius:0}
 # データ設定

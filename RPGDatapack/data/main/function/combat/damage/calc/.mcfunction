@@ -4,7 +4,7 @@
 # 属性取得(直接攻撃していない、既にデバフを持っている場合は無視)
     execute unless score #main_element buffer matches 0 unless score #side_element buffer matches 0 run function main:combat/damage/calc/element_combined
     execute if entity @s[type=player,tag=!hurt.indirect] if score #damage_type buffer matches 1..4 run function main:combat/damage/calc/element_hostile
-    execute if entity @s[type=!player,tag=!debuffed] if score #damage_type buffer matches 1..4 run function main:combat/damage/calc/element
+    execute if entity @s[type=!player,tag=!on_buff] if score #damage_type buffer matches 1..4 run function main:combat/damage/calc/element
 # 属性相性を参照
     execute unless entity @s[tag=hurt.indirect] run function main:combat/damage/calc/resistance
 # 無敵時間のあるなし

@@ -1,0 +1,11 @@
+
+    $data modify storage combat: data.buff.amplifier.atk set value $(atk)
+    $data modify storage combat: data.buff.amplifier.mag set value $(mag)
+    $data modify storage combat: data.buff.amplifier.dex set value $(dex)
+    $data modify storage combat: data.buff.amplifier.hp set value $(hp)
+    $data modify storage combat: data.buff.amplifier.int set value $(int)
+    $data modify storage combat: data.buff.amplifier.def set value $(def)
+    $data modify storage combat: data.buff.amplifier.spd set value $(spd)
+    $data modify storage combat: data.buff.amplifier.crt set value $(crt)
+    $data modify storage combat: data.buff.amplifier.luk set value $(luk)
+    $data modify storage combat: data.buff.amplifier.acc set value $(acc)
