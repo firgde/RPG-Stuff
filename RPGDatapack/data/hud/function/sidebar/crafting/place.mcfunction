@@ -1,3 +1,6 @@
+# 競合する操作はガイドを消す
+    scoreboard players reset sidebar.use
+    scoreboard players reset sidebar.consume
 
     scoreboard objectives setdisplay sidebar sidebar_ui
     scoreboard players set sidebar.place.craft sidebar_ui 0

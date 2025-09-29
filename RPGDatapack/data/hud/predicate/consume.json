@@ -2,30 +2,86 @@
     "condition": "any_of",
     "terms": [
         {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "equipment": {
-                    "mainhand": {
-                        "components": {
-                            "consumable": {}
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "components": {
+                                    "consumable": {}
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "offhand": {
+                                "components": {
+                                    "consumable": {}
+                                }
+                            }
                         }
                     }
                 }
-            }
+            ]
         },
         {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "equipment": {
-                    "offhand": {
-                        "components": {
-                            "consumable": {}
+            "condition": "any_of",
+            "terms": [
+                {
+                	"condition": "entity_properties",
+                	"entity": "this",
+                	"predicate": {
+                		"equipment": {
+                			"mainhand": {
+                				"components": {
+                					"consumable": {
+                						"animation": "drink",
+                						"sound": "entity.generic.drink",
+                						"has_consume_particles": false,
+                						"on_consume_effects": [
+                							{
+                								"type": "play_sound",
+                								"sound": "intentionally_empty"
+                							}
+                						]
+                					}
+                				}
+                			}
+                		}
+                	}
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "offhand": {
+                                "components": {
+                					"consumable": {
+                						"animation": "drink",
+                						"sound": "entity.generic.drink",
+                						"has_consume_particles": false,
+                						"on_consume_effects": [
+                							{
+                								"type": "play_sound",
+                								"sound": "intentionally_empty"
+                							}
+                						]
+                					}
+                                }
+                            }
                         }
                     }
                 }
-            }
+            ]
         }
     ]
 }
