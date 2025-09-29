@@ -32,13 +32,13 @@
     scoreboard players operation @s crt += @s crt_buff
     scoreboard players operation @s luk += @s luk_buff
     scoreboard players operation @s acc += @s acc_buff
-    scoreboard players operation @s resistance_melee += @s resistance_melee_buff
-    scoreboard players operation @s resistance_magic += @s resistance_magic_buff
-    scoreboard players operation @s resistance_ranged += @s resistance_ranged_buff
-    scoreboard players operation @s resistance_fire += @s resistance_fire_buff
-    scoreboard players operation @s resistance_ice += @s resistance_ice_buff
-    scoreboard players operation @s resistance_wind += @s resistance_wind_buff
-    scoreboard players operation @s resistance_thunder += @s resistance_thunder_buff
+    scoreboard players operation @s resistance_melee -= @s resistance_melee_buff
+    scoreboard players operation @s resistance_magic -= @s resistance_magic_buff
+    scoreboard players operation @s resistance_ranged -= @s resistance_ranged_buff
+    scoreboard players operation @s resistance_fire -= @s resistance_fire_buff
+    scoreboard players operation @s resistance_ice -= @s resistance_ice_buff
+    scoreboard players operation @s resistance_wind -= @s resistance_wind_buff
+    scoreboard players operation @s resistance_thunder -= @s resistance_thunder_buff
 # 0より小さいなら調整
     scoreboard players operation @s atk > #0 const
     scoreboard players operation @s mag > #0 const
