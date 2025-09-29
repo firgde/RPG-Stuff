@@ -4,138 +4,12 @@
 		"entity": "this",
 		"lore": [
 			{
-				"translate": "item.ui.status.text.mainhand",
+				"translate": "item.ui.status.text.consume",
 				"color": "gray",
 				"italic": false
 			}
 		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".ItemType"
-				},
-				"range": 1
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"translate": "item.ui.status.text.offhand",
-				"color": "gray",
-				"italic": false
-			}
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".ItemType"
-				},
-				"range": 2
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"translate": "item.ui.status.text.feet",
-				"color": "gray",
-				"italic": false
-			}
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".ItemType"
-				},
-				"range": 33
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"translate": "item.ui.status.text.legs",
-				"color": "gray",
-				"italic": false
-			}
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".ItemType"
-				},
-				"range": 32
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"translate": "item.ui.status.text.body",
-				"color": "gray",
-				"italic": false
-			}
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".ItemType"
-				},
-				"range": 31
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"translate": "item.ui.status.text.head",
-				"color": "gray",
-				"italic": false
-			}
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".ItemType"
-				},
-				"range": 30
-			}
-		]
+		"mode": "append"
 	},
 	{
 		"function": "set_lore",
@@ -158,905 +32,1142 @@
 					"italic": false
 				},
 				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.atk",
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.atk",
 					"storage": "item:",
 					"color": "green",
 					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.atk"
 				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
 				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.atk",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.atk",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.atk"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.mag",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " +",
-					"color": "green",
-					"italic": false
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.mag",
-					"storage": "item:",
-					"color": "green",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.mag"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.mag",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.mag",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.mag"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.dex",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " +",
-					"color": "green",
-					"italic": false
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.dex",
-					"storage": "item:",
-					"color": "green",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.dex"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.dex",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.dex",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.dex"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.hp",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " +",
-					"color": "green",
-					"italic": false
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.hp",
-					"storage": "item:",
-					"color": "green",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.hp"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.hp",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.hp",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.hp"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.int",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " +",
-					"color": "green",
-					"italic": false
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.int",
-					"storage": "item:",
-					"color": "green",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.int"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.int",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.int",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.int"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.def",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " +",
-					"color": "green",
-					"italic": false
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.def",
-					"storage": "item:",
-					"color": "green",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.def"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.def",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.def",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.def"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.spd",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " +",
-					"color": "green",
-					"italic": false
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.spd",
-					"storage": "item:",
-					"color": "green",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.spd"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.spd",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.spd",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.spd"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.crt",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " +",
-					"color": "green",
-					"italic": false
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.crt",
-					"storage": "item:",
-					"color": "green",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.crt"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.crt",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.crt",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.crt"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.luk",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " +",
-					"color": "green",
-					"italic": false
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.luk",
-					"storage": "item:",
-					"color": "green",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.luk"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.luk",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.luk",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.luk"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.acc",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " +",
-					"color": "green",
-					"italic": false
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status.acc",
-					"storage": "item:",
-					"color": "green",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.acc"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"translate": "item.ui.status.acc",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"text": " "
-				},
-				{
-					"nbt": "Item.components.\"minecraft:custom_data\".status..acc",
-					"storage": "item:",
-					"color": "red",
-					"italic": false
-				}
-			]
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".status.acc"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"text": " "
-			}
-		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "inverted",
-				"term": {
-					"condition": "all_of",
-					"terms": [
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "storage",
-								"storage": "item:",
-								"path": "Item.components.\"minecraft:custom_data\".resistance.melee"
-							},
-							"range": 0
+							"text": "("
 						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "storage",
-								"storage": "item:",
-								"path": "Item.components.\"minecraft:custom_data\".resistance.magic"
-							},
-							"range": 0
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.atk",
+							"storage": "item:"
 						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "storage",
-								"storage": "item:",
-								"path": "Item.components.\"minecraft:custom_data\".resistance.ranged"
-							},
-							"range": 0
-						},
-						{
-							"condition": "value_check",
-							"value": {
-								"type": "storage",
-								"storage": "item:",
-								"path": "Item.components.\"minecraft:custom_data\".resistance.fire"
-							},
-							"range": 0
-						},
-						{
-							"condition": "value_check",
-							"value": {
-								"type": "storage",
-								"storage": "item:",
-								"path": "Item.components.\"minecraft:custom_data\".resistance.ice"
-							},
-							"range": 0
-						},
-						{
-							"condition": "value_check",
-							"value": {
-								"type": "storage",
-								"storage": "item:",
-								"path": "Item.components.\"minecraft:custom_data\".resistance.wind"
-							},
-							"range": 0
-						},
-						{
-							"condition": "value_check",
-							"value": {
-								"type": "storage",
-								"storage": "item:",
-								"path": "Item.components.\"minecraft:custom_data\".resistance.thunder"
-							},
-							"range": 0
+							"text": ")"
 						}
 					]
 				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.atk"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.atk",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.atk",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.atk",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.atk"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.mag",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " +",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.mag",
+					"storage": "item:",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.mag",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.mag"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.mag",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.mag",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.mag",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.mag"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.dex",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " +",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.dex",
+					"storage": "item:",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.dex",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.dex"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.dex",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.dex",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.dex",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.dex"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.hp",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " +",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.hp",
+					"storage": "item:",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.hp",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.hp"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.hp",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.hp",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.hp",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.hp"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.int",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " +",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.int",
+					"storage": "item:",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.int",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.int"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.int",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.int",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.int",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.int"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.def",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " +",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.def",
+					"storage": "item:",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.def",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.def"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.def",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.def",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.def",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.def"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.spd",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " +",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.spd",
+					"storage": "item:",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.spd",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.spd"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.spd",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.spd",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.spd",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.spd"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.crt",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " +",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.crt",
+					"storage": "item:",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.crt",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.crt"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.crt",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.crt",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.crt",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.crt"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.luk",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " +",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.luk",
+					"storage": "item:",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.luk",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.luk"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.luk",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.luk",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.luk",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.luk"
+				},
+				"range": {
+					"max": -1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.acc",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " +",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.acc",
+					"storage": "item:",
+					"color": "green",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.acc",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.acc"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			[
+				{
+					"text": " ",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"translate": "item.ui.status.acc",
+					"color": "white",
+					"italic": false
+				},
+				{
+					"text": " "
+				},
+				{
+					"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier..acc",
+					"storage": "item:",
+					"color": "red",
+					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.acc",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
+				}
+			]
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.acc"
+				},
+				"range": {
+					"max": -1
+				}
 			}
 		]
 	},
@@ -1074,7 +1185,7 @@
 							"italic": false
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.melee",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.melee",
 							"storage": "item:",
 							"color": "green",
 							"italic": false
@@ -1086,6 +1197,22 @@
 					],
 					"color": "gray",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.melee",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1096,7 +1223,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.melee"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.melee"
 				},
 				"range": {
 					"min": 1
@@ -1116,7 +1243,7 @@
 							"text": " "
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.melee",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.melee",
 							"storage": "item:",
 							"color": "red",
 							"italic": false
@@ -1128,6 +1255,22 @@
 					],
 					"color": "gray",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.melee",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1138,7 +1281,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.melee"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.melee"
 				},
 				"range": {
 					"max": -1
@@ -1160,7 +1303,7 @@
 							"italic": false
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.magic",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.magic",
 							"storage": "item:",
 							"color": "green",
 							"italic": false
@@ -1172,6 +1315,22 @@
 					],
 					"color": "dark_purple",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.magic",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1182,7 +1341,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.magic"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.magic"
 				},
 				"range": {
 					"min": 1
@@ -1202,7 +1361,7 @@
 							"text": " "
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.magic",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.magic",
 							"storage": "item:",
 							"color": "red",
 							"italic": false
@@ -1214,6 +1373,22 @@
 					],
 					"color": "dark_purple",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.magic",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1224,7 +1399,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.magic"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.magic"
 				},
 				"range": {
 					"max": -1
@@ -1246,7 +1421,7 @@
 							"italic": false
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.ranged",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.ranged",
 							"storage": "item:",
 							"color": "green",
 							"italic": false
@@ -1258,6 +1433,22 @@
 					],
 					"color": "#6B4B1A",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.ranged",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1268,7 +1459,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.ranged"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.ranged"
 				},
 				"range": {
 					"min": 1
@@ -1288,7 +1479,7 @@
 							"text": " "
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.ranged",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.ranged",
 							"storage": "item:",
 							"color": "red",
 							"italic": false
@@ -1300,6 +1491,22 @@
 					],
 					"color": "#6B4B1A",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.ranged",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1310,7 +1517,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.ranged"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.ranged"
 				},
 				"range": {
 					"max": -1
@@ -1332,7 +1539,7 @@
 							"italic": false
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.fire",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.fire",
 							"storage": "item:",
 							"color": "green",
 							"italic": false
@@ -1344,6 +1551,22 @@
 					],
 					"color": "#C23400",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.fire",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1354,7 +1577,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.fire"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.fire"
 				},
 				"range": {
 					"min": 1
@@ -1374,7 +1597,7 @@
 							"text": " "
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.fire",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.fire",
 							"storage": "item:",
 							"color": "red",
 							"italic": false
@@ -1386,6 +1609,22 @@
 					],
 					"color": "#C23400",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.fire",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1396,7 +1635,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.fire"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.fire"
 				},
 				"range": {
 					"max": -1
@@ -1418,7 +1657,7 @@
 							"italic": false
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.ice",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.ice",
 							"storage": "item:",
 							"color": "green",
 							"italic": false
@@ -1430,6 +1669,22 @@
 					],
 					"color": "dark_aqua",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.ice",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1440,7 +1695,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.ice"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.ice"
 				},
 				"range": {
 					"min": 1
@@ -1460,7 +1715,7 @@
 							"text": " "
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.ice",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.ice",
 							"storage": "item:",
 							"color": "red",
 							"italic": false
@@ -1472,6 +1727,22 @@
 					],
 					"color": "dark_aqua",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.ice",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1482,7 +1753,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.ice"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.ice"
 				},
 				"range": {
 					"max": -1
@@ -1504,7 +1775,7 @@
 							"italic": false
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.wind",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.wind",
 							"storage": "item:",
 							"color": "green",
 							"italic": false
@@ -1516,6 +1787,22 @@
 					],
 					"color": "dark_green",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.wind",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1526,7 +1813,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.wind"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.wind"
 				},
 				"range": {
 					"min": 1
@@ -1546,7 +1833,7 @@
 							"text": " "
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.wind",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.wind",
 							"storage": "item:",
 							"color": "red",
 							"italic": false
@@ -1558,6 +1845,22 @@
 					],
 					"color": "dark_green",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.wind",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1568,7 +1871,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.wind"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.wind"
 				},
 				"range": {
 					"max": -1
@@ -1590,7 +1893,7 @@
 							"italic": false
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.thunder",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.thunder",
 							"storage": "item:",
 							"color": "green",
 							"italic": false
@@ -1602,6 +1905,22 @@
 					],
 					"color": "#776F00",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_green",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.thunder",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1612,7 +1931,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.thunder"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.thunder"
 				},
 				"range": {
 					"min": 1
@@ -1632,7 +1951,7 @@
 							"text": " "
 						},
 						{
-							"nbt": "Item.components.\"minecraft:custom_data\".resistance.thunder",
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.amplifier.thunder",
 							"storage": "item:",
 							"color": "green",
 							"italic": false
@@ -1644,6 +1963,22 @@
 					],
 					"color": "#776F00",
 					"italic": false
+				},
+				{
+					"text": " ",
+					"color": "dark_red",
+					"extra": [
+						{
+							"text": "("
+						},
+						{
+							"nbt": "Item.components.\"minecraft:custom_data\".buff.display.thunder",
+							"storage": "item:"
+						},
+						{
+							"text": ")"
+						}
+					]
 				}
 			]
 		],
@@ -1654,7 +1989,7 @@
 				"value": {
 					"type": "storage",
 					"storage": "item:",
-					"path": "Item.components.\"minecraft:custom_data\".resistance.thunder"
+					"path": "Item.components.\"minecraft:custom_data\".buff.amplifier.thunder"
 				},
 				"range": {
 					"max": -1
@@ -1664,32 +1999,78 @@
 	},
 	{
 		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.hpheal",
+				"with": [
+					{
+						"nbt": "Item.components.\"minecraft:custom_data\".heal.hp",
+						"storage": "item:",
+						"color": "green",
+						"italic": false
+					}
+				],
+				"color": "gray",
+				"italic": false
+			}
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".heal.hp"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"lore": [
+			{
+				"translate": "item.ui.mana_heal",
+				"with": [
+					{
+						"nbt": "Item.components.\"minecraft:custom_data\".heal.mana",
+						"storage": "item:",
+						"color": "aqua",
+						"italic": false
+					}
+				],
+				"color": "gray",
+				"italic": false
+			}
+		],
+		"mode": "append",
+		"conditions": [
+			{
+				"condition": "value_check",
+				"value": {
+					"type": "storage",
+					"storage": "item:",
+					"path": "Item.components.\"minecraft:custom_data\".heal.mana"
+				},
+				"range": {
+					"min": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
 		"lore": [
 			{
 				"text": " "
 			}
 		],
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "any_of",
-				"terms": [
-					{
-						"condition": "value_check",
-						"value": {
-							"type": "score",
-							"target": {
-								"type": "fixed",
-								"name": "#enchantcount"
-							},
-							"score": "buffer"
-						},
-						"range": {
-							"min": 1
-						}
-					}
-				]
-			}
-		]
+		"mode": "append"
 	}
 ]
