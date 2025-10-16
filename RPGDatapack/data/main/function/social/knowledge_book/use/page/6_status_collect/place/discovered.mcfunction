@@ -8,7 +8,7 @@
     $item modify entity @s container.$(slot) items:lore/text
     $item modify entity @s container.$(slot) items:lore/status
     $execute if data storage item: Item.components."minecraft:custom_data"{weaponType:2} run item modify entity @s container.$(slot) items:lore/magic
-    $execute if data storage item: Item.components."minecraft:custom_data"{food:1b} run item modify entity @s container.$(slot) items:lore/on_consume
+    $execute if data storage item: Item.components."minecraft:consumable" run item modify entity @s container.$(slot) items:lore/on_consume
     $item modify entity @s container.$(slot) items:lore/elements
     $item modify entity @s container.$(slot) items:lore/info
     $execute if predicate {"condition":"value_check","value":{"type":"storage","storage":"item:","path":"Item.components.\"minecraft:custom_data\".ItemType"},"range":7} run item replace entity @s container.$(slot) from block 0 -59 0 container.0
