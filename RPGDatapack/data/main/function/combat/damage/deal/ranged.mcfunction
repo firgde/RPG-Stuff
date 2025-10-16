@@ -17,7 +17,7 @@
     execute if score #main_element buffer matches 0 unless score #side_element buffer matches 0 run scoreboard players operation #damage_type buffer = #side_element buffer
 # デバフデータ取得
     execute store result score #main_element buff_amount run scoreboard players get @n[tag=arrow.hit] buff_amount
-    execute store result score #main_element buff_timer run scoreboard players get @n[tag=arrow.hit] buff_timer
+    execute store result score #main_element buff_timer_element run scoreboard players get @n[tag=arrow.hit] buff_timer_element
 # 一番近くの矢からデータ取得
     execute at @s store result score @s damage run scoreboard players get @n[tag=arrow.hit] dex
 # 最大チャージなら連撃判定のinteraction召喚

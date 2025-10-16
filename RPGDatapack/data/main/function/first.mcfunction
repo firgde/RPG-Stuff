@@ -20,7 +20,7 @@ say reload
             scoreboard objectives add usedBow used:bow
             scoreboard objectives add time_flied dummy
             scoreboard objectives add max_flying_time dummy
-            scoreboard objectives add buff_timer dummy
+            scoreboard objectives add buff_timer_element dummy
             scoreboard objectives add buff_amount dummy
             scoreboard objectives add usedRod used:warped_fungus_on_a_stick
             scoreboard objectives add ability_cooldown dummy
@@ -74,14 +74,17 @@ say reload
             scoreboard objectives add atk dummy
             scoreboard objectives add atk_base dummy
             scoreboard objectives add atk_buff dummy
+            scoreboard objectives add buff_timer_atk dummy
         # 魔術(魔術攻撃力)
             scoreboard objectives add mag dummy
             scoreboard objectives add mag_base dummy
             scoreboard objectives add mag_buff dummy
+            scoreboard objectives add buff_timer_mag dummy
         # 技巧(遠距離攻撃力)
             scoreboard objectives add dex dummy
             scoreboard objectives add dex_base dummy
             scoreboard objectives add dex_buff dummy
+            scoreboard objectives add buff_timer_dex dummy
         # 体力(最大HP)
             scoreboard objectives add max_hp dummy
             scoreboard objectives add hp dummy
@@ -89,6 +92,7 @@ say reload
             scoreboard objectives add hp_ratio dummy
             scoreboard objectives add hp_buffer dummy
             scoreboard objectives add max_hp_buff dummy
+            scoreboard objectives add buff_timer_max_hp dummy
             scoreboard objectives add prev_hp dummy
         # 知能(最大MPとその回復速度)
             scoreboard objectives add max_mana dummy
@@ -97,6 +101,7 @@ say reload
             scoreboard objectives add int dummy
             scoreboard objectives add int_base dummy
             scoreboard objectives add int_buff dummy
+            scoreboard objectives add buff_timer_int dummy
             scoreboard objectives add heal_amount_mana dummy
             scoreboard objectives add heal_timer_mana dummy
             scoreboard objectives add mana_ratio dummy
@@ -104,22 +109,27 @@ say reload
             scoreboard objectives add def dummy
             scoreboard objectives add def_base dummy
             scoreboard objectives add def_buff dummy
+            scoreboard objectives add buff_timer_def dummy
         # 速度(移動速度)
             scoreboard objectives add spd dummy
             scoreboard objectives add spd_base dummy
             scoreboard objectives add spd_buff dummy
+            scoreboard objectives add buff_timer_spd dummy
         # 会心(クリティカル率、クリティカル倍率)
             scoreboard objectives add crt dummy
             scoreboard objectives add crt_base dummy
             scoreboard objectives add crt_buff dummy
+            scoreboard objectives add buff_timer_crt dummy
         # 運(ドロップ率などのRNG操作ステータス)
             scoreboard objectives add luk dummy
             scoreboard objectives add luk_base dummy
             scoreboard objectives add luk_buff dummy
+            scoreboard objectives add buff_timer_luk dummy
         # 集中(範囲攻撃のダメージ増加、魔法攻撃の追尾開始のタイミングなどその他)
             scoreboard objectives add acc dummy
             scoreboard objectives add acc_base dummy
             scoreboard objectives add acc_buff dummy
+            scoreboard objectives add buff_timer_acc dummy
             scoreboard objectives add dmg_eff dummy
             scoreboard objectives add follow_rate dummy
 
@@ -127,24 +137,31 @@ say reload
             scoreboard objectives add resistance_melee dummy
             scoreboard objectives add resistance_melee_base dummy
             scoreboard objectives add resistance_melee_buff dummy
+            scoreboard objectives add buff_timer_resistance_melee dummy
             scoreboard objectives add resistance_magic dummy
             scoreboard objectives add resistance_magic_base dummy
             scoreboard objectives add resistance_magic_buff dummy
+            scoreboard objectives add buff_timer_resistance_magic dummy
             scoreboard objectives add resistance_ranged dummy
             scoreboard objectives add resistance_ranged_base dummy
             scoreboard objectives add resistance_ranged_buff dummy
+            scoreboard objectives add buff_timer_resistance_ranged dummy
             scoreboard objectives add resistance_fire dummy
             scoreboard objectives add resistance_fire_base dummy
             scoreboard objectives add resistance_fire_buff dummy
+            scoreboard objectives add buff_timer_resistance_fire dummy
             scoreboard objectives add resistance_ice dummy
             scoreboard objectives add resistance_ice_base dummy
             scoreboard objectives add resistance_ice_buff dummy
+            scoreboard objectives add buff_timer_resistance_ice dummy
             scoreboard objectives add resistance_wind dummy
             scoreboard objectives add resistance_wind_base dummy
             scoreboard objectives add resistance_wind_buff dummy
+            scoreboard objectives add buff_timer_resistance_wind dummy
             scoreboard objectives add resistance_thunder dummy
             scoreboard objectives add resistance_thunder_base dummy
             scoreboard objectives add resistance_thunder_buff dummy
+            scoreboard objectives add buff_timer_resistance_thunder dummy
     # バフ用AECとEntity紐づけスコア
         scoreboard objectives add hasOrigin dummy
     # サイドバーUI

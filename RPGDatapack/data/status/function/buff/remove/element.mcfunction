@@ -1,3 +1,5 @@
+# buff_amountを0に
+    scoreboard players set @s buff_amount 0
 # 演出などを戻す
     execute if entity @s[tag=debuff.fire] on origin run data modify entity @s HasVisualFire set value 0b
     execute if entity @s[tag=debuff.fire_fire] on origin run data modify entity @s HasVisualFire set value 0b

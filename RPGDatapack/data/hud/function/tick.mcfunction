@@ -26,3 +26,5 @@
     execute as @a[limit=1] at @s if predicate hud:all run function hud:sidebar/tick
 # リセット
     execute as @a[limit=1] at @s unless predicate hud:all run scoreboard objectives setdisplay sidebar
+# バフの更新
+    execute as @a[limit=1] run function hud:buff/tick

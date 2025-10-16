@@ -13,11 +13,11 @@
     execute if entity @s[tag=arrow.fire] run data modify entity @s HasVisualFire set value 1b
 # デバフ
     execute store result score #main_element buff_amount run data get entity @a[limit=1] SelectedItem.components."minecraft:custom_data".Element.Debuff.Amount
-    execute store result score #main_element buff_timer run data get entity @a[limit=1] SelectedItem.components."minecraft:custom_data".Element.Debuff.Timer
+    execute store result score #main_element buff_timer_element run data get entity @a[limit=1] SelectedItem.components."minecraft:custom_data".Element.Debuff.Timer
     execute store result score #side_element buff_amount run data get entity @a[limit=1] equipment.offhand.components."minecraft:custom_data".Element.Debuff.Amount
-    execute if items entity @a[limit=1] weapon.offhand *[custom_data~{offhandOnly:1b}] store result score #side_element buff_timer run data get entity @a[limit=1] equipment.offhand.components."minecraft:custom_data".Element.Debuff.Timer
+    execute if items entity @a[limit=1] weapon.offhand *[custom_data~{offhandOnly:1b}] store result score #side_element buff_timer_element run data get entity @a[limit=1] equipment.offhand.components."minecraft:custom_data".Element.Debuff.Timer
     execute store result score @s buff_amount run scoreboard players operation #main_element buff_amount += #side_element buff_amount
-    execute store result score @s buff_timer run scoreboard players operation #main_element buff_timer += #side_element buff_timer
+    execute store result score @s buff_timer_element run scoreboard players operation #main_element buff_timer_element += #side_element buff_timer_element
 # リセット
     scoreboard players reset #element buffer
     scoreboard players reset #main_element

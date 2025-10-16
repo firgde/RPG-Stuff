@@ -4,4 +4,4 @@
 # そうでないなら近くのitemエンティティから取得(インベントリ満杯時)
     execute as @a[limit=1] unless items entity @s inventory.* *[custom_data~{use_remainder:true}] unless items entity @s hotbar.* *[custom_data~{use_remainder:true}] at @s run function items:use/consume/thrown
 # バフ付与
-    execute at @s run function status:buff/summon
+    execute as @a[limit=1] at @s run function status:buff/summon

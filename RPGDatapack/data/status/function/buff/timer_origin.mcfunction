@@ -16,15 +16,4 @@
     execute if score @s buff_timer_resistance_ice matches 1.. run scoreboard players remove @s buff_timer_resistance_ice 1
     execute if score @s buff_timer_resistance_wind matches 1.. run scoreboard players remove @s buff_timer_resistance_wind 1
     execute if score @s buff_timer_resistance_thunder matches 1.. run scoreboard players remove @s buff_timer_resistance_thunder 1
-    scoreboard players remove @s buff_timer_element 1
-# originのタイマーも減らす
-    execute on origin run function status:buff/timer_origin
-# 紐づけ検知
-    execute store success score @s buffer on origin unless entity @s
-    execute unless score @s buffer matches 0 run function status:buff/remove/all
-# 属性デバフなら専用処理
-    execute if entity @s[tag=debuff.element] if score @s buffer matches 0 run function #asset:combat/debuff/tick
-# いずれかのタイマーが0なら消す
-    function status:buff/remove/check
-# リセット
-    scoreboard players reset @s buffer
+    execute if score @s buff_timer_element matches 1.. run scoreboard players remove @s buff_timer_element 1

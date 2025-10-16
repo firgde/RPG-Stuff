@@ -11,9 +11,9 @@
     execute if score #main_element buffer matches 0 unless score #side_element buffer matches 0 run scoreboard players operation #damage_type buffer = #side_element buffer
 # デバフデータ取得
     execute store result score #main_element buff_amount run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[0].Amount
-    execute store result score #main_element buff_timer run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[0].Timer
+    execute store result score #main_element buff_timer_element run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[0].Timer
     execute store result score #side_element buff_amount run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[1].Amount
-    execute store result score #side_element buff_timer run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[1].Timer
+    execute store result score #side_element buff_timer_element run data get entity @n[tag=magic] item.components."minecraft:custom_data".Element.Debuff[1].Timer
 # 貫通防止
     execute as @n[tag=magic,tag=!multiple_hit] run scoreboard players operation @s time_flied = @s max_flying_time
 # プレイヤーが近くにいるなら連撃判定のinteraction召喚

@@ -18,9 +18,9 @@
     execute if score #main_element buffer matches 0 unless score #side_element buffer matches 0 run scoreboard players operation #damage_type buffer = #side_element buffer
     #デバフ
     execute store result score #main_element buff_amount run data get entity @a[limit=1] SelectedItem.components."minecraft:custom_data".Element.Debuff.Amount
-    execute store result score #main_element buff_timer run data get entity @a[limit=1] SelectedItem.components."minecraft:custom_data".Element.Debuff.Timer
+    execute store result score #main_element buff_timer_element run data get entity @a[limit=1] SelectedItem.components."minecraft:custom_data".Element.Debuff.Timer
     execute if items entity @a[limit=1] weapon.offhand *[custom_data~{offhandOnly:1b}] store result score #side_element buff_amount run data get entity @a[limit=1] equipment.offhand.components."minecraft:custom_data".Element.Debuff.Amount
-    execute if items entity @a[limit=1] weapon.offhand *[custom_data~{offhandOnly:1b}] store result score #side_element buff_timer run data get entity @a[limit=1] equipment.offhand.components."minecraft:custom_data".Element.Debuff.Timer
+    execute if items entity @a[limit=1] weapon.offhand *[custom_data~{offhandOnly:1b}] store result score #side_element buff_timer_element run data get entity @a[limit=1] equipment.offhand.components."minecraft:custom_data".Element.Debuff.Timer
     #会心攻撃の処理
     execute as @a[limit=1] if score @s dealtDamage matches 150.. run function main:combat/attack/crit/
     execute as @a[limit=1] run function status:update/

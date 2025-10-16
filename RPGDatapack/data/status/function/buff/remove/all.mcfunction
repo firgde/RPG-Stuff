@@ -1,0 +1,21 @@
+
+    function status:buff/remove/status/atk
+    function status:buff/remove/status/mag
+    function status:buff/remove/status/dex
+    function status:buff/remove/status/hp
+    function status:buff/remove/status/int
+    function status:buff/remove/status/def
+    function status:buff/remove/status/spd
+    function status:buff/remove/status/crt
+    function status:buff/remove/status/luk
+    function status:buff/remove/status/acc
+    function status:buff/remove/resistance/melee
+    function status:buff/remove/resistance/magic
+    function status:buff/remove/resistance/ranged
+    function status:buff/remove/resistance/fire
+    function status:buff/remove/resistance/ice
+    function status:buff/remove/resistance/wind
+    function status:buff/remove/resistance/thunder
+    function status:buff/remove/element
+# 本体を消す
+    function status:buff/remove/
