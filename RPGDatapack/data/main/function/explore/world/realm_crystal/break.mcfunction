@@ -1,5 +1,5 @@
 # 演出
-    particle flash ~ ~ ~ 0 0 0 0 1
+    particle flash{color:[1, 1, 1, 1]} ~ ~ ~ 0 0 0 0 1
     particle end_rod ~ ~ ~ 0.1 0.1 0.1 0.5 50
     playsound block.glass.break master @a[limit=1] ~ ~ ~ 1 0.5
     playsound block.trial_spawner.about_to_spawn_item master @a[limit=1] ~ ~ ~ 1 1.0

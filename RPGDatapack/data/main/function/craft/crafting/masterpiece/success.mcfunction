@@ -23,7 +23,7 @@
 # 演出
     execute at @n[tag=slot.4] run particle electric_spark ~ ~ ~ 0.2 0.2 0.2 0.01 25
     execute at @n[tag=slot.4] run particle trial_spawner_detection ~ ~ ~ 0.2 0.2 0.2 0 25
-    execute at @n[tag=slot.4] run particle flash ~ ~ ~ 0.0 0.0 0.0 0 1
+    execute at @n[tag=slot.4] run particle flash{color:[1, 1, 1, 1]} ~ ~ ~ 0.0 0.0 0.0 0 1
     execute as @a[limit=1] at @n[tag=slot.4] run playsound block.trial_spawner.open_shutter block @s ~ ~ ~ 1.0 2.0
     execute as @a[limit=1] at @n[tag=slot.4] run playsound block.vault.insert_item_fail block @s ~ ~ ~ 1.0 0.5
     execute as @a[limit=1] at @n[tag=slot.4] run playsound block.anvil.destroy block @s ~ ~ ~ 1.0 2.0

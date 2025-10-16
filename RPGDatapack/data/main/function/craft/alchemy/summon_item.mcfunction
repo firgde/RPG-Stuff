@@ -10,7 +10,7 @@
     execute if score #success buffer matches 1 run data remove entity @n[tag=alchemy.item.1] item
 # 演出
     execute at @e[tag=alchemy.item.0] positioned ~ ~ ~-0.2 run particle block{block_state:"minecraft:water"} ~ ~ ~ 0.1 0.1 0.1 0.5 25
-    execute at @e[tag=alchemy.item.0] positioned ~ ~ ~-0.2 run particle flash ~ ~ ~ 0 0 0 1 1
+    execute at @e[tag=alchemy.item.0] positioned ~ ~ ~-0.2 run particle flash{color:[1, 1, 1, 1]} ~ ~ ~ 0 0 0 1 1
     playsound item.bucket.empty block @s ~ ~ ~ 1 1
     playsound item.trident.return block @s ~ ~ ~ 1 0.75
     playsound block.amethyst_cluster.break block @s ~ ~ ~ 1 1
