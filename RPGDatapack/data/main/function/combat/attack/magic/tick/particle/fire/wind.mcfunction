@@ -1,5 +1,5 @@
 # 炎
-    particle flame ~ ~ ~ 0.1 0.1 0.1 0.01 5
+    particle copper_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.01 5
     particle small_flame ~ ~ ~ 0.2 0.2 0.2 0.05 15
     particle sneeze ~ ~ ~ 0 0 0 0.01 5
 # 煙
