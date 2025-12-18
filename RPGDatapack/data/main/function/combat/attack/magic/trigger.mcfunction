@@ -1,5 +1,3 @@
-# 検知ｨ！
-    scoreboard players set @s usedRod 0
 # クールダウンチェック
     execute if entity @s[type=player] run function main:combat/attack/magic/check_cooldown
     execute if entity @s[type=!player] run tag @s add verify_cooldown
@@ -19,7 +17,7 @@
     execute if entity @s[tag=!verify_cooldown] run tellraw @s {"translate":"combat.text.magic.no_cooldown","color": "red"}
     execute if entity @s[tag=!verify_mana] run tellraw @s {"translate":"combat.text.magic.no_mana","color": "red"}
 # リセット
-    scoreboard players reset #timeused buffer
+    scoreboard players reset #time_used buffer
     scoreboard players reset #gametime buffer
     scoreboard players reset #mana_require buffer
     scoreboard players reset #cooldown buffer
