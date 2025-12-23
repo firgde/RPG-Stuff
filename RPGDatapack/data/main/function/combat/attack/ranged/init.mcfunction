@@ -1,7 +1,9 @@
 # タグ
-    tag @s add playerArrow
+    tag @s add arrow.by_player
 # チャージ率と攻撃力をかけて保存
-    execute store result score @s dex run scoreboard players operation @a[limit=1] bowCharge *= @a[limit=1] dex
+    #引き絞った時間が1秒以上ならタイマー補正
+    scoreboard players operation @a[limit=1] bow_charge < #20 const
+    execute store result score @s dex run scoreboard players operation @a[limit=1] bow_charge *= @a[limit=1] dex
     scoreboard players operation @s dex /= #20 const
 # 属性
     execute store result score #main_element buffer run data get entity @a[limit=1] SelectedItem.components."minecraft:custom_data".Element.Type

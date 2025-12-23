@@ -15,8 +15,8 @@ say reload
             scoreboard objectives add defBuffer dummy
             scoreboard objectives add crtBuffer dummy
             scoreboard objectives add dealtDamage custom:damage_dealt_resisted
-            scoreboard objectives add bowCharge dummy
-            scoreboard objectives add prevBowCharge dummy
+            scoreboard objectives add bow_charge dummy
+            scoreboard objectives add prev_bow_charge dummy
             scoreboard objectives add usedBow used:bow
             scoreboard objectives add time_flied dummy
             scoreboard objectives add max_flying_time dummy
@@ -28,7 +28,7 @@ say reload
             scoreboard objectives add aiTimer dummy
             scoreboard objectives add mob_id dummy
             scoreboard objectives add flyratio dummy
-            scoreboard objectives add hasAttacker dummy
+            scoreboard objectives add has_attacker dummy
             scoreboard objectives add hasTarget dummy
             scoreboard objectives add higher dummy
             scoreboard objectives add homing_priority dummy

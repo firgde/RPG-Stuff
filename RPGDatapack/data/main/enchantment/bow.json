@@ -24,6 +24,32 @@
 					"value": 0
 				}
 			}
+		],
+		"projectile_spawned": [
+			{
+				"effect": {
+					"type": "run_function",
+					"function": "main:combat/attack/ranged/init"
+				}
+			}
+		],
+		"post_attack": [
+			{
+				"effect": {
+					"type": "run_function",
+					"function": "main:combat/damage/deal/ranged"
+				},
+				"enchanted": "attacker",
+				"affected": "victim"
+			}
+		],
+		"hit_block": [
+			{
+				"effect": {
+					"type": "run_function",
+					"function": "main:combat/attack/ranged/arrow/kill"
+				}
+			}
 		]
 	}
 }

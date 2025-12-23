@@ -1,7 +1,7 @@
 # 遠距離攻撃
     tag @s add hurt.ranged
 # 矢を特定
-    execute at @s run tag @n[tag=playerArrow,distance=..6] add arrow.hit
+    execute at @s run tag @n[tag=arrow.by_player,distance=..6] add arrow.hit
 # 属性を取得
     scoreboard players set #main_element buffer 0
     scoreboard players set #side_element buffer 0

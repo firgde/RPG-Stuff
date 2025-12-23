@@ -1,3 +1,5 @@
+# 連撃タグ
+    tag @s add arrow.atk_combo
 # Ownerをプレイヤーに設定
     data modify entity @s Owner set from entity @a[limit=1] UUID
 # 攻撃力と属性を設定

@@ -1,0 +1,30 @@
+{
+	"description": "",
+	"supported_items": "warped_fungus_on_a_stick",
+	"weight": 1,
+	"max_level": 1,
+	"min_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"post_attack": [
+			{
+				"effect": {
+					"type": "run_function",
+					"function": "main:combat/damage/deal/melee"
+				},
+				"enchanted": "attacker",
+				"affected": "victim"
+			}
+		]
+	}
+}

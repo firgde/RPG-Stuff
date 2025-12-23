@@ -1,35 +1,5 @@
 {
     "criteria": {
-        "melee": {
-            "trigger": "player_hurt_entity",
-            "conditions": {
-                "damage": {
-					"type": {
-						"tags": [
-							{
-								"id": "main:melee_player",
-								"expected": true
-							}
-						]
-					}
-				},
-                "player": [
-                    {
-                        "condition": "entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "equipment": {
-                                "mainhand": {
-                                    "predicates": {
-                                        "custom_data": "{weapon:1b}"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                ]
-            }
-        },
         "bow": {
             "trigger": "player_hurt_entity",
             "conditions": {
@@ -40,7 +10,10 @@
 								"id": "is_projectile",
 								"expected": true
 							}
-						]
+						],
+                        "direct_entity": {
+                            "nbt": "{Tags:[\"arrow.atk_combo\"]}"
+                        }
 					}
 				}
             }
@@ -378,7 +351,6 @@
     },
     "requirements": [
         [
-            "melee",
             "bow",
             "magic",
             "magic_hit",
