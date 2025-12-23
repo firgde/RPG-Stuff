@@ -5,7 +5,7 @@
     execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:custom_data".Durability int 1 run scoreboard players remove #durability buffer 1
 # 差をminecraft:damageに代入
     execute store result score #max_durability buffer run data get entity @s SelectedItem.components."minecraft:max_damage"
-    execute if items entity @s weapon.mainhand bow run scoreboard players set #max_durability buffer 384
+    execute if items entity @s weapon.mainhand bow[max_damage=384] run scoreboard players set #max_durability buffer 384
     execute if items entity @s weapon.mainhand warped_fungus_on_a_stick[max_damage=100] run scoreboard players set #max_durability buffer 100
     execute store result block 0 -59 0 Items[{Slot:0b}].components."minecraft:damage" int 1 run scoreboard players operation #max_durability buffer -= #durability buffer
     #UI表記も更新
