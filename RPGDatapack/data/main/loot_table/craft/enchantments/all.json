@@ -91,7 +91,7 @@
 					"functions": [
 						{
 							"function": "set_custom_data",
-							"tag": "{EnchantData:{ability_enchantment:1b}}"
+							"tag": "{enchantment_data:{ability_enchantment:1b}}"
 						}
 					],
 					"conditions": [

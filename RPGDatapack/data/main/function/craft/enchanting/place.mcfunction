@@ -1,5 +1,5 @@
 # 本体のディスペンサー
-    setblock ~ ~ ~ dispenser{CustomName:'[{"translate":"craft.ui.enchanter.gui","color": "white"},{"translate":"craft.ui.enchanter","color": "dark_gray"}]'}
+    setblock ~ ~ ~ dispenser{CustomName:[{"translate":"craft.ui.enchanter.gui","color": "white"},{"translate":"craft.ui.enchanter","color": "dark_gray"}]}
     #透明な棒をぶち込む
     item replace block ~ ~ ~ container.0 with stick[tooltip_display={hide_tooltip:true},item_model="air",custom_data={ui:1b,menu:"enchanter"}]
     item replace block ~ ~ ~ container.2 with stick[tooltip_display={hide_tooltip:true},item_model="air",custom_data={ui:1b,menu:"enchanter"}]

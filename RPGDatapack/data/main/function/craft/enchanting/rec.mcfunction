@@ -1,10 +1,16 @@
 # 再帰回数を減らす
     scoreboard players remove #rec buffer 1
-# ルートテーブル万能説
-    loot replace block 0 -59 0 container.1 loot main:craft/enchantments/all
+# エンチャントデータを入れる棒
+    item replace block 0 -59 0 container.1 with stick[custom_data={lvl:0s,id:""}]
+# 0 < index < rec となるように乱数生成
+    data modify storage rng: data.Min set value 0
+    execute store result storage rng: data.Max int 1 run scoreboard players get #rec buffer
+    function main:get_rng with storage rng: data
+    execute store result storage craft:enchanting temp.index int 1 run scoreboard players get #rng buffer
+    scoreboard players reset #rng buffer
+# エンチャント参照
+    function main:craft/enchanting/roll with storage craft:enchanting temp
 # 生成されたアイテムのタグからエンチャントを特定
-    #スキルエンチャントの場合はアイテムによって特定
-    execute if data block 0 -59 0 Items[{components:{"minecraft:custom_data":{EnchantData:{ability_enchantment:1b}}}}] run function main:craft/enchanting/ability/apply
     function #asset:craft/enchantments
 # エンチャント適用
     data modify block ~ ~ ~ Items[{Slot:4b}].components."minecraft:custom_data".enchantments.data append from block 0 -59 0 Items[{Slot:1b}].components."minecraft:custom_data"
@@ -40,5 +46,9 @@
     execute positioned 0 -59 0 run function items:get_data
     execute positioned 0 -59 0 run function items:set_data/
     item replace block ~ ~ ~ container.4 from block 0 -59 0 container.0
+# 抽選回数 < 候補数
+    execute store result score #len buffer run data get storage craft:enchanting data.pool
+    scoreboard players operation #rec buffer < #len buffer
+    scoreboard players reset #len buffer
 # 再帰
     execute if score #rec buffer matches 1.. run function main:craft/enchanting/rec
