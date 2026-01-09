@@ -17,12 +17,15 @@
     execute if entity @s[tag=!verify_cooldown] run tellraw @s {"translate":"combat.text.magic.no_cooldown","color": "red"}
     execute if entity @s[tag=!verify_mana] run tellraw @s {"translate":"combat.text.magic.no_mana","color": "red"}
 # リセット
+    data remove storage combat: data.magic
     scoreboard players reset #time_used buffer
     scoreboard players reset #gametime buffer
     scoreboard players reset #mana_require buffer
     scoreboard players reset #cooldown buffer
     scoreboard players reset #main_element buffer
     scoreboard players reset #side_element buffer
+# 魔術攻撃時の特別処理
+    execute if entity @s[tag=verify_cooldown,tag=verify_mana] run function #asset:combat/trigger/on_magic_attack
+
     tag @s remove verify_cooldown
     tag @s remove verify_mana
-    data remove storage combat: data.magic
