@@ -1,6 +1,6 @@
+# ダメージ
+    function main:combat/attack/combo/sword/damage
 # 音
-    playsound ogg:entity.player.attack.sweep1 player @a[limit=1] ~ ~ ~ 1 1.3
+    playsound ogg:entity.player.attack.sweep1 player @s ~ ~ ~ 1 1.3
 # パーティクル
-    execute rotated ~ 0 run particle sweep_attack ~ ~1 ~
-# ヒットストップ
-    data modify entity @s Motion set value [0.0f,0.0f,0.0f]
+    execute positioned ^ ^ ^1.5 rotated ~ 0 run particle sweep_attack ~ ~1 ~

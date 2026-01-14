@@ -15,10 +15,6 @@
     scoreboard players set #kbPowerZ buffer 10
     execute as @e[tag=hurt.indirect] at @a[limit=1] run function main:combat/damage/knockback
     tag @e[tag=hurt.indirect] add hurt.melee
-# プレイヤーが近くにいるなら連撃判定のinteraction召喚
-    execute at @s if entity @a[limit=1,distance=..3] unless data entity @s Passengers[{Tags:["atk_combo"]}] run summon interaction ~ ~ ~ {Tags:["atk_combo","atk_combo.init"]}
-    execute at @s run ride @n[tag=atk_combo.init,distance=..1] mount @s
-    execute on passengers run function main:combat/attack/combo/sword/init
 # リセット
     tag @s remove this
     scoreboard players reset #kbPowerX buffer

@@ -10,7 +10,7 @@
 # 無敵時間のあるなし
     execute if entity @s[tag=spawn] run scoreboard players operation @s damage /= #20 const
 # 無敵時間
-    execute if entity @s[tag=!hurt.indirect,type=!player] unless entity @s[tag=!hurt.melee,tag=!hurt.ranged] unless data entity @s Passengers run function main:combat/damage/calc/hurt_time
+    execute if entity @s[tag=!hurt.indirect,type=!player,tag=!hurt.combo] unless entity @s[tag=!hurt.melee,tag=!hurt.ranged] run function main:combat/damage/calc/hurt_time
 # 防御計算
     execute unless entity @s[tag=hurt.bypass_defense] run function main:combat/damage/calc/defense
 # ダメージを受ける前の体力取得
@@ -41,7 +41,6 @@
     execute if items entity @s[type=player] armor.feet *[custom_data~{armorType:"boots",armor:1b}] run function items:durability/remove_feet
 # 必要ならば、演出
     execute if entity @s[tag=hurt.indirect] run damage @s 0.01 generic
-    execute on passengers if entity @s[tag=atk_combo] on vehicle run damage @s 0.01 main:combo_attack
     execute if score #damage_type buffer matches 5 run playsound entity.player.attack.crit hostile @a[limit=1] ~ ~ ~ 1 1
     execute if entity @s[team=hostile] if score #main_element buffer matches 1 at @s positioned ~ ~1 ~ facing entity @a[limit=1] eyes positioned ^ ^ ^0.26 run function asset:particle/fire_hit
     execute if entity @s[team=hostile] if score #main_element buffer matches 2 at @s positioned ~ ~1 ~ facing entity @a[limit=1] eyes positioned ^ ^ ^0.26 run function asset:particle/ice_hit
@@ -60,6 +59,7 @@
     tag @s remove hurt.bypass_defense
     tag @s remove hurt.indirect
     tag @s remove hurt.combo
+    tag @a[limit=1] remove attack.crit
     scoreboard players reset #damage_type buffer
     scoreboard players reset #main_element
     scoreboard players reset #side_element

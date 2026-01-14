@@ -36,8 +36,13 @@ say reload
             scoreboard objectives add side_element dummy
             scoreboard objectives add element dummy
             scoreboard objectives add combo_count dummy
-            scoreboard objectives add dmg_reduction dummy
+            scoreboard objectives add combo_dmg_reduction dummy
+            scoreboard objectives add max_combo_time dummy
             scoreboard objectives add combo_time dummy
+            scoreboard objectives add combo_crt_min dummy
+            scoreboard objectives add combo_crt_max dummy
+            scoreboard objectives add max_combo_count dummy
+            scoreboard objectives add combo_damage_multiplier dummy
             scoreboard objectives add timestamp dummy
             scoreboard objectives add hasVehicle dummy
             scoreboard objectives add hurt_time dummy

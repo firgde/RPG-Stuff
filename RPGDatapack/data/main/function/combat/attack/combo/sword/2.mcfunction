@@ -1,12 +1,7 @@
+# ダメージ
+    function main:combat/attack/combo/sword/damage
 # 音
-    playsound ogg:entity.player.attack.sweep1 player @a[limit=1] ~ ~ ~ 1 1.7
+    playsound ogg:entity.player.attack.sweep1 player @s ~ ~ ~ 1 1.7
     playsound entity.player.attack.knockback player @a[limit=1] ~ ~ ~ 1 1
 # パーティクル
-    execute rotated ~ 0 run particle sweep_attack ~ ~1 ~
-# ノックバック
-    scoreboard players set #kbPowerX buffer 10
-    scoreboard players set #kbPowerY buffer 10
-    scoreboard players set #kbPowerZ buffer 10
-    execute at @a[limit=1] run function main:combat/damage/knockback
-# 連撃interaction消す
-    execute on passengers run kill @s
+    execute positioned ^ ^ ^1.5 rotated ~ 0 run particle sweep_attack ~ ~1 ~

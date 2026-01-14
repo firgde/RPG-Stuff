@@ -1,25 +1,28 @@
-{
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "equipment": {
-            "mainhand": {
-                "predicates": {
-                    "custom_data":"{weapon:1b}"
-                }
-            }
-        },
-        "type_specific": {
-            "type": "player",
-            "looking_at": {
-                "type": "interaction",
-                "nbt": "{Tags:[\"atk_combo\"]}",
-                "distance": {
-                    "absolute": {
-                        "max": 3
+[
+    {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "predicates": {
+                        "custom_data":"{weapon:1b}"
                     }
                 }
             }
         }
+    },
+    {
+        "condition": "entity_scores",
+        "entity": "this",
+        "scores": {
+            "combo_time": {
+                "min": {
+                    "type": "score",
+                    "target": "this",
+                    "score": "combo_crt_min"
+                }
+            }
+        }
     }
-}
+]

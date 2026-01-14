@@ -18,6 +18,30 @@
 	"effects": {
         "post_piercing_attack": [
             {
+				"requirements": {
+					"condition": "inverted",
+					"term": {
+						"condition": "all_of",
+						"terms": [
+							{
+								"condition": "entity_scores",
+								"entity": "this",
+								"scores": {
+									"combo_time": {
+										"min": 1
+									}
+								}
+							},
+							{
+								"condition": "entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"atk_combo\"]}"
+								}
+							}
+						]
+					}
+				},
                 "effect": {
                     "type": "run_function",
                     "function": "main:combat/attack/magic/trigger"
