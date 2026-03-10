@@ -1,3 +1,5 @@
+# HUD更新
+    data remove storage combat: data.hud.combo
 # 全数値リセット
     scoreboard players reset @s combo_count
     scoreboard players reset @s max_combo_count
