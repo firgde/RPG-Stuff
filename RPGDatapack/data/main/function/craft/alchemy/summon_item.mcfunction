@@ -1,10 +1,10 @@
 # 設定して飛ばす
-    execute at @n[tag=alchemy.item.0] run summon item ~ ~ ~-0.2 {Tags:["alchemy.result"],PickupDelay:0,Item:{Count:1b,id:"minecraft:stick"}}
+    execute at @n[tag=alchemy.item.0] run summon item ~ ~ ~-0.2 {Tags:["alchemy.result"],PickupDelay:0,Item:{count:1b,id:"minecraft:stick"}}
     data modify entity @n[tag=alchemy.result] Item set from block 0 -59 0 Items[{Slot:0b}]
-    scoreboard players set #powerx buffer 10
-    scoreboard players set #powery buffer 10
-    scoreboard players set #powerz buffer 10
-    execute as @e[tag=alchemy.result] at @s facing entity @a[limit=1] eyes rotated ~180 ~ run function main:motion
+    scoreboard players set #velocity_x buffer 10
+    scoreboard players set #velocity_y buffer 10
+    scoreboard players set #velocity_z buffer 10
+    execute as @e[tag=alchemy.result] at @s facing entity @a[limit=1] eyes rotated ~180 ~ run function main:craft/alchemy/motion
 # item_displayリセット
     execute if score #success buffer matches 1 run data remove entity @n[tag=alchemy.item.0] item
     execute if score #success buffer matches 1 run data remove entity @n[tag=alchemy.item.1] item

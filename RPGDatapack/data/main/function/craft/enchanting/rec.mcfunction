@@ -5,7 +5,7 @@
 # 0 < index < rec となるように乱数生成
     data modify storage rng: data.Min set value 0
     execute store result storage rng: data.Max int 1 run scoreboard players get #rec buffer
-    function main:get_rng with storage rng: data
+    function lib:get_rng with storage rng: data
     execute store result storage craft:enchanting temp.index int 1 run scoreboard players get #rng buffer
     scoreboard players reset #rng buffer
 # エンチャント参照

@@ -3,7 +3,7 @@
 # レベル抽選    TODO: エンチャントレベルに対応
     $data modify storage rng: data.Max set from storage craft:enchanting data.pool[$(index)].lvl_max
     $data modify storage rng: data.Min set from storage craft:enchanting data.pool[$(index)].lvl_min
-    function main:get_rng with storage rng: data
+    function lib:get_rng with storage rng: data
     execute store result block 0 -59 0 Items[{Slot:1b}].components."minecraft:custom_data".lvl int 1 run scoreboard players get #rng buffer
     scoreboard players reset #rng buffer
 # 競合エンチャントも候補から消す

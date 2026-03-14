@@ -13,7 +13,7 @@
     execute if score #enchantLv int matches 0 store result score #rngMax buffer run scoreboard players set #enchantLv int 1
     execute store result storage rng: data.Max int 1 run scoreboard players get #rngMax buffer
     data modify storage rng: data.Min set value 0
-    function main:get_rng with storage rng: data
+    function lib:get_rng with storage rng: data
     scoreboard players operation #rng buffer %= #enchantLv int
     scoreboard players operation #enchantLv buffer += #rng buffer
     #ranInt(0, acc/4)
@@ -22,7 +22,7 @@
     execute if score #enchantLv acc matches 0 store result score #rngMax buffer run scoreboard players set #enchantLv acc 1
     execute store result storage rng: data.Max int 1 run scoreboard players get #rngMax buffer
     data modify storage rng: data.Min set value 0
-    function main:get_rng with storage rng: data
+    function lib:get_rng with storage rng: data
     scoreboard players operation #rng buffer %= #enchantLv acc
     scoreboard players operation #enchantLv buffer += #rng buffer
     #四隅の素材
