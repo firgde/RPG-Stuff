@@ -10,7 +10,7 @@
         {"text":"/","font":"asset:hotbar"}, \
         {"score":{"name":"@a","objective":"max_hp"},"font":"asset:hotbar"}, \
         {"text":"\uF808\uF802"}, \
-        {"nbt":"data.hud.combo.list[]", "storage": "combat:", separator:{text:"\uF802",font:"default"}, interpret: true, font:"asset:combo_bar"}, \
+        {"nbt":"data.hud.combo.list[]", "storage": "combat:", separator:{text:"\uF801",font:"default"}, interpret: true, font:"asset:combo_bar", shadow_color:0}, \
         {"nbt":"data.hud.combo.space[]", "storage": "combat:", interpret: true, separator:"", font:"default"}, \
         {"text":"\uF828\uF822"}, \
         {"nbt":"data.hud.Space","storage":"combat:","interpret": true}, \

@@ -18,7 +18,7 @@
     scoreboard players operation #progress buffer /= @s max_combo_time
     scoreboard players set #100 buffer 100
     execute store result storage combat: data.hud.combo.progress int 1 run scoreboard players operation #100 buffer -= #progress buffer
-    data modify storage combat: data.hud.combo.space append value {"text":"\uF802"}
+    data modify storage combat: data.hud.combo.space append value {"text":"\uF801"}
 # data.combo.progress番目の | を赤く
     function hud:combo/mark_progress with storage combat: data.hud.combo
 # リセット
